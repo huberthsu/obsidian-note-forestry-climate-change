@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"13e50cfb1b375da5","type":"group","x":-60,"y":-500,"width":1940,"height":1034,"label":"寫作區"},
+		{"id":"a1954659d35d036c","type":"group","x":-1060,"y":80,"width":966,"height":454,"label":"定時查看區"},
+		{"id":"94997118c1e1f0da","type":"group","x":1920,"y":-500,"width":300,"height":1034,"label":"功能支持區"},
+		{"id":"069387a490ae649b","type":"text","text":"![[卡片盒筆記模板]]","x":-40,"y":-480,"width":490,"height":994,"color":"2"},
+		{"id":"2a282aea80c1d97f","type":"text","text":"![[文獻筆記模板]]","x":450,"y":-480,"width":490,"height":994,"color":"1"},
+		{"id":"e8857b2465abbfbe","type":"text","text":"![[考古題筆記模板]]","x":940,"y":-480,"width":490,"height":994,"color":"4"},
+		{"id":"5a4d55b30a237f64","type":"text","text":"![[to do]]","x":-434,"y":114,"width":320,"height":400,"color":"6"},
+		{"id":"7533b1c039d6456c","type":"file","file":"3.外部資料/外部圖片/日曆.png","x":-790,"y":114,"width":356,"height":400,"color":"6"},
+		{"id":"be8b75ad6f1e1e14","type":"text","text":"![[暫時紀錄的問題與想法]]","x":-1040,"y":114,"width":250,"height":400,"color":"3"},
+		{"id":"af38bdb031a3d72b","type":"text","text":"![[英文學習筆記模板]]","x":1430,"y":-480,"width":384,"height":994,"color":"5"},
+		{"id":"d0af7288c14516d9","type":"text","text":"![[右側邊欄功能支持區.png]]","x":1940,"y":-480,"width":250,"height":994,"color":"6"}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

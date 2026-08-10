@@ -1,8 +1,0 @@
-filters:
-  and:
-    - 類別.contains(link("英文學習筆記"))
-    - and:
-        - '!file.inFolder("5.模板")'
-views:
-  - type: table
-    name: 表格

@@ -261,6 +261,9 @@ plugins:
         - publish
         - published
         - permalink
+        - title
+        - created
+        - modified
       hidePropertiesView: false
       delimiters: ---
       language: yaml

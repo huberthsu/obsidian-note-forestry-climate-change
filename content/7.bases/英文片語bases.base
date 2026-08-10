@@ -1,0 +1,8 @@
+filters:
+  and:
+    - 類別.contains("片語")
+    - and:
+        - '!file.inFolder("5.模板")'
+views:
+  - type: table
+    name: 表格

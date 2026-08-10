@@ -9,7 +9,7 @@ views:
         - and:
             - '!file.inFolder("5.模板")'
             - and:
-                - 類別.contains("工作流與系統")
+                - category.contains("工作流與系統")
   - type: table
     name: 外掛與功能筆記
     filters:

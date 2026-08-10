@@ -1,10 +1,14 @@
 ---
 publish: true
 title: 森林與氣候變遷的筆記
-created: 2026-08-10T10:26:40.007Z
-modified: 2026-08-10T18:21:45.520Z
-published: 2026-08-10T18:21:45.520Z
+created: 2026-08-10T23:40:23.415Z
+modified: 2026-08-10T23:40:23.417Z
+published: 2026-08-10T23:40:23.417Z
+aliases:
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
+parent:
+sibling:
+child:
 ---
 
 # 網站成立目的

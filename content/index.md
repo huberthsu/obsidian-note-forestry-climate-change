@@ -2,8 +2,8 @@
 publish: true
 title: 森林與氣候變遷的筆記
 created: 2026-08-10T10:26:40.007Z
-modified: 2026-08-10T13:43:38.389Z
-published: 2026-08-10T13:43:38.389Z
+modified: 2026-08-10T18:21:45.520Z
+published: 2026-08-10T18:21:45.520Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -30,4 +30,4 @@ published: 2026-08-10T13:43:38.389Z
 - 文獻摘要、整理方法
 - 外掛支持系統
 
-查看[[工作流系統說明]]
+查看[[workflow-system-overview]]

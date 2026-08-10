@@ -4,8 +4,8 @@ aliases:
   - 文獻筆記工作流
 title: 文獻筆記工作流
 created: 2026-07-21T02:42:39.738Z
-modified: 2026-08-10T23:13:00.905Z
-published: 2026-08-10T23:13:00.905Z
+modified: 2026-08-10T23:28:53.839Z
+published: 2026-08-10T23:28:53.839Z
 tags:
   - 工作流
   - 康乃爾筆記法
@@ -20,8 +20,8 @@ parent:
 sibling:
   - "[朱騏obsidian使用流程圖](https://whimsical.com/ipo-obsidian-LPyw6fia5hvjto5bWrQc4Y)"
 child:
-  - "[[Instructions for using Cornell and the Card Box Note-Taking Method]]"
-  - "[[資訊篩選標準]]"
+  - "[[Instructions for using Cornell and the Card Box Note-Taking Method|康乃爾與卡片盒筆記法的應用說明]]"
+  - "[[Information filtering criteria|資訊篩選標準]]"
 ---
 
 ---
@@ -49,9 +49,9 @@ child:
 # 第1步: 資訊品質判斷
 
 - 這個外部資料值得或不值得我做卡片筆記?
-  - 依照[[資訊篩選標準]]中的打造第二大腦，判斷是否符合啟發、意外、用途、關聯，**至少符合一項才需要做筆記**
+  - 依照[[Information filtering criteria]]中的打造第二大腦，判斷是否符合啟發、意外、用途、關聯，**至少符合一項才需要做筆記**
 - 這個外部資料的內容品質如何?
-  - 參考[[資訊篩選標準]]中的內容價值評分表，決定是否有需要做筆記
+  - 參考[[Information filtering criteria]]中的內容價值評分表，決定是否有需要做筆記
 
 # 第2步: 創建文獻筆記
 

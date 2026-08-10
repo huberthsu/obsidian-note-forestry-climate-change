@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-10T16:12:29.283Z
-modified: 2026-08-10T23:10:10.245Z
-published: 2026-08-10T23:10:10.245Z
+modified: 2026-08-10T23:17:09.374Z
+published: 2026-08-10T23:17:09.374Z
 tags:
   - 工作流
 類別:
@@ -83,7 +83,7 @@ child:
 - **管理工具**：[[文獻筆記]]
 
 * 核心概念：
-  - 以**康乃爾+[[資訊篩選標準]]** 為架構撰寫卡片
+  - 以**康乃爾+[[Information filtering criteria]]** 為架構撰寫卡片
   - 以**卡片盒筆記法**整理與串聯筆記
   - claudian參考claude/skills資料夾底下的skills，按找我的原則與規範協作
     - 建立文獻筆記相關skills

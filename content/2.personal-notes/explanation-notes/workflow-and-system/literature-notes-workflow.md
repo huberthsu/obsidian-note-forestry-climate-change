@@ -4,8 +4,8 @@ aliases:
   - 文獻筆記工作流
 title: 文獻筆記工作流
 created: 2026-07-21T02:42:39.738Z
-modified: 2026-08-10T22:59:57.826Z
-published: 2026-08-10T22:59:57.826Z
+modified: 2026-08-10T23:13:00.905Z
+published: 2026-08-10T23:13:00.905Z
 tags:
   - 工作流
   - 康乃爾筆記法
@@ -61,7 +61,7 @@ child:
 
 - 主要依據卡片盒筆記法
   - tags欄位: 管理、組織與搜尋卡片
-    - 可以定期更新與回顧標籤，思考是否需要[[整理標籤有助於深入理解、被搜尋與提取、發現筆記之間的連結|細化或合併標籤]]
+    - 可以定期更新與回顧標籤，思考是否需要[[Organizing tags helps with deeper understanding, searching and extraction, and discovering connections between notes.|細化或合併標籤]]
   - 相關筆記欄位: 建立卡片之間連結
   - 摘要欄位: 紀錄文獻摘要
 

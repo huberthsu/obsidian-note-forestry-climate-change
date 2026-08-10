@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-10T16:12:29.283Z
-modified: 2026-08-10T23:06:51.585Z
-published: 2026-08-10T23:06:51.585Z
+modified: 2026-08-10T23:10:10.245Z
+published: 2026-08-10T23:10:10.245Z
 tags:
   - 工作流
 類別:
@@ -25,6 +25,8 @@ child:
   - "[[暫時紀錄的問題與想法]]"
   - "[[How to find links between notes|如何發現筆記之間的連結]]"
   - "[[literature-notes-workflow|文獻筆記工作流]]"
+  - "[[目標與任務管理系統.canvas]]"
+  - "[[英文學習工作流.canvas]]"
 ---
 
 # Obsidian 工作流系統說明畫布

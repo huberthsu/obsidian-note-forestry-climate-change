@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"2e823df7bd4a2fce","type":"group","x":-12000,"y":4445,"width":3200,"height":724,"label":"目標與任務管理系統"},
+		{"id":"c815144bf0140895","type":"group","x":-11920,"y":4598,"width":940,"height":485,"label":"設定每月目標與追蹤每月進度"},
+		{"id":"90810f55403190be","type":"group","x":-9760,"y":4598,"width":920,"height":485,"color":"6","label":"規劃與查看目前與接下來要完成的任務"},
+		{"id":"6b03f23392bb369f","type":"group","x":-10790,"y":4598,"width":870,"height":485,"color":"6","label":"規劃與查看特定日期任務"},
+		{"id":"fd24c12bf06c9ef1","type":"text","text":"Kanban","x":-9720,"y":4811,"width":250,"height":60},
+		{"id":"991a1769a0d4ecac","type":"text","text":"![[to do]]","x":-9380,"y":4683,"width":480,"height":316},
+		{"id":"14c8e18a35b4e2d7","type":"text","text":"Calendar","x":-10720,"y":4969,"width":250,"height":60},
+		{"id":"1cbc27f06512c213","type":"text","text":"Calendar提供的日曆","x":-10220,"y":4969,"width":250,"height":60},
+		{"id":"b2ca23faa11eeca5","type":"text","text":"Calendar bases","x":-10720,"y":4683,"width":250,"height":60},
+		{"id":"6da23952a074162a","type":"text","text":"[[考古題筆記]]中的考古題複習日曆","x":-10220,"y":4683,"width":250,"height":60},
+		{"id":"6edfb677cb372325","type":"text","text":"![[本月目標與預計執行事項]]","x":-11520,"y":4651,"width":480,"height":380},
+		{"id":"e94cfc2713a6b268","type":"text","text":"平行互見表","x":-11880,"y":4811,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"49184f428431873e","fromNode":"6b03f23392bb369f","fromSide":"right","toNode":"90810f55403190be","toSide":"left"},
+		{"id":"9bcb0e2c0ddb2a62","fromNode":"14c8e18a35b4e2d7","fromSide":"right","toNode":"1cbc27f06512c213","toSide":"left"},
+		{"id":"6db52b9872b4ebf2","fromNode":"fd24c12bf06c9ef1","fromSide":"right","toNode":"991a1769a0d4ecac","toSide":"left"},
+		{"id":"ca7abbbefe1611a7","fromNode":"c815144bf0140895","fromSide":"right","toNode":"6b03f23392bb369f","toSide":"left"},
+		{"id":"550090b531cbfd52","fromNode":"e94cfc2713a6b268","fromSide":"right","toNode":"6edfb677cb372325","toSide":"left"},
+		{"id":"0fa7670635a17749","fromNode":"b2ca23faa11eeca5","fromSide":"right","toNode":"6da23952a074162a","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{},
+		"startNode":"a3f587f61569271c"
+	}
+}

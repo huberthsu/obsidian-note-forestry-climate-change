@@ -1,11 +1,9 @@
 ---
 publish: true
-aliases:
-  - 考古題筆記模板
 title: 考古題筆記模板
 created: 2026-08-10T23:40:51.953Z
-modified: 2026-08-11T04:15:11.257Z
-published: 2026-08-11T04:15:11.257Z
+modified: 2026-08-11T04:41:55.083Z
+published: 2026-08-11T04:41:55.083Z
 category:
   - "[[Exam notes]]"
 tags:

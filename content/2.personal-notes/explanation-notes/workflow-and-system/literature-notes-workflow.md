@@ -3,9 +3,9 @@ publish: true
 aliases:
   - 文獻筆記工作流
 title: 文獻筆記工作流
-created: 2026-07-21T02:42:39.738Z
-modified: 2026-08-11T01:09:08.189Z
-published: 2026-08-11T01:09:08.189Z
+created: 2026-08-11T01:45:38.432Z
+modified: 2026-08-11T01:52:16.535Z
+published: 2026-08-11T01:52:16.535Z
 tags:
   - 工作流
   - 康乃爾筆記法
@@ -13,6 +13,9 @@ tags:
 類別:
   - "[[Explanation|說明]]"
   - 工作流與系統
+category:
+  - Exam notes
+  - Workflow and system
 in:
   - 個人note
 parent:

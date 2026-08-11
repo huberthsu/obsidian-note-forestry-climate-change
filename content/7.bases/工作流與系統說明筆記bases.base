@@ -1,0 +1,12 @@
+filters:
+  and:
+    - 類別.contains(link("說明"))
+views:
+  - type: table
+    name: 工作流與系統說明筆記
+    filters:
+      and:
+        - and:
+            - '!file.inFolder("5.模板")'
+            - and:
+                - 類別.contains("工作流與系統")

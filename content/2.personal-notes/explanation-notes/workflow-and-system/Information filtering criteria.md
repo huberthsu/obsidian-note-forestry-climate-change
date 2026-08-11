@@ -3,14 +3,17 @@ publish: true
 aliases:
   - 資訊篩選標準
 title: 資訊篩選標準
-created: 2026-07-21T02:42:39.732Z
-modified: 2026-08-11T01:08:43.856Z
-published: 2026-08-11T01:08:43.856Z
+created: 2026-08-11T01:45:30.229Z
+modified: 2026-08-11T01:52:10.708Z
+published: 2026-08-11T01:52:10.708Z
 tags:
   - 工作流
 類別:
   - "[[Explanation|說明]]"
   - 工作流與系統
+category:
+  - Exam notes
+  - Workflow and system
 in:
   - 個人note
 parent:

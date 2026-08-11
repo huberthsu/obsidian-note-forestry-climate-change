@@ -30,16 +30,3 @@ views:
       note.科目: 107
       note.考題年分: 88
       note.高考普考特考: 118
-  - type: table
-    name: to do
-    filters:
-      and:
-        - 狀態 == ["to do"]
-    order:
-      - file.name
-      - 下次複習時間
-  - type: table
-    name: done
-    filters:
-      and:
-        - 狀態 == ["done"]

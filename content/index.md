@@ -4,8 +4,8 @@ aliases:
   - 森林與氣候變遷的筆記
 title: 森林與氣候變遷的筆記
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-08-11T06:36:55.723Z
-published: 2026-08-11T06:36:55.723Z
+modified: 2026-08-11T06:43:37.601Z
+published: 2026-08-11T06:43:37.601Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -28,7 +28,7 @@ published: 2026-08-11T06:36:55.723Z
 
 ---
 
-# 網站Content介紹
+# Content介紹
 
 ## 1. categories
 
@@ -42,24 +42,21 @@ published: 2026-08-11T06:36:55.723Z
 
 ## 2.personal-notes
 
-- english-learning-notes
-- exam-notes
-- explanation-notes
-  - plugins-and-features
-  - workflow-and-system
+- 存放我所有記錄的筆記
 
 ## 4. canvas-and-mindmaps
 
-- canvas
-- mindmaps
+- 存放所有畫布與心智圖
 
 ## 5. templates-for-web
+
+- 存放各類型筆記所使用的模板
 
 ## 7.bases
 
 ---
 
-# 我的Obsidian架構與工作流實際應用
+# Obsidian架構與工作流實際應用
 
 ## Obsidian架構
 

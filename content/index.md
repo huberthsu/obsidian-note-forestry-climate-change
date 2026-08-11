@@ -5,8 +5,8 @@ aliases:
   - 森林與氣候變遷的數位花園
 title: 森林與氣候變遷的數位花園
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-08-11T14:03:43.810Z
-published: 2026-08-11T14:03:43.810Z
+modified: 2026-08-11T14:12:38.965Z
+published: 2026-08-11T14:12:38.965Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -74,27 +74,27 @@ published: 2026-08-11T14:03:43.810Z
 - 查看[[Workflow-system-overview|實際工作系統說明]]
 - 查看[所有工作流相關筆記](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/2.personal-notes/explanation-notes/workflow-and-system/)
 
-### 目標與任務管理工作流
+## 目標與任務管理工作流
 
 - [[目標與任務管理工作流.canvas]]
 
-### 高普考準備工作流
+## 高普考準備工作流
 
 - [[Exam notes|考古題筆記入口]]
 - [[Exam notes template|考古題筆記模板]]
 - [[高普考準備工作流.canvas]]
 
-### 英文學習工作流
+## 英文學習工作流
 
 - [[English learning notes|英文學習筆記入口]]
 - [[English study notes template|英文學習筆記模板]]
 - [[英文學習工作流.canvas]]
 
-### 文獻筆記工作流
+## 文獻筆記工作流
 
 - [[Literature-notes-workflow|文獻筆記工作流]]
 - [[Literature notes template|文獻筆記模板]]
 
-### 外掛介紹與應用
+## 外掛介紹與應用
 
 - 查看[所有外掛介紹相關筆記](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/2.personal-notes/explanation-notes/plugins-and-features/)

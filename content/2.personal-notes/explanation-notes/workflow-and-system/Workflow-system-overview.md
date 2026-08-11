@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-11T02:57:52.278Z
-modified: 2026-08-11T12:52:54.027Z
-published: 2026-08-11T12:52:54.027Z
+modified: 2026-08-11T13:52:09.629Z
+published: 2026-08-11T13:52:09.629Z
 tags:
   - 工作流
 category:
@@ -16,22 +16,22 @@ in:
 parent:
 sibling:
   - "[[vault架構與系統.canvas]]"
-  - "[[工作流系統應用.canvas]]"
+  - "[[實際工作系統.canvas]]"
 child:
   - "[[高普考準備工作流.canvas]]"
   - "[[本月目標與預計執行事項]]"
   - "[[To do]]"
   - "[[Temporary record of questions and thoughts]]"
   - "[[Literature-notes-workflow|文獻筆記工作流]]"
-  - "[[目標與任務管理系統.canvas]]"
+  - "[[目標與任務管理工作流.canvas]]"
   - "[[英文學習工作流.canvas]]"
   - "[[Workspace description|工作區說明]]"
 ---
 
 # Obsidian 工作流系統說明畫布
 
-- 想了解所有工作流系統，可參考[[工作流系統應用.canvas]]
-  - 針對目標與任務管理系統: [[目標與任務管理系統.canvas]]
+- 想了解所有工作流系統，可參考[[實際工作系統.canvas]]
+  - 針對目標與任務管理系統: [[目標與任務管理工作流.canvas]]
   - 針對高普考:[[高普考準備工作流.canvas]]
   - 針對英文學習:[[英文學習工作流.canvas]]
 

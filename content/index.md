@@ -5,8 +5,8 @@ aliases:
   - 森林與氣候變遷的數位花園
 title: 森林與氣候變遷的數位花園
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-08-11T11:51:05.419Z
-published: 2026-08-11T11:51:05.419Z
+modified: 2026-08-11T13:54:34.659Z
+published: 2026-08-11T13:54:34.659Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -34,12 +34,14 @@ published: 2026-08-11T11:51:05.419Z
 ## 1. categories
 
 - 各類型筆記的入口，裡面有相關類型筆記資料庫
-  - [[English learning notes|英文學習筆記]]
-  - [[Exam notes|考古題筆記]]
-  - [[Explanation notes|說明]]
-  - [[Ideas and thoughts notes|靈感與思考筆記]]
   - [[Literature notes|文獻筆記]]
   - [[Zettelkasten notes|卡片盒筆記]]
+  - [[Exam notes|考古題筆記]]
+  - [[English learning notes|英文學習筆記]]
+  - [[Explanation notes|說明]]
+    - [外掛說明相關筆記](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/2.personal-notes/explanation-notes/plugins-and-features/)
+    - [工作流與筆記系統說明](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/2.personal-notes/explanation-notes/workflow-and-system/)
+  - [[Ideas and thoughts notes|靈感與思考筆記]]
 
 ## 2.personal-notes
 
@@ -48,7 +50,7 @@ published: 2026-08-11T11:51:05.419Z
 ## 4. canvas-and-mindmaps
 
 - 存放所有畫布與心智圖
-- [[Canvas and mindmaps overview|畫布與心智圖入口]]
+  - [[Canvas and mindmaps overview|畫布與心智圖入口]]
 
 ## 5. templates-for-web
 
@@ -56,44 +58,43 @@ published: 2026-08-11T11:51:05.419Z
 
 ## 7.bases
 
-- 所有bases入口[[Bases overview|Bases 總覽]]
+- 所有bases入口
+  - [[Bases overview|Bases 總覽]]
 
 ---
 
-# Obsidian架構、知識管理與工作流實際應用
+# Obsidian知識管理
 
-## Obsidian架構與知識管理
-
-查看[[Obsidian wiki linking, knowledge organization, and data management|Obsidian雙向連結、知識整理與資料管理]]
+- 查看[[Obsidian wiki linking, knowledge organization, and data management|Obsidian雙向連結、知識整理與資料管理]]
 
 ---
 
-## 工作流實際應用
+# 實際應用
 
-- 查看[[Workflow-system-overview|整體工作流]]
+- 查看[[Workflow-system-overview|實際工作系統說明]]
 - 查看[所有工作流相關筆記](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/2.personal-notes/explanation-notes/workflow-and-system/)
 
-### 目標與任務管理系統
+### 目標與任務管理工作流
 
-- [[目標與任務管理系統.canvas]]
+- [[目標與任務管理工作流.canvas]]
 
-### 高普考準備
+### 高普考準備工作流
 
 - [[Exam notes|考古題筆記入口]]
 - [[Exam notes template|考古題筆記模板]]
 - [[高普考準備工作流.canvas]]
 
-### 英文學習
+### 英文學習工作流
 
 - [[English learning notes|英文學習筆記入口]]
 - [[English study notes template|英文學習筆記模板]]
 - [[英文學習工作流.canvas]]
 
-### 文獻摘要、整理方法
+### 文獻筆記工作流
 
 - [[Literature-notes-workflow|文獻筆記工作流]]
 - [[Literature notes template|文獻筆記模板]]
 
-### 外掛介紹
+### 外掛介紹與應用
 
 - 查看[所有外掛介紹相關筆記](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/2.personal-notes/explanation-notes/plugins-and-features/)

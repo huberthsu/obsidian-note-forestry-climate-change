@@ -4,8 +4,8 @@ aliases:
   - Breadcrumbs外掛說明
 title: Breadcrumbs外掛說明
 created: 2026-08-01T16:48:06.861Z
-modified: 2026-08-11T11:49:57.912Z
-published: 2026-08-11T11:49:57.912Z
+modified: 2026-08-11T14:10:20.897Z
+published: 2026-08-11T14:10:20.897Z
 tags:
   - 關聯圖
   - obsidian
@@ -46,7 +46,7 @@ child:
 
 # 可用code block叫出的特殊的圖
 
-`breadcrumbs` code block 支援三種 type：`tree`、`mermaid`、`markmap`（心智圖）。
+`breadcrumbs` code block 支援三種 type：`tree`、`mermaid`、`markmap`（心智圖）
 
 ## mermaid（關係圖）
 

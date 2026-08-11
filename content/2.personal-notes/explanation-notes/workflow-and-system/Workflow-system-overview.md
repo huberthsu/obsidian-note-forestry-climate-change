@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-11T02:57:52.278Z
-modified: 2026-08-11T07:41:24.482Z
-published: 2026-08-11T07:41:24.482Z
+modified: 2026-08-11T08:37:13.452Z
+published: 2026-08-11T08:37:13.452Z
 tags:
   - 工作流
 category:
@@ -165,9 +165,9 @@ child:
 
 - 參考[[How to find links between notes|如何發現筆記之間的連結]]
 - **工具**：
-  - [[breadcrumbs外掛說明]]
-  - [[inline local graph 外掛說明]]
-  - [[Neighbourhood Graph外掛說明]]
+  - [[breadcrumbs plugins]]
+  - [[inline local graph plugins]]
+  - [[Neighbourhood Graph plugins]]
 
 ---
 

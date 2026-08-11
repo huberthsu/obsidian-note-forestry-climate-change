@@ -51,9 +51,9 @@
 		{"id":"9461e0dd38b54a6b","type":"text","text":"[[claude/skills/zettelkasten/SKILL.md|卡片盒筆記法skill]]","x":-2560,"y":2580,"width":250,"height":60},
 		{"id":"f13d59fde5f089a7","type":"text","text":"建立關聯筆記之間的層級","x":-2320,"y":2900,"width":250,"height":60},
 		{"id":"c5a50979855aec3a","type":"text","text":"關聯筆記local graph","x":-2320,"y":3001,"width":250,"height":60},
-		{"id":"8bde9e1507c66bf4","type":"text","text":"[[breadcrumbs外掛說明]]","x":-2620,"y":2900,"width":250,"height":60},
-		{"id":"2cc1428b2f586447","type":"text","text":"[[inline local graph 外掛說明]]","x":-2620,"y":3001,"width":250,"height":60},
-		{"id":"1fd5e3951102a8d1","type":"text","text":"[[Neighbourhood Graph外掛說明]]","x":-2615,"y":3106,"width":250,"height":60},
+		{"id":"8bde9e1507c66bf4","type":"text","text":"[[breadcrumbs plugins]]","x":-2620,"y":2900,"width":250,"height":60},
+		{"id":"2cc1428b2f586447","type":"text","text":"[[inline local graph plugins]]","x":-2620,"y":3001,"width":250,"height":60},
+		{"id":"1fd5e3951102a8d1","type":"text","text":"[[Neighbourhood Graph plugins]]","x":-2615,"y":3106,"width":250,"height":60},
 		{"id":"287893c3d8e291ba","type":"text","text":"shared tag","x":-2320,"y":3106,"width":250,"height":60}
 	],
 	"edges":[

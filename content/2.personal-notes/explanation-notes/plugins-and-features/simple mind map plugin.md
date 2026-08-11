@@ -4,8 +4,8 @@ aliases:
   - simple mind map 外掛說明
 title: simple mind map 外掛說明
 created: 2026-08-03T04:01:43.030Z
-modified: 2026-08-11T08:01:21.959Z
-published: 2026-08-11T08:01:21.959Z
+modified: 2026-08-11T08:32:31.383Z
+published: 2026-08-11T08:32:31.383Z
 tags:
   - 心智圖
   - 工作流
@@ -16,7 +16,8 @@ in:
   - 個人note
 parent:
 sibling:
-  - "[[breadcrumbs外掛說明]]"
+  - "[[breadcrumbs plugins]]"
+  - "[[inline local graph plugins]]"
 child:
 ---
 
@@ -24,7 +25,7 @@ child:
 
 - 可以使用gui介面創建與編輯心智圖，再用!\[\[]]功能插入到筆記內
 - 可以用心智圖檢視該筆記架構
-- 重點為該筆記架構與自由編輯，而非[[breadcrumbs外掛說明]]顯示不同筆記間的層級架構
+- 重點為該筆記架構與自由編輯，而非[[breadcrumbs plugins]]顯示不同筆記間的層級架構
 
 # 使用說明
 

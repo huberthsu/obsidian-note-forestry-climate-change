@@ -11,3 +11,9 @@ views:
             - '!file.inFolder("5.templates")'
             - and:
                 - '!file.inFolder("5.templates-for-web")'
+    order:
+      - file.name
+      - tags
+      - parent
+      - sibling
+      - child

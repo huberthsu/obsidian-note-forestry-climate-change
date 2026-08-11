@@ -10,3 +10,9 @@ views:
             - '!file.inFolder("5.templates")'
             - and:
                 - category.contains("Workflow and system")
+    order:
+      - file.name
+      - tags
+      - parent
+      - sibling
+      - child

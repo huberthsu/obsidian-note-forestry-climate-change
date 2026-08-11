@@ -10,6 +10,8 @@ views:
             - '!file.inFolder("5.templates")'
             - and:
                 - category.contains("Workflow and system")
+                - and:
+                    - '!file.inFolder("5.templates-for-web")'
     order:
       - file.name
       - tags

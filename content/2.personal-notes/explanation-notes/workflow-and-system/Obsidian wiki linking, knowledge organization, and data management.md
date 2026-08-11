@@ -4,8 +4,8 @@ aliases:
   - Obsidian雙向連結、知識整理與資料管理
 title: Obsidian雙向連結、知識整理與資料管理
 created: 2026-08-11T06:58:31.404Z
-modified: 2026-08-11T07:44:15.559Z
-published: 2026-08-11T07:44:15.559Z
+modified: 2026-08-11T12:41:48.119Z
+published: 2026-08-11T12:41:48.119Z
 tags:
   - 工作流
   - obsidian
@@ -32,6 +32,8 @@ child:
   3. 1.類別/該筆記內，放置一個bases，篩選出所有位於2.個人note/子資料夾中的筆記
   4. 創立筆記時，於Metadata的類別欄位選擇[[Literature notes|文獻筆記]]、[[Exam notes|考古題筆記]]、[[Ideas and thoughts notes|靈感與思考筆記]]、[[Projects notes|專案筆記]]、[[Explanation notes|說明]]
   5. 創立筆記後，於tags欄位選擇或創立與該筆記相關的標籤，之後由bases的過濾功能選擇所有與該tags相關的筆記
+- 參考資料
+  - [Obsidian CEO vault介紹影片](https://www.youtube.com/watch?v=3U149EP46Vs\&t=151s)
 
 # 知識管理心得與想法
 
@@ -55,8 +57,12 @@ child:
 - 能放心將所有筆記丟到同個資料夾中，因為obsidian可以一鍵創立一個包含了所有筆記的資料庫。所以只要建立一個筆記來專門放置這個資料庫([[Bases overview|Bases 總覽]])。接著利用資料庫中的篩選功能，從任一欄位中選擇任意關鍵字，這時就會出現包含了這個或這些關鍵字的所有筆記。
 - ==具體應用參考1.categories的6則筆記==
 
+## 協助思考筆記間關聯的外掛工具
+
+- 簡介參考[[How to find links between notes|如何發現筆記之間的連結]]
+- 工具使用說明參考：
+  - [[Breadcrumbs plugins]]
+  - [[Inline local graph plugins]]
+  - [[Neighbourhood Graph plugins]]
+
 ---
-
-# 參考資料
-
-- [Obsidian CEO vault介紹影片](https://www.youtube.com/watch?v=3U149EP46Vs\&t=151s)

@@ -4,9 +4,9 @@ aliases:
   - 卡片盒筆記模板
 title: 卡片盒筆記模板
 created: 2026-08-10T23:40:57.356Z
-modified: 2026-08-11T11:54:53.751Z
-published: 2026-08-11T11:54:53.751Z
-類別:
+modified: 2026-08-11T13:16:23.138Z
+published: 2026-08-11T13:16:23.138Z
+category:
   - "[[Zettelkasten notes]]"
 tags:
 摘要:

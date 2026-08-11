@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-11T02:57:52.278Z
-modified: 2026-08-11T11:51:05.369Z
-published: 2026-08-11T11:51:05.369Z
+modified: 2026-08-11T12:52:54.027Z
+published: 2026-08-11T12:52:54.027Z
 tags:
   - 工作流
 category:
@@ -21,11 +21,11 @@ child:
   - "[[高普考準備工作流.canvas]]"
   - "[[本月目標與預計執行事項]]"
   - "[[To do]]"
-  - "[[工作區說明]]"
-  - "[[暫時紀錄的問題與想法]]"
+  - "[[Temporary record of questions and thoughts]]"
   - "[[Literature-notes-workflow|文獻筆記工作流]]"
   - "[[目標與任務管理系統.canvas]]"
   - "[[英文學習工作流.canvas]]"
+  - "[[Workspace description|工作區說明]]"
 ---
 
 # Obsidian 工作流系統說明畫布
@@ -39,7 +39,7 @@ child:
 
 ## 工作區分配建議
 
-- 可參考[[工作區說明]]
+- 可參考[[Workspace description]]
 
 ## 任務管理系統
 
@@ -122,7 +122,7 @@ child:
 
 - 使用時機：日常想法、觀察、個人洞見、待思考問題
 - 特殊用途-便利貼
-  - 可以使用[[Quickadd plugins]]，將突然想到的問題記錄到[[暫時紀錄的問題與想法]]
+  - 可以使用[[Quickadd plugins]]，將突然想到的問題記錄到[[Temporary record of questions and thoughts]]
 - **管理工具**：[[Ideas and thoughts notes|靈感與思考筆記]]
 - 使用模板: [[Inspiration notes template|靈感紀錄模板]]
 
@@ -158,16 +158,6 @@ child:
   - 建立timestamp配合紀錄影片重點
   - 使用mouse tooltup translator即時翻譯
 - 使用模板: [[English study notes template|英文學習筆記模板]]
-
----
-
-### 建立筆記之間關聯
-
-- 參考[[How to find links between notes|如何發現筆記之間的連結]]
-- **工具**：
-  - [[Breadcrumbs plugins]]
-  - [[Inline local graph plugins]]
-  - [[Neighbourhood Graph plugins]]
 
 ---
 

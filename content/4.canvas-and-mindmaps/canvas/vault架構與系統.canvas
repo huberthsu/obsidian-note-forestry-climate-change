@@ -47,7 +47,7 @@
 		{"id":"fb267d9ada15d8d7","type":"text","text":"組織筆記、心智圖、思考","x":2540,"y":3420,"width":250,"height":60},
 		{"id":"d10c269d5056cde5","type":"text","text":"[[Simple mind map plugin]]","x":2260,"y":3262,"width":250,"height":60},
 		{"id":"667e918e07845b3f","type":"text","text":"建立心智圖","x":2540,"y":3262,"width":250,"height":60},
-		{"id":"7a3d84928237058c","type":"text","text":"![[暫時紀錄的問題與想法]]","x":3540,"y":3280,"width":390,"height":260},
+		{"id":"7a3d84928237058c","type":"text","text":"![[Temporary record of questions and thoughts]]","x":3540,"y":3280,"width":390,"height":260},
 		{"id":"1a6b508deb6ebd23","type":"text","text":"![[5.模板/靈感紀錄模板]]","x":1460,"y":3695,"width":360,"height":150,"color":"3"},
 		{"id":"2cc1428b2f586447","type":"text","text":"[[Inline local graph plugins]]","x":2260,"y":2453,"width":250,"height":60},
 		{"id":"8bde9e1507c66bf4","type":"text","text":"[[Breadcrumbs plugins]]","x":2260,"y":2352,"width":250,"height":60},

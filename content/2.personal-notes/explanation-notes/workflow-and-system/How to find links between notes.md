@@ -4,19 +4,18 @@ aliases:
   - 如何發現筆記之間的連結
 title: 如何發現筆記之間的連結
 created: 2026-08-11T03:01:10.775Z
-modified: 2026-08-11T11:49:57.849Z
-published: 2026-08-11T11:49:57.849Z
+modified: 2026-08-11T12:42:06.484Z
+published: 2026-08-11T12:42:06.484Z
 tags:
   - 關聯圖
   - 工作流
   - "#obsidian"
 category:
-  - Workflow and system
   - "[[Explanation notes]]"
+  - Workflow and system
 in:
   - 個人note
 parent:
-  - "[[Workflow-system-overview|工作流系統說明]]"
 sibling:
   - "[[Organizing tags helps with deeper understanding, searching and extraction, and discovering connections between notes.|整理標籤有助於深入理解、被搜尋與提取、發現筆記之間的連結]]"
 child:

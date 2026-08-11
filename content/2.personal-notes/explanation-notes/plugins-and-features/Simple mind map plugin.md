@@ -4,8 +4,8 @@ aliases:
   - Simple mind map 外掛說明
 title: Simple mind map 外掛說明
 created: 2026-08-03T04:01:43.030Z
-modified: 2026-08-11T11:49:57.918Z
-published: 2026-08-11T11:49:57.918Z
+modified: 2026-08-11T12:16:45.477Z
+published: 2026-08-11T12:16:45.477Z
 tags:
   - 心智圖
   - 工作流
@@ -16,8 +16,7 @@ in:
   - 個人note
 parent:
 sibling:
-  - "[[Breadcrumbs plugins]]"
-  - "[[Inline local graph plugins]]"
+  - "[[Mind map files can be inserted into the canvas|心智圖可以插入到畫布中]]"
 child:
 ---
 

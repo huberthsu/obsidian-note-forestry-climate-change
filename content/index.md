@@ -4,8 +4,8 @@ aliases:
   - 森林與氣候變遷的筆記
 title: 森林與氣候變遷的筆記
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-08-11T05:00:16.402Z
-published: 2026-08-11T05:00:16.402Z
+modified: 2026-08-11T05:14:27.348Z
+published: 2026-08-11T05:14:27.348Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -17,25 +17,48 @@ published: 2026-08-11T05:00:16.402Z
 
 # 網站內容說明
 
-> [!tip]
-> 會努力定期更新 -> **英文學習和高普考準備**
+> [!tip] 會努力定期更新
+> -> **英文學習和高普考準備**
 
-> [!question]
-> 有時間或有新發現才更新 -> Obsidian系統與架構
+> [!question] 有時間，且有新發現或新想法才更新
+> -> Obsidian系統與架構
 
-> [!danger]
-> 僅分享模板與工作流，後續不再更新 -> 文獻筆記、卡片盒筆記、靈感與思考筆記
+> [!danger] 僅分享模板與工作流，後續不再更新
+> -> 文獻筆記、卡片盒筆記、靈感與思考筆記
 
 ---
 
-# 我的Obsidian系統與架構
+# 網站Content介紹
+
+## 1. categories
+
+## 2.personal-notes
+
+- english-learning-notes
+- exam-notes
+- explanation-notes
+  - plugins-and-features
+  - workflow-and-system
+
+## 4. canvas-and-mindmaps
+
+- canvas
+- mindmaps
+
+## 5. templates-for-web
+
+## 7.bases
+
+---
+
+# 我的Obsidian架構與工作流實際應用
 
 ## Obsidian架構
 
 - vault資料夾架構與管理方法
 - 筆記類型與模板參考
 
-## 工作流應用系統
+## 工作流應用
 
 ### 目標與任務管理系統
 

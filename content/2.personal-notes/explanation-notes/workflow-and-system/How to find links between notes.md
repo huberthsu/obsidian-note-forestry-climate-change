@@ -4,19 +4,19 @@ aliases:
   - 如何發現筆記之間的連結
 title: 如何發現筆記之間的連結
 created: 2026-07-21T02:42:39.704Z
-modified: 2026-08-10T23:41:14.047Z
-published: 2026-08-10T23:41:14.047Z
+modified: 2026-08-11T01:01:14.324Z
+published: 2026-08-11T01:01:14.324Z
 tags:
   - 關聯圖
   - 工作流
   - "#obsidian"
 類別:
-  - "[[說明]]"
+  - "[[Explanation]]"
   - 工作流與系統
 in:
   - 個人note
 parent:
-  - "[[workflow-system-overview|工作流系統說明]]"
+  - "[[Workflow-system-overview|工作流系統說明]]"
 sibling:
   - "[[Organizing tags helps with deeper understanding, searching and extraction, and discovering connections between notes.|整理標籤有助於深入理解、被搜尋與提取、發現筆記之間的連結]]"
 child:
@@ -31,7 +31,7 @@ child:
 - 關聯圖
   - 利用[[Neighbourhood Graph外掛說明]]與[[inline local graph 外掛說明]]功能，從關聯圖的連結與**shared tags**中找尋潛在相關筆記
 - 反向連結-未連結但題級本筆記的檔案
-  - 可結合別名欄位應用，參考[[aliases功能搭配未連結但提及本筆記的檔案]]
+  - 可結合別名欄位應用，參考[[The aliases function can be used with files that are not linked to but mention this note.]]
 - bases
   - 於bases中用過濾功能選擇相關tags、檔案標籤
 - claudian

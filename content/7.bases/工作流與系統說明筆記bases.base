@@ -1,6 +1,6 @@
 filters:
   and:
-    - 類別.contains(link("說明"))
+    - category.contains("Explantation notes")
 views:
   - type: table
     name: 工作流與系統說明筆記
@@ -9,4 +9,4 @@ views:
         - and:
             - '!file.inFolder("5.模板")'
             - and:
-                - 類別.contains("工作流與系統")
+                - category.contains("Workflow and system")

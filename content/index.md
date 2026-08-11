@@ -2,10 +2,11 @@
 publish: true
 aliases:
   - 森林與氣候變遷的筆記
-title: 森林與氣候變遷的筆記
+  - 森林與氣候變遷的數位花園
+title: 森林與氣候變遷的數位花園
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-08-11T08:41:09.444Z
-published: 2026-08-11T08:41:09.444Z
+modified: 2026-08-11T11:47:54.701Z
+published: 2026-08-11T11:47:54.701Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 

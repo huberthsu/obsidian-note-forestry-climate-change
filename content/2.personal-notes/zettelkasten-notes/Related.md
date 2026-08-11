@@ -4,8 +4,8 @@ aliases:
   - 關聯
 title: 關聯
 created: 2026-07-21T02:49:40.909Z
-modified: 2026-08-11T12:07:03.500Z
-published: 2026-08-11T12:07:03.500Z
+modified: 2026-08-11T14:33:15.553Z
+published: 2026-08-11T14:33:15.553Z
 tags:
   - 工作流
 category:
@@ -19,7 +19,6 @@ sibling:
   - "[[Surprise|意外]]"
   - "[[Use|用途]]"
 child:
-"---\n\n---\n# 關於篩選標準中的關聯\n- [ ] 文獻內容是否與我有關聯\n\n# 與其他筆記的關聯與理由\n* parent理由\n\t* [[Information filtering criteria|資訊篩選標準]]-屬於資訊篩選標準中的一項\n* sibling理由\n\t* [[Inspiration|啟發]]、[[Use|用途]]、[[Surprise|意外]]理由-同為篩選標準\n* child": (所有在文獻筆記篩選標準中，有選擇**關聯**的筆記)
 ---
 
 ---
@@ -34,7 +33,7 @@ child:
   - [[Information filtering criteria|資訊篩選標準]]-屬於資訊篩選標準中的一項
 - sibling理由
   - [[Inspiration|啟發]]、[[Use|用途]]、[[Surprise|意外]]理由-同為篩選標準
-- child:: (所有在文獻筆記篩選標準中，有選擇**關聯**的筆記)
+- child: (所有在文獻筆記篩選標準中，有選擇**關聯**的筆記)
   - 理由
 
 # 我的其他思考

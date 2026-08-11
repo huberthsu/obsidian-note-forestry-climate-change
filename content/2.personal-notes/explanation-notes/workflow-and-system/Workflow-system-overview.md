@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-11T02:57:52.278Z
-modified: 2026-08-11T02:57:52.299Z
-published: 2026-08-11T02:57:52.299Z
+modified: 2026-08-11T06:31:18.628Z
+published: 2026-08-11T06:31:18.628Z
 tags:
   - 工作流
 category:
@@ -80,7 +80,7 @@ child:
   - 內容來源為「一份文件」，架構依據原文章節
   - 著重「原文說了什麼」
 - \*\*參考[[literature-notes-workflow]]
-- **管理工具**：[[文獻筆記]]
+- **管理工具**：[[Literature notes]]
 
 * 核心概念：
   - 以**康乃爾+[[Information filtering criteria]]** 為架構撰寫卡片
@@ -106,7 +106,7 @@ child:
   - 當我讀文獻，或從網路來源與其他來源，對某一個知識點有自己的想法
   - 單位為「一個主張/論點」，架構依據我的想法，可以引用多篇文獻佐證
   - 著重「我認為什麼、為什麼」
-- 管理工具: [[卡片盒筆記]]
+- 管理工具: [[Zettelkasten notes]]
 - 內容:
   - 核心內容
   - 與其他筆記的關聯
@@ -126,7 +126,7 @@ child:
 - 使用時機：日常想法、觀察、個人洞見、待思考問題
 - 特殊用途-便利貼
   - 可以使用[[quickadd外掛說明]]，將突然想到的問題記錄到[[暫時紀錄的問題與想法]]
-- **管理工具**：[[靈感與思考]]
+- **管理工具**：[[Ideas and thoughts notes]]
 - 使用模板: [[5.模板/靈感紀錄模板]]
 
 ---
@@ -188,7 +188,7 @@ child:
   1. 以1.類別/中，直接創建**資料夾類型筆記**作為檔案搜尋入口
   2. 在2.個人note/中，依照筆記類型，放到相應的子資料夾(文獻筆記、卡片盒筆記、考古題、專案、說明、靈感與思考)。
   3. 1.類別/該筆記內，放置一個bases，篩選出所有位於2.個人note/子資料夾中的筆記
-  4. 創立筆記時，於Metadata的類別欄位選擇[[文獻筆記]]、[[Exam notes]]、[[靈感與思考]]、[[專案]]、[[Explanation notes]]
+  4. 創立筆記時，於Metadata的類別欄位選擇[[Literature notes]]、[[Exam notes]]、[[Ideas and thoughts notes]]、[[Projects notes]]、[[Explanation notes]]
   5. 創立筆記後，於tags欄位選擇或創立與該筆記相關的標籤，之後由bases的過濾功能選擇所有與該tags相關的筆記
 - 參考資料
   - [obsidian ceo vault介紹影片](https://www.youtube.com/watch?v=3U149EP46Vs\&t=151s)

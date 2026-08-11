@@ -1,6 +1,6 @@
 filters:
   and:
-    - category.contains("Explantation notes")
+    - category.contains("Explanation notes")
 views:
   - type: table
     name: 工作流與系統說明筆記

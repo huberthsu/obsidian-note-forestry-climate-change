@@ -4,16 +4,16 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-11T01:45:37.462Z
-modified: 2026-08-11T02:00:58.996Z
-published: 2026-08-11T02:00:58.996Z
+modified: 2026-08-11T02:19:03.514Z
+published: 2026-08-11T02:19:03.514Z
 tags:
   - 工作流
 類別:
   - 工作流與系統
-  - "[[Explanation|說明]]"
+  - "[[Explanation notes|說明]]"
 category:
   - Workflow and system
-  - Explantation notes
+  - Explanation notes
 in:
   - 個人note
 parent:
@@ -191,7 +191,7 @@ child:
   1. 以1.類別/中，直接創建**資料夾類型筆記**作為檔案搜尋入口
   2. 在2.個人note/中，依照筆記類型，放到相應的子資料夾(文獻筆記、卡片盒筆記、考古題、專案、說明、靈感與思考)。
   3. 1.類別/該筆記內，放置一個bases，篩選出所有位於2.個人note/子資料夾中的筆記
-  4. 創立筆記時，於Metadata的類別欄位選擇[[文獻筆記]]、[[Exam notes]]、[[靈感與思考]]、[[專案]]、[[Explanation]]
+  4. 創立筆記時，於Metadata的類別欄位選擇[[文獻筆記]]、[[Exam notes]]、[[靈感與思考]]、[[專案]]、[[Explanation notes]]
   5. 創立筆記後，於tags欄位選擇或創立與該筆記相關的標籤，之後由bases的過濾功能選擇所有與該tags相關的筆記
 - 參考資料
   - [obsidian ceo vault介紹影片](https://www.youtube.com/watch?v=3U149EP46Vs\&t=151s)

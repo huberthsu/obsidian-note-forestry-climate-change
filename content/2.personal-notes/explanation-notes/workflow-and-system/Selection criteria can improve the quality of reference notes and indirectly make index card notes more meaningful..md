@@ -4,16 +4,16 @@ aliases:
   - 篩選標準可以提高文獻筆記品質，也間接使卡片筆記有意義
 title: 篩選標準可以提高文獻筆記品質，也間接使卡片筆記有意義
 created: 2026-08-11T01:45:34.604Z
-modified: 2026-08-11T02:00:44.044Z
-published: 2026-08-11T02:00:44.044Z
+modified: 2026-08-11T02:18:51.074Z
+published: 2026-08-11T02:18:51.074Z
 tags:
   - 工作流
 類別:
-  - "[[Explanation]]"
+  - "[[Explanation notes]]"
   - 工作流與系統
 category:
-  - Explantation notes
   - Workflow and system
+  - Explanation notes
 in:
   - 個人note
 parent:

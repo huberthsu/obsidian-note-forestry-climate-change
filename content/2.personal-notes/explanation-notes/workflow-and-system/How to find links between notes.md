@@ -4,18 +4,18 @@ aliases:
   - 如何發現筆記之間的連結
 title: 如何發現筆記之間的連結
 created: 2026-08-11T01:45:28.568Z
-modified: 2026-08-11T02:00:18.232Z
-published: 2026-08-11T02:00:18.232Z
+modified: 2026-08-11T02:18:18.075Z
+published: 2026-08-11T02:18:18.075Z
 tags:
   - 關聯圖
   - 工作流
   - "#obsidian"
 類別:
-  - "[[Explanation|說明]]"
+  - "[[Explanation notes|說明]]"
   - 工作流與系統
 category:
   - Workflow and system
-  - Explantation notes
+  - Explanation notes
 in:
   - 個人note
 parent:

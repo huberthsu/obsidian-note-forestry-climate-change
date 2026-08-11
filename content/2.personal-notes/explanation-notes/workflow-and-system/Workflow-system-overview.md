@@ -4,16 +4,16 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-11T01:45:37.462Z
-modified: 2026-08-11T01:52:36.730Z
-published: 2026-08-11T01:52:36.730Z
+modified: 2026-08-11T02:00:58.996Z
+published: 2026-08-11T02:00:58.996Z
 tags:
   - 工作流
 類別:
   - 工作流與系統
   - "[[Explanation|說明]]"
 category:
-  - Exam notes
   - Workflow and system
+  - Explantation notes
 in:
   - 個人note
 parent:

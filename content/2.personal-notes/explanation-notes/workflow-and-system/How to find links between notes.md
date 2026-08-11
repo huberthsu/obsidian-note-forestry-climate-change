@@ -4,8 +4,8 @@ aliases:
   - 如何發現筆記之間的連結
 title: 如何發現筆記之間的連結
 created: 2026-08-11T01:45:28.568Z
-modified: 2026-08-11T01:51:58.503Z
-published: 2026-08-11T01:51:58.503Z
+modified: 2026-08-11T02:00:18.232Z
+published: 2026-08-11T02:00:18.232Z
 tags:
   - 關聯圖
   - 工作流
@@ -14,8 +14,8 @@ tags:
   - "[[Explanation|說明]]"
   - 工作流與系統
 category:
-  - Exam notes
   - Workflow and system
+  - Explantation notes
 in:
   - 個人note
 parent:

@@ -4,8 +4,8 @@ aliases:
   - 康乃爾與卡片盒筆記法的應用說明
 title: 康乃爾與卡片盒筆記法的應用說明
 created: 2026-08-11T01:45:31.335Z
-modified: 2026-08-11T01:52:14.256Z
-published: 2026-08-11T01:52:14.256Z
+modified: 2026-08-11T02:00:25.771Z
+published: 2026-08-11T02:00:25.771Z
 tags:
   - 筆記軟體
   - 卡片盒筆記法
@@ -14,8 +14,8 @@ tags:
   - "[[Explanation|說明]]"
   - 工作流與系統
 category:
-  - Exam notes
   - Workflow and system
+  - Explantation notes
 in:
   - 個人note
 parent:

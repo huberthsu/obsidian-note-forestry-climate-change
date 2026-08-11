@@ -4,8 +4,8 @@ aliases:
   - 康乃爾與卡片盒筆記法的應用說明
 title: 康乃爾與卡片盒筆記法的應用說明
 created: 2026-08-11T03:01:22.843Z
-modified: 2026-08-11T03:01:22.868Z
-published: 2026-08-11T03:01:22.868Z
+modified: 2026-08-11T11:51:05.342Z
+published: 2026-08-11T11:51:05.342Z
 tags:
   - 筆記軟體
   - 卡片盒筆記法
@@ -16,7 +16,7 @@ category:
 in:
   - 個人note
 parent:
-  - "[[literature-notes-workflow|文獻筆記工作流]]"
+  - "[[Literature-notes-workflow|文獻筆記工作流]]"
 sibling:
 child:
 ---

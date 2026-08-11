@@ -4,8 +4,8 @@ aliases:
   - 資訊篩選標準
 title: 資訊篩選標準
 created: 2026-08-11T03:01:15.742Z
-modified: 2026-08-11T03:01:15.748Z
-published: 2026-08-11T03:01:15.748Z
+modified: 2026-08-11T11:51:05.310Z
+published: 2026-08-11T11:51:05.310Z
 tags:
   - 工作流
 category:
@@ -14,7 +14,7 @@ category:
 in:
   - 個人note
 parent:
-  - "[[literature-notes-workflow|文獻筆記工作流]]"
+  - "[[Literature-notes-workflow|文獻筆記工作流]]"
 sibling:
 child:
 ---

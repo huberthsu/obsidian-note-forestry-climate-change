@@ -4,8 +4,8 @@ aliases:
   - 卡片盒筆記模板
 title: 卡片盒筆記模板
 created: 2026-08-10T23:40:57.356Z
-modified: 2026-08-11T06:31:18.746Z
-published: 2026-08-11T06:31:18.746Z
+modified: 2026-08-11T11:54:53.751Z
+published: 2026-08-11T11:54:53.751Z
 類別:
   - "[[Zettelkasten notes]]"
 tags:
@@ -15,9 +15,6 @@ in:
 parent:
 sibling:
 child:
-"---\n---\n\n# 核心內容\n\n# 與其他筆記的關聯與理由\n* parent": "\t* 理由"
-"* sibling": "\t* 理由"
-"* child": "\t* 理由"
 ---
 
 ---
@@ -26,12 +23,9 @@ child:
 
 # 與其他筆記的關聯與理由
 
-- parent::
-  - 理由
-- sibling::
-  - 理由
-- child::
-  - 理由
+- parent理由
+- sibling理由
+- child理由
 
 # 來源
 

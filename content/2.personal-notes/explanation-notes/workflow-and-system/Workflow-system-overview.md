@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-11T02:57:52.278Z
-modified: 2026-08-11T09:03:44.226Z
-published: 2026-08-11T09:03:44.226Z
+modified: 2026-08-11T11:51:05.369Z
+published: 2026-08-11T11:51:05.369Z
 tags:
   - 工作流
 category:
@@ -23,7 +23,7 @@ child:
   - "[[To do]]"
   - "[[工作區說明]]"
   - "[[暫時紀錄的問題與想法]]"
-  - "[[literature-notes-workflow|文獻筆記工作流]]"
+  - "[[Literature-notes-workflow|文獻筆記工作流]]"
   - "[[目標與任務管理系統.canvas]]"
   - "[[英文學習工作流.canvas]]"
 ---
@@ -76,7 +76,7 @@ child:
   - 摘要與整理各領域文獻的知識、概念、理論框架
   - 內容來源為「一份文件」，架構依據原文章節
   - 著重「原文說了什麼」
-- \*\*參考[[literature-notes-workflow|文獻筆記工作流]]
+- \*\*參考[[Literature-notes-workflow|文獻筆記工作流]]
 - **管理工具**：[[Literature notes|文獻筆記]]
 
 * 核心概念：
@@ -122,7 +122,7 @@ child:
 
 - 使用時機：日常想法、觀察、個人洞見、待思考問題
 - 特殊用途-便利貼
-  - 可以使用[[quickadd plugins]]，將突然想到的問題記錄到[[暫時紀錄的問題與想法]]
+  - 可以使用[[Quickadd plugins]]，將突然想到的問題記錄到[[暫時紀錄的問題與想法]]
 - **管理工具**：[[Ideas and thoughts notes|靈感與思考筆記]]
 - 使用模板: [[Inspiration notes template|靈感紀錄模板]]
 
@@ -165,8 +165,8 @@ child:
 
 - 參考[[How to find links between notes|如何發現筆記之間的連結]]
 - **工具**：
-  - [[breadcrumbs plugins]]
-  - [[inline local graph plugins]]
+  - [[Breadcrumbs plugins]]
+  - [[Inline local graph plugins]]
   - [[Neighbourhood Graph plugins]]
 
 ---

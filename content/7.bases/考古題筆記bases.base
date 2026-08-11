@@ -1,0 +1,45 @@
+filters:
+  and:
+    - category.contains(link("Exam notes"))
+views:
+  - type: table
+    name: 全部考古題
+    filters:
+      and:
+        - '!file.inFolder("5.templates")'
+        - and:
+            - '!file.inFolder("5.templates-for-web")'
+    order:
+      - file.name
+      - date
+      - 最新測驗得分
+      - 科目
+      - tags
+      - 考題年分
+      - 高考普考特考
+    sort:
+      - property: 考題年分
+        direction: ASC
+      - property: file.name
+        direction: ASC
+      - property: file.tags
+        direction: ASC
+    columnSize:
+      file.name: 153
+      note.最新測驗得分: 117
+      note.科目: 107
+      note.考題年分: 88
+      note.高考普考特考: 118
+  - type: table
+    name: to do
+    filters:
+      and:
+        - 狀態 == ["to do"]
+    order:
+      - file.name
+      - 下次複習時間
+  - type: table
+    name: done
+    filters:
+      and:
+        - 狀態 == ["done"]

@@ -3,19 +3,16 @@ publish: true
 aliases:
   - 文獻筆記工作流
 title: 文獻筆記工作流
-created: 2026-08-11T01:45:38.432Z
-modified: 2026-08-11T02:18:31.512Z
-published: 2026-08-11T02:18:31.512Z
+created: 2026-08-11T03:01:45.388Z
+modified: 2026-08-11T03:01:45.398Z
+published: 2026-08-11T03:01:45.398Z
 tags:
   - 工作流
   - 康乃爾筆記法
   - 卡片盒筆記法
-類別:
-  - "[[Explanation notes|說明]]"
-  - 工作流與系統
 category:
   - Workflow and system
-  - Explanation notes
+  - "[[Explanation notes]]"
 in:
   - 個人note
 parent:

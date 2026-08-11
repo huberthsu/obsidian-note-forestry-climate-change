@@ -3,18 +3,15 @@ publish: true
 aliases:
   - 整理標籤有助於深入理解、被搜尋與提取、發現筆記之間的連結
 title: 整理標籤有助於深入理解、被搜尋與提取、發現筆記之間的連結
-created: 2026-08-11T01:45:32.997Z
-modified: 2026-08-11T02:18:44.930Z
-published: 2026-08-11T02:18:44.930Z
+created: 2026-08-11T03:01:28.806Z
+modified: 2026-08-11T03:01:28.811Z
+published: 2026-08-11T03:01:28.811Z
 tags:
   - 工作流
   - obsidian
-類別:
-  - "[[Explanation notes|說明]]"
-  - 工作流與系統
 category:
   - Workflow and system
-  - Explanation notes
+  - "[[Explanation notes]]"
 摘要: 整理標籤可以幫助理解筆記並使筆記更容易被搜尋與提取，也有助於進一步發現筆記之間的連結
 in:
   - 個人note

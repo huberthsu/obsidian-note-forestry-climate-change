@@ -3,19 +3,16 @@ publish: true
 aliases:
   - 康乃爾與卡片盒筆記法的應用說明
 title: 康乃爾與卡片盒筆記法的應用說明
-created: 2026-08-11T01:45:31.335Z
-modified: 2026-08-11T02:18:28.444Z
-published: 2026-08-11T02:18:28.444Z
+created: 2026-08-11T03:01:22.843Z
+modified: 2026-08-11T03:01:22.868Z
+published: 2026-08-11T03:01:22.868Z
 tags:
   - 筆記軟體
   - 卡片盒筆記法
   - 康乃爾筆記法
-類別:
-  - "[[Explanation notes|說明]]"
-  - 工作流與系統
 category:
   - Workflow and system
-  - Explanation notes
+  - "[[Explanation notes]]"
 in:
   - 個人note
 parent:

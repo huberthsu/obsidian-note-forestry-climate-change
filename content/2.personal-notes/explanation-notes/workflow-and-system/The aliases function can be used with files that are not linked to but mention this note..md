@@ -3,17 +3,14 @@ publish: true
 aliases:
   - aliases功能搭配未連結但提及本筆記的檔案
 title: aliases功能搭配未連結但提及本筆記的檔案
-created: 2026-08-11T01:45:35.815Z
-modified: 2026-08-11T02:18:56.810Z
-published: 2026-08-11T02:18:56.810Z
+created: 2026-08-11T03:01:39.061Z
+modified: 2026-08-11T03:01:39.073Z
+published: 2026-08-11T03:01:39.073Z
 tags:
   - 工作流
-類別:
-  - "[[Explanation notes|說明]]"
-  - 工作流與系統
 category:
   - Workflow and system
-  - Explanation notes
+  - "[[Explanation notes]]"
 in:
   - 個人note
 parent:

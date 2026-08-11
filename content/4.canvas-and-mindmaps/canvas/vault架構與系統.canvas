@@ -38,7 +38,7 @@
 		{"id":"4a4c39dba08b55b4","type":"text","text":"思考邏輯","x":2869,"y":3202,"width":250,"height":60},
 		{"id":"d4d3c08404ea8a71","type":"text","text":"呈現筆記架構","x":2869,"y":3322,"width":250,"height":59},
 		{"id":"14c8e18a35b4e2d7","type":"text","text":"Calendar","x":770,"y":-2178,"width":250,"height":60},
-		{"id":"1276fa09ff87ada5","type":"text","text":"[[Timestamp note外掛說明]]","x":2260,"y":4439,"width":250,"height":60},
+		{"id":"1276fa09ff87ada5","type":"text","text":"[[Timestamp note plugins]]","x":2260,"y":4439,"width":250,"height":60},
 		{"id":"9729acef85fc9278","type":"text","text":"Mouse Tooltip Translator","x":2260,"y":4296,"width":250,"height":60},
 		{"id":"1b6d8081608a5f65","type":"text","text":"中文即時翻譯","x":2540,"y":4296,"width":250,"height":60},
 		{"id":"565f8cce29ffe5c9","type":"text","text":"協助做影片筆記","x":2540,"y":4439,"width":250,"height":60},

@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-11T02:57:52.278Z
-modified: 2026-08-11T08:37:13.452Z
-published: 2026-08-11T08:37:13.452Z
+modified: 2026-08-11T09:03:44.226Z
+published: 2026-08-11T09:03:44.226Z
 tags:
   - 工作流
 category:
@@ -122,7 +122,7 @@ child:
 
 - 使用時機：日常想法、觀察、個人洞見、待思考問題
 - 特殊用途-便利貼
-  - 可以使用[[quickadd外掛說明]]，將突然想到的問題記錄到[[暫時紀錄的問題與想法]]
+  - 可以使用[[quickadd plugins]]，將突然想到的問題記錄到[[暫時紀錄的問題與想法]]
 - **管理工具**：[[Ideas and thoughts notes|靈感與思考筆記]]
 - 使用模板: [[Inspiration notes template|靈感紀錄模板]]
 
@@ -154,7 +154,7 @@ child:
 - 流程:
   - Obsidian Web Clipper擷取網路英文文章或影片到3.外部資料/網路來源 資料夾中
   - 建立[[English study notes template|英文學習筆記模板]]紀錄想學的單字或片語
-  - 使用[[Timestamp note外掛說明]]使影片於右側邊欄撥放
+  - 使用[[Timestamp note plugins]]使影片於右側邊欄撥放
   - 建立timestamp配合紀錄影片重點
   - 使用mouse tooltup translator即時翻譯
 - 使用模板: [[English study notes template|英文學習筆記模板]]

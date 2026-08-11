@@ -4,8 +4,8 @@ aliases:
   - 文獻筆記工作流
 title: 文獻筆記工作流
 created: 2026-07-21T02:42:39.738Z
-modified: 2026-08-11T01:01:14.532Z
-published: 2026-08-11T01:01:14.532Z
+modified: 2026-08-11T01:03:31.320Z
+published: 2026-08-11T01:03:31.320Z
 tags:
   - 工作流
   - 康乃爾筆記法
@@ -16,7 +16,7 @@ tags:
 in:
   - 個人note
 parent:
-  - "[[Workflow-system-overview]]"
+  - "[[Workflow-system-overview|工作流系統說明]]"
 sibling:
   - "[朱騏obsidian使用流程圖](https://whimsical.com/ipo-obsidian-LPyw6fia5hvjto5bWrQc4Y)"
 child:

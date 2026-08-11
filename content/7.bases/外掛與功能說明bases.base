@@ -1,0 +1,11 @@
+filters:
+  and:
+    - 類別.contains(link("說明"))
+views:
+  - type: table
+    name: 外掛與功能說明筆記
+    filters:
+      and:
+        - 類別.contains("外掛與功能")
+        - and:
+            - '!file.inFolder("5.模板")'

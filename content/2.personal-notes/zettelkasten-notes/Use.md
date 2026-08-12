@@ -4,8 +4,8 @@ aliases:
   - 用途
 title: 用途
 created: 2026-07-21T02:49:40.917Z
-modified: 2026-08-11T12:07:24.466Z
-published: 2026-08-11T12:07:24.466Z
+modified: 2026-08-12T06:19:45.007Z
+published: 2026-08-12T06:19:45.007Z
 tags:
   - 工作流
 category:
@@ -37,7 +37,7 @@ child:
 
 # 我的其他思考
 
-- 相關思考有[[Selection criteria can improve the quality of reference notes and indirectly make index card notes more meaningful.|篩選標準可以提高文獻筆記品質，也間接使卡片筆記有意義]]
+- 相關思考有[[Information filtering criteria can improve the quality of reference notes and indirectly make index card notes more meaningful.|篩選標準可以提高文獻筆記品質，也間接使卡片筆記有意義]]
 
 ---
 

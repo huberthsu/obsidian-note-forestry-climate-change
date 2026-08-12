@@ -4,8 +4,8 @@ aliases:
   - 文獻筆記工作流
 title: 文獻筆記工作流
 created: 2026-08-11T03:01:45.388Z
-modified: 2026-08-12T06:15:35.170Z
-published: 2026-08-12T06:15:35.170Z
+modified: 2026-08-12T06:16:55.665Z
+published: 2026-08-12T06:16:55.665Z
 tags:
   - 工作流
   - 康乃爾筆記法
@@ -35,9 +35,9 @@ child:
   - [樂心](https://www.youtube.com/@lexinlabs)
     - [obsidian現任ceo同款筆記庫介紹](https://www.youtube.com/watch?v=3U149EP46Vs)與[建立obsidian現任ceo同款筆記庫](https://www.youtube.com/watch?v=VuJd0CkK3FU)  -讓我大幅更新我的obsidian資料夾類別、模板類別、屬性區域欄位
   - [品縈說重點](https://www.youtube.com/@melody66)
-    - [打造第二大腦-獲取資訊](https://www.youtube.com/watch?v=y-DlgMG4joY) -資訊篩選重要性。我將這部分加入至[[Literature-notes-workflow]]第一步
+    - [打造第二大腦-獲取資訊](https://www.youtube.com/watch?v=y-DlgMG4joY) -資訊篩選重要性。我將這部分加入至[[Literature-notes-workflow|文獻筆記工作流]]第一步
     - [學習如何學習-如何系統性學習](https://www.youtube.com/watch?v=ZhnfWREy-bs\&t=523s) -提到內容價值評分表與內容品質的重要性
-    - [如何實踐康乃爾筆記法](https://www.youtube.com/watch?v=9SHrgilRKtU\&t=164s) -簡介康乃爾筆記法，讓我大幅更新我[[5.模板(網站用)/文獻筆記模板|文獻筆記模板]]的內容區域
+    - [如何實踐康乃爾筆記法](https://www.youtube.com/watch?v=9SHrgilRKtU\&t=164s) -簡介康乃爾筆記法，讓我大幅更新我[[Literature notes template|文獻筆記模板]]的內容區域
     - [如何實踐卡片盒筆記法](https://www.youtube.com/watch?v=YW3Az-Oi674) -簡介卡片盒筆記法以及如何使用heptabase實踐，讓我對於如何將obsidian應用於寫作有很大的啟發
 - 朱騏
   - [朱騏obsidian使用流程圖](https://whimsical.com/ipo-obsidian-LPyw6fia5hvjto5bWrQc4Y)- 使用畫布建立工作流

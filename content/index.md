@@ -5,8 +5,8 @@ aliases:
   - 森林與氣候變遷的數位花園
 title: 森林與氣候變遷的數位花園
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-08-12T07:33:34.175Z
-published: 2026-08-12T07:33:34.175Z
+modified: 2026-08-12T08:41:47.902Z
+published: 2026-08-12T08:41:47.902Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -55,6 +55,10 @@ published: 2026-08-12T07:33:34.175Z
 ## 5. templates-for-web
 
 - 存放各類型筆記所使用的模板
+
+## 6. task-management
+
+-
 
 ## 7.bases
 

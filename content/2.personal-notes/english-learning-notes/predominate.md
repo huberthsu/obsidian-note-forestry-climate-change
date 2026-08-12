@@ -1,14 +1,15 @@
 ---
 publish: true
-created: 2026-08-09T13:31:14.295Z
-modified: 2026-08-11T12:08:24.588Z
-published: 2026-08-11T12:08:24.588Z
+created: 2026-08-13
+modified: 2026-08-12T08:39:15.482Z
+published: 2026-08-13
 tags:
   - 日常
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 主要的、顯著的、佔多數的
+date: 2026-08-13
 ---
 
 ## 影片網址

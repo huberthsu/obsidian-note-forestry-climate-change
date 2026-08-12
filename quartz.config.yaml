@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: obsidian-note-forestry-climate-change.pages.dev
+  baseUrl: obsidian-note-forestry-climate-change.hubertxx1211.workers.dev
   ignorePatterns:
     - private
     - templates

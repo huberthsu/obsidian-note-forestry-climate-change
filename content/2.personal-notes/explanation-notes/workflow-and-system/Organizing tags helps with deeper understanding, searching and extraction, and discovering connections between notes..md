@@ -4,8 +4,8 @@ aliases:
   - 整理標籤有助於深入理解、被搜尋與提取、發現筆記之間的連結
 title: 整理標籤有助於深入理解、被搜尋與提取、發現筆記之間的連結
 created: 2026-08-11T03:01:28.806Z
-modified: 2026-08-11T04:22:32.673Z
-published: 2026-08-11T04:22:32.673Z
+modified: 2026-08-12T06:18:57.447Z
+published: 2026-08-12T06:18:57.447Z
 tags:
   - 工作流
   - obsidian
@@ -25,7 +25,7 @@ child:
 
 ## 說明
 
-- tags是筆記之間的連結關鍵，與[[How to find links between notes]]息息相關
+- tags是筆記之間的連結關鍵，與[[How to find links between notes|如何發現筆記之間的連結]]息息相關
 - 回顧與標籤管理
   - 回顧筆記與管理標籤
     - 有機會發現新的知識連結，協助自己對這則筆記的理解

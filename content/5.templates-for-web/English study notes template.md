@@ -4,9 +4,9 @@ aliases:
   - 英文學習筆記模板
 title: 英文學習筆記模板
 created: 2026-08-10T23:40:47.361Z
-modified: 2026-08-11T05:19:46.348Z
-published: 2026-08-11T05:19:46.348Z
-類別:
+modified: 2026-08-11T13:13:44.883Z
+published: 2026-08-11T13:13:44.883Z
+category:
   - "[[English learning notes]]"
   - 單字
   - 片語

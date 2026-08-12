@@ -4,9 +4,9 @@ aliases:
   - 文獻筆記模板
 title: 文獻筆記模板
 created: 2026-08-10T23:40:14.234Z
-modified: 2026-08-11T06:27:17.214Z
-published: 2026-08-11T06:27:17.214Z
-類別:
+modified: 2026-08-11T13:15:22.100Z
+published: 2026-08-11T13:15:22.100Z
+category:
   - "[[Literature notes]]"
 tags:
 摘要:

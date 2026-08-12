@@ -2,10 +2,11 @@
 publish: true
 aliases:
   - 森林與氣候變遷的筆記
-title: 森林與氣候變遷的筆記
+  - 森林與氣候變遷的數位花園
+title: 森林與氣候變遷的數位花園
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-08-11T06:36:55.723Z
-published: 2026-08-11T06:36:55.723Z
+modified: 2026-08-12T07:33:34.175Z
+published: 2026-08-12T07:33:34.175Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -17,72 +18,83 @@ published: 2026-08-11T06:36:55.723Z
 
 # 網站內容說明
 
-> [!tip] 會努力定期更新
+> [!success] 會努力定期更新
 > -> **英文學習筆記和考古題筆記**
 
 > [!question] 有時間，且有新發現或新想法才更新
 > -> 說明
 
-> [!danger] 僅分享模板與工作流，後續不再更新
+> [!Failure] 僅分享模板與工作流，後續不再更新
 > -> 文獻筆記、卡片盒筆記、靈感與思考筆記
 
 ---
 
-# 網站Content介紹
+# Content介紹
 
 ## 1. categories
 
 - 各類型筆記的入口，裡面有相關類型筆記資料庫
-  - [[English learning notes|英文學習筆記]]
-  - [[Exam notes|考古題筆記]]
-  - [[Explanation notes|說明]]
-  - [[Ideas and thoughts notes|靈感與思考筆記]]
   - [[Literature notes|文獻筆記]]
   - [[Zettelkasten notes|卡片盒筆記]]
+  - [[Exam notes|考古題筆記]]
+  - [[English learning notes|英文學習筆記]]
+  - [[Explanation notes|說明]]
+    - [外掛說明相關筆記](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/2.personal-notes/explanation-notes/plugins-and-features/)
+    - [工作流與筆記系統說明](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/2.personal-notes/explanation-notes/workflow-and-system/)
+  - [[Ideas and thoughts notes|靈感與思考筆記]]
 
 ## 2.personal-notes
 
-- english-learning-notes
-- exam-notes
-- explanation-notes
-  - plugins-and-features
-  - workflow-and-system
+- 存放我所有筆記
 
 ## 4. canvas-and-mindmaps
 
-- canvas
-- mindmaps
+- 存放所有畫布與心智圖
+  - [[Canvas and mindmaps overview|畫布與心智圖入口]]
 
 ## 5. templates-for-web
 
+- 存放各類型筆記所使用的模板
+
 ## 7.bases
+
+- 所有bases入口
+  - [[Bases overview|Bases 總覽]]
 
 ---
 
-# 我的Obsidian架構與工作流實際應用
+# Obsidian知識管理
 
-## Obsidian架構
+- 查看[[Obsidian wiki linking, knowledge organization, and data management|Obsidian雙向連結、知識整理與資料管理]]
 
-- vault資料夾架構與管理方法
-- 筆記類型與模板參考
+---
 
-## 工作流應用
+# 實際應用
 
-### 目標與任務管理系統
+- 查看[[Workflow-system-overview|實際工作系統說明]]
+- 查看[所有工作流相關筆記](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/2.personal-notes/explanation-notes/workflow-and-system/)
 
-### 高普考準備
+## 目標與任務管理工作流
+
+- [[目標與任務管理工作流.canvas]]
+
+## 高普考準備工作流
 
 - [[Exam notes|考古題筆記入口]]
-- 高普考準備系統
+- [[Exam notes template|考古題筆記模板]]
+- [[高普考準備工作流.canvas]]
 
-### 英文學習
+## 英文學習工作流
 
 - [[English learning notes|英文學習筆記入口]]
+- [[English study notes template|英文學習筆記模板]]
+- [[英文學習工作流.canvas]]
 
-- 英文學習系統
+## 文獻筆記工作流
 
-- 文獻摘要、整理方法
+- [[Literature-notes-workflow|文獻筆記工作流]]
+- [[Literature notes template|文獻筆記模板]]
 
-- 外掛支持系統
+## 外掛介紹與應用
 
-查看[[Workflow-system-overview]]
+- 查看[所有外掛介紹相關筆記](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/2.personal-notes/explanation-notes/plugins-and-features/)

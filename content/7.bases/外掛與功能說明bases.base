@@ -3,15 +3,14 @@ filters:
     - category.contains(link("Explanation notes"))
 views:
   - type: table
-    name: 工作流與系統說明筆記
+    name: 外掛與功能說明筆記
     filters:
       and:
+        - category.contains("Plugin and features")
         - and:
             - '!file.inFolder("5.templates")'
             - and:
-                - category.contains("Workflow and system")
-                - and:
-                    - '!file.inFolder("5.templates-for-web")'
+                - '!file.inFolder("5.templates-for-web")'
     order:
       - file.name
       - tags

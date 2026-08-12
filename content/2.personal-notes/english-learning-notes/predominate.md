@@ -1,8 +1,8 @@
 ---
 publish: true
 created: 2026-08-09T13:31:14.295Z
-modified: 2026-08-11T05:22:08.188Z
-published: 2026-08-11T05:22:08.188Z
+modified: 2026-08-11T12:08:24.588Z
+published: 2026-08-11T12:08:24.588Z
 tags:
   - 日常
 category:
@@ -10,6 +10,8 @@ category:
   - 單字
 Chinese translation: 主要的、顯著的、佔多數的
 ---
+
+## 影片網址
 
 ```timestamp-url
  https://www.youtube.com/watch?v=gy4BGnRCsTY

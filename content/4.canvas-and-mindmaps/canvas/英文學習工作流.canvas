@@ -7,7 +7,7 @@
 		{"id":"22e8257ad6a27b16","type":"group","x":-6720,"y":4640,"width":840,"height":100,"color":"6","label":"中翻英"},
 		{"id":"29829b2c18428ef5","type":"text","text":"![[5.模板/英文學習筆記模板]]","x":-7520,"y":4639,"width":514,"height":341,"color":"5"},
 		{"id":"62bcb07016d599e1","type":"text","text":"Mouse Tooltip Translator外掛","x":-6700,"y":4660,"width":250,"height":60},
-		{"id":"c78415c1aadb41e5","type":"text","text":"[[Timestamp note外掛說明]]","x":-6700,"y":4900,"width":250,"height":60},
+		{"id":"c78415c1aadb41e5","type":"text","text":"[[Timestamp note plugins]]","x":-6700,"y":4900,"width":250,"height":60},
 		{"id":"fcf7ff3f34ec958b","type":"text","text":"Obsidian Web Clipper","x":-8760,"y":4769,"width":250,"height":60},
 		{
 			"id":"a22222159694bae1",

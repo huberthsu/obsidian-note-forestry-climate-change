@@ -4,8 +4,8 @@ aliases:
   - 文獻筆記工作流
 title: 文獻筆記工作流
 created: 2026-08-11T03:01:45.388Z
-modified: 2026-08-11T03:01:45.398Z
-published: 2026-08-11T03:01:45.398Z
+modified: 2026-08-12T06:16:55.665Z
+published: 2026-08-12T06:16:55.665Z
 tags:
   - 工作流
   - 康乃爾筆記法
@@ -35,9 +35,9 @@ child:
   - [樂心](https://www.youtube.com/@lexinlabs)
     - [obsidian現任ceo同款筆記庫介紹](https://www.youtube.com/watch?v=3U149EP46Vs)與[建立obsidian現任ceo同款筆記庫](https://www.youtube.com/watch?v=VuJd0CkK3FU)  -讓我大幅更新我的obsidian資料夾類別、模板類別、屬性區域欄位
   - [品縈說重點](https://www.youtube.com/@melody66)
-    - [打造第二大腦-獲取資訊](https://www.youtube.com/watch?v=y-DlgMG4joY) -資訊篩選重要性。我將這部分加入至[[literature-notes-workflow]]第一步
+    - [打造第二大腦-獲取資訊](https://www.youtube.com/watch?v=y-DlgMG4joY) -資訊篩選重要性。我將這部分加入至[[Literature-notes-workflow|文獻筆記工作流]]第一步
     - [學習如何學習-如何系統性學習](https://www.youtube.com/watch?v=ZhnfWREy-bs\&t=523s) -提到內容價值評分表與內容品質的重要性
-    - [如何實踐康乃爾筆記法](https://www.youtube.com/watch?v=9SHrgilRKtU\&t=164s) -簡介康乃爾筆記法，讓我大幅更新我[[5.模板(網站用)/文獻筆記模板|文獻筆記模板]]的內容區域
+    - [如何實踐康乃爾筆記法](https://www.youtube.com/watch?v=9SHrgilRKtU\&t=164s) -簡介康乃爾筆記法，讓我大幅更新我[[Literature notes template|文獻筆記模板]]的內容區域
     - [如何實踐卡片盒筆記法](https://www.youtube.com/watch?v=YW3Az-Oi674) -簡介卡片盒筆記法以及如何使用heptabase實踐，讓我對於如何將obsidian應用於寫作有很大的啟發
 - 朱騏
   - [朱騏obsidian使用流程圖](https://whimsical.com/ipo-obsidian-LPyw6fia5hvjto5bWrQc4Y)- 使用畫布建立工作流
@@ -49,13 +49,13 @@ child:
 # 第1步: 資訊品質判斷
 
 - 這個外部資料值得或不值得我做卡片筆記?
-  - 依照[[Information filtering criteria]]中的打造第二大腦，判斷是否符合啟發、意外、用途、關聯，**至少符合一項才需要做筆記**
+  - 依照[[Information filtering criteria|資訊篩選標準]]中的打造第二大腦，判斷是否符合啟發、意外、用途、關聯，**至少符合一項才需要做筆記**
 - 這個外部資料的內容品質如何?
-  - 參考[[Information filtering criteria]]中的內容價值評分表，決定是否有需要做筆記
+  - 參考[[Information filtering criteria|資訊篩選標準]]中的內容價值評分表，決定是否有需要做筆記
 
 # 第2步: 創建文獻筆記
 
-- 參考[[Instructions for using Cornell and the Card Box Note-Taking Method]]設計出[[5.模板(網站用)/文獻筆記模板|文獻筆記模板]]
+- 參考[[Instructions for using Cornell and the Card Box Note-Taking Method|康乃爾與卡片盒筆記法的應用說明]]設計出[[Literature notes template|文獻筆記模板]]
 
 ## metadata
 
@@ -87,7 +87,7 @@ child:
 - 關鍵字與標籤
   - 整理與文獻相關的所有標籤，並按照標籤類別區分
 - 心智圖
-  - 使用[[simple mind map說明]]創立筆記內容與架構心智圖
+  - 使用[[Simple mind map plugin]]創立筆記內容與架構心智圖
 - 原文事實
   - 以列點方式，依據原文整理-摘要、研究問題、方法、重要發現
 - ai補充(可選)

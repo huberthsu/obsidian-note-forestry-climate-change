@@ -4,8 +4,8 @@ aliases:
   - 啟發
 title: 啟發
 created: 2026-07-21T02:49:40.920Z
-modified: 2026-08-12T06:59:11.299Z
-published: 2026-08-12T06:59:11.299Z
+modified: 2026-08-12T07:56:48.498Z
+published: 2026-08-12T07:56:48.498Z
 tags:
   - 工作流
 category:
@@ -37,7 +37,7 @@ child:
 
 # 我的其他思考
 
-- 相關思考有[[Information filtering criteria can improve the quality of reference notes and indirectly make zettelkasten-notes more meaningful.|篩選標準可以提高文獻筆記品質，也間接使卡片筆記有意義]]
+- 相關思考有[[Information filtering criteria can improve the quality of literature notes and zettelkasten-notes .|篩選標準可以提高文獻筆記品質，也間接使卡片筆記有意義]]
 
 ---
 

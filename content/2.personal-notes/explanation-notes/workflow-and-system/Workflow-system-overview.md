@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-11T02:57:52.278Z
-modified: 2026-08-12T06:11:32.065Z
-published: 2026-08-12T06:11:32.065Z
+modified: 2026-08-12T08:12:39.925Z
+published: 2026-08-12T08:12:39.925Z
 tags:
   - 工作流
 category:
@@ -17,6 +17,7 @@ parent:
 sibling:
   - "[[vault架構與系統.canvas]]"
   - "[[實際工作系統.canvas]]"
+  - "[[Obsidian wiki linking, knowledge organization, and data management|Obsidian雙向連結、知識整理與資料管理]]"
 child:
   - "[[高普考準備工作流.canvas]]"
   - "[[本月目標與預計執行事項]]"

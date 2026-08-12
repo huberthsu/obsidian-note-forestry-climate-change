@@ -5,8 +5,8 @@ aliases:
   - 森林與氣候變遷的數位花園
 title: 森林與氣候變遷的數位花園
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-08-12T08:48:11.238Z
-published: 2026-08-12T08:48:11.238Z
+modified: 2026-08-12T08:53:45.953Z
+published: 2026-08-12T08:53:45.953Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -59,7 +59,7 @@ published: 2026-08-12T08:48:11.238Z
 ## 6. task-management
 
 - 記錄我的考古題複習與英文學習進度
--
+- [monthly-goals-tracker](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/6.task-management/monthly-goals-tracker/)  記錄我的每月目標與實際完程式像
 
 ## 7.bases
 

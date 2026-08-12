@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-11T02:57:52.278Z
-modified: 2026-08-11T13:52:09.629Z
-published: 2026-08-11T13:52:09.629Z
+modified: 2026-08-12T06:09:28.427Z
+published: 2026-08-12T06:09:28.427Z
 tags:
   - 工作流
 category:
@@ -70,14 +70,14 @@ child:
 
 ## 📚 筆記類型與系統
 
-### 1. 文獻筆記1
+### 1. 文獻筆記
 
 - **使用時機**：
   - 摘要與整理各領域文獻的知識、概念、理論框架
   - 內容來源為「一份文件」，架構依據原文章節
   - 著重「原文說了什麼」
-- \*\*參考[[Literature-notes-workflow|文獻筆記工作流]]
-- **管理工具**：[[Literature notes|文獻筆記]]
+- 參考[[Literature-notes-workflow|文獻筆記工作流]]
+- 管理工具：[[Literature notes|文獻筆記]]
 
 * 核心概念：
   - 以**康乃爾+[[Information filtering criteria|資訊篩選標準]]** 為架構撰寫卡片
@@ -123,7 +123,7 @@ child:
 - 使用時機：日常想法、觀察、個人洞見、待思考問題
 - 特殊用途-便利貼
   - 可以使用[[Quickadd plugins]]，將突然想到的問題記錄到[[Temporary record of questions and thoughts]]
-- **管理工具**：[[Ideas and thoughts notes|靈感與思考筆記]]
+- 管理工具：[[Ideas and thoughts notes|靈感與思考筆記]]
 - 使用模板: [[Inspiration notes template|靈感紀錄模板]]
 
 ---

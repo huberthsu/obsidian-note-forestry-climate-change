@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-11T02:57:52.278Z
-modified: 2026-08-12T08:12:39.925Z
-published: 2026-08-12T08:12:39.925Z
+modified: 2026-08-12T08:50:22.910Z
+published: 2026-08-12T08:50:22.910Z
 tags:
   - 工作流
 category:
@@ -20,7 +20,7 @@ sibling:
   - "[[Obsidian wiki linking, knowledge organization, and data management|Obsidian雙向連結、知識整理與資料管理]]"
 child:
   - "[[高普考準備工作流.canvas]]"
-  - "[[本月目標與預計執行事項]]"
+  - "[[Monthly Objectives and Action Plan]]"
   - "[[To do]]"
   - "[[Temporary record of questions and thoughts]]"
   - "[[Literature-notes-workflow|文獻筆記工作流]]"
@@ -45,7 +45,7 @@ child:
 ## 任務管理系統
 
 1. 平行互見表-設定各專案每月目標，並追蹤每周進度
-   - 與[[本月目標與預計執行事項]]規劃，並於[[本月實際完成事項]]中填寫進度
+   - 與[[Monthly Objectives and Action Plan]]規劃，並於[[Monthly Accomplishments]]中填寫進度
 2. Calendar-規劃與查看**特定日期**的任務
    - 可建立檔案，會貯存在6.任務管理-每日任務與複習系統中
    - 流程

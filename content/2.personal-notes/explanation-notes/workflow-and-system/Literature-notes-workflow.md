@@ -4,8 +4,8 @@ aliases:
   - 文獻筆記工作流
 title: 文獻筆記工作流
 created: 2026-08-11T03:01:45.388Z
-modified: 2026-08-12T06:16:55.665Z
-published: 2026-08-12T06:16:55.665Z
+modified: 2026-08-12T08:50:22.880Z
+published: 2026-08-12T08:50:22.880Z
 tags:
   - 工作流
   - 康乃爾筆記法
@@ -42,7 +42,7 @@ child:
 - 朱騏
   - [朱騏obsidian使用流程圖](https://whimsical.com/ipo-obsidian-LPyw6fia5hvjto5bWrQc4Y)- 使用畫布建立工作流
 - 建宏
-  - [認識平行互見表](https://bodytalkether.com/2024/01/08/%F0%9F%8E%99-ep-93-%E6%8E%8C%E6%8F%A1%E4%BD%A0%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E8%AA%8D%E8%AD%98%E5%B9%B3%E8%A1%8C%E4%BA%92%E8%A6%8B%E8%A1%A8-feat-%E5%BB%BA%E5%AE%8F/)  -認識了平行互見表及其用法，我透過Advanced tables外掛建立了[[本月目標與預計執行事項]]與[[本月實際完成事項]]
+  - [認識平行互見表](https://bodytalkether.com/2024/01/08/%F0%9F%8E%99-ep-93-%E6%8E%8C%E6%8F%A1%E4%BD%A0%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E8%AA%8D%E8%AD%98%E5%B9%B3%E8%A1%8C%E4%BA%92%E8%A6%8B%E8%A1%A8-feat-%E5%BB%BA%E5%AE%8F/)  -認識了平行互見表及其用法，我透過Advanced tables外掛建立了[[Monthly Objectives and Action Plan]]與[[Monthly Accomplishments]]
 
 ---
 

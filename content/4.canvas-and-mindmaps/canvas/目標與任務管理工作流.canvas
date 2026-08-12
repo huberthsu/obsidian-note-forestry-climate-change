@@ -10,7 +10,7 @@
 		{"id":"1cbc27f06512c213","type":"text","text":"Calendar提供的日曆","x":-10220,"y":4969,"width":250,"height":60},
 		{"id":"b2ca23faa11eeca5","type":"text","text":"Calendar bases","x":-10720,"y":4683,"width":250,"height":60},
 		{"id":"6da23952a074162a","type":"text","text":"[[Exam notes]]中的考古題複習日曆","x":-10220,"y":4683,"width":250,"height":60},
-		{"id":"6edfb677cb372325","type":"text","text":"![[本月目標與預計執行事項]]","x":-11520,"y":4651,"width":480,"height":380},
+		{"id":"6edfb677cb372325","type":"text","text":"![[Monthly Objectives and Action Plan]]","x":-11520,"y":4651,"width":480,"height":380},
 		{"id":"e94cfc2713a6b268","type":"text","text":"平行互見表","x":-11880,"y":4811,"width":250,"height":60}
 	],
 	"edges":[

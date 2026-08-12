@@ -38,7 +38,7 @@
 		{"id":"5c165bbd6c325d2c","type":"text","text":"![[English learning notes]]","x":640,"y":4097,"width":535,"height":580,"color":"5"},
 		{"id":"3d5955b2abff9764","type":"text","text":"需要分階段完成的大目標","x":-1340,"y":-200,"width":250,"height":60},
 		{"id":"e94cfc2713a6b268","type":"text","text":"平行互見表","x":-290,"y":-2146,"width":250,"height":60},
-		{"id":"6edfb677cb372325","type":"text","text":"![[本月目標與預計執行事項]]","x":30,"y":-2306,"width":480,"height":380},
+		{"id":"6edfb677cb372325","type":"text","text":"![[Monthly Objectives and Action Plan]]","x":30,"y":-2306,"width":480,"height":380},
 		{"id":"14c8e18a35b4e2d7","type":"text","text":"Calendar","x":770,"y":-2178,"width":250,"height":60},
 		{"id":"aa4d3ebdbd546232","type":"text","text":"個人吸收到的內容","x":-1340,"y":2820,"width":250,"height":60},
 		{"id":"fcf7ff3f34ec958b","type":"text","text":"Obsidian Web Clipper","x":-2560,"y":3300,"width":250,"height":60},

@@ -4,8 +4,8 @@ aliases:
   - Breadcrumbs外掛說明
 title: Breadcrumbs外掛說明
 created: 2026-08-01T16:48:06.861Z
-modified: 2026-08-11T14:10:20.897Z
-published: 2026-08-11T14:10:20.897Z
+modified: 2026-08-12T06:24:28.468Z
+published: 2026-08-12T06:24:28.468Z
 tags:
   - 關聯圖
   - obsidian
@@ -15,7 +15,7 @@ category:
 in:
   - 個人note
 parent:
-  - "[[How to find links between notes]]"
+  - "[[How to find links between notes|如何發現筆記之間的連結]]"
 sibling:
   - "[[Neighbourhood Graph plugins]]"
   - "[[Inline local graph plugins|inline local graph 外掛說明]]"

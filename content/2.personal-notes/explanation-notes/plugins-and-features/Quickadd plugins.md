@@ -4,8 +4,8 @@ aliases:
   - Quickadd外掛說明
 title: Quickadd外掛說明
 created: 2026-07-23T07:30:52.390Z
-modified: 2026-08-11T12:52:54.056Z
-published: 2026-08-11T12:52:54.056Z
+modified: 2026-08-12T06:25:36.296Z
+published: 2026-08-12T06:25:36.296Z
 tags:
   - obsidian
 category:
@@ -25,7 +25,7 @@ child:
   - 我命名為靈感暫時紀錄
   - 在不離開現在筆記的情況下，快速新增一段內容到其他筆記中
     - 筆記可以是已經存在的筆記，也可以是新增一個筆記
-  - 若寫筆記過程中有想到待解決或待思考的其他問題，可以用此功能寫到[[Temporary record of questions and thoughts]]
+  - 若寫筆記過程中有想到待解決或待思考的其他問題，可以用此功能寫到[[Temporary record of questions and thoughts|暫時紀錄的問題與想法]]
 
 # 使用說明
 

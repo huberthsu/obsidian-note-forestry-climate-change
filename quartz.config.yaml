@@ -219,10 +219,21 @@ plugins:
       priority: 5
       condition: not-index
   - source: "@quartz-community/comments"
-    enabled: false
+    enabled: true
     options:
       provider: giscus
-      options: {}
+      options:
+        repo: "huberthsu/obsidian-note-forestry-climate-change"
+        repoId: "R_kgDOT0BWug"
+        category: "General"
+        categoryId: "DIC_kwDOT0BWus4DDNla"
+        lightTheme: "light"
+        darkTheme: "dark"
+        mapping: "url"
+        strict: true
+        reactionsEnabled: true
+        inputPosition: "bottom"
+        lang: "zh-TW"
     layout:
       position: afterBody
       priority: 10

@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-11T02:57:52.278Z
-modified: 2026-08-12T06:09:28.427Z
-published: 2026-08-12T06:09:28.427Z
+modified: 2026-08-12T06:11:32.065Z
+published: 2026-08-12T06:11:32.065Z
 tags:
   - 工作流
 category:
@@ -39,7 +39,7 @@ child:
 
 ## 工作區分配建議
 
-- 可參考[[Workspace description]]
+- 可參考[[Workspace description|工作區說明]]
 
 ## 任務管理系統
 
@@ -122,7 +122,7 @@ child:
 
 - 使用時機：日常想法、觀察、個人洞見、待思考問題
 - 特殊用途-便利貼
-  - 可以使用[[Quickadd plugins]]，將突然想到的問題記錄到[[Temporary record of questions and thoughts]]
+  - 可以使用[[Quickadd plugins]]，將突然想到的問題記錄到[[Temporary record of questions and thoughts|暫時紀錄的問題與想法]]
 - 管理工具：[[Ideas and thoughts notes|靈感與思考筆記]]
 - 使用模板: [[Inspiration notes template|靈感紀錄模板]]
 

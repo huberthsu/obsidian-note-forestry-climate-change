@@ -364,10 +364,19 @@ input[type="checkbox"] {
   background-color: var(--light);
   position: relative;
   margin-inline-end: 0.2rem;
-  margin-inline-start: -1.4rem;
   appearance: none;
   width: 16px;
   height: 16px;
+
+  // Only task-list checkboxes (`- [ ] item`, rendered as a direct child of
+  // an <li>) need pulling left — list-style-type is set to none on their
+  // parent <li> above, and this pulls the checkbox back to where the
+  // bullet marker used to sit. Scoped to <li> so it doesn't also yank any
+  // other checkbox on the page (e.g. a boolean frontmatter property in the
+  // properties table) out of its own container.
+  li > & {
+    margin-inline-start: -1.4rem;
+  }
 
   &:checked {
     border-color: var(--secondary);

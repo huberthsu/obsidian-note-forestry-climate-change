@@ -1,3 +1,18 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// @quartz-themes/core re-styles checkboxes (border/radius/colors matching
+// the theme) under `html[saved-theme] body input[type="checkbox"]`, but
+// carries over the same "pull left to align with a task-list bullet" margin
+// trick as the site's own base checkbox style (base.scss) — unscoped, so it
+// also displaces any non-task-list checkbox (e.g. a boolean frontmatter
+// property in the properties table) out of its own container. Can't edit
+// the theme package directly — it's an npm dependency shipping only a
+// prebuilt dist, no accessible source. Countering just the margin here,
+// scoped to non-task-list checkboxes, with higher specificity than the
+// theme's own selector (four type-selectors vs its three) so it reliably
+// wins over both the light and dark variants of that rule.
+html[saved-theme] body :not(li) > input[type="checkbox"] {
+  margin-inline-start: 0;
+}

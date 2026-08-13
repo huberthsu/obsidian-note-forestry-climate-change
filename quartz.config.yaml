@@ -150,7 +150,10 @@ plugins:
   - source: "@quartz-community/cname"
     enabled: true
   - source: "@quartz-community/canvas-page"
-    enabled: true
+    # Disabled: duplicate registration, superseded by the git-sourced entry
+    # below (which has our wikilink/embed fix). Both being enabled caused
+    # this stale npm copy's CSS to sometimes shadow the fixed one's styles.
+    enabled: false
   - source: "@quartz-community/content-page"
     enabled: true
   - source: "@quartz-community/folder-page"
@@ -257,7 +260,10 @@ plugins:
       priority: 25
       display: mobile-only
   - source: "@quartz-community/bases-page"
-    enabled: true
+    # Disabled: duplicate registration, superseded by the ./vendor/bases-page
+    # entry below (which has our tags-column fix). See the canvas-page entry
+    # above for why having both enabled is a problem, not just a warning.
+    enabled: false
     options: {}
     order: 50
   - source: "@quartz-community/note-properties"
@@ -296,7 +302,7 @@ plugins:
       defaultViewType: table
       linkResolution: shortest
     order: 50
-  - source: github:quartz-community/canvas-page
+  - source: ./vendor/canvas-page
     enabled: true
     options:
       enableInteraction: true

@@ -290,7 +290,7 @@ plugins:
       darkMode: auto
       exportPadding: 20
     order: 50
-  - source: github:quartz-community/bases-page
+  - source: ./vendor/bases-page
     enabled: true
     options:
       defaultViewType: table

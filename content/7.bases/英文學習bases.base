@@ -3,6 +3,8 @@ filters:
     - category.contains(link("English learning notes", "英文學習筆記"))
     - and:
         - '!file.inFolder("5.templates")'
+        - and:
+            - '!file.inFolder("5.templates-for-web")'
 views:
   - type: table
     name: 表格

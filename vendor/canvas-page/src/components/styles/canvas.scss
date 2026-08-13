@@ -121,11 +121,23 @@
 .canvas-text-embed {
   position: relative;
 
+  // Zero-height sticky wrapper: reserves no layout space (so it doesn't push
+  // the embedded content down), but sticks to the top of the nearest
+  // scrolling ancestor (.canvas-node-content) as long as this embed block is
+  // still in view, so the button doesn't scroll away while reading a long
+  // embedded note.
+  .canvas-text-embed-toolbar {
+    position: sticky;
+    top: 4px;
+    height: 0;
+    overflow: visible;
+    z-index: 1;
+  }
+
   .canvas-text-embed-open {
     position: absolute;
-    top: 4px;
+    top: 0;
     right: 4px;
-    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;

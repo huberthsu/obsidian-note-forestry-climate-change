@@ -10889,11 +10889,17 @@ var canvas_default = `.canvas-page {
 .canvas-text-embed {
   position: relative;
 }
+.canvas-text-embed .canvas-text-embed-toolbar {
+  position: sticky;
+  top: 4px;
+  height: 0;
+  overflow: visible;
+  z-index: 1;
+}
 .canvas-text-embed .canvas-text-embed-open {
   position: absolute;
-  top: 4px;
+  top: 0;
   right: 4px;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11461,7 +11467,7 @@ function renderTextLink(link, slug2, allFiles, allSlugs, visited) {
   }
   const embedded = resolveEmbeddedHtml(targetSlug, slug2, allFiles, link.subpath, visited);
   if (embedded) {
-    return `<div class="canvas-text-embed"><a href="${href}" class="canvas-text-embed-open" data-slug="${targetSlug}" aria-label="${escapeHtml(alias)}" title="${escapeHtml(alias)}"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a><div class="canvas-embed-content">${embedded}</div></div>`;
+    return `<div class="canvas-text-embed"><div class="canvas-text-embed-toolbar"><a href="${href}" class="canvas-text-embed-open" data-slug="${targetSlug}" aria-label="${escapeHtml(alias)}" title="${escapeHtml(alias)}"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></div><div class="canvas-embed-content">${embedded}</div></div>`;
   }
   return `<a href="${href}" class="internal internal-link" data-slug="${targetSlug}">${escapeHtml(alias)}</a>`;
 }

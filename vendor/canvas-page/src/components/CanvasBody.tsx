@@ -281,6 +281,13 @@ function renderNode(
   };
   if (color) {
     baseStyle["--canvas-node-color"] = color;
+    // Obsidian shows a per-node color as a pastel wash over the card, not just
+    // an outline — mix a little of the raw color into the card/group base so
+    // each colored block is visibly distinct from its neighbors, not just
+    // from the empty canvas behind them.
+    baseStyle["--canvas-node-color-bg"] = `color-mix(in srgb, ${color} 20%, var(--light))`;
+    baseStyle["--canvas-node-color-bg-subtle"] =
+      `color-mix(in srgb, ${color} 10%, var(--light))`;
   }
 
   const styleStr = Object.entries(baseStyle)

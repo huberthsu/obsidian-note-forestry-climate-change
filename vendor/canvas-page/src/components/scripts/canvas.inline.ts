@@ -9,7 +9,18 @@ function initCanvas() {
     const viewport = container.querySelector(".canvas-viewport") as HTMLElement | null;
     if (!viewport) continue;
 
-    const enableInteraction = container.dataset.enableInteraction !== "false";
+    // A canvas-in-canvas portal embeds another page's full rendered
+    // .canvas-container verbatim, complete with its own pan/zoom/drag
+    // listeners. Since it's a DOM descendant of the outer canvas's own
+    // container, wheel/pointer events on it also bubble up to the outer
+    // container's listeners, and pointer capture fights between the two —
+    // this is what causes "drags without the mouse held down" and content
+    // getting zoomed/panned out of view. Nested containers still get
+    // centerViewport() below so they're sized/fitted correctly, but they
+    // don't get their own independent interaction: panning/zooming the
+    // portal happens by interacting with the outer canvas around it.
+    const isNested = container.parentElement?.closest(".canvas-container") != null;
+    const enableInteraction = !isNested && container.dataset.enableInteraction !== "false";
 
     const minZoom = parseFloat(container.dataset.minZoom ?? "") || 0.1;
     const maxZoom = parseFloat(container.dataset.maxZoom ?? "") || 5;
@@ -25,17 +36,25 @@ function initCanvas() {
     };
 
     const centerViewport = () => {
-      const containerRect = container.getBoundingClientRect();
+      // offsetWidth/offsetHeight reflect the container's own layout box and
+      // are unaffected by an ancestor's CSS transform. getBoundingClientRect()
+      // would return the final on-screen size instead — for a canvas nested
+      // inside another (already-scaled) canvas, that's the outer canvas's
+      // scale baked in a second time: once here (shrinking the computed
+      // zoom) and again naturally via the ancestor transform when rendered,
+      // roughly squaring the shrinkage instead of fitting the box.
+      const containerWidth = container.offsetWidth;
+      const containerHeight = container.offsetHeight;
       const vw = parseFloat(viewport.style.width) || 1000;
       const vh = parseFloat(viewport.style.height) || 1000;
 
-      const scaleX = containerRect.width / vw;
-      const scaleY = containerRect.height / vh;
+      const scaleX = containerWidth / vw;
+      const scaleY = containerHeight / vh;
       zoom = Math.min(scaleX, scaleY, 1) * 0.9;
       zoom = Math.max(minZoom, Math.min(maxZoom, zoom));
 
-      panX = (containerRect.width - vw * zoom) / 2;
-      panY = (containerRect.height - vh * zoom) / 2;
+      panX = (containerWidth - vw * zoom) / 2;
+      panY = (containerHeight - vh * zoom) / 2;
       applyTransform();
     };
 

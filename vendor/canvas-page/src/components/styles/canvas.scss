@@ -115,6 +115,41 @@
   }
 }
 
+// `![[wikilink]]` embed written inline inside a text node: wraps the embedded
+// content with a small "open note" button in the top-right corner, mirroring
+// Obsidian's own canvas embed UI.
+.canvas-text-embed {
+  position: relative;
+
+  .canvas-text-embed-open {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background: var(--light);
+    color: var(--canvas-node-color, var(--secondary));
+    opacity: 0.7;
+    transition:
+      opacity 0.15s ease,
+      background 0.15s ease;
+
+    svg {
+      pointer-events: none;
+    }
+
+    &:hover {
+      opacity: 1;
+      background: var(--lightgray);
+    }
+  }
+}
+
 .canvas-node-file {
   overflow: visible;
 

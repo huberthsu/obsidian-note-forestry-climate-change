@@ -2481,6 +2481,33 @@ var canvas_default = `.canvas-page {
   font-size: 0.85em;
 }
 
+.canvas-text-embed {
+  position: relative;
+}
+.canvas-text-embed .canvas-text-embed-open {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: var(--light);
+  color: var(--canvas-node-color, var(--secondary));
+  opacity: 0.7;
+  transition: opacity 0.15s ease, background 0.15s ease;
+}
+.canvas-text-embed .canvas-text-embed-open svg {
+  pointer-events: none;
+}
+.canvas-text-embed .canvas-text-embed-open:hover {
+  opacity: 1;
+  background: var(--lightgray);
+}
+
 .canvas-node-file {
   overflow: visible;
 }
@@ -3029,7 +3056,7 @@ function renderTextLink(link, slug2, allFiles, allSlugs, visited) {
   }
   const embedded = resolveEmbeddedHtml(targetSlug, slug2, allFiles, link.subpath, visited);
   if (embedded) {
-    return `<div class="canvas-embed-content canvas-text-embed">${embedded}</div>`;
+    return `<div class="canvas-text-embed"><a href="${href}" class="canvas-text-embed-open" data-slug="${targetSlug}" aria-label="${escapeHtml(alias)}" title="${escapeHtml(alias)}"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a><div class="canvas-embed-content">${embedded}</div></div>`;
   }
   return `<a href="${href}" class="internal internal-link" data-slug="${targetSlug}">${escapeHtml(alias)}</a>`;
 }

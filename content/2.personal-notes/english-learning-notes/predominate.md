@@ -1,8 +1,8 @@
 ---
 publish: true
 created: 2026-08-09T13:31:14.295Z
-modified: 2026-08-12T08:58:35.427Z
-published: 2026-08-12T08:58:35.427Z
+modified: 2026-08-13T06:51:39.929Z
+published: 2026-08-13T06:51:39.929Z
 tags:
   - 日常
 category:
@@ -12,7 +12,9 @@ Chinese translation: 主要的、顯著的、佔多數的
 date:
 ---
 
-## 影片網址
+## 影片
+
+![predominate/dominate](https://www.youtube.com/watch?v=gy4BGnRCsTY)
 
 ```timestamp-url
  https://www.youtube.com/watch?v=gy4BGnRCsTY

@@ -1,13 +1,12 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-08-14T06:42:53.294Z
+modified: 2026-08-14T06:48:15.135Z
 published: 2026-08-14
 tags:
   - 日常
 category:
   - "[[English learning notes]]"
-  - 單字
   - 片語
 Chinese translation: 歸根於、歸因於
 date: 2026-08-14

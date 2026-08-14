@@ -1,13 +1,12 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-08-14T06:42:40.977Z
+modified: 2026-08-14T06:47:57.445Z
 published: 2026-08-14
 tags:
   - 日常
 category:
   - "[[English learning notes]]"
-  - 單字
   - 片語
 Chinese translation: 取得平衡、找到折衷的辦法
 date: 2026-08-14

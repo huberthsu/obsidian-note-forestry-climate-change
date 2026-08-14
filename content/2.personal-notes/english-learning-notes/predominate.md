@@ -1,15 +1,15 @@
 ---
 publish: true
-created: 2026-08-09T13:31:14.295Z
-modified: 2026-08-13T06:51:39.929Z
-published: 2026-08-13T06:51:39.929Z
+created: 2026-08-14
+modified: 2026-08-14T06:42:46.407Z
+published: 2026-08-14
 tags:
   - 日常
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 主要的、顯著的、佔多數的
-date:
+date: 2026-08-14
 ---
 
 ## 影片
@@ -92,11 +92,3 @@ dominant+genes/traits/characteristics/behavior
 
 - Older people predominate in this neighborhood.
 - In this area elders predominate over children.
-
----
-
-## Source
-
-- [[200+ IELTS Words For Writing & Speaking  Advanced English Vocabulary]]
-- [[TOEFL & IELTS Vocabulary Lesson dominate and predominate]]
-  - 詳細比較兩者差異

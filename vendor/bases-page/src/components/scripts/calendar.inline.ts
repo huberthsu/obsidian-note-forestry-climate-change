@@ -112,20 +112,15 @@ function initCalendar(container, cleanupFns) {
   const now = new Date();
   const todayKey = now.getFullYear() + "-" + pad2(now.getMonth() + 1) + "-" + pad2(now.getDate());
 
-  // The server-rendered initial grid bakes in "today" as of build time — on a
-  // static site that can be stale by the time a visitor actually loads the
-  // page (a build from last week still says last week's month). If the
-  // visitor's real clock disagrees, immediately re-render to the real
-  // current month instead of leaving the stale one up until they click
-  // "Today" themselves.
-  const initialYear = Number(container.dataset.initialYear);
-  const initialMonth = Number(container.dataset.initialMonth);
-  if (now.getFullYear() !== initialYear || now.getMonth() !== initialMonth) {
-    renderMonth(container, now.getFullYear(), now.getMonth(), byDay, todayKey);
-  } else {
-    container.dataset.currentYear = String(initialYear);
-    container.dataset.currentMonth = String(initialMonth);
-  }
+  // The server-rendered initial grid bakes in "today" (both which month is
+  // shown AND which day gets the is-today highlight) as of build time — on a
+  // static site that's stale the moment a visitor loads the page any time
+  // after the last deploy. A same-year/same-month comparison isn't enough:
+  // a build from yesterday still has the right month today, but the
+  // highlighted day would be wrong. Simplest correct fix is to always
+  // re-render once against the visitor's real clock on init, regardless of
+  // whether the server-rendered grid happens to already match.
+  renderMonth(container, now.getFullYear(), now.getMonth(), byDay, todayKey);
 
   const shiftMonth = (delta) => {
     const cy = Number(container.dataset.currentYear);

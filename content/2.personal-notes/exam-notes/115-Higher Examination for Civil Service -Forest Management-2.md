@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 如何透過「林業合作社」或「產銷班」的組織模式，輔導私有林主進行集約化與規模化經營？
-created: 2026-08-16
-modified: 2026-08-14T16:58:10.910Z
-published: 2026-08-16
+created: 2026-08-18
+modified: 2026-08-14T17:43:47.474Z
+published: 2026-08-18
 tags:
   - 木材自給率
   - 私有林

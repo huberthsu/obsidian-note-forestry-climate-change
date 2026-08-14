@@ -1,0 +1,13 @@
+diff --git a/node_modules/@quartz-community/obsidian-flavored-markdown/dist/index.js b/node_modules/@quartz-community/obsidian-flavored-markdown/dist/index.js
+index 708e6eb..90d8857 100644
+--- a/node_modules/@quartz-community/obsidian-flavored-markdown/dist/index.js
++++ b/node_modules/@quartz-community/obsidian-flavored-markdown/dist/index.js
+@@ -1743,7 +1743,7 @@ var checkbox = (tree) => {
+     node.properties = {
+       ...properties,
+       checked,
+-      disabled: false,
++      disabled: true,
+       className: ["checkbox-toggle"]
+     };
+   });

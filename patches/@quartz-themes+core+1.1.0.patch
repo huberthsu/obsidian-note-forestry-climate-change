@@ -1,0 +1,16 @@
+diff --git a/node_modules/@quartz-themes/core/dist/index.js b/node_modules/@quartz-themes/core/dist/index.js
+index c98ea13..6747c65 100644
+--- a/node_modules/@quartz-themes/core/dist/index.js
++++ b/node_modules/@quartz-themes/core/dist/index.js
+@@ -5398,9 +5398,8 @@ body .page article li.task-list-item.is-checked:not([data-task="x"]):not([data-t
+ }`;
+   const checkedTaskStyle = `body .page article li.task-list-item[data-task="x"],
+ body .page article li.task-list-item[data-task="X"] {
+-  text-decoration: line-through;
+-  text-decoration-color: var(--checkbox-color, var(--secondary));
+-  color: var(--checkbox-color, var(--secondary));
++  text-decoration: none;
++  color: inherit;
+ }`;
+   return [resetChecked, checkedTaskStyle].join("\n\n");
+ }

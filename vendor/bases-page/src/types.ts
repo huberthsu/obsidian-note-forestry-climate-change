@@ -184,6 +184,10 @@ export interface BasesView {
   dateField?: string;
   /** Alias for date */
   dateProperty?: string;
+  /** Obsidian Bases calendar view: property path for the start date */
+  startDate?: string;
+  /** Obsidian Bases calendar view: property path for the end date (multi-day entries) */
+  endDate?: string;
 
   // -- Board specific --
   /** Property to group board columns by (if not using groupBy) */

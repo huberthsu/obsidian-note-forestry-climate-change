@@ -13,6 +13,7 @@ import { registerBuiltinViews } from "./views";
 import style from "./styles/bases.scss";
 // @ts-expect-error inline script import handled by esbuild plugin
 import script from "./scripts/bases.inline.ts";
+import { wrapScripts } from "../util/lang";
 
 let builtinViewsRegistered = false;
 
@@ -58,12 +59,14 @@ export default ((opts?: BasesPageOptions) => {
       registerCustomViews(basesOptions.customViews);
     }
 
-    // Collect CSS from custom view registrations (deduplicated by type)
+    // Collect CSS + scripts from active view types (deduplicated by type)
     const activeTypes = new Set(views.map((v) => v.type));
     const viewCssChunks: string[] = [];
+    const viewScriptChunks: string[] = [];
     for (const typeId of activeTypes) {
       const reg = viewRegistry.get(typeId);
       if (reg?.css) viewCssChunks.push(reg.css);
+      if (reg?.afterDOMLoaded) viewScriptChunks.push(reg.afterDOMLoaded);
     }
 
     return (
@@ -109,18 +112,23 @@ export default ((opts?: BasesPageOptions) => {
             );
           })}
         </div>
+        {/*
+          Rendered inline (like the <style> block above) rather than via
+          Component.afterDOMLoaded: BasesBody is a pageType's `body` component,
+          not a layout component, so Quartz's componentResources emitter never
+          discovers it and afterDOMLoaded would silently never run. Inlining
+          means this re-runs on every full/direct page load, but — like an
+          inline <script> generally — won't re-fire after a client-side SPA
+          navigation into this page from another one.
+        */}
+        <script
+          dangerouslySetInnerHTML={{ __html: wrapScripts([script, ...viewScriptChunks]) }}
+        />
       </div>
     );
   };
 
   Component.css = style;
-  // Collect afterDOMLoaded scripts from all registered views so they get
-  // bundled into postscript.js (SPA-compatible) instead of inline <script> tags.
-  const viewScripts = viewRegistry
-    .getAll()
-    .map((reg) => reg.afterDOMLoaded)
-    .filter((s): s is string => typeof s === "string" && s.length > 0);
-  Component.afterDOMLoaded = [script, ...viewScripts];
 
   return Component;
 }) satisfies QuartzComponentConstructor<BasesPageOptions>;

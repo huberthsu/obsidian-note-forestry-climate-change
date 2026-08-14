@@ -25,6 +25,9 @@ import { registerBuiltinViews } from "./components/views";
 import { registerCustomViews, viewRegistry } from "./registry";
 import { i18n } from "./i18n";
 import { ViewSelector } from "./components/ViewSelector";
+import { wrapScripts } from "./util/lang";
+// @ts-expect-error inline script import handled by esbuild plugin
+import bodyScript from "./components/scripts/bases.inline.ts";
 
 const basesMatcher: PageMatcher = ({ fileData }) => {
   return "basesData" in fileData;
@@ -217,12 +220,14 @@ function renderBasesInline(
     views.findIndex((view) => view.type === preferredType),
   );
 
-  // Collect CSS from custom view registrations (deduplicated by type)
+  // Collect CSS + scripts from custom view registrations (deduplicated by type)
   const activeTypes = new Set(views.map((v) => v.type));
   const viewCssChunks: string[] = [];
+  const viewScriptChunks: string[] = [];
   for (const typeId of activeTypes) {
     const reg = viewRegistry.get(typeId);
     if (reg?.css) viewCssChunks.push(reg.css);
+    if (reg?.afterDOMLoaded) viewScriptChunks.push(reg.afterDOMLoaded);
   }
 
   // Render the view selector
@@ -266,6 +271,10 @@ function renderBasesInline(
   });
 
   const cssBlock = viewCssChunks.length > 0 ? `<style>${viewCssChunks.join("\n")}</style>` : "";
+  // Inlined for the same reason as BasesBody's <script> (see its comment):
+  // this render path (transcluded/embedded bases) never goes through
+  // Quartz's componentResources emitter either.
+  const scriptBlock = `<script>${wrapScripts([bodyScript, ...viewScriptChunks])}</script>`;
 
-  return `${cssBlock}${selectorHtml}<div class="bases-view-container">${viewPanels.join("")}</div>`;
+  return `${cssBlock}${selectorHtml}<div class="bases-view-container">${viewPanels.join("")}</div>${scriptBlock}`;
 }

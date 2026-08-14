@@ -12,6 +12,8 @@ export default {
       noImage: "No image available",
       uncategorized: "Uncategorized",
       showingCount: "Showing {count} of {total} entries",
+      today: "Today",
+      unscheduled: "Unscheduled ({count})",
     },
   },
 };

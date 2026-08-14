@@ -351,6 +351,14 @@ a {
   }
 }
 
+body[data-slug="404"] .center.minimal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
 .footnotes {
   margin-top: 2rem;
   border-top: 1px solid var(--lightgray);

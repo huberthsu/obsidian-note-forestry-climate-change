@@ -2,6 +2,7 @@
   "name": "obsidian-note-forestry-climate-change",
   "compatibility_date": "2026-08-10",
   "assets": {
-    "directory": "./public"
+    "directory": "./public",
+    "not_found_handling": "404-page"
   }
 }

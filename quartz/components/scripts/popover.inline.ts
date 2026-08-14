@@ -125,9 +125,19 @@ function clearActivePopover() {
   allPopoverElements.forEach((popoverElement) => popoverElement.classList.remove("active-popover"))
 }
 
+// Tracks which links already have listeners so setupPopovers() is safe to
+// call more than once per page (e.g. from "bases-content-inserted" below,
+// fired whenever dynamically-inserted content needs picking up, in addition
+// to the usual once-per-navigation "nav"/"render"). WeakSet entries for
+// links removed from the DOM on the next SPA navigation are simply
+// unreachable and get garbage collected — no manual cleanup needed.
+const wiredLinks = new WeakSet<HTMLAnchorElement>()
+
 function setupPopovers() {
   const links = [...document.querySelectorAll("a.internal")] as HTMLAnchorElement[]
   for (const link of links) {
+    if (wiredLinks.has(link)) continue
+    wiredLinks.add(link)
     link.addEventListener("mouseenter", mouseEnterHandler)
     link.addEventListener("mouseleave", clearActivePopover)
     window.addCleanup(() => {
@@ -139,3 +149,10 @@ function setupPopovers() {
 
 document.addEventListener("nav", setupPopovers)
 document.addEventListener("render", setupPopovers)
+// Fired by dynamic-content components (e.g. the Bases calendar view after a
+// month change) that insert new internal links outside the normal
+// nav/render lifecycle. Deliberately a separate event from "render" — other
+// "render" listeners (e.g. darkmode) aren't written to tolerate being
+// re-invoked mid-session, so broadcasting on the shared "render" event for
+// this would have side effects well beyond popovers.
+document.addEventListener("bases-content-inserted", setupPopovers)

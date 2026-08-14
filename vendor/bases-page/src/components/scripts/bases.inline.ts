@@ -119,6 +119,15 @@ function initBases() {
   const cleanupFns = [];
 
   pages.forEach((page) => {
+    // Same double-init hazard as calendar.inline.ts: this script both runs
+    // immediately at the bottom of this file AND listens for "nav"/"render",
+    // so a single page load calls initBases() more than once. Without this
+    // guard, every sortable header/tab button ends up with 2+ click
+    // listeners, and a single click fires all of them — e.g. two listeners
+    // toggling sort direction means one click net-cancels to no visible
+    // change.
+    if (page.dataset.basesReady === "1") return;
+    page.dataset.basesReady = "1";
     initTabs(page, cleanupFns);
     initTables(page, cleanupFns);
   });

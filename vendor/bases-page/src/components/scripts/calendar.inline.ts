@@ -82,11 +82,13 @@ function renderMonth(container, year, month, byDay, todayKey) {
   container.dataset.currentYear = String(year);
   container.dataset.currentMonth = String(month);
 
-  // The new chips are plain <a class="internal"> elements the popover script
-  // (and anything else listening for "render") only wires up when this event
-  // fires — it doesn't use mutation observers, so without this, hover
-  // previews would only ever work on the server-rendered initial month.
-  document.dispatchEvent(new CustomEvent("render"));
+  // Deliberately a narrow, calendar-specific event rather than the shared
+  // "render" event: popover.inline.ts opted into this one specifically
+  // (and is idempotency-guarded against repeat calls), but "render" is also
+  // heard by other core scripts (darkmode confirmed) that assume it only
+  // ever fires once per navigation — broadcasting on it here previously
+  // caused those to double-initialize and silently misbehave.
+  document.dispatchEvent(new CustomEvent("bases-content-inserted"));
 }
 
 function initCalendar(container, cleanupFns) {

@@ -29,18 +29,3 @@ views:
       note.考題年分: 88
       note.高考普考特考: 118
     startDate: note.date
-  - type: table
-    name: 檢視
-    filters:
-      and:
-        - '!file.inFolder("5.templates")'
-        - and:
-            - '!file.inFolder("5.templates-for-web")'
-    order:
-      - file.name
-      - date
-      - 最新測驗得分
-      - 科目
-      - tags
-      - 考題年分
-      - 高考普考特考

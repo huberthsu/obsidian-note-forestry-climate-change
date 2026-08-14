@@ -40,5 +40,5 @@ function registerCustomViews(customs) {
 }
 
 export { registerCustomViews, viewRegistry };
-//# sourceMappingURL=chunk-2JAX2A6E.js.map
-//# sourceMappingURL=chunk-2JAX2A6E.js.map
+//# sourceMappingURL=chunk-2AUMER56.js.map
+//# sourceMappingURL=chunk-2AUMER56.js.map

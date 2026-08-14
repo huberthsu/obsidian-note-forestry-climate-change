@@ -8,3 +8,7 @@ filters:
 views:
   - type: table
     name: 表格
+    order:
+      - file.name
+      - Chinese translation
+      - tags

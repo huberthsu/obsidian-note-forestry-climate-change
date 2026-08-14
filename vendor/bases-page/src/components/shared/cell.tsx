@@ -125,6 +125,13 @@ export function getColumnLabel(column: string, basesData: BasesData): string {
     .join(" ");
 }
 
+/**
+ * Properties that are internal to Quartz's publish workflow and shouldn't leak
+ * into a view's auto-detected columns when a `.base` file doesn't specify `order`.
+ * Views that explicitly set `order` are unaffected — this only fills the fallback.
+ */
+const DEFAULT_HIDDEN_COLUMNS = new Set(["publish"]);
+
 export function getColumns(view: BasesView, basesData: BasesData, entries: BasesEntry[]): string[] {
   if (view.order && view.order.length > 0) return view.order;
   const columns = new Set<string>();
@@ -142,6 +149,7 @@ export function getColumns(view: BasesView, basesData: BasesData, entries: Bases
       });
     }
   }
+  DEFAULT_HIDDEN_COLUMNS.forEach((key) => columns.delete(key));
   return Array.from(columns);
 }
 

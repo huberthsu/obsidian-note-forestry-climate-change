@@ -1,6 +1,6 @@
 import { createRequire } from 'module';
-import { viewRegistry, registerCustomViews } from './chunk-2JAX2A6E.js';
-import { u, evaluate, evaluateFilter, resolvePropertyValue, S, transformLink, slugifyPath } from './chunk-QPFUMRFY.js';
+import { viewRegistry, registerCustomViews } from './chunk-2AUMER56.js';
+import { u, evaluate, evaluateFilter, resolvePropertyValue, S, transformLink, slugifyPath } from './chunk-Y4KGLVLV.js';
 
 createRequire(import.meta.url);
 
@@ -350,6 +350,7 @@ function getColumnLabel(column, basesData) {
   const segment = column.split(".").pop() ?? column;
   return segment.split("_").map((part) => part ? part.charAt(0).toUpperCase() + part.slice(1) : part).join(" ");
 }
+var DEFAULT_HIDDEN_COLUMNS = /* @__PURE__ */ new Set(["publish"]);
 function getColumns(view, basesData, entries) {
   if (view.order && view.order.length > 0) return view.order;
   const columns = /* @__PURE__ */ new Set();
@@ -367,6 +368,7 @@ function getColumns(view, basesData, entries) {
       });
     }
   }
+  DEFAULT_HIDDEN_COLUMNS.forEach((key) => columns.delete(key));
   return Array.from(columns);
 }
 function getNestedValue(value, path) {
@@ -942,5 +944,5 @@ var BasesBody_default = ((opts) => {
 });
 
 export { BasesBody_default, ViewSelector, i18n, registerBuiltinViews, resolveBasesEntries };
-//# sourceMappingURL=chunk-BLBHUAYY.js.map
-//# sourceMappingURL=chunk-BLBHUAYY.js.map
+//# sourceMappingURL=chunk-YVWJCABR.js.map
+//# sourceMappingURL=chunk-YVWJCABR.js.map

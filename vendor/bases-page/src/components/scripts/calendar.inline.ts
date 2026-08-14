@@ -112,10 +112,20 @@ function initCalendar(container, cleanupFns) {
   const now = new Date();
   const todayKey = now.getFullYear() + "-" + pad2(now.getMonth() + 1) + "-" + pad2(now.getDate());
 
+  // The server-rendered initial grid bakes in "today" as of build time — on a
+  // static site that can be stale by the time a visitor actually loads the
+  // page (a build from last week still says last week's month). If the
+  // visitor's real clock disagrees, immediately re-render to the real
+  // current month instead of leaving the stale one up until they click
+  // "Today" themselves.
   const initialYear = Number(container.dataset.initialYear);
   const initialMonth = Number(container.dataset.initialMonth);
-  container.dataset.currentYear = String(initialYear);
-  container.dataset.currentMonth = String(initialMonth);
+  if (now.getFullYear() !== initialYear || now.getMonth() !== initialMonth) {
+    renderMonth(container, now.getFullYear(), now.getMonth(), byDay, todayKey);
+  } else {
+    container.dataset.currentYear = String(initialYear);
+    container.dataset.currentMonth = String(initialMonth);
+  }
 
   const shiftMonth = (delta) => {
     const cy = Number(container.dataset.currentYear);

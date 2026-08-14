@@ -11,9 +11,6 @@ import { registerCustomViews, viewRegistry } from "../registry";
 import { ViewSelector } from "./ViewSelector";
 import { registerBuiltinViews } from "./views";
 import style from "./styles/bases.scss";
-// @ts-expect-error inline script import handled by esbuild plugin
-import script from "./scripts/bases.inline.ts";
-import { wrapScripts } from "../util/lang";
 
 let builtinViewsRegistered = false;
 
@@ -59,14 +56,14 @@ export default ((opts?: BasesPageOptions) => {
       registerCustomViews(basesOptions.customViews);
     }
 
-    // Collect CSS + scripts from active view types (deduplicated by type)
+    // Collect CSS from active view types (deduplicated by type). Scripts are
+    // NOT collected here — see the componentResources.ts import comment for
+    // why interactivity is wired up globally instead of per-render.
     const activeTypes = new Set(views.map((v) => v.type));
     const viewCssChunks: string[] = [];
-    const viewScriptChunks: string[] = [];
     for (const typeId of activeTypes) {
       const reg = viewRegistry.get(typeId);
       if (reg?.css) viewCssChunks.push(reg.css);
-      if (reg?.afterDOMLoaded) viewScriptChunks.push(reg.afterDOMLoaded);
     }
 
     return (
@@ -112,18 +109,6 @@ export default ((opts?: BasesPageOptions) => {
             );
           })}
         </div>
-        {/*
-          Rendered inline (like the <style> block above) rather than via
-          Component.afterDOMLoaded: BasesBody is a pageType's `body` component,
-          not a layout component, so Quartz's componentResources emitter never
-          discovers it and afterDOMLoaded would silently never run. Inlining
-          means this re-runs on every full/direct page load, but — like an
-          inline <script> generally — won't re-fire after a client-side SPA
-          navigation into this page from another one.
-        */}
-        <script
-          dangerouslySetInnerHTML={{ __html: wrapScripts([script, ...viewScriptChunks]) }}
-        />
       </div>
     );
   };

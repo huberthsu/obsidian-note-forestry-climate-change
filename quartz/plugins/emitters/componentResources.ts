@@ -8,6 +8,16 @@ import spaRouterScript from "../../components/scripts/spa.inline"
 import popoverScript from "../../components/scripts/popover.inline"
 // @ts-ignore
 import lightboxScript from "../../components/scripts/lightbox.inline"
+// bases-page is a pageType `body` component, not a layout component, so it
+// never goes through getQuartzComponents()/componentRegistry below and its
+// own afterDOMLoaded is otherwise unreachable — see
+// vendor/bases-page/src/components/BasesBody.tsx for the full explanation.
+// Pushing its scripts in here (same as lightbox below) is what makes them
+// survive SPA navigation instead of only running on a full page load.
+// @ts-ignore
+import basesTableScript from "../../../vendor/bases-page/src/components/scripts/bases.inline.ts"
+// @ts-ignore
+import basesCalendarScript from "../../../vendor/bases-page/src/components/scripts/calendar.inline.ts"
 import baseStyles from "../../styles/base.scss"
 import customStyles from "../../styles/custom.scss"
 import popoverStyle from "../../components/styles/popover.scss"
@@ -97,6 +107,12 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   // fullscreen, cursor-centered zoom/pan view. Always on, site-wide.
   componentResources.afterDOMLoaded.push(lightboxScript)
   componentResources.css.push(lightboxStyle)
+
+  // Bases table sort/tab-switching + calendar view interactivity. See the
+  // import comment above for why these are pushed here instead of coming
+  // through the normal component tree.
+  componentResources.afterDOMLoaded.push(basesTableScript)
+  componentResources.afterDOMLoaded.push(basesCalendarScript)
 
   if (cfg.analytics?.provider === "google") {
     const tagId = cfg.analytics.tagId

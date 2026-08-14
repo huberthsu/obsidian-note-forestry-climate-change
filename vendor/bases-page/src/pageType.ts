@@ -25,9 +25,6 @@ import { registerBuiltinViews } from "./components/views";
 import { registerCustomViews, viewRegistry } from "./registry";
 import { i18n } from "./i18n";
 import { ViewSelector } from "./components/ViewSelector";
-import { wrapScripts } from "./util/lang";
-// @ts-expect-error inline script import handled by esbuild plugin
-import bodyScript from "./components/scripts/bases.inline.ts";
 
 const basesMatcher: PageMatcher = ({ fileData }) => {
   return "basesData" in fileData;
@@ -161,7 +158,7 @@ function createBasesCodeblockTransform(opts: BasesPageOptions | undefined): Tree
       const baseAliases = new Set([...baseSlugs].map((s) => s.replace(/\.base$/, "")));
       const contentSlugs = allSlugs.filter((s) => !baseSlugs.has(s) && !baseAliases.has(s));
 
-      const htmlString = renderBasesInline(
+      const { html: htmlString, initialIndex } = renderBasesInline(
         basesData,
         allFiles,
         locale,
@@ -175,9 +172,14 @@ function createBasesCodeblockTransform(opts: BasesPageOptions | undefined): Tree
       );
       const fragment = fromHtml(htmlString, { fragment: true }) as HtmlRoot;
 
-      // Replace the placeholder node's children with the rendered content
+      // Replace the placeholder node's children with the rendered content.
+      // data-initial-view has to be set here (BasesBody.tsx sets it directly
+      // in JSX for the standalone-page path) — without it, bases.inline.ts's
+      // initTabs() falls back to `page.dataset.initialView || "0"`, which
+      // silently forces tab 0 active regardless of what was actually
+      // server-rendered as active whenever a base has 2+ views embedded here.
       node.tagName = "div";
-      node.properties = { class: "bases-page bases-inline" };
+      node.properties = { class: "bases-page bases-inline", dataInitialView: initialIndex };
       node.children = fragment.children as ElementContent[];
     });
   };
@@ -198,7 +200,7 @@ function renderBasesInline(
   linkResolution: "absolute" | "relative" | "shortest",
   viewName?: string,
   selfContext?: EvalContext["self"],
-): string {
+): { html: string; initialIndex: number } {
   let views = basesData.views ?? [];
 
   if (viewName) {
@@ -206,12 +208,15 @@ function renderBasesInline(
     const viewNameNorm = normalize(viewName);
     views = views.filter((v) => v.name !== undefined && normalize(v.name) === viewNameNorm);
     if (views.length === 0) {
-      return `<div class="bases-empty">View &quot;${viewName}&quot; not found</div>`;
+      return {
+        html: `<div class="bases-empty">View &quot;${viewName}&quot; not found</div>`,
+        initialIndex: 0,
+      };
     }
   }
 
   if (views.length === 0) {
-    return `<div class="bases-empty">${localeStrings.noViews}</div>`;
+    return { html: `<div class="bases-empty">${localeStrings.noViews}</div>`, initialIndex: 0 };
   }
 
   const preferredType = opts?.defaultViewType ?? "table";
@@ -220,14 +225,14 @@ function renderBasesInline(
     views.findIndex((view) => view.type === preferredType),
   );
 
-  // Collect CSS + scripts from custom view registrations (deduplicated by type)
+  // Collect CSS from custom view registrations (deduplicated by type).
+  // Scripts are NOT collected here — see the componentResources.ts import
+  // comment for why interactivity is wired up globally instead.
   const activeTypes = new Set(views.map((v) => v.type));
   const viewCssChunks: string[] = [];
-  const viewScriptChunks: string[] = [];
   for (const typeId of activeTypes) {
     const reg = viewRegistry.get(typeId);
     if (reg?.css) viewCssChunks.push(reg.css);
-    if (reg?.afterDOMLoaded) viewScriptChunks.push(reg.afterDOMLoaded);
   }
 
   // Render the view selector
@@ -271,10 +276,9 @@ function renderBasesInline(
   });
 
   const cssBlock = viewCssChunks.length > 0 ? `<style>${viewCssChunks.join("\n")}</style>` : "";
-  // Inlined for the same reason as BasesBody's <script> (see its comment):
-  // this render path (transcluded/embedded bases) never goes through
-  // Quartz's componentResources emitter either.
-  const scriptBlock = `<script>${wrapScripts([bodyScript, ...viewScriptChunks])}</script>`;
 
-  return `${cssBlock}${selectorHtml}<div class="bases-view-container">${viewPanels.join("")}</div>${scriptBlock}`;
+  return {
+    html: `${cssBlock}${selectorHtml}<div class="bases-view-container">${viewPanels.join("")}</div>`,
+    initialIndex,
+  };
 }

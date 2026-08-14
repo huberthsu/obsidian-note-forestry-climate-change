@@ -220,7 +220,7 @@ const CalendarView: ViewRenderer = ({
   const today: DateParts = { year: now.getFullYear(), month: now.getMonth(), day: now.getDate() };
 
   // Escape "</script" so the JSON payload can't prematurely close its <script>
-  // tag — same precaution as wrapScripts() uses for the JS bundle.
+  // tag.
   const payloadJson = JSON.stringify({ byDay: Object.fromEntries(dayInfoMap) }).replace(
     /<\/script/gi,
     "<\\/script",

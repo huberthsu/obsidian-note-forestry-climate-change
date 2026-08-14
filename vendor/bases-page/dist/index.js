@@ -13745,15 +13745,6 @@ function registerBuiltinViews() {
 // src/components/styles/bases.scss
 var bases_default = ".bases-page {\n  width: 100%;\n  max-width: 100%;\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n  overflow: hidden;\n}\n\n.bases-view-tabs {\n  display: flex;\n  gap: 8px;\n  flex-wrap: wrap;\n}\n.bases-view-tabs button {\n  border: 1px solid var(--lightgray);\n  background: var(--light);\n  color: var(--darkgray);\n  padding: 6px 12px;\n  border-radius: 999px;\n  cursor: pointer;\n  font-size: 0.9rem;\n}\n.bases-view-tabs button.is-active {\n  background: var(--secondary);\n  color: var(--light);\n  border-color: var(--secondary);\n}\n\n.bases-view-container {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n}\n\n.bases-view {\n  display: none;\n}\n.bases-view.is-active {\n  display: block;\n}\n\n.bases-view-meta {\n  font-size: 0.85rem;\n  color: var(--gray);\n  margin-bottom: 8px;\n}\n\n.bases-table-wrapper {\n  width: 100%;\n  overflow-x: auto;\n}\n\n.bases-table {\n  width: 100%;\n  border-collapse: collapse;\n  border: 1px solid var(--lightgray);\n  border-radius: 8px;\n  overflow: hidden;\n}\n.bases-table th,\n.bases-table td {\n  padding: 10px 12px;\n  text-align: left;\n  border-bottom: 1px solid var(--lightgray);\n  font-size: 0.9rem;\n}\n.bases-table thead th {\n  position: sticky;\n  top: 0;\n  background: var(--light);\n  color: var(--dark);\n  font-weight: 600;\n  cursor: pointer;\n}\n.bases-table td .bases-empty {\n  padding: 0;\n  border: 0;\n  background: none;\n  color: var(--gray);\n  display: inline;\n}\n.bases-table td code {\n  font-size: 0.85em;\n  padding: 0.1rem 0.3rem;\n  border-radius: 3px;\n  background: var(--highlight);\n  word-break: break-all;\n}\n.bases-table td .bases-list {\n  flex-direction: row;\n  flex-wrap: wrap;\n  gap: 4px;\n}\n.bases-table td input[type=checkbox] {\n  margin-inline: 0;\n}\n\n.bases-table-header-sort {\n  position: absolute;\n  right: 8px;\n  top: calc(50% - 4px);\n  display: inline-block;\n  width: 8px;\n  height: 8px;\n  margin-left: 6px;\n  border-right: 2px solid transparent;\n  border-bottom: 2px solid transparent;\n}\n\nth.is-sorted-asc .bases-table-header-sort {\n  border-right-color: var(--darkgray);\n  border-bottom-color: var(--darkgray);\n  transform: rotate(-45deg);\n}\n\nth.is-sorted-desc .bases-table-header-sort {\n  border-right-color: var(--darkgray);\n  border-bottom-color: var(--darkgray);\n  transform: rotate(135deg);\n}\n\n.bases-summary-row td {\n  background: var(--light);\n  font-weight: 600;\n  color: var(--darkgray);\n}\n\n.bases-table-group-header td {\n  background: var(--lightgray);\n  font-weight: 600;\n  padding: 8px 12px;\n  border-bottom: 2px solid var(--gray);\n}\n\n.bases-table-group-property {\n  color: var(--gray);\n  font-weight: 400;\n}\n\n.bases-table-group-label {\n  margin-right: 8px;\n}\n\n.bases-table-group-count {\n  background: var(--light);\n  color: var(--darkgray);\n  border-radius: 999px;\n  padding: 2px 8px;\n  font-size: 0.75rem;\n  font-weight: 400;\n}\n\n.bases-separator {\n  color: var(--gray);\n}\n\n.bases-number {\n  font-variant-numeric: tabular-nums;\n}\n\n.bases-list {\n  display: inline-flex;\n  flex-wrap: wrap;\n  gap: 4px;\n}\n\n.bases-list-group {\n  width: 100%;\n}\n\n.bases-list-group-list {\n  display: flex;\n  flex-direction: column;\n}\n\n.bases-list-item {\n  padding: 2px 0;\n}\n\n.bases-list-item-properties {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: baseline;\n  gap: 0;\n}\n\n.bases-list-property {\n  display: inline-flex;\n  align-items: baseline;\n  gap: 4px;\n}\n\n.list-bullet {\n  color: var(--darkgray);\n  user-select: none;\n}\n\n.bases-list-separator {\n  color: var(--gray);\n  margin-right: 4px;\n}\n\n.bases-rendered-value {\n  display: inline;\n}\n\n.bases-cards {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));\n  gap: 16px;\n}\n\n.bases-card {\n  border: 1px solid var(--lightgray);\n  border-radius: 12px;\n  overflow: hidden;\n  background: var(--light);\n  display: flex;\n  flex-direction: column;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);\n  color: inherit;\n  text-decoration: none;\n  transition: box-shadow 0.15s ease;\n}\n.bases-card:hover {\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);\n}\n\n.bases-card-image {\n  overflow: hidden;\n  background: var(--lightgray);\n}\n.bases-card-image img {\n  width: 100%;\n  height: 100%;\n  display: block;\n  object-fit: cover;\n}\n\n.bases-card-color {\n  min-height: 60px;\n}\n\n.bases-card-title {\n  font-weight: 600;\n  color: var(--dark);\n}\n\n.bases-card-body {\n  padding: 12px;\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n}\n\n.bases-card-meta {\n  display: grid;\n  gap: 4px;\n}\n\n.bases-card-row {\n  display: flex;\n  justify-content: space-between;\n  font-size: 0.8rem;\n  color: var(--darkgray);\n}\n\n.bases-card-label {\n  color: var(--gray);\n}\n\n.bases-map-placeholder {\n  padding: 24px;\n  border: 1px dashed var(--lightgray);\n  border-radius: 12px;\n  background: var(--light);\n}\n\n.bases-map-message {\n  color: var(--darkgray);\n  margin-top: 12px;\n}\n\n.bases-empty {\n  padding: 24px;\n  text-align: center;\n  color: var(--darkgray);\n  border: 1px dashed var(--lightgray);\n  border-radius: 12px;\n  background: var(--light);\n}\n\n.bases-gallery {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));\n  gap: 16px;\n}\n\n.bases-gallery-item {\n  position: relative;\n  border-radius: 12px;\n  overflow: hidden;\n  border: 1px solid var(--lightgray);\n  background: var(--light);\n}\n\n.bases-gallery-image {\n  aspect-ratio: 4/3;\n  overflow: hidden;\n  background: var(--lightgray);\n}\n\n.bases-gallery-image img,\n.bases-gallery-placeholder {\n  width: 100%;\n  height: 100%;\n  display: block;\n  object-fit: cover;\n}\n\n.bases-gallery-placeholder {\n  background: linear-gradient(135deg, var(--lightgray), var(--highlight));\n}\n\n.bases-gallery-title {\n  position: absolute;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  padding: 10px 12px;\n  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);\n  color: var(--light);\n  font-weight: 600;\n}\n\n.bases-gallery-title a {\n  color: inherit;\n}\n\n.bases-board {\n  display: flex;\n  gap: 16px;\n  overflow-x: auto;\n  padding-bottom: 4px;\n}\n\n.bases-board-column {\n  min-width: min(250px, 80vw);\n  flex-shrink: 0;\n  border: 1px solid var(--lightgray);\n  border-radius: 12px;\n  background: var(--light);\n  display: flex;\n  flex-direction: column;\n}\n\n.bases-board-column-header {\n  position: sticky;\n  top: 0;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 8px;\n  padding: 10px 12px;\n  font-weight: 600;\n  background: var(--light);\n  border-bottom: 1px solid var(--lightgray);\n  border-radius: 12px 12px 0 0;\n  z-index: 1;\n}\n\n.bases-board-count {\n  background: var(--lightgray);\n  color: var(--darkgray);\n  border-radius: 999px;\n  padding: 2px 8px;\n  font-size: 0.75rem;\n}\n\n.bases-board-column-body {\n  padding: 8px;\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n}\n\n.bases-board-card {\n  border: 1px solid var(--lightgray);\n  border-radius: 10px;\n  background: var(--light);\n  padding: 10px 12px;\n  display: flex;\n  flex-direction: column;\n  gap: 6px;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);\n}\n\n.bases-board-card-meta {\n  display: grid;\n  gap: 4px;\n  font-size: 0.8rem;\n  color: var(--darkgray);\n}\n\n.bases-board-card-row {\n  display: flex;\n  justify-content: space-between;\n  gap: 8px;\n}\n\n.bases-board-card-label {\n  color: var(--gray);\n}\n\n.bases-calendar-wrapper {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n}\n\n.bases-calendar-nav {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 12px;\n  margin-bottom: 12px;\n}\n\n.bases-calendar-label {\n  font-weight: 600;\n  color: var(--dark);\n  min-width: 10ch;\n  text-align: center;\n}\n\n.bases-calendar-nav-btn {\n  border: 1px solid var(--lightgray);\n  background: var(--light);\n  color: var(--darkgray);\n  padding: 4px 10px;\n  border-radius: 999px;\n  cursor: pointer;\n  font-size: 0.85rem;\n}\n.bases-calendar-nav-btn:disabled {\n  opacity: 0.4;\n  cursor: default;\n}\n.bases-calendar-nav-btn:not(:disabled):hover {\n  background: var(--lightgray);\n}\n\n.bases-calendar-today-btn {\n  font-weight: 600;\n}\n\n.bases-calendar-weekdays {\n  display: grid;\n  grid-template-columns: repeat(7, 1fr);\n  gap: 4px;\n  margin-bottom: 4px;\n}\n.bases-calendar-weekdays span {\n  text-align: center;\n  font-size: 0.75rem;\n  font-weight: 600;\n  color: var(--gray);\n  text-transform: uppercase;\n}\n\n.bases-calendar-days {\n  display: grid;\n  grid-template-columns: repeat(7, 1fr);\n  grid-auto-rows: minmax(72px, auto);\n  gap: 4px;\n}\n\n.bases-calendar-day {\n  border: 1px solid var(--lightgray);\n  border-radius: 8px;\n  padding: 4px;\n  display: flex;\n  flex-direction: column;\n  gap: 2px;\n  overflow: hidden;\n}\n.bases-calendar-day.is-outside {\n  border-color: transparent;\n  background: none;\n}\n.bases-calendar-day.is-today {\n  border-color: var(--secondary);\n  background: var(--highlight);\n}\n\n.bases-calendar-daynum {\n  font-size: 0.75rem;\n  color: var(--gray);\n  align-self: flex-end;\n}\n\n.bases-calendar-day.is-today .bases-calendar-daynum {\n  color: var(--secondary);\n  font-weight: 700;\n}\n\n.bases-calendar-entries {\n  display: flex;\n  flex-direction: column;\n  gap: 2px;\n  overflow-y: auto;\n}\n\n.bases-calendar-chip {\n  display: block;\n  font-size: 0.75rem;\n  padding: 2px 6px;\n  border-radius: 6px;\n  background: var(--lightgray);\n  color: var(--dark);\n  text-decoration: none;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.bases-calendar-chip:hover {\n  background: var(--secondary);\n  color: var(--light);\n}\n\n.bases-calendar-unscheduled {\n  border-top: 1px solid var(--lightgray);\n  padding-top: 12px;\n}\n\n.bases-calendar-unscheduled-title {\n  font-size: 0.85rem;\n  font-weight: 600;\n  color: var(--darkgray);\n  margin-bottom: 8px;\n}\n\n@media (max-width: 600px) {\n  .bases-calendar-days {\n    grid-auto-rows: minmax(44px, auto);\n  }\n  .bases-calendar-chip {\n    font-size: 0.65rem;\n  }\n}";
 
-// src/components/scripts/bases.inline.ts
-var bases_inline_default = `function f(e,s){let n=e.querySelectorAll(".bases-view-tabs button"),r=e.querySelectorAll(".bases-view");n.forEach(t=>{t.classList.toggle("is-active",t.dataset.viewIndex===String(s))}),r.forEach(t=>{t.classList.toggle("is-active",t.dataset.viewIndex===String(s))})}function p(e,s){let n=Number(e),r=Number(s);return!Number.isNaN(n)&&!Number.isNaN(r)?n-r:String(e).localeCompare(String(s))}function h(e,s,n){return e.length===0||(e.sort((r,t)=>{let i=r.children[s],o=t.children[s],c=i?.dataset?.value??i?.textContent??"",a=o?.dataset?.value??o?.textContent??"";return p(c,a)}),n==="desc"&&e.reverse()),e}function v(e,s,n){let r=e.querySelector("tbody");if(!r)return;let t=Array.from(r.querySelectorAll("tr"));if(n==="none"){let o=e._originalOrder;o&&o.forEach(c=>r.appendChild(c));return}if(e._originalOrder||(e._originalOrder=Array.from(t)),t.some(o=>o.classList.contains("bases-table-group-header"))){let o=[],c=null;for(let a of t)a.classList.contains("bases-table-group-header")?(c={header:a,rows:[]},o.push(c)):c?c.rows.push(a):(c={header:null,rows:[a]},o.push(c));for(let a of o)h(a.rows,s,n);for(let a of o)a.header&&r.appendChild(a.header),a.rows.forEach(l=>r.appendChild(l))}else h(t,s,n),t.forEach(o=>r.appendChild(o))}function b(e,s){e.querySelectorAll(".bases-table").forEach(r=>{let t=r.querySelectorAll("th[data-sortable='true']");t.forEach((i,o)=>{let c=()=>{let a=i.dataset.sortDirection||"none",l=a==="asc"?"desc":a==="desc"?"none":"asc";t.forEach(u=>{u!==i&&(u.dataset.sortDirection="none"),u.classList.remove("is-sorted-asc","is-sorted-desc")}),i.dataset.sortDirection=l,i.classList.toggle("is-sorted-asc",l==="asc"),i.classList.toggle("is-sorted-desc",l==="desc"),v(r,o,l)};i.addEventListener("click",c),s.push(()=>i.removeEventListener("click",c))})})}function g(e,s){let n=e.querySelectorAll(".bases-view-tabs button");if(n.length===0)return;let r=parseInt(e.dataset.initialView||"0",10);f(e,Number.isNaN(r)?0:r),n.forEach(t=>{let i=()=>{let o=parseInt(t.dataset.viewIndex||"0",10);f(e,Number.isNaN(o)?0:o)};t.addEventListener("click",i),s.push(()=>t.removeEventListener("click",i))})}function d(){let e=document.querySelectorAll(".bases-page");if(e.length===0)return;let s=[];e.forEach(n=>{g(n,s),b(n,s)}),window.addCleanup&&window.addCleanup(()=>{s.forEach(n=>{n()})})}document.addEventListener("nav",()=>{d()});document.addEventListener("render",()=>{d()});d();
-`;
-
-// src/util/lang.ts
-function wrapScripts(scripts) {
-  return scripts.map((s3) => `(function () {${s3}})();`).join("\n").replace(/<\/script/gi, "<\\/script");
-}
-
 // src/components/BasesBody.tsx
 import { jsx as jsx11, jsxs as jsxs9 } from "preact/jsx-runtime";
 var builtinViewsRegistered = false;
@@ -13792,11 +13783,9 @@ var BasesBody_default = ((opts) => {
     }
     const activeTypes = new Set(views.map((v2) => v2.type));
     const viewCssChunks = [];
-    const viewScriptChunks = [];
     for (const typeId of activeTypes) {
       const reg = viewRegistry.get(typeId);
       if (reg?.css) viewCssChunks.push(reg.css);
-      if (reg?.afterDOMLoaded) viewScriptChunks.push(reg.afterDOMLoaded);
     }
     return /* @__PURE__ */ jsxs9("div", { class: "bases-page", "data-initial-view": initialIndex, children: [
       viewCssChunks.length > 0 && /* @__PURE__ */ jsx11("style", { dangerouslySetInnerHTML: { __html: viewCssChunks.join("\n") } }),
@@ -13835,13 +13824,7 @@ var BasesBody_default = ((opts) => {
             ] })
           }
         );
-      }) }),
-      /* @__PURE__ */ jsx11(
-        "script",
-        {
-          dangerouslySetInnerHTML: { __html: wrapScripts([bases_inline_default, ...viewScriptChunks]) }
-        }
-      )
+      }) })
     ] });
   };
   Component.css = bases_default;
@@ -13953,7 +13936,7 @@ function createBasesCodeblockTransform(opts) {
       const baseSlugs = new Set(allSlugs.filter((s3) => s3.endsWith(".base")));
       const baseAliases = new Set([...baseSlugs].map((s3) => s3.replace(/\.base$/, "")));
       const contentSlugs = allSlugs.filter((s3) => !baseSlugs.has(s3) && !baseAliases.has(s3));
-      const htmlString = renderBasesInline(
+      const { html: htmlString, initialIndex } = renderBasesInline(
         basesData,
         allFiles,
         locale,
@@ -13967,7 +13950,7 @@ function createBasesCodeblockTransform(opts) {
       );
       const fragment = fromHtml(htmlString, { fragment: true });
       node.tagName = "div";
-      node.properties = { class: "bases-page bases-inline" };
+      node.properties = { class: "bases-page bases-inline", dataInitialView: initialIndex };
       node.children = fragment.children;
     });
   };
@@ -13979,11 +13962,14 @@ function renderBasesInline(basesData, allFiles, locale, localeStrings, opts, slu
     const viewNameNorm = normalize2(viewName);
     views = views.filter((v2) => v2.name !== void 0 && normalize2(v2.name) === viewNameNorm);
     if (views.length === 0) {
-      return `<div class="bases-empty">View &quot;${viewName}&quot; not found</div>`;
+      return {
+        html: `<div class="bases-empty">View &quot;${viewName}&quot; not found</div>`,
+        initialIndex: 0
+      };
     }
   }
   if (views.length === 0) {
-    return `<div class="bases-empty">${localeStrings.noViews}</div>`;
+    return { html: `<div class="bases-empty">${localeStrings.noViews}</div>`, initialIndex: 0 };
   }
   const preferredType = opts?.defaultViewType ?? "table";
   const initialIndex = Math.max(
@@ -13992,11 +13978,9 @@ function renderBasesInline(basesData, allFiles, locale, localeStrings, opts, slu
   );
   const activeTypes = new Set(views.map((v2) => v2.type));
   const viewCssChunks = [];
-  const viewScriptChunks = [];
   for (const typeId of activeTypes) {
     const reg = viewRegistry.get(typeId);
     if (reg?.css) viewCssChunks.push(reg.css);
-    if (reg?.afterDOMLoaded) viewScriptChunks.push(reg.afterDOMLoaded);
   }
   const selectorHtml = K(
     h4(Fragment5, null, ViewSelector({ views, activeIndex: initialIndex, locale }))
@@ -14033,8 +14017,10 @@ function renderBasesInline(basesData, allFiles, locale, localeStrings, opts, slu
     return `<div class="bases-view${activeClass}" data-view-index="${index2}" data-view-type="${view.type}">${innerHtml}</div>`;
   });
   const cssBlock = viewCssChunks.length > 0 ? `<style>${viewCssChunks.join("\n")}</style>` : "";
-  const scriptBlock = `<script>${wrapScripts([bases_inline_default, ...viewScriptChunks])}</script>`;
-  return `${cssBlock}${selectorHtml}<div class="bases-view-container">${viewPanels.join("")}</div>${scriptBlock}`;
+  return {
+    html: `${cssBlock}${selectorHtml}<div class="bases-view-container">${viewPanels.join("")}</div>`,
+    initialIndex
+  };
 }
 
 // src/transformer.ts

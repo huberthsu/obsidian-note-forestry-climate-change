@@ -4,8 +4,8 @@ aliases:
   - 文獻筆記工作流
 title: 文獻筆記工作流
 created: 2026-08-11T03:01:45.388Z
-modified: 2026-08-12T08:50:22.880Z
-published: 2026-08-12T08:50:22.880Z
+modified: 2026-08-15T06:21:51.082Z
+published: 2026-08-15T06:21:51.082Z
 tags:
   - 工作流
   - 康乃爾筆記法
@@ -46,14 +46,24 @@ child:
 
 ---
 
-# 第1步: 資訊品質判斷
+# 第1步: 蒐集文獻
+
+- 使用工具: publish or perish
+  - 利用布林邏輯字串(Boolean String)並結合相關的同義詞來設計搜尋字串組合
+  - 如(“forest”) AND (“patch–corridor–matrix” OR “PCM") AND("carbon storage" OR "carbon sequestration")
+
+---
+
+# 第2步: 資訊品質判斷
 
 - 這個外部資料值得或不值得我做卡片筆記?
   - 依照[[Information filtering criteria|資訊篩選標準]]中的打造第二大腦，判斷是否符合啟發、意外、用途、關聯，**至少符合一項才需要做筆記**
 - 這個外部資料的內容品質如何?
   - 參考[[Information filtering criteria|資訊篩選標準]]中的內容價值評分表，決定是否有需要做筆記
 
-# 第2步: 創建文獻筆記
+---
+
+# 第3步: 創建文獻筆記
 
 - 參考[[Instructions for using Cornell and the Card Box Note-Taking Method|康乃爾與卡片盒筆記法的應用說明]]設計出[[Literature notes template|文獻筆記模板]]
 

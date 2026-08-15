@@ -4,8 +4,8 @@ aliases:
   - 考古題筆記模板
 title: 考古題筆記模板
 created: 2026-08-10T23:40:51.953Z
-modified: 2026-08-14T18:33:18.456Z
-published: 2026-08-14T18:33:18.456Z
+modified: 2026-08-15T08:02:43.470Z
+published: 2026-08-15T08:02:43.470Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -52,4 +52,6 @@ date:
 
 # 參考答案
 
-# 關聯筆記、參考資料
+# 關聯筆記
+
+# 參考資料

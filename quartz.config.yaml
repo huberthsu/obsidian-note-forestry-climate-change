@@ -74,6 +74,9 @@ plugins:
       enableVideoEmbed: true
       enableCheckbox: true
     order: 30
+  - source: ./vendor/timestamp-links
+    enabled: true
+    order: 35
   - source: "@quartz-community/github-flavored-markdown"
     enabled: true
     order: 40

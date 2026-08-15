@@ -14,7 +14,6 @@ views:
       - 最新測驗得分
       - 科目
       - tags
-      - 高考普考特考
     sort:
       - property: file.name
         direction: ASC

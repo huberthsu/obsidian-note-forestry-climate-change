@@ -4,8 +4,8 @@ aliases:
   - 文獻筆記模板
 title: 文獻筆記模板
 created: 2026-08-10T23:40:14.234Z
-modified: 2026-08-11T13:15:22.100Z
-published: 2026-08-11T13:15:22.100Z
+modified: 2026-08-15T12:54:01.816Z
+published: 2026-08-15T12:54:01.816Z
 category:
   - "[[Literature notes]]"
 tags:
@@ -18,7 +18,7 @@ tags:
 發表年分:
 閱讀狀態: false
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
 sibling:
 child:

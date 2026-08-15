@@ -2,7 +2,7 @@
 publish: true
 title: 由地景生態學之斑塊（Patch）－廊道（Corridor）－基質（Matrix）理論，說明在進行國有林事業區經營規劃時，應如何透過林分空間結構調整與空間破碎度控制，以最大化森林的長期碳儲量並兼顧生物多樣性？
 created: 2026-08-23
-modified: 2026-08-15T08:33:50.860Z
+modified: 2026-08-15T14:09:07.968Z
 published: 2026-08-23
 tags:
   - 斑塊廊道基質理論
@@ -55,9 +55,3 @@ date: 2026-08-23
 
 - [[太魯閣、雪霸國家公園生態廊道之研究—生態廊道概念與國外案例的整理及有勝溪上游空間資料的分析.pdf]]
   - 內政部營建署雪霸國家公園管理處(2002)太魯閣、雪霸國家公園生態廊道之研究—生態廊道概念與國外案例的整理及有勝溪上游空間資料的分析。
-- [[Quantifying landscape fragmentation and forest carbon dynamics over 35 years in the Brazilian Atlantic Forest.pdf]]
-  - Broggio, I. S., Silva-Junior, C. H., Nascimento, M. T., Villela, D. M., & Aragão, L. E. (2024) Quantifying landscape fragmentation and forest carbon dynamics over 35 years in the Brazilian Atlantic Forest. _Environmental Research Letters_, _19_(3), 034047.
-- [[High resolution analysis of tropical forest fragmentation and its impact on the global carbon cycle.pdf]]
-  - Brinck, K., Fischer, R., Groeneveld, J., Lehmann, S., Dantas De Paula, M., Pütz, S., ... & Huth, A. (2017). High resolution analysis of tropical forest fragmentation and its impact on the global carbon cycle. _Nature Communications_, _8_(1), 14855.
-- [[Optimization and Construction of Forestland Ecological Security Pattern A Case Study of the Huai River Source–Dabie Mountains in China.pdf]]
-  - Wang, X., Xu, S., Huang, X., Yang, C., & Li, Y. (2025). Optimization and Construction of Forestland Ecological Security Pattern: A Case Study of the Huai River Source–Dabie Mountains in China. _Forests_, _16_(3), 426.

@@ -1,0 +1,14 @@
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - file.tags.contains("碳抵換")
+    order:
+      - file.name
+      - file.tags
+      - tags
+      - 相關筆記
+      - 摘要
+      - 篩選標準
+      - 閱讀狀態

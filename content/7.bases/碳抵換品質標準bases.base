@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: 表格
+    filters:
+      or:
+        - file.tags.contains("碳抵換品質標準")
+    order:
+      - file.name
+      - tags
+      - file.tags
+      - 相關筆記
+      - 摘要
+      - 類別

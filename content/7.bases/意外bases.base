@@ -1,0 +1,14 @@
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - 篩選標準.contains(link("意外"))
+        - and:
+            - '!file.inFolder("5.模板")'
+    order:
+      - file.name
+      - 摘要
+      - 標籤
+      - 篩選標準
+      - 類別

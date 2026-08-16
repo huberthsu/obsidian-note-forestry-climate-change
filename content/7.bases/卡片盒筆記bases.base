@@ -1,0 +1,17 @@
+filters:
+  and:
+    - category.contains(link("Zettelkasten notes"))
+views:
+  - type: table
+    name: 卡片盒筆記
+    filters:
+      and:
+        - and:
+            - '!file.inFolder("5.templates")'
+            - and:
+                - '!file.inFolder("5.templates-for-web")'
+    order:
+      - file.name
+      - tags
+      - 概念簡介
+      - source

@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - file.tags.contains("外加性")
+    order:
+      - file.name
+      - tags
+      - file.tags
+    columnSize:
+      note.tags: 364
+      file.tags: 320

@@ -4,12 +4,12 @@ aliases:
   - 關聯
 title: 關聯
 created: 2026-07-21T02:49:40.909Z
-modified: 2026-08-12T07:56:48.737Z
-published: 2026-08-12T07:56:48.737Z
+modified: 2026-08-16T08:24:46.827Z
+published: 2026-08-16T08:24:46.827Z
 tags:
   - 工作流
 category:
-  - "[[Zettelkasten notes|卡片盒筆記]]"
+  - "[[Zettelkasten notes]]"
 in:
   - 個人note
 parent:
@@ -19,13 +19,14 @@ sibling:
   - "[[Surprise|意外]]"
   - "[[Use|用途]]"
 child:
+password:
 ---
 
 ---
 
 # 關於篩選標準中的關聯
 
-- \[ ] 文獻內容是否與我有關聯
+- [ ] 文獻內容是否與我有關聯
 
 # 與其他筆記的關聯與理由
 

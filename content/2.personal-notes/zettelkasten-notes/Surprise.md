@@ -4,12 +4,12 @@ aliases:
   - 意外
 title: 意外
 created: 2026-07-21T02:49:40.928Z
-modified: 2026-08-12T07:56:48.772Z
-published: 2026-08-12T07:56:48.772Z
+modified: 2026-08-16T08:25:11.026Z
+published: 2026-08-16T08:25:11.026Z
 tags:
   - 工作流
 category:
-  - "[[Zettelkasten notes|卡片盒筆記]]"
+  - "[[Zettelkasten notes]]"
 in:
   - 個人note
 parent:
@@ -19,13 +19,14 @@ sibling:
   - "[[Use|用途]]"
   - "[[Related|關聯]]"
 child:
+password:
 ---
 
 ---
 
 # 關於篩選標準中的意外
 
-- \[ ] 文獻是否顛覆了我原本想法，或與我的原有觀點衝突
+- [ ] 文獻是否顛覆了我原本想法，或與我的原有觀點衝突
 
 # 與其他筆記的關聯與理由
 

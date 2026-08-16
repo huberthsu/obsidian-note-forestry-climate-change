@@ -4,12 +4,12 @@ aliases:
   - 啟發
 title: 啟發
 created: 2026-07-21T02:49:40.920Z
-modified: 2026-08-14T07:16:35.663Z
-published: 2026-08-14T07:16:35.663Z
+modified: 2026-08-16T08:24:54.795Z
+published: 2026-08-16T08:24:54.795Z
 tags:
   - 工作流
 category:
-  - "[[Zettelkasten notes|卡片盒筆記]]"
+  - "[[Zettelkasten notes]]"
 in:
   - 個人note
 parent:
@@ -19,13 +19,14 @@ sibling:
   - "[[Related|關聯]]"
   - "[[Surprise|意外]]"
 child:
+password:
 ---
 
 ---
 
 # 關於篩選標準中的啟發
 
-- \[ ] 文獻是否引發我的想像力、想法、靈感
+- [ ] 文獻是否引發我的想像力、想法、靈感
 
 # 與其他筆記的關聯與理由
 

@@ -4,12 +4,12 @@ aliases:
   - 用途
 title: 用途
 created: 2026-07-21T02:49:40.917Z
-modified: 2026-08-14T07:26:19.741Z
-published: 2026-08-14T07:26:19.741Z
+modified: 2026-08-16T08:25:16.094Z
+published: 2026-08-16T08:25:16.094Z
 tags:
   - 工作流
 category:
-  - "[[Zettelkasten notes|卡片盒筆記]]"
+  - "[[Zettelkasten notes]]"
 in:
   - 個人note
 parent:
@@ -19,13 +19,14 @@ sibling:
   - "[[Surprise|意外]]"
   - "[[Related|關聯]]"
 child:
+password:
 ---
 
 ---
 
 # 關於篩選標準中的用途
 
-- \[ ] 文獻內是否含有未來可能有用途(內容、圖片、數據、方法...)
+- [ ] 文獻內是否含有未來可能有用途(內容、圖片、數據、方法...)
 
 # 與其他筆記的關聯與理由
 

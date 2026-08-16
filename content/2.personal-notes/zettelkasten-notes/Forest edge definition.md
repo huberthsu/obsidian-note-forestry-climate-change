@@ -1,20 +1,23 @@
 ---
 publish: true
 aliases:
-  - 卡片盒筆記模板
-title: 卡片盒筆記模板
-created: 2026-08-10T23:40:57.356Z
-modified: 2026-08-16T08:34:00.859Z
-published: 2026-08-16T08:34:00.859Z
+  - 森林邊緣
+  - 林緣
+title: 林緣定義
+created: 2026-08-16T08:32:35.662Z
+modified: 2026-08-16T08:40:34.221Z
+published: 2026-08-16T08:40:34.221Z
+tags:
+  - 林緣
 category:
   - "[[Zettelkasten notes]]"
-tags:
 摘要:
 in:
   - 個人note
 parent:
 sibling:
 child:
+password:
 ---
 
 # 內容

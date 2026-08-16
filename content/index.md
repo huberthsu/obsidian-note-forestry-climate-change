@@ -2,8 +2,8 @@
 publish: true
 title: 森林與氣候變遷的數位花園😊
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-08-16T06:13:20.520Z
-published: 2026-08-16T06:13:20.520Z
+modified: 2026-08-16T08:41:58.132Z
+published: 2026-08-16T08:41:58.132Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -16,13 +16,13 @@ published: 2026-08-16T06:13:20.520Z
 # 網站內容說明
 
 > [!success] 會努力定期更新
-> -> **英文學習筆記和考古題筆記**
+> -> **英文學習筆記、考古題筆記、卡片盒筆記**
 
 > [!question] 有時間，且有新發現或新想法才更新
 > -> 說明
 
 > [!Failure] 僅分享模板與工作流，後續不再更新
-> -> 文獻筆記、卡片盒筆記、靈感與思考筆記
+> -> 文獻筆記、靈感與思考筆記
 
 ---
 

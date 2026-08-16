@@ -1,23 +1,28 @@
 ---
 publish: true
-aliases:
-  - 卡片盒筆記模板
-title: 卡片盒筆記模板
-created: 2026-08-10T23:40:57.356Z
-modified: 2026-08-16T08:34:00.859Z
-published: 2026-08-16T08:34:00.859Z
+title: 什麼是OECMs
+created: 2026-08-12T06:40:49.123Z
+modified: 2026-08-16T08:41:20.208Z
+published: 2026-08-16T08:41:20.208Z
+tags:
+  - OECMs
 category:
   - "[[Zettelkasten notes]]"
-tags:
+Aliases:
+  - "#OECMs"
+  - 保育共生地
 摘要:
 in:
   - 個人note
 parent:
 sibling:
 child:
+password:
 ---
 
-# 內容
+---
+
+# 核心內容
 
 # 與其他筆記的關聯與理由
 

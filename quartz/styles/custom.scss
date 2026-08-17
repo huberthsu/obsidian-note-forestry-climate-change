@@ -50,3 +50,71 @@ html[saved-theme] body :not(li) > input[type="checkbox"] {
   margin: 0;
   line-height: 1.4rem;
 }
+
+// Chromium quirk: a `position: sticky` ancestor (here `.sidebar.right`)
+// containing a nested `overflow: auto` scroller (the TOC's `ul.toc-content`)
+// can leave that scroller's hit-testing/paint stale — `scrollTop` updates
+// correctly on scroll, but the browser keeps painting the pre-scroll
+// content. Promoting the sticky sidebar to its own compositor layer works
+// around it.
+.sidebar.right {
+  will-change: transform;
+}
+
+// The real bug behind "can't scroll far enough to reach the last two
+// headings": on a long page (e.g. the homepage, whose TOC has 17 entries),
+// `.sidebar.right`'s own content — Graph View + `.toc` — is measurably
+// taller than the sidebar's `height: 100vh` box (measured 733px of content
+// in a 639px box on one test viewport). `flex-shrink` on Graph View and
+// `.toc` doesn't shrink either of them enough to close that gap — both
+// stay at their natural content height regardless — and since `.sidebar`
+// itself never set its own `overflow`, it defaults to `visible`: the
+// overflow amount just gets silently sliced off by the browser window's
+// own edge, with no scrollbar at any level able to reach it.
+//
+// Making the whole sidebar scrollable as one unit (`overflow-y: auto`)
+// reaches everything regardless of exactly why the flex-shrink math falls
+// short — but the TOC plugin's own `ul.toc-content` also has its own
+// separate `overflow-y: auto` (max-height clamped to `.toc`'s height), and
+// a scroll gesture hits whichever scroller is innermost under the cursor
+// first. With `overscroll-behavior: contain` (also the plugin's own CSS)
+// that inner scroll never chains up to this new outer one, so scrolling
+// with the cursor directly over the TOC list would still dead-end at
+// the inner scroller's own (too-short) max, same symptom as before just
+// one layer in. Turning off the inner scroller — let `.toc`/`ul.toc-content`
+// size to their natural content height instead of clamping+scrolling —
+// leaves exactly one scroller (this outer one) for the whole sidebar, so
+// scrolling anywhere over it, including directly over the TOC text,
+// reaches the end.
+.sidebar.right {
+  overflow-y: auto;
+}
+
+// First attempt at "turn off the inner scroller" was `overflow-y: visible`
+// on `.toc`/`ul.toc-content` — that stopped the clipping, but `overflow:
+// visible` only stops content from being *clipped*, it doesn't make the
+// flex item's own box grow to fit. `.toc` kept its flex-shrunk (too-short)
+// box, so the now-unclipped list just visually spilled out past that box's
+// bottom edge and painted over whatever sits next in the column —
+// Backlinks — instead of pushing it down. Confirmed on a page with a
+// medium-length TOC ("workflow-system-overview"): TOC and Backlinks text
+// overlapped, unreadable.
+//
+// `flex-shrink: 0` fixes it at the source instead: `.toc` no longer gets
+// shrunk below its natural content height at all, so normal flow sizes it
+// correctly and pushes Backlinks down below it (no overlap), and the
+// resulting taller column is exactly what the outer `.sidebar.right`
+// `overflow-y: auto` above is for. `.toc`'s own `overflow-y: hidden` and
+// `ul.toc-content`'s `max-height: calc(100% - 2rem)` (both the plugin's
+// own CSS) are left untouched — with `.toc` sized to content, `max-height`
+// resolves to roughly the content's own height instead of clamping it, so
+// they stop actively doing anything rather than needing to be overridden.
+//
+// Scoped to `:not(:has(.collapsed))` so manually collapsing the TOC (click
+// the heading) still works: the collapsed state relies on `.toc`'s
+// flex-basis actually shrinking down to 1.4rem (see the plugin's own
+// `.toc:has(button.toc-header.collapsed) { flex: 0 1 1.4rem }`), which
+// `flex-shrink: 0` would otherwise block.
+.toc:not(:has(.toc-header.collapsed)) {
+  flex-shrink: 0;
+}

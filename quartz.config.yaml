@@ -82,6 +82,8 @@ plugins:
     order: 40
   - source: "@quartz-community/table-of-contents"
     enabled: true
+    options:
+      collapseByDefault: true
     order: 50
     layout:
       position: right

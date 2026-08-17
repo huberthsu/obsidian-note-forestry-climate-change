@@ -16,3 +16,16 @@
 html[saved-theme] body :not(li) > input[type="checkbox"] {
   margin-inline-start: 0;
 }
+
+// base.scss gives every sidebar (left and right) a 6rem top padding
+// ($topSpacing, shared with the main article header's top margin so the
+// two columns start aligned). On the right sidebar that pushes Graph
+// View/Table of Contents/Backlinks down far enough that Backlinks gets
+// clipped by the sidebar's `height: 100vh` before a full line is visible.
+// Un-layered rules here beat base.scss's `@layer quartz-base` regardless
+// of selector specificity, so this alone is enough to override it — only
+// the right sidebar is affected, the left sidebar and article header keep
+// their original 6rem spacing.
+.sidebar.right {
+  padding-top: 2rem;
+}

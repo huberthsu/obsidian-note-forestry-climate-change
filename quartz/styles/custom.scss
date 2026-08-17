@@ -29,3 +29,24 @@ html[saved-theme] body :not(li) > input[type="checkbox"] {
 .sidebar.right {
   padding-top: 2rem;
 }
+
+// With `collapseByDefault: true` on the table-of-contents plugin, the
+// collapsed `.toc` container gets clamped to a 1.4rem flex-basis with
+// `overflow-y: hidden` (@quartz-community/table-of-contents' own CSS).
+// The plugin's CSS also tries to zero out the heading's margin
+// (`button.toc-header h3 { margin: 0 }`), but that rule loses a same-layer
+// specificity fight against this site's global `h3 { margin-top: 1.62rem;
+// margin-bottom: 1rem }` (base.scss) — both land in the same `@layer
+// quartz-base` bundle, so it comes down to selector specificity, and the
+// bare `h3` type selector combined with source order wins there. The result
+// is a ~59px-tall collapsed header (h3's real margins pushing past the
+// clamp) inside a 22.4px box, so almost all of "Table of Contents" gets
+// clipped down to a sliver of illegible pixels. This was never visible
+// before because the container was never height-constrained (the plugin
+// defaulted to expanded). Un-layered rules here beat quartz-base regardless
+// of specificity, so re-zeroing the margin and matching the line-height to
+// the container height is enough to make the heading fit again.
+.toc button.toc-header h3 {
+  margin: 0;
+  line-height: 1.4rem;
+}

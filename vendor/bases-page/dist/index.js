@@ -13869,17 +13869,28 @@ var BasesPage = (opts) => ({
           ext
         }
       };
+      const views = basesData.views ?? [];
+      const linkSlugs = /* @__PURE__ */ new Set();
+      if (views.length > 0) {
+        for (const view of views) {
+          const { entries } = resolveBasesEntries(basesData, allFileData, view, basesSelfContext);
+          for (const entry of entries) linkSlugs.add(entry.slug);
+        }
+      } else {
+        const { entries } = resolveBasesEntries(
+          basesData,
+          allFileData,
+          void 0,
+          basesSelfContext
+        );
+        for (const entry of entries) linkSlugs.add(entry.slug);
+      }
       virtualPages.push({
         slug: slug2,
         title: baseName,
         data: {
           frontmatter: { title: baseName, tags: [] },
-          links: resolveBasesEntries(
-            basesData,
-            allFileData,
-            void 0,
-            basesSelfContext
-          ).entries.map((e2) => e2.slug),
+          links: Array.from(linkSlugs),
           basesData,
           basesOptions: opts,
           basesSelfContext

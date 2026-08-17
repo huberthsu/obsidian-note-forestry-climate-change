@@ -69,17 +69,36 @@ export const BasesPage: QuartzPageTypePlugin<BasesPageOptions> = (opts) => ({
         },
       };
 
+      // The graph/backlinks/content-index all key off `data.links` to decide what
+      // this virtual page is "connected to". Resolving with `view: undefined` skips
+      // every view's `filters` (only a top-level `basesData.filters` would apply,
+      // and our .base files never set one) — so previously this always returned
+      // literally every note in the vault, making every note's local graph show an
+      // edge to every base page regardless of tags. Union the *filtered* results of
+      // each view instead so a base only links to notes that actually appear in it.
+      const views = basesData.views ?? [];
+      const linkSlugs = new Set<SimpleSlug>();
+      if (views.length > 0) {
+        for (const view of views) {
+          const { entries } = resolveBasesEntries(basesData, allFileData, view, basesSelfContext);
+          for (const entry of entries) linkSlugs.add(entry.slug as SimpleSlug);
+        }
+      } else {
+        const { entries } = resolveBasesEntries(
+          basesData,
+          allFileData,
+          undefined,
+          basesSelfContext,
+        );
+        for (const entry of entries) linkSlugs.add(entry.slug as SimpleSlug);
+      }
+
       virtualPages.push({
         slug,
         title: baseName,
         data: {
           frontmatter: { title: baseName, tags: [] },
-          links: resolveBasesEntries(
-            basesData,
-            allFileData,
-            undefined,
-            basesSelfContext,
-          ).entries.map((e) => e.slug as SimpleSlug),
+          links: Array.from(linkSlugs),
           basesData,
           basesOptions: opts,
           basesSelfContext,

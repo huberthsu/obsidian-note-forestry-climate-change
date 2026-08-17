@@ -2,8 +2,8 @@
 publish: true
 title: 外加性的定義
 created: 2026-07-31T13:18:26.393Z
-modified: 2026-08-16T08:40:52.802Z
-published: 2026-08-16T08:40:52.802Z
+modified: 2026-08-17T15:59:28.217Z
+published: 2026-08-17T15:59:28.217Z
 tags:
   - 外加性
 category:
@@ -21,7 +21,6 @@ sibling:
   - "[[The importance of additionality|具備外加性的重要性]]"
 child:
 password:
-"* 需要滿足以下兩個要求才算符合外加性\n\t1. 專案減緩成效在缺乏減量額度的情況下不會自然發生-我將其解讀為**減緩成效外加性\n\t2. 專案活動在缺乏減量額度支持下不會自然發生-我將其解讀為**開發動機外加性\n* 而基線情境（Baseline Scenario），就是所謂的**原本沒有減量額度情況下，未來最可能發生的土地管理活動的假想情境**\n# 與其他筆記的關聯與理由\n* parent理由\n\t* [[Contents of carbon offset quality standards|碳抵換品質標準的內容]]-具備外加性屬於碳抵換品質標準的重要項目之一\n* sibling理由\n\t* [[Definition of permanence|永久性的定義]]-與[[Definition of permanence|永久性的定義]]同屬[[Contents of carbon offset quality standards|碳抵換品質標準的內容]]之一\n\t* [[The importance of additionality|具備外加性的重要性]]-了解外加性的定義，就能知道外加性的重要性\n* child": "\t* 理由"
 ---
 
 ---
@@ -41,7 +40,7 @@ password:
 - sibling理由
   - [[Definition of permanence|永久性的定義]]-與[[Definition of permanence|永久性的定義]]同屬[[Contents of carbon offset quality standards|碳抵換品質標準的內容]]之一
   - [[The importance of additionality|具備外加性的重要性]]-了解外加性的定義，就能知道外加性的重要性
-- child::
+- child
   - 理由
 
 # 來源文獻

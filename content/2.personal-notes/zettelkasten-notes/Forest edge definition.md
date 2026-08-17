@@ -8,8 +8,8 @@ aliases:
   - 林緣定義
 title: 林緣定義
 created: 2026-08-16T08:32:35.662Z
-modified: 2026-08-17T14:23:40.063Z
-published: 2026-08-17T14:23:40.063Z
+modified: 2026-08-17T14:53:00.106Z
+published: 2026-08-17T14:53:00.106Z
 tags:
   - 邊緣效應
 category:
@@ -50,3 +50,5 @@ password:
 ---
 
 # 相關筆記bases
+
+![[邊緣效應bases.base]]

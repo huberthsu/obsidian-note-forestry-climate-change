@@ -5,8 +5,8 @@ aliases:
   - 碳抵換品質標準的內容
 title: 碳抵換品質標準的內容
 created: 2026-08-01T16:48:33.794Z
-modified: 2026-08-16T08:40:49.275Z
-published: 2026-08-16T08:40:49.275Z
+modified: 2026-08-18T13:56:24.999Z
+published: 2026-08-18T13:56:24.999Z
 tags:
   - 碳抵換
   - 外加性
@@ -49,7 +49,7 @@ password:
 
 # 來源文獻
 
-- [[Comprehensive review of carbon quantification by improved forest management offset protocols.pdf]]
+- Haya, B.K., Evans, S., Brown, L., Bukoski, J., Butsic, V., Cabiyo, B., Jacobson, R., Kerr, A., Potts, M., & Sanchez, D.L. (2024) Comprehensive review of carbon quantification by improved forest management offset protocols. _Frontiers in Forests and Global Change_, 7, 958879. https://doi.org/10.3389/ffgc.2024.958879
 
 # 我的其他思考
 

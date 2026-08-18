@@ -2,7 +2,7 @@
 publish: true
 title: 由地景生態學之斑塊（Patch）－廊道（Corridor）－基質（Matrix）理論，說明在進行國有林事業區經營規劃時，應如何透過林分空間結構調整與空間破碎度控制，以最大化森林的長期碳儲量並兼顧生物多樣性？
 created: 2026-08-23
-modified: 2026-08-17T11:58:58.852Z
+modified: 2026-08-18T14:40:06.122Z
 published: 2026-08-23
 tags:
   - 斑塊廊道基質理論
@@ -52,6 +52,7 @@ date: 2026-08-23
 # 關聯筆記
 
 - [[Forest edge definition|林緣定義]]
+- [[How microclimate conditions of edge effects affect carbon storage|邊緣效應的微氣候條件如何影響碳貯存量]]
 
 # 參考資料
 

@@ -2,8 +2,8 @@
 publish: true
 title: 碳抵換機制原理
 created: 2026-07-31T02:53:04.340Z
-modified: 2026-08-16T08:40:44.768Z
-published: 2026-08-16T08:40:44.768Z
+modified: 2026-08-18T13:55:44.646Z
+published: 2026-08-18T13:55:44.646Z
 tags:
   - 碳抵換
 category:
@@ -33,8 +33,8 @@ password:
 
 # 來源文獻
 
-- [[Key challenges and approaches to addressing barriers in forest carbon offset projects.pdf]]
-- [[Comprehensive review of carbon quantification by improved forest management offset protocols.pdf]]
+- Pan, C., A. Shrestha, J. L. Innes, G. Zhou, N. Li, J. Li, Y. He, C. Shen, J. -O. Nile and G. Wang (2022) Key challenges and approaches to addressing barriers in forest carbon offset projects. Journal of Forestry Research 33(4):1109-1122.
+- Haya, B.K., Evans, S., Brown, L., Bukoski, J., Butsic, V., Cabiyo, B., Jacobson, R., Kerr, A., Potts, M., & Sanchez, D.L. (2024). Comprehensive review of carbon quantification by improved forest management offset protocols. _Frontiers in Forests and Global Change_, 7, 958879. https://doi.org/10.3389/ffgc.2024.958879
 
 # 我的其他思考
 

@@ -2,8 +2,8 @@
 publish: true
 title: 外加性的定義
 created: 2026-07-31T13:18:26.393Z
-modified: 2026-08-17T15:59:28.217Z
-published: 2026-08-17T15:59:28.217Z
+modified: 2026-08-18T13:57:12.618Z
+published: 2026-08-18T13:57:12.618Z
 tags:
   - 外加性
 category:
@@ -45,8 +45,8 @@ password:
 
 # 來源文獻
 
-- [[Comprehensive review of carbon quantification by improved forest management offset protocols.pdf]]
-- [[Key challenges and approaches to addressing barriers in forest carbon offset projects.pdf]]
+- Haya, B.K., Evans, S., Brown, L., Bukoski, J., Butsic, V., Cabiyo, B., Jacobson, R., Kerr, A., Potts, M., & Sanchez, D.L. (2024). Comprehensive review of carbon quantification by improved forest management offset protocols. _Frontiers in Forests and Global Change_, 7, 958879. https://doi.org/10.3389/ffgc.2024.958879
+- Pan, C., A. Shrestha, J. L. Innes, G. Zhou, N. Li, J. Li, Y. He, C. Shen, J. -O. Nile and G. Wang (2022) Key challenges and approaches to addressing barriers in forest carbon offset projects. Journal of Forestry Research 33(4):1109-1122.
 
 # 我的其他思考
 

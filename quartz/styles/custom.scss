@@ -56,9 +56,16 @@ html[saved-theme] body :not(li) > input[type="checkbox"] {
 // can leave that scroller's hit-testing/paint stale — `scrollTop` updates
 // correctly on scroll, but the browser keeps painting the pre-scroll
 // content. Promoting the sticky sidebar to its own compositor layer works
-// around it.
+// around it. `will-change: transform` (like a real `transform`) also
+// creates a new containing block for `position: fixed` descendants though
+// — and the Graph View plugin's global-graph modal (`.global-graph-outer`,
+// `position: fixed`) lives inside this sidebar, so it was being positioned
+// relative to the sidebar's box instead of the viewport, pushing the modal
+// almost entirely off-screen. `will-change: scroll-position` gets the same
+// compositor-layer promotion (fixes the stale-paint bug) without implying
+// `transform`, so it doesn't create that containing block.
 .sidebar.right {
-  will-change: transform;
+  will-change: scroll-position;
 }
 
 // The real bug behind "can't scroll far enough to reach the last two

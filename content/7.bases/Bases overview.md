@@ -4,12 +4,12 @@ aliases:
   - Bases 總覽
 title: Bases 總覽
 created: 2026-08-11T06:34:15.983Z
-modified: 2026-08-11T08:52:59.032Z
-published: 2026-08-11T08:52:59.032Z
+modified: 2026-08-21T06:17:47.118Z
+published: 2026-08-21T06:17:47.118Z
 tags:
   - 工作流
 in:
-  - 個人note
+  - 2.personal-notes
 ---
 
 # 這個資料夾放什麼

@@ -4,15 +4,15 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-11T02:57:52.278Z
-modified: 2026-08-12T08:50:22.910Z
-published: 2026-08-12T08:50:22.910Z
+modified: 2026-08-21T06:12:20.943Z
+published: 2026-08-21T06:12:20.943Z
 tags:
   - 工作流
 category:
   - Workflow and system
   - "[[Explanation notes]]"
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
 sibling:
   - "[[vault架構與系統.canvas]]"

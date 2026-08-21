@@ -4,8 +4,8 @@ aliases:
   - Obsidian雙向連結、知識整理與資料管理
 title: Obsidian雙向連結、知識整理與資料管理
 created: 2026-08-11T06:58:31.404Z
-modified: 2026-08-11T12:41:48.119Z
-published: 2026-08-11T12:41:48.119Z
+modified: 2026-08-21T06:11:59.092Z
+published: 2026-08-21T06:11:59.092Z
 tags:
   - 工作流
   - obsidian
@@ -13,7 +13,7 @@ category:
   - Workflow and system
   - "[[Explanation notes]]"
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
 sibling:
   - "[[Workflow-system-overview|工作流系統說明]]"

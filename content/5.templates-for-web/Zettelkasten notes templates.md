@@ -4,14 +4,14 @@ aliases:
   - 卡片盒筆記模板
 title: 卡片盒筆記模板
 created: 2026-08-10T23:40:57.356Z
-modified: 2026-08-16T08:34:00.859Z
-published: 2026-08-16T08:34:00.859Z
+modified: 2026-08-21T06:16:19.269Z
+published: 2026-08-21T06:16:19.269Z
 category:
   - "[[Zettelkasten notes]]"
 tags:
 摘要:
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
 sibling:
 child:

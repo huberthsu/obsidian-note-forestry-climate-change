@@ -4,8 +4,8 @@ aliases:
   - Tag wrangler外掛說明
 title: Tag wrangler外掛說明
 created: 2026-07-23T05:42:57.239Z
-modified: 2026-08-11T11:50:27.641Z
-published: 2026-08-11T11:50:27.641Z
+modified: 2026-08-21T06:11:20.763Z
+published: 2026-08-21T06:11:20.763Z
 tags:
   - 標籤
   - obsidian
@@ -13,7 +13,7 @@ category:
   - "[[Explanation notes]]"
   - Plugin and features
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
 sibling:
 child:

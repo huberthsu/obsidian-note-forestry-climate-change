@@ -4,8 +4,8 @@ aliases:
   - 邊緣效應的微氣候條件如何影響碳貯存量
 title: 邊緣效應的微氣候條件如何影響碳貯存量
 created: 2026-08-17T14:45:04.245Z
-modified: 2026-08-18T14:39:19.887Z
-published: 2026-08-18T14:39:19.887Z
+modified: 2026-08-21T06:13:23.367Z
+published: 2026-08-21T06:13:23.367Z
 tags:
   - 邊緣效應
   - 碳儲存
@@ -16,7 +16,7 @@ category:
   - "[[Zettelkasten notes]]"
 摘要:
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
   - "[[Forest edge definition|邊緣效應]]"
 sibling:

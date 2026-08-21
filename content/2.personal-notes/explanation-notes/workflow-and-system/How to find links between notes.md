@@ -4,8 +4,8 @@ aliases:
   - 如何發現筆記之間的連結
 title: 如何發現筆記之間的連結
 created: 2026-08-11T03:01:10.775Z
-modified: 2026-08-11T14:09:06.839Z
-published: 2026-08-11T14:09:06.839Z
+modified: 2026-08-21T06:18:03.747Z
+published: 2026-08-21T06:18:03.747Z
 tags:
   - 關聯圖
   - 工作流
@@ -14,7 +14,7 @@ category:
   - "[[Explanation notes]]"
   - Workflow and system
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
 sibling:
   - "[[Organizing tags helps with deeper understanding, searching and extraction, and discovering connections between notes.|整理標籤有助於深入理解、被搜尋與提取、發現筆記之間的連結]]"

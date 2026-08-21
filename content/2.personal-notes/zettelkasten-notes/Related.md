@@ -4,14 +4,14 @@ aliases:
   - 關聯
 title: 關聯
 created: 2026-07-21T02:49:40.909Z
-modified: 2026-08-16T08:24:46.827Z
-published: 2026-08-16T08:24:46.827Z
+modified: 2026-08-21T06:13:42.283Z
+published: 2026-08-21T06:13:42.283Z
 tags:
   - 工作流
 category:
   - "[[Zettelkasten notes]]"
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
   - "[[Information filtering criteria|資訊篩選標準]]"
 sibling:

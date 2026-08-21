@@ -4,12 +4,12 @@ aliases:
   - 畫布與心智圖
 title: 畫布與心智圖
 created: 2026-08-11T06:34:08.385Z
-modified: 2026-08-11T13:52:09.660Z
-published: 2026-08-11T13:52:09.660Z
+modified: 2026-08-21T06:17:58.248Z
+published: 2026-08-21T06:17:58.248Z
 tags:
   - 工作流
 in:
-  - 個人note
+  - 2.personal-notes
 ---
 
 # 這個資料夾放什麼

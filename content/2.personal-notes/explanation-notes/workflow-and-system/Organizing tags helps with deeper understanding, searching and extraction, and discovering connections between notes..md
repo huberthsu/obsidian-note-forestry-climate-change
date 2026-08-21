@@ -4,8 +4,8 @@ aliases:
   - 整理標籤有助於深入理解、被搜尋與提取、發現筆記之間的連結
 title: 整理標籤有助於深入理解、被搜尋與提取、發現筆記之間的連結
 created: 2026-08-11T03:01:28.806Z
-modified: 2026-08-12T06:18:57.447Z
-published: 2026-08-12T06:18:57.447Z
+modified: 2026-08-21T06:12:04.681Z
+published: 2026-08-21T06:12:04.681Z
 tags:
   - 工作流
   - obsidian
@@ -14,7 +14,7 @@ category:
   - "[[Explanation notes]]"
 摘要: 整理標籤可以幫助理解筆記並使筆記更容易被搜尋與提取，也有助於進一步發現筆記之間的連結
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
 sibling:
   - "[[How to find links between notes|如何發現筆記之間的連結]]"

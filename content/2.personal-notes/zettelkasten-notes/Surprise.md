@@ -4,14 +4,14 @@ aliases:
   - 意外
 title: 意外
 created: 2026-07-21T02:49:40.928Z
-modified: 2026-08-16T08:25:11.026Z
-published: 2026-08-16T08:25:11.026Z
+modified: 2026-08-21T06:13:44.977Z
+published: 2026-08-21T06:13:44.977Z
 tags:
   - 工作流
 category:
   - "[[Zettelkasten notes]]"
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
   - "[[Information filtering criteria|資訊篩選標準]]"
 sibling:

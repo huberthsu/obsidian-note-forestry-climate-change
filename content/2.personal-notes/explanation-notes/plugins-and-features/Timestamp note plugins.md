@@ -4,8 +4,8 @@ aliases:
   - Timestamp note外掛說明
 title: Timestamp note外掛說明
 created: 2026-08-09T09:01:28.303Z
-modified: 2026-08-11T09:04:46.597Z
-published: 2026-08-11T09:04:46.597Z
+modified: 2026-08-21T06:11:25.210Z
+published: 2026-08-21T06:11:25.210Z
 tags:
   - obsidian
   - 工作流
@@ -13,7 +13,7 @@ category:
   - "[[Explanation notes]]"
   - Plugin and features
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
 sibling:
 child:

@@ -1,14 +1,14 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-08-19T13:16:07.869Z
+modified: 2026-08-23T06:04:16.455Z
 published: 2026-08-19
 tags:
   - 日常
 category:
   - "[[English learning notes]]"
   - 單字
-Chinese translation:
+Chinese translation: 核實
 date: 2026-08-19
 ---
 

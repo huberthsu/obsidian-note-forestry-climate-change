@@ -4,8 +4,8 @@ aliases:
   - Obsidian雙向連結、知識整理與資料管理
 title: Obsidian雙向連結、知識整理與資料管理
 created: 2026-08-11T06:58:31.404Z
-modified: 2026-08-21T06:11:59.092Z
-published: 2026-08-21T06:11:59.092Z
+modified: 2026-08-24T14:02:10.060Z
+published: 2026-08-24T14:02:10.060Z
 tags:
   - 工作流
   - obsidian
@@ -45,11 +45,13 @@ child:
 
 - 兩者皆可記錄在屬性區域欄位或內容區域。
 - tags-搜尋
-  - 可用來記錄該筆記的領域、知識概念、狀態、屬性等等。
-  - ==允許筆記同時具有多種屬性，且以每種tags搜尋，都能搜尋到該筆記==
+  - 記錄該筆記的領域、知識概念、狀態、屬性等等。
+  - ==允許筆記同時具有多種屬性，且以每種tags搜尋，都能搜尋到該筆記。適合用來搜尋特定類型的筆記==
+  - 相關外掛: [[Tag wrangler plugins|Tag wrangler外掛說明]]
 - 雙向連結-連結
-  - a筆記能透過\[\[]]建立與b筆記的單向連結，而b筆記也同樣反像連結跳轉回a筆記。
-  - ==能建立筆記之間的緊密連結，並搭配graph view將連結視覺化==
+  - a筆記能透過\[\[]]建立與b筆記的單向連結，而b筆記也同樣反向連結(backlinks)跳轉回a筆記。
+  - ==建立筆記之間的緊密連結，並搭配graph view將連結視覺化==
+  - 相關外掛: [[Breadcrumbs plugins|Breadcrumbs外掛說明]]、[[Inline local graph plugins|Inline local graph 外掛說明]]、[[Neighbourhood Graph plugins|Neighbourhood Graph外掛說明]]
 
 ## 優點
 
@@ -60,9 +62,5 @@ child:
 ## 協助思考筆記間關聯的外掛工具
 
 - 簡介參考[[How to find links between notes|如何發現筆記之間的連結]]
-- 工具使用說明參考：
-  - [[Breadcrumbs plugins]]
-  - [[Inline local graph plugins]]
-  - [[Neighbourhood Graph plugins]]
 
 ---

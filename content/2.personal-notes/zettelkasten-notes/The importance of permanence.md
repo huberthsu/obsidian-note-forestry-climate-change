@@ -5,15 +5,15 @@ aliases:
   - 永久性的重要性
 title: 具備永久性的重要性
 created: 2026-08-06T12:50:27.333Z
-modified: 2026-08-16T08:41:12.637Z
-published: 2026-08-16T08:41:12.637Z
+modified: 2026-08-21T06:14:00.054Z
+published: 2026-08-21T06:14:00.054Z
 tags:
   - 永久性
 category:
   - "[[Zettelkasten notes]]"
 摘要:
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
   - "[[Purpose of establishing carbon offset quality standards|碳抵換品質標準的設立目的]]"
 sibling:

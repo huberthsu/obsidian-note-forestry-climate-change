@@ -4,8 +4,8 @@ aliases:
   - 碳抵換品質標準的設立目的
 title: 碳抵換品質標準的設立目的
 created: 2026-08-06T09:55:37.651Z
-modified: 2026-08-18T13:58:27.218Z
-published: 2026-08-18T13:58:27.218Z
+modified: 2026-08-21T06:13:38.942Z
+published: 2026-08-21T06:13:38.942Z
 tags:
   - 碳抵換
   - 碳抵換品質標準
@@ -13,7 +13,7 @@ category:
   - "[[Zettelkasten notes]]"
 摘要:
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
   - "[[Carbon offset mechanism principle|碳抵換機制原理]]"
 sibling:

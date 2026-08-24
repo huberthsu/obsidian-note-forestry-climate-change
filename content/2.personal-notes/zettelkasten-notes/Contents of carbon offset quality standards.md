@@ -5,8 +5,8 @@ aliases:
   - 碳抵換品質標準的內容
 title: 碳抵換品質標準的內容
 created: 2026-08-01T16:48:33.794Z
-modified: 2026-08-18T13:56:24.999Z
-published: 2026-08-18T13:56:24.999Z
+modified: 2026-08-21T06:13:08.503Z
+published: 2026-08-21T06:13:08.503Z
 tags:
   - 碳抵換
   - 外加性
@@ -18,7 +18,7 @@ category:
   - "[[Zettelkasten notes]]"
 摘要:
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
 sibling:
   - "[[Purpose of establishing carbon offset quality standards|碳抵換品質標準的設立目的]]"

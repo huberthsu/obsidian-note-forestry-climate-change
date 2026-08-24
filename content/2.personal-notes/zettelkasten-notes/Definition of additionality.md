@@ -2,8 +2,8 @@
 publish: true
 title: 外加性的定義
 created: 2026-07-31T13:18:26.393Z
-modified: 2026-08-18T13:57:12.618Z
-published: 2026-08-18T13:57:12.618Z
+modified: 2026-08-21T06:13:12.486Z
+published: 2026-08-21T06:13:12.486Z
 tags:
   - 外加性
 category:
@@ -13,7 +13,7 @@ Aliases:
   - 外加性的定義
 摘要:
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
   - "[[Contents of carbon offset quality standards|碳抵換品質標準的內容]]"
 sibling:

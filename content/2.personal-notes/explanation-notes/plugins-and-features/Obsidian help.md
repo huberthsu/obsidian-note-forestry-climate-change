@@ -4,15 +4,15 @@ aliases:
   - Obsidian help
 title: Obsidian help
 created: 2026-08-11T04:43:58.997Z
-modified: 2026-08-12T07:32:06.395Z
-published: 2026-08-12T07:32:06.395Z
+modified: 2026-08-21T06:11:03.160Z
+published: 2026-08-21T06:11:03.160Z
 tags:
   - obsidian
 category:
   - "[[Explanation notes]]"
   - Plugin and features
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
 sibling:
 child:

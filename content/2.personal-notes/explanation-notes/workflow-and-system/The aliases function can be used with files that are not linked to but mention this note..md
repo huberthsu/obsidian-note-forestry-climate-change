@@ -4,15 +4,15 @@ aliases:
   - aliases功能搭配未連結但提及本筆記的檔案
 title: aliases功能搭配未連結但提及本筆記的檔案
 created: 2026-08-11T03:01:39.061Z
-modified: 2026-08-11T03:01:39.073Z
-published: 2026-08-11T03:01:39.073Z
+modified: 2026-08-21T06:12:16.037Z
+published: 2026-08-21T06:12:16.037Z
 tags:
   - 工作流
 category:
   - Workflow and system
   - "[[Explanation notes]]"
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
 sibling:
   - "[[How to find links between notes|如何發現筆記之間的連結]]"

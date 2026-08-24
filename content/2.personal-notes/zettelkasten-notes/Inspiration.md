@@ -4,14 +4,14 @@ aliases:
   - 啟發
 title: 啟發
 created: 2026-07-21T02:49:40.920Z
-modified: 2026-08-16T08:24:54.795Z
-published: 2026-08-16T08:24:54.795Z
+modified: 2026-08-21T06:13:26.930Z
+published: 2026-08-21T06:13:26.930Z
 tags:
   - 工作流
 category:
   - "[[Zettelkasten notes]]"
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
   - "[[Information filtering criteria|資訊篩選標準]]"
 sibling:

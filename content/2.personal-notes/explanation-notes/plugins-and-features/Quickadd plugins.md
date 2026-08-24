@@ -4,8 +4,8 @@ aliases:
   - Quickadd外掛說明
 title: Quickadd外掛說明
 created: 2026-07-23T07:30:52.390Z
-modified: 2026-08-12T06:25:36.296Z
-published: 2026-08-12T06:25:36.296Z
+modified: 2026-08-21T06:11:07.920Z
+published: 2026-08-21T06:11:07.920Z
 tags:
   - obsidian
 category:
@@ -13,7 +13,7 @@ category:
   - Plugin and features
   - "[[Ideas and thoughts notes]]"
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
 sibling:
 child:

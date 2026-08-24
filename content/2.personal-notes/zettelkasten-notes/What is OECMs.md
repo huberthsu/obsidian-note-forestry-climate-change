@@ -2,8 +2,8 @@
 publish: true
 title: 什麼是OECMs
 created: 2026-08-12T06:40:49.123Z
-modified: 2026-08-16T08:41:20.208Z
-published: 2026-08-16T08:41:20.208Z
+modified: 2026-08-21T06:14:07.818Z
+published: 2026-08-21T06:14:07.818Z
 tags:
   - OECMs
 category:
@@ -13,7 +13,7 @@ Aliases:
   - 保育共生地
 摘要:
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
 sibling:
 child:

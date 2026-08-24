@@ -4,8 +4,8 @@ aliases:
   - 心智圖可以插入到畫布中
 title: 心智圖可以插入到畫布中
 created: 2026-08-04T04:46:15.278Z
-modified: 2026-08-11T12:16:37.457Z
-published: 2026-08-11T12:16:37.457Z
+modified: 2026-08-21T06:10:55.629Z
+published: 2026-08-21T06:10:55.629Z
 tags:
   - 工作流
   - 心智圖
@@ -13,7 +13,7 @@ category:
   - "[[Explanation notes]]"
   - Plugin and features
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
 sibling:
   - "[[Simple mind map plugin|Simple mind map 外掛說明]]"

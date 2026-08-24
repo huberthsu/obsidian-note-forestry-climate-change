@@ -4,8 +4,8 @@ aliases:
   - Neighbourhood Graph外掛說明
 title: Neighbourhood Graph外掛說明
 created: 2026-07-22T06:35:41.874Z
-modified: 2026-08-12T06:25:02.823Z
-published: 2026-08-12T06:25:02.823Z
+modified: 2026-08-21T06:10:58.993Z
+published: 2026-08-21T06:10:58.993Z
 tags:
   - 關聯圖
   - obsidian
@@ -13,7 +13,7 @@ category:
   - "[[Explanation notes]]"
   - Plugin and features
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
   - "[[How to find links between notes|如何發現筆記之間的連結]]"
 sibling:

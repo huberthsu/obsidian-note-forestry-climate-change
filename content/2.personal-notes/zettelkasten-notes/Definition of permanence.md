@@ -5,15 +5,15 @@ aliases:
   - 永久性的定義
 title: 永久性的定義
 created: 2026-08-02T14:08:10.480Z
-modified: 2026-08-16T08:40:55.509Z
-published: 2026-08-16T08:40:55.509Z
+modified: 2026-08-21T06:13:16.368Z
+published: 2026-08-21T06:13:16.368Z
 tags:
   - 永久性
 category:
   - "[[Zettelkasten notes]]"
 摘要:
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
   - "[[Contents of carbon offset quality standards|碳抵換品質標準的內容]]"
 sibling:

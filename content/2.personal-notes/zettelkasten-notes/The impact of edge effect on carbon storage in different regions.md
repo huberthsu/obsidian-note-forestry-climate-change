@@ -4,8 +4,8 @@ aliases:
   - 邊緣效應對不同區域碳貯存量的影響
 title: 邊緣效應對不同區域碳貯存量的影響
 created: 2026-08-17T13:25:00.589Z
-modified: 2026-08-19T05:03:12.015Z
-published: 2026-08-19T05:03:12.015Z
+modified: 2026-08-21T06:13:47.781Z
+published: 2026-08-21T06:13:47.781Z
 tags:
   - 邊緣效應
   - 碳儲存
@@ -14,7 +14,7 @@ category:
   - "[[Zettelkasten notes]]"
 摘要:
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
   - "[[Forest edge definition|邊緣效應]]"
 sibling:

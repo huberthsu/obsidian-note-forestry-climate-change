@@ -4,14 +4,14 @@ aliases:
   - 用途
 title: 用途
 created: 2026-07-21T02:49:40.917Z
-modified: 2026-08-16T08:25:16.094Z
-published: 2026-08-16T08:25:16.094Z
+modified: 2026-08-21T06:14:03.636Z
+published: 2026-08-21T06:14:03.636Z
 tags:
   - 工作流
 category:
   - "[[Zettelkasten notes]]"
 in:
-  - 個人note
+  - 2.personal-notes
 parent:
   - "[[Information filtering criteria|資訊篩選標準]]"
 sibling:

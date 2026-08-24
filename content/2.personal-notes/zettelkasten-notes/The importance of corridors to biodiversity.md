@@ -4,8 +4,8 @@ aliases:
   - 廊道對生物多樣性的重要性
 title: 廊道對生物多樣性的重要性
 created: 2026-08-20T14:10:25.516Z
-modified: 2026-08-21T07:40:58.891Z
-published: 2026-08-21T07:40:58.891Z
+modified: 2026-08-24T14:40:16.331Z
+published: 2026-08-24T14:40:16.331Z
 tags:
   - 生物多樣性
   - 斑塊廊道基質理論
@@ -16,8 +16,6 @@ category:
 in:
   - 2.personal-notes
 parent:
-  - "[[人為改變地景中森林生物多樣性保護的最優設計]]"
-  - "[[地景方法在生物多樣性保護中的作用]]"
 sibling:
 child:
 password:
@@ -34,15 +32,15 @@ password:
 # 與其他筆記的關聯與理由
 
 - parent理由
-  - [[人為改變地景中森林生物多樣性保護的最優設計]]-提到溪流河流對於提供水資源、依賴水體繁殖、支持生物多樣性等功能
-  - [[地景方法在生物多樣性保護中的作用]]-提到廊道的許多功能以及河流對於生物多樣性的重要性
 - sibling理由
 - child理由
 
 # 來源
 
-- Babu, A. (2023). Review of the role of the landscape approach in biodiversity conservation. _Sustainability and Biodiversity Conservation_, _2_(1), 61-86.
-- Arroyo-Rodríguez, V., Fahrig, L., Tabarelli, M., et al. (2020). Designing optimal human-modified landscapes for forest biodiversity conservation. Ecology Letters, 23(10), 1404-1420. https://doi.org/10.1111/ele.13535
+- [[人為改變地景中森林生物多樣性保護的最優設計]]
+  - 提到溪流河流對於提供水資源、依賴水體繁殖、支持生物多樣性等功能
+- [[地景方法在生物多樣性保護中的作用]]
+  - 提到廊道的許多功能以及河流對於生物多樣性的重要性
 
 # 我的其他思考
 

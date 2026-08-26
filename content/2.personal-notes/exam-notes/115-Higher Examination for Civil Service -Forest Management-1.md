@@ -2,8 +2,8 @@
 publish: true
 title: 由地景生態學之斑塊（Patch）－廊道（Corridor）－基質（Matrix）理論，說明在進行國有林事業區經營規劃時，應如何透過林分空間結構調整與空間破碎度控制，以最大化森林的長期碳儲量並兼顧生物多樣性？
 created: 2026-08-14T11:55:39.328Z
-modified: 2026-08-22T06:10:28.580Z
-published: 2026-08-22T06:10:28.580Z
+modified: 2026-08-26T18:05:59.071Z
+published: 2026-08-26T18:05:59.071Z
 tags:
   - 斑塊廊道基質理論
   - 地景生態學
@@ -57,10 +57,15 @@ date:
 
 # 關聯筆記
 
-- [[Forest edge definition|林緣定義]]
-- [[How microclimate conditions of edge effects affect carbon storage|邊緣效應的微氣候條件如何影響碳貯存量]]
-- [[The importance of corridors to biodiversity|廊道對生物多樣性的重要性]]
-- [[Improving the quality of the surrounding environment and reducing its differences from the forest will help forest-dependent species survive.|周圍環境品質提高並降低與森林之間的差異性會有助於依賴森林物種的生存]]
+- 空間破碎度相關
+  - [[Forest edge definition|林緣定義]]
+  - [[How microclimate conditions of edge effects affect carbon storage|邊緣效應的微氣候條件如何影響碳貯存量]]
+  - [[The importance of corridors to biodiversity|廊道對生物多樣性的重要性]]
+  - [[Improving the quality of the surrounding environment and reducing its differences from the forest will help forest-dependent species survive.|周圍環境品質提高並降低與森林之間的差異性會有助於依賴森林物種的生存]]
+- 林分空間結構相關
+  - [[What is forest stand spatial structure|什麼是林分空間結構]]
+  - [[The Relationship Between Forest Stand Spatial Structure and Carbon Storage|林分空間結構與碳貯存量的關聯]]
+  - [[The impact of forest stand spatial structure complexity on biodiversity|林分空間結構複雜度對生物多樣性的影響]]
 
 # 參考資料
 

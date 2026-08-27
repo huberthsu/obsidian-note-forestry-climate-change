@@ -4,8 +4,8 @@ aliases:
   - 林分空間結構複雜度對生物多樣性的影響
 title: 林分空間結構複雜度對生物多樣性的影響
 created: 2026-08-23T06:06:00.728Z
-modified: 2026-08-24T14:29:24.590Z
-published: 2026-08-24T14:29:24.590Z
+modified: 2026-08-27T07:33:21.841Z
+published: 2026-08-27T07:33:21.841Z
 tags:
   - 森林結構
   - 生物多樣性
@@ -36,6 +36,7 @@ password:
 
 - [[熱帶森林林分結構與初級生產力強相關性]]
   - 提到林分結構對niche的貢獻，包含為多物種與個體提供營養、提供遮蔭、創造微氣候，也影響碳循環、樹木死亡率、森林生產力
+  - Zhang, W., Xi, Y., Brandt, M., et al. (2024). Stand structure of tropical forests is strongly associated with primary productivity. _Communications Earth & Environment_, 5, 796.
 
 # 我的其他思考
 

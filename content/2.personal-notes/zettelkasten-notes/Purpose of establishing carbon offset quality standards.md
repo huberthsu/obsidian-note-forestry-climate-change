@@ -4,8 +4,8 @@ aliases:
   - 碳抵換品質標準的設立目的
 title: 碳抵換品質標準的設立目的
 created: 2026-08-06T09:55:37.651Z
-modified: 2026-08-24T14:38:29.956Z
-published: 2026-08-24T14:38:29.956Z
+modified: 2026-08-27T07:32:10.774Z
+published: 2026-08-27T07:32:10.774Z
 tags:
   - 碳抵換
   - 碳抵換品質標準
@@ -49,6 +49,7 @@ password:
 # 來源文獻
 
 - [[改進森林管理碳抵換協議評審]]
+  - Haya, B.K., Evans, S., Brown, L., Bukoski, J., Butsic, V., Cabiyo, B., Jacobson, R., Kerr, A., Potts, M., & Sanchez, D.L. (2024). Comprehensive review of carbon quantification by improved forest management offset protocols. _Frontiers in Forests and Global Change_, 7, 958879.
 
 # 我的其他思考
 

@@ -8,8 +8,8 @@ aliases:
   - 森林空間結構
 title: 什麼是林分空間結構
 created: 2026-08-25T08:23:18.218Z
-modified: 2026-08-25T08:29:48.888Z
-published: 2026-08-25T08:29:48.888Z
+modified: 2026-08-27T07:35:57.941Z
+published: 2026-08-27T07:35:57.941Z
 tags:
   - 森林結構
 category:
@@ -66,11 +66,13 @@ password:
 - [[熱帶森林林分結構與初級生產力強相關性]]
   - 提到林分結構指標可以用冠層覆蓋、葉面積指數、樹高、林分密度以及結構複雜度等結構指標來量化
   - 提到不同研究使用不同指標例如entropy-based canopy structural complexity index、structural density derived from averaging several structural metrics、 the structure measurements based on spaceborne, unmanned aerial vehicle/airborne and ground-based lidar laser scanners
+  - Zhang, W., Xi, Y., Brandt, M., et al. (2024). Stand structure of tropical forests is strongly associated with primary productivity. _Communications Earth & Environment_, 5, 796.
 - [[森林林分結構與功能-當前知識與未來挑戰]]
   - 提到多數研究的林分結構，可能是單獨使用直徑多樣性、單獨使用樹高多樣性，或將兩者結合；提到常用Shannon's diversity index、coefficient of variation 和 Gini coefficient 三種指標計算林分結構多樣性與複雜度
+  - Ali, A. (2019). Forest stand structure and functioning: Current knowledge and future challenges. _Ecological Indicators_, 98, 665-677.
 - [[溫帶森林結構對生物量和生產力的相關性-遙測的新視角]]
-  - 提到大量的森林結構相關指標，並依據遙測、實地測量進行分類
-  - 最終使用TCH代表水平結構，SDvfp代表垂直結構
+  - 提到大量的森林結構相關指標，並依據遙測、實地測量進行分類。最終使用TCH代表水平結構，SDvfp代表垂直結構
+  - Fischer, R., Knapp, N., Bohn, F., Shugart, H. H., & Huth, A. (2019). The relevance of forest structure for biomass and productivity in temperate forests: New perspectives for remote sensing. _Surveys in Geophysics_, _40_(4), 709-734.
 
 # 我的其他思考
 

@@ -4,8 +4,8 @@ aliases:
   - 林分空間結構與碳貯存量的關聯
 title: 林分空間結構與碳貯存量的關聯
 created: 2026-08-25T08:44:43.898Z
-modified: 2026-08-26T17:45:45.660Z
-published: 2026-08-26T17:45:45.660Z
+modified: 2026-08-27T07:35:09.026Z
+published: 2026-08-27T07:35:09.026Z
 tags:
   - 森林結構
   - 碳儲存
@@ -48,12 +48,16 @@ password:
 
 - [[熱帶森林林分結構與初級生產力強相關性]]
   - 提及林分結構對於總初級生產力有顯著影響
+  - Zhang, W., Xi, Y., Brandt, M., et al. (2024). Stand structure of tropical forests is strongly associated with primary productivity. _Communications Earth & Environment_, 5, 796.
 - [[森林林分結構與功能-當前知識與未來挑戰]]
   - 較高的林分結構多樣性能夠透過高效的光能捕捉和利用以及其他資源來增強棲位的互補性；提到了林分結構對灌木生物量的負面影響
+  - Ali, A. (2019). Forest stand structure and functioning: Current knowledge and future challenges. _Ecological Indicators_, 98, 665-677.
 - [[溫帶森林結構對生物量和生產力的相關性-遙測的新視角]]
   - 提及生物量與水平結構相關，生產力同時與水平結構級垂直結構有關
+  - Fischer, R., Knapp, N., Bohn, F., Shugart, H. H., & Huth, A. (2019). The relevance of forest structure for biomass and productivity in temperate forests: New perspectives for remote sensing. _Surveys in Geophysics_, _40_(4), 709-734.
 - [[溫帶混合林地上部碳貯存與功能性狀及林分結構屬性]]
   - 提及林分結構屬性(胸高斷面積、胸徑變異係數)與功能性狀組成(群落加權平均最大樹高)，跟碳貯存量有正相關
+  - Yuan, Z., Wang, S., Ali, A., Gazol, A., Ruiz-Benito, P., Wang, X., Lin, F., Ye, J., Hao, Z., & Loreau, M. (2018). Aboveground carbon storage is driven by functional trait composition and stand structural attributes rather than biodiversity in temperate mixed forests recovering from disturbances. _Annals of Forest Science_, 75(67).
 
 # 我的其他思考
 

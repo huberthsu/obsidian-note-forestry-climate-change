@@ -3,10 +3,11 @@ publish: true
 aliases:
   - 永久性
   - 永久性的定義
+  - "#永久性"
 title: 永久性的定義
 created: 2026-08-02T14:08:10.480Z
-modified: 2026-08-24T14:36:09.212Z
-published: 2026-08-24T14:36:09.212Z
+modified: 2026-08-28T07:10:00.775Z
+published: 2026-08-28T07:10:00.775Z
 tags:
   - 永久性
 category:

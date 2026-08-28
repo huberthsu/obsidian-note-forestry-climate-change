@@ -2,8 +2,8 @@
 publish: true
 title: 碳抵換機制原理
 created: 2026-07-31T02:53:04.340Z
-modified: 2026-08-24T14:31:00.094Z
-published: 2026-08-24T14:31:00.094Z
+modified: 2026-08-28T07:08:58.062Z
+published: 2026-08-28T07:08:58.062Z
 tags:
   - 碳抵換
 category:
@@ -11,6 +11,7 @@ category:
 Aliases:
   - 碳抵換
   - 碳抵換機制原理
+  - "#碳抵換"
 摘要:
 in:
   - 2.personal-notes

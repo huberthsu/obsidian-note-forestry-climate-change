@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 外加性的定義
-created: 2026-07-31T13:18:26.393Z
-modified: 2026-08-27T07:28:44.864Z
-published: 2026-08-27T07:28:44.864Z
+created: 2026-08-28T07:04:38.453Z
+modified: 2026-08-28T07:04:38.454Z
+published: 2026-08-28T07:04:38.454Z
 tags:
   - 外加性
 category:
@@ -11,6 +11,7 @@ category:
 Aliases:
   - 外加性
   - 外加性的定義
+  - "#外加性"
 摘要:
 in:
   - 2.personal-notes

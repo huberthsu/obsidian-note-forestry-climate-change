@@ -2,8 +2,8 @@
 publish: true
 title: 森林與氣候變遷的數位花園😊
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-08-31T17:31:28.597Z
-published: 2026-08-31T17:31:28.597Z
+modified: 2026-08-31T19:07:42.642Z
+published: 2026-08-31T19:07:42.642Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -35,6 +35,7 @@ published: 2026-08-31T17:31:28.597Z
   - [[Zettelkasten notes|卡片盒筆記]]
   - [[Exam notes|考古題筆記]]
   - [[English learning notes|英文學習筆記]]
+    - [[English words and phrases associations|英文單字片語關聯整理]]
   - [[Explanation notes|說明]]
     - [外掛說明相關筆記](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/2.personal-notes/explanation-notes/plugins-and-features/)
     - [工作流與筆記系統說明](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/2.personal-notes/explanation-notes/workflow-and-system/)
@@ -55,10 +56,10 @@ published: 2026-08-31T17:31:28.597Z
 
 ## 6. task-management
 
-- 記錄我的考古題複習與英文學習進度
+- 記錄我的考古題複習與英文學習
   - [monthly-goals-tracker](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/6.task-management/monthly-goals-tracker/)  記錄我的每月目標與實際完成事項
   - [daily-tasks-and-review](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/6.task-management/daily-tasks-and-review/) 紀錄我該日預計要完成的考古題，以及我當日是否有確實完成考古題複習與英文學習
-  - [[Vocab Quiz Record|英文測驗紀錄]]
+  - [[Vocab Quiz Record|英文測驗紀錄]] 記錄我的英文題目練習結果
 
 ## 7.bases
 
@@ -69,14 +70,14 @@ published: 2026-08-31T17:31:28.597Z
 
 # Obsidian知識管理
 
-- 查看[[Obsidian wiki linking, knowledge organization, and data management|Obsidian雙向連結、知識整理與資料管理]]
+- [[Obsidian wiki linking, knowledge organization, and data management|Obsidian雙向連結、知識整理與資料管理]]
 
 ---
 
 # 實際應用
 
-- 查看[[Workflow-system-overview|實際工作系統說明]]
-- 查看[所有工作流相關筆記](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/2.personal-notes/explanation-notes/workflow-and-system/)
+- [[Workflow-system-overview|實際工作系統說明]]
+- [所有工作流相關筆記](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/2.personal-notes/explanation-notes/workflow-and-system/)
 
 ## 目標與任務管理工作流
 

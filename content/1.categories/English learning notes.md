@@ -4,8 +4,8 @@ aliases:
   - 英文學習筆記
 title: 英文學習筆記
 created: 2026-08-10T23:40:35.343Z
-modified: 2026-08-15T05:49:53.889Z
-published: 2026-08-15T05:49:53.889Z
+modified: 2026-08-31T17:32:45.100Z
+published: 2026-08-31T17:32:45.100Z
 tags:
   - 類別
 ---
@@ -21,3 +21,7 @@ tags:
 # 英文片語bases🔤
 
 ![[英文片語bases.base]]
+
+# 英文單字/片語關聯整理
+
+[[English words and phrases associations]]

@@ -2,8 +2,8 @@
 publish: true
 title: 森林與氣候變遷的數位花園😊
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-08-16T08:41:58.132Z
-published: 2026-08-16T08:41:58.132Z
+modified: 2026-08-31T17:31:28.597Z
+published: 2026-08-31T17:31:28.597Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -58,6 +58,7 @@ published: 2026-08-16T08:41:58.132Z
 - 記錄我的考古題複習與英文學習進度
   - [monthly-goals-tracker](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/6.task-management/monthly-goals-tracker/)  記錄我的每月目標與實際完成事項
   - [daily-tasks-and-review](https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/6.task-management/daily-tasks-and-review/) 紀錄我該日預計要完成的考古題，以及我當日是否有確實完成考古題複習與英文學習
+  - [[Vocab Quiz Record|英文測驗紀錄]]
 
 ## 7.bases
 

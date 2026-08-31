@@ -1,14 +1,14 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-08-31T08:31:07.686Z
+modified: 2026-08-31T08:39:50.518Z
 published: 2026-08-31
 tags:
   - 日常
 category:
   - "[[English learning notes]]"
   - 單字
-Chinese translation: 可行的
+Chinese translation: 延遲、延後、延緩
 date: 2026-08-31
 ---
 
@@ -19,39 +19,36 @@ date: 2026-08-31
 ```
 
 ```timestamp
-28:32
+29:53
 ```
 
 ## Meaning
 
-- Used when describing something that can be done or achieved
+- Used when delaying somethimg to a later time.
 
 ---
 
 ## Word Family
 
-- feasibility(n)
-
-> [!note] 特殊
-> feasibility study/report/analysis: 可行性研究/報告/分析...
-
-- feasibly(adv)可行地、可能地
+- postponement(n)延期、延緩
+- postponable(adj)可延期的、可推遲的
 
 ---
 
 ## Synonyms/Related phrase
 
-- Doable
-- possible
+- delay
+- put off
 
 ---
 
 ## Collocations
 
-- It is feasible to + v 做某事是可行的
+- postpone+until / to+時間：延期到某個時間
+- postpone+because of / due to+原因：因為某原因而延期
 
 ---
 
 ## Examples
 
-- It is feasible to complete the project by friday.
+- The event was postponed until further notice.

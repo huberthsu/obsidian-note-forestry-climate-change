@@ -1,14 +1,14 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-08-31T08:31:07.686Z
+modified: 2026-08-31T09:19:48.275Z
 published: 2026-08-31
 tags:
   - 日常
 category:
   - "[[English learning notes]]"
   - 單字
-Chinese translation: 可行的
+Chinese translation: 調查、審查
 date: 2026-08-31
 ---
 
@@ -19,39 +19,36 @@ date: 2026-08-31
 ```
 
 ```timestamp
-28:32
+32:02
 ```
 
 ## Meaning
 
-- Used when describing something that can be done or achieved
+- Used when examining something closely.
 
 ---
 
 ## Word Family
 
-- feasibility(n)
-
-> [!note] 特殊
-> feasibility study/report/analysis: 可行性研究/報告/分析...
-
-- feasibly(adv)可行地、可能地
+- investigiation(n)調查
+- investigator(n)稽查員、調查員
 
 ---
 
 ## Synonyms/Related phrase
 
-- Doable
-- possible
+- look into
 
 ---
 
 ## Collocations
 
-- It is feasible to + v 做某事是可行的
+- investigate+(n)
+- under investigation：正在接受調查
+- conduct / carry out + an investigation into...：對……展開調查
 
 ---
 
 ## Examples
 
-- It is feasible to complete the project by friday.
+- The police are conducting an investigation into the fraud.

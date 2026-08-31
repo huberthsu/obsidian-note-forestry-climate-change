@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-08-19T13:42:20.833Z
+modified: 2026-08-31T16:45:05.133Z
 published: 2026-08-19
 tags:
   - 日常
@@ -39,6 +39,9 @@ date: 2026-08-19
 ---
 
 ## Collocations
+
+- Proceed with 行動/計畫
+- Proceed to 動作
 
 ---
 

@@ -3,9 +3,9 @@ publish: true
 aliases:
   - 英文測驗紀錄
 title: 英文測驗紀錄
-created: 2026-09-01T09:12:50.859Z
-modified: 2026-09-01T09:16:50.208Z
-published: 2026-09-01T09:16:50.208Z
+created: 2026-09-01T16:22:51.292Z
+modified: 2026-09-01T16:22:51.293Z
+published: 2026-09-01T16:22:51.293Z
 ---
 
 # 英文測驗紀錄
@@ -27,5 +27,13 @@ published: 2026-09-01T09:16:50.208Z
 | [[strike a balance]]       | 0    | ✅    |                |
 | [[go hand in hand]]        | 0    | ✅    |                |
 | [[a go-getter]]            | 0    | ✅    |                |
-| [[commence]]               | 1    | ❌    | 和[[commend]]搞混 |
+| [[commence]]               | 1    | ✅    | 和[[commend]]搞混 |
 | [[ensure]]                 | 0    | ✅    |                |
+| [[reflect on]]             | 0    | ✅    |                |
+| [[discard]]                | 0    | ✅    |                |
+| [[feasible]]               | 0    | ✅    |                |
+| [[contemporary]]           | 0    | ✅    |                |
+| [[inspect]]                | 0    | ✅    |                |
+| [[fruitful]]               | 0    | ✅    |                |
+| [[postpone]]               | 0    | ✅    |                |
+| [[inquire]]                | 0    | ✅    |                |

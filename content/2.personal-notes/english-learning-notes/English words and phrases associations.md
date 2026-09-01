@@ -3,9 +3,9 @@ publish: true
 aliases:
   - 英文單字片語關聯整理
 title: 英文單字片語關聯整理
-created: 2026-09-01T07:56:56.299Z
-modified: 2026-09-01T07:56:56.299Z
-published: 2026-09-01T07:56:56.299Z
+created: 2026-09-01T09:19:10.354Z
+modified: 2026-09-01T09:19:10.354Z
+published: 2026-09-01T09:19:10.354Z
 tags:
   - 關聯整理
   - ai-agent
@@ -34,6 +34,22 @@ category:
 | [[inspect]] | 檢查 | 較中性，正式檢查（設備、品管） | Engineers will inspect these machines regularly to ensure safe operation. |
 | [[scrutinize]] | 仔細檢查、審視 | 強調仔細、嚴格地審視細節 | Before we sign the contract, the lawyer will closely scrutinize every single clause. |
 | [[investigate]] | 調查、審查 | 針對事件/原因的正式調查 | The police are conducting an investigation into the fraud. |
+
+## [[commence]] / [[commend]] / [[recommend]] / command
+
+四個詞都以 comm- 開頭但意思完全不同：**commence 發音與 commend 相似但意思完全不同**；**commend 與 recommend 意思相近但對象與用法有區別**；**command 則是另外一個完全不同的詞**。
+
+| 詞 | 中文意思 | 對象 | 正式程度 | 常見搭配 | 例句 |
+|---|---|---|---|---|---|
+| [[commence]] | 開始、著手 | 時間/行動 | 正式（官方場合） | commence at + 時間 / commence + 名詞 | The conference will commence at 9:00 AM. |
+| [[commend]] | 表揚、稱讚 | **人**的行為/能力 | 正式（上級對下屬） | commend sb for sth | The principal commended the teachers for their dedication. |
+| [[recommend]] | 推薦、建議 | **事物**或**建議** | 日常 | recommend sth to sb / recommend that... | I recommend this restaurant to anyone. |
+| **command** | 命令、指令、掌控 | 權力/掌控 | 中立 | command sb to do / command of + 名詞 | He commanded the soldiers to advance. |
+
+**特別提醒**：
+
+- commence /kəˈmens/ 與 commend /kəˈmend/ 發音極相似，容易混淆！
+- command /kəˈmɑːnd/ 發音不同，但同樣以 comm- 開頭，更容易造成視覺混淆
 
 ## [[ensure]] / [[assure]] / [[insure]]
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-28
-modified: 2026-08-31T05:50:12.635Z
+modified: 2026-09-01T09:10:04.350Z
 published: 2026-08-28
 tags:
   - 日常
@@ -40,6 +40,9 @@ date: 2026-08-28
 
 - start
 - begin
+
+> [!note] 易混淆詞
+> 與 [[commend]]（讚美）發音相似但意思完全不同。詳見[[English words and phrases associations#commence--commend--recommend|詞彙關聯整理]]的三詞群組比較。
 
 ---
 

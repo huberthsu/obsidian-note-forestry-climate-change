@@ -3,9 +3,9 @@ publish: true
 aliases:
   - 英文單字片語關聯整理
 title: 英文單字片語關聯整理
-created: 2026-08-31T17:25:20.252Z
-modified: 2026-08-31T17:29:01.947Z
-published: 2026-08-31T17:29:01.947Z
+created: 2026-09-01T07:56:56.299Z
+modified: 2026-09-01T07:56:56.299Z
+published: 2026-09-01T07:56:56.299Z
 tags:
   - 關聯整理
   - ai-agent
@@ -34,6 +34,16 @@ category:
 | [[inspect]] | 檢查 | 較中性，正式檢查（設備、品管） | Engineers will inspect these machines regularly to ensure safe operation. |
 | [[scrutinize]] | 仔細檢查、審視 | 強調仔細、嚴格地審視細節 | Before we sign the contract, the lawyer will closely scrutinize every single clause. |
 | [[investigate]] | 調查、審查 | 針對事件/原因的正式調查 | The police are conducting an investigation into the fraud. |
+
+## [[ensure]] / [[assure]] / [[insure]]
+
+看似相似（發音接近），但語義和用法有明顯區別：ensure 聚焦於確保**結果**會發生；assure 聚焦於向**人**表達信心、消除疑慮；insure 則是**財務保障**（購買保險）。
+
+| 詞 | 中文意思 | 聚焦點 | 常見搭配 | 例句 |
+|---|---|---|---|---|
+| [[ensure]] | 確保、保證 | 確保**結果**會發生 | ensure (that) / ensure + 名詞 | We must ensure quality control before shipping. |
+| [[assure]] | 向...保證、使放心 | 向**人**表達信心、消除疑慮 | assure (sb) that / assure sb of sth | I assure you the project will be completed on time. |
+| [[insure]] | 投保、購買保險 | **財務保障** | insure against / insure sth for £X | You should insure your car against theft. |
 
 ---
 

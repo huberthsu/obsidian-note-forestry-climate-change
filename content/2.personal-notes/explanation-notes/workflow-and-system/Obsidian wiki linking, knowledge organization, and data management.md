@@ -4,8 +4,8 @@ aliases:
   - Obsidian雙向連結、知識整理與資料管理
 title: Obsidian雙向連結、知識整理與資料管理
 created: 2026-08-11T06:58:31.404Z
-modified: 2026-09-01T11:48:02.880Z
-published: 2026-09-01T11:48:02.880Z
+modified: 2026-09-01T12:17:58.065Z
+published: 2026-09-01T12:17:58.065Z
 tags:
   - 工作流
   - obsidian
@@ -20,7 +20,7 @@ sibling:
 child:
   - "[[How to find links between notes|如何發現筆記之間的連結]]"
   - "[[Organizing tags helps with deeper understanding, searching and extraction, and discovering connections between notes.|整理標籤有助於深入理解、被搜尋與提取、發現筆記之間的連結]]"
-  - "[[The aliases function can be used with files that are not linked to but mention this note.|aliases功能搭配未連結但提及本筆記的檔案]]"
+  - "[[aliases function and purpose|aliases功能搭配未連結但提及本筆記的檔案]]"
 ---
 
 # 資料管理方法與架構

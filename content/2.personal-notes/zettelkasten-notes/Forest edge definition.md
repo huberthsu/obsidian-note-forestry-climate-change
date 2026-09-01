@@ -9,8 +9,8 @@ aliases:
   - "#邊緣效應"
 title: 林緣定義
 created: 2026-08-16T08:32:35.662Z
-modified: 2026-08-28T07:10:30.077Z
-published: 2026-08-28T07:10:30.077Z
+modified: 2026-09-01T12:16:09.164Z
+published: 2026-09-01T12:16:09.164Z
 tags:
   - 邊緣效應
   - 破碎化

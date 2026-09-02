@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-08-31T14:37:04.539Z
+modified: 2026-09-02T09:28:45.223Z
 published: 2026-08-31
 tags:
   - 日常
@@ -30,7 +30,8 @@ Used wgen removing something officially and permanently.
 
 ## Word Family
 
-- discarded被丟棄的、廢棄的
+- discarded(adj)被丟棄的、廢棄的
+- discard(n)被拋棄的人/物
 
 ---
 
@@ -43,7 +44,9 @@ Used wgen removing something officially and permanently.
 
 ## Collocations
 
-- discard+具體物品/抽象事物
+- discard old/unnecessary/outdated items: 丟棄舊的/不必要的/過時的東西
+- discard ideas/notion/theory: 放棄想法/概念/理論
+- discard one's claim/right/plan: 放棄某人的要求/權利/計畫
 
 ---
 

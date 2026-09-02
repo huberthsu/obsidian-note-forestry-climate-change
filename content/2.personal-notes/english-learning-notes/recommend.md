@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-01T09:39:24.783Z
+modified: 2026-09-02T09:13:46.875Z
 published: 2026-09-01
 tags:
   - 日常
@@ -32,7 +32,7 @@ date: 2026-09-01
 - advise
 
 > [!note] 易混淆詞
-> 與 [[commend]]（讚美）意思相近但用法不同，與 [[commence]]（開始）發音不相似但意思完全不同。詳見[[English words and phrases associations#commence--commend--recommend|詞彙關聯整理]]的三詞群組比較。
+> 與 [[commend]]（讚美）意思相近但用法不同，與 [[commence]]（開始）發音不相似但意思完全不同。詳見[[1.English words and phrases associations#commence--commend--recommend|詞彙關聯整理]]的三詞群組比較。
 
 ---
 

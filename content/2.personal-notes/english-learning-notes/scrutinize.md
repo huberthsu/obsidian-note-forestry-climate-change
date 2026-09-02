@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-08-31T17:11:50.642Z
+modified: 2026-09-02T09:38:18.070Z
 published: 2026-08-31
 tags:
   - 日常
@@ -49,7 +49,10 @@ date: 2026-08-31
 
 ## Collocations
 
-- scrutinize+(n)
+- scrutinize closely/carefully/closely: 仔細審查
+- scrutinize documents/records/details: 審查文件/記錄/細節
+- come under scrutiny: 受到審查
+- subject to scrutiny: 接受審查
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-01T08:42:03.618Z
+modified: 2026-09-02T09:13:46.426Z
 published: 2026-09-01
 tags:
   - 日常
@@ -33,7 +33,7 @@ date: 2026-09-01
 - convince
 
 > [!note] 易混淆詞
-> 與 ensure / insure 的區別見[[English words and phrases associations#ensure--assure--insure|詞彙關聯整理]]
+> 與 ensure / insure 的區別見[[1.English words and phrases associations#ensure--assure--insure|詞彙關聯整理]]
 
 ---
 

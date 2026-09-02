@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-08-19T13:13:38.446Z
+modified: 2026-09-02T09:52:18.617Z
 published: 2026-08-19
 tags:
   - 日常
@@ -35,6 +35,9 @@ date: 2026-08-19
 ## Synonyms/Related phrase
 
 - make better
+
+> [!note] 特殊
+> 與[[modify]]的比較：refine 是改進細節、使其更精緻完善；modify 是做出改變（可大可小、不一定是改進）
 
 ---
 

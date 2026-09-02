@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-01T08:22:06.378Z
+modified: 2026-09-02T09:37:56.250Z
 published: 2026-09-01
 tags:
   - 日常
@@ -30,6 +30,10 @@ date: 2026-09-01
 
 ## Word Family
 
+- ensured(adj)已確保的、有保障的
+- ensuring(adj)確保的、保障的
+- assurance(n)保証、確保
+
 ---
 
 ## Synonyms/Related phrase
@@ -37,7 +41,7 @@ date: 2026-09-01
 - make sure
 
 > [!note] 易混淆詞
-> 與 [[assure]] / [[insure]] 的區別見[[English words and phrases associations#ensure--assure--insure|詞彙關聯整理]]
+> 與 [[assure]] / [[insure]] 的區別見[[1.English words and phrases associations#ensure--assure--insure|詞彙關聯整理]]
 
 ---
 

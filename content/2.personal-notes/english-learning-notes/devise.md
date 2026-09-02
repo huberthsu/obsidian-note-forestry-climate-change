@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-08-31T05:54:16.018Z
+modified: 2026-09-02T09:38:19.741Z
 published: 2026-08-31
 tags:
   - 日常
@@ -42,6 +42,11 @@ date: 2026-08-31
 ---
 
 ## Collocations
+
+- devise a plan/strategy/solution: 想出計畫/策略/解決方案
+- devise a system/method/approach: 設計系統/方法/方法
+- devise a scheme/plot: 籌劃陰謀/計畫
+- carefully devise: 精心設計
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-08-15T15:55:13.461Z
+modified: 2026-09-02T09:38:07.159Z
 published: 2026-08-15
 tags:
   - 日常
@@ -29,6 +29,11 @@ date: 2026-08-15
 ---
 
 ## Word Family
+
+- know(v)知道、瞭解
+- know-it-all(n)自以為是的人、萬事通
+- knowall(n)同 know-it-all
+- 相關詞彙: wise guy(聰明人), smarty-pants(自作聰明的人)
 
 ---
 

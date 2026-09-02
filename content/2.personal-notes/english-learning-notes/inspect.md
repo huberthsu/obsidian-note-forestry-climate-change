@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-08-31T14:57:10.673Z
+modified: 2026-09-02T09:38:12.302Z
 published: 2026-08-31
 tags:
   - 日常
@@ -47,7 +47,10 @@ date: 2026-08-31
 
 ## Collocations
 
-- inspect+n
+- inspect + 對象(machinery/goods/premises): 檢查機器/貨物/場所
+- inspect closely/carefully/thoroughly: 仔細/徹底檢查
+- conduct an inspection: 進行檢查
+- undergo inspection: 接受檢查
 
 ---
 

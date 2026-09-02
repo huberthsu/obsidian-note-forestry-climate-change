@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-01T09:32:50.874Z
+modified: 2026-09-02T09:13:46.474Z
 published: 2026-09-01
 tags:
   - 日常
@@ -32,7 +32,7 @@ date: 2026-09-01
 - compliment日常互動上的讚美
 
 > [!note] 易混淆詞
-> 與 [[commence]]（開始）、[[recommend]]（推薦）、command(命令)易混淆。詳見[[English words and phrases associations#commence--commend--recommend|詞彙關聯整理]]的群組比較。
+> 與 [[commence]]（開始）、[[recommend]]（推薦）、command(命令)易混淆。詳見[[1.English words and phrases associations#commence--commend--recommend|詞彙關聯整理]]的群組比較。
 
 ---
 

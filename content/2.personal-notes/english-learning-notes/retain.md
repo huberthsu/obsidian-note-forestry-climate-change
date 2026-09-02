@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-28
-modified: 2026-08-28T07:47:54.991Z
+modified: 2026-09-02T09:42:53.039Z
 published: 2026-08-28
 tags:
   - 日常
@@ -47,6 +47,11 @@ date: 2026-08-28
 ---
 
 ## Collocations
+
+- retain information/knowledge/memory: 保留信息/知識/記憶
+- retain staff/employees/customers: 留住員工/客戶
+- retain one's rights/position/control: 保持某人的權利/地位/控制權
+- retain access to: 保持對...的訪問權限
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-08-31T14:30:28.560Z
+modified: 2026-09-02T09:28:58.651Z
 published: 2026-08-31
 tags:
   - 日常
@@ -30,6 +30,10 @@ date: 2026-08-31
 
 ## Word Family
 
+- reflection(n)反思、思考、反映
+- reflective(adj)反思的、有思考精神的
+- reflectively(adv)深思地、沉思地
+
 ---
 
 ## Synonyms/Related phrase
@@ -39,6 +43,11 @@ date: 2026-08-31
 ---
 
 ## Collocations
+
+- reflect on + 名詞(past/meaning/experience/life): 思考關於...
+- deeply/carefully/seriously reflect on: 深入/仔細/認真地反思
+- reflect on one's life/decisions/actions: 反思某人的人生/決定/行為
+- take time to reflect on: 花時間反思
 
 ---
 

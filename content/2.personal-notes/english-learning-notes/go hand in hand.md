@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-08-14T08:17:34.931Z
+modified: 2026-09-02T09:37:10.058Z
 published: 2026-08-14
 tags:
   - 日常
@@ -33,6 +33,8 @@ date: 2026-08-14
 
 ## Word Family
 
+- 相關詞彙：hand in hand(手牽手), paired with, go together, accompany
+
 ---
 
 ## Synonyms/Related phrase
@@ -41,7 +43,10 @@ date: 2026-08-14
 
 ## Collocations
 
-- **A and B** +go hand in hand
+- A and B go hand in hand: A 和 B 密切相關/相輔相成
+- (某物) goes hand in hand with (另一物): 與...密切相關
+- health and happiness go hand in hand: 健康和幸福相輔相成
+- success goes hand in hand with hard work: 成功與努力密切相關
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-08-19T13:19:00.166Z
+modified: 2026-09-02T15:08:27.497Z
 published: 2026-08-19
 tags:
   - 日常
@@ -30,6 +30,9 @@ date: 2026-08-19
 
 ## Word Family
 
+- depletion(n)消耗、枯竭
+- depleted(adj)枯竭的
+
 ---
 
 ## Synonyms/Related phrase
@@ -39,6 +42,10 @@ date: 2026-08-19
 ---
 
 ## Collocations
+
+- deplete+n
+- depletion of+名詞
+- severely/completely/gradually+deplete: 嚴重/完全/逐漸耗盡
 
 ---
 

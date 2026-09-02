@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-02T09:52:18.617Z
+modified: 2026-09-02T15:29:20.115Z
 published: 2026-08-19
 tags:
   - 日常
@@ -30,6 +30,9 @@ date: 2026-08-19
 
 ## Word Family
 
+- refinement(n)精煉、精進
+- refined(adj)精煉的、精製的
+
 ---
 
 ## Synonyms/Related phrase
@@ -42,6 +45,10 @@ date: 2026-08-19
 ---
 
 ## Collocations
+
+- refine a skill/plan/strategy/process/method
+- refine oil / sugar / gold: 提煉石油／精煉糖／煉金
+- years of refinement多年的精進
 
 ---
 

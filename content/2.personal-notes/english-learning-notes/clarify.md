@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-08-31T06:23:44.946Z
+modified: 2026-09-02T15:34:07.017Z
 published: 2026-08-31
 tags:
   - 日常
@@ -45,7 +45,8 @@ date: 2026-08-31
 
 ## Collocations
 
-- clarification on
+- clarification+on+something
+- clarify+something
 
 ---
 

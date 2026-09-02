@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-08-31T08:31:07.686Z
+modified: 2026-09-02T15:35:41.033Z
 published: 2026-08-31
 tags:
   - 日常
@@ -48,7 +48,7 @@ date: 2026-08-31
 
 ## Collocations
 
-- It is feasible to + v 做某事是可行的
+- It is feasible to + v: 做某事是可行的
 
 ---
 

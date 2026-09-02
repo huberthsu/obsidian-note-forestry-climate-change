@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-02T09:37:55.020Z
+modified: 2026-09-02T15:30:43.228Z
 published: 2026-08-19
 tags:
   - 日常
@@ -44,7 +44,7 @@ date: 2026-08-19
 
 ## Collocations
 
-- verify information/details/facts: 驗證信息/細節/事實
+- verify information/details/facts: 驗證訊息/細節/事實
 - verify one's identity/account: 驗證某人的身份/帳戶
 - independently verified: 獨立驗證的
 - unable to verify: 無法驗證

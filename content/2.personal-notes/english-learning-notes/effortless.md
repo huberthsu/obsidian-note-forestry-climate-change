@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-02T09:35:07.753Z
+modified: 2026-09-02T15:19:20.565Z
 published: 2026-08-19
 tags:
   - 日常
@@ -46,7 +46,6 @@ date: 2026-08-19
 
 - effortless style/charm/elegance: 毫不費力的風格/魅力/優雅
 - effortless transition/shift: 順暢的轉變/轉換
-- with ease: 輕鬆地、毫不費力地
 - appear/seem effortless: 看起來毫不費力
 
 ---

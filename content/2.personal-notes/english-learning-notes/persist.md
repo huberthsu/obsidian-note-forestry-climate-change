@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-02T15:51:22.681Z
+modified: 2026-09-02T15:58:58.540Z
 published: 2026-08-31
 tags:
   - 日常
@@ -39,9 +39,8 @@ date: 2026-08-31
 ## Synonyms/Related phrase
 
 > [!note] 與 insist 的比較
-> persist 強調「儘管困難或障礙仍持續做某事」（持續的動作層面）
-> insist 則是「堅決主張、強烈要求」（表達態度/意見層面）
-> persist 較中性客觀，insist 帶有主觀強調色彩。情境不同，容易混淆。
+> persist 強調「儘管困難或障礙仍持續做某事」（持續的動作層面）；insist 則是「堅決主張、強烈要求」（表達態度/意見層面）
+> persist 較中性客觀；insist 帶有主觀強調色彩。情境不同，容易混淆。
 
 ---
 

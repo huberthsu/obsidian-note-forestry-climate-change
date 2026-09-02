@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-02T09:38:12.302Z
+modified: 2026-09-02T15:57:05.791Z
 published: 2026-08-31
 tags:
   - 日常
@@ -40,8 +40,8 @@ date: 2026-08-31
 
 - check out
 
-> [!note] 特殊
-> 與[[scrutinize]]的比較: inspect像品管員用來確認事物是否正常；scrutinize像偵探用放大鏡小心翼翼的仔細審查
+> [!note] 與[[scrutinize]]的比較:
+> inspect像品管員用來確認事物是否正常；scrutinize像偵探用放大鏡小心翼翼的仔細審查
 
 ---
 

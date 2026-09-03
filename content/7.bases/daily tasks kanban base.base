@@ -4,6 +4,9 @@ filters:
 views:
   - type: kanban-view
     name: daily kanban
+    groupBy:
+      property: date
+      direction: ASC
     order:
       - Chinese translation
       - tags

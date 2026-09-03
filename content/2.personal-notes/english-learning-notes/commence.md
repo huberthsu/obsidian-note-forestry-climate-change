@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-28
-modified: 2026-09-02T09:13:46.448Z
+modified: 2026-09-03T10:03:23.717Z
 published: 2026-08-28
 tags:
   - 日常
@@ -51,8 +51,10 @@ date: 2026-08-28
 - commence hostilities: 開戰（軍事/政治用語）
 - commence construction / work: 動工 / 開始工作
 - commence operations / production: 開始營運 / 開始投入生產
-- commence with something: 以某事作為開始
-- commence at 時間: 於特定時間開始
+- commence with something: 以某事作為開端
+- commence at 時間
+- commence in 月份、年分、季節
+- commence on 日期
 
 ---
 

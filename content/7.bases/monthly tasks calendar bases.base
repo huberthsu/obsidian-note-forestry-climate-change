@@ -1,0 +1,48 @@
+filters:
+  and:
+    - '!file.inFolder("5.templates")'
+    - '!file.inFolder("5.templates-for-web")'
+    - or:
+        - category.contains(link("English learning notes"))
+        - category.contains(link("Exam notes"))
+        - category.contains(link("Zettelkasten notes"))
+formulas:
+  type_label: if(category.contains(link("English learning notes")), "英文學習筆記", if(category.contains(link("Exam notes")), "考古題筆記", if(category.contains(link("Zettelkasten notes")), "卡片盒筆記", "其他")))
+  month_label: if(date, date.format("YYYY-MM"), "")
+properties:
+  formula.type_label:
+    displayName: 類型
+  formula.month_label:
+    displayName: 月份
+views:
+  - type: calendar
+    name: 本月任務紀錄
+    order:
+      - file.name
+      - category
+      - tags
+    startDate: note.date
+  - type: table
+    name: 本月統計
+    filters:
+      and:
+        - if(date, date >= date(today().format("YYYY-MM") + "-01"), false)
+    groupBy:
+      property: formula.type_label
+      direction: ASC
+    order:
+      - file.name
+      - date
+    summaries:
+      file.name: Filled
+  - type: table
+    name: 歷史統計（依月份）
+    groupBy:
+      property: formula.month_label
+      direction: DESC
+    order:
+      - file.name
+      - formula.type_label
+      - date
+    summaries:
+      file.name: Filled

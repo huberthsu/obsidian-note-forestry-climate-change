@@ -1,22 +1,20 @@
 ---
-publish: true
-title: 什麼是OECMs
-created: 2026-08-12T06:40:49.123Z
-modified: 2026-08-21T06:14:07.818Z
-published: 2026-08-21T06:14:07.818Z
-tags:
-  - OECMs
 category:
   - "[[Zettelkasten notes]]"
 Aliases:
   - "#OECMs"
   - 保育共生地
+tags:
+  - OECMs
+date: 2026-08-12
 摘要:
 in:
   - 2.personal-notes
 parent:
 sibling:
 child:
+publish: true
+title: 什麼是OECMs
 password:
 ---
 

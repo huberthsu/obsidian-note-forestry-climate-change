@@ -1,15 +1,11 @@
 ---
-publish: true
-aliases:
-  - 影響林分空間結構複雜度的因素有那些
-title: 影響林分空間結構複雜度的因素有那些
-created: 2026-08-23T08:04:37.130Z
-modified: 2026-08-24T14:18:49.614Z
-published: 2026-08-24T14:18:49.614Z
-tags:
-  - 森林結構
 category:
   - "[[Zettelkasten notes]]"
+aliases:
+  - 影響林分空間結構複雜度的因素有那些
+tags:
+  - 森林結構
+date: 2026-08-23
 摘要:
 in:
   - 2.personal-notes
@@ -19,6 +15,8 @@ sibling:
 child:
   - "[[The Relationship Between Forest Stand Spatial Structure and Carbon Storage|林分空間結構與碳貯存量的關聯]]"
   - "[[The impact of forest stand spatial structure complexity on biodiversity|林分空間結構複雜度對生物多樣性的影響]]"
+publish: true
+title: 影響林分空間結構複雜度的因素有那些
 password:
 ---
 

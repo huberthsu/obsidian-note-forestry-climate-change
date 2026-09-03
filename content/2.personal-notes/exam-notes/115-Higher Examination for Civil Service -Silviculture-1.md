@@ -1,13 +1,8 @@
 ---
-publish: true
-title: 母樹林定義、選擇型與優良母樹條件
-created: 2026-08-27T06:13:07.882Z
-modified: 2026-08-27T06:46:49.716Z
-published: 2026-08-27T06:46:49.716Z
-tags:
-  - 母樹
 category:
   - "[[Exam notes]]"
+tags:
+  - 母樹
 考題年分: 2026
 高考普考特考:
   - 高考
@@ -20,9 +15,11 @@ category:
   - 熟練
   - 不太熟
   - 不熟
-最近作答日期:
 date:
+下次複習時間:
 已練習次數:
+publish: true
+title: 母樹林定義、選擇型與優良母樹條件
 ---
 
 # 何謂母樹林(selected stand for seed collection)？（10 分）試比較其兩種選擇型？（10 分）另外，優良母樹之條件為何？（5 分）

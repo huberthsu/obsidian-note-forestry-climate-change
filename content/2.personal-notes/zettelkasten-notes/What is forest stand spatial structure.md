@@ -1,5 +1,6 @@
 ---
-publish: true
+category:
+  - "[[Zettelkasten notes]]"
 aliases:
   - 什麼是林分空間結構
   - 林分結構
@@ -7,14 +8,9 @@ aliases:
   - 森林結構
   - 森林空間結構
   - "#森林結構"
-title: 什麼是林分空間結構
-created: 2026-08-25T08:23:18.218Z
-modified: 2026-08-28T07:11:51.538Z
-published: 2026-08-28T07:11:51.538Z
 tags:
   - 森林結構
-category:
-  - "[[Zettelkasten notes]]"
+date: 2026-08-25
 摘要:
 in:
   - 2.personal-notes
@@ -22,6 +18,8 @@ parent:
 sibling:
 child:
   - "[[What factors influence the spatial structure of forest stands|影響林分空間結構複雜度的因素有那些]]"
+publish: true
+title: 什麼是林分空間結構
 password:
 ---
 

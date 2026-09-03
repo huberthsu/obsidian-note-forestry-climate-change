@@ -1,15 +1,10 @@
 ---
-publish: true
-title: 疏植與密植的幹形與材積
-created: 2026-08-27T06:16:43.453Z
-modified: 2026-08-27T06:46:19.365Z
-published: 2026-08-27T06:46:19.365Z
+category:
+  - "[[Exam notes]]"
 tags:
   - 林分密度
   - 幹形
   - 材積
-category:
-  - "[[Exam notes]]"
 考題年分: 2026
 高考普考特考:
   - 高考
@@ -22,9 +17,11 @@ category:
   - 熟練
   - 不太熟
   - 不熟
-最近作答日期:
 date:
+下次複習時間:
 已練習次數:
+publish: true
+title: 疏植與密植的幹形與材積
 ---
 
 # 試列表比較疏植與密植二林分單木幹形與材積。（25 分）

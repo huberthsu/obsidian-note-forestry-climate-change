@@ -27,4 +27,4 @@ views:
       note.科目: 107
       note.考題年分: 88
       note.高考普考特考: 118
-    startDate: note.date
+    startDate: note.下次複習時間

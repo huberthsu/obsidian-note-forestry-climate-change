@@ -4,8 +4,8 @@ aliases:
   - Obsidian雙向連結、知識整理與資料管理
 title: Obsidian雙向連結、知識整理與資料管理
 created: 2026-08-11T06:58:31.404Z
-modified: 2026-09-01T12:17:58.065Z
-published: 2026-09-01T12:17:58.065Z
+modified: 2026-09-03T15:56:21.792Z
+published: 2026-09-03T15:56:21.792Z
 tags:
   - 工作流
   - obsidian
@@ -30,7 +30,7 @@ child:
   1. 以1.類別/中，直接創建**資料夾類型筆記**作為檔案搜尋入口
   2. 在2.個人note/中，依照筆記類型，放到相應的子資料夾。
   3. 1.類別/該筆記內，放置一個bases，篩選出所有位於2.個人note/子資料夾中的筆記
-  4. 創立筆記時，於Metadata的類別欄位選擇[[Literature notes|文獻筆記]]、[[Exam notes|考古題筆記]]、[[Ideas and thoughts notes|靈感與思考筆記]]、[[Projects notes|專案筆記]]、[[Explanation notes|說明]]
+  4. 創立筆記時，於Metadata的類別欄位選擇[[Literature notes|文獻筆記]]、[[Exam notes|考古題筆記]]、[[Ideas and thoughts notes|靈感與思考筆記]]、[[Explanation notes|說明]]
   5. 創立筆記後，於tags欄位選擇或創立與該筆記相關的標籤，之後由bases的過濾功能選擇所有與該tags相關的筆記
 - 參考資料
   - [Obsidian CEO vault介紹影片](https://www.youtube.com/watch?v=3U149EP46Vs\&t=151s)

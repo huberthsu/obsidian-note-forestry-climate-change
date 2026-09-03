@@ -1,15 +1,25 @@
 {
 	"nodes":[
-		{"id":"664f6ba16bb4cfd6","type":"file","file":"4.canvas-and-mindmaps/canvas/英文學習工作流.canvas","portal":true,"x":3200,"y":1120,"width":3300,"height":983},
+		{"id":"664f6ba16bb4cfd6","type":"file","file":"4.canvas-and-mindmaps/canvas/英文學習工作流.canvas","portal":true,"x":3200,"y":1120,"width":2580,"height":1494},
 		{"id":"dcb4cb7c84197fa2","type":"file","file":"4.canvas-and-mindmaps/canvas/高普考準備工作流.canvas","portal":true,"x":3200,"y":-3680,"width":6660,"height":3620},
-		{"id":"8983a5b4274a5ad2","type":"file","file":"4.canvas-and-mindmaps/canvas/目標與任務管理工作流.canvas","portal":true,"x":-800,"y":0,"width":3300,"height":824}
+		{
+			"id":"3b73235d56073931",
+			"type":"text",
+			"text":"![[Task Management]]",
+			"styleAttributes":{},
+			"x":-640,
+			"y":-436,
+			"width":2800,
+			"height":1840
+		}
 	],
 	"edges":[
 		{
 			"id":"88430f05fa557290",
 			"styleAttributes":{},
 			"toFloating":false,
-			"fromNode":"8983a5b4274a5ad2",
+			"fromFloating":false,
+			"fromNode":"3b73235d56073931",
 			"fromSide":"right",
 			"toNode":"664f6ba16bb4cfd6",
 			"toSide":"left",
@@ -22,7 +32,7 @@
 			"fromFloating":false,
 			"fromNode":"dcb4cb7c84197fa2",
 			"fromSide":"left",
-			"toNode":"8983a5b4274a5ad2",
+			"toNode":"3b73235d56073931",
 			"toSide":"top",
 			"label":"依據熟練度制定下次複習時間"
 		},
@@ -31,7 +41,7 @@
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromFloating":false,
-			"fromNode":"8983a5b4274a5ad2",
+			"fromNode":"3b73235d56073931",
 			"fromSide":"right",
 			"toNode":"dcb4cb7c84197fa2",
 			"toSide":"left",

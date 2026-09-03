@@ -27,22 +27,22 @@
 		},
 		{"id":"c78415c1aadb41e5","type":"text","text":"[[Timestamp note plugins]]","x":-7420,"y":5434,"width":250,"height":60},
 		{
-			"id":"0ddc84570c417896",
-			"type":"text",
-			"text":"[[1.English words and phrases associations|英文單字片語關聯整理]]",
-			"styleAttributes":{},
-			"x":-6770,
-			"y":4579,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"4daee770d372f31d",
 			"type":"text",
 			"text":"[[Vocab Quiz Record|英文測驗紀錄]]",
 			"styleAttributes":{},
 			"x":-6770,
 			"y":4980,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0ddc84570c417896",
+			"type":"text",
+			"text":"[[1.English words and phrases associations|英文單字片語關聯整理]]",
+			"styleAttributes":{},
+			"x":-6770,
+			"y":4579,
 			"width":260,
 			"height":60
 		}

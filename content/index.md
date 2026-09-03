@@ -2,8 +2,8 @@
 publish: true
 title: 森林與氣候變遷的數位花園😊
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-09-02T09:13:47.050Z
-published: 2026-09-02T09:13:47.050Z
+modified: 2026-09-03T16:07:37.330Z
+published: 2026-09-03T16:07:37.330Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -81,7 +81,7 @@ published: 2026-09-02T09:13:47.050Z
 
 ## 目標與任務管理工作流
 
-- [[目標與任務管理工作流.canvas]]
+- [[Task Management|任務管理]]
 
 ## 高普考準備工作流
 

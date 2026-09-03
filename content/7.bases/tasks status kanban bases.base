@@ -1,9 +1,9 @@
+filters:
+  and:
+    - "!status.isEmpty()"
 views:
   - type: kanban-view
     name: 表格
-    filters:
-      and:
-        - "!status.isEmpty()"
     order:
       - tags
     columnOrders:

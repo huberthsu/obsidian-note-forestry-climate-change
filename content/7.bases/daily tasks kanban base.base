@@ -1,9 +1,9 @@
+filters:
+  and:
+    - "!date.isEmpty()"
 views:
   - type: kanban-view
     name: daily kanban
-    filters:
-      and:
-        - "!date.isEmpty()"
     order:
       - Chinese translation
       - tags

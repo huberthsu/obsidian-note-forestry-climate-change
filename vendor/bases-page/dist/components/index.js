@@ -2800,9 +2800,130 @@ var galleryViewRegistration = {
   render: GalleryView
 };
 
-// src/components/views/list.tsx
-import { Fragment as Fragment3, jsx as jsx9, jsxs as jsxs7 } from "preact/jsx-runtime";
+// src/components/views/kanban.tsx
+import { jsx as jsx9, jsxs as jsxs7 } from "preact/jsx-runtime";
 function formatMessage5(template, values) {
+  return Object.entries(values).reduce(
+    (text, [key, value]) => text.replace(`{${key}}`, String(value)),
+    template
+  );
+}
+function formatGroupLabel(value) {
+  if (value instanceof Date && !Number.isNaN(value.getTime())) {
+    const y = value.getUTCFullYear();
+    const m = String(value.getUTCMonth() + 1).padStart(2, "0");
+    const d = String(value.getUTCDate()).padStart(2, "0");
+    return `${y}-${m}-${d}`;
+  }
+  return formatValue(value);
+}
+var KanbanView = ({
+  entries,
+  view,
+  basesData,
+  total,
+  locale,
+  slug: slug2,
+  allSlugs,
+  linkResolution
+}) => {
+  const localeStrings = i18n(locale).components.bases;
+  const groupProperty = typeof view.groupByProperty === "string" && view.groupByProperty || view.groupBy?.property || typeof view.boardProperty === "string" && view.boardProperty || void 0;
+  const columns = getColumns(view, basesData, entries).filter((column) => column !== groupProperty);
+  const emptyLabel = groupProperty ? localeStrings.uncategorized : localeStrings.allEntries;
+  const transformOpts = { strategy: linkResolution, allSlugs };
+  const groups = /* @__PURE__ */ new Map();
+  for (const entry of entries) {
+    const rawValue = groupProperty ? resolveEntryPropertyValue(groupProperty, entry) : void 0;
+    const label = isEmptyValue(rawValue) ? emptyLabel : formatGroupLabel(rawValue);
+    const key = label || emptyLabel;
+    const existing = groups.get(key);
+    if (existing) existing.entries.push(entry);
+    else groups.set(key, { label: key, entries: [entry] });
+  }
+  if (groups.size === 0) {
+    groups.set(localeStrings.allEntries, { label: localeStrings.allEntries, entries });
+  }
+  const columnOrders = view.columnOrders;
+  const rawColumnOrder = groupProperty ? columnOrders?.[groupProperty] : void 0;
+  const orderedKeys = Array.isArray(rawColumnOrder) ? rawColumnOrder.filter((v) => typeof v === "string") : [];
+  const orderedGroups = [];
+  const seenGroups = /* @__PURE__ */ new Set();
+  for (const key of orderedKeys) {
+    const group = groups.get(key);
+    if (group && !seenGroups.has(key)) {
+      orderedGroups.push(group);
+      seenGroups.add(key);
+    }
+  }
+  for (const [key, group] of groups) {
+    if (!seenGroups.has(key)) {
+      orderedGroups.push(group);
+      seenGroups.add(key);
+    }
+  }
+  const cardOrdersForProperty = groupProperty ? view.cardOrders?.[groupProperty] : void 0;
+  for (const group of orderedGroups) {
+    const rawCardOrder = cardOrdersForProperty?.[group.label];
+    const cardOrder = Array.isArray(rawCardOrder) ? rawCardOrder.filter((v) => typeof v === "string") : void 0;
+    if (!cardOrder || cardOrder.length === 0) continue;
+    const byPath = new Map(group.entries.map((entry) => [entry.fileProperties.path, entry]));
+    const sorted = [];
+    const used = /* @__PURE__ */ new Set();
+    for (const path of cardOrder) {
+      const entry = byPath.get(path);
+      if (entry && !used.has(path)) {
+        sorted.push(entry);
+        used.add(path);
+      }
+    }
+    for (const entry of group.entries) {
+      if (!used.has(entry.fileProperties.path)) sorted.push(entry);
+    }
+    group.entries = sorted;
+  }
+  return /* @__PURE__ */ jsxs7("div", { class: "bases-kanban-wrapper", children: [
+    /* @__PURE__ */ jsx9("div", { class: "bases-view-meta", children: formatMessage5(localeStrings.showingCount, { count: entries.length, total }) }),
+    /* @__PURE__ */ jsx9("div", { class: "bases-board", children: orderedGroups.map((group) => /* @__PURE__ */ jsxs7("div", { class: "bases-board-column", children: [
+      /* @__PURE__ */ jsxs7("div", { class: "bases-board-column-header", children: [
+        /* @__PURE__ */ jsx9("span", { children: group.label }),
+        /* @__PURE__ */ jsx9("span", { class: "bases-board-count", children: group.entries.length })
+      ] }),
+      /* @__PURE__ */ jsx9("div", { class: "bases-board-column-body", children: group.entries.map((entry) => {
+        const ctx = { slug: slug2, allSlugs, linkResolution };
+        return /* @__PURE__ */ jsxs7("div", { class: "bases-board-card", children: [
+          /* @__PURE__ */ jsx9(
+            "a",
+            {
+              href: transformLink(slug2, entry.slug, transformOpts),
+              class: "internal internal-link",
+              "data-slug": entry.slug,
+              children: entry.title
+            }
+          ),
+          columns.length > 0 && /* @__PURE__ */ jsx9("div", { class: "bases-board-card-meta", children: columns.map((column) => {
+            const value = resolveEntryPropertyValue(column, entry);
+            if (isEmptyValue(value)) return null;
+            return /* @__PURE__ */ jsxs7("div", { class: "bases-board-card-row", children: [
+              /* @__PURE__ */ jsx9("span", { class: "bases-board-card-label", children: getColumnLabel(column, basesData) }),
+              /* @__PURE__ */ jsx9("span", { class: "bases-board-card-value", children: renderCellValue(value, ctx, column) })
+            ] });
+          }) })
+        ] });
+      }) })
+    ] })) })
+  ] });
+};
+var kanbanViewRegistration = {
+  id: "kanban-view",
+  name: "Kanban",
+  icon: "square-kanban",
+  render: KanbanView
+};
+
+// src/components/views/list.tsx
+import { Fragment as Fragment3, jsx as jsx10, jsxs as jsxs8 } from "preact/jsx-runtime";
+function formatMessage6(template, values) {
   return Object.entries(values).reduce(
     (text, [key, value]) => text.replace(`{${key}}`, String(value)),
     template
@@ -2821,16 +2942,16 @@ var ListView = ({
   const columns = getColumns(view, basesData, entries);
   const localeStrings = i18n(locale).components.bases;
   const transformOpts = { strategy: linkResolution, allSlugs };
-  return /* @__PURE__ */ jsxs7("div", { class: "bases-list-wrapper", children: [
-    /* @__PURE__ */ jsx9("div", { class: "bases-view-meta", children: formatMessage5(localeStrings.showingCount, {
+  return /* @__PURE__ */ jsxs8("div", { class: "bases-list-wrapper", children: [
+    /* @__PURE__ */ jsx10("div", { class: "bases-view-meta", children: formatMessage6(localeStrings.showingCount, {
       count: entries.length,
       total
     }) }),
-    /* @__PURE__ */ jsx9("div", { class: "bases-list-group", children: /* @__PURE__ */ jsx9("div", { class: "bases-list-group-list", children: entries.map((entry) => {
+    /* @__PURE__ */ jsx10("div", { class: "bases-list-group", children: /* @__PURE__ */ jsx10("div", { class: "bases-list-group-list", children: entries.map((entry) => {
       const ctx = { slug: slug2, allSlugs, linkResolution };
       const primaryColumn = columns[0] ?? "file.name";
       const secondaryColumns = columns.slice(1);
-      const primaryValue = primaryColumn === "file.name" ? /* @__PURE__ */ jsx9(
+      const primaryValue = primaryColumn === "file.name" ? /* @__PURE__ */ jsx10(
         "a",
         {
           href: transformLink(slug2, entry.slug, transformOpts),
@@ -2844,16 +2965,16 @@ var ListView = ({
         const value = resolveEntryPropertyValue(column, entry);
         if (isEmptyValue(value)) continue;
         secondaryItems.push(
-          /* @__PURE__ */ jsx9("span", { class: "bases-list-property", children: /* @__PURE__ */ jsx9("span", { class: "bases-rendered-value", children: renderCellValue(value, ctx, column) }) })
+          /* @__PURE__ */ jsx10("span", { class: "bases-list-property", children: /* @__PURE__ */ jsx10("span", { class: "bases-rendered-value", children: renderCellValue(value, ctx, column) }) })
         );
       }
-      return /* @__PURE__ */ jsx9("div", { class: "bases-list-item", children: /* @__PURE__ */ jsxs7("div", { class: "bases-list-item-properties", children: [
-        /* @__PURE__ */ jsxs7("span", { class: "bases-list-property", children: [
-          /* @__PURE__ */ jsx9("span", { class: "list-bullet", children: "-" }),
-          /* @__PURE__ */ jsx9("span", { class: "bases-rendered-value", children: primaryValue })
+      return /* @__PURE__ */ jsx10("div", { class: "bases-list-item", children: /* @__PURE__ */ jsxs8("div", { class: "bases-list-item-properties", children: [
+        /* @__PURE__ */ jsxs8("span", { class: "bases-list-property", children: [
+          /* @__PURE__ */ jsx10("span", { class: "list-bullet", children: "-" }),
+          /* @__PURE__ */ jsx10("span", { class: "bases-rendered-value", children: primaryValue })
         ] }),
-        secondaryItems.map((item) => /* @__PURE__ */ jsxs7(Fragment3, { children: [
-          /* @__PURE__ */ jsx9("span", { class: "bases-list-separator", children: ", " }),
+        secondaryItems.map((item) => /* @__PURE__ */ jsxs8(Fragment3, { children: [
+          /* @__PURE__ */ jsx10("span", { class: "bases-list-separator", children: ", " }),
           item
         ] }))
       ] }) });
@@ -2900,8 +3021,8 @@ function computeSummary(values, summary) {
 }
 
 // src/components/views/table.tsx
-import { Fragment as Fragment4, jsx as jsx10, jsxs as jsxs8 } from "preact/jsx-runtime";
-function formatMessage6(template, values) {
+import { Fragment as Fragment4, jsx as jsx11, jsxs as jsxs9 } from "preact/jsx-runtime";
+function formatMessage7(template, values) {
   return Object.entries(values).reduce(
     (text, [key, value]) => text.replace(`{${key}}`, String(value)),
     template
@@ -2926,13 +3047,13 @@ function groupEntries(entries, groupProperty, emptyLabel) {
 function renderRow(entry, columns, view, slug2, allSlugs, linkResolution) {
   const transformOpts = { strategy: linkResolution, allSlugs };
   const ctx = { slug: slug2, allSlugs, linkResolution };
-  return /* @__PURE__ */ jsx10("tr", { children: columns.map((column) => {
+  return /* @__PURE__ */ jsx11("tr", { children: columns.map((column) => {
     const value = resolveEntryPropertyValue(column, entry);
     const display = formatValue(value);
     const isPrimary = column === "file.name" || column === "title";
     const columnWidth = view.columnSize?.[column];
     const style = columnWidth ? { width: `${columnWidth}px`, minWidth: `${columnWidth}px` } : void 0;
-    return /* @__PURE__ */ jsx10("td", { "data-value": display, style, children: isPrimary ? /* @__PURE__ */ jsx10(
+    return /* @__PURE__ */ jsx11("td", { "data-value": display, style, children: isPrimary ? /* @__PURE__ */ jsx11(
       "a",
       {
         href: transformLink(slug2, entry.slug, transformOpts),
@@ -2960,28 +3081,28 @@ var TableView = ({
   const groupProperty = view.groupBy?.property;
   const groupPropertyLabel = groupProperty ? getColumnLabel(groupProperty, basesData) : "";
   const groups = groupEntries(entries, groupProperty, localeStrings.uncategorized);
-  return /* @__PURE__ */ jsxs8("div", { class: "bases-table-wrapper", children: [
-    /* @__PURE__ */ jsx10("div", { class: "bases-view-meta", children: formatMessage6(localeStrings.showingCount, {
+  return /* @__PURE__ */ jsxs9("div", { class: "bases-table-wrapper", children: [
+    /* @__PURE__ */ jsx11("div", { class: "bases-view-meta", children: formatMessage7(localeStrings.showingCount, {
       count: entries.length,
       total
     }) }),
-    /* @__PURE__ */ jsxs8("table", { class: "bases-table", "data-view-type": "table", children: [
-      /* @__PURE__ */ jsx10("thead", { children: /* @__PURE__ */ jsx10("tr", { children: columns.map((column) => {
+    /* @__PURE__ */ jsxs9("table", { class: "bases-table", "data-view-type": "table", children: [
+      /* @__PURE__ */ jsx11("thead", { children: /* @__PURE__ */ jsx11("tr", { children: columns.map((column) => {
         const columnWidth = view.columnSize?.[column];
         const style = columnWidth ? { width: `${columnWidth}px`, minWidth: `${columnWidth}px` } : void 0;
-        return /* @__PURE__ */ jsxs8("th", { "data-column": column, "data-sortable": "true", style, children: [
-          /* @__PURE__ */ jsx10("span", { class: "bases-table-header", children: getColumnLabel(column, basesData) }),
-          /* @__PURE__ */ jsx10("span", { class: "bases-table-header-sort", "aria-hidden": "true" })
+        return /* @__PURE__ */ jsxs9("th", { "data-column": column, "data-sortable": "true", style, children: [
+          /* @__PURE__ */ jsx11("span", { class: "bases-table-header", children: getColumnLabel(column, basesData) }),
+          /* @__PURE__ */ jsx11("span", { class: "bases-table-header-sort", "aria-hidden": "true" })
         ] });
       }) }) }),
-      /* @__PURE__ */ jsx10("tbody", { children: groups ? Array.from(groups.entries()).map(([label, groupEntries2]) => /* @__PURE__ */ jsxs8(Fragment4, { children: [
-        /* @__PURE__ */ jsx10("tr", { class: "bases-table-group-header", children: /* @__PURE__ */ jsxs8("td", { colSpan: columns.length, children: [
-          groupPropertyLabel && /* @__PURE__ */ jsxs8("span", { class: "bases-table-group-property", children: [
+      /* @__PURE__ */ jsx11("tbody", { children: groups ? Array.from(groups.entries()).map(([label, groupEntries2]) => /* @__PURE__ */ jsxs9(Fragment4, { children: [
+        /* @__PURE__ */ jsx11("tr", { class: "bases-table-group-header", children: /* @__PURE__ */ jsxs9("td", { colSpan: columns.length, children: [
+          groupPropertyLabel && /* @__PURE__ */ jsxs9("span", { class: "bases-table-group-property", children: [
             groupPropertyLabel,
             " "
           ] }),
-          /* @__PURE__ */ jsx10("span", { class: "bases-table-group-label", children: label }),
-          /* @__PURE__ */ jsx10("span", { class: "bases-table-group-count", children: groupEntries2.length })
+          /* @__PURE__ */ jsx11("span", { class: "bases-table-group-label", children: label }),
+          /* @__PURE__ */ jsx11("span", { class: "bases-table-group-count", children: groupEntries2.length })
         ] }) }),
         groupEntries2.map(
           (entry) => renderRow(entry, columns, view, slug2, allSlugs, linkResolution)
@@ -2989,11 +3110,11 @@ var TableView = ({
       ] })) : entries.map(
         (entry) => renderRow(entry, columns, view, slug2, allSlugs, linkResolution)
       ) }),
-      hasSummary && /* @__PURE__ */ jsx10("tfoot", { children: /* @__PURE__ */ jsx10("tr", { class: "bases-summary-row", children: columns.map((column) => {
+      hasSummary && /* @__PURE__ */ jsx11("tfoot", { children: /* @__PURE__ */ jsx11("tr", { class: "bases-summary-row", children: columns.map((column) => {
         const summary = summaries[column];
-        if (!summary) return /* @__PURE__ */ jsx10("td", {});
+        if (!summary) return /* @__PURE__ */ jsx11("td", {});
         const values = entries.map((entry) => resolveEntryPropertyValue(column, entry));
-        return /* @__PURE__ */ jsx10("td", { children: computeSummary(values, summary) });
+        return /* @__PURE__ */ jsx11("td", { children: computeSummary(values, summary) });
       }) }) })
     ] })
   ] });
@@ -3013,13 +3134,14 @@ function registerBuiltinViews() {
   viewRegistry.register(galleryViewRegistration);
   viewRegistry.register(boardViewRegistration);
   viewRegistry.register(calendarViewRegistration);
+  viewRegistry.register(kanbanViewRegistration);
 }
 
 // src/components/styles/bases.scss
 var bases_default = ".bases-page {\n  width: 100%;\n  max-width: 100%;\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n  overflow: hidden;\n}\n\n.bases-view-tabs {\n  display: flex;\n  gap: 8px;\n  flex-wrap: wrap;\n}\n.bases-view-tabs button {\n  border: 1px solid var(--lightgray);\n  background: var(--light);\n  color: var(--darkgray);\n  padding: 6px 12px;\n  border-radius: 999px;\n  cursor: pointer;\n  font-size: 0.9rem;\n}\n.bases-view-tabs button.is-active {\n  background: var(--secondary);\n  color: var(--light);\n  border-color: var(--secondary);\n}\n\n.bases-view-container {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n}\n\n.bases-view {\n  display: none;\n}\n.bases-view.is-active {\n  display: block;\n}\n\n.bases-view-meta {\n  font-size: 0.85rem;\n  color: var(--gray);\n  margin-bottom: 8px;\n}\n\n.bases-table-wrapper {\n  width: 100%;\n  overflow-x: auto;\n}\n\n.bases-table {\n  width: 100%;\n  border-collapse: collapse;\n  border: 1px solid var(--lightgray);\n  border-radius: 8px;\n  overflow: hidden;\n}\n.bases-table th,\n.bases-table td {\n  padding: 10px 12px;\n  text-align: left;\n  border-bottom: 1px solid var(--lightgray);\n  font-size: 0.9rem;\n}\n.bases-table thead th {\n  position: sticky;\n  top: 0;\n  background: var(--light);\n  color: var(--dark);\n  font-weight: 600;\n  cursor: pointer;\n}\n.bases-table td .bases-empty {\n  padding: 0;\n  border: 0;\n  background: none;\n  color: var(--gray);\n  display: inline;\n}\n.bases-table td code {\n  font-size: 0.85em;\n  padding: 0.1rem 0.3rem;\n  border-radius: 3px;\n  background: var(--highlight);\n  word-break: break-all;\n}\n.bases-table td .bases-list {\n  flex-direction: row;\n  flex-wrap: wrap;\n  gap: 4px;\n}\n.bases-table td input[type=checkbox] {\n  margin-inline: 0;\n}\n\n.bases-table-header-sort {\n  position: absolute;\n  right: 8px;\n  top: calc(50% - 4px);\n  display: inline-block;\n  width: 8px;\n  height: 8px;\n  margin-left: 6px;\n  border-right: 2px solid transparent;\n  border-bottom: 2px solid transparent;\n}\n\nth.is-sorted-asc .bases-table-header-sort {\n  border-right-color: var(--darkgray);\n  border-bottom-color: var(--darkgray);\n  transform: rotate(-45deg);\n}\n\nth.is-sorted-desc .bases-table-header-sort {\n  border-right-color: var(--darkgray);\n  border-bottom-color: var(--darkgray);\n  transform: rotate(135deg);\n}\n\n.bases-summary-row td {\n  background: var(--light);\n  font-weight: 600;\n  color: var(--darkgray);\n}\n\n.bases-table-group-header td {\n  background: var(--lightgray);\n  font-weight: 600;\n  padding: 8px 12px;\n  border-bottom: 2px solid var(--gray);\n}\n\n.bases-table-group-property {\n  color: var(--gray);\n  font-weight: 400;\n}\n\n.bases-table-group-label {\n  margin-right: 8px;\n}\n\n.bases-table-group-count {\n  background: var(--light);\n  color: var(--darkgray);\n  border-radius: 999px;\n  padding: 2px 8px;\n  font-size: 0.75rem;\n  font-weight: 400;\n}\n\n.bases-separator {\n  color: var(--gray);\n}\n\n.bases-number {\n  font-variant-numeric: tabular-nums;\n}\n\n.bases-list {\n  display: inline-flex;\n  flex-wrap: wrap;\n  gap: 4px;\n}\n\n.bases-list-group {\n  width: 100%;\n}\n\n.bases-list-group-list {\n  display: flex;\n  flex-direction: column;\n}\n\n.bases-list-item {\n  padding: 2px 0;\n}\n\n.bases-list-item-properties {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: baseline;\n  gap: 0;\n}\n\n.bases-list-property {\n  display: inline-flex;\n  align-items: baseline;\n  gap: 4px;\n}\n\n.list-bullet {\n  color: var(--darkgray);\n  user-select: none;\n}\n\n.bases-list-separator {\n  color: var(--gray);\n  margin-right: 4px;\n}\n\n.bases-rendered-value {\n  display: inline;\n}\n\n.bases-cards {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));\n  gap: 16px;\n}\n\n.bases-card {\n  border: 1px solid var(--lightgray);\n  border-radius: 12px;\n  overflow: hidden;\n  background: var(--light);\n  display: flex;\n  flex-direction: column;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);\n  color: inherit;\n  text-decoration: none;\n  transition: box-shadow 0.15s ease;\n}\n.bases-card:hover {\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);\n}\n\n.bases-card-image {\n  overflow: hidden;\n  background: var(--lightgray);\n}\n.bases-card-image img {\n  width: 100%;\n  height: 100%;\n  display: block;\n  object-fit: cover;\n}\n\n.bases-card-color {\n  min-height: 60px;\n}\n\n.bases-card-title {\n  font-weight: 600;\n  color: var(--dark);\n}\n\n.bases-card-body {\n  padding: 12px;\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n}\n\n.bases-card-meta {\n  display: grid;\n  gap: 4px;\n}\n\n.bases-card-row {\n  display: flex;\n  justify-content: space-between;\n  font-size: 0.8rem;\n  color: var(--darkgray);\n}\n\n.bases-card-label {\n  color: var(--gray);\n}\n\n.bases-map-placeholder {\n  padding: 24px;\n  border: 1px dashed var(--lightgray);\n  border-radius: 12px;\n  background: var(--light);\n}\n\n.bases-map-message {\n  color: var(--darkgray);\n  margin-top: 12px;\n}\n\n.bases-empty {\n  padding: 24px;\n  text-align: center;\n  color: var(--darkgray);\n  border: 1px dashed var(--lightgray);\n  border-radius: 12px;\n  background: var(--light);\n}\n\n.bases-gallery {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));\n  gap: 16px;\n}\n\n.bases-gallery-item {\n  position: relative;\n  border-radius: 12px;\n  overflow: hidden;\n  border: 1px solid var(--lightgray);\n  background: var(--light);\n}\n\n.bases-gallery-image {\n  aspect-ratio: 4/3;\n  overflow: hidden;\n  background: var(--lightgray);\n}\n\n.bases-gallery-image img,\n.bases-gallery-placeholder {\n  width: 100%;\n  height: 100%;\n  display: block;\n  object-fit: cover;\n}\n\n.bases-gallery-placeholder {\n  background: linear-gradient(135deg, var(--lightgray), var(--highlight));\n}\n\n.bases-gallery-title {\n  position: absolute;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  padding: 10px 12px;\n  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);\n  color: var(--light);\n  font-weight: 600;\n}\n\n.bases-gallery-title a {\n  color: inherit;\n}\n\n.bases-board {\n  display: flex;\n  gap: 16px;\n  overflow-x: auto;\n  padding-bottom: 4px;\n}\n\n.bases-board-column {\n  min-width: min(250px, 80vw);\n  flex-shrink: 0;\n  border: 1px solid var(--lightgray);\n  border-radius: 12px;\n  background: var(--light);\n  display: flex;\n  flex-direction: column;\n}\n\n.bases-board-column-header {\n  position: sticky;\n  top: 0;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 8px;\n  padding: 10px 12px;\n  font-weight: 600;\n  background: var(--light);\n  border-bottom: 1px solid var(--lightgray);\n  border-radius: 12px 12px 0 0;\n  z-index: 1;\n}\n\n.bases-board-count {\n  background: var(--lightgray);\n  color: var(--darkgray);\n  border-radius: 999px;\n  padding: 2px 8px;\n  font-size: 0.75rem;\n}\n\n.bases-board-column-body {\n  padding: 8px;\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n}\n\n.bases-board-card {\n  border: 1px solid var(--lightgray);\n  border-radius: 10px;\n  background: var(--light);\n  padding: 10px 12px;\n  display: flex;\n  flex-direction: column;\n  gap: 6px;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);\n}\n\n.bases-board-card-meta {\n  display: grid;\n  gap: 4px;\n  font-size: 0.8rem;\n  color: var(--darkgray);\n}\n\n.bases-board-card-row {\n  display: flex;\n  justify-content: space-between;\n  gap: 8px;\n}\n\n.bases-board-card-label {\n  color: var(--gray);\n}\n\n.bases-calendar-wrapper {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n}\n\n.bases-calendar-nav {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 12px;\n  margin-bottom: 12px;\n}\n\n.bases-calendar-label {\n  font-weight: 600;\n  color: var(--dark);\n  min-width: 10ch;\n  text-align: center;\n}\n\n.bases-calendar-nav-btn {\n  border: 1px solid var(--lightgray);\n  background: var(--light);\n  color: var(--darkgray);\n  padding: 4px 10px;\n  border-radius: 999px;\n  cursor: pointer;\n  font-size: 0.85rem;\n}\n.bases-calendar-nav-btn:disabled {\n  opacity: 0.4;\n  cursor: default;\n}\n.bases-calendar-nav-btn:not(:disabled):hover {\n  background: var(--lightgray);\n}\n\n.bases-calendar-today-btn {\n  font-weight: 600;\n}\n\n.bases-calendar-weekdays {\n  display: grid;\n  grid-template-columns: repeat(7, 1fr);\n  gap: 4px;\n  margin-bottom: 4px;\n}\n.bases-calendar-weekdays span {\n  text-align: center;\n  font-size: 0.75rem;\n  font-weight: 600;\n  color: var(--gray);\n  text-transform: uppercase;\n}\n\n.bases-calendar-days {\n  display: grid;\n  grid-template-columns: repeat(7, 1fr);\n  grid-auto-rows: minmax(72px, auto);\n  gap: 4px;\n}\n\n.bases-calendar-day {\n  border: 1px solid var(--lightgray);\n  border-radius: 8px;\n  padding: 4px;\n  display: flex;\n  flex-direction: column;\n  gap: 2px;\n  overflow: hidden;\n}\n.bases-calendar-day.is-outside {\n  border-color: transparent;\n  background: none;\n}\n.bases-calendar-day.is-today {\n  border-color: var(--secondary);\n  background: var(--highlight);\n}\n\n.bases-calendar-daynum {\n  font-size: 0.75rem;\n  color: var(--gray);\n  align-self: flex-end;\n}\n\n.bases-calendar-day.is-today .bases-calendar-daynum {\n  color: var(--secondary);\n  font-weight: 700;\n}\n\n.bases-calendar-entries {\n  display: flex;\n  flex-direction: column;\n  gap: 2px;\n  overflow-y: auto;\n}\n\n.bases-calendar-chip {\n  display: block;\n  font-size: 0.75rem;\n  padding: 2px 6px;\n  border-radius: 6px;\n  background: var(--lightgray);\n  color: var(--dark);\n  text-decoration: none;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.bases-calendar-chip:hover {\n  background: var(--secondary);\n  color: var(--light);\n}\n\n.bases-calendar-unscheduled {\n  border-top: 1px solid var(--lightgray);\n  padding-top: 12px;\n}\n\n.bases-calendar-unscheduled-title {\n  font-size: 0.85rem;\n  font-weight: 600;\n  color: var(--darkgray);\n  margin-bottom: 8px;\n}\n\n@media (max-width: 600px) {\n  .bases-calendar-days {\n    grid-auto-rows: minmax(44px, auto);\n  }\n  .bases-calendar-chip {\n    font-size: 0.65rem;\n  }\n}";
 
 // src/components/BasesBody.tsx
-import { jsx as jsx11, jsxs as jsxs9 } from "preact/jsx-runtime";
+import { jsx as jsx12, jsxs as jsxs10 } from "preact/jsx-runtime";
 var builtinViewsRegistered = false;
 var BasesBody_default = ((opts) => {
   const Component = (props) => {
@@ -3036,11 +3158,11 @@ var BasesBody_default = ((opts) => {
     const allSlugs = rawSlugs.filter((s) => !baseSlugs.has(s) && !baseAliases.has(s));
     const linkResolution = basesOptions?.linkResolution ?? "shortest";
     if (!basesData) {
-      return /* @__PURE__ */ jsx11("div", { class: "bases-page bases-empty", children: localeStrings.noData });
+      return /* @__PURE__ */ jsx12("div", { class: "bases-page bases-empty", children: localeStrings.noData });
     }
     const views = basesData.views ?? [];
     if (views.length === 0) {
-      return /* @__PURE__ */ jsx11("div", { class: "bases-page bases-empty", children: localeStrings.noViews });
+      return /* @__PURE__ */ jsx12("div", { class: "bases-page bases-empty", children: localeStrings.noViews });
     }
     const preferredType = basesOptions?.defaultViewType ?? "table";
     const initialIndex = Math.max(
@@ -3060,10 +3182,10 @@ var BasesBody_default = ((opts) => {
       const reg = viewRegistry.get(typeId);
       if (reg?.css) viewCssChunks.push(reg.css);
     }
-    return /* @__PURE__ */ jsxs9("div", { class: "bases-page", "data-initial-view": initialIndex, children: [
-      viewCssChunks.length > 0 && /* @__PURE__ */ jsx11("style", { dangerouslySetInnerHTML: { __html: viewCssChunks.join("\n") } }),
-      /* @__PURE__ */ jsx11(ViewSelector, { views, activeIndex: initialIndex, locale }),
-      /* @__PURE__ */ jsx11("div", { class: "bases-view-container", children: views.map((view, index) => {
+    return /* @__PURE__ */ jsxs10("div", { class: "bases-page", "data-initial-view": initialIndex, children: [
+      viewCssChunks.length > 0 && /* @__PURE__ */ jsx12("style", { dangerouslySetInnerHTML: { __html: viewCssChunks.join("\n") } }),
+      /* @__PURE__ */ jsx12(ViewSelector, { views, activeIndex: initialIndex, locale }),
+      /* @__PURE__ */ jsx12("div", { class: "bases-view-container", children: views.map((view, index) => {
         const { entries, total } = resolveBasesEntries(
           basesData,
           props.allFiles,
@@ -3072,13 +3194,13 @@ var BasesBody_default = ((opts) => {
         );
         const registration = viewRegistry.get(view.type);
         const Renderer = registration?.render;
-        return /* @__PURE__ */ jsx11(
+        return /* @__PURE__ */ jsx12(
           "div",
           {
             class: `bases-view ${index === initialIndex ? "is-active" : ""}`,
             "data-view-index": index,
             "data-view-type": view.type,
-            children: entries.length === 0 ? /* @__PURE__ */ jsx11("div", { class: "bases-empty", children: localeStrings.noData }) : Renderer ? /* @__PURE__ */ jsx11(
+            children: entries.length === 0 ? /* @__PURE__ */ jsx12("div", { class: "bases-empty", children: localeStrings.noData }) : Renderer ? /* @__PURE__ */ jsx12(
               Renderer,
               {
                 entries,
@@ -3091,7 +3213,7 @@ var BasesBody_default = ((opts) => {
                 linkResolution,
                 options: registration.options
               }
-            ) : /* @__PURE__ */ jsxs9("div", { class: "bases-empty", children: [
+            ) : /* @__PURE__ */ jsxs10("div", { class: "bases-empty", children: [
               "Unknown view type: ",
               view.type
             ] })

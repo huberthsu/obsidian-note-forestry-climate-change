@@ -2,8 +2,8 @@
 publish: true
 title: 物種忠誠度與分級、決定方法
 created: 2026-08-27T06:47:25.683Z
-modified: 2026-08-27T06:51:00.910Z
-published: 2026-08-27T06:51:00.910Z
+modified: 2026-09-03T07:31:17.583Z
+published: 2026-09-03T07:31:17.583Z
 tags:
   - 物種忠誠度
 category:

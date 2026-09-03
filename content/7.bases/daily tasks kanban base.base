@@ -1,0 +1,321 @@
+views:
+  - type: kanban-view
+    name: daily kanban
+    filters:
+      and:
+        - "!date.isEmpty()"
+    order:
+      - Chinese translation
+      - tags
+    columnOrders:
+      file.file:
+        - 1.categories/English learning notes.md
+        - 1.categories/Exam notes.md
+        - 1.categories/Explanation notes.md
+        - 1.categories/Ideas and thoughts notes.md
+        - 1.categories/Literature notes.md
+        - 1.categories/Projects notes.md
+        - 1.categories/Zettelkasten notes.md
+        - 2.personal-notes/english-learning-notes/1.English words and phrases associations.md
+        - 2.personal-notes/english-learning-notes/A backseat driver.md
+        - 2.personal-notes/english-learning-notes/A couch potato.md
+        - 2.personal-notes/english-learning-notes/It comes down to.md
+        - 2.personal-notes/english-learning-notes/a big shot.md
+        - 2.personal-notes/english-learning-notes/a bull in a china shop.md
+        - 2.personal-notes/english-learning-notes/a go-getter.md
+        - 2.personal-notes/english-learning-notes/a jack of all trades.md
+        - 2.personal-notes/english-learning-notes/a know it all.md
+        - 2.personal-notes/english-learning-notes/a wet blanket.md
+        - 2.personal-notes/english-learning-notes/a worrywart.md
+        - 2.personal-notes/english-learning-notes/alleviate.md
+        - 2.personal-notes/english-learning-notes/an extension.md
+        - 2.personal-notes/english-learning-notes/assure.md
+        - 2.personal-notes/english-learning-notes/attempt.md
+        - 2.personal-notes/english-learning-notes/cease.md
+        - 2.personal-notes/english-learning-notes/clarify.md
+        - 2.personal-notes/english-learning-notes/commence.md
+        - 2.personal-notes/english-learning-notes/commend.md
+        - 2.personal-notes/english-learning-notes/consult.md
+        - 2.personal-notes/english-learning-notes/contemporary.md
+        - 2.personal-notes/english-learning-notes/deplete.md
+        - 2.personal-notes/english-learning-notes/deteriorate.md
+        - 2.personal-notes/english-learning-notes/detrimental.md
+        - 2.personal-notes/english-learning-notes/devise.md
+        - 2.personal-notes/english-learning-notes/discard.md
+        - 2.personal-notes/english-learning-notes/discrepancy.md
+        - 2.personal-notes/english-learning-notes/dispute.md
+        - 2.personal-notes/english-learning-notes/effortless.md
+        - 2.personal-notes/english-learning-notes/ensure.md
+        - 2.personal-notes/english-learning-notes/feasible.md
+        - 2.personal-notes/english-learning-notes/fruitful.md
+        - 2.personal-notes/english-learning-notes/go hand in hand.md
+        - 2.personal-notes/english-learning-notes/in two minds.md
+        - 2.personal-notes/english-learning-notes/inquire.md
+        - 2.personal-notes/english-learning-notes/inspect.md
+        - 2.personal-notes/english-learning-notes/insure.md
+        - 2.personal-notes/english-learning-notes/investigate.md
+        - 2.personal-notes/english-learning-notes/modify.md
+        - 2.personal-notes/english-learning-notes/paradigm.md
+        - 2.personal-notes/english-learning-notes/persist.md
+        - 2.personal-notes/english-learning-notes/postpone.md
+        - 2.personal-notes/english-learning-notes/predominate.md
+        - 2.personal-notes/english-learning-notes/proceed.md
+        - 2.personal-notes/english-learning-notes/prominent.md
+        - 2.personal-notes/english-learning-notes/proponent.md
+        - 2.personal-notes/english-learning-notes/recommend.md
+        - 2.personal-notes/english-learning-notes/refine.md
+        - 2.personal-notes/english-learning-notes/reflect on.md
+        - 2.personal-notes/english-learning-notes/reside.md
+        - 2.personal-notes/english-learning-notes/retain.md
+        - 2.personal-notes/english-learning-notes/scrutinize.md
+        - 2.personal-notes/english-learning-notes/strike a balance.md
+        - 2.personal-notes/english-learning-notes/supervise.md
+        - 2.personal-notes/english-learning-notes/verify.md
+        - 2.personal-notes/english-learning-notes/yield.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Forest Ecology-1.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Forest Ecology-2.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Forest Ecology-3.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Forest Ecology-4.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Forest Management-1.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Forest Management-2.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Forest Management-3.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Forest Management-4.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Forest Products Science-1.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Forest Products Science-2.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Forest Products Science-3.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Forest Products Science-4.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Silviculture-1.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Silviculture-2.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Silviculture-3.md
+        - 2.personal-notes/exam-notes/115-Higher Examination for Civil Service -Silviculture-4.md
+        - 2.personal-notes/explanation-notes/plugins-and-features/Breadcrumbs plugins.md
+        - 2.personal-notes/explanation-notes/plugins-and-features/Comparison of the advantages and disadvantages of Quartz and Digital Garden.md
+        - 2.personal-notes/explanation-notes/plugins-and-features/Git plugins.md
+        - 2.personal-notes/explanation-notes/plugins-and-features/How to add emojis and icons in obsidian.md
+        - 2.personal-notes/explanation-notes/plugins-and-features/Inline local graph plugins.md
+        - 2.personal-notes/explanation-notes/plugins-and-features/Mind map files can be inserted into the canvas.md
+        - 2.personal-notes/explanation-notes/plugins-and-features/Neighbourhood Graph plugins.md
+        - 2.personal-notes/explanation-notes/plugins-and-features/Obsidian help.md
+        - 2.personal-notes/explanation-notes/plugins-and-features/Quickadd plugins.md
+        - 2.personal-notes/explanation-notes/plugins-and-features/Review pluguns.md
+        - 2.personal-notes/explanation-notes/plugins-and-features/Simple mind map plugin.md
+        - 2.personal-notes/explanation-notes/plugins-and-features/Tag wrangler plugins.md
+        - 2.personal-notes/explanation-notes/plugins-and-features/Timestamp note plugins.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/How to create a Quartz website - GitHub PAT management.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/How to create a Quartz website - custom 404.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/How to create a Quartz website - giscus comments.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/How to create a Quartz website - patch-package.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/How to create a Quartz website - timestamp links.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/How to create a Quartz website.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/How to find links between notes.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/How to improve claudian accuracy.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Information filtering criteria can improve the quality of literature notes and zettelkasten-notes ..md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Information filtering criteria.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Instructions for using Cornell and the Card Box Note-Taking Method.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Literature-notes-workflow.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Obsidian wiki linking, knowledge organization, and data management.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Organizing tags helps with deeper understanding, searching and extraction, and discovering connections between notes..md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Quartz glossary.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Quartz troubleshooting - basic concepts.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Quartz troubleshooting - canvas and bases publishing.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Quartz troubleshooting - canvas text and portals.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Quartz troubleshooting - character encoding and identifiers.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Quartz troubleshooting - comments and dark mode.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Quartz troubleshooting - frontmatter publishing.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Quartz troubleshooting - graph visuals and interaction.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Quartz troubleshooting - image lightbox.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Quartz troubleshooting - misc issues.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Quartz troubleshooting - naming and paths.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Quartz troubleshooting - properties and data display.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Quartz website troubleshooting report.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Workflow-system-overview.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/Workspace description.md
+        - 2.personal-notes/explanation-notes/workflow-and-system/aliases function and purpose.md
+        - 2.personal-notes/ideas-and-thoughts/Digital Garden of Forests and Climate Change.md
+        - 2.personal-notes/ideas-and-thoughts/Temporary record of questions and thoughts.md
+        - 2.personal-notes/literature-notes/REDD+專案中林緣效應對森林結構與碳儲量的影響-Amazon無人機激光雷達評估.md
+        - 2.personal-notes/literature-notes/人為改變地景中森林生物多樣性保護的最優設計.md
+        - 2.personal-notes/literature-notes/地景方法在生物多樣性保護中的作用.md
+        - 2.personal-notes/literature-notes/微氣候條件對大西洋森林片段植被結構的顯著影響.md
+        - 2.personal-notes/literature-notes/改進森林管理碳抵換協議評審.md
+        - 2.personal-notes/literature-notes/林業碳抵換專案面臨的主要挑戰及應對障礙的方法.md
+        - 2.personal-notes/literature-notes/森林林分結構與功能-當前知識與未來挑戰.md
+        - 2.personal-notes/literature-notes/森林邊緣效應對碳動態影響綜述.md
+        - 2.personal-notes/literature-notes/溫帶森林結構對生物量和生產力的相關性-遙測的新視角.md
+        - 2.personal-notes/literature-notes/溫帶混合林地上部碳貯存與功能性狀及林分結構屬性.md
+        - 2.personal-notes/literature-notes/熱帶森林林分結構與初級生產力強相關性.md
+        - 2.personal-notes/literature-notes/熱帶森林破碎化的高解析度分析及其對全球碳循環的影響.md
+        - 2.personal-notes/literature-notes/邊緣效應增強溫帶闊葉林碳吸收及其對氣候變化的脆弱性.md
+        - 2.personal-notes/zettelkasten-notes/Applications and principles of principal component analysis.md
+        - 2.personal-notes/zettelkasten-notes/Carbon offset mechanism principle.md
+        - 2.personal-notes/zettelkasten-notes/Contents of carbon offset quality standards.md
+        - 2.personal-notes/zettelkasten-notes/Definition of additionality.md
+        - 2.personal-notes/zettelkasten-notes/Definition of permanence.md
+        - 2.personal-notes/zettelkasten-notes/Forest edge definition.md
+        - 2.personal-notes/zettelkasten-notes/How microclimate conditions of edge effects affect carbon storage.md
+        - 2.personal-notes/zettelkasten-notes/Improving the quality of the surrounding environment and reducing its differences from the forest will help forest-dependent species survive..md
+        - 2.personal-notes/zettelkasten-notes/Inspiration.md
+        - 2.personal-notes/zettelkasten-notes/Principles of Biodiversity Credit Mechanisms.md
+        - 2.personal-notes/zettelkasten-notes/Purpose of establishing carbon offset quality standards.md
+        - 2.personal-notes/zettelkasten-notes/Related.md
+        - 2.personal-notes/zettelkasten-notes/Surprise.md
+        - 2.personal-notes/zettelkasten-notes/The Relationship Between Forest Stand Spatial Structure and Carbon Storage.md
+        - 2.personal-notes/zettelkasten-notes/The impact of edge effect on carbon storage in different regions.md
+        - 2.personal-notes/zettelkasten-notes/The impact of forest stand spatial structure complexity on biodiversity.md
+        - 2.personal-notes/zettelkasten-notes/The importance of additionality.md
+        - 2.personal-notes/zettelkasten-notes/The importance of corridors to biodiversity.md
+        - 2.personal-notes/zettelkasten-notes/The importance of permanence.md
+        - 2.personal-notes/zettelkasten-notes/The purpose of implementing the carbon offset mechanism.md
+        - 2.personal-notes/zettelkasten-notes/Use.md
+        - 2.personal-notes/zettelkasten-notes/What factors influence the spatial structure of forest stands.md
+        - 2.personal-notes/zettelkasten-notes/What is OECMs.md
+        - 2.personal-notes/zettelkasten-notes/What is forest stand spatial structure.md
+        - 3.external-resources/exam-pdf-attachments/115-普考-國文.pdf
+        - 3.external-resources/exam-pdf-attachments/115-普考-國文答案.pdf
+        - 3.external-resources/exam-pdf-attachments/115-普考-林產學概要.pdf
+        - 3.external-resources/exam-pdf-attachments/115-普考-森林生態學與森林經營學概要.pdf
+        - 3.external-resources/exam-pdf-attachments/115-普考-法學知識與英文.pdf
+        - 3.external-resources/exam-pdf-attachments/115-普考-法學知識與英文答案.pdf
+        - 3.external-resources/exam-pdf-attachments/115-普考-育林學概要.pdf
+        - 3.external-resources/exam-pdf-attachments/115-高考-國文.pdf
+        - 3.external-resources/exam-pdf-attachments/115-高考-國文答案.pdf
+        - 3.external-resources/exam-pdf-attachments/115-高考-林產學.pdf
+        - 3.external-resources/exam-pdf-attachments/115-高考-森林生態學.pdf
+        - 3.external-resources/exam-pdf-attachments/115-高考-森林經營學.pdf
+        - 3.external-resources/exam-pdf-attachments/115-高考-法學知識與英文答案.pdf
+        - 3.external-resources/exam-pdf-attachments/115-高考-法學知識與英文試題.pdf
+        - 3.external-resources/exam-pdf-attachments/115-高考-育林學.pdf
+        - 3.external-resources/external-images/Pasted image 20260826234024.png
+        - 3.external-resources/external-images/右側邊欄功能支持區.png
+        - 3.external-resources/external-images/日曆.png
+        - 3.external-resources/literature-pdf-attachments/Comprehensive review of carbon quantification by improved forest management offset protocols.pdf
+        - 3.external-resources/literature-pdf-attachments/Designing optimal human‐modified landscapes for forest biodiversity conservation.pdf
+        - 3.external-resources/literature-pdf-attachments/Edge effect impacts on forest structure and carbon stocks in REDD+ projects-An assessment in the Amazon using UAV-LiDAR.pdf
+        - 3.external-resources/literature-pdf-attachments/Edge effects enhance carbon uptake and its vulnerability to climate change in temperate broadleaf forests.pdf
+        - 3.external-resources/literature-pdf-attachments/Forest stand structure and functioning-Current knowledge and future challenges.pdf
+        - 3.external-resources/literature-pdf-attachments/High resolution analysis of tropical forest fragmentation and its impact on the global carbon cycle.pdf
+        - 3.external-resources/literature-pdf-attachments/Key challenges and approaches to addressing barriers in forest carbon offset projects.pdf
+        - 3.external-resources/literature-pdf-attachments/Microclimatic conditions at forest edges have significant impacts on vegetation structure in large Atlantic forest fragments.pdf
+        - 3.external-resources/literature-pdf-attachments/Piecing together the fragments-elucidating edge effects on forest carbon dynamics.pdf
+        - 3.external-resources/literature-pdf-attachments/Review of the role of the landscape approach in biodiversity conservation.pdf
+        - 3.external-resources/literature-pdf-attachments/Stand structure of tropical forests is strongly associated with primary productivity.pdf
+        - 3.external-resources/literature-pdf-attachments/Temperate mixed forests carbon storage-functional trait composition and stand structuralstructural.pdf
+        - 3.external-resources/literature-pdf-attachments/The Relevance of Forest Structure for Biomass and Productivity in Temperate Forests-New Perspectives for Remote Sensing.pdf
+        - 3.external-resources/literature-pdf-attachments/太魯閣、雪霸國家公園生態廊道之研究—生態廊道概念與國外案例的整理及有勝溪上游空間資料的分析.pdf
+        - 3.external-resources/web-sources/10 Essential Phrases for IELTS Speaking.md
+        - 3.external-resources/web-sources/200+ IELTS Words For Writing & Speaking  Advanced English Vocabulary.md
+        - 3.external-resources/web-sources/5 Essential Phrases Every IELTS Student Should Know.md
+        - 3.external-resources/web-sources/50 Important English Expressions for daily conversation.md
+        - 3.external-resources/web-sources/Learn the 100 MOST Common IDIOMS in 20 minutes (with examples).md
+        - 3.external-resources/web-sources/Most Common English Idioms.md
+        - 3.external-resources/web-sources/My 10 Best Idioms for IELTS Speaking.md
+        - 3.external-resources/web-sources/Small Vocabulary Upgrades = BIG Difference in IELTS.md
+        - 3.external-resources/web-sources/TOEFL & IELTS Vocabulary Lesson dominate and predominate.md
+        - 3.external-resources/web-sources/Taking notes from YouTube videos in Obsidian.md
+        - 3.external-resources/web-sources/Use THESE To Speak Like a Native  25 Common English Idioms For Fluent Speech.md
+        - 4.canvas-and-mindmaps/Canvas and mindmaps overview.md
+        - 4.canvas-and-mindmaps/canvas/vault架構與系統.canvas
+        - 4.canvas-and-mindmaps/canvas/原子思考流程圖.canvas
+        - 4.canvas-and-mindmaps/canvas/實際工作系統.canvas
+        - 4.canvas-and-mindmaps/canvas/工作區示意圖.canvas
+        - 4.canvas-and-mindmaps/canvas/我.canvas
+        - 4.canvas-and-mindmaps/canvas/目標與任務管理工作流.canvas
+        - 4.canvas-and-mindmaps/canvas/英文學習工作流.canvas
+        - 4.canvas-and-mindmaps/canvas/高普考準備工作流.canvas
+        - 4.canvas-and-mindmaps/mindmaps/改進森林管理碳抵換協議評審心智圖.png
+        - 4.canvas-and-mindmaps/mindmaps/林業碳抵換專案面臨的主要挑戰及應對障礙的方法心智圖.png
+        - 4.canvas-and-mindmaps/mindmaps/邊緣效應增強溫帶闊葉林碳吸收及其對氣候變化的脆弱性.png
+        - 5.templates-for-web/English study notes template.md
+        - 5.templates-for-web/Exam notes template.md
+        - 5.templates-for-web/Inspiration notes template.md
+        - 5.templates-for-web/Literature notes template.md
+        - 5.templates-for-web/Plugin and features templates.md
+        - 5.templates-for-web/Workflow and System notes template.md
+        - 5.templates-for-web/Zettelkasten notes templates.md
+        - 5.templates/Callout片段.md
+        - 5.templates/卡片盒筆記模板.md
+        - 5.templates/外掛與功能說明模板.md
+        - 5.templates/專案模板.md
+        - 5.templates/工作流與系統說明模板.md
+        - 5.templates/文獻筆記模板.md
+        - 5.templates/每日任務模板.md
+        - 5.templates/考古題筆記模板.md
+        - 5.templates/英文學習筆記模板.md
+        - 5.templates/靈感紀錄模板.md
+        - 6.task-management/Vocab Quiz Record.md
+        - 6.task-management/daily-tasks-and-review/2026-08-14.md
+        - 6.task-management/daily-tasks-and-review/2026-08-15.md
+        - 6.task-management/daily-tasks-and-review/2026-08-19.md
+        - 6.task-management/daily-tasks-and-review/2026-08-28.md
+        - 6.task-management/daily-tasks-and-review/2026-08-31.md
+        - 6.task-management/daily-tasks-and-review/2026-09-01.md
+        - 6.task-management/daily-tasks-and-review/2026-09-02.md
+        - 6.task-management/kanban/To do.md
+        - 6.task-management/monthly-goals-tracker/Monthly Accomplishments.md
+        - 6.task-management/monthly-goals-tracker/Monthly Objectives and Action Plan.md
+        - 7.bases/Bases overview.md
+        - 7.bases/卡片盒筆記bases.base
+        - 7.bases/啟發bases.base
+        - 7.bases/外加性bases.base
+        - 7.bases/外掛與功能說明bases.base
+        - 7.bases/專案bases.base
+        - 7.bases/工作流與系統說明筆記 bases.base
+        - 7.bases/意外bases.base
+        - 7.bases/數位花園bases.base
+        - 7.bases/文獻bases.base
+        - 7.bases/森林結構bases.base
+        - 7.bases/永久性bases.base
+        - 7.bases/用途bases.base
+        - 7.bases/碳抵換bases.base
+        - 7.bases/碳抵換品質標準bases.base
+        - 7.bases/網路來源bases.base
+        - 7.bases/考古題筆記bases.base
+        - 7.bases/考古題筆記複習日曆bases.base
+        - 7.bases/英文單字bases.base
+        - 7.bases/英文片語bases.base
+        - 7.bases/邊緣效應bases.base
+        - 7.bases/關聯bases.base
+        - 7.bases/靈感思考bases.base
+        - CLAUDE.md
+        - claude/skills/english-learning/english-vocab-link-compare.md
+        - claude/skills/english-learning/english-vocab-quiz.md
+        - claude/skills/literature-note/1-foundation.md
+        - claude/skills/literature-note/2-setup.md
+        - claude/skills/literature-note/3-metadata.md
+        - claude/skills/literature-note/4-summary.md
+        - claude/skills/literature-note/5-organize.md
+        - claude/skills/literature-note/6-content.md
+        - claude/skills/literature-note/7-verify.md
+        - claude/skills/literature-note/8-workflow.md
+        - claude/skills/zettelkasten/SKILL.md.md
+        - index.md
+        - my digital garden.md
+        - 未命名 1.base
+        - 未命名 1.md
+        - 未命名 2.md
+        - 未命名 3.md
+        - 未命名.base
+        - 未命名.md
+        - 術語對照表.md
+      note.date:
+        - 2026-08-14
+        - 2026-08-15
+        - 2026-08-19
+        - 2026-08-28
+        - 2026-08-31
+        - 2026-09-01
+        - 2026-09-02
+    cardOrders:
+      file.file: {}
+      note.date:
+        2026-08-14:
+          - 2.personal-notes/english-learning-notes/go hand in hand.md
+          - 2.personal-notes/english-learning-notes/in two minds.md
+          - 2.personal-notes/english-learning-notes/It comes down to.md
+          - 2.personal-notes/english-learning-notes/predominate.md
+          - 2.personal-notes/english-learning-notes/strike a balance.md
+    columnColors:
+      file.file: {}
+      note.date: {}
+    groupByProperty: note.date
+    startDate: note.date

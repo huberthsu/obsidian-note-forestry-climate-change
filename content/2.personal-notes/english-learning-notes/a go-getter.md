@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-08-15T15:21:48.527Z
+modified: 2026-09-02T09:38:16.456Z
 published: 2026-08-15
 tags:
   - 日常
@@ -42,6 +42,11 @@ date: 2026-08-15
 ---
 
 ## Collocations
+
+- a go-getter attitude/mentality: 積極進取的態度/心態
+- a go-getter employee/sales person: 積極能幹的員工/銷售員
+- self-motivated go-getter: 自律的積極進取者
+- hire/recruit go-getters: 雇用/招聘積極進取的人
 
 ---
 

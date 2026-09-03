@@ -4,8 +4,8 @@ aliases:
   - 如何發現筆記之間的連結
 title: 如何發現筆記之間的連結
 created: 2026-08-11T03:01:10.775Z
-modified: 2026-08-21T06:18:03.747Z
-published: 2026-08-21T06:18:03.747Z
+modified: 2026-09-01T12:17:58.049Z
+published: 2026-09-01T12:17:58.049Z
 tags:
   - 關聯圖
   - 工作流
@@ -33,7 +33,7 @@ child:
 - 關聯圖
   - 利用[[Neighbourhood Graph plugins]]與[[Inline local graph plugins]]功能，從關聯圖的連結與**shared tags**中找尋潛在相關筆記
 - 反向連結-未連結但題級本筆記的檔案
-  - 可結合別名欄位應用，參考[[The aliases function can be used with files that are not linked to but mention this note.|aliases功能搭配未連結但提及本筆記的檔案]]
+  - 可結合別名欄位應用，參考[[aliases function and purpose|aliases功能搭配未連結但提及本筆記的檔案]]
 - bases
   - 於bases中用過濾功能選擇相關tags、檔案標籤
 - claudian

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-08-19T13:42:20.833Z
+modified: 2026-09-02T09:37:57.939Z
 published: 2026-08-19
 tags:
   - 日常
@@ -30,6 +30,10 @@ date: 2026-08-19
 
 ## Word Family
 
+- proceeding(n/adj)進行、訴訟程序 / 進行中的
+- proceeded(adj)已進行的
+- proceeds(n)收益、所得款項
+
 ---
 
 ## Synonyms/Related phrase
@@ -39,6 +43,9 @@ date: 2026-08-19
 ---
 
 ## Collocations
+
+- Proceed with 行動/計畫
+- Proceed to 動作
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-08-14T06:48:15.135Z
+modified: 2026-09-02T09:38:03.439Z
 published: 2026-08-14
 tags:
   - 日常
@@ -32,6 +32,9 @@ date: 2026-08-14
 ---
 
 ## Word Family
+
+- (短語無傳統字根變化)
+- 相關詞彙: boil down to(歸根結柢), amount to(相等於), result in(導致)
 
 ---
 

@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-08-11T02:57:52.278Z
-modified: 2026-08-21T06:12:20.943Z
-published: 2026-08-21T06:12:20.943Z
+modified: 2026-09-02T09:13:46.952Z
+published: 2026-09-02T09:13:46.952Z
 tags:
   - 工作流
 category:
@@ -153,11 +153,14 @@ child:
 - 使用時機:  學習英文單字、片語
 - 管理工具: [[English learning notes|英文學習筆記]]
 - 流程:
-  - Obsidian Web Clipper擷取網路英文文章或影片到3.外部資料/網路來源 資料夾中
-  - 建立[[English study notes template|英文學習筆記模板]]紀錄想學的單字或片語
-  - 使用[[Timestamp note plugins]]使影片於右側邊欄撥放
-  - 建立timestamp配合紀錄影片重點
-  - 使用mouse tooltup translator即時翻譯
+  - 學習單字/片語
+    - Obsidian Web Clipper擷取網路英文文章或影片到3.外部資料/網路來源 資料夾中
+    - 建立[[English study notes template|英文學習筆記模板]]紀錄想學的單字或片語
+    - 使用[[Timestamp note plugins]]使影片於右側邊欄撥放
+    - 建立timestamp配合紀錄影片重點
+    - 使用[[english-vocab-link-compare]] skill-比較單字/片語之間的關聯，紀錄在[[1.English words and phrases associations|英文單字片語關聯整理]]
+  - 複習
+    - 使用[[english-vocab-quiz]] skill-練習英翻中、中翻英、應用、選擇題、句子翻譯，將練習結果紀錄在[[Vocab Quiz Record|英文測驗紀錄]]
 - 使用模板: [[English study notes template|英文學習筆記模板]]
 
 ---

@@ -4,8 +4,8 @@ aliases:
   - Bases 總覽
 title: Bases 總覽
 created: 2026-08-11T06:34:15.983Z
-modified: 2026-08-21T06:17:47.118Z
-published: 2026-08-21T06:17:47.118Z
+modified: 2026-08-31T19:14:32.270Z
+published: 2026-08-31T19:14:32.270Z
 tags:
   - 工作流
 in:
@@ -19,5 +19,6 @@ Obsidian Bases（`.base`）檔案，用查詢條件篩選、呈現筆記的資�
 # Bases 清單
 
 - [[工作流與系統說明筆記 bases.base]] 、[[外掛與功能說明bases.base]]— 嵌入在 [[Explanation notes|說明]]
-- [[考古題筆記bases.base]] — 嵌入在 [[Exam notes|考古題筆記]]
-- [[英文單字bases.base]] / [[英文片語bases.base]] / [[英文學習bases.base]] — 嵌入再[[English learning notes|英文學習筆記]]
+- [[考古題筆記bases.base]] / [[考古題筆記複習日曆bases.base]]— 嵌入在 [[Exam notes|考古題筆記]]
+- [[英文單字bases.base]] / [[英文片語bases.base]]  — 嵌入在[[English learning notes|英文學習筆記]]
+- [[卡片盒筆記bases.base]] — 嵌入在[[Zettelkasten notes|卡片盒筆記]]

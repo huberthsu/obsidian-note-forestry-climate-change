@@ -3,10 +3,11 @@ publish: true
 aliases:
   - 永久性
   - 永久性的定義
+  - "#永久性"
 title: 永久性的定義
 created: 2026-08-02T14:08:10.480Z
-modified: 2026-08-21T06:13:16.368Z
-published: 2026-08-21T06:13:16.368Z
+modified: 2026-08-28T07:10:00.775Z
+published: 2026-08-28T07:10:00.775Z
 tags:
   - 永久性
 category:
@@ -38,7 +39,7 @@ password:
   - [[The importance of permanence|具備永久性的重要性]]
 - child理由
 
-# 來源文獻
+# 來源
 
 # 我的其他思考
 

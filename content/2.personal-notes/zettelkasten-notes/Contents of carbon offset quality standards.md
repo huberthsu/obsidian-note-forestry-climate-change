@@ -3,10 +3,11 @@ publish: true
 aliases:
   - 碳抵換品質標準
   - 碳抵換品質標準的內容
+  - "#碳抵換品質標準"
 title: 碳抵換品質標準的內容
 created: 2026-08-01T16:48:33.794Z
-modified: 2026-08-21T06:13:08.503Z
-published: 2026-08-21T06:13:08.503Z
+modified: 2026-08-28T07:09:38.373Z
+published: 2026-08-28T07:09:38.373Z
 tags:
   - 碳抵換
   - 外加性
@@ -47,9 +48,10 @@ password:
 - child理由
   - [[Definition of additionality|外加性的定義]]、[[Definition of permanence|永久性的定義]]理由-外加性與永久性都是碳抵換品質標準中必要的項目
 
-# 來源文獻
+# 來源
 
-- Haya, B.K., Evans, S., Brown, L., Bukoski, J., Butsic, V., Cabiyo, B., Jacobson, R., Kerr, A., Potts, M., & Sanchez, D.L. (2024) Comprehensive review of carbon quantification by improved forest management offset protocols. _Frontiers in Forests and Global Change_, 7, 958879. https://doi.org/10.3389/ffgc.2024.958879
+- [[改進森林管理碳抵換協議評審]]
+  - Haya, B.K., Evans, S., Brown, L., Bukoski, J., Butsic, V., Cabiyo, B., Jacobson, R., Kerr, A., Potts, M., & Sanchez, D.L. (2024). Comprehensive review of carbon quantification by improved forest management offset protocols. _Frontiers in Forests and Global Change_, 7, 958879.
 
 # 我的其他思考
 

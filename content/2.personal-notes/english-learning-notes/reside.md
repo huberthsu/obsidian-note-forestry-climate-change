@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-08-19T12:59:11.576Z
+modified: 2026-09-02T06:23:43.544Z
 published: 2026-08-19
 tags:
   - 日常
@@ -30,6 +30,12 @@ date: 2026-08-19
 
 ## Word Family
 
+- residence(n)住宅
+- resident
+  - (n)居民
+  - (adj)居住的、常駐的
+- residential (adj.)住宅區的、適合居住的
+
 ---
 
 ## Synonyms/Related phrase
@@ -40,7 +46,8 @@ date: 2026-08-19
 
 ## Collocations
 
-- reside in
+- reside in+地方: 居住於某處
+- reside with+人: 與某人同住
 
 ---
 

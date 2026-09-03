@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-08-15T15:48:44.775Z
+modified: 2026-09-02T09:38:05.137Z
 published: 2026-08-15
 tags:
   - 日常
@@ -29,6 +29,10 @@ date: 2026-08-15
 ---
 
 ## Word Family
+
+- big(adj)大的、重要的
+- shot(n)開槍、嘗試、人物
+- 相關詞彙: big wheel(大人物), bigwig(大人物), VIP(重要人物)
 
 ---
 

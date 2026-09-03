@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-08-23T06:04:16.455Z
+modified: 2026-09-02T15:30:43.228Z
 published: 2026-08-19
 tags:
   - 日常
@@ -30,6 +30,10 @@ date: 2026-08-19
 
 ## Word Family
 
+- verification(n)驗證、核實
+- verifiable(adj)可驗證的、可証實的
+- verified(adj)已驗證的、已核實的
+
 ---
 
 ## Synonyms/Related phrase
@@ -39,6 +43,11 @@ date: 2026-08-19
 ---
 
 ## Collocations
+
+- verify information/details/facts: 驗證訊息/細節/事實
+- verify one's identity/account: 驗證某人的身份/帳戶
+- independently verified: 獨立驗證的
+- unable to verify: 無法驗證
 
 ---
 

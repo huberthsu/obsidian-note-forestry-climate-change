@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-08-15T15:46:42.630Z
+modified: 2026-09-02T09:37:59.672Z
 published: 2026-08-15
 tags:
   - 日常
@@ -29,6 +29,11 @@ date: 2026-08-15
 ---
 
 ## Word Family
+
+- couch potato lifestyle: 沙發馬鈴薯的生活方式
+- potato(n)馬鈴薯
+- couch(n)沙發
+- 相關詞彙: mouse potato(電腦馬鈴薯)、armchair(扶手椅)
 
 ---
 

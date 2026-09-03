@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 外加性的定義
-created: 2026-07-31T13:18:26.393Z
-modified: 2026-08-21T06:13:12.486Z
-published: 2026-08-21T06:13:12.486Z
+created: 2026-08-28T07:04:38.453Z
+modified: 2026-08-28T07:04:38.454Z
+published: 2026-08-28T07:04:38.454Z
 tags:
   - 外加性
 category:
@@ -11,6 +11,7 @@ category:
 Aliases:
   - 外加性
   - 外加性的定義
+  - "#外加性"
 摘要:
 in:
   - 2.personal-notes
@@ -43,10 +44,12 @@ password:
 - child
   - 理由
 
-# 來源文獻
+# 來源
 
-- Haya, B.K., Evans, S., Brown, L., Bukoski, J., Butsic, V., Cabiyo, B., Jacobson, R., Kerr, A., Potts, M., & Sanchez, D.L. (2024). Comprehensive review of carbon quantification by improved forest management offset protocols. _Frontiers in Forests and Global Change_, 7, 958879. https://doi.org/10.3389/ffgc.2024.958879
-- Pan, C., A. Shrestha, J. L. Innes, G. Zhou, N. Li, J. Li, Y. He, C. Shen, J. -O. Nile and G. Wang (2022) Key challenges and approaches to addressing barriers in forest carbon offset projects. Journal of Forestry Research 33(4):1109-1122.
+- [[改進森林管理碳抵換協議評審]]
+  - Haya, B.K., Evans, S., Brown, L., Bukoski, J., Butsic, V., Cabiyo, B., Jacobson, R., Kerr, A., Potts, M., & Sanchez, D.L. (2024). Comprehensive review of carbon quantification by improved forest management offset protocols. _Frontiers in Forests and Global Change_, 7, 958879.
+- [[林業碳抵換專案面臨的主要挑戰及應對障礙的方法]]
+  - Pan, C., A. Shrestha, J. L. Innes, G. Zhou, N. Li, J. Li, Y. He, C. Shen, J. -O. Nile and G. Wang (2022) Key challenges and approaches to addressing barriers in forest carbon offset projects. Journal of Forestry Research 33(4):1109-1122.
 
 # 我的其他思考
 

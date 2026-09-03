@@ -4,8 +4,8 @@ aliases:
   - 邊緣效應對不同區域碳貯存量的影響
 title: 邊緣效應對不同區域碳貯存量的影響
 created: 2026-08-17T13:25:00.589Z
-modified: 2026-08-21T06:13:47.781Z
-published: 2026-08-21T06:13:47.781Z
+modified: 2026-08-27T07:33:05.469Z
+published: 2026-08-27T07:33:05.469Z
 tags:
   - 邊緣效應
   - 碳儲存
@@ -18,9 +18,7 @@ in:
 parent:
   - "[[Forest edge definition|邊緣效應]]"
 sibling:
-  - "[[邊緣效應增強溫帶闊葉林碳吸收及其對氣候變化的脆弱性]]"
-  - "[[森林邊緣效應對碳動態影響綜述]]"
-  - "[[熱帶森林破碎化的高解析度分析及其對全球碳循環的影響]]"
+  - "[[How microclimate conditions of edge effects affect carbon storage|邊緣效應的微氣候條件如何影響碳貯存量]]"
 child:
 password:
 ---
@@ -34,14 +32,16 @@ password:
 
 - parent理由
 - sibling理由
-  - [[森林邊緣效應對碳動態影響綜述]]、[[熱帶森林破碎化的高解析度分析及其對全球碳循環的影響]]、[[邊緣效應增強溫帶闊葉林碳吸收及其對氣候變化的脆弱性]]
 - child理由
 
 # 來源
 
-- Brinck, K., Fischer, R., Groeneveld, J., Lehmann, S., De Paula, M.D., Pütz, S., Sexton, J.O., Song, D., Huth, A. (2017) High resolution analysis of tropical forest fragmentation and its impact on the global carbon cycle. _Nature Communications_, 8, 14855. https://doi.org/10.1038/ncomms14855
-- Reinmann, A.B., & Hutyra, L.R. (2017) Edge effects enhance carbon uptake and its vulnerability to climate change in temperate broadleaf forests. _PNAS_, 134(1), 107-112. https://doi.org/10.1073/pnas.1612369114
-- Smith, I. A., Hutyra, L. R., Reinmann, A. B., Marrs, J. K., & Thompson, J. R. (2018) Piecing together the fragments: elucidating edge effects on forest carbon dynamics. _Frontiers in Ecology and the Environment_, 16(4), 213-224. https://doi.org/10.1002/fee.1793
+- [[森林邊緣效應對碳動態影響綜述]]
+  - Smith, I. A., Hutyra, L. R., Reinmann, A. B., Marrs, J. K., & Thompson, J. R. (2018). Piecing together the fragments: elucidating edge effects on forest carbon dynamics. _Frontiers in Ecology and the Environment_, 16(4), 213-224.
+- [[熱帶森林破碎化的高解析度分析及其對全球碳循環的影響]]
+  - Brinck, K., Fischer, R., Groeneveld, J., Lehmann, S., De Paula, M.D., Pütz, S., Sexton, J.O., Song, D., Huth, A. (2017). High resolution analysis of tropical forest fragmentation and its impact on the global carbon cycle. _Nature Communications_, 8, 14855.
+- [[邊緣效應增強溫帶闊葉林碳吸收及其對氣候變化的脆弱性]]
+  - Reinmann, A.B., & Hutyra, L.R. (2017). Edge effects enhance carbon uptake and its vulnerability to climate change in temperate broadleaf forests. _PNAS_, 134(1), 107-112.
 
 # 我的其他思考
 

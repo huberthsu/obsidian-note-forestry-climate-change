@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-08-19T13:04:30.575Z
+modified: 2026-09-02T14:59:28.444Z
 published: 2026-08-19
 tags:
   - 日常
@@ -30,6 +30,12 @@ date: 2026-08-19
 
 ## Word Family
 
+- decease(v/n)死亡、逝世（極正式、法律用語）
+- deceased(adj)已故的、死亡的
+- cessation(n)中止、中斷
+- ceaseless(adj)無休止的(中性的、正面的)
+- incessant(adj)沒完沒了的(負面的)
+
 ---
 
 ## Synonyms/Related phrase
@@ -39,6 +45,12 @@ date: 2026-08-19
 ---
 
 ## Collocations
+
+- cease+ving/to v: 停止某動作
+- Never cease to: 從未停止/總是讓人(通常後面加正面情緒用詞)
+  - Her creativity never ceases to amaze the team.
+- cease to exist: 不復存在/消失
+- without cease: 不停地、不間斷地
 
 ---
 

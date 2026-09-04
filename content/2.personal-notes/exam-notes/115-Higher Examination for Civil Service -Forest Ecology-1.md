@@ -1,8 +1,13 @@
 ---
-category:
-  - "[[Exam notes]]"
+publish: true
+title: 物種忠誠度與分級、決定方法
+created: 2026-08-27T06:47:25.683Z
+modified: 2026-09-04T07:03:44.598Z
+published: 2026-09-04T07:03:44.598Z
 tags:
   - 物種忠誠度
+category:
+  - "[[Exam notes]]"
 考題年分: 2026
 高考普考特考:
   - 高考
@@ -18,11 +23,9 @@ tags:
 date:
 下次複習時間:
 已練習次數:
-publish: true
-title: 物種忠誠度與分級、決定方法
 ---
 
-# 何謂物種忠誠度（Species fidelity）？（5 分）請比較 Braun-Blanquet 忠誠度分級法、Phi correlation（ ）、Indicator value（IndVal）決定物種忠誠度的方法。（20 分）
+# 何謂物種忠誠度（Species fidelity）？（5 分）請比較 Braun-Blanquet 忠誠度分級法、Phi correlation、Indicator value（IndVal）決定物種忠誠度的方法。（20 分）
 
 # 本次試答
 

@@ -15,13 +15,6 @@ properties:
   formula.month_label:
     displayName: 月份
 views:
-  - type: calendar
-    name: 本月任務紀錄
-    order:
-      - file.name
-      - category
-      - tags
-    startDate: note.date
   - type: table
     name: 本月統計
     filters:

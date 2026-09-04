@@ -3,9 +3,9 @@ publish: true
 aliases:
   - Quartz 問題排查－Canvas 文字方塊與 Portal
 title: Quartz 問題排查－Canvas 文字方塊與 Portal
-created: 2026-09-04T12:17:28.242Z
-modified: 2026-09-04T12:17:28.242Z
-published: 2026-09-04T12:17:28.242Z
+created: 2026-09-04T14:52:49.355Z
+modified: 2026-09-04T14:52:49.356Z
+published: 2026-09-04T14:52:49.356Z
 tags:
   - 數位花園
   - 網站
@@ -21,7 +21,7 @@ child:
 
 # Canvas 文字方塊與 Portal
 
-搭配母筆記 [[Quartz website troubleshooting report]] 一起看。這篇記錄 Canvas 畫布裡文字方塊的 wikilink／內嵌處理，以及畫布巢狀內嵌另一個畫布（portal）的問題，是同一個功能一路疊代出來的十個項目。跟屬性面板重複註冊問題的關聯見 [[Quartz troubleshooting - properties and data display#✅ 7.1|7.1]]。
+搭配母筆記 [[Quartz website troubleshooting report]] 一起看。這篇記錄 Canvas 畫布裡文字方塊的 wikilink／內嵌處理，以及畫布巢狀內嵌另一個畫布（portal）的問題，是同一個功能一路疊代出來的十二個項目。跟屬性面板重複註冊問題的關聯見 [[Quartz troubleshooting - properties and data display#✅ 7.1|7.1]]。
 
 ## ✅ 9.1 Canvas 畫布裡文字方塊寫的 `[[筆記]]`／`![[筆記]]`，完全沒有正確顯示
 
@@ -262,6 +262,9 @@ if (color) {
 
 **已驗證結果**：本機 `quartz build --serve`，瀏覽器實際截圖確認連線正確顯示、標籤文字正確；commit 並 push 到 `v5` 分支（`e77dc466`）。
 
+> [!warning] 這個修法後來被 Quartz Syncer 悄悄還原了，正確的持久修法見 9.12
+> 這裡的做法是直接手改**部署 repo**裡的 canvas JSON（把 `interdimensionalEdges` 攤平成一般 edge）。但 vault 裡的原始檔案完全沒跟著改——Obsidian 畫這種「連到 portal 內部節點」的線，原生格式本來就是 `interdimensionalEdges`，沒有辦法從 Obsidian 介面改成別的格式。Quartz Syncer 每次同步都是拿 vault 整份覆蓋過去，我手動改的內容過沒多久就被蓋回舊格式，連線又消失了，而且完全不會有任何錯誤或提示。真正的持久修法是讓 `vendor/canvas-page` 直接支援讀懂 `interdimensionalEdges`，這樣 vault 端完全不用動、Syncer 怎麼同步都不會壞，詳見 9.12。
+
 ---
 
 ## ✅ 9.8 文字方塊 `![[筆記]]` 完整內嵌時，`white-space: pre-wrap` 外洩到內嵌內容，條列文字跟表格之間多出一大塊空白
@@ -347,3 +350,59 @@ if (color) {
 `.canvas-node` 本身已經是 `position: absolute`（節點的 `left`/`top` 就是這樣定位的），剛好可以直接當這條規則的定位基準，不用額外加包裝層。這條規則只匹配「在 `.canvas-node` 底下」的控制項，外層畫布自己那組（不在任何 `.canvas-node` 裡面）不受影響，維持原本 `position: fixed` 固定在瀏覽器視窗右上角。
 
 **已驗證結果**：本地重新編譯 `vendor/canvas-page`，`quartz build --serve` 起本機伺服器；瀏覽器截圖確認任務管理卡片內部乾淨、看不到任何殘留圖示；用 `getBoundingClientRect()` 量測「高普考準備工作流」portal 節點自己的控制項，確認 `position` 已變成 `absolute`，座標精準貼齊該節點自己的右上角（跟節點本身的 `right`/`top` 邊界只差幾像素，符合 CSS 裡設的 `top: 12px; right: 12px`）；「英文學習工作流」portal 同樣情況也一併修好；外層畫布本身的控制項功能不受影響（縮放、重置按鈕正常出現/消失）；使用者本機實際確認後，commit 並 push 到 `v5` 分支（`c7db6d72`）。
+
+---
+
+## ✅ 9.11 畫布節點用 `#view名稱` 直接內嵌 bases 特定檢視，幾乎必壞
+
+**背景**：使用者把原本獨立的「考古題筆記複習日曆bases.base」併入「考古題筆記bases.base」當第二個 view（`考古題複習月曆`），畫布裡對應節點原本寫法是 `![[Exam notes#考古題複習月曆🗓️|考古題筆記]]`（內嵌一篇筆記的標題段落，段落底下又內嵌 `![[考古題筆記bases.base#考古題複習月曆]]`）——這正好是 9.9 記錄過的破病模式（筆記內嵌 bases，筆記又被嵌進 canvas）。改成畫布節點直接寫 `![[考古題筆記bases.base#考古題複習月曆]]`（跳過筆記那一層）繞開 9.9 之後，發現這樣寫**還是不會動**，牽出兩個新問題。
+
+**排查過程中先確認、後來放棄的分支**：一開始懷疑是標題文字「考古題複習月曆🗓️」裡的月曆 emoji 造成的——Quartz 產生標題 `id` 時，emoji 主體字元被濾掉，但後面隱藏的「變化選擇符」字元沒濾乾淨、殘留在 `id` 裡，導致畫布 wikilink 裡完整的 `#考古題複習月曆🗓️` 跟實際 `id` 對不起來，`applySubpath()` 的 heading-transclude 分支找不到匹配、整個 fallback 成一個普通連結。這個問題確實存在（`applySubpath` 拿原始 wikilink 文字去比對標題 `id`，兩邊沒有做過同一套正規化），但因為改成直接內嵌 bases view（跳過筆記/標題這一層）後就不會再走到這個分支，所以沒有動手修，只留下這個紀錄：**任何標題文字含 emoji 的筆記，被畫布用 `#heading` 內嵌時都可能中招**，之後若要修，要讓比對邏輯跟 Quartz 核心產生 `id` 用同一套正規化規則，而不是直接比對原始文字。
+
+**根本原因（改成直接內嵌 bases view 之後遇到的問題）**：
+
+1. `applySubpath()` 處理 `.base` 檔案的 `#view-name` 時，實際比對的是 `findBasesView()`，而它拿 `viewName`（比對用的名稱，例如「考古題複習月曆」）去比對 view 元素的 `data-view-type` 屬性（例如 `calendar`）——這兩者本來就是不同的東西。DOM 裡從頭到尾都沒有存過 view 的「名稱」，名稱只出現在切換分頁按鈕（`.bases-view-tabs button`）的文字內容裡，跟對應 view 共用一個 `data-view-index`。這個比對邏輯基本上只有在「view 名稱剛好等於它的類型字串」（例如一個叫「table」的 table view）這種巧合下才會成立，絕大多數情況下都會比對失敗、fallback 成普通連結。
+2. 就算改成正確比對到 view 元素本身，還有第二層問題：`.bases-view` 的 CSS 是「不是啟用中就 `display: none`」（`bases.scss`：`.bases-view { display: none; } .bases-view.is-active { display: block; }`）。單獨抽出某個 view 的 HTML 片段、塞進畫布節點時，這個片段還留著它在原本分頁列表裡「不是啟用中」的原始 class，沒有 `is-active`，於是整個 view 雖然結構完整存在於 DOM 裡，卻是隱形的——`.bases-calendar` 量出來的 `getBoundingClientRect()` 是 `0,0,0,0`，比 9.4 的高度塌陷更難發現，因為連「有沒有內容」都要量過才看得出來，光看 DOM 結構是正常的。
+
+**排查過程**：
+
+1. 先確認畫布節點改寫成 `![[考古題筆記bases.base#考古題複習月曆]]` 後，DOM 裡出現的還是一個 fallback 的 `<a>` 標籤，不是內嵌內容，代表 `resolveEmbeddedHtml()` 回傳 `undefined`
+2. 到「考古題筆記bases.base」獨立頁面查看實際 DOM，用 `document.querySelectorAll('[data-view-index]')` 把 view 元素跟分頁按鈕都列出來，才發現按鈕文字（`全部考古題`／`考古題複習月曆`）才是真正的名稱來源，`.bases-view` 本身只有 `data-view-type`（`table`／`calendar`），沒有任何存名稱的屬性
+3. 對照 `findBasesView()` 原始碼，確認它確實拿名稱去比對類型，寫死的比對邏輯本來就對不上
+4. 改成「先在分頁按鈕裡找文字相符的、讀出它的 `data-view-index`、再用 index 找回對應的 view div」之後重新測試，DOM 裡確實抓到了正確的 `.bases-view[data-view-type="calendar"]`，但量測發現整塊 `getBoundingClientRect()` 是 0，才追出 `is-active` 遺漏這第二層問題
+
+**解決方法**：`applySubpath()` 的 `isBasePage` 分支，先透過 `.bases-view-tabs` 底下按鈕的文字內容比對名稱，找到後用它的 `data-view-index` 反查對應的 `.bases-view`（找不到才 fallback 回舊的「比對類型」邏輯，保留給 `#table`／`#calendar` 這種直接寫類型、或只有單一 view、沒有分頁列的情境）；抓到 view 之後，回傳前複製一份、補上 `is-active`（用複製而不是直接改原本物件，因為那個 HAST 節點是全站共用的 `page.htmlAst` 的一部分，其他地方如果也內嵌同一個 bases 檔案的其他 view，直接改到原物件會互相污染）：
+
+```ts
+function markViewActive(el: HastElement): HastElement {
+  const classes = new Set(((el.properties?.className ?? []) as string[]).map(String));
+  classes.add("is-active");
+  return { ...el, properties: { ...el.properties, className: Array.from(classes) } };
+}
+```
+
+**已驗證結果**：本地重新編譯 `vendor/canvas-page`，`tsc --noEmit` 通過；本機 `quartz build --serve`，把 vault 最新的畫布/bases 檔案暫時拉進本機測試（測完已還原、沒有 commit 進部署 repo）；瀏覽器截圖確認畫布節點正確顯示完整月曆（正確月份、今天反白、Unscheduled 清單），不再是空白或 fallback 連結；DOM 量測確認 `.bases-view` 的 class 正確帶有 `is-active`、`getBoundingClientRect()` 不再是 0；commit 並 push 到 `v5` 分支（`21e22144`）。
+
+---
+
+## ✅ 9.12 讓 `interdimensionalEdges` 從程式碼層直接支援，取代 9.7 的內容層手改
+
+**背景**：9.7 記錄的修法（把 `interdimensionalEdges` 手動攤平成一般 `edges` 陣列裡的一條）是直接改**部署 repo** 裡已經同步過去的 canvas JSON，vault 裡的原始檔案完全沒有跟著改。這次因為要驗證考古題複習月曆節點的修法，重新從 vault 拉最新內容進本機測試時才發現：**Quartz Syncer 幾次自動同步之後，那條連線又在正式網站上消失了**——Obsidian 畫「連到 portal 內部節點」的線，原生格式本來就是 `interdimensionalEdges`，沒有辦法從 Obsidian 介面改成別的格式，Syncer 每次同步都是拿 vault 整份覆蓋部署 repo，手改的內容遲早會被蓋回去，而且過程完全沒有任何錯誤或提示，安靜到很容易誤以為修法還在生效。
+
+**根本原因**：跟 9.7 記錄的一樣——`vendor/canvas-page` 的型別定義（`CanvasFileNode`）跟渲染邏輯，從頭到尾都沒有 `interdimensionalEdges` 這個欄位／概念，套件只認得頂層 `edges` 陣列。9.7 只是繞過了症狀（改內容讓它變成套件看得懂的格式），沒有解決「套件本來就看不懂這個格式」這個根本問題，所以只要 vault 端的原始資料一被重新同步，症狀就會再犯。
+
+**解決方法**：讓套件直接讀懂 `interdimensionalEdges`，不用再靠手改內容繞過去：
+
+1. `types.ts` 的 `CanvasFileNode` 加上 `interdimensionalEdges?: CanvasEdge[]` 欄位
+2. 渲染前，把每個節點的 `interdimensionalEdges`（如果有）都收集起來，跟頂層 `edges` 合併成同一份清單一起渲染
+3. `interdimensionalEdges` 裡的 `fromNode`／`toNode` 用的是 `acportal||<portal節點id>||<內部節點id>` 這種複合格式，指向 portal _內&#x90E8;_&#x67D0;個節點——但這個渲染器沒有獨立的座標系可以定位到 portal 內部的節點（portal 內部節點活在它自己那個巢狀、另外縮放過的畫布座標系裡），所以把複合格式解析、只取中間的 portal 節點 id，讓連線改成連到**整個 portal 卡片**（跟 9.7 的做法語意上一致，一樣會失去「精確指到 portal 內部某個節點」這層細節，但比完全不顯示好）：
+
+```ts
+function resolvePortalNodeRef(ref: string): string {
+  if (!ref.startsWith("acportal||")) return ref;
+  const parts = ref.split("||");
+  return parts[1] ?? ref;
+}
+```
+
+**已驗證結果**：本地重新編譯 `vendor/canvas-page`，`tsc --noEmit` 通過；本機 `quartz build --serve`，把 vault 目前**完全沒有手動修改過**的原始 `實際工作系統.canvas`（`interdimensionalEdges` 還是原生格式）拉進本機測試，瀏覽器截圖＋DOM 量測確認連線正確顯示、標籤文字「查看考古題複習月曆」正確、路徑座標對應到 portal 頂邊到月曆節點底邊；不需要對 vault 內容做任何修改；commit 並 push 到 `v5` 分支（`21e22144`）。之後 vault 裡不管怎麼在 Obsidian 裡重新畫這種連線、Syncer 怎麼同步，都不會再需要手動介入。

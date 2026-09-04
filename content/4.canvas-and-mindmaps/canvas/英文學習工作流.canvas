@@ -1,6 +1,7 @@
 {
 	"nodes":[
-		{"id":"a5835368cca10487","type":"group","x":-8120,"y":4286,"width":1720,"height":1394,"label":"英文學習系統"},
+		{"id":"a5835368cca10487","type":"group","x":-8120,"y":4040,"width":2200,"height":1640,"label":"英文學習系統"},
+		{"id":"c8feae33e9e4d382","type":"group","x":-6860,"y":4520,"width":700,"height":584,"color":"6","label":"claudian"},
 		{"id":"75f4870cd2f3af9c","type":"group","x":-8880,"y":4692,"width":480,"height":228,"color":"6","label":"擷取網路文章、下載網路影片與逐字稿"},
 		{"id":"e2761c56fb863f4a","type":"group","x":-7520,"y":5400,"width":514,"height":133,"color":"6","label":"調整影片播放位置、建立影片時間戳記"},
 		{"id":"29829b2c18428ef5","type":"text","text":"![[English study notes template|英文學習筆記模板]]","x":-7520,"y":4520,"width":514,"height":584,"color":"5"},
@@ -31,8 +32,18 @@
 			"type":"text",
 			"text":"[[Vocab Quiz Record|英文測驗紀錄]]",
 			"styleAttributes":{},
-			"x":-6770,
-			"y":4980,
+			"x":-6440,
+			"y":4782,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c58679ab0528ded5",
+			"type":"text",
+			"text":"英文測驗練習",
+			"styleAttributes":{},
+			"x":-6840,
+			"y":4782,
 			"width":260,
 			"height":60
 		},
@@ -41,7 +52,7 @@
 			"type":"text",
 			"text":"[[1.English words and phrases associations|英文單字片語關聯整理]]",
 			"styleAttributes":{},
-			"x":-6770,
+			"x":-6840,
 			"y":4579,
 			"width":260,
 			"height":60
@@ -89,6 +100,7 @@
 			"id":"cb28a7742781db3e",
 			"styleAttributes":{},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"29829b2c18428ef5",
 			"fromSide":"right",
 			"toNode":"0ddc84570c417896",
@@ -99,6 +111,15 @@
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"29829b2c18428ef5",
+			"fromSide":"right",
+			"toNode":"c58679ab0528ded5",
+			"toSide":"left"
+		},
+		{
+			"id":"9bc305ce59736b88",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c58679ab0528ded5",
 			"fromSide":"right",
 			"toNode":"4daee770d372f31d",
 			"toSide":"left"

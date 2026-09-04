@@ -3,9 +3,9 @@ publish: true
 aliases:
   - Quartz 問題排查－Canvas 文字方塊與 Portal
 title: Quartz 問題排查－Canvas 文字方塊與 Portal
-created: 2026-09-04T10:21:53.976Z
-modified: 2026-09-04T10:21:53.996Z
-published: 2026-09-04T10:21:53.996Z
+created: 2026-09-04T12:17:28.242Z
+modified: 2026-09-04T12:17:28.242Z
+published: 2026-09-04T12:17:28.242Z
 tags:
   - 數位花園
   - 網站
@@ -21,7 +21,7 @@ child:
 
 # Canvas 文字方塊與 Portal
 
-搭配母筆記 [[Quartz website troubleshooting report]] 一起看。這篇記錄 Canvas 畫布裡文字方塊的 wikilink／內嵌處理，以及畫布巢狀內嵌另一個畫布（portal）的問題，是同一個功能一路疊代出來的九個項目。跟屬性面板重複註冊問題的關聯見 [[Quartz troubleshooting - properties and data display#✅ 7.1|7.1]]。
+搭配母筆記 [[Quartz website troubleshooting report]] 一起看。這篇記錄 Canvas 畫布裡文字方塊的 wikilink／內嵌處理，以及畫布巢狀內嵌另一個畫布（portal）的問題，是同一個功能一路疊代出來的十個項目。跟屬性面板重複註冊問題的關聯見 [[Quartz troubleshooting - properties and data display#✅ 7.1|7.1]]。
 
 ## ✅ 9.1 Canvas 畫布裡文字方塊寫的 `[[筆記]]`／`![[筆記]]`，完全沒有正確顯示
 
@@ -318,3 +318,32 @@ if (color) {
 4. 追進 `vendor/canvas-page` 的 `CanvasBody.tsx`，確認內嵌整篇筆記用的是 `dangerouslySetInnerHTML={{ __html: embedded }}`，`embedded` 是純字串——樹狀轉換程式碰不到純字串裡的內容，兩邊機制對不上
 
 **目前狀態（尚未修）**：真正要修，需要讓 canvas 外掛在把內嵌內容轉成字串**之前**，先套用一次跟 `bases-page` 一樣的佔位符解析邏輯——這代表兩個原本互相獨立的 vendor 套件要互相依賴，影響範圍不只這一個節點（會碰到全站共用的 bases 渲染路徑），也要另外處理內嵌內容裡連結路徑校正的問題，風險比單純的 CSS／JSON 修改高不少。跟使用者討論後，決定先不修這個，改用「另外新建一個只有單一 view 的 `.base` 檔案，直接當成獨立的 canvas 節點內嵌（跟考古題複習月曆節點做法一樣，不透過巢狀筆記、不用 `#view` 指定）」這個更安全的替代方案繞過問題，等有需要時再動手。
+
+---
+
+## ✅ 9.10 巢狀 portal 畫布自己的放大/縮小按鈕，縮成一小撮飄在別的節點卡片裡，點下去卻是操作 portal
+
+**現象**：`實際工作系統.canvas` 裡，任務管理卡片（`![[Task Management]]` 文字方塊內嵌）內部出現一個縮得極小、像個小圓點的放大鏡圖示，位置明明在任務管理卡片範圍內，點下去卻發現是「高普考準備工作流」那個 portal 節點在放大/縮小、有反應。
+
+**根本原因**：`高普考準備工作流.canvas`（以及同樣情境的「英文學習工作流.canvas」）是用檔案節點＋`portal: true` 的方式，把自己完整的 `.canvas-container` 原封不動內嵌進外層畫布，包含它自己那一整組放大/縮小/重置檢視按鈕（`.canvas-controls`）。這組按鈕的 CSS 用的是 `position: fixed`，原始設計是給「獨立整頁的畫布」用的，固定在瀏覽器視窗右上角。但根據 CSS 規範，只要有任何祖先元素設了 `transform`，`position: fixed` 的元素就會改成以「最近那個有 `transform` 的祖先」為定位基準，而不是整個瀏覽器視窗——而外層畫布本身的拖曳/縮放，正是透過在 `.canvas-viewport` 套用 `transform: translate(...) scale(...)` 實作的。結果是這組按鈕的 `top: 12px; right: 12px` 被外層的縮放比例一起壓縮，實測縮成大約 3×6 像素的一小撮，位置也因此落在畫面上某個看似隨機的座標，這次剛好疊在任務管理卡片上面（用 `getBoundingClientRect()` 量測確認：控制項座標 (338, 443) 確實落在任務管理卡片 (207~488, 374~539) 範圍內）。
+
+而且這組按鈕的點擊事件是無條件綁定的——跟拖曳/滾輪縮放不同（那兩個有專門判斷 `isNested` 來停用，避免巢狀畫布互搶滑鼠事件，見 9.4 的「拖曳沒按著滑鼠也會動」），按鈕點擊沒有這層保護，所以雖然位置跑掉了，點下去仍然真的會呼叫到它自己 `initCanvas()` 閉包裡記錄的那個巢狀 container，觸發**該 portal 自己**的 `zoomAtCenter()`，跟疊在它上面的任務管理卡片完全無關。
+
+**排查過程**：
+
+1. 在瀏覽器裡用 `document.querySelectorAll('.canvas-controls')` 直接列出畫面上所有控制項元素，發現有 3 組（外層畫布 1 組 + 兩個 portal 各 1 組），而不是預期的只有外層那 1 組
+2. 對每一組量測 `getBoundingClientRect()` 跟 `el.closest('.canvas-node')` 的 `data-node-id`，確認兩個 portal 各自的控制項座標都落在 (338, 443) 附近、疊在一起，而不是各自 portal 節點自己的範圍內
+3. 再量測任務管理卡片本身的 `getBoundingClientRect()`，確認 (338, 443) 確實落在它的範圍內，跟使用者描述的「圖示在任務管理卡片裡」完全對得上
+4. 檢查 `canvas.inline.ts` 的按鈕點擊監聽器綁定邏輯，確認 `zoomInBtn`／`zoomOutBtn` 的 `addEventListener("click", ...)` 沒有被 `enableInteraction`／`isNested` 判斷包住，是無條件執行的，才確認「位置跑掉」跟「點擊仍然有效」這兩件事同時成立、且互不衝突
+
+**解決方法**：在 `canvas.scss` 加一條規則，讓任何巢狀在畫布節點裡的控制項改用 `position: absolute`（相對自己所屬的節點卡片定位，而不是整個視窗）：
+
+```scss
+.canvas-node .canvas-controls {
+  position: absolute;
+}
+```
+
+`.canvas-node` 本身已經是 `position: absolute`（節點的 `left`/`top` 就是這樣定位的），剛好可以直接當這條規則的定位基準，不用額外加包裝層。這條規則只匹配「在 `.canvas-node` 底下」的控制項，外層畫布自己那組（不在任何 `.canvas-node` 裡面）不受影響，維持原本 `position: fixed` 固定在瀏覽器視窗右上角。
+
+**已驗證結果**：本地重新編譯 `vendor/canvas-page`，`quartz build --serve` 起本機伺服器；瀏覽器截圖確認任務管理卡片內部乾淨、看不到任何殘留圖示；用 `getBoundingClientRect()` 量測「高普考準備工作流」portal 節點自己的控制項，確認 `position` 已變成 `absolute`，座標精準貼齊該節點自己的右上角（跟節點本身的 `right`/`top` 邊界只差幾像素，符合 CSS 裡設的 `top: 12px; right: 12px`）；「英文學習工作流」portal 同樣情況也一併修好；外層畫布本身的控制項功能不受影響（縮放、重置按鈕正常出現/消失）；使用者本機實際確認後，commit 並 push 到 `v5` 分支（`c7db6d72`）。

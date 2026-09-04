@@ -32,5 +32,5 @@ views:
       note.考題年分: 88
       note.高考普考特考: 118
   - type: calendar
-    name: 考古題複習日曆
+    name: 考古題複習月曆
     startDate: note.date

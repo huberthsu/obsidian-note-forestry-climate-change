@@ -1,16 +1,50 @@
 {
 	"nodes":[
-		{"id":"664f6ba16bb4cfd6","type":"file","file":"4.canvas-and-mindmaps/canvas/英文學習工作流.canvas","portal":true,"x":3200,"y":1120,"width":2580,"height":1494},
-		{"id":"dcb4cb7c84197fa2","type":"file","file":"4.canvas-and-mindmaps/canvas/高普考準備工作流.canvas","portal":true,"x":3200,"y":-3680,"width":6660,"height":3620},
+		{"id":"664f6ba16bb4cfd6","type":"file","file":"4.canvas-and-mindmaps/canvas/英文學習工作流.canvas","portal":true,"x":3200,"y":1120,"width":3060,"height":1740,"color":"5"},
+		{
+			"id":"dcb4cb7c84197fa2",
+			"type":"file",
+			"file":"4.canvas-and-mindmaps/canvas/高普考準備工作流.canvas",
+			"portal":true,
+			"x":3200,
+			"y":-3680,
+			"width":6660,
+			"height":3620,
+			"interdimensionalEdges":[
+				{
+					"id":"e562d681921a39f0",
+					"styleAttributes":{},
+					"toFloating":false,
+					"fromFloating":false,
+					"fromNode":"acportal||dcb4cb7c84197fa2||f22cac888ae41072",
+					"fromSide":"top",
+					"toNode":"c2545f1649726d1b",
+					"toSide":"bottom",
+					"label":"查看考古題複習月曆"
+				}
+			]
+		},
 		{
 			"id":"3b73235d56073931",
 			"type":"text",
 			"text":"![[Task Management]]",
-			"styleAttributes":{},
-			"x":-640,
-			"y":-436,
+			"styleAttributes":{
+				"border":null
+			},
+			"x":-400,
+			"y":-695,
 			"width":2800,
 			"height":1840
+		},
+		{
+			"id":"c2545f1649726d1b",
+			"type":"text",
+			"text":"![[考古題筆記複習日曆bases.base]]",
+			"styleAttributes":{},
+			"x":5260,
+			"y":-4760,
+			"width":940,
+			"height":580
 		}
 	],
 	"edges":[
@@ -26,17 +60,6 @@
 			"label":"設定每日英文學習目標"
 		},
 		{
-			"id":"8ca07eceb122a7d1",
-			"styleAttributes":{"pathfindingMethod":"square"},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"dcb4cb7c84197fa2",
-			"fromSide":"left",
-			"toNode":"3b73235d56073931",
-			"toSide":"top",
-			"label":"依據熟練度制定下次複習時間"
-		},
-		{
 			"id":"547626f3dfe87bab",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -46,6 +69,28 @@
 			"toNode":"dcb4cb7c84197fa2",
 			"toSide":"left",
 			"label":"規劃考古題複習進度"
+		},
+		{
+			"id":"75c17cd6c981fa25",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"664f6ba16bb4cfd6",
+			"fromSide":"left",
+			"toNode":"3b73235d56073931",
+			"toSide":"bottom",
+			"label":"統計是否完成英文學習月目標"
+		},
+		{
+			"id":"089d83af59cffb06",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"dcb4cb7c84197fa2",
+			"fromSide":"left",
+			"toNode":"3b73235d56073931",
+			"toSide":"top",
+			"label":"統計是否完成考古題複習月目標"
 		}
 	],
 	"metadata":{

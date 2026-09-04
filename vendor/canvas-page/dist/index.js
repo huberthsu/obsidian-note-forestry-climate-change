@@ -11397,8 +11397,21 @@ function applySubpath(htmlAst, page, subpath, isBasePage) {
     const refLower = ref.toLowerCase();
     for (const child of htmlAst.children) {
       if (child.type !== "element") continue;
+      const tabs = findViewTabs(child);
+      if (!tabs) continue;
+      for (const tab of tabs.children) {
+        if (tab.type !== "element") continue;
+        const label = hastTextContent(tab).trim().toLowerCase();
+        if (label !== refLower) continue;
+        const index = String(tab.properties?.dataViewIndex ?? "");
+        const found = findBasesViewByIndex(child, index);
+        if (found) return { type: "root", children: [markViewActive(found)] };
+      }
+    }
+    for (const child of htmlAst.children) {
+      if (child.type !== "element") continue;
       const found = findBasesView(child, refLower);
-      if (found) return { type: "root", children: [found] };
+      if (found) return { type: "root", children: [markViewActive(found)] };
     }
     return void 0;
   }
@@ -11421,6 +11434,14 @@ function applySubpath(htmlAst, page, subpath, isBasePage) {
   if (startIdx === void 0) return void 0;
   return { type: "root", children: htmlAst.children.slice(startIdx, endIdx) };
 }
+function markViewActive(el) {
+  const classes = new Set((el.properties?.className ?? []).map(String));
+  classes.add("is-active");
+  return {
+    ...el,
+    properties: { ...el.properties, className: Array.from(classes) }
+  };
+}
 function findBasesView(el, viewName) {
   const classes = (el.properties?.className ?? []).join(" ");
   if (classes.includes("bases-view") && !classes.includes("bases-view-container")) {
@@ -11433,6 +11454,36 @@ function findBasesView(el, viewName) {
     if (found) return found;
   }
   return void 0;
+}
+function findBasesViewByIndex(el, index) {
+  const classes = (el.properties?.className ?? []).join(" ");
+  if (classes.includes("bases-view") && !classes.includes("bases-view-container")) {
+    if (String(el.properties?.dataViewIndex ?? "") === index) return el;
+  }
+  for (const child of el.children) {
+    if (child.type !== "element") continue;
+    const found = findBasesViewByIndex(child, index);
+    if (found) return found;
+  }
+  return void 0;
+}
+function findViewTabs(el) {
+  const classes = (el.properties?.className ?? []).join(" ");
+  if (classes.includes("bases-view-tabs")) return el;
+  for (const child of el.children) {
+    if (child.type !== "element") continue;
+    const found = findViewTabs(child);
+    if (found) return found;
+  }
+  return void 0;
+}
+function hastTextContent(el) {
+  let text5 = "";
+  for (const child of el.children) {
+    if (child.type === "text") text5 += child.value;
+    else if (child.type === "element") text5 += hastTextContent(child);
+  }
+  return text5;
 }
 function resolveEmbeddedHtml(fileSlug, canvasSlug, allFiles, subpath, visited) {
   const resolvedSlug = fileSlug;
@@ -11600,6 +11651,26 @@ function renderNode(node, renderedTexts, textLinks, slug2, allFiles, allSlugs, v
       return null;
   }
 }
+function resolvePortalNodeRef(ref) {
+  if (!ref.startsWith("acportal||")) return ref;
+  const parts = ref.split("||");
+  return parts[1] ?? ref;
+}
+function collectInterdimensionalEdges(nodes) {
+  const result = [];
+  for (const node of nodes) {
+    const portalEdges = node.interdimensionalEdges;
+    if (!portalEdges) continue;
+    for (const edge of portalEdges) {
+      result.push({
+        ...edge,
+        fromNode: resolvePortalNodeRef(edge.fromNode),
+        toNode: resolvePortalNodeRef(edge.toNode)
+      });
+    }
+  }
+  return result;
+}
 function renderEdge(edge, nodeMap) {
   const fromNode = nodeMap.get(edge.fromNode);
   const toNode = nodeMap.get(edge.toNode);
@@ -11681,7 +11752,7 @@ var CanvasBody_default = ((userOpts) => {
       return /* @__PURE__ */ u2("article", { class: "canvas-page popover-hint", children: /* @__PURE__ */ u2("p", { children: "No canvas data found." }) });
     }
     const nodes = canvasData.nodes ?? [];
-    const edges = canvasData.edges ?? [];
+    const edges = [...canvasData.edges ?? [], ...collectInterdimensionalEdges(nodes)];
     const renderedTexts = canvasData.renderedTexts ?? {};
     const textLinks = canvasData.textLinks ?? {};
     const allFiles = props.allFiles;

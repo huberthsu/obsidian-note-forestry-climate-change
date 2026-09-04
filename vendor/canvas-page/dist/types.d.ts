@@ -43,6 +43,13 @@ interface CanvasFileNode extends CanvasNodeBase {
     type: "file";
     file: string;
     subpath?: string;
+    /**
+     * Edges Obsidian draws from/to a node *inside* this node's embedded
+     * portal canvas, rather than the portal card itself. `fromNode`/`toNode`
+     * use the composite form `acportal||<this node's id>||<inner node id>`
+     * instead of a plain node id.
+     */
+    interdimensionalEdges?: CanvasEdge[];
 }
 /** Link node — references an external URL */
 interface CanvasLinkNode extends CanvasNodeBase {

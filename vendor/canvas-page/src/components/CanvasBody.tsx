@@ -18,6 +18,7 @@ import type { Element as HastElement, Root as HastRoot } from "hast";
 import type {
   CanvasData,
   CanvasNode,
+  CanvasFileNode,
   CanvasEdge,
   CanvasPageOptions,
   CanvasTextLink,
@@ -98,14 +99,32 @@ function applySubpath(
   if (!ref) return htmlAst;
 
   if (isBasePage) {
-    // For .base files, #view-name selects a specific view by data-view-type or
-    // the view tab label. Walk the htmlAst to find the matching view div and
-    // return only that view, marked active.
+    // For .base files, #view-name selects a specific view. The rendered
+    // markup only ever exposes each view's TYPE on the view div itself
+    // (`data-view-type`, e.g. "table"/"calendar") — the view's actual NAME
+    // (what the user typed in Obsidian, and what a #subpath is) only shows
+    // up as the label text of its tab button in `.bases-view-tabs`, sharing
+    // a `data-view-index` with the corresponding view div. Resolve by name
+    // via that tab first; fall back to matching by type for refs like
+    // `#table`/`#calendar`, or bases files with a single (tab-less) view.
     const refLower = ref.toLowerCase();
     for (const child of htmlAst.children) {
       if (child.type !== "element") continue;
+      const tabs = findViewTabs(child as HastElement);
+      if (!tabs) continue;
+      for (const tab of tabs.children) {
+        if (tab.type !== "element") continue;
+        const label = hastTextContent(tab as HastElement).trim().toLowerCase();
+        if (label !== refLower) continue;
+        const index = String((tab as HastElement).properties?.dataViewIndex ?? "");
+        const found = findBasesViewByIndex(child as HastElement, index);
+        if (found) return { type: "root", children: [markViewActive(found)] };
+      }
+    }
+    for (const child of htmlAst.children) {
+      if (child.type !== "element") continue;
       const found = findBasesView(child as HastElement, refLower);
-      if (found) return { type: "root", children: [found] };
+      if (found) return { type: "root", children: [markViewActive(found)] };
     }
     return undefined;
   }
@@ -132,6 +151,24 @@ function applySubpath(
   return { type: "root", children: htmlAst.children.slice(startIdx, endIdx) };
 }
 
+/**
+ * A `.bases-view` div that isn't the base page's own initially-active view
+ * carries `display: none` (bases.scss toggles visibility via `.is-active`,
+ * normally flipped by the tab-click script). Extracting a single view for
+ * an isolated embed leaves that class behind, so the view renders but stays
+ * invisible. Returns a shallow-cloned copy with `is-active` added — cloned
+ * rather than mutated in place, since the source element lives on the
+ * shared `page.htmlAst` object other embeds of the same file also read.
+ */
+function markViewActive(el: HastElement): HastElement {
+  const classes = new Set(((el.properties?.className ?? []) as string[]).map(String));
+  classes.add("is-active");
+  return {
+    ...el,
+    properties: { ...el.properties, className: Array.from(classes) },
+  };
+}
+
 function findBasesView(el: HastElement, viewName: string): HastElement | undefined {
   const classes = ((el.properties?.className ?? []) as string[]).join(" ");
   if (classes.includes("bases-view") && !classes.includes("bases-view-container")) {
@@ -144,6 +181,39 @@ function findBasesView(el: HastElement, viewName: string): HastElement | undefin
     if (found) return found;
   }
   return undefined;
+}
+
+function findBasesViewByIndex(el: HastElement, index: string): HastElement | undefined {
+  const classes = ((el.properties?.className ?? []) as string[]).join(" ");
+  if (classes.includes("bases-view") && !classes.includes("bases-view-container")) {
+    if (String(el.properties?.dataViewIndex ?? "") === index) return el;
+  }
+  for (const child of el.children) {
+    if (child.type !== "element") continue;
+    const found = findBasesViewByIndex(child as HastElement, index);
+    if (found) return found;
+  }
+  return undefined;
+}
+
+function findViewTabs(el: HastElement): HastElement | undefined {
+  const classes = ((el.properties?.className ?? []) as string[]).join(" ");
+  if (classes.includes("bases-view-tabs")) return el;
+  for (const child of el.children) {
+    if (child.type !== "element") continue;
+    const found = findViewTabs(child as HastElement);
+    if (found) return found;
+  }
+  return undefined;
+}
+
+function hastTextContent(el: HastElement): string {
+  let text = "";
+  for (const child of el.children) {
+    if (child.type === "text") text += (child as { value: string }).value;
+    else if (child.type === "element") text += hastTextContent(child as HastElement);
+  }
+  return text;
 }
 
 export function resolveEmbeddedHtml(
@@ -412,6 +482,38 @@ function renderNode(
   }
 }
 
+/**
+ * `acportal||<portalNodeId>||<innerNodeId>` → `<portalNodeId>`.
+ * Obsidian uses this composite id for an edge endpoint that's a node
+ * *inside* a portal's embedded canvas, which this renderer has no
+ * independent coordinate space to anchor to (the portal's inner nodes only
+ * exist inside its own nested, separately-scaled canvas). Anchoring to the
+ * portal card itself loses that inner-node precision but is otherwise a
+ * normal edge — better than the edge silently not rendering at all.
+ */
+function resolvePortalNodeRef(ref: string): string {
+  if (!ref.startsWith("acportal||")) return ref;
+  const parts = ref.split("||");
+  return parts[1] ?? ref;
+}
+
+/** Gather every node's `interdimensionalEdges`, remapped to plain node ids. */
+function collectInterdimensionalEdges(nodes: CanvasNode[]): CanvasEdge[] {
+  const result: CanvasEdge[] = [];
+  for (const node of nodes) {
+    const portalEdges = (node as CanvasFileNode).interdimensionalEdges;
+    if (!portalEdges) continue;
+    for (const edge of portalEdges) {
+      result.push({
+        ...edge,
+        fromNode: resolvePortalNodeRef(edge.fromNode),
+        toNode: resolvePortalNodeRef(edge.toNode),
+      });
+    }
+  }
+  return result;
+}
+
 function renderEdge(edge: CanvasEdge, nodeMap: Map<string, CanvasNode>): unknown {
   const fromNode = nodeMap.get(edge.fromNode);
   const toNode = nodeMap.get(edge.toNode);
@@ -510,7 +612,7 @@ export default ((userOpts?: CanvasPageOptions) => {
     }
 
     const nodes = canvasData.nodes ?? [];
-    const edges = canvasData.edges ?? [];
+    const edges = [...(canvasData.edges ?? []), ...collectInterdimensionalEdges(nodes)];
     const renderedTexts = canvasData.renderedTexts ?? {};
     const textLinks = canvasData.textLinks ?? {};
     const allFiles = props.allFiles;

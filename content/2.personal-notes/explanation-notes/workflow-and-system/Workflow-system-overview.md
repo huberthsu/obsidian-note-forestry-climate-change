@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-09-03T16:35:02.212Z
-modified: 2026-09-03T16:35:02.213Z
-published: 2026-09-03T16:35:02.213Z
+modified: 2026-09-04T08:24:17.624Z
+published: 2026-09-04T08:24:17.624Z
 tags:
   - 工作流
 category:
@@ -156,7 +156,7 @@ child:
     - 使用[[Timestamp note plugins]]使影片於右側邊欄撥放
     - 建立timestamp配合紀錄影片重點
     - 使用[[english-vocab-link-compare]] skill-比較單字/片語之間的關聯，紀錄在[[1.English words and phrases associations|英文單字片語關聯整理]]
-  - 複習
+  - 練習
     - 使用[[english-vocab-quiz]] skill-練習英翻中、中翻英、應用、選擇題、句子翻譯，將練習結果紀錄在[[Vocab Quiz Record|英文測驗紀錄]]
 - 使用模板: [[English study notes template|英文學習筆記模板]]
 

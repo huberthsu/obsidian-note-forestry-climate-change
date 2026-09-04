@@ -11144,6 +11144,10 @@ var canvas_default = `.canvas-page {
   border-bottom: 1px solid var(--lightgray);
 }
 
+.canvas-node .canvas-controls {
+  position: absolute;
+}
+
 .page[data-frame=canvas] {
   --canvas-sidebar-width: 300px;
 }

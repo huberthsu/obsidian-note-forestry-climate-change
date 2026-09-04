@@ -444,6 +444,18 @@
   }
 }
 
+// A canvas file rendered as a portal node (or embedded inline in a text
+// node) carries its own full .canvas-container, controls included. Left as
+// `position: fixed`, those controls sit inside an ancestor with a CSS
+// `transform` (the outer canvas's pan/zoom), which per spec makes `fixed`
+// resolve against that transformed ancestor instead of the viewport — the
+// controls end up squeezed down by the outer zoom level into a tiny cluster
+// at some arbitrary point on screen, wherever the math lands, rather than
+// anchored to the portal's own card. Scope them to their own node instead.
+.canvas-node .canvas-controls {
+  position: absolute;
+}
+
 .page[data-frame="canvas"] {
   --canvas-sidebar-width: 300px;
 }

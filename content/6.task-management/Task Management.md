@@ -4,8 +4,8 @@ aliases:
   - 任務管理
 title: 任務管理
 created: 2026-09-03T16:41:32.264Z
-modified: 2026-09-04T10:01:19.922Z
-published: 2026-09-04T10:01:19.922Z
+modified: 2026-09-04T12:10:57.597Z
+published: 2026-09-04T12:10:57.597Z
 parent:
 sibling:
   - "[[Task-management-workflow]]"
@@ -59,7 +59,7 @@ card_fields: item
 | 1 | 英文學習筆記 | 未開始 |
 | 2 | 考古題練習 | 未開始 |
 | 4v86xtmh | 卡片盒筆記回顧 | 未開始 |
-| esvw0v6k | 英文測驗練習 | 進行中 |
+| esvw0v6k | 英文測驗練習 | 已完成 |
 ```
 
 ## 其他雜事
@@ -72,4 +72,4 @@ card_fields: item
 
 ## 本月統計/歷史統計
 
-![[monthly tasks calendar bases.base]]
+![[monthly tasks calendar bases.base#本月統計]]

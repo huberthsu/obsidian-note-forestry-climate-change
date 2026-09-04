@@ -1,14 +1,12 @@
 filters:
   and:
     - category.contains(link("Exam notes"))
+    - and:
+        - '!file.inFolder("5.templates")'
+        - '!file.inFolder("5.templates-for-web")'
 views:
   - type: table
     name: 全部考古題
-    filters:
-      and:
-        - '!file.inFolder("5.templates")'
-        - and:
-            - '!file.inFolder("5.templates-for-web")'
     order:
       - file.name
       - date
@@ -33,3 +31,6 @@ views:
       note.科目: 107
       note.考題年分: 88
       note.高考普考特考: 118
+  - type: calendar
+    name: 考古題複習日曆
+    startDate: note.date

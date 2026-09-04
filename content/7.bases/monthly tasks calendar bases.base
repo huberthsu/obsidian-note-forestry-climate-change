@@ -39,3 +39,10 @@ views:
       - date
     summaries:
       file.name: Filled
+  - type: calendar
+    name: 本月任務紀錄
+    order:
+      - file.name
+      - category
+      - tags
+    startDate: note.date

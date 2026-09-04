@@ -4,8 +4,8 @@ aliases:
   - 任務管理工作流
 title: 任務管理工作流
 created: 2026-09-03T16:35:06.141Z
-modified: 2026-09-04T08:26:38.381Z
-published: 2026-09-04T08:26:38.381Z
+modified: 2026-09-04T11:41:17.785Z
+published: 2026-09-04T11:41:17.785Z
 tags:
   - 工作流
 category:
@@ -56,7 +56,7 @@ child:
 
 ## 三、任務紀錄（Check 的資料來源）
 
-嵌入 [[monthly tasks calendar bases.base]]，裡面有三個 view：
+嵌入 [[monthly tasks calendar bases.base]]，裡面有2個 view：
 
 1. **本月任務紀錄**(月曆): 依各筆記的 `date` 屬性畫在月曆上，內建上一頁/下一頁可翻到任何月份
 2. **本月統計**(表格-依類型分組): 統計這個月各類型筆記分別完成幾篇

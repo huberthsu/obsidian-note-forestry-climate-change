@@ -1,24 +1,22 @@
 ---
-publish: true
+category:
+  - "[[Zettelkasten notes]]"
 aliases:
   - 周圍環境品質提高並降低與森林之間的差異性會有助於依賴森林物種的生存
-title: 周圍環境品質提高並降低與森林之間的差異性會有助於依賴森林物種的生存
-created: 2026-08-20T14:06:45.372Z
-modified: 2026-08-27T07:31:33.980Z
-published: 2026-08-27T07:31:33.980Z
 tags:
   - 生物多樣性
   - 地景生態學
   - 斑塊廊道基質理論
   - 邊緣效應
-category:
-  - "[[Zettelkasten notes]]"
+date: 2026-08-20
 摘要:
 in:
   - 2.personal-notes
 parent:
 sibling:
 child:
+publish: true
+title: 周圍環境品質提高並降低與森林之間的差異性會有助於依賴森林物種的生存
 password:
 ---
 

@@ -1,13 +1,10 @@
 ---
-publish: true
+category:
+  - "[[Zettelkasten notes]]"
 aliases:
   - 碳抵換品質標準
   - 碳抵換品質標準的內容
   - "#碳抵換品質標準"
-title: 碳抵換品質標準的內容
-created: 2026-08-01T16:48:33.794Z
-modified: 2026-08-28T07:09:38.373Z
-published: 2026-08-28T07:09:38.373Z
 tags:
   - 碳抵換
   - 外加性
@@ -15,8 +12,7 @@ tags:
   - 碳洩漏
   - 碳核算
   - 碳抵換品質標準
-category:
-  - "[[Zettelkasten notes]]"
+date: 2026-08-02
 摘要:
 in:
   - 2.personal-notes
@@ -26,6 +22,8 @@ sibling:
 child:
   - "[[Definition of additionality|外加性的定義]]"
   - "[[Definition of permanence|永久性的定義]]"
+publish: true
+title: 碳抵換品質標準的內容
 password:
 ---
 

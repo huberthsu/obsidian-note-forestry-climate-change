@@ -1,16 +1,12 @@
 ---
-publish: true
+category:
+  - "[[Zettelkasten notes]]"
 aliases:
   - 林分空間結構複雜度對生物多樣性的影響
-title: 林分空間結構複雜度對生物多樣性的影響
-created: 2026-08-23T06:06:00.728Z
-modified: 2026-08-27T07:33:21.841Z
-published: 2026-08-27T07:33:21.841Z
 tags:
   - 森林結構
   - 生物多樣性
-category:
-  - "[[Zettelkasten notes]]"
+date: 2026-08-23
 摘要:
 in:
   - 2.personal-notes
@@ -19,6 +15,8 @@ parent:
 sibling:
   - "[[The Relationship Between Forest Stand Spatial Structure and Carbon Storage|林分空間結構與碳貯存量的關聯]]"
 child:
+publish: true
+title: 林分空間結構複雜度對生物多樣性的影響
 password:
 ---
 

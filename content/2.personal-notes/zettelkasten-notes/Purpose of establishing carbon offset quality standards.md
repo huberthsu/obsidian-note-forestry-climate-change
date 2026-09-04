@@ -1,16 +1,12 @@
 ---
-publish: true
+category:
+  - "[[Zettelkasten notes]]"
 aliases:
   - 碳抵換品質標準的設立目的
-title: 碳抵換品質標準的設立目的
-created: 2026-08-06T09:55:37.651Z
-modified: 2026-08-27T07:32:10.774Z
-published: 2026-08-27T07:32:10.774Z
 tags:
   - 碳抵換
   - 碳抵換品質標準
-category:
-  - "[[Zettelkasten notes]]"
+date: 2026-08-06
 摘要:
 in:
   - 2.personal-notes
@@ -22,6 +18,8 @@ sibling:
 child:
   - "[[The importance of additionality|具備外加性的重要性]]"
   - "[[The importance of permanence|具備永久性的重要性]]"
+publish: true
+title: 碳抵換品質標準的設立目的
 password:
 ---
 

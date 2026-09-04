@@ -1,17 +1,13 @@
 ---
-publish: true
-title: 碳抵換機制原理
-created: 2026-07-31T02:53:04.340Z
-modified: 2026-08-28T07:08:58.062Z
-published: 2026-08-28T07:08:58.062Z
-tags:
-  - 碳抵換
 category:
   - "[[Zettelkasten notes]]"
 Aliases:
   - 碳抵換
   - 碳抵換機制原理
   - "#碳抵換"
+tags:
+  - 碳抵換
+date: 2026-07-31
 摘要:
 in:
   - 2.personal-notes
@@ -19,6 +15,8 @@ parent:
 sibling:
 child:
   - "[[Purpose of establishing carbon offset quality standards|碳抵換品質標準的設立目的]]"
+publish: true
+title: 碳抵換機制原理
 password:
 ---
 

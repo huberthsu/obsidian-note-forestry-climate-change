@@ -1,15 +1,11 @@
 ---
-publish: true
-aliases:
-  - 啟發
-title: 啟發
-created: 2026-07-21T02:49:40.920Z
-modified: 2026-08-21T06:13:26.930Z
-published: 2026-08-21T06:13:26.930Z
-tags:
-  - 工作流
 category:
   - "[[Zettelkasten notes]]"
+aliases:
+  - 啟發
+tags:
+  - 工作流
+date: 2026-07-21
 in:
   - 2.personal-notes
 parent:
@@ -19,6 +15,8 @@ sibling:
   - "[[Related|關聯]]"
   - "[[Surprise|意外]]"
 child:
+publish: true
+title: 啟發
 password:
 ---
 

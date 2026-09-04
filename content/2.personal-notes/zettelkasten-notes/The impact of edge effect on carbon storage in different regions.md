@@ -1,17 +1,13 @@
 ---
-publish: true
+category:
+  - "[[Zettelkasten notes]]"
 aliases:
   - 邊緣效應對不同區域碳貯存量的影響
-title: 邊緣效應對不同區域碳貯存量的影響
-created: 2026-08-17T13:25:00.589Z
-modified: 2026-08-27T07:33:05.469Z
-published: 2026-08-27T07:33:05.469Z
 tags:
   - 邊緣效應
   - 碳儲存
   - 碳核算
-category:
-  - "[[Zettelkasten notes]]"
+date: 2026-08-17
 摘要:
 in:
   - 2.personal-notes
@@ -20,6 +16,8 @@ parent:
 sibling:
   - "[[How microclimate conditions of edge effects affect carbon storage|邊緣效應的微氣候條件如何影響碳貯存量]]"
 child:
+publish: true
+title: 邊緣效應對不同區域碳貯存量的影響
 password:
 ---
 

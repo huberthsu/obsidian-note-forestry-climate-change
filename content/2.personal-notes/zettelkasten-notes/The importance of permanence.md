@@ -1,16 +1,12 @@
 ---
-publish: true
+category:
+  - "[[Zettelkasten notes]]"
 aliases:
   - 具備永久性的重要性
   - 永久性的重要性
-title: 具備永久性的重要性
-created: 2026-08-06T12:50:27.333Z
-modified: 2026-08-21T06:14:00.054Z
-published: 2026-08-21T06:14:00.054Z
 tags:
   - 永久性
-category:
-  - "[[Zettelkasten notes]]"
+date: 2026-08-06
 摘要:
 in:
   - 2.personal-notes
@@ -19,6 +15,8 @@ parent:
 sibling:
   - "[[Definition of permanence|永久性的定義]]"
 child:
+publish: true
+title: 具備永久性的重要性
 password:
 ---
 

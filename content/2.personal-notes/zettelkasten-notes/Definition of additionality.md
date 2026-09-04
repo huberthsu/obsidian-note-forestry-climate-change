@@ -1,17 +1,13 @@
 ---
-publish: true
-title: 外加性的定義
-created: 2026-08-28T07:04:38.453Z
-modified: 2026-08-28T07:04:38.454Z
-published: 2026-08-28T07:04:38.454Z
-tags:
-  - 外加性
 category:
   - "[[Zettelkasten notes]]"
 Aliases:
   - 外加性
   - 外加性的定義
   - "#外加性"
+tags:
+  - 外加性
+date: 2026-08-28
 摘要:
 in:
   - 2.personal-notes
@@ -21,6 +17,8 @@ sibling:
   - "[[Definition of permanence|永久性的定義]]"
   - "[[The importance of additionality|具備外加性的重要性]]"
 child:
+publish: true
+title: 外加性的定義
 password:
 ---
 

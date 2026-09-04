@@ -8,7 +8,7 @@ filters:
         - category.contains(link("Zettelkasten notes"))
 formulas:
   type_label: if(category.contains(link("English learning notes")), "英文學習筆記", if(category.contains(link("Exam notes")), "考古題筆記", if(category.contains(link("Zettelkasten notes")), "卡片盒筆記", "其他")))
-  month_label: if(date, date.format("YYYY-MM"), "")
+  month_label: if(date, date(date).format("YYYY-MM"), "")
 properties:
   formula.type_label:
     displayName: 類型
@@ -26,7 +26,7 @@ views:
     name: 本月統計
     filters:
       and:
-        - if(date, date >= date(today().format("YYYY-MM") + "-01"), false)
+        - if(date, date(date) >= date(today().format("YYYY-MM") + "-01"), false)
     groupBy:
       property: formula.type_label
       direction: ASC

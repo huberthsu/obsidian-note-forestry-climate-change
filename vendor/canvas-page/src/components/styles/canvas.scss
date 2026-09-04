@@ -72,6 +72,20 @@
   .canvas-node-content {
     white-space: pre-wrap;
   }
+
+  // The pre-wrap above is for a node's own raw text, but a `![[note]]` embed
+  // inside a text node renders structured HTML (re-serialized from the
+  // target page's own tree) with plenty of insignificant whitespace between
+  // tags. Under pre-wrap every one of those stray newlines becomes a real
+  // line break, producing a large blank gap wherever the embedded HTML
+  // happens to have whitespace between block elements (e.g. between a list
+  // and the table that follows it). Reset to normal flow inside embeds.
+  // `white-space` is inherited, so resetting it here is enough to fix
+  // ordinary flow content; `pre`/`code` keep their own UA `white-space: pre`
+  // since an explicit rule always wins over an inherited value.
+  .canvas-embed-content {
+    white-space: normal;
+  }
 }
 
 // Shared styling for embedded note content, used both by file-type canvas

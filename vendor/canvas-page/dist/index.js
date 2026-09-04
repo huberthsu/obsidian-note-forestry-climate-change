@@ -10846,6 +10846,9 @@ var canvas_default = `.canvas-page {
 .canvas-node-text .canvas-node-content {
   white-space: pre-wrap;
 }
+.canvas-node-text .canvas-embed-content {
+  white-space: normal;
+}
 
 .canvas-embed-content h1,
 .canvas-embed-content h2,

@@ -3,9 +3,9 @@ publish: true
 aliases:
   - quartz建站問題排查紀錄
 title: quartz建站問題排查紀錄
-created: 2026-09-04T14:53:01.447Z
-modified: 2026-09-04T14:53:01.447Z
-published: 2026-09-04T14:53:01.447Z
+created: 2026-09-05T04:35:34.175Z
+modified: 2026-09-05T04:35:34.175Z
+published: 2026-09-05T04:35:34.175Z
 tags:
   - 數位花園
   - 網站
@@ -63,7 +63,7 @@ child:
 | 四   | [[Quartz troubleshooting - canvas and bases publishing\|Canvas/Bases 發布與控制]] | 分享功能設定位置、`.base`/`.canvas` 無法逐篇標記發布                                                          |
 | 五   | [[Quartz troubleshooting - frontmatter publishing\|Frontmatter 發布配置]]        | 亂碼 frontmatter、breadcrumbs 欄位搬家、自訂屬性沒發布                                                      |
 | 六   | [[Quartz troubleshooting - graph visuals and interaction\|Graph 視覺與互動]]      | 連接線顏色太淡看不到、hover 高亮死區、右側欄頂部留白過多導致 Backlinks 被截斷、TOC 收合狀態標題文字被裁到看不見、TOC 捲不到底／展開後蓋住 Backlinks、Global Graph 彈窗跑到畫面外、`showTags:false` 對 Global Graph 沒作用、hover 節點名稱卡住不消失、新增資料夾/標籤顯示篩選面板                |
-| 七   | [[Quartz troubleshooting - properties and data display\|屬性面板與資料展示]]          | 屬性面板欄位顯示、Dataview 表格連結/tags、`password` 欄位外洩、checkbox 對齊與語法、Bases 表格欄位（tags 連結、`publish` 未隱藏）、Bases 新增 calendar 月曆檢視、外掛互動腳本從沒真的執行過、vendor 建置工具鏈與 yaml 打包問題、月曆換月與 hover 預覽修復、內嵌 `<script>` 不會在 SPA 導覽時執行（改動 Quartz 核心）、借用共用 `render` 事件把 dark mode 搞壞、表格排序的舊謎團真相、graph view 連到不相關的 bases（虛擬頁面 links 漏套用 view 篩選條件） |
+| 七   | [[Quartz troubleshooting - properties and data display\|屬性面板與資料展示]]          | 屬性面板欄位顯示、Dataview 表格連結/tags、`password` 欄位外洩、checkbox 對齊與語法、Bases 表格欄位（tags 連結、`publish` 未隱藏）、Bases 新增 calendar 月曆檢視、外掛互動腳本從沒真的執行過、vendor 建置工具鏈與 yaml 打包問題、月曆換月與 hover 預覽修復、內嵌 `<script>` 不會在 SPA 導覽時執行（改動 Quartz 核心）、借用共用 `render` 事件把 dark mode 搞壞、表格排序的舊謎團真相、graph view 連到不相關的 bases（虛擬頁面 links 漏套用 view 篩選條件）、Bases 新增 chart 長條圖檢視（刻意不做互動、純 SSR 繞開整串 script 坑） |
 | 八   | [[Quartz troubleshooting - comments and dark mode\|留言區與深色模式]]                | Giscus 深色模式 CORS 問題                                                                          |
 | 九   | [[Quartz troubleshooting - canvas text and portals\|Canvas 文字方塊與 Portal]]    | 文字方塊 wikilink/內嵌、跳轉按鈕、巢狀畫布 portal、自訂顏色與對比、interdimensionalEdges 連線不顯示、內嵌內容 white-space 外洩造成大片空白、巢狀內嵌 bases 指定 view 顯示空白（未修）、巢狀 portal 放大鏡按鈕位置跑掉飄到別的節點裡、`#view名稱` 內嵌 bases 特定檢視比對錯屬性、interdimensionalEdges 改從程式碼層支援（取代會被 Syncer 還原的內容層手改）             |
 | 十   | [[Quartz troubleshooting - image lightbox\|圖片全螢幕檢視功能]]                       | 全站圖片 lightbox：放大、拖曳、邊界限制                                                                     |

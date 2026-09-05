@@ -4,8 +4,8 @@ aliases:
   - 考古題筆記模板
 title: 考古題筆記模板
 created: 2026-08-10T23:40:51.953Z
-modified: 2026-08-15T08:02:43.470Z
-published: 2026-08-15T08:02:43.470Z
+modified: 2026-09-05T03:37:46.573Z
+published: 2026-09-05T03:37:46.573Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -32,8 +32,8 @@ tags:
   - 熟練
   - 不太熟
   - 不熟
-最近作答日期:
 date:
+下次複習時間:
 已練習次數:
 ---
 

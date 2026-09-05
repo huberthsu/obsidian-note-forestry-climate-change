@@ -3,9 +3,9 @@ publish: true
 aliases:
   - Quartz 問題排查－屬性面板與資料展示
 title: Quartz 問題排查－屬性面板與資料展示
-created: 2026-09-04T10:21:53.829Z
-modified: 2026-09-04T10:21:53.850Z
-published: 2026-09-04T10:21:53.850Z
+created: 2026-09-05T04:35:03.371Z
+modified: 2026-09-05T04:35:03.371Z
+published: 2026-09-05T04:35:03.371Z
 tags:
   - 數位花園
   - 網站
@@ -727,3 +727,42 @@ views:
 2. 把 vault 這兩個 `.base` 檔案跟 [[Task Management]] 原封不動複製一份到部署 repo 本機 `content/` 做臨時測試（測完就刪掉，沒有留在部署 repo 的 git 狀態裡），跑一次完整 `quartz build`，grep 輸出 HTML 確認不再出現「Unknown view type」；依 `date` 分欄的看板正確產生 `2026-08-14`／`2026-08-15`／`2026-08-19` 三個欄位標籤（純文字，不是 JSON 字串），證明 `formatGroupLabel` 有生效
 3. 另外寫了一個獨立的 smoke test（兩張分別是 `status: To Do`／`status: Done` 的測試卡片＋一個對應的 `.base`），確認欄位依 `columnOrders`（`["To Do","In Progress","Done"]`）排序，且中間沒有卡片的「In Progress」被正確跳過，直接接到「Done」，驗證「有 `columnOrders` 就照排、沒資料的欄位不生成」這條邏輯
 4. `status` 依據的那個看板（「tasks status kanban bases.base」）在目前部署 repo 已發布的筆記裡還沒有任何一篇帶 `status` frontmatter，所以照實際內容看會是空的「No data found」——這是內容還沒發布的問題，不是這次渲染器修法的範圍，等 Quartz Syncer 把帶 `status` 的英文學習筆記真正發布上去後應該就會正常顯示
+
+---
+
+## ✅ 7.19 Bases 新增「chart」長條圖檢視類型——這次刻意不做成會動的，直接繞開 7.8～7.16 整串 script 坑
+
+**動機**：[[Task Management]] 在 Obsidian 端用 `dataviewjs` 搭配 Charts 外掛（`window.renderChart`）畫了一張本月任務統計長條圖（完成考古題參考答案、英文學習筆記、考古題練習、卡片盒筆記回顧、英文測驗練習五個數字）。想要這張圖也能在網站上看到。
+
+**排查結果**：`dataviewjs` 完全是 Obsidian 外掛執行環境的功能（要吃 `dv`、`app`、`window.renderChart` 這些只存在 Obsidian 裡的全域物件），部署 repo 逐一確認過 `package.json`／`quartz/` 底下完全沒有 dataview 或任何圖表函式庫，這段 code block 發布到網站上只會原封不動印成一段文字，不會執行、更不會畫圖。
+
+**決策：不要照抄 Obsidian 那套「會動的圖表」，改成零 client-side script 的純伺服器端 SVG**
+
+回頭看 7.8（calendar）／7.9（`afterDOMLoaded` 其實沒接上）／7.14（SPA 導覽不會執行內嵌 `<script>`，這是最後真正的根因）／7.15（借用 `render` 事件把 dark mode 搞壞）／7.16（表格排序同款雙倍觸發），calendar 這一個 view 光是把「换月按鈕」這種基本互動做到位，就從 7.8 修到 7.16、跨了好幾次「以為修好了、上線才發現在真實瀏覽情境沒生效」。這次的長條圖資料在 build 當下就完全固定（不像月曆需要跟著訪客當下的日期變動），沒有必要為了「動畫」「hover 顯示數字」這種錦上添花的效果去继承整串 script 執行時機的坑——直接把 `<svg><rect>...</rect></svg>` 連同數字烤進 HTML，全程零 `<script>`，上面那整串 bug 的根源（script 沒被收集、SPA 導覽不執行、重複初始化、借用事件炸別的功能）通通不會發生。
+
+**架構做法**：
+
+1. 沒有動既有的「monthly tasks calendar bases.base」，另外新建一個獨立的 `本月統計圖表bases.base`，全域 `filters` 用 `or` 合併三種來源：`category.contains(link("English learning notes"))`、`category.contains(link("Exam notes"))`、`file.name == "Task Management"`——讓 `entries` 裡同時包含「要聚合統計的筆記」跟「存了手動計數屬性的 Task Management 這篇筆記本身」，只用一個 view 就能同時讀到兩種完全不同性質的資料來源
+2. 新增 `vendor/bases-page/src/components/views/chart.tsx`，註冊成 `id: "chart"`，`ViewTypeRegistration` **不掛 `afterDOMLoaded`**（參考 `list.tsx`／`board.tsx` 這種純 SSR、沒有 script 的既有 view 當範本，不是照抄 calendar／kanban 那種有 script 的）：
+   - `entries.find(e => e.fileProperties.basename === "Task Management")` 找出那一篇筆記，讀它 `.properties` 裡的三個手動計數屬性＋考古題基準
+   - 其餘 entries 用字串比對 `category` 陣列（`entry.properties.category` 是「原始未解析」的 wikilink 字串陣列，例如 `["[[Exam notes]]"]`，直接 `.includes(label)` 判斷，不需要走 `link()`/`contains()` 那套給 filter 用的比較邏輯）分成英文學習筆記／考古題筆記兩組，各自算出「本月新建篇數」跟「`已練習次數` 加總」
+   - 五根 `<rect>` 的顏色直接寫死 `#44cf6e`／`#e9973f`／`#53dfdd`（跟 `vendor/canvas-page/src/types.ts` 的 `CANVAS_PRESET_COLORS` 2/4/5 號一模一樣的 hex 值），用本地常數複製一份、沒有跨 vendor 套件互相 import，避免多一條不必要的套件依賴
+3. `vendor/bases-page/src/components/styles/bases.scss` 補一小段 `.bases-chart*` 樣式，文字顏色用 Quartz 既有的 `--dark`／`--darkgray` token（跟 calendar 那段 CSS 用同一套 token），不用額外處理深色模式
+4. 沿用 7.10 的 `node vendor/bases-page/build.mjs` 重新編譯 `dist/`（無 `tsup`，esbuild 腳本）
+
+**限制（跟 calendar 不一樣的地方，這次是設計上刻意接受，不是 bug）**：
+
+- 數字是「build 當下」的靜態快照，不會隨訪客造訪時間即時更新，要下一次 Quartz Syncer 發布＋Cloudflare 重新部署才會刷新——因為完全沒有 script，這點不像 7.13/7.14 那樣需要另外處理「訪客當下時間 vs. 建置當下時間」的落差，純粹靠「下次部署自然更新」，接受即可
+- Obsidian 裡原生看不懂 `type: chart`，直接嵌入 `本月統計圖表bases.base#本月統計圖表` 在 [[Task Management]] 裡會顯示「不支援的檢視類型」——這是預期內的，因為這個 view 從頭到尾就是只為了網站存在，沒有對應的 Obsidian 原生 view，[[Task Management]] 裡有另外用 callout 註記這件事
+- Obsidian 端 `dataviewjs` 圖表裡「月初重置」那顆會回寫 frontmatter 的按鈕，在網站上沒有對應功能——靜態網站的訪客是匿名的，沒有帳號權限回寫任何檔案，本來就只能唯讀顯示
+
+**已驗證結果**：
+
+1. `node vendor/bases-page/build.mjs` 重新編譯，確認 `dist/index.js`／`dist/components/index.js` 都出現 `bases-chart-wrapper`／`chartViewRegistration` 字串
+2. 比照 7.18 的做法，把 vault 目前版本的 [[Task Management]]（含新的手動計數屬性）跟新的 `本月統計圖表bases.base` 暫時複製進部署 repo 本機 `content/`，並把其中一篇考古題筆記的 `已練習次數` 故意改成 `5`（原本全部是空值）用來驗證「加總－基準」這段算法真的有在跑，不是恆定輸出 0；測完用 `git checkout` 全部還原，沒有留在部署 repo 的 git 狀態裡
+3. 跑一次完整 `quartz build`，grep 輸出 HTML 確認沒有「Unknown view type」、沒有 build 錯誤，五個 `<text class="bases-chart-value">` 數字精確對上預期值（含那個故意改到 5 的考古題練習），五個 `<rect>` 的 `fill` 顏色也對上預期分組（考古題兩根綠、卡片盒橘、英文兩根藍）
+4. 進一步啟動本機靜態伺服器、用瀏覽器真的打開 build 出來的頁面截圖確認——不只信任 grep 出來的 HTML 原始碼，親眼看過長條圖視覺呈現（含顏色、比例、標籤位置）都正常
+5. commit 並 push 到 `v5` 分支（`c1854acd`）
+
+> [!tip] 「新增一個 view type」不代表一定要照抄前一個 view type 的做法
+> calendar／kanban 因為在 Obsidian 端本來就是「會互動」的東西（換月、拖曳排序），搬到網站上想保留這些互動，才不得不一路踩進 script 執行時機的坑。這次的長條圖在 Obsidian 端雖然也是即時運算出來的，但呈現形式（幾根靜態的柱子）本身不需要任何互動，網站版沒有必要為了「形式上」跟 Obsidian 端一致而画蛇添足加 script——先問「這個 view 真的需要互動嗎」，答案是否定的話，直接選最簡單的純 SSR 做法，比照抄 calendar 的架構省事得多，也少掉一整類已知的坑。

@@ -570,3 +570,26 @@ th.is-sorted-desc .bases-table-header-sort {
     font-size: 0.65rem;
   }
 }
+
+// Chart view
+.bases-chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bases-chart {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+.bases-chart-value {
+  font-size: 11px;
+  fill: var(--dark);
+}
+
+.bases-chart-label {
+  font-size: 9px;
+  fill: var(--darkgray);
+}

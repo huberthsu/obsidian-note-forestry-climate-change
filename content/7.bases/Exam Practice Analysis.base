@@ -1,0 +1,102 @@
+filters:
+  and:
+    - file.inFolder("2.personal-notes/exam-notes")
+    - file.ext == "md"
+formulas:
+  actual_familiarity: |
+    if(note.熟悉度評級 == null, "待評估",
+       if(note.熟悉度評級.length == 3, "待評估",
+          if(note.熟悉度評級.contains("不熟"), "不熟",
+             if(note.熟悉度評級.contains("不太熟"), "不太熟",
+                if(note.熟悉度評級.contains("熟練"), "熟練", "待評估")))))
+  priority_score: |
+    if(formula.actual_familiarity == "待評估", 100,
+       if(formula.actual_familiarity == "不熟", 75 - min(if(note.已練習次數, note.已練習次數, 0) * 0.1, 12),
+          if(formula.actual_familiarity == "不太熟", 50 - min(if(note.已練習次數, note.已練習次數, 0) * 0.1, 12),
+             if(formula.actual_familiarity == "熟練", 25 - min(if(note.已練習次數, note.已練習次數, 0) * 0.1, 12), 0))))
+  priority_label: |
+    if(formula.actual_familiarity == "待評估", "4 🔵 尚未練習",
+       if(formula.actual_familiarity == "不熟", "1 🔴 立即複習",
+          if(formula.actual_familiarity == "不太熟", "2 🟡 重點練習",
+             if(formula.actual_familiarity == "熟練", "3 🟢 已掌握", "4 🔵 尚未練習"))))
+  subject_count: if(file.size > 0, 1, 0)
+  familiarity_status: |
+    if(formula.actual_familiarity == "熟練", "✅ 熟練",
+       if(formula.actual_familiarity == "不太熟", "⚠️  不太熟",
+          if(formula.actual_familiarity == "不熟", "❌ 不熟", "🤔 待評估")))
+properties:
+  考題年分:
+    displayName: 年份
+  科目:
+    displayName: 科目
+  高考普考特考:
+    displayName: 考試等級
+  最新測驗得分:
+    displayName: 測驗得分
+  已練習次數:
+    displayName: 練習次數
+  formula.familiarity_status:
+    displayName: 熟悉度
+  formula.priority_label:
+    displayName: 複習優先度
+  formula.priority_score:
+    displayName: 優先度分數
+views:
+  - type: table
+    name: 按年分
+    groupBy:
+      property: 考題年分
+      direction: DESC
+    order:
+      - file.name
+      - title
+      - 科目
+      - tags
+      - 最新測驗得分
+      - formula.familiarity_status
+      - 已練習次數
+      - date
+      - 下次複習時間
+    limit: 200
+    columnSize:
+      note.科目: 202
+      formula.familiarity_status: 79
+  - type: table
+    name: 🎯 按熟悉度
+    groupBy:
+      property: formula.priority_label
+      direction: ASC
+    order:
+      - file.name
+      - title
+      - 科目
+      - 考題年分
+      - tags
+      - 最新測驗得分
+      - 已練習次數
+      - date
+      - 下次複習時間
+    limit: 200
+  - type: table
+    name: 📊按科目
+    groupBy:
+      property: 科目
+      direction: ASC
+    order:
+      - file.name
+      - title
+      - 考題年分
+      - tags
+      - 最新測驗得分
+      - formula.familiarity_status
+      - date
+      - 下次複習時間
+    limit: 200
+    summaries:
+      formula.subject_count: Unique
+  - type: calendar
+    name: 複習月曆
+    order:
+      - file.name
+      - tags
+    startDate: note.下次複習時間

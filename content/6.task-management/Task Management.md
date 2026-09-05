@@ -4,15 +4,15 @@ aliases:
   - 任務管理
 title: 任務管理
 created: 2026-09-05T04:26:53.597Z
-modified: 2026-09-05T04:56:36.494Z
-published: 2026-09-05T04:56:36.494Z
+modified: 2026-09-05T12:11:47.887Z
+published: 2026-09-05T12:11:47.887Z
 parent:
 sibling:
   - "[[Task-management-workflow]]"
 child:
 本月完成考古題參考答案: 0
 本月卡片盒筆記回顧: 0
-本月英文測驗練習: 10
+本月英文測驗練習: 11
 本月考古題練習_月初基準: 0
 ---
 

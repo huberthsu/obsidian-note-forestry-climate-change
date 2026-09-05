@@ -1,0 +1,8 @@
+filters:
+  or:
+    - category.contains(link("English learning notes"))
+    - category.contains(link("Exam notes"))
+    - file.name == "Task Management"
+views:
+  - type: chart
+    name: 本月統計圖表

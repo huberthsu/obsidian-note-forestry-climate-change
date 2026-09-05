@@ -4,8 +4,8 @@ aliases:
   - 任務管理
 title: 任務管理
 created: 2026-09-05T04:26:53.597Z
-modified: 2026-09-05T04:26:53.598Z
-published: 2026-09-05T04:26:53.598Z
+modified: 2026-09-05T04:45:27.627Z
+published: 2026-09-05T04:45:27.627Z
 parent:
 sibling:
   - "[[Task-management-workflow]]"
@@ -96,8 +96,7 @@ card_fields: item
 
 ## 網站專用圖表
 
-> [!note] 這個 view 只給網站用，Obsidian 裡會顯示「不支援的檢視類型」，正常現象
-> ![[本月統計圖表bases.base#本月統計圖表]]
+![[本月統計圖表bases.base#本月統計圖表]]
 
 ## 詳細統計與內容
 

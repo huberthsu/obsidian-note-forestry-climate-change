@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-08-31T08:51:42.590Z
+modified: 2026-09-05T13:37:41.501Z
 published: 2026-08-31
 tags:
   - 日常
@@ -45,7 +45,7 @@ date: 2026-08-31
 ## Collocations
 
 - supervise+(n)
-- under the supervision of...：在……的監督/指導之下
+- under the supervision of+someone：在某人/組織機構的監督/指導之下
 - close / constant supervision：嚴密的/持續的監督
 - lack of supervision：缺乏監督
 

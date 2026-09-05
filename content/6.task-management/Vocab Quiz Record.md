@@ -3,9 +3,9 @@ publish: true
 aliases:
   - 英文測驗紀錄
 title: 英文測驗紀錄
-created: 2026-09-05T12:18:18.002Z
-modified: 2026-09-05T12:18:44.158Z
-published: 2026-09-05T12:18:44.158Z
+created: 2026-09-05T13:34:39.370Z
+modified: 2026-09-05T13:34:39.371Z
+published: 2026-09-05T13:34:39.371Z
 ---
 
 # 英文測驗紀錄
@@ -18,7 +18,7 @@ published: 2026-09-05T12:18:44.158Z
 | [[verify]]                 | 0    | ✅    |                          |
 | [[scrutinize]]             | 0    | ✅    |                          |
 | [[modify]]                 | 0    | ✅    |                          |
-| [[persist]]                | 1    | ❌    | 翻譯時介係詞搭配錯誤               |
+| [[persist]]                | 1    | ✅    | 翻譯時介係詞搭配錯誤               |
 | [[devise]]                 | 0    | ✅    |                          |
 | [[predominate]]            | 0    | ✅    |                          |
 | [[strike a balance]]       | 0    | ✅    |                          |
@@ -62,3 +62,7 @@ published: 2026-09-05T12:18:44.158Z
 | [[a bull in a china shop]] | 0    | ✅    |                          |
 | [[commend]]                | 1    | ❌    |                          |
 | [[prominent]]              | 0    | ✅    |                          |
+| [[A backseat driver]]      | 0    | ✅    |                          |
+| [[It comes down to]]       | 0    | ✅    |                          |
+| [[a know it all]]          | 0    | ✅    |                          |
+| [[a big shot]]             | 0    | ✅    |                          |

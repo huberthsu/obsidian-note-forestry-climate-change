@@ -2,6 +2,7 @@ filters:
   and:
     - file.inFolder("2.personal-notes/exam-notes")
     - file.ext == "md"
+    - file.name != "index"
 formulas:
   actual_familiarity: |
     if(note.熟悉度評級 == null, "待評估",

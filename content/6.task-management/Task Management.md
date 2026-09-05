@@ -4,8 +4,8 @@ aliases:
   - 任務管理
 title: 任務管理
 created: 2026-09-05T04:26:53.597Z
-modified: 2026-09-05T13:25:48.890Z
-published: 2026-09-05T13:25:48.890Z
+modified: 2026-09-05T18:24:33.789Z
+published: 2026-09-05T18:24:33.789Z
 parent:
 sibling:
   - "[[Task-management-workflow]]"
@@ -64,12 +64,13 @@ card_fields: item
 | 2 | 考古題練習 | 未開始 |
 | 4v86xtmh | 卡片盒筆記回顧 | 未開始 |
 | esvw0v6k | 英文測驗練習 | 未開始 |
-| rvcdaf43 | 任務紀錄工作流 | 已完成 |
+| yruals0a | 介係詞搭配是否有規律 | 進行中 |
 ```
 
-## 其他雜事
+## 其他
 
 - [[其他雜事kanban]]
+- [[Temporary record of questions and thoughts|暫時紀錄的問題與想法]]
 
 ---
 

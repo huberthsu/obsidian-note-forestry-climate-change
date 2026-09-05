@@ -3,66 +3,66 @@ publish: true
 aliases:
   - 英文測驗紀錄
 title: 英文測驗紀錄
-created: 2026-09-05T13:34:39.370Z
-modified: 2026-09-05T13:34:39.371Z
-published: 2026-09-05T13:34:39.371Z
+created: 2026-09-05T18:21:32.539Z
+modified: 2026-09-05T18:22:11.504Z
+published: 2026-09-05T18:22:11.504Z
 ---
 
 # 英文測驗紀錄
 
-| 單字/片語                      | 答錯次數 | 上次結果 | 檢討                       |
-| -------------------------- | ---- | ---- | ------------------------ |
-| [[attempt]]                | 0    | ✅    |                          |
-| [[effortless]]             | 0    | ✅    |                          |
-| [[retain]]                 | 0    | ✅    |                          |
-| [[verify]]                 | 0    | ✅    |                          |
-| [[scrutinize]]             | 0    | ✅    |                          |
-| [[modify]]                 | 0    | ✅    |                          |
-| [[persist]]                | 1    | ✅    | 翻譯時介係詞搭配錯誤               |
-| [[devise]]                 | 0    | ✅    |                          |
-| [[predominate]]            | 0    | ✅    |                          |
-| [[strike a balance]]       | 0    | ✅    |                          |
-| [[go hand in hand]]        | 0    | ✅    |                          |
-| [[a go-getter]]            | 0    | ✅    |                          |
-| [[commence]]               | 2    | ✅    | 和[[commend]]搞混；時間介係詞搭配錯誤 |
-| [[ensure]]                 | 0    | ✅    |                          |
-| [[reflect on]]             | 0    | ✅    |                          |
-| [[discard]]                | 0    | ✅    |                          |
-| [[feasible]]               | 0    | ✅    |                          |
-| [[contemporary]]           | 0    | ✅    |                          |
-| [[inspect]]                | 0    | ✅    |                          |
-| [[fruitful]]               | 0    | ✅    |                          |
-| [[postpone]]               | 0    | ✅    |                          |
-| [[inquire]]                | 0    | ✅    |                          |
-| [[deplete]]                | 0    | ✅    |                          |
-| [[in two minds]]           | 0    | ✅    |                          |
-| [[clarify]]                | 0    | ✅    |                          |
-| [[reside]]                 | 0    | ✅    |                          |
-| [[refine]]                 | 0    | ✅    |                          |
-| [[yield]]                  | 1    | ✅    | yield to...on...用法錯誤     |
-| [[dispute]]                | 2    | ❌    | 介係詞搭配錯誤                  |
-| [[discrepancy]]            | 0    | ✅    |                          |
-| [[insure]]                 | 0    | ✅    |                          |
-| [[a worrywart]]            | 0    | ✅    |                          |
-| [[a jack of all trades]]   | 0    | ✅    |                          |
-| [[an extension]]           | 0    | ✅    |                          |
-| [[investigate]]            | 0    | ✅    |                          |
-| [[consult]]                | 0    | ✅    |                          |
-| [[detrimental]]            | 0    | ✅    |                          |
-| [[alleviate]]              | 0    | ✅    |                          |
-| [[paradigm]]               | 0    | ✅    |                          |
-| [[A couch potato]]         | 0    | ✅    |                          |
-| [[proponent]]              | 0    | ✅    |                          |
-| [[deteriorate]]            | 0    | ✅    |                          |
-| [[supervise]]              | 2    | ❌    | 詞性使用上判斷錯誤                |
-| [[recommend]]              | 0    | ✅    |                          |
-| [[assure]]                 | 0    | ✅    |                          |
-| [[cease]]                  | 0    | ✅    |                          |
-| [[proceed]]                | 0    | ✅    |                          |
-| [[a bull in a china shop]] | 0    | ✅    |                          |
-| [[commend]]                | 1    | ❌    |                          |
-| [[prominent]]              | 0    | ✅    |                          |
-| [[A backseat driver]]      | 0    | ✅    |                          |
-| [[It comes down to]]       | 0    | ✅    |                          |
-| [[a know it all]]          | 0    | ✅    |                          |
-| [[a big shot]]             | 0    | ✅    |                          |
+| 單字/片語                      | 答錯次數 | 上次結果 | 最近測驗日期     | 檢討                       |
+| -------------------------- | ---- | ---- | ---------- | ------------------------ |
+| [[attempt]]                | 0    | ✅    | 2026-09-02 |                          |
+| [[effortless]]             | 0    | ✅    | 2026-09-02 |                          |
+| [[retain]]                 | 0    | ✅    | 2026-09-02 |                          |
+| [[verify]]                 | 0    | ✅    | 2026-09-02 |                          |
+| [[scrutinize]]             | 0    | ✅    | 2026-09-02 |                          |
+| [[modify]]                 | 0    | ✅    | 2026-09-02 |                          |
+| [[persist]]                | 1    | ✅    | 2026-09-02 | 翻譯時介係詞搭配錯誤               |
+| [[devise]]                 | 0    | ✅    | 2026-09-02 |                          |
+| [[predominate]]            | 0    | ✅    | 2026-09-02 |                          |
+| [[strike a balance]]       | 0    | ✅    | 2026-09-02 |                          |
+| [[go hand in hand]]        | 0    | ✅    | 2026-09-02 |                          |
+| [[a go-getter]]            | 0    | ✅    | 2026-09-02 |                          |
+| [[commence]]               | 2    | ✅    | 2026-09-02 | 和[[commend]]搞混；時間介係詞搭配錯誤 |
+| [[ensure]]                 | 0    | ✅    | 2026-09-02 |                          |
+| [[reflect on]]             | 0    | ✅    | 2026-09-02 |                          |
+| [[discard]]                | 0    | ✅    | 2026-09-02 |                          |
+| [[feasible]]               | 0    | ✅    | 2026-09-02 |                          |
+| [[contemporary]]           | 0    | ✅    | 2026-09-02 |                          |
+| [[inspect]]                | 0    | ✅    | 2026-09-02 |                          |
+| [[fruitful]]               | 0    | ✅    | 2026-09-02 |                          |
+| [[postpone]]               | 0    | ✅    | 2026-09-02 |                          |
+| [[inquire]]                | 0    | ✅    | 2026-09-02 |                          |
+| [[deplete]]                | 0    | ✅    | 2026-09-02 |                          |
+| [[in two minds]]           | 0    | ✅    | 2026-09-02 |                          |
+| [[clarify]]                | 0    | ✅    | 2026-09-02 |                          |
+| [[reside]]                 | 0    | ✅    | 2026-09-02 |                          |
+| [[refine]]                 | 0    | ✅    | 2026-09-02 |                          |
+| [[yield]]                  | 1    | ✅    | 2026-09-02 | yield to...on...用法錯誤     |
+| [[dispute]]                | 2    | ❌    | 2026-09-02 | 介係詞搭配錯誤                  |
+| [[discrepancy]]            | 0    | ✅    | 2026-09-02 |                          |
+| [[insure]]                 | 0    | ✅    | 2026-09-02 |                          |
+| [[a worrywart]]            | 0    | ✅    | 2026-09-02 |                          |
+| [[a jack of all trades]]   | 0    | ✅    | 2026-09-02 |                          |
+| [[an extension]]           | 0    | ✅    | 2026-09-02 |                          |
+| [[investigate]]            | 0    | ✅    | 2026-09-02 |                          |
+| [[consult]]                | 0    | ✅    | 2026-09-02 |                          |
+| [[detrimental]]            | 0    | ✅    | 2026-09-02 |                          |
+| [[alleviate]]              | 0    | ✅    | 2026-09-02 |                          |
+| [[paradigm]]               | 0    | ✅    | 2026-09-02 |                          |
+| [[A couch potato]]         | 0    | ✅    | 2026-09-02 |                          |
+| [[proponent]]              | 0    | ✅    | 2026-09-02 |                          |
+| [[deteriorate]]            | 0    | ✅    | 2026-09-02 |                          |
+| [[supervise]]              | 2    | ❌    | 2026-09-02 | 詞性使用上判斷錯誤；介係詞搭配錯誤        |
+| [[recommend]]              | 0    | ✅    | 2026-09-02 |                          |
+| [[assure]]                 | 0    | ✅    | 2026-09-02 |                          |
+| [[cease]]                  | 0    | ✅    | 2026-09-02 |                          |
+| [[proceed]]                | 0    | ✅    | 2026-09-02 |                          |
+| [[a bull in a china shop]] | 0    | ✅    | 2026-09-02 |                          |
+| [[commend]]                | 1    | ❌    | 2026-09-02 |                          |
+| [[prominent]]              | 0    | ✅    | 2026-09-02 |                          |
+| [[A backseat driver]]      | 0    | ✅    | 2026-09-02 |                          |
+| [[It comes down to]]       | 0    | ✅    | 2026-09-02 |                          |
+| [[a know it all]]          | 0    | ✅    | 2026-09-02 |                          |
+| [[a big shot]]             | 0    | ✅    | 2026-09-02 |                          |

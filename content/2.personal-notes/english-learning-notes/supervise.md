@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-05T13:37:41.501Z
+modified: 2026-09-05T18:09:30.846Z
 published: 2026-08-31
 tags:
   - 日常
@@ -54,3 +54,4 @@ date: 2026-08-31
 ## Examples
 
 - He completed the research under the supervision of Professor Huang.
+- The professor constantly supervises her students throughout their research.

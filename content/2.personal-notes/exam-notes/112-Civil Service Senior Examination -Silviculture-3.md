@@ -2,11 +2,12 @@
 publish: true
 title: 修枝與疏伐作業對造林木形質及產量之影響
 created: 2026-09-05T08:14:00.123Z
-modified: 2026-09-05T08:14:00.123Z
-published: 2026-09-05T08:14:00.123Z
+modified: 2026-09-05T14:25:21.189Z
+published: 2026-09-05T14:25:21.189Z
+tags:
+  - 疏伐
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2023
 高考普考特考:
   - 高考

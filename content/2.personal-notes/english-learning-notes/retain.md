@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-28
-modified: 2026-09-06T05:14:26.325Z
+modified: 2026-09-06T08:45:16.844Z
 published: 2026-08-28
 category:
   - "[[English learning notes]]"
@@ -40,7 +40,7 @@ date: 2026-08-28
 
 ## Synonyms/Related phrase
 
-- keep
+- keep, preserve
 
 ---
 

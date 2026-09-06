@@ -4,15 +4,15 @@ aliases:
   - 任務管理
 title: 任務管理
 created: 2026-09-05T04:26:53.597Z
-modified: 2026-09-06T05:00:03.643Z
-published: 2026-09-06T05:00:03.643Z
+modified: 2026-09-06T14:30:08.538Z
+published: 2026-09-06T14:30:08.538Z
 parent:
 sibling:
   - "[[Task-management-workflow]]"
 child:
 本月完成考古題參考答案: 0
 本月卡片盒筆記回顧: 0
-本月英文測驗練習: 13
+本月英文測驗練習: 14
 本月考古題練習_月初基準: 0
 ---
 
@@ -65,6 +65,7 @@ card_fields: item
 | 4v86xtmh | 卡片盒筆記回顧 | 未開始 |
 | esvw0v6k | 英文測驗練習 | 未開始 |
 | yruals0a | 介係詞搭配是否有規律 | 已完成 |
+| m780p5pk | 更新英文學習筆記工作流(加入ai agent的候選庫) | 進行中 |
 ```
 
 ## 其他

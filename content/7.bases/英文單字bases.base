@@ -11,4 +11,3 @@ views:
     order:
       - file.name
       - Chinese translation
-      - tags

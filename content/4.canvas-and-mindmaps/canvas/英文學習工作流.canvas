@@ -1,11 +1,12 @@
 {
 	"nodes":[
 		{"id":"a5835368cca10487","type":"group","x":-8120,"y":4040,"width":2200,"height":1640,"label":"英文學習系統"},
+		{"id":"2a15d99b942cdcef","type":"group","x":-9220,"y":4400,"width":860,"height":780,"label":"來源"},
 		{"id":"c8feae33e9e4d382","type":"group","x":-6860,"y":4520,"width":700,"height":584,"color":"6","label":"claudian"},
-		{"id":"75f4870cd2f3af9c","type":"group","x":-8880,"y":4692,"width":480,"height":228,"color":"6","label":"擷取網路文章、下載網路影片與逐字稿"},
-		{"id":"e2761c56fb863f4a","type":"group","x":-7520,"y":5400,"width":514,"height":133,"color":"6","label":"調整影片播放位置、建立影片時間戳記"},
+		{"id":"75f4870cd2f3af9c","type":"group","x":-9170,"y":4520,"width":760,"height":292,"color":"6","label":"擷取網路文章、下載網路影片與逐字稿"},
+		{"id":"88cc2d0bf41745dd","type":"group","x":-9170,"y":4964,"width":760,"height":140,"color":"6","label":"claudian建立單字/片語群組比較"},
+		{"id":"e2761c56fb863f4a","type":"group","x":-7520,"y":4160,"width":514,"height":133,"color":"6","label":"調整影片播放位置、建立影片時間戳記"},
 		{"id":"29829b2c18428ef5","type":"text","text":"![[English study notes template|英文學習筆記模板]]","x":-7520,"y":4520,"width":514,"height":584,"color":"5"},
-		{"id":"fcf7ff3f34ec958b","type":"text","text":"Obsidian Web Clipper","x":-8760,"y":4769,"width":250,"height":60},
 		{
 			"id":"a22222159694bae1",
 			"type":"text",
@@ -26,7 +27,6 @@
 			"width":260,
 			"height":60
 		},
-		{"id":"c78415c1aadb41e5","type":"text","text":"[[Timestamp note plugins]]","x":-7420,"y":5434,"width":250,"height":60},
 		{
 			"id":"4daee770d372f31d",
 			"type":"text",
@@ -47,24 +47,47 @@
 			"width":260,
 			"height":60
 		},
+		{"id":"c78415c1aadb41e5","type":"text","text":"[[Timestamp note plugins]]","x":-7380,"y":4194,"width":250,"height":60},
 		{
 			"id":"0ddc84570c417896",
 			"type":"text",
 			"text":"[[1.English words and phrases associations|英文單字片語關聯整理]]",
 			"styleAttributes":{},
 			"x":-6840,
-			"y":4579,
+			"y":4980,
 			"width":260,
 			"height":60
-		}
+		},
+		{
+			"id":"160a850364836503",
+			"type":"text",
+			"text":"[[3.English words and phrases candidate pool|英文單字片語候選詞庫]]",
+			"styleAttributes":{},
+			"x":-8680,
+			"y":4980,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"644c077ff93b71bd",
+			"type":"text",
+			"text":"claudian",
+			"styleAttributes":{},
+			"x":-9150,
+			"y":4980,
+			"width":260,
+			"height":60
+		},
+		{"id":"fcf7ff3f34ec958b","type":"text","text":"Obsidian Web Clipper","x":-9150,"y":4579,"width":250,"height":60}
 	],
 	"edges":[
-		{"id":"15e708e1755b91e1","fromFloating":false,"toFloating":false,"fromNode":"75f4870cd2f3af9c","fromSide":"right","toNode":"a22222159694bae1","toSide":"left"},
+		{"id":"15e708e1755b91e1","fromFloating":false,"toFloating":false,"fromNode":"2a15d99b942cdcef","fromSide":"right","toNode":"a22222159694bae1","toSide":"left"},
 		{
 			"id":"2be4dd519f723a25",
 			"styleAttributes":{},
 			"toFloating":false,
-			"fromNode":"75f4870cd2f3af9c",
+			"fromFloating":false,
+			"fromNode":"2a15d99b942cdcef",
 			"fromSide":"right",
 			"toNode":"2bf95eda479f4ca4",
 			"toSide":"left"
@@ -91,10 +114,11 @@
 			"id":"e43f03ce8f15dad7",
 			"styleAttributes":{},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"e2761c56fb863f4a",
-			"fromSide":"top",
+			"fromSide":"bottom",
 			"toNode":"29829b2c18428ef5",
-			"toSide":"bottom"
+			"toSide":"top"
 		},
 		{
 			"id":"cb28a7742781db3e",
@@ -122,6 +146,15 @@
 			"fromNode":"c58679ab0528ded5",
 			"fromSide":"right",
 			"toNode":"4daee770d372f31d",
+			"toSide":"left"
+		},
+		{
+			"id":"fc882d77882c42e5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"644c077ff93b71bd",
+			"fromSide":"right",
+			"toNode":"160a850364836503",
 			"toSide":"left"
 		}
 	],

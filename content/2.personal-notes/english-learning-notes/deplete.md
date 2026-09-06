@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-06T05:14:26.322Z
+modified: 2026-09-06T08:45:14.985Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -35,7 +35,7 @@ date: 2026-08-19
 
 ## Synonyms/Related phrase
 
-- use up
+- use up, drain
 
 ---
 

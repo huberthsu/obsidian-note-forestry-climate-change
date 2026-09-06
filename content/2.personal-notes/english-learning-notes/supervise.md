@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-06T05:14:26.313Z
+modified: 2026-09-06T08:45:18.718Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -36,7 +36,7 @@ date: 2026-08-31
 
 ## Synonyms/Related phrase
 
-- look after
+- look after, oversee
 
 ---
 

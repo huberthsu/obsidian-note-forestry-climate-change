@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-06T08:35:03.763Z
+modified: 2026-09-06T13:55:36.594Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
@@ -9,6 +9,16 @@ category:
 Chinese translation: 矛盾的、對立的、前後不一的
 date: 2026-09-06
 ---
+
+![](https://www.youtube.com/watch?v=had-Msv2EBM)
+
+```timestamp-url
+ https://www.youtube.com/watch?v=had-Msv2EBM
+```
+
+```timestamp
+1:09:39
+```
 
 ## Meaning
 

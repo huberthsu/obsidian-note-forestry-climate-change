@@ -1,10 +1,8 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-02T08:34:57.916Z
+modified: 2026-09-06T05:14:26.336Z
 published: 2026-09-02
-tags:
-  - 日常
 category:
   - "[[English learning notes]]"
   - 單字

@@ -1,10 +1,8 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-02T15:35:41.033Z
+modified: 2026-09-06T05:35:27.485Z
 published: 2026-08-31
-tags:
-  - 日常
 category:
   - "[[English learning notes]]"
   - 單字
@@ -43,12 +41,18 @@ date: 2026-08-31
 
 - Doable
 - possible
+- [[viable]]
+
+> [!note] 與 [[viable]] 的比較\
+> feasible 著重「技術上/實踐上是否有可能」；viable 著重「長期是否能成功、能存活」。一個計畫可能技術上 feasible（能做），但不一定經濟上 viable（能活下去）。
+> example: The business model is technically **feasible**, but it's not financially **viable** without additional investment. (這個商業模式在技術上可以實現，但沒有額外投資的話經濟上無法存活。)
 
 ---
 
 ## Collocations
 
 - It is feasible to + v: 做某事是可行的
+- ving is a feasible option/solution
 
 ---
 

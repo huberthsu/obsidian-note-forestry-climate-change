@@ -2,11 +2,14 @@
 publish: true
 title: 國有林公有林私有林之定義與經營政策
 created: 2026-09-05T08:14:35.517Z
-modified: 2026-09-05T08:14:35.517Z
-published: 2026-09-05T08:14:35.517Z
+modified: 2026-09-06T18:01:27.209Z
+published: 2026-09-06T18:01:27.209Z
+tags:
+  - 國有林
+  - 公有林
+  - 私有林
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2024
 高考普考特考:
   - 高考

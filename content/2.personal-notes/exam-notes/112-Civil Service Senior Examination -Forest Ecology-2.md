@@ -2,10 +2,11 @@
 publish: true
 title: 森林破碎化的定義、地景特徵與生態系影響
 created: 2026-09-05T08:13:44.295Z
-modified: 2026-09-05T09:19:27.250Z
-published: 2026-09-05T09:19:27.250Z
+modified: 2026-09-06T17:55:32.852Z
+published: 2026-09-06T17:55:32.852Z
 tags:
   - 破碎化
+  - 地景生態學
 category:
   - "[[Exam notes]]"
 考題年分: 2023

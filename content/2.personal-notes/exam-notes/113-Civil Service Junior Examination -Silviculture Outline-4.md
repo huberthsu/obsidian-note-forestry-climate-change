@@ -2,11 +2,13 @@
 publish: true
 title: 種植本土種與外來種之優缺點評估
 created: 2026-09-05T08:15:45.313Z
-modified: 2026-09-05T08:15:45.314Z
-published: 2026-09-05T08:15:45.314Z
+modified: 2026-09-06T17:51:38.931Z
+published: 2026-09-06T17:51:38.931Z
+tags:
+  - 外來種
+  - 原生種
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2024
 高考普考特考:
   - 普考

@@ -2,10 +2,11 @@
 publish: true
 title: 材積收穫最多之輪伐期與生長量曲線關係
 created: 2026-09-05T08:14:06.672Z
-modified: 2026-09-05T09:23:19.251Z
-published: 2026-09-05T09:23:19.251Z
+modified: 2026-09-06T18:01:46.702Z
+published: 2026-09-06T18:01:46.702Z
 tags:
   - 輪伐期
+  - 材積
 category:
   - "[[Exam notes]]"
 考題年分: 2023

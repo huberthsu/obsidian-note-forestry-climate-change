@@ -2,11 +2,13 @@
 publish: true
 title: 國有林檢訂調查之航空測計與地面調查
 created: 2026-09-05T08:15:58.997Z
-modified: 2026-09-05T08:15:58.998Z
-published: 2026-09-05T08:15:58.998Z
+modified: 2026-09-06T18:11:55.768Z
+published: 2026-09-06T18:11:55.768Z
+tags:
+  - 國有林
+  - 遙測
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2024
 高考普考特考:
   - 普考

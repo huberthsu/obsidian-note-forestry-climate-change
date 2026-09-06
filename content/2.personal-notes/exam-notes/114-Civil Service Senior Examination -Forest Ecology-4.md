@@ -2,13 +2,13 @@
 publish: true
 title: 森林界線樹木界線林木界線與邊緣效應之關係
 created: 2026-09-05T08:13:53.244Z
-modified: 2026-09-05T10:00:52.656Z
-published: 2026-09-05T10:00:52.656Z
+modified: 2026-09-06T17:54:32.117Z
+published: 2026-09-06T17:54:32.117Z
 tags:
-  - 森臨界線
   - 樹木界線
   - 林木界線
   - 邊緣效應
+  - 森林界線
 category:
   - "[[Exam notes]]"
 考題年分: 2025

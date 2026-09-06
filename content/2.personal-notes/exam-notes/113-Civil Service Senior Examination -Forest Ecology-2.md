@@ -2,11 +2,12 @@
 publish: true
 title: 風對林木分布與生長之效應與危害
 created: 2026-09-05T08:13:52.623Z
-modified: 2026-09-05T08:13:52.625Z
-published: 2026-09-05T08:13:52.625Z
+modified: 2026-09-06T17:54:51.861Z
+published: 2026-09-06T17:54:51.861Z
+tags:
+  - 風
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2024
 高考普考特考:
   - 高考

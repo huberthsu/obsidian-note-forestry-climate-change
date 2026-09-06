@@ -2,10 +2,11 @@
 publish: true
 title: 多目標經營衝突下之空間分區與時間交錯因應
 created: 2026-09-05T14:07:43.263Z
-modified: 2026-09-05T14:26:23.910Z
-published: 2026-09-05T14:26:23.910Z
+modified: 2026-09-06T17:59:57.804Z
+published: 2026-09-06T17:59:57.804Z
 tags:
   - 生態系統服務功能
+  - 森林經營目標
 category:
   - "[[Exam notes]]"
 考題年分: 2026

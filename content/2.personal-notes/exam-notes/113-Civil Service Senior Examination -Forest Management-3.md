@@ -2,11 +2,12 @@
 publish: true
 title: 法正林生長量與蓄積量比值之推導
 created: 2026-09-05T08:14:31.093Z
-modified: 2026-09-05T08:14:31.093Z
-published: 2026-09-05T08:14:31.093Z
+modified: 2026-09-06T18:01:07.688Z
+published: 2026-09-06T18:01:07.688Z
+tags:
+  - 法正林
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2024
 高考普考特考:
   - 高考

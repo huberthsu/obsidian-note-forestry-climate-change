@@ -2,12 +2,10 @@
 publish: true
 title: 臺灣常見叢生型經濟竹種及其用途與經營管理方式
 created: 2026-09-05T08:15:59.644Z
-modified: 2026-09-05T09:56:19.820Z
-published: 2026-09-05T09:56:19.820Z
+modified: 2026-09-06T18:03:33.467Z
+published: 2026-09-06T18:03:33.467Z
 tags:
   - 竹林
-  - 散生型
-  - 叢生型
 category:
   - "[[Exam notes]]"
 考題年分: 2025

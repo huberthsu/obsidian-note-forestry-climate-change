@@ -2,11 +2,12 @@
 publish: true
 title: 林地區劃之層級與經營應用
 created: 2026-09-05T08:15:51.957Z
-modified: 2026-09-05T08:15:51.957Z
-published: 2026-09-05T08:15:51.957Z
+modified: 2026-09-06T18:08:57.417Z
+published: 2026-09-06T18:08:57.417Z
+tags:
+  - 林地區劃
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2024
 高考普考特考:
   - 普考

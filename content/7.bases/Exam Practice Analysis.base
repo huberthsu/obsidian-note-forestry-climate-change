@@ -92,6 +92,9 @@ views:
       - formula.familiarity_status
       - date
       - 下次複習時間
+    sort:
+      - property: 考題年分
+        direction: DESC
     limit: 200
     summaries:
       formula.subject_count: Unique

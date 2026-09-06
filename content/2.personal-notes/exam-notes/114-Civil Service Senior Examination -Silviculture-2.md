@@ -2,10 +2,11 @@
 publish: true
 title: 林木樹冠級運用於疏伐作業及疏伐後林分結構變化
 created: 2026-09-05T08:14:00.732Z
-modified: 2026-09-05T10:03:36.055Z
-published: 2026-09-05T10:03:36.055Z
+modified: 2026-09-06T17:46:48.570Z
+published: 2026-09-06T17:46:48.570Z
 tags:
   - 森林結構
+  - 疏伐
 category:
   - "[[Exam notes]]"
 考題年分: 2025

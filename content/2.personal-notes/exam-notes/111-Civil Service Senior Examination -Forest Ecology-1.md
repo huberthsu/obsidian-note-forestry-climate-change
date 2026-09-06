@@ -2,10 +2,11 @@
 publish: true
 title: 外來入侵植物的生物學特性
 created: 2026-09-05T08:13:30.891Z
-modified: 2026-09-05T08:32:58.509Z
-published: 2026-09-05T08:32:58.509Z
+modified: 2026-09-06T17:56:00.346Z
+published: 2026-09-06T17:56:00.346Z
 tags:
   - 外來入侵種
+  - 外來種
 category:
   - "[[Exam notes]]"
 考題年分: 2022

@@ -2,11 +2,12 @@
 publish: true
 title: 指標植物選擇之要件
 created: 2026-09-05T08:13:49.273Z
-modified: 2026-09-05T08:13:49.274Z
-published: 2026-09-05T08:13:49.274Z
+modified: 2026-09-06T17:54:41.282Z
+published: 2026-09-06T17:54:41.282Z
+tags:
+  - 指標植物
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2024
 高考普考特考:
   - 高考

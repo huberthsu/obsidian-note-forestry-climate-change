@@ -2,11 +2,12 @@
 publish: true
 title: 依林型狀況與土地用途劃分之森林區劃種類
 created: 2026-09-05T08:15:55.849Z
-modified: 2026-09-05T08:15:55.850Z
-published: 2026-09-05T08:15:55.850Z
+modified: 2026-09-06T18:08:54.833Z
+published: 2026-09-06T18:08:54.833Z
+tags:
+  - 森林區劃
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2025
 高考普考特考:
   - 普考

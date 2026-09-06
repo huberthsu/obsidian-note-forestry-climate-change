@@ -2,11 +2,12 @@
 publish: true
 title: 臺灣油杉自然族群更新問題與育苗技術改善
 created: 2026-09-05T08:15:37.475Z
-modified: 2026-09-05T08:15:37.476Z
-published: 2026-09-05T08:15:37.476Z
+modified: 2026-09-06T17:48:24.943Z
+published: 2026-09-06T17:48:24.943Z
+tags:
+  - 裸子植物
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2025
 高考普考特考:
   - 普考

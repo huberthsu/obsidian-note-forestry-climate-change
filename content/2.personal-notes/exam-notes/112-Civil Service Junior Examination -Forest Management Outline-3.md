@@ -2,11 +2,12 @@
 publish: true
 title: 名目利率與實質利率於林業經濟折現分析之應用
 created: 2026-09-05T08:15:31.777Z
-modified: 2026-09-05T08:15:31.778Z
-published: 2026-09-05T08:15:31.778Z
+modified: 2026-09-06T18:14:15.997Z
+published: 2026-09-06T18:14:15.997Z
+tags:
+  - 林業經濟學
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2023
 高考普考特考:
   - 普考

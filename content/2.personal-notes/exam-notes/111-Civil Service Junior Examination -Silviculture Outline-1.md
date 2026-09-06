@@ -2,11 +2,13 @@
 publish: true
 title: 速生樹種特性與本土樹種應用價值
 created: 2026-09-05T08:15:10.359Z
-modified: 2026-09-05T08:15:10.359Z
-published: 2026-09-05T08:15:10.359Z
+modified: 2026-09-06T17:51:44.469Z
+published: 2026-09-06T17:51:44.469Z
+tags:
+  - 速生樹種
+  - 原生種
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2022
 高考普考特考:
   - 普考

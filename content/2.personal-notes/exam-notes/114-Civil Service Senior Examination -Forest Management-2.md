@@ -2,10 +2,10 @@
 publish: true
 title: 森林療癒之定義臺灣現況與未來契機挑戰
 created: 2026-09-05T08:14:21.768Z
-modified: 2026-09-05T10:01:20.970Z
-published: 2026-09-05T10:01:20.970Z
+modified: 2026-09-06T17:59:35.844Z
+published: 2026-09-06T17:59:35.844Z
 tags:
-  - 森林療育
+  - 森林療癒
 category:
   - "[[Exam notes]]"
 考題年分: 2025

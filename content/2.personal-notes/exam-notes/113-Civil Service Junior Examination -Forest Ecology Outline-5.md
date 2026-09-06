@@ -2,11 +2,12 @@
 publish: true
 title: 森林土壤地表有機層之分層
 created: 2026-09-05T08:15:29.421Z
-modified: 2026-09-05T08:15:29.422Z
-published: 2026-09-05T08:15:29.422Z
+modified: 2026-09-06T17:58:18.797Z
+published: 2026-09-06T17:58:18.797Z
+tags:
+  - 土壤剖面
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2024
 高考普考特考:
   - 普考

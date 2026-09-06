@@ -2,11 +2,12 @@
 publish: true
 title: 林木經營區之經營目標與規劃因子
 created: 2026-09-05T08:14:20.578Z
-modified: 2026-09-05T08:14:20.579Z
-published: 2026-09-05T08:14:20.579Z
+modified: 2026-09-06T18:00:50.016Z
+published: 2026-09-06T18:00:50.016Z
+tags:
+  - 森林經營目標
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2024
 高考普考特考:
   - 高考

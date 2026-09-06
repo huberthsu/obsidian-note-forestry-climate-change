@@ -2,11 +2,12 @@
 publish: true
 title: 高碳匯造林樹種之學名科名分布與鑑定特徵
 created: 2026-09-05T08:13:40.827Z
-modified: 2026-09-05T09:59:22.227Z
-published: 2026-09-05T09:59:22.227Z
+modified: 2026-09-06T17:54:15.454Z
+published: 2026-09-06T17:54:15.454Z
+tags:
+  - 森林碳匯
 category:
   - "[[Exam notes]]"
-tags:
 考題年分: 2025
 高考普考特考:
   - 高考

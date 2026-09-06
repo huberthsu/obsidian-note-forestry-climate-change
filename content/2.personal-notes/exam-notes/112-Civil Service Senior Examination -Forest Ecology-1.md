@@ -2,10 +2,11 @@
 publish: true
 title: Shannon's diversity 指數計算與森林病害傳播控制能力評估
 created: 2026-09-05T08:13:41.025Z
-modified: 2026-09-05T09:18:58.088Z
-published: 2026-09-05T09:18:58.088Z
+modified: 2026-09-06T17:55:20.401Z
+published: 2026-09-06T17:55:20.401Z
 tags:
   - 生物多樣性
+  - 病蟲害
 category:
   - "[[Exam notes]]"
 考題年分: 2023

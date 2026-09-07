@@ -1,0 +1,55 @@
+---
+publish: true
+created: 2026-09-07
+modified: 2026-09-07T12:26:54.286Z
+published: 2026-09-07
+category:
+  - "[[English learning notes]]"
+  - 單字
+Chinese translation: 深思、沉思
+date: 2026-09-07
+---
+
+## Meaning
+
+- To think about something deeply and carefully; to consider something for a long time.
+- To think about a possible future action or event.
+- (Philosophy/Religion) To meditate on or consider carefully.
+
+---
+
+## Word Family
+
+- contemplation(n) 沉思、冥想、深思
+- contemplative(adj) 沉思的、思考的、冥想的
+- contemplatively(adv) 沉思地、冥想地
+
+---
+
+## Synonyms/Related phrase
+
+- [[reflect on]] — 反思、思考（回顧過去）
+- [[ponder]] — 思考、琢磨（對當下問題的琢磨）
+- muse — 沉思、漫想（悠閒式的思考）
+- meditate — 冥想、思考
+
+> [!note] 群組比較
+> 詳見 [[1.English words and phrases associations#reflect-on--contemplate--ponder--muse|同主題群組：深思/反思]]（與 [[reflect on]]、[[ponder]]、muse 比較）
+
+---
+
+## Collocations
+
+- contemplate + n(future/life/meaning/possibility): 深思...
+- contemplate V-ing something: 考慮做某事
+- quietly/seriously contemplate:  默默地/認真地沉思
+- sit and contemplate:  坐著沉思
+- too...to+contemplate: 太...到令人不敢想像
+
+---
+
+## Examples
+
+- As I quietly contemplate the future, I am seriously contemplating the possibility of moving to another city.
+
+---

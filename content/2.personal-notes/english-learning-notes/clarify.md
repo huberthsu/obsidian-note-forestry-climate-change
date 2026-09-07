@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-06T05:14:26.319Z
+modified: 2026-09-07T13:59:06.055Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -38,6 +38,9 @@ date: 2026-08-31
 - explain
 - Elaborate
 - Explicate
+
+> [!note] 群組比較
+> 詳見 [[1.English words and phrases associations#說明闡明|同主題群組：說明/闡明]]（與 [[explicate]]、explain、[[elaborate]] 比較）
 
 ---
 

@@ -4,8 +4,8 @@ aliases:
   - 任務管理
 title: 任務管理
 created: 2026-09-05T04:26:53.597Z
-modified: 2026-09-07T14:49:22.071Z
-published: 2026-09-07T14:49:22.071Z
+modified: 2026-09-07T17:38:30.145Z
+published: 2026-09-07T17:38:30.145Z
 parent:
 sibling:
   - "[[Task-management-workflow]]"
@@ -96,7 +96,7 @@ card_fields: item
 | ------- | --------- | ----- | ------- | ------ |
 | 2026-09 |           |       |         |        |
 
-## 網站專用圖表
+## 網站專用-本月統計圖表
 
 ![[本月統計圖表bases.base#本月統計圖表]]
 

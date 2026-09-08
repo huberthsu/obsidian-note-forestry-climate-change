@@ -1,0 +1,16 @@
+filters:
+  and:
+    - category.contains(link("Explanation notes"))
+    - '!file.inFolder("5.templates")'
+    - '!file.inFolder("5.templates-for-web")'
+views:
+  - type: table
+    name: 外掛與功能說明
+    filters:
+      and:
+        - category.contains("Plugin and features")
+  - type: table
+    name: 工作流與系統
+    filters:
+      and:
+        - category.contains("Workflow and system")

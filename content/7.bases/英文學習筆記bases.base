@@ -1,0 +1,16 @@
+filters:
+  and:
+    - category.contains(link("English learning notes"))
+    - '!file.inFolder("5.templates-for-web")'
+    - '!file.inFolder("5.templates")'
+views:
+  - type: table
+    name: 單字bases
+    filters:
+      and:
+        - category.contains("單字")
+  - type: table
+    name: 片語bases
+    filters:
+      and:
+        - category.contains("片語")

@@ -4,8 +4,8 @@ aliases:
   - 任務管理
 title: 任務管理
 created: 2026-09-05T04:26:53.597Z
-modified: 2026-09-07T17:38:30.145Z
-published: 2026-09-07T17:38:30.145Z
+modified: 2026-09-08T15:58:38.417Z
+published: 2026-09-08T15:58:38.417Z
 parent:
 sibling:
   - "[[Task-management-workflow]]"
@@ -64,8 +64,6 @@ card_fields: item
 | 2 | 考古題練習 | 未開始 |
 | 4v86xtmh | 卡片盒筆記回顧 | 未開始 |
 | esvw0v6k | 英文測驗練習 | 未開始 |
-| yruals0a | 介係詞搭配是否有規律 | 已完成 |
-| m780p5pk | 更新英文學習筆記工作流(加入ai agent的候選庫) | 進行中 |
 ```
 
 ## 其他

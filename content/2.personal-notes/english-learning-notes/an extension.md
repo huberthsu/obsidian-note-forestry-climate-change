@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-06T05:14:26.314Z
+modified: 2026-09-09T14:07:06.024Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -27,6 +27,11 @@ date: 2026-08-31
 ---
 
 ## Word Family
+
+- 字根 tend/tens（伸展，源自拉丁 tendere）— extension = ex(向外) + tend = 向外伸展
+  - attend(v)參加、照料 — ad(向) + tend
+  - intend(v)打算 — in(向內) + tend
+  - tension(n)緊繃、張力 — tend 的名詞形
 
 ---
 

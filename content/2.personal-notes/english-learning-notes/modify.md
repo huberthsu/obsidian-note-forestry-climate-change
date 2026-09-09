@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-06T05:14:26.324Z
+modified: 2026-09-09T14:08:21.288Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -31,6 +31,10 @@ date: 2026-08-19
 - modified(adj)被修改的、改變的
 - modification(n)修改、改變
 - modifier(n)修飾符、修改者
+- 字根 mod（方式、限度，源自拉丁 modus）— modify = mod(限度) + fy(使...) = 使限定在某個範圍內→調整
+  - mode(n)模式 — 同源
+  - moderate(adj)適度的 — 同源
+  - module(n)模組 — 同源
 
 ---
 

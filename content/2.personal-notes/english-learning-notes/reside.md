@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-06T05:14:26.338Z
+modified: 2026-09-09T14:07:36.700Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -33,6 +33,9 @@ date: 2026-08-19
   - (n)居民
   - (adj)居住的、常駐的
 - residential (adj.)住宅區的、適合居住的
+- 字根 sid/sed（坐，源自拉丁 sedere）— reside = re(持續) + sid(坐) = 長時間坐落於某處→居住
+  - preside(v)主持 — prae(在前) + sid = 坐在前面主持
+  - subside(v)平息、下沉 — sub(向下) + sid = 坐下去
 
 ---
 

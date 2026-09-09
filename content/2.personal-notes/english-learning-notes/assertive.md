@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-09T04:32:35.821Z
+modified: 2026-09-09T14:07:51.381Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -24,6 +24,9 @@ date: 2026-09-07
 - assertively(adv) 自信果斷地、敢言地
 - assertiveness(n) 自信果斷、敢言、果斷性
 - assert(v) 主張、堅持、聲稱
+- 字根 sert（連接、排列，源自拉丁 serere）— assert = as(向) + sert = 把自己的主張擺出來
+  - insert(v)插入 — in(向內) + sert
+  - exert(v)施展、發揮 — ex(向外) + sert
 
 ---
 

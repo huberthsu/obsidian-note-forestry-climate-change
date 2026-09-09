@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-06T08:47:33.302Z
+modified: 2026-09-09T14:07:45.356Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -31,6 +31,9 @@ date: 2026-08-19
 - verification(n)驗證、核實
 - verifiable(adj)可驗證的、可証實的
 - verified(adj)已驗證的、已核實的
+- 字根 ver（真實，源自拉丁 verus）— verify = ver(真實) + fy(使...) = 使成為真實→核實
+  - verdict(n)判決 — ver + dict(說) = 說出真相
+  - aver(v)斷言、確認 — ad(向) + ver
 
 ---
 

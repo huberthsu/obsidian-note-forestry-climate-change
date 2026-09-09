@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-07T05:05:09.589Z
+modified: 2026-09-09T14:08:23.469Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -20,6 +20,9 @@ date: 2026-09-07
 
 - adeptly(adv) 熟練地、精通地
 - adeptness(n) 熟練、精通
+- 字根 apt/ept（取得、勝任，源自拉丁 apisci/aptus）— adept = ad(到達) + ept(取得) = 已經掌握到位的→熟練的
+  - inept(adj)笨拙的、不熟練的 — in(不) + ept
+  - apt(adj)恰當的、易於...的 — 同源
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-06T05:14:26.329Z
+modified: 2026-09-09T14:06:40.743Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -31,6 +31,9 @@ date: 2026-08-19
 - proceeding(n/adj)進行、訴訟程序 / 進行中的
 - proceeded(adj)已進行的
 - proceeds(n)收益、所得款項
+- 字根 cedere（行進、退出、讓步）— proceed = pro(向前) + cedere = 向前進行
+  - [[cease]]\(v)停止、終止 — 源自 cessare，同源於 cedere
+  - precede(v)在...之前發生 — pre(先) + cedere
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-06T13:10:06.843Z
+modified: 2026-09-09T14:06:44.916Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
@@ -21,6 +21,9 @@ date: 2026-09-06
 
 - arrogantly(adv)傲慢地
 - arrogance(n)傲慢、自大
+- 字根 rogare（要求、主張）— arrogant = ar(ad-的變體，向) + rog(要求) + ant(...的人/性質) = 總是要求受人注目的
+  - interrogate(v)審問、質詢 — inter(之間) + rogare
+  - prerogative(n)特權 — prae(在先) + rogativa
 
 ---
 

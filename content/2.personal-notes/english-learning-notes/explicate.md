@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-07T14:03:42.055Z
+modified: 2026-09-09T14:07:11.441Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -22,6 +22,12 @@ date: 2026-09-07
 - explication(n) 詳細說明、闡述
 - explicable(adj) 可解釋的、可說明的
 - explicitly(adv) 明確地、直言地
+- 字根 plic/plex（摺疊，源自拉丁 plicare）— explicate = ex(向外) + plic = 向外攤開摺疊的東西→闡明
+  - complicate(v)使複雜 — com(一起) + plic = 摺在一起
+  - complex(adj)複雜的 — 同源
+
+> [!note] 別跟 plere 字根搞混
+> [[deplete]] 的字根是 plere（填滿），跟 explicate 的 plic/plex（摺疊）拼字相近但字源不同，意思也不同。
 
 ---
 

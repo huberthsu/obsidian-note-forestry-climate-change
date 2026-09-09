@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-06T05:14:26.334Z
+modified: 2026-09-09T14:06:57.506Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
@@ -22,6 +22,8 @@ date: 2026-09-01
 - insurance (n.)  保險
 - insurer (n.) 保險公司、保險人
 - uninsured (adj.) 未投保的
+- 字根 sure（確定、安全）— insure = in(使...處於) + sure = 使處於安全狀態→投保
+  - 與 [[assure]]（as+sure）、[[ensure]]（en+sure）同字根，差別只在前綴
 
 ---
 

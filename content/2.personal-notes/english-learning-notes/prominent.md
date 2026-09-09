@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-06T08:47:32.431Z
+modified: 2026-09-09T14:07:29.724Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -31,6 +31,12 @@ date: 2026-08-19
 - prominence(n)突出、重要性、名氣
 - prominently(adv)突出地、著名地
 - come into prominence: 成名、嶄露頭角
+- 字根 minere（突出、伸出）— prominent = pro(向前) + min(突出) + ent = 向前突出的
+  - eminent(adj)傑出的 — e(向外) + min = 向外突出的
+  - imminent(adj)迫在眉睫的 — in(靠近) + min = 突出逼近的
+
+> [!note] 別跟 minus 的 min- 搞混
+> 這裡的 min 源自拉丁 minere（突出），跟表示「小」的 minor/diminish 的 min-（源自拉丁 minus）拼字相同但字源不同。
 
 ---
 

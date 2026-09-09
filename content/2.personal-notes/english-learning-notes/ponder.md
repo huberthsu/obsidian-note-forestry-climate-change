@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-08T09:40:50.361Z
+modified: 2026-09-09T14:08:19.291Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
@@ -22,6 +22,10 @@ date: 2026-09-08
 - ponderation(n) 思考、琢磨
 - pondering(adj) 思考的、若有所思的
 - ponderously(adv) 沉重地、沉思地
+- 字根 pond/pend（重量、懸掛，源自拉丁 pondus/pendere）— ponder 本義是秤量（想法的輕重）→仔細思考
+  - pending(adj)待定的、懸而未決的 — 同源
+  - suspend(v)暫停、懸掛 — sub(下方) + pend
+  - compensate(v)補償 — com(一起) + pens(秤重)
 
 ---
 

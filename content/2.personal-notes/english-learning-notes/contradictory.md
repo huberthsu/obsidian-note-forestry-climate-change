@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-09T04:32:40.217Z
+modified: 2026-09-09T14:07:26.191Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
@@ -31,6 +31,10 @@ date: 2026-09-06
 
 - contradict(v)反駁、牴觸
 - contradiction(n)矛盾、不一致
+- 字根 dic/dict（說，源自拉丁 dicere）— contradictory = contra(相反) + dict(說) + ory = 說相反話的
+  - dictate(v)口述、規定 — 同源
+  - predict(v)預測 — pre(事先) + dict
+  - verdict(n)判決 — ver(真實) + dict = 說出真相
 
 ---
 

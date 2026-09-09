@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-09T04:32:47.150Z
+modified: 2026-09-09T14:08:04.476Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
@@ -21,6 +21,9 @@ date: 2026-09-01
 
 - recommendation: 推薦、建議
 - recommender: 寫推薦信的人
+- 字根 mand（委託、命令，源自拉丁 mandare）— recommend = re(再次) + [[commend]]\(委託讚許) = 再次鄭重託付、推薦
+  - command(n/v)命令 — 同源
+  - demand(v)要求 — de(強烈地) + mand
 
 ---
 

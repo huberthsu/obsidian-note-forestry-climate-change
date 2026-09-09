@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-08T10:02:05.867Z
+modified: 2026-09-09T14:07:43.322Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
@@ -23,6 +23,10 @@ date: 2026-09-08
 - validity(n) 有效性、合理性
 - valid(adj) 有效的、合理的
 - validating(adj) 驗證的、確認的
+- 字根 val（強壯、有價值，源自拉丁 valere）— validate = valid(有效的) + ate = 使有效、使成立
+  - value(n)價值 — 同源
+  - prevail(v)盛行、獲勝 — prae(在先) + val
+  - equivalent(adj)相等的 — equi(相等) + val
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-07T12:36:24.072Z
+modified: 2026-09-09T14:08:26.790Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -21,6 +21,8 @@ date: 2026-09-07
 - cynicism(n) 憤世嫉俗、懷疑主義
 - cynic(n) 憤世嫉俗的人
 - cynically(adv) 憤世嫉俗地、懷疑地
+- 字根 cyn（狗，源自希臘文 kyon）— cynical 源自希臘犬儒學派（Cynics）；相傳該學派哲學家生活簡樸如狗、對世俗價值嗤之以鼻，後引申為「憤世嫉俗的」
+  - cynic(n)憤世嫉俗的人 — 同源
 
 ---
 

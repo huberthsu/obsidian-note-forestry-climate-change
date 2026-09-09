@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-06T05:35:27.485Z
+modified: 2026-09-09T14:07:21.796Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -34,6 +34,9 @@ date: 2026-08-31
 > feasibility study/report/analysis: 可行性研究/報告/分析...
 
 - feasibly(adv)可行地、可能地
+- 字根 fac/fic（做，源自拉丁 facere）— feasible 經由 facilis(容易做到的) 演變而來，與 [[facilitate]] 同源
+  - factory(n)工廠 — 製造東西的地方
+  - defect(n)缺陷 — de(偏離) + fic(做) = 做壞了
 
 ---
 

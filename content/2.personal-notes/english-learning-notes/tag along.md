@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-08T15:28:11.639Z
+modified: 2026-09-09T15:58:03.391Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
@@ -10,7 +10,7 @@ Chinese translation: (順便)跟隨、跟屁蟲
 date: 2026-09-08
 ---
 
-[[A pun on tag along]]
+[[English puns]]
 
 ## Meaning
 

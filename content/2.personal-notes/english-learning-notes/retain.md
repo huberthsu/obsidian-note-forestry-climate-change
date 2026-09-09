@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-28
-modified: 2026-09-06T08:45:16.844Z
+modified: 2026-09-09T14:07:32.124Z
 published: 2026-08-28
 category:
   - "[[English learning notes]]"
@@ -35,6 +35,10 @@ date: 2026-08-28
   - 特殊: 牙齒矯正固定器
 - retentive有保持力的、記憶力強的
   - 搭配: A retentive memory（過目不忘的記憶力）
+- 字根 ten/tain（拿、握住，源自拉丁 tenere）— retain = re(向後) + tain = 抓住不放
+  - contain(v)包含 — con(一起) + tain
+  - maintain(v)維持 — manu(手) + tain
+  - obtain(v)獲得 — ob(朝向) + tain
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-06T05:14:26.331Z
+modified: 2026-09-09T14:08:11.962Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -31,6 +31,9 @@ date: 2026-08-31
 - reflection(n)反思、思考、反映
 - reflective(adj)反思的、有思考精神的
 - reflectively(adv)深思地、沉思地
+- 字根 flect/flex（彎曲，源自拉丁 flectere）— reflect = re(向後) + flect = 向後彎折（光線反射／心思回顧）
+  - flexible(adj)有彈性的 — 同源
+  - deflect(v)使轉向、偏斜 — de(偏離) + flect
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-06T05:14:26.320Z
+modified: 2026-09-09T14:07:56.123Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -31,6 +31,9 @@ date: 2026-08-19
 - effortlessly(adv)毫不費力地、輕鬆地
 - effort(n)努力、嘗試
 - effortful(adj)費力的、需要努力的
+- 字根 fort（力量、強壯，源自拉丁 fortis）— effort = ef(向外，ex-的變體) + fort = 使出力氣；effortless 即「不費力氣的」
+  - fortify(v)強化、鞏固 — 同源
+  - comfort(n)安慰、舒適 — com(強化) + fort = 給予力量
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-06T05:14:26.340Z
+modified: 2026-09-09T14:07:38.339Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -30,6 +30,8 @@ date: 2026-08-31
 
 - investigiation(n)調查
 - investigator(n)稽查員、調查員
+- 字根 vestig（足跡，源自拉丁 vestigium）— investigate = in(向內) + vestig(足跡) + ate = 深入追蹤足跡→調查
+  - vestige(n)痕跡、遺跡 — 同源
 
 ---
 

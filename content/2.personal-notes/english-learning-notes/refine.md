@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-06T05:14:26.320Z
+modified: 2026-09-09T14:07:58.352Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -30,6 +30,9 @@ date: 2026-08-19
 
 - refinement(n)精煉、精進
 - refined(adj)精煉的、精製的
+- 字根 fin（界線、終點，源自拉丁 finis）— refine = re(反覆) + fin(終點) = 反覆提煉到最純粹的終點狀態
+  - finish(v)完成 — 同源
+  - define(v)定義 — de(劃出) + fin = 劃出界線
 
 ---
 

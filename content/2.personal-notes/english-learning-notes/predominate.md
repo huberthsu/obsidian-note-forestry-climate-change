@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-09-06T05:14:26.344Z
+modified: 2026-09-09T14:07:41.074Z
 published: 2026-08-14
 category:
   - "[[English learning notes]]"
@@ -44,6 +44,10 @@ date: 2026-08-14
 ```timestamp
 11:45
 ```
+
+- 字根 domin（主宰、支配，源自拉丁 dominus「主人」）— predominate = prae(在先) + domin(主宰) + ate = 佔主導地位
+  - dominate(v)支配、主宰 — 同源，無 prae- 前綴
+  - dominion(n)統治權、領土
 
 ---
 

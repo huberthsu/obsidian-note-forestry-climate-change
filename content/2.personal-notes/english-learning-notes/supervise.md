@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-09T04:32:34.166Z
+modified: 2026-09-09T14:06:52.372Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -31,6 +31,12 @@ date: 2026-08-31
 - supervision(n)監督管理
 - supervisor(n)主管、監督者、論文指導教授
 - supervisory(adj)監督的、管理的
+- 字根 vid/vis（看，源自拉丁 videre）— supervise = super(在上方) + vis = 從上面監看
+  - revise(v)修訂 — re(再次) + vis
+  - provide(v)提供 — pro(事先) + vid = 事先看見需求並準備
+
+> [!note] 與 spec/spect 字根的差別
+> [[inspect]] 用的是另一個「看」的拉丁動詞 specere（spec/spect 字根），supervise 用的是 videre（vid/vis 字根）；兩者都跟「看」有關但字源、拼字不同。
 
 ---
 

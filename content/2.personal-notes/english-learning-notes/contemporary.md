@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-06T05:14:26.333Z
+modified: 2026-09-09T14:08:15.825Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -32,6 +32,9 @@ date: 2026-08-31
 - contemporaneity(n)同時代性、當代性
 - contemporary(n)同時代的人、同行
 - contemporarily(adv)在當代、同時代地
+- 字根 tempor（時間，源自拉丁 tempus）— contemporary = con(共同) + tempor(時間) + ary = 處於同一時間的
+  - temporary(adj)暫時的 — tempor + ary
+  - temporal(adj)時間上的、世俗的 — 同源
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-06T07:41:13.597Z
+modified: 2026-09-09T14:08:07.203Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
@@ -31,6 +31,9 @@ date: 2026-09-06
 
 - benignly(adv)無害地
 - benignancy(n)(醫學)良性、無害
+- 字根 gen（出生、種類，源自拉丁 gignere/genus）+ bene（好）— benign = bene(好) + gen(出生本性) = 天性良善的→良性的
+  - malign(adj)惡意的、惡性的 — male(壞) + gen，與 benign 恰為反義字根組合
+  - genuine(adj)真正的 — 同源 gen
 
 ---
 

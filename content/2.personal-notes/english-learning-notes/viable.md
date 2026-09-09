@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-06T07:11:15.503Z
+modified: 2026-09-09T14:08:09.938Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
@@ -31,6 +31,10 @@ date: 2026-09-06
 
 - viability(n)可行性、生存能力
 - viably(adv)可行地、能存活地
+- 字根 vi/viv（生命，源自拉丁 vita/vivere）— viable = vi(生命) + able(能夠) = 能存活的
+  - vivid(adj)生動的、鮮明的 — 同源
+  - survive(v)存活 — sur(超過) + viv
+  - revive(v)復甦 — re(再次) + viv
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-09T04:32:37.993Z
+modified: 2026-09-09T14:07:49.117Z
 published: 2026-09-02
 category:
   - "[[English learning notes]]"
@@ -18,6 +18,9 @@ date: 2026-09-02
 
 - disputable(adj)有爭議的
 - indisputable(adj)無庸置疑的
+- 字根 put（思考、計算，源自拉丁 putare）— dispute = dis(分開) + put(思考) + e = 各自想法不同→爭執
+  - compute(v)計算 — com(一起) + put
+  - deputy(n)副手、代理人 — de(從) + put(算作)
 
 ---
 

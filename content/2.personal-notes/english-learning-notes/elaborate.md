@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-07T13:51:52.025Z
+modified: 2026-09-09T14:07:17.798Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -22,6 +22,9 @@ date: 2026-09-07
 - elaboration(n) 詳述、詳細說明
 - elaborated(adj) 精心設計的、詳細的
 - elaborately(adv) 詳細地、精巧地
+- 字根 labor（工作、勞動，源自拉丁 labor）— elaborate = e(徹底) + labor + ate = 徹底加工→精心製作、詳述
+  - laboratory(n)實驗室 — 同源
+  - collaborate(v)合作 — com(一起) + labor
 
 ---
 

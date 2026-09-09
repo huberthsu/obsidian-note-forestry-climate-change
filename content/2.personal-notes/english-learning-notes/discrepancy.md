@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-06T05:14:26.336Z
+modified: 2026-09-09T14:08:30.850Z
 published: 2026-09-02
 category:
   - "[[English learning notes]]"
@@ -30,6 +30,8 @@ date: 2026-09-02
 ## Word Family
 
 - discrepant(adj)不一致的、矛盾的
+- 字根 crep（發出聲響，源自拉丁 crepare）— discrepancy = dis(不同) + crep(發出聲響) + ancy = 發出不和諧的聲音→不一致
+  - decrepit(adj)老舊不堪的、衰老的 — de(向下) + crep(嘎吱作響) = 因老舊而嘎吱作響
 
 ---
 

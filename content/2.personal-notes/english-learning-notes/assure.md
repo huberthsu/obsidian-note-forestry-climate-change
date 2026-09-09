@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-06T05:14:26.335Z
+modified: 2026-09-09T14:06:54.546Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
@@ -21,6 +21,8 @@ date: 2026-09-01
 - assurance (n.) 保證、確信
 - assured (adj.) 有自信的、確信的
 - assuredly (adv.) 確實地、肯定地
+- 字根 sure（確定、安全，源自拉丁 securus）— assure = as(向) + sure = 向某人傳達確定感
+  - 與 [[ensure]]（en+sure）、[[insure]]（in+sure）同字根，差別只在前綴
 
 ---
 

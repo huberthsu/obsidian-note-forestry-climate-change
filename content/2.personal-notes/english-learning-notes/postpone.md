@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-06T05:14:26.339Z
+modified: 2026-09-09T14:07:01.886Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -30,6 +30,10 @@ date: 2026-08-31
 
 - postponement(n)延期、延緩
 - postponable(adj)可延期的、可推遲的
+- 字根 pon/pos（放置，源自拉丁 ponere）— postpone = post(在後) + pon = 放到後面→延後
+  - [[proponent]]\(n)支持者、提倡者 — pro(向前) + pon = 把想法放到前面提出的人
+  - propose(v)提議 — pro(向前) + pos
+  - oppose(v)反對 — ob(對抗) + pos
 
 ---
 

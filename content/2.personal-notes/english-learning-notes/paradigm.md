@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-06T05:14:26.316Z
+modified: 2026-09-09T14:08:33.489Z
 published: 2026-09-02
 category:
   - "[[English learning notes]]"
@@ -29,6 +29,8 @@ date: 2026-09-02
 ## Word Family
 
 - paradigmatic(adj)典範的
+- 字根 deigma（展示，源自希臘文 deiknynai「指出、展示」）— paradigm = para(在旁邊) + deigma(展示) = 並列展示出來的範例→典範
+  - 這個字根在現代英文中較少見，主要保留在 paradigm 這個字裡
 
 ---
 

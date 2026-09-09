@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-09T04:32:44.131Z
+modified: 2026-09-09T14:08:02.237Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
@@ -21,6 +21,9 @@ date: 2026-09-01
 
 - commendable:
 - commendation:
+- 字根 mand（委託、命令，源自拉丁 mandare）— commend = com(強化) + mand = 鄭重託付讚許
+  - command(n/v)命令 — 同源
+  - [[recommend]]\(v)推薦 — re(再次) + commend
 
 ---
 

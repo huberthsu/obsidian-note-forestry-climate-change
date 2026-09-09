@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-06T07:52:29.483Z
+modified: 2026-09-09T14:07:08.269Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
@@ -27,6 +27,11 @@ date: 2026-09-06
 ---
 
 ## Word Family
+
+- 字根 duc/duct（引導，源自拉丁 ducere）— conducive = con(一起) + duc(引導) + ive = 一起引導向（某結果）的
+  - conduct(v)引導、進行 — con(一起) + duc
+  - introduce(v)介紹 — intro(向內) + duc
+  - reduce(v)減少 — re(向後) + duc
 
 ---
 

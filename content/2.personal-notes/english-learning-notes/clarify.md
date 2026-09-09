@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-07T13:59:06.055Z
+modified: 2026-09-09T14:07:53.651Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -30,6 +30,9 @@ date: 2026-08-31
 
 - clarification(n)澄清、說明
 - clarifying(adj)有澄清作用的、淨化的
+- 字根 clar（清楚、明亮，源自拉丁 clarus）— clarify = clar + ify(使...) = 使清楚
+  - clarity(n)清晰、明確 — 同源
+  - declare(v)宣布 — de(徹底) + clar
 
 ---
 

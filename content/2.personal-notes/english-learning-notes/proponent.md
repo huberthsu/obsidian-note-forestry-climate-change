@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-06T05:14:26.339Z
+modified: 2026-09-09T14:07:03.845Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
@@ -31,6 +31,9 @@ date: 2026-09-01
 - proposal(n)提議、提案
 - proposition(n)主張、見解
 - propose(v)提議、建議、求婚
+- 字根 pon/pos（放置）— proponent = pro(向前) + pon(放) + ent(...的人) = 把主張放到前面提出的人
+  - [[postpone]]\(v)延後 — post(在後) + pon
+  - compose(v)組成 — com(一起) + pos
 
 ---
 

@@ -26,6 +26,7 @@ views:
     order:
       - file.name
       - date
+      - tags
     summaries:
       file.name: Filled
   - type: table

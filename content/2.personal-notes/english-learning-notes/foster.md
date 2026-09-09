@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-09
-modified: 2026-09-09T15:58:03.413Z
+modified: 2026-09-09T17:24:12.200Z
 published: 2026-09-09
 category:
   - "[[English learning notes]]"
@@ -20,7 +20,7 @@ date: 2026-09-09
 1:10:28
 ```
 
-## Meaning [[English puns]]
+## Meaning [[English Puns and Tongue Twisters]]
 
 - To encourage or promate the development of something(typically regarded as good)
 

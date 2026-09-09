@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-09T15:58:03.391Z
+modified: 2026-09-09T17:24:12.221Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
@@ -10,7 +10,7 @@ Chinese translation: (順便)跟隨、跟屁蟲
 date: 2026-09-08
 ---
 
-[[English puns]]
+[[English Puns and Tongue Twisters]]
 
 ## Meaning
 

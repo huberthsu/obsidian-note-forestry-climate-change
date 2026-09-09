@@ -1,0 +1,6 @@
+filters:
+  and:
+    - file.tags.contains("ai-agent")
+views:
+  - type: table
+    name: 表格

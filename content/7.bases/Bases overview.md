@@ -4,8 +4,8 @@ aliases:
   - Bases 總覽
 title: Bases 總覽
 created: 2026-09-03T15:11:42.641Z
-modified: 2026-09-08T18:32:57.198Z
-published: 2026-09-08T18:32:57.198Z
+modified: 2026-09-09T07:29:48.124Z
+published: 2026-09-09T07:29:48.124Z
 in:
   - 2.personal-notes
 ---
@@ -17,7 +17,7 @@ Obsidian Bases（`.base`）檔案，用查詢條件篩選、呈現筆記的資�
 # Bases 清單
 
 - [[說明筆記bases.base]]— 嵌入在 [[Explanation notes|說明]]
-- [[Exam Practice Analysis.base]]  — 嵌入在 [[Exam notes|考古題筆記]]
+- [[Exam Practice Analysis bases.base]]  — 嵌入在 [[Exam notes|考古題筆記]]
 - [[英文學習筆記bases.base]] — 嵌入在[[English learning notes|英文學習筆記]]
 - [[卡片盒筆記bases.base]] — 嵌入在[[Zettelkasten notes|卡片盒筆記]]
 - [[monthly tasks calendar bases.base]] — 嵌入在 [[Task Management|任務管理]]，月曆呈現本月英文/考古題/卡片盒筆記的完成日期

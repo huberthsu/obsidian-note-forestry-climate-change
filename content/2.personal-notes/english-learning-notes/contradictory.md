@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-06T13:55:36.594Z
+modified: 2026-09-09T04:32:40.217Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
@@ -42,7 +42,7 @@ date: 2026-09-06
 
 ## Collocations
 
-- A+be contradictory to+B: A與B矛盾
+- A+be contradictory to+B: A與B矛盾（用 to 不用 against，是因為這是靜態的邏輯對應關係，沒有誰主動對抗誰，見 [[2.Collocation rules for verbs,adjectives followed by prepositions#against vs to：有沒有「主動對抗」的動作感|規律一 against vs to]]）
 
 ---
 

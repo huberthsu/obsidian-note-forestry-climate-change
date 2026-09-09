@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-06T05:14:26.317Z
+modified: 2026-09-09T04:31:57.203Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -39,6 +39,8 @@ date: 2026-08-31
 > [!note] 與 insist 的比較
 > persist 強調「儘管困難或障礙仍持續做某事」（持續的動作層面）；insist 則是「堅決主張、強烈要求」（表達態度/意見層面）
 > persist 較中性客觀；insist 帶有主觀強調色彩。情境不同，容易混淆。
+>
+> 字源上兩字共用拉丁字根 sistere（站立），差別在前綴：persist = per-（貫穿）+ sistere，insist = in-（壓向）+ sistere。per- 對應 in 的「容器」意象——待在一個行為/狀態裡不出來；in- 對應 on 的「施壓」意象——把力道壓在一個訴求上。這也是為什麼 persist 接 **in**、insist 接 **on**（見 [[4.Visual imagery method for understanding prepositions|用視覺意象理解介係詞的方法與資源]]）。
 
 ---
 

@@ -4,3 +4,6 @@ views:
     filters:
       and:
         - file.tags.contains("數位花園")
+    order:
+      - file.name
+      - tags

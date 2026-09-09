@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-06T05:14:26.335Z
+modified: 2026-09-09T04:32:44.131Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
@@ -31,6 +31,8 @@ date: 2026-09-01
 
 > [!note] 易混淆詞
 > 與 [[commence]]（開始）、[[recommend]]（推薦）、command(命令)易混淆。詳見[[1.English words and phrases associations#commence--commend--recommend|詞彙關聯整理]]的群組比較。
+>
+> commend 跟 recommend 介係詞相反（for vs to）的文法原因：commend 的直接受詞是**人**，事蹟只能靠 for 掛上去；recommend 的直接受詞是**事物**，人才要靠 to 引出。見 [[2.Collocation rules for verbs,adjectives followed by prepositions#規律五：評價類動詞「V + 人 + for + 原因」——受詞位置決定介係詞落在哪|規律五]]。
 
 ---
 

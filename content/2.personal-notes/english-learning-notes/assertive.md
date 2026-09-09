@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-07T09:58:43.648Z
+modified: 2026-09-09T04:32:35.821Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -46,7 +46,7 @@ date: 2026-09-07
 
 - assertive about+n(觀點/立場/權利): 在什麼事情上敢言
 
-- assertive with+對象/人: 對什麼對象上敢言
+- assertive with+對象/人: 對什麼對象上敢言（用 with 不用 to，是因為這是「一來一往的應對過程」而非單向特質，見 [[2.Collocation rules for verbs,adjectives followed by prepositions#規律八：形容詞 + to 或 + with 的判斷|規律八]]）
 
 - an assertive tone: 果斷的語氣
 

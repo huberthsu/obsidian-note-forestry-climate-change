@@ -9,8 +9,14 @@ views:
     filters:
       and:
         - category.contains("單字")
+    order:
+      - file.name
+      - Chinese translation
   - type: table
     name: 片語bases
     filters:
       and:
         - category.contains("片語")
+    order:
+      - file.name
+      - Chinese translation

@@ -4,8 +4,8 @@ aliases:
   - 任務管理
 title: 任務管理
 created: 2026-09-05T04:26:53.597Z
-modified: 2026-09-09T07:48:55.165Z
-published: 2026-09-09T07:48:55.165Z
+modified: 2026-09-09T08:45:47.158Z
+published: 2026-09-09T08:45:47.158Z
 parent:
 sibling:
   - "[[Task-management-workflow]]"
@@ -62,8 +62,8 @@ card_fields: item
 | g69i6lac | 完成考古題參考答案 | 未開始 |
 | 1 | 英文學習筆記 | 未開始 |
 | 2 | 考古題練習 | 未開始 |
-| 4v86xtmh | 卡片盒筆記回顧 | 未開始 |
-| esvw0v6k | 英文測驗練習 | 未開始 |
+| esvw0v6k | 英文測驗練習 | 進行中 |
+| 4v86xtmh | 卡片盒筆記回顧 | 已完成 |
 ```
 
 ## 其他

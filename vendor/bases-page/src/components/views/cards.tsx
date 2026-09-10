@@ -1,7 +1,8 @@
-import type { ViewRenderer, ViewTypeRegistration } from "../../types";
+import type { BasesEntry, ViewRenderer, ViewTypeRegistration } from "../../types";
 import type { FullSlug } from "@quartz-community/types";
 import { i18n } from "../../i18n";
 import {
+  formatValue,
   getColumnLabel,
   isEmptyValue,
   renderCellValue,
@@ -14,6 +15,27 @@ function formatMessage(template: string, values: Record<string, string | number>
     (text, [key, value]) => text.replace(`{${key}}`, String(value)),
     template,
   );
+}
+
+function groupEntries(
+  entries: BasesEntry[],
+  groupProperty: string | undefined,
+  emptyLabel: string,
+): Map<string, BasesEntry[]> | null {
+  if (!groupProperty) return null;
+  const groups = new Map<string, BasesEntry[]>();
+  for (const entry of entries) {
+    const rawValue = resolveEntryPropertyValue(groupProperty, entry);
+    const label = isEmptyValue(rawValue) ? emptyLabel : formatValue(rawValue);
+    const key = label || emptyLabel;
+    const existing = groups.get(key);
+    if (existing) {
+      existing.push(entry);
+    } else {
+      groups.set(key, [entry]);
+    }
+  }
+  return groups.size > 0 ? groups : null;
 }
 
 const HEX_COLOR_RE = /^#(?:[0-9a-f]{3}){1,2}$/i;
@@ -73,6 +95,51 @@ const CardsView: ViewRenderer = ({
       : undefined;
   const imageOpts: ResolveImageOpts = { slug, allSlugs, linkResolution };
   const transformOpts = { strategy: linkResolution, allSlugs: allSlugs as FullSlug[] };
+  const groupProperty = view.groupBy?.property;
+  const groupPropertyLabel = groupProperty ? getColumnLabel(groupProperty, basesData) : "";
+  const groups = groupEntries(entries, groupProperty, localeStrings.uncategorized);
+
+  const renderCard = (entry: (typeof entries)[number]) => {
+    const ctx = { slug, allSlugs, linkResolution };
+    const imageValue = imageProperty ? resolveEntryPropertyValue(imageProperty, entry) : undefined;
+    const rawImage = imageValue ? String(imageValue) : "";
+    const { src: imageSrc, isColor } = resolveImageSrc(rawImage, imageOpts);
+    const imageAspect =
+      typeof aspectRatio === "number" && aspectRatio > 0
+        ? { aspectRatio: String(aspectRatio) }
+        : undefined;
+    const href = transformLink(slug as FullSlug, entry.slug, transformOpts);
+    return (
+      <a href={href} class="internal internal-link bases-card" data-slug={entry.slug}>
+        {imageSrc && !isColor && (
+          <div class="bases-card-image" style={imageAspect}>
+            <img src={imageSrc} alt={entry.title} loading="lazy" style={{ objectFit: imageFit }} />
+          </div>
+        )}
+        {imageSrc && isColor && (
+          <div
+            class="bases-card-image bases-card-color"
+            style={{ ...imageAspect, backgroundColor: imageSrc }}
+          />
+        )}
+        <div class="bases-card-body">
+          <span class="bases-card-title">{entry.title}</span>
+          <div class="bases-card-meta">
+            {cardMetaColumns.map((column) => {
+              const value = resolveEntryPropertyValue(column, entry);
+              if (isEmptyValue(value)) return null;
+              return (
+                <div class="bases-card-row">
+                  <span class="bases-card-label">{getColumnLabel(column, basesData)}</span>
+                  <span class="bases-card-value">{renderCellValue(value, ctx, column)}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </a>
+    );
+  };
 
   return (
     <div class="bases-cards-wrapper">
@@ -82,56 +149,26 @@ const CardsView: ViewRenderer = ({
           total,
         })}
       </div>
-      <div class="bases-cards" style={gridStyle}>
-        {entries.map((entry) => {
-          const ctx = { slug, allSlugs, linkResolution };
-          const imageValue = imageProperty
-            ? resolveEntryPropertyValue(imageProperty, entry)
-            : undefined;
-          const rawImage = imageValue ? String(imageValue) : "";
-          const { src: imageSrc, isColor } = resolveImageSrc(rawImage, imageOpts);
-          const imageAspect =
-            typeof aspectRatio === "number" && aspectRatio > 0
-              ? { aspectRatio: String(aspectRatio) }
-              : undefined;
-          const href = transformLink(slug as FullSlug, entry.slug, transformOpts);
-          return (
-            <a href={href} class="internal internal-link bases-card" data-slug={entry.slug}>
-              {imageSrc && !isColor && (
-                <div class="bases-card-image" style={imageAspect}>
-                  <img
-                    src={imageSrc}
-                    alt={entry.title}
-                    loading="lazy"
-                    style={{ objectFit: imageFit }}
-                  />
-                </div>
+      {groups ? (
+        Array.from(groups.entries()).map(([label, groupEntries]) => (
+          <div class="bases-cards-group">
+            <div class="bases-cards-group-header">
+              {groupPropertyLabel && (
+                <span class="bases-cards-group-property">{groupPropertyLabel} </span>
               )}
-              {imageSrc && isColor && (
-                <div
-                  class="bases-card-image bases-card-color"
-                  style={{ ...imageAspect, backgroundColor: imageSrc }}
-                />
-              )}
-              <div class="bases-card-body">
-                <span class="bases-card-title">{entry.title}</span>
-                <div class="bases-card-meta">
-                  {cardMetaColumns.map((column) => {
-                    const value = resolveEntryPropertyValue(column, entry);
-                    if (isEmptyValue(value)) return null;
-                    return (
-                      <div class="bases-card-row">
-                        <span class="bases-card-label">{getColumnLabel(column, basesData)}</span>
-                        <span class="bases-card-value">{renderCellValue(value, ctx, column)}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </a>
-          );
-        })}
-      </div>
+              <span class="bases-cards-group-label">{label}</span>
+              <span class="bases-cards-group-count">{groupEntries.length}</span>
+            </div>
+            <div class="bases-cards" style={gridStyle}>
+              {groupEntries.map((entry) => renderCard(entry))}
+            </div>
+          </div>
+        ))
+      ) : (
+        <div class="bases-cards" style={gridStyle}>
+          {entries.map((entry) => renderCard(entry))}
+        </div>
+      )}
     </div>
   );
 };

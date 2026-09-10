@@ -220,6 +220,36 @@ th.is-sorted-desc .bases-table-header-sort {
   gap: 16px;
 }
 
+.bases-cards-group + .bases-cards-group {
+  margin-top: 24px;
+}
+
+.bases-cards-group-header {
+  background: var(--lightgray);
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.bases-cards-group-property {
+  color: var(--gray);
+  font-weight: 400;
+}
+
+.bases-cards-group-label {
+  margin-right: 8px;
+}
+
+.bases-cards-group-count {
+  background: var(--light);
+  color: var(--darkgray);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
 .bases-card {
   border: 1px solid var(--lightgray);
   border-radius: 12px;

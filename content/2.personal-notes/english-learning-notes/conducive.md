@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-10T08:58:15.490Z
+modified: 2026-09-10T11:11:20.360Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 有利的、有益的
-字根: duc/duct
+字根: duc/duct(引導)
 date: 2026-09-06
 ---
 

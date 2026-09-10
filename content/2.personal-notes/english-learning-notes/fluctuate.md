@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-10T08:53:01.095Z
+modified: 2026-09-10T11:11:20.369Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 波動、變動、起伏不定
-字根: fluct/flu
+字根: fluct/flu(流動)
 date: 2026-09-10
 ---
 

@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T08:58:47.400Z
+modified: 2026-09-10T11:11:20.377Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 延遲、延後、延緩
-字根: pon/pos
+字根: pon/pos(放置)
 date: 2026-08-31
 ---
 

@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-10T08:58:26.566Z
+modified: 2026-09-10T11:11:20.366Z
 published: 2026-09-02
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 差異、不一致、出入
-字根: crep
+字根: crep(發出聲響、破裂)
 date: 2026-09-02
 ---
 

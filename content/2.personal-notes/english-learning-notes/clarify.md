@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T08:58:12.620Z
+modified: 2026-09-10T11:11:20.357Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 闡明、釐清
-字根: clar
+字根: clar(清楚、明亮)
 date: 2026-08-31
 ---
 

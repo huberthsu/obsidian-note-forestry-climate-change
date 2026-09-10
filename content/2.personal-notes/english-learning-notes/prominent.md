@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-10T08:59:01.711Z
+modified: 2026-09-10T11:11:20.376Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 著名的
-字根: minere
+字根: minere(突出)
 date: 2026-08-19
 ---
 

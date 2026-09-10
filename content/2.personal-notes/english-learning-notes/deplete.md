@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-10T08:58:22.670Z
+modified: 2026-09-10T11:11:20.364Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 耗盡
-字根: plere
+字根: plere(填滿)
 date: 2026-08-19
 ---
 

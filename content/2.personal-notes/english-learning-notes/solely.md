@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-10T08:52:55.234Z
+modified: 2026-09-10T11:11:20.382Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 唯一地、僅僅、單獨地
-字根: sol
+字根: sol(單獨)
 date: 2026-09-10
 ---
 

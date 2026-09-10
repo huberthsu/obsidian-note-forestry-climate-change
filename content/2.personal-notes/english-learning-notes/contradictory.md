@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-10T08:58:19.955Z
+modified: 2026-09-10T11:11:20.362Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 矛盾的、對立的、前後不一的
-字根: dic/dict
+字根: dic/dict(說)
 date: 2026-09-06
 ---
 

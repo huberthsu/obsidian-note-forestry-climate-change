@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-10T08:58:53.854Z
+modified: 2026-09-10T11:16:31.062Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 居住
-字根: sid/sed
+字根: sid/sed(坐)
 date: 2026-08-19
 ---
 

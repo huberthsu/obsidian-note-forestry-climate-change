@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-10T08:52:45.644Z
+modified: 2026-09-10T11:11:20.360Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 編譯、彙編、收集、編輯
-字根: pil
+字根: pil(堆疊、收集)
 date: 2026-09-06
 ---
 

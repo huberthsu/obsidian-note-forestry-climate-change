@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-10T08:58:45.999Z
+modified: 2026-09-10T11:11:20.373Z
 published: 2026-09-02
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 典範、典型、範例、範式
-字根: deigma
+字根: deigma(顯示、範例)
 date: 2026-09-02
 ---
 

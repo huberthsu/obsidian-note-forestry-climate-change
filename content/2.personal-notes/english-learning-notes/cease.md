@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-10T08:58:11.170Z
+modified: 2026-09-10T11:11:20.356Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 停止
-字根: cedere/cess
+字根: cedere/cess(走、停止)
 date: 2026-08-19
 ---
 

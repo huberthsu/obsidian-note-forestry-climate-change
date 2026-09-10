@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-10T08:53:10.917Z
+modified: 2026-09-10T11:11:20.372Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 激怒、惹惱、使煩躁
-字根: irrit
+字根: irrit(激怒、刺激)
 date: 2026-09-08
 ---
 

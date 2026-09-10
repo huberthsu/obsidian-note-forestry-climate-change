@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-10T08:52:14.883Z
+modified: 2026-09-10T11:11:20.358Z
 published: 2026-09-02
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 減輕、緩和、緩解
-字根: lev
+字根: lev(輕)
 date: 2026-09-02
 ---
 

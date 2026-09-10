@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-10T08:58:07.058Z
+modified: 2026-09-10T11:11:20.355Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 傲慢的、自大的
-字根: rogare
+字根: rogare(詢問、要求)
 date: 2026-09-06
 ---
 

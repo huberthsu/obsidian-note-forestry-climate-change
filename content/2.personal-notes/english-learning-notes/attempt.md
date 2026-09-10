@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-10T08:52:34.190Z
+modified: 2026-09-10T11:11:20.359Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 試圖、嘗試
-字根: tempt(非contemplate/contemporary的temp)
+字根: tempt(嘗試、測試)(非contemplate/contemporary的temp)
 date: 2026-08-19
 ---
 

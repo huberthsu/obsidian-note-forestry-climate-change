@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-10T08:58:57.822Z
+modified: 2026-09-10T11:16:26.115Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 精煉、改進、完善
-字根: fin
+字根: fin(界限)
 date: 2026-08-19
 ---
 

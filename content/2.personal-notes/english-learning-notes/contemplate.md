@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-10T09:00:13.445Z
+modified: 2026-09-10T11:11:20.360Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 深思、沉思
-字根: templum(非attempt/contemporary的temp)
+字根: templum(觀察的場所)(非attempt/contemporary的temp)
 date: 2026-09-07
 ---
 

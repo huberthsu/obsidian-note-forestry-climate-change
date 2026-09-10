@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-09-10T08:59:05.721Z
+modified: 2026-09-10T11:11:20.375Z
 published: 2026-08-14
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 主要的、顯著的、佔多數的
-字根: domin
+字根: domin(統治、主宰)
 date: 2026-08-14
 ---
 

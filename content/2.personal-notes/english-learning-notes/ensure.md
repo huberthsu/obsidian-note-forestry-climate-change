@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-10T08:58:31.875Z
+modified: 2026-09-10T11:25:35.888Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 確保
-字根: sure
+字根: sure(確定、安全)
 date: 2026-09-01
 ---
 

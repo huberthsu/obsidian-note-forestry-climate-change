@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-10T08:58:05.464Z
+modified: 2026-09-10T11:11:20.357Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 自信果斷的
-字根: sert
+字根: sert(連結、插入)
 date: 2026-09-07
 ---
 

@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-28
-modified: 2026-09-10T08:57:01.151Z
+modified: 2026-09-10T11:11:20.359Z
 published: 2026-08-28
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 開始、著手
-字根: init
+字根: init(開始)
 date: 2026-08-28
 ---
 

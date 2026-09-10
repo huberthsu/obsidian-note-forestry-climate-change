@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T08:52:11.905Z
+modified: 2026-09-10T11:11:20.370Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 富有成效的、收穫豐碩的
-字根: fruct/frui
+字根: fruct/frui(果實、享受)
 date: 2026-08-31
 ---
 

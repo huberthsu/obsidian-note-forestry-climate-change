@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-10T08:58:42.054Z
+modified: 2026-09-10T11:11:20.373Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 調整、變更、修改
-字根: mod
+字根: mod(度量、方式)
 date: 2026-08-19
 ---
 

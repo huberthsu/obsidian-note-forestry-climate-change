@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-28
-modified: 2026-09-10T08:58:35.778Z
+modified: 2026-09-10T11:11:20.372Z
 published: 2026-08-28
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 打聽、詢問
-字根: quire(-quire)
+字根: quire(尋求、詢問)(-quire)
 date: 2026-08-28
 ---
 

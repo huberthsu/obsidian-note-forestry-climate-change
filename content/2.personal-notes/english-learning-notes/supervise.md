@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T08:59:00.462Z
+modified: 2026-09-10T11:11:20.383Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 監督、管理、指導
-字根: vid/vis
+字根: vid/vis(看)
 date: 2026-08-31
 ---
 

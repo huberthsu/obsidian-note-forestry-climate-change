@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T08:58:36.990Z
+modified: 2026-09-10T11:11:20.371Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 調查、審查
-字根: vestig
+字根: vestig(足跡)
 date: 2026-08-31
 ---
 

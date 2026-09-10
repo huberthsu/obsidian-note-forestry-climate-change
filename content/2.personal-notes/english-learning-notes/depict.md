@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-09
-modified: 2026-09-10T08:52:51.504Z
+modified: 2026-09-10T11:11:20.364Z
 published: 2026-09-09
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 描繪、描述
-字根: pict
+字根: pict(畫)
 date: 2026-09-09
 ---
 

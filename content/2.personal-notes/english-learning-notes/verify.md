@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-10T08:58:51.106Z
+modified: 2026-09-10T11:11:20.384Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 核實
-字根: ver
+字根: ver(真實)
 date: 2026-08-19
 ---
 

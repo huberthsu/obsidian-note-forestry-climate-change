@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T08:52:36.914Z
+modified: 2026-09-10T11:11:20.366Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 丟棄
-字根: chart/card
+字根: chart/card(紙、卡片)
 date: 2026-08-31
 ---
 

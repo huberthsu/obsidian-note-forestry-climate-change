@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T08:52:20.366Z
+modified: 2026-09-10T11:33:04.424Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -31,7 +31,7 @@ date: 2026-08-31
 
 - device(n)裝置、器具
 - deviser(n)發明者、設計者、籌畫者
-- 字根 vid（分開、分配，源自拉丁 dividere；注意跟「看」的 vid/vis 字根\[videre，如 supervise/revise]拼字相近但完全不同源）— devise 原意是「分配、安排」，引申為「想出、設計」
+- 字根 dividere（分開、分配；注意跟「看」的 vid/vis 字根\[videre，如 supervise/revise]拼字相近但完全不同源）— devise 原意是「分配、安排」，引申為「想出、設計」
   - divide(v)分割 — 同源
   - device(n)裝置 — devise 的同源雙胞詞(doublet)，名詞形式
 

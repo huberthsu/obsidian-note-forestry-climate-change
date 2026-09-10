@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-10T08:53:04.973Z
+modified: 2026-09-10T11:11:20.379Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 易於……的」、有……傾向的。通常是負面的
-字根: pron
+字根: pron(向前傾)
 date: 2026-09-10
 ---
 

@@ -21,3 +21,14 @@ views:
     order:
       - file.name
       - Chinese translation
+  - type: cards
+    name: 字根
+    filters:
+      and:
+        - category.contains("單字")
+    groupBy:
+      property: 字根
+      direction: ASC
+    order:
+      - file.name
+      - Chinese translation

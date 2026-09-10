@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-10T08:53:07.901Z
+modified: 2026-09-10T11:11:20.368Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 疲勞的、疲倦的
-字根: fatig
+字根: fatig(疲累)
 date: 2026-09-08
 ---
 

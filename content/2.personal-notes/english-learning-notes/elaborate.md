@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-10T08:58:30.685Z
+modified: 2026-09-10T11:11:20.368Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 詳述、展開
-字根: labor
+字根: labor(工作、勞動)
 date: 2026-09-07
 ---
 

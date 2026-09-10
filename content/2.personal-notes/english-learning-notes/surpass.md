@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-10T08:52:48.495Z
+modified: 2026-09-10T11:11:20.383Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 超越、勝過、超出
-字根: pass
+字根: pass(步伐)
 date: 2026-09-06
 ---
 

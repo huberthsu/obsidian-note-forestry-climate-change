@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-10T08:58:38.310Z
+modified: 2026-09-10T11:11:20.371Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 投保、購買保險
-字根: sure
+字根: sure(確定、安全)
 date: 2026-09-01
 ---
 

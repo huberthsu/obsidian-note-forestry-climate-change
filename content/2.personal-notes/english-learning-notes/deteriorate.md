@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-10T08:52:39.841Z
+modified: 2026-09-10T11:11:20.364Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 惡化
-字根: -terior(比較級構詞，非detrimental的ter)
+字根: -terior(更差、更壞)(比較級構詞，非detrimental的ter)
 date: 2026-08-19
 ---
 

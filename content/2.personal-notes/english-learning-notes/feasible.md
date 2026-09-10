@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T08:58:33.093Z
+modified: 2026-09-10T11:11:20.369Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 可行的
-字根: fac/fic
+字根: fac/fic(做、易於做)
 date: 2026-08-31
 ---
 

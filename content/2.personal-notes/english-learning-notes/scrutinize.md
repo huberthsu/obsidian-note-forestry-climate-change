@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T08:52:28.226Z
+modified: 2026-09-10T11:11:20.382Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 仔細檢查、審視
-字根: scrut
+字根: scrut(仔細搜尋)
 date: 2026-08-31
 ---
 

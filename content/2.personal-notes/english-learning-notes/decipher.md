@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-10T08:52:58.127Z
+modified: 2026-09-10T11:11:20.363Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 破譯、解密、解讀
-字根: cipher(阿拉伯文ṣifr，非拉丁字根)
+字根: cipher(零、空)(阿拉伯文ṣifr，非拉丁字根)
 date: 2026-09-10
 ---
 

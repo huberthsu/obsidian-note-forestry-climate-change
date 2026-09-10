@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-10T08:58:59.321Z
+modified: 2026-09-10T11:11:20.377Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 推薦、建議
-字根: mand
+字根: mand(委託、託付)
 date: 2026-09-01
 ---
 

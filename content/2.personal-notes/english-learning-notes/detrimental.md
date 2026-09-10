@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-10T08:52:42.764Z
+modified: 2026-09-10T11:33:42.498Z
 published: 2026-09-02
 category:
   - "[[English learning notes]]"
@@ -32,7 +32,7 @@ date: 2026-09-02
 - detriment(n)傷害、損害
   - to the detriment of: 損害到……、對……不利
     - He pursued business success to the detriment of his family life.
-- 字根 ter（摩擦、磨損，源自拉丁 terere）— detrimental = detriment(損害，de\[向下] + ter，原意「磨損」) + al = 有害的；注意跟 [[deteriorate]] 的構詞\[-terior 比較級字尾]拼字都有 det- 但完全不同源
+- 字根 ter（摩擦、磨損，源自拉丁 terere）— detrimental = detriment(損害，de\[前綴多義：向下、離開、加強、相反；此處取「離開」義] + ter，原意「磨損」) + al = 有害的；注意跟 [[deteriorate]] 的構詞\[-terior 比較級字尾]拼字都有 det- 但完全不同源
   - attrition(n)消耗、磨損 — ad(朝向) + ter = 摩擦耗損
   - trite(adj)陳腐的、老套的 — 同源，「被磨損到平凡無奇」
 

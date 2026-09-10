@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-09T14:08:26.790Z
+modified: 2026-09-10T06:31:09.884Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -38,10 +38,13 @@ date: 2026-09-07
 ## Collocations
 
 - cynical about+something: 對...感到懷疑/憤世嫉俗
--
+
 - a cynical view/attitude: 懷疑的看法/態度
+
 - cynical remarks/smile/laugh:  諷刺的言論/冷笑/笑容
+
 - become/grow cynical: 變得憤世嫉俗
+
 - cynical ploy: 不懷好意的計謀/自私的手段/虛偽的策略
 
 ---

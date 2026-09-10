@@ -4,8 +4,8 @@ aliases:
   - 靈感與思考筆記
 title: 靈感與思考筆記
 created: 2026-07-21T02:48:06.120Z
-modified: 2026-08-15T05:43:00.001Z
-published: 2026-08-15T05:43:00.001Z
+modified: 2026-09-10T13:28:39.700Z
+published: 2026-09-10T13:28:39.700Z
 tags:
   - 類別
 ---

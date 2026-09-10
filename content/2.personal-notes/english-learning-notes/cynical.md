@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-10T06:31:09.884Z
+modified: 2026-09-10T08:58:21.348Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 憤世嫉俗的、懷疑的
+字根: cyn
 date: 2026-09-07
 ---
 

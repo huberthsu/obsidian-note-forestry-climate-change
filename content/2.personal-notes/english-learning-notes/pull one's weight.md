@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-08T09:54:16.721Z
+modified: 2026-09-10T08:59:51.254Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 盡本分、做出應有的努力
+字根:
 date: 2026-09-08
 ---
 

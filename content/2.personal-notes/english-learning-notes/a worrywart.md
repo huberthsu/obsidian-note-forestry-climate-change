@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-09-06T05:14:26.343Z
+modified: 2026-09-10T08:59:37.360Z
 published: 2026-08-15
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 杞人憂天的人
+字根:
 date: 2026-08-15
 ---
 

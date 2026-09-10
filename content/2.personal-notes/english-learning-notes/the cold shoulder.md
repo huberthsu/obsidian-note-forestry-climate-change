@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-08T06:07:30.881Z
+modified: 2026-09-10T08:59:45.214Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 冷淡對待、冷落、閉門羹
+字根:
 date: 2026-09-08
 ---
 

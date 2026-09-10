@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-07T13:47:04.345Z
+modified: 2026-09-10T08:59:12.889Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 筋疲力盡的、被掏空的
+字根:
 date: 2026-09-07
 ---
 

@@ -12,6 +12,7 @@ views:
     order:
       - file.name
       - Chinese translation
+      - 字根
   - type: table
     name: 片語bases
     filters:

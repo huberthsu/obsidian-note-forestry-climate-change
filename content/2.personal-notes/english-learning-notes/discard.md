@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-06T05:14:26.332Z
+modified: 2026-09-10T08:52:36.914Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 丟棄
+字根: chart/card
 date: 2026-08-31
 ---
 
@@ -30,6 +31,9 @@ Used wgen removing something officially and permanently.
 
 - discarded(adj)被丟棄的、廢棄的
 - discard(n)被拋棄的人/物
+- 字根 chart/card（紙、紙莎草，源自希臘文 khartēs，經拉丁文 charta 傳入）— discard 原意是「丟棄手中的牌」(dis + card)，引申為「丟棄、拋棄」
+  - chart(n)圖表 — 同源
+  - cartoon(n)漫畫 — 同源，經義大利文 cartone「厚紙板」轉入
 
 ---
 

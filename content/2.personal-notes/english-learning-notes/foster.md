@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-09
-modified: 2026-09-09T17:24:12.200Z
+modified: 2026-09-10T08:59:14.436Z
 published: 2026-09-09
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 促進、鼓勵；收養、照顧
+字根:
 date: 2026-09-09
 ---
 

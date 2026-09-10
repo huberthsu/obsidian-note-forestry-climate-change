@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-06T05:14:26.326Z
+modified: 2026-09-10T08:52:28.226Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 仔細檢查、審視
+字根: scrut
 date: 2026-08-31
 ---
 
@@ -31,6 +32,8 @@ date: 2026-08-31
 - scrutiny(n)詳細的檢查
   - come under scrutiny受到審查
 - closely/carefully scrutinize嚴密仔細的審視
+- 字根 scrut（翻找、仔細搜查，源自拉丁 scrutari，可能源自 scruta「破爛、垃圾」，原意是「在垃圾堆裡翻找」）— scrutinize = scrutiny + ize = 仔細搜查、審視
+  - inscrutable(adj)難以理解的、高深莫測的 — in(不) + scrut + able = 無法被仔細看穿的
 
 ---
 

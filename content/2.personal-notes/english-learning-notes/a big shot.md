@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-09-06T05:14:26.315Z
+modified: 2026-09-10T08:59:17.193Z
 published: 2026-08-15
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 大人物、權高位重的人
+字根:
 date: 2026-08-15
 ---
 

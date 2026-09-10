@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-09T14:07:03.845Z
+modified: 2026-09-10T08:59:03.005Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 支持者、擁護者、提倡者
+字根: pon/pos
 date: 2026-09-01
 ---
 

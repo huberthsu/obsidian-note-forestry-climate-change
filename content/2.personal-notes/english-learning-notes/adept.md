@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-09T14:08:23.469Z
+modified: 2026-09-10T08:58:00.653Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 熟練的、精通的
+字根: apt/ept
 date: 2026-09-07
 ---
 

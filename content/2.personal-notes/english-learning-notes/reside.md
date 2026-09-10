@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-09T14:07:36.700Z
+modified: 2026-09-10T08:58:53.854Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 居住
+字根: sid/sed
 date: 2026-08-19
 ---
 

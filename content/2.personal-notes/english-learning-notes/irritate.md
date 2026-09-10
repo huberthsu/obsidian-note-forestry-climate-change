@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-08T07:54:06.990Z
+modified: 2026-09-10T08:53:10.917Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 激怒、惹惱、使煩躁
+字根: irrit
 date: 2026-09-08
 ---
 
@@ -21,6 +22,8 @@ date: 2026-09-08
 - irritation(n) 激怒、煩躁、刺激
 - irritating(adj) 令人煩躁的、惱人的
 - irritably(adv) 煩躁地、易怒地
+- 字根 irrit（激怒、刺激，源自拉丁 irritare；這個字根在英文中主要保留在 irritate 的同源詞\[irritant, irritable, irritation]裡，沒有廣泛延伸到其他不同的字）
+  - irritant(n)刺激物、惹惱的事物 — 同源
 
 ---
 

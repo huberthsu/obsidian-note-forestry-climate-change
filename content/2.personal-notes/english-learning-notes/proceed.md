@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-09T14:06:40.743Z
+modified: 2026-09-10T08:59:07.078Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 繼續進行、繼續做、繼續前往
+字根: cedere
 date: 2026-08-19
 ---
 

@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-06T05:14:26.319Z
+modified: 2026-09-10T08:52:11.905Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 富有成效的、收穫豐碩的
+字根: fruct/frui
 date: 2026-08-31
 ---
 
@@ -31,6 +32,9 @@ date: 2026-08-31
 - fruitfully(adv)富有成效地
 - fruitless(adj)徒勞的、無效果的
 - frution(n)實現、成果
+- 字根 fruct/frui（果實、享受成果，源自拉丁 frui「使用、享受」）— fruitful = fruit(果實) + ful(充滿) = 充滿果實的→富有成效的
+  - fructose(n)果糖 — 同源，取「果實」之意
+  - frugal(adj)節儉的 — 同源自 frugi「有用的、值得的」，字義由「能結果實的」演變為「節儉有用的」
 
 ---
 

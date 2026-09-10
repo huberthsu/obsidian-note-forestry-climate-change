@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-09-06T05:14:26.330Z
+modified: 2026-09-10T08:59:29.186Z
 published: 2026-08-14
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 密切相關、相輔相成
+字根:
 date: 2026-08-14
 ---
 

@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-07T10:48:41.720Z
+modified: 2026-09-10T08:59:43.533Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 收工、結束一天的工作
+字根:
 date: 2026-09-07
 ---
 

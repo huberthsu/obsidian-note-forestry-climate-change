@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-09-06T05:14:26.327Z
+modified: 2026-09-10T08:59:21.862Z
 published: 2026-08-15
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 形容積極進取、有衝勁、志在必得的人
+字根:
 date: 2026-08-15
 ---
 

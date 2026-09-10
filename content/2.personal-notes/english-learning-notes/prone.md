@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-10T08:31:02.344Z
+modified: 2026-09-10T08:53:04.973Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 易於……的」、有……傾向的。通常是負面的
+字根: pron
 date: 2026-09-10
 ---
 
@@ -27,6 +28,8 @@ date: 2026-09-10
 ## Word Family
 
 - proneness(n)傾向、易發性
+- 字根 pron（向前彎曲、俯身，源自拉丁 pronus）— prone 原意「向前傾的」，引申為「易於...的、有...傾向的」
+  - pronation(n)（醫學）前旋、俯旋 — 同源
 
 ---
 

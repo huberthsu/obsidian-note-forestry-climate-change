@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-09T14:07:06.024Z
+modified: 2026-09-10T08:58:01.983Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 延長期限
+字根: tend/tens
 date: 2026-08-31
 ---
 

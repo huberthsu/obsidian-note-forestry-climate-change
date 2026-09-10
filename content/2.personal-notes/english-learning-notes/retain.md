@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-28
-modified: 2026-09-09T14:07:32.124Z
+modified: 2026-09-10T08:58:49.927Z
 published: 2026-08-28
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 保持、保留、留存
+字根: ten/tain
 date: 2026-08-28
 ---
 

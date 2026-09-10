@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-09T15:30:56.410Z
+modified: 2026-09-10T08:58:34.419Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 促進、便利、幫助
+字根: fac/fic
 date: 2026-09-08
 ---
 

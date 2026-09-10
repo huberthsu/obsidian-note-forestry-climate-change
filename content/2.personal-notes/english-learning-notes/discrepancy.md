@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-09T14:08:30.850Z
+modified: 2026-09-10T08:58:26.566Z
 published: 2026-09-02
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 差異、不一致、出入
+字根: crep
 date: 2026-09-02
 ---
 

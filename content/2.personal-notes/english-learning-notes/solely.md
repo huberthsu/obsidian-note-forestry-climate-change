@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-10T06:21:35.162Z
+modified: 2026-09-10T08:52:55.234Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 唯一地、僅僅、單獨地
+字根: sol
 date: 2026-09-10
 ---
 
@@ -31,6 +32,9 @@ date: 2026-09-10
 
 - sole(adj)單一的、獨自的
 - solitude(n)獨處、孤獨（通常指享受一個人的狀態）
+- 字根 sol（單獨、獨自，源自拉丁 solus）— solely = sole(單獨的) + ly = 唯一地、單獨地
+  - isolate(v)隔離 — 同源，經義大利文 isola「島」轉入
+  - desolate(adj)荒涼的、孤寂的 — de(徹底) + sol = 徹底獨自一人
 
 ---
 

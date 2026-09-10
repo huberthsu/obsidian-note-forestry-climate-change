@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-09T14:08:04.476Z
+modified: 2026-09-10T08:58:59.321Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 推薦、建議
+字根: mand
 date: 2026-09-01
 ---
 

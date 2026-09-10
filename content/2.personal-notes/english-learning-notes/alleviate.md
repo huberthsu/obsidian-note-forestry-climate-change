@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-06T05:14:26.324Z
+modified: 2026-09-10T08:52:14.883Z
 published: 2026-09-02
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 減輕、緩和、緩解
+字根: lev
 date: 2026-09-02
 ---
 
@@ -29,6 +30,9 @@ date: 2026-09-02
 ## Word Family
 
 - alleviation(n)減輕、緩和
+- 字根 lev（輕，源自拉丁 levis）— alleviate = al(ad-,加強) + lev(輕) + iate = 使變輕→減輕、緩解
+  - elevate(v)提升 — e(向外/向上) + lev = 向上舉起變輕
+  - levity(n)輕浮、輕率 — 同源，取「輕」的引申義
 
 ---
 

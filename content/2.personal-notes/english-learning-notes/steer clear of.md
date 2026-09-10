@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-09
-modified: 2026-09-09T16:23:30.627Z
+modified: 2026-09-10T08:59:52.824Z
 published: 2026-09-09
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 避開、遠離、繞道而行
+字根:
 date: 2026-09-09
 ---
 

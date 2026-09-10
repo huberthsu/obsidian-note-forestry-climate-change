@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-09T14:06:57.506Z
+modified: 2026-09-10T08:58:38.310Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 投保、購買保險
+字根: sure
 date: 2026-09-01
 ---
 

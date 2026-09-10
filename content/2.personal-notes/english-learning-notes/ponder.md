@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-09T14:08:19.291Z
+modified: 2026-09-10T08:58:44.689Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 思考、琢磨
+字根: pond/pend
 date: 2026-09-08
 ---
 

@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-09
-modified: 2026-09-09T16:06:44.444Z
+modified: 2026-09-10T08:52:51.504Z
 published: 2026-09-09
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 描繪、描述
+字根: pict
 date: 2026-09-09
 ---
 
@@ -30,6 +31,9 @@ date: 2026-09-09
 
 - depiction(n)描繪、描述、肖像
 - depicted(adj)被描繪的
+- 字根 pict（畫、描繪，源自拉丁 pingere，過去分詞 pictus）— depict = de(徹底) + pict = 徹底畫出→描繪
+  - picture(n)圖畫 — 同源
+  - pigment(n)顏料 — 同源
 
 ---
 

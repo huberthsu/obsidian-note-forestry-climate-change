@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-09T14:07:43.322Z
+modified: 2026-09-10T08:58:55.179Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 證實、確認有效、驗證
+字根: val
 date: 2026-09-08
 ---
 

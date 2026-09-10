@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-09T14:08:02.237Z
+modified: 2026-09-10T08:58:14.108Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 上對下且較正式的讚美、表揚
+字根: mand
 date: 2026-09-01
 ---
 

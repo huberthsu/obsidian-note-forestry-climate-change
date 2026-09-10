@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-07T12:26:54.286Z
+modified: 2026-09-10T09:00:13.445Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 深思、沉思
+字根: templum(非attempt/contemporary的temp)
 date: 2026-09-07
 ---
 
@@ -23,6 +24,9 @@ date: 2026-09-07
 - contemplation(n) 沉思、冥想、深思
 - contemplative(adj) 沉思的、思考的、冥想的
 - contemplatively(adv) 沉思地、冥想地
+- 字根 templum（劃定用來觀測的神聖空間，源自拉丁 templum，占卜官劃出的觀察範圍）— contemplate = con(強化) + templum = 專注凝視劃定的空間→深思、沉思；注意跟 [[attempt]] 的字根\[temptare 試探]、[[contemporary]] 的字根\[tempus 時間]拼字都很像 "temp" 但完全是三個不同的字根
+  - temple(n)神殿、廟宇 — 同源，原意也跟「劃定的神聖空間」有關
+  - contemplation(n)沉思 — 同源(已列於上方 Word Family)
 
 ---
 

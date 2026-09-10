@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-09-06T05:14:26.328Z
+modified: 2026-09-10T08:59:26.302Z
 published: 2026-08-15
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 自以為無所不知、智商高、永遠是對的
+字根:
 date: 2026-08-15
 ---
 

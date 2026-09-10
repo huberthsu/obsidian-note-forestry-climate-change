@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-06T05:14:26.330Z
+modified: 2026-09-10T08:52:34.190Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 試圖、嘗試
+字根: tempt(非contemplate/contemporary的temp)
 date: 2026-08-19
 ---
 
@@ -31,6 +32,9 @@ date: 2026-08-19
 - attempted(adj)被嘗試過的、失敗的
 - attempt(n)嘗試、試圖
 - attempter(n)嘗試者
+- 字根 tempt（試探、嘗試，源自拉丁 temptare；注意跟 contemplate 的字根\[templum 觀測空間]、contemporary 的字根\[tempus 時間]拼字都很像 "temp" 但完全是三個不同的字根）— attempt = at(ad-,朝向) + tempt = 朝向嘗試→試圖
+  - tempt(v)引誘 — 同源
+  - tentative(adj)試探性的、暫時的 — 同源
 
 ---
 

@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-09-09T14:07:41.074Z
+modified: 2026-09-10T08:59:05.721Z
 published: 2026-08-14
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 主要的、顯著的、佔多數的
+字根: domin
 date: 2026-08-14
 ---
 

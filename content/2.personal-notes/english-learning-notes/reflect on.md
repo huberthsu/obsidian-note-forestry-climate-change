@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-09T14:08:11.962Z
+modified: 2026-09-10T08:58:56.494Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 仔細思考；反思、反省
+字根: flect/flex
 date: 2026-08-31
 ---
 

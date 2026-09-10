@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-09-06T05:14:26.327Z
+modified: 2026-09-10T08:59:24.711Z
 published: 2026-08-14
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 取得平衡、找到折衷的辦法
+字根:
 date: 2026-08-14
 ---
 

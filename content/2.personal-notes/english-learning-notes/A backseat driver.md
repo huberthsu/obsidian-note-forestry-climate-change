@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-09-06T05:14:26.342Z
+modified: 2026-09-10T08:59:32.294Z
 published: 2026-08-15
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 不在其位卻愛指點江山、指手畫腳的人
+字根:
 date: 2026-08-15
 ---
 

@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-28
-modified: 2026-09-06T05:14:26.314Z
+modified: 2026-09-10T08:57:01.151Z
 published: 2026-08-28
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 開始、著手
+字根: init
 date: 2026-08-28
 ---
 
@@ -31,6 +32,9 @@ date: 2026-08-28
 - recommence重新開始
 - commencement開始、開端
   - 特殊: commencement ceremony大學畢業典禮(寓意人生的新開始)
+- 字根 init（開始，源自拉丁 initium「開端」，來自 inire「進入、開始」= in + ire「走」）— commence 源自 \*cominitiare（com-加強 + initiare）→ 正式開始
+  - initiate(v)開始、啟動 — 同源
+  - initial(adj)最初的 — 同源
 
 ---
 

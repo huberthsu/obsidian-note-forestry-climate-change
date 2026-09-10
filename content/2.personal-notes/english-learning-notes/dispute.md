@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-09T14:07:49.117Z
+modified: 2026-09-10T08:58:25.254Z
 published: 2026-09-02
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 爭執、糾紛
+字根: put
 date: 2026-09-02
 ---
 

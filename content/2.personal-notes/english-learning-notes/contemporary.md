@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-09T14:08:15.825Z
+modified: 2026-09-10T08:58:18.609Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 當代的
+字根: tempor
 date: 2026-08-31
 ---
 

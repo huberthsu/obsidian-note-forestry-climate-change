@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-09T14:06:54.546Z
+modified: 2026-09-10T08:58:08.428Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 向某人保證、使某人放心
+字根: sure
 date: 2026-09-01
 ---
 

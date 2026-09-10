@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-09T14:07:11.441Z
+modified: 2026-09-10T08:58:28.001Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 解釋、說明（詳細闡述深層意義）
+字根: plic/plex
 date: 2026-09-07
 ---
 

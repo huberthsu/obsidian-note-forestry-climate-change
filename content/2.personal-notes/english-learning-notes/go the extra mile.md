@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-08T06:51:30.604Z
+modified: 2026-09-10T08:59:49.753Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 額外付出努力、超額完成
+字根:
 date: 2026-09-08
 ---
 

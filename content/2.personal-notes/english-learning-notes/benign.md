@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-09T14:08:07.203Z
+modified: 2026-09-10T08:58:09.859Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 良性的、無害的、溫和的
+字根: gen(+bene前綴)
 date: 2026-09-06
 ---
 

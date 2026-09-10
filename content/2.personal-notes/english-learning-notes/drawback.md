@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-10T08:07:57.705Z
+modified: 2026-09-10T08:59:15.744Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 代價、缺點、弊端
+字根:
 date: 2026-09-10
 ---
 

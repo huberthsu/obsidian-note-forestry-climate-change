@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-09T14:07:21.796Z
+modified: 2026-09-10T08:58:33.093Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 可行的
+字根: fac/fic
 date: 2026-08-31
 ---
 

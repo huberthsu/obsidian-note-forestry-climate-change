@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-09T04:31:57.203Z
+modified: 2026-09-10T08:58:43.324Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 堅持、持續
+字根: sist
 date: 2026-08-31
 ---
 

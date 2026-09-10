@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-09T14:07:56.123Z
+modified: 2026-09-10T08:58:23.986Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 毫不費力的
+字根: fort
 date: 2026-08-19
 ---
 

@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-06T13:37:50.620Z
+modified: 2026-09-10T08:59:40.518Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 人生清單、待做清單（想在人生中完成的事項清單）
+字根:
 date: 2026-09-06
 ---
 

@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-08T06:42:59.123Z
+modified: 2026-09-10T08:59:46.627Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 全力以赴、竭盡全力
+字根:
 date: 2026-09-08
 ---
 

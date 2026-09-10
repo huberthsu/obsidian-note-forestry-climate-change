@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-08T06:32:57.973Z
+modified: 2026-09-10T08:53:07.901Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 疲勞的、疲倦的
+字根: fatig
 date: 2026-09-08
 ---
 
@@ -21,6 +22,8 @@ date: 2026-09-08
 - fatigue(n) 疲勞、疲倦
 - fatiguing(adj) 令人疲倦的、累人的
 - fatiguingly(adv) 令人疲倦地
+- 字根 fatig（使疲累，源自拉丁 fatigare，可能由 fatis「足夠」+ agere「驅使、做」組成，原意是「驅使到極限、精疲力盡」）— fatigued = fatigue + ed = 疲勞的
+  - indefatigable(adj)不知疲倦的、不屈不撓的 — in(不) + de + fatig + able = 無法被累垮的
 
 ---
 

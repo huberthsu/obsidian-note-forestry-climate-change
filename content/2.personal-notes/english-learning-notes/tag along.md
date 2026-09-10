@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-09T17:24:12.221Z
+modified: 2026-09-10T08:59:54.482Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: (順便)跟隨、跟屁蟲
+字根:
 date: 2026-09-08
 ---
 

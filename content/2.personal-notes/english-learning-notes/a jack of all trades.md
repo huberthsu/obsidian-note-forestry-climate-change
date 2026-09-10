@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-09-06T05:14:26.341Z
+modified: 2026-09-10T08:59:30.505Z
 published: 2026-08-15
 category:
   - "[[English learning notes]]"
   - 片語
 Chinese translation: 通才、博而不精
+字根:
 date: 2026-08-15
 ---
 

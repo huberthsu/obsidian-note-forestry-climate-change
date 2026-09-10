@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-07T10:35:27.989Z
+modified: 2026-09-10T08:59:42.152Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 精疲力竭、身心俱疲
+字根:
 date: 2026-09-07
 ---
 

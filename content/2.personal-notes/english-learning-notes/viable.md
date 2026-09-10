@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-09T14:08:09.938Z
+modified: 2026-09-10T08:58:48.612Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 可行的、能存活的
+字根: vi/viv
 date: 2026-09-06
 ---
 

@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-09T14:06:49.578Z
+modified: 2026-09-10T08:58:39.465Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 檢查
+字根: spec/spect
 date: 2026-08-31
 ---
 

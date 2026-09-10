@@ -1,12 +1,13 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-06T08:13:17.585Z
+modified: 2026-09-10T08:52:45.644Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 編譯、彙編、收集、編輯
+字根: pil
 date: 2026-09-06
 ---
 
@@ -31,6 +32,8 @@ date: 2026-09-06
 
 - compiler(n)(電腦)編譯器；編纂者
 - compilation(n)合輯、彙編、精選輯
+- 字根 pil（壓緊、堆疊，源自拉丁 pilare）— compile = com(一起) + pil + e = 堆疊在一起→編纂、彙整
+  - pile(n)堆、疊 — 同源
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-10T11:11:20.382Z
+modified: 2026-09-10T15:57:55.826Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
@@ -33,7 +33,7 @@ date: 2026-09-10
 - sole(adj)單一的、獨自的
 - solitude(n)獨處、孤獨（通常指享受一個人的狀態）
 - 字根 sol（單獨、獨自，源自拉丁 solus）— solely = sole(單獨的) + ly = 唯一地、單獨地
-  - isolate(v)隔離 — 同源，經義大利文 isola「島」轉入
+  - isolate(v)隔離 — 常被誤認為同源，實際源自拉丁 insula(島)，經義大利文 isolato/isola 轉入，與 sol(單獨)是不同字根，僅語意上容易聯想（島=與世隔絕）
   - desolate(adj)荒涼的、孤寂的 — de(徹底) + sol = 徹底獨自一人
 
 ---

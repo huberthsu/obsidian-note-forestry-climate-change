@@ -3,9 +3,9 @@ publish: true
 aliases:
   - Quartz 問題排查－屬性面板與資料展示
 title: Quartz 問題排查－屬性面板與資料展示
-created: 2026-09-05T04:35:03.371Z
-modified: 2026-09-05T14:30:04.272Z
-published: 2026-09-05T14:30:04.272Z
+created: 2026-09-10T12:16:42.699Z
+modified: 2026-09-10T12:16:42.699Z
+published: 2026-09-10T12:16:42.699Z
 tags:
   - 數位花園
   - 網站
@@ -490,3 +490,24 @@ views:
 
 > [!tip] 「新增一個 view type」不代表一定要照抄前一個 view type 的做法
 > calendar／kanban 因為在 Obsidian 端本來就是「會互動」的東西（換月、拖曳排序），搬到網站上想保留這些互動，才不得不一路踩進 script 執行時機的坑。這次的長條圖在 Obsidian 端雖然也是即時運算出來的，但呈現形式（幾根靜態的柱子）本身不需要任何互動，網站版沒有必要為了「形式上」跟 Obsidian 端一致而画蛇添足加 script——先問「這個 view 真的需要互動嗎」，答案是否定的話，直接選最簡單的純 SSR 做法，比照抄 calendar 的架構省事得多，也少掉一整類已知的坑。
+
+---
+
+## ✅ 7.20 Bases「cards」卡片檢視完全不支援 `groupBy` 分組
+
+**現象**：`7.bases/英文學習筆記bases.base` 裡「字根」這個 view 是 `type: cards` 搭配 `groupBy: property: 字根`，在 Obsidian 桌面版看是正常依字根分組的卡片；發布到網站後，「字根」這個分頁點開，所有單字卡片攤平擠成一片，完全沒有分組標頭。
+
+**根本原因**：`vendor/bases-page/src/components/views/cards.tsx` 從頭到尾沒有任何處理 `groupBy` 的程式碼，`CardsView` 直接把 `entries` 攤平 `map` 成一片 `.bases-cards` 網格，不管 `.base` 檔案裡有沒有寫 `groupBy`。對照同一個套件裡的 `table.tsx`／`board.tsx`，兩個都各自實作了一份 `groupEntries()`，依 `view.groupBy.property` 把 entries 分桶、渲染時插入分組標頭——`cards.tsx` 是唯一漏掉這段邏輯的既有 view。
+
+**排查過程**：
+
+1. 一開始懷疑是不是部署 repo 沒同步到 vault 最新版（本機部署 repo clone 落後 origin/v5 42 個 commit），`git fetch` 後直接讀 `origin/v5` 上的 `英文學習筆記bases.base` 內容，確認跟 vault 完全一致（`type: cards`＋`groupBy: property: 字根` 都在），排除同步問題
+2. 讀 `vendor/bases-page/src/components/views/cards.tsx` 原始碼，確認整份檔案不含任何 `groupBy`／`group` 字樣；再讀 `table.tsx`／`board.tsx`，確認兩者都各自寫了幾乎一樣的 `groupEntries()`，只是 `cards.tsx` 沒有對應版本
+3. 確認 `resolver.ts` 的 `buildSortKeys()` 在 view 有 `groupBy` 時，本來就會用 `groupBy.property` 當排序鍵先把 `entries` 排好序，所以只要在 `cards.tsx` 補分組邏輯，不需要額外處理排序，用 `Map` 依插入順序分桶就已經是排好序的分組
+
+**解決方法**：把 `table.tsx` 的 `groupEntries()` 原封不動搬進 `cards.tsx`。渲染時如果 `view.groupBy?.property` 有值，就把 `entries` 分桶後，每一桶各自輸出一個 `.bases-cards-group` 區塊（一個分組標頭 + 一個獨立的 `.bases-cards` 卡片網格）；沒有 `groupBy` 就維持原本整片攤平的行為，不影響其他既有的 cards view。`bases.scss` 另外補上 `.bases-cards-group`／`-header`／`-property`／`-label`／`-count` 樣式，數值直接比照既有的 `.bases-table-group-*`（同一套配色跟間距）。改完用 `vendor/bases-page/build.mjs`（見 [[Quartz troubleshooting - properties and data display#✅ 7.10|7.10]]，沒有 `tsup`、純 `esbuild` 的建置腳本）重新編譯 `dist/`。
+
+> [!tip] 這次不是「沒有這個 view type」（像 [[Quartz troubleshooting - properties and data display#✅ 7.8|7.8]]／[[Quartz troubleshooting - properties and data display#✅ 7.18|7.18]] 的「Unknown view type」），是「這個 view type 的規格只做了一半」
+> cards 檢視本身一直都能正常顯示、`.base` 設定裡的 `groupBy` 也不是語法錯誤，只是這個欄位存在但完全沒被讀取使用——跟 [[Quartz troubleshooting - properties and data display#✅ 7.17|7.17]]（虛擬頁面 `links` 漏套用 `view` 篩選條件）性質類似，都是「功能有一部分沒接上」，不是整個功能沒註冊。之後如果還有其他 view type 顯示「正常但某個設定沒作用」，可以先比對同套件裡功能相近的其他 view（例如這次拿 table／board 對照 cards）有沒有做而它沒做。
+
+**已驗證結果**：本機完整 `node ./quartz/bootstrap-cli.mjs build` 一次，`grep` 輸出的 `public/7.bases/英文學習筆記bases.base.html` 確認多個「字根」分組標頭正確出現（例如「字根 sure(確定、安全) 3」）；啟動本機靜態伺服器，用真的滑鼠點擊切到「字根」分頁、截圖確認單卡分組（如 fluct/flu(流動)）與多卡分組（sure 底下 assure／ensure／insure 三張卡並排）都正確分組顯示；commit 並 push 到 `v5` 分支（`4fbd346b`）。

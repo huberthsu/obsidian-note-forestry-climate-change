@@ -30,5 +30,80 @@ views:
       property: 字根
       direction: ASC
     order:
-      - file.name
       - Chinese translation
+      - file.name
+    columnOrders:
+      file.file:
+        - 2.personal-notes/english-learning-notes/adept.md
+        - 2.personal-notes/english-learning-notes/alleviate.md
+        - 2.personal-notes/english-learning-notes/an extension.md
+        - 2.personal-notes/english-learning-notes/arrogant.md
+        - 2.personal-notes/english-learning-notes/assertive.md
+        - 2.personal-notes/english-learning-notes/assure.md
+        - 2.personal-notes/english-learning-notes/attempt.md
+        - 2.personal-notes/english-learning-notes/benign.md
+        - 2.personal-notes/english-learning-notes/burned out.md
+        - 2.personal-notes/english-learning-notes/cease.md
+        - 2.personal-notes/english-learning-notes/clarify.md
+        - 2.personal-notes/english-learning-notes/commence.md
+        - 2.personal-notes/english-learning-notes/commend.md
+        - 2.personal-notes/english-learning-notes/compile.md
+        - 2.personal-notes/english-learning-notes/conducive.md
+        - 2.personal-notes/english-learning-notes/consult.md
+        - 2.personal-notes/english-learning-notes/contemplate.md
+        - 2.personal-notes/english-learning-notes/contemporary.md
+        - 2.personal-notes/english-learning-notes/contradictory.md
+        - 2.personal-notes/english-learning-notes/cynical.md
+        - 2.personal-notes/english-learning-notes/decipher.md
+        - 2.personal-notes/english-learning-notes/depict.md
+        - 2.personal-notes/english-learning-notes/deplete.md
+        - 2.personal-notes/english-learning-notes/deteriorate.md
+        - 2.personal-notes/english-learning-notes/detrimental.md
+        - 2.personal-notes/english-learning-notes/devise.md
+        - 2.personal-notes/english-learning-notes/discard.md
+        - 2.personal-notes/english-learning-notes/discrepancy.md
+        - 2.personal-notes/english-learning-notes/dispute.md
+        - 2.personal-notes/english-learning-notes/drained.md
+        - 2.personal-notes/english-learning-notes/drawback.md
+        - 2.personal-notes/english-learning-notes/effortless.md
+        - 2.personal-notes/english-learning-notes/elaborate.md
+        - 2.personal-notes/english-learning-notes/ensure.md
+        - 2.personal-notes/english-learning-notes/explicate.md
+        - 2.personal-notes/english-learning-notes/facilitate.md
+        - 2.personal-notes/english-learning-notes/fatigued.md
+        - 2.personal-notes/english-learning-notes/feasible.md
+        - 2.personal-notes/english-learning-notes/fluctuate.md
+        - 2.personal-notes/english-learning-notes/foster.md
+        - 2.personal-notes/english-learning-notes/fruitful.md
+        - 2.personal-notes/english-learning-notes/inquire.md
+        - 2.personal-notes/english-learning-notes/inspect.md
+        - 2.personal-notes/english-learning-notes/insure.md
+        - 2.personal-notes/english-learning-notes/investigate.md
+        - 2.personal-notes/english-learning-notes/irritate.md
+        - 2.personal-notes/english-learning-notes/modify.md
+        - 2.personal-notes/english-learning-notes/paradigm.md
+        - 2.personal-notes/english-learning-notes/persist.md
+        - 2.personal-notes/english-learning-notes/ponder.md
+        - 2.personal-notes/english-learning-notes/postpone.md
+        - 2.personal-notes/english-learning-notes/predominate.md
+        - 2.personal-notes/english-learning-notes/proceed.md
+        - 2.personal-notes/english-learning-notes/prominent.md
+        - 2.personal-notes/english-learning-notes/prone.md
+        - 2.personal-notes/english-learning-notes/proponent.md
+        - 2.personal-notes/english-learning-notes/recommend.md
+        - 2.personal-notes/english-learning-notes/refine.md
+        - 2.personal-notes/english-learning-notes/reflect on.md
+        - 2.personal-notes/english-learning-notes/reside.md
+        - 2.personal-notes/english-learning-notes/retain.md
+        - 2.personal-notes/english-learning-notes/scrutinize.md
+        - 2.personal-notes/english-learning-notes/solely.md
+        - 2.personal-notes/english-learning-notes/supervise.md
+        - 2.personal-notes/english-learning-notes/surpass.md
+        - 2.personal-notes/english-learning-notes/validate.md
+        - 2.personal-notes/english-learning-notes/verify.md
+        - 2.personal-notes/english-learning-notes/viable.md
+        - 2.personal-notes/english-learning-notes/yield.md
+    cardOrders:
+      file.file: {}
+    columnColors:
+      file.file: {}

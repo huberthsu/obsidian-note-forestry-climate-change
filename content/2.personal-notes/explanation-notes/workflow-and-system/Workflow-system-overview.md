@@ -3,9 +3,9 @@ publish: true
 aliases:
   - 工作流系統說明
 title: 工作流系統說明
-created: 2026-09-03T16:35:02.212Z
-modified: 2026-09-06T09:40:10.901Z
-published: 2026-09-06T09:40:10.901Z
+created: 2026-09-16T07:21:44.787Z
+modified: 2026-09-16T07:21:44.789Z
+published: 2026-09-16T07:21:44.789Z
 tags:
   - 工作流
 category:
@@ -87,7 +87,7 @@ child:
 * 核心概念：
   - 以**康乃爾+[[Information filtering criteria|資訊篩選標準]]** 為架構撰寫卡片
   - 以**卡片盒筆記法**整理與串聯筆記
-  - claudian參考claude/skills資料夾底下的skills，按找我的原則與規範協作
+  - claudian參考claude-skills-副本/skills資料夾底下的skills，按找我的原則與規範協作
     - 建立文獻筆記相關skills
       - [[1-foundation]]
       - [[2-setup]]
@@ -96,7 +96,7 @@ child:
       - [[5-organize]]
       - [[6-content]]
       - [[7-verify]]
-    - 建立[[claude/skills/zettelkasten/SKILL.md|卡片盒筆記法skills]]
+    - 建立[[claude-skills-副本/skills/zettelkasten/SKILL.md|卡片盒筆記法skills]]
 
 - 使用模板: [[Literature notes template|文獻筆記模板]]
 

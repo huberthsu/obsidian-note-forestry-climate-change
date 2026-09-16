@@ -23,7 +23,7 @@
 		{"id":"8bde9e1507c66bf4","type":"text","text":"[[Breadcrumbs plugins]]","x":-2620,"y":2900,"width":250,"height":60},
 		{"id":"fb267d9ada15d8d7","type":"text","text":"組織筆記、心智圖、思考","x":-2340,"y":3620,"width":250,"height":60},
 		{"id":"342bdd97ed80e398","type":"text","text":"[[CLAUDE]]","x":-2560,"y":1800,"width":250,"height":60},
-		{"id":"9461e0dd38b54a6b","type":"text","text":"[[claude/skills/zettelkasten/SKILL.md|卡片盒筆記法skill]]","x":-2560,"y":2580,"width":250,"height":60},
+		{"id":"9461e0dd38b54a6b","type":"text","text":"[[claude-skills-副本/skills/zettelkasten/SKILL.md|卡片盒筆記法skill]]","x":-2560,"y":2580,"width":250,"height":60},
 		{"id":"ca6a4f0ed471bdb5","type":"text","text":"[[1-foundation]]","x":-2560,"y":1980,"width":250,"height":60},
 		{"id":"cd1abf22bd3e2fa2","type":"text","text":"[[3-metadata]]","x":-2560,"y":2150,"width":250,"height":60},
 		{"id":"c449b654352cf2ae","type":"text","text":"[[4-summary]]","x":-2560,"y":2230,"width":250,"height":60},

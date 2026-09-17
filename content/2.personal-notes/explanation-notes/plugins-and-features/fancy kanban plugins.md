@@ -4,10 +4,11 @@ aliases:
   - fancy kanban
 title: fancy kanban外掛
 created: 2026-09-04T07:29:56.359Z
-modified: 2026-09-04T07:30:11.683Z
-published: 2026-09-04T07:30:11.683Z
+modified: 2026-09-16T22:55:34.605Z
+published: 2026-09-16T22:55:34.605Z
 tags:
   - 工作流
+  - 任務管理
 category:
   - "[[Explanation notes]]"
   - Plugin and features

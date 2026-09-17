@@ -4,10 +4,11 @@ aliases:
   - Quickadd外掛說明
 title: Quickadd外掛說明
 created: 2026-08-30T17:29:36.971Z
-modified: 2026-09-03T16:03:26.020Z
-published: 2026-09-03T16:03:26.020Z
+modified: 2026-09-16T22:57:12.300Z
+published: 2026-09-16T22:57:12.300Z
 tags:
   - obsidian
+  - 工作流
 category:
   - "[[Explanation notes]]"
   - Plugin and features

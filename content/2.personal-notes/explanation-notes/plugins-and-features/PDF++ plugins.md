@@ -5,11 +5,11 @@ aliases:
   - PDF++
 title: PDF++外掛說明
 created: 2026-09-16T17:34:32.504Z
-modified: 2026-09-16T17:34:50.750Z
-published: 2026-09-16T17:34:50.750Z
+modified: 2026-09-16T22:57:03.898Z
+published: 2026-09-16T22:57:03.898Z
 tags:
   - obsidian
-  - 文獻筆記
+  - 文獻閱讀
 category:
   - "[[Explanation notes]]"
   - Plugin and features

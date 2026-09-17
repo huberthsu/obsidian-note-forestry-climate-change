@@ -7,7 +7,6 @@
 		{"id":"a8b0bec455be9e43","type":"group","x":-9770,"y":4227,"width":760,"height":200,"color":"6","label":"原文課外書"},
 		{"id":"88cc2d0bf41745dd","type":"group","x":-9770,"y":5120,"width":760,"height":180,"color":"6","label":"claudian建立單字/片語群組比較"},
 		{"id":"e2761c56fb863f4a","type":"group","x":-7512,"y":4160,"width":514,"height":133,"color":"6","label":"調整影片播放位置、建立影片時間戳記"},
-		{"id":"c78415c1aadb41e5","type":"text","text":"[[Timestamp note plugins]]","x":-7380,"y":4194,"width":250,"height":60},
 		{
 			"id":"160a850364836503",
 			"type":"text",
@@ -18,48 +17,7 @@
 			"width":260,
 			"height":60
 		},
-		{"id":"29829b2c18428ef5","type":"text","text":"![[English study notes template|英文學習筆記模板]]","x":-7512,"y":4520,"width":514,"height":584,"color":"5"},
-		{
-			"id":"c58679ab0528ded5",
-			"type":"text",
-			"text":"英文測驗練習",
-			"styleAttributes":{},
-			"x":-6780,
-			"y":4584,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"4daee770d372f31d",
-			"type":"text",
-			"text":"[[Vocab Quiz Record|英文測驗紀錄]]",
-			"styleAttributes":{},
-			"x":-6400,
-			"y":4584,
-			"width":260,
-			"height":60
-		},
 		{"id":"fcf7ff3f34ec958b","type":"text","text":"Obsidian Web Clipper","x":-10240,"y":4490,"width":260,"height":60},
-		{
-			"id":"2bf95eda479f4ca4",
-			"type":"text",
-			"text":"片語",
-			"styleAttributes":{},
-			"x":-8000,
-			"y":5044,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"a22222159694bae1",
-			"type":"text",
-			"text":"單字",
-			"styleAttributes":{},
-			"x":-8000,
-			"y":4520,
-			"width":260,
-			"height":60
-		},
 		{
 			"id":"644c077ff93b71bd",
 			"type":"text",
@@ -90,6 +48,38 @@
 			"width":260,
 			"height":60
 		},
+		{"id":"c78415c1aadb41e5","type":"text","text":"[[Timestamp note plugins]]","x":-7380,"y":4194,"width":250,"height":60},
+		{"id":"29829b2c18428ef5","type":"text","text":"![[English study notes template|英文學習筆記模板]]","x":-7512,"y":4520,"width":514,"height":584,"color":"5"},
+		{
+			"id":"c58679ab0528ded5",
+			"type":"text",
+			"text":"英文測驗練習",
+			"styleAttributes":{},
+			"x":-6780,
+			"y":4584,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"2bf95eda479f4ca4",
+			"type":"text",
+			"text":"片語",
+			"styleAttributes":{},
+			"x":-8000,
+			"y":5044,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a22222159694bae1",
+			"type":"text",
+			"text":"單字",
+			"styleAttributes":{},
+			"x":-8000,
+			"y":4520,
+			"width":260,
+			"height":60
+		},
 		{
 			"id":"0ddc84570c417896",
 			"type":"text",
@@ -117,6 +107,16 @@
 			"styleAttributes":{},
 			"x":-6780,
 			"y":5000,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4daee770d372f31d",
+			"type":"text",
+			"text":"[[Vocab Quiz Record|英文測驗紀錄]]",
+			"styleAttributes":{},
+			"x":-6400,
+			"y":4584,
 			"width":260,
 			"height":60
 		},
@@ -284,6 +284,7 @@
 			"id":"121870f088bff06d",
 			"styleAttributes":{},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"35bedffc03da6bd5",
 			"fromSide":"right",
 			"toNode":"0d7423d9e6812ec1",
@@ -293,6 +294,7 @@
 			"id":"de991848f142b145",
 			"styleAttributes":{},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"87848d69115e6b4c",
 			"fromSide":"right",
 			"toNode":"16b6fdaa7197f1fa",

@@ -1,14 +1,35 @@
 {
 	"nodes":[
-		{"id":"664f6ba16bb4cfd6","type":"file","file":"4.canvas-and-mindmaps/canvas/英文學習工作流.canvas","portal":true,"x":3200,"y":1120,"width":3060,"height":1740,"color":"5"},
+		{
+			"id":"3b73235d56073931",
+			"type":"text",
+			"text":"![[Task Management]]",
+			"styleAttributes":{
+				"border":null
+			},
+			"x":-1360,
+			"y":-680,
+			"width":2800,
+			"height":1640
+		},
+		{
+			"id":"c2545f1649726d1b",
+			"type":"text",
+			"text":"![[Exam Practice Analysis bases.base#複習月曆]]",
+			"styleAttributes":{},
+			"x":3860,
+			"y":-5440,
+			"width":940,
+			"height":580
+		},
 		{
 			"id":"dcb4cb7c84197fa2",
 			"type":"file",
 			"file":"4.canvas-and-mindmaps/canvas/高普考準備工作流.canvas",
 			"portal":true,
-			"x":3200,
-			"y":-3680,
-			"width":6660,
+			"x":1760,
+			"y":-4360,
+			"width":6740,
 			"height":3620,
 			"interdimensionalEdges":[
 				{
@@ -24,48 +45,16 @@
 				}
 			]
 		},
-		{
-			"id":"c2545f1649726d1b",
-			"type":"text",
-			"text":"![[Exam Practice Analysis bases.base#複習月曆]]",
-			"styleAttributes":{},
-			"x":5260,
-			"y":-4760,
-			"width":940,
-			"height":580
-		},
-		{
-			"id":"3b73235d56073931",
-			"type":"text",
-			"text":"![[Task Management]]",
-			"styleAttributes":{
-				"border":null
-			},
-			"x":-1360,
-			"y":-680,
-			"width":2800,
-			"height":1640
-		}
+		{"id":"664f6ba16bb4cfd6","type":"file","file":"4.canvas-and-mindmaps/canvas/英文學習工作流.canvas","portal":true,"x":1840,"y":1600,"width":4780,"height":1580,"color":"5"}
 	],
 	"edges":[
-		{
-			"id":"88430f05fa557290",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"3b73235d56073931",
-			"fromSide":"right",
-			"toNode":"664f6ba16bb4cfd6",
-			"toSide":"left",
-			"label":"設定每日英文學習目標"
-		},
 		{
 			"id":"547626f3dfe87bab",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromFloating":false,
 			"fromNode":"3b73235d56073931",
-			"fromSide":"right",
+			"fromSide":"top",
 			"toNode":"dcb4cb7c84197fa2",
 			"toSide":"left",
 			"label":"規劃考古題複習進度"
@@ -76,9 +65,9 @@
 			"toFloating":false,
 			"fromFloating":false,
 			"fromNode":"664f6ba16bb4cfd6",
-			"fromSide":"left",
+			"fromSide":"right",
 			"toNode":"3b73235d56073931",
-			"toSide":"bottom",
+			"toSide":"right",
 			"label":"統計是否完成英文學習月目標"
 		},
 		{
@@ -87,10 +76,21 @@
 			"toFloating":false,
 			"fromFloating":false,
 			"fromNode":"dcb4cb7c84197fa2",
-			"fromSide":"left",
+			"fromSide":"right",
 			"toNode":"3b73235d56073931",
-			"toSide":"top",
+			"toSide":"right",
 			"label":"統計是否完成考古題複習月目標"
+		},
+		{
+			"id":"88430f05fa557290",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"3b73235d56073931",
+			"fromSide":"bottom",
+			"toNode":"664f6ba16bb4cfd6",
+			"toSide":"left",
+			"label":"設定每日英文學習目標"
 		}
 	],
 	"metadata":{

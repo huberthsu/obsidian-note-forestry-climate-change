@@ -5,8 +5,8 @@ aliases:
   - vault backup
 title: vault backup外掛說明
 created: 2026-09-18T04:52:59.084Z
-modified: 2026-09-18T07:15:09.503Z
-published: 2026-09-18T07:15:09.503Z
+modified: 2026-09-18T07:25:43.406Z
+published: 2026-09-18T07:25:43.406Z
 tags:
   - 檔案備份
   - 工作流
@@ -58,7 +58,7 @@ child:
 - 保留模式選的是 `retentionMode: keepLastN`，只看「保留最近 N 份」這條規則，`retentionKeepDays: 0` 這個天數欄位在此模式下**不會被套用**
 - `retentionKeepLastN: 3` → 只保留最近 3 份備份，第 4 份以後的舊備份會被自動刪除，屬於短期滾動備份
 
-## 與 [[Git plugins|Git 外掛]] 的比較
+## 與 [[Git plugins|Git 外掛]] 的比較(目前設定)
 
 | 比較面向 | Git 外掛 | Vault Backup 外掛 |
 | --- | --- | --- |

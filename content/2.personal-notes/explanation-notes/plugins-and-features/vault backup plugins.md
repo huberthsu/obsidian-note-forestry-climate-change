@@ -5,11 +5,11 @@ aliases:
   - vault backup
 title: vault backup外掛說明
 created: 2026-09-18T04:52:59.084Z
-modified: 2026-09-18T07:25:43.406Z
-published: 2026-09-18T07:25:43.406Z
+modified: 2026-09-18T07:43:43.205Z
+published: 2026-09-18T07:43:43.205Z
 tags:
-  - 檔案備份
   - 工作流
+  - 檔案備份
 category:
   - "[[Explanation notes]]"
   - Plugin and features

@@ -4,11 +4,11 @@ aliases:
   - Simple mind map 外掛說明
 title: Simple mind map 外掛說明
 created: 2026-08-03T04:01:43.030Z
-modified: 2026-08-21T06:11:17.694Z
-published: 2026-08-21T06:11:17.694Z
+modified: 2026-09-18T07:43:23.389Z
+published: 2026-09-18T07:43:23.389Z
 tags:
-  - 心智圖
   - 工作流
+  - 心智圖
 category:
   - "[[Explanation notes]]"
   - Plugin and features

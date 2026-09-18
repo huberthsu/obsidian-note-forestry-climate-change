@@ -4,8 +4,8 @@ aliases:
   - 文獻筆記
 title: 文獻筆記
 created: 2026-07-21T02:48:06.096Z
-modified: 2026-08-15T05:43:16.696Z
-published: 2026-08-15T05:43:16.696Z
+modified: 2026-09-18T07:49:12.950Z
+published: 2026-09-18T07:49:12.950Z
 tags:
   - 類別
 ---
@@ -17,4 +17,5 @@ tags:
 
 # 文獻bases
 
+2種檢視: 篩選標準、閱讀狀態
 ![[文獻bases.base]]

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-10T11:11:20.385Z
+modified: 2026-09-19T05:36:23.665Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
@@ -32,10 +32,11 @@ date: 2026-09-06
 
 - viability(n)可行性、生存能力
 - viably(adv)可行地、能存活地
-- 字根 vi/viv（生命，源自拉丁 vita/vivere）— viable = vi(生命) + able(能夠) = 能存活的
-  - vivid(adj)生動的、鮮明的 — 同源
-  - survive(v)存活 — sur(超過) + viv
-  - revive(v)復甦 — re(再次) + viv
+- 字根 vi/viv（生命，源自拉丁 vita「生命」，PIE 字根 \*gwei-「活」）（Etymonline）— viable 1823 年出現，意思是「能活的、可能存活的」，源自法語 viable「能生存的」（1530 年代），= vie「生命」（源自拉丁 vita）+ -able；原本指新生兒，「能持續存在」的一般義 1848 年出現
+  - 🤖 **claudian:** _字根 vita 是「生命」，vie + able 是「有能力活下去的」，所以 viable 是「可行的、能存活的」。_
+  - vivid(adj)生動的、鮮明的 — 拉丁 vividus「有精神的、活潑的」，源自 vivus「活的」，PIE 字根 \*gwei-「活」
+  - survive(v)存活 — 晚期拉丁 supervivere「活得比…久」= super(超過) + vivere「活」
+  - revive(v)復甦 — 拉丁 revivere「再活過來」= re(再) + vivere「活」
 
 ---
 

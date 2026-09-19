@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-10T11:11:20.371Z
+modified: 2026-09-18T09:44:11.857Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
@@ -34,7 +34,7 @@ date: 2026-09-01
 - cover
 
 > [!note] 易混淆詞
-> 與 ensure / assure 的區別見[[1.English words and phrases associations#ensure--assure--insure|詞彙關聯整理]]
+> 與 ensure / assure 的區別見[[1.English words and phrases associations#ensure assure insure|詞彙關聯整理]]
 
 ---
 

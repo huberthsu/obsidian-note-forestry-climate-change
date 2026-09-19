@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-10T08:59:46.627Z
+modified: 2026-09-19T06:52:31.019Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
@@ -36,7 +36,7 @@ date: 2026-09-08
 
 ## Usage & Collocations
 
-- give it one's all+in+n(活動/項目/比賽): 在...中全力以赴
+- give it one's all+in+n(活動/專案/比賽): 在...中全力以赴
 
 - give it one's all+to+v(achieve/win): 為了(贏得/達成)...全力以赴
 

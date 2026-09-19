@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T11:11:20.358Z
+modified: 2026-09-19T05:36:23.632Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -29,10 +29,11 @@ date: 2026-08-31
 
 ## Word Family
 
-- 字根 tend/tens（伸展，源自拉丁 tendere）— extension = ex(向外) + tend = 向外伸展
-  - attend(v)參加、照料 — ad(向) + tend
-  - intend(v)打算 — in(向內) + tend
-  - tension(n)緊繃、張力 — tend 的名詞形
+- 字根 tend/tens（伸展，源自拉丁 tendere「伸展」）（Etymonline）— extension 約 1400 年出現，最早的意思是「腫脹、鼓起」，源自拉丁 extensionem/extentionem「伸展開來」，是 extendere 過去分詞詞幹構成的名詞；extend 源自拉丁 extendere「伸出、展開；增加、擴大、延長」= ex(向外) + tendere「伸展」（源自 PIE 字根 \*ten-「伸展」）；「延伸出去的部分」的具體義 1852 年出現，電話「分機」義 1906 年出現
+  - 🤖 **claudian:** _字根 tendere 是「伸展」，ex + tendere 是「向外伸展」，extension 是「伸展出去的部分」→ 延長、擴充、分機。_
+  - attend(v)參加、照料 — 拉丁 attendere「留心」，字面「向…伸展」= ad(向) + tendere「伸展」
+  - intend(v)打算 — 拉丁 intendere「轉向注意、伸出」，字面「伸出、延伸」= in(朝向) + tendere
+  - tension(n)緊繃、張力 — 拉丁 tensio「伸展」，源自 tendere 的過去分詞 tensus
 
 ---
 

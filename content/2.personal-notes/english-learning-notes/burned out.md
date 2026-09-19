@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-10T08:59:42.152Z
+modified: 2026-09-18T09:44:28.464Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -32,7 +32,7 @@ date: 2026-09-07
 - worn out — 筋疲力盡的
 
 > [!note] 群組比較
-> 詳見 [[1.English words and phrases associations#疲憊群組|同主題群組：疲憊]]（與 [[fatigued]]、[[drained]] 比較）
+> 詳見 [[1.English words and phrases associations#「疲憊」群組|同主題群組：疲憊]]（與 [[fatigued]]、[[drained]] 比較）
 
 ---
 

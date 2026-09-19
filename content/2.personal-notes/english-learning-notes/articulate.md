@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-16
-modified: 2026-09-16T12:16:05.108Z
+modified: 2026-09-19T04:41:04.174Z
 published: 2026-09-16
 category:
   - "[[English learning notes]]"
@@ -23,7 +23,8 @@ date: 2026-09-16
 - articulation(n)發音、表達、關節
 - articulately(adv)清晰地、清楚地
 - inarticulate(adj)表達不清的、發音不清的
-- 字根 articulus(源自拉丁 — 意為「關節」、「分段」→ 引申為「分節清楚地說」、「清晰表達」)
+- 字根 articulus（關節、分段，源自拉丁 articulus「部分、成員、關節」）（Etymonline）— articulate 動詞 1590 年代出現，意思是「把話語分成清楚的部分」，來自拉丁 articulatus，為 articulare「分成關節；清楚說出」的過去分詞，源自 articulus；形容詞 1580 年代出現，「分成清楚的部分」進而「清晰、明確」；「用言語表達」的一般義 1690 年代出現
+  - 🤖 **claudian:** _字根 articulus 是「關節、分段」，articulare 是「分成關節、清楚說出」，所以 articulate 是「把話說得分節清楚」→ 表達清晰的。_
 
 ---
 

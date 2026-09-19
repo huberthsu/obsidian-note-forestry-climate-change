@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-10T08:59:12.889Z
+modified: 2026-09-18T09:44:35.471Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -33,10 +33,10 @@ date: 2026-09-07
 - worn out — 筋疲力盡的
 
 > [!note] 群組比較
-> 詳見 [[1.English words and phrases associations#deplete-drain-exhaust|同主題群組：耗盡/用完]]（與 [[deplete]]、exhaust 比較）
+> 詳見 [[1.English words and phrases associations#deplete drained exhaust|同主題群組：耗盡/用完]]（與 [[deplete]]、exhaust 比較）
 
 > [!note] 群組比較
-> 詳見 [[1.English words and phrases associations#疲憊群組|同主題群組：疲憊]]（與 [[fatigued]]、[[burned out]] 比較）
+> 詳見 [[1.English words and phrases associations#「疲憊」群組|同主題群組：疲憊]]（與 [[fatigued]]、[[burned out]] 比較）
 
 ---
 

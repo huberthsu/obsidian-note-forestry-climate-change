@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-10T11:11:20.360Z
+modified: 2026-09-19T06:16:34.446Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -24,9 +24,10 @@ date: 2026-09-07
 - contemplation(n) 沉思、冥想、深思
 - contemplative(adj) 沉思的、思考的、冥想的
 - contemplatively(adv) 沉思地、冥想地
-- 字根 templum（劃定用來觀測的神聖空間，源自拉丁 templum，占卜官劃出的觀察範圍）— contemplate = con(強化) + templum = 專注凝視劃定的空間→深思、沉思；注意跟 [[attempt]] 的字根\[temptare 試探]、[[contemporary]] 的字根\[tempus 時間]拼字都很像 "temp" 但完全是三個不同的字根
-  - temple(n)神殿、廟宇 — 同源，原意也跟「劃定的神聖空間」有關
-  - contemplation(n)沉思 — 同源(已列於上方 Word Family)
+- 字根 templum（劃定用來觀測的空間，源自拉丁 templum「占卜用的區域」）（Etymonline）— contemplate 1590 年代出現，意思是「反思、沉思、在心中細看」，源自拉丁 contemplatus，為 contemplari「專注凝視、觀察；考慮」的過去分詞，原意是「（占卜官）標出一塊觀察用的空間」；= com-（同化形，這裡或許是加強語氣的前綴）+ templum（見 temple n.1）；約 1600 年起有「持續專注地觀看」義，1816 年起有「打算、預期做某事」義
+  - 🤖 **claudian:** \*字根 templum 是「劃定的觀察空間」，con + templum 是「專注地盯著劃定的空間」，所以 contemplate 是「凝視、深思」。注意 [[attempt]] 的 temptare、[[contemporary]] 的 tempus 與 contemplate 的 templum 拼字都很像 "temp"；Etymonline 提到三者都可能連到 PIE \*temp-/_ten-「伸展」（templum、temptare 為推測，tempus 依 de Vaan），但這些連結並不確定，英文裡意思也早已分化，不建議當成同一個字根記。_
+  - temple(n)神殿、廟宇 — 古英語 tempel，源自拉丁 templum「為占卜而劃定的土地；神殿」，字義不確定；有說法認為源自 PIE \*temp-/\*ten-「伸展」，指「劃出的空間」
+  - contemplation(n)沉思 — 拉丁 contemplationem「觀看的行為」，源自 contemplari（見 contemplate）；約 1200 年最早指「宗教上的默想」
 
 ---
 
@@ -38,7 +39,7 @@ date: 2026-09-07
 - meditate — 冥想、思考
 
 > [!note] 群組比較
-> 詳見 [[1.English words and phrases associations#reflect-on--contemplate--ponder--muse|同主題群組：深思/反思]]（與 [[reflect on]]、[[ponder]]、muse 比較）
+> 詳見 [[1.English words and phrases associations#reflect on contemplate ponder muse|同主題群組：深思/反思]]（與 [[reflect on]]、[[ponder]]、muse 比較）
 
 ---
 

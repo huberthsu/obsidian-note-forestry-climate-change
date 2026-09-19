@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T11:11:20.377Z
+modified: 2026-09-19T05:36:23.654Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -31,10 +31,11 @@ date: 2026-08-31
 
 - postponement(n)延期、延緩
 - postponable(adj)可延期的、可推遲的
-- 字根 pon/pos（放置，源自拉丁 ponere）— postpone = post(在後) + pon = 放到後面→延後
-  - [[proponent]]\(n)支持者、提倡者 — pro(向前) + pon = 把想法放到前面提出的人
-  - propose(v)提議 — pro(向前) + pos
-  - oppose(v)反對 — ob(對抗) + pos
+- 字根 pon/pos（放置，源自拉丁 ponere「放、置」）（Etymonline）— postpone 約 1500 年出現，意思是「延後、推遲到未來或較晚的時間」，源自拉丁 postponere「放在後面；較不重視；忽略；延後」，= post「之後」（見 post-）+ ponere「放、置」（見 position n.）
+  - 🤖 **claudian:** _字根 ponere 是「放置」，post + ponere 是「放到後面」，把事情往後放，所以 postpone 是「延後」。_
+  - [[proponent]]\(n)支持者、提倡者 — 拉丁 proponens，proponere「提出」的現在分詞 = pro(向前) + ponere
+  - propose(v)提議 — 古法語 proposer「提出、提議」= pro(向前) + poser「放、置」，取代拉丁 proponere
+  - oppose(v)反對 — 古法語 oposer「反對、抵抗」= ob(對著、在前) + poser「放、置」，詞義與拉丁 opponere「反對」混合
 
 ---
 

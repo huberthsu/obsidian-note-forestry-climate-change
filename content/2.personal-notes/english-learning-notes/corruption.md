@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-11
-modified: 2026-09-11T12:32:20.193Z
+modified: 2026-09-19T05:36:23.640Z
 published: 2026-09-11
 category:
   - "[[English learning notes]]"
@@ -30,11 +30,12 @@ date: 2026-09-11
 - corrupt(v/adj)使墮落、腐化、破壞；腐敗的、貪污的、毀損的
 - corruptible(adj)易腐化的、可收買的
 - incorruptible(adj)清廉的、不能收買的
-- 字根 rupt（破裂，源自拉丁 _rumpere_）— corruption 源自拉丁文 _corrumpere_ = com-/cor-(強化前綴) + rup(破裂) + tion = 「破壞、毀損」；14 世紀初指「物質腐爛」，後引申為「道德敗壞、貪污」
-  - disrupt(v)破壞 — dis(分開) + rupt
-  - interrupt(v)中斷 — inter(在...之間) + rupt
-  - erupt(v)爆發 — e(向外) + rupt
-  - rupture(n/v)破裂、決裂 — 同源
+- 字根 rupt（破裂，源自拉丁 rumpere「打破」，PIE 字根 \*runp-「打破」）（Etymonline）— corruption 14 世紀中出現，指物質「腐敗、分解」（尤指屍體），也指靈魂、道德的「精神汙染、墮落」，源自拉丁 corruptionem（corruptio）「腐敗、破壞、誘惑」，為 corrumpere「破壞、毀壞」（引申為「腐化、引誘、賄賂」）過去分詞詞幹的動作名詞；corrumpere = com-（同化，這裡或許是加強語氣的前綴）+ rup-（rumpere「打破」的過去分詞詞幹）；公職的「賄賂或其他敗壞的影響」義 15 世紀初出現
+  - 🤖 **claudian:** _字根 rumpere 是「打破」，com + rumpere 是「徹底弄破」，東西被徹底破壞就是腐敗，人的品行被破壞就是墮落，所以 corruption 是「腐敗、貪污」。_
+  - disrupt(v)破壞 — 拉丁 disrumpere「打碎、裂開」= dis(分開) + rumpere「打破」
+  - interrupt(v)中斷 — 拉丁 interrumpere「打斷、截斷」= inter(在...之間) + rumpere
+  - erupt(v)爆發 — 拉丁 erumpere「爆出、迸發」= ex(向外) + rumpere
+  - rupture(n/v)破裂、決裂 — 拉丁 ruptura「破裂」，源自 rumpere 的過去分詞詞幹
 
 ---
 

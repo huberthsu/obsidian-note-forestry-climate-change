@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-15
-modified: 2026-09-15T09:18:54.336Z
+modified: 2026-09-19T04:51:50.764Z
 published: 2026-09-15
 category:
   - "[[English learning notes]]"
@@ -29,8 +29,9 @@ date: 2026-09-15
 
 - innately(adv)天生地
 - innateness(n)天生性、先天特質、內在本質
-- 字根 in-(內、於...之中) + -nat-(born，源自拉丁 nasci "to be born")
-  — innate = 於生時內在具備的 = 與生俱來的
+- 字根 in-（內、在…之中）+ nat（出生，源自拉丁 nasci「出生」，古拉丁 gnasci，PIE 字根 \*gene-「生育」）（Etymonline）— innate 15 世紀初出現，意思是「與生俱來的」，源自晚期拉丁 innatus「天生的、本地的、自然的」，為 innasci「在…出生、起源於」的過去分詞；innasci = in-「在…之中」+ nasci「出生」；與 acquired（後天獲得的）相對
+  - 🤖 **claudian:** _字根 nasci 是「出生」，in + nasci 是「在（身體）裡面出生」，也就是一出生就有的，所以 innate 是「與生俱來的、天生的」。_
+    — innate = 於生時內在具備的 = 與生俱來的
   - natal(adj)出生的、與出生相關的
   - native(adj)本土的、原生的、土著的
   - natural(adj)自然的、天生的

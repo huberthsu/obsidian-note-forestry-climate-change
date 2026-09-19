@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-16T10:36:35.748Z
+modified: 2026-09-19T05:36:23.651Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -35,9 +35,10 @@ date: 2026-08-31
 > feasibility study/report/analysis: 可行性研究/報告/分析...
 
 - feasibly(adv)可行地、可能地
-- 字根 fac/fic（做，源自拉丁 facere）— feasible 經由 facilis(容易做到的) 演變而來，與 [[facilitate]] 同源
-  - factory(n)工廠 — 製造東西的地方
-  - defect(n)缺陷 — de(偏離) + fic(做) = 做壞了
+- 字根 fac/fic（做，源自拉丁 facere「做、製造、執行」，PIE 字根 \*dhe-「放置、設置」）（Etymonline）— feasible 15 世紀中出現，意思是「能夠被做到、完成或執行的」，源自盎格魯法語 faisible、古法語 faisable「可能的、可以做的；容易的、方便的」，來自 fais-（faire「做、製造」的詞幹），源自拉丁 facere
+  - 🤖 **claudian:** _字根 facere 是「做」，faisable 是「可以做的」，所以 feasible 是「做得到的、可行的」。與 [[facilitate]] 同源（都來自 facere），不過 facilitate 經拉丁 facilis，feasible 則經法語 faire。_
+  - factory(n)工廠 — 拉丁 factor「做的人」，源自 facere「做」；「製造貨物的建築」義 1610 年代出現
+  - defect(n)缺陷 — 拉丁 defectus「失敗、脫離」，源自 deficere「失敗、遺棄」= de(向下、離開) + facere
 
 ---
 

@@ -9,8 +9,14 @@ views:
     filters:
       and:
         - category.contains("Plugin and features")
+    order:
+      - file.name
+      - tags
   - type: table
     name: 工作流與系統
     filters:
       and:
         - category.contains("Workflow and system")
+    order:
+      - file.name
+      - tags

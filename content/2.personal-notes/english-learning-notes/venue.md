@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-13
-modified: 2026-09-13T10:40:27.542Z
+modified: 2026-09-19T04:51:50.796Z
 published: 2026-09-13
 category:
   - "[[English learning notes]]"
@@ -22,7 +22,8 @@ date: 2026-09-13
 ## Word Family
 
 - avenue(n)大街、林蔭道 — 源自同一拉丁字根 venire（來到）
-- 字根 venire（來，源自拉丁文）— venue = 來到的地方→集合/聚會之處
+- 字根 venire（來，源自拉丁 venire「來」，PIE 字根 \*gwa-「走、來」）（Etymonline）— venue 約 1300 年出現，意思是「抵達的行為」，源自古法語 venue「來到」（12 世紀），為 venir「來」的陰性過去分詞，來自拉丁 venire；「審理案件的地點」義 1530 年代出現，後擴大為一般的「地點」，尤指「音樂會或運動賽事的場地」（1857 年前）
+  - 🤖 **claudian:** _字根 venire 是「來」，venue 原意是「來到」，人們要來的地方就是舉行審理、聚會或活動的場所，所以 venue 是「場地、舉辦地點」。_
 
 ---
 

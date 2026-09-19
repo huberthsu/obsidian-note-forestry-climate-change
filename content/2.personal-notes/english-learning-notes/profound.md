@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-16
-modified: 2026-09-16T09:40:02.098Z
+modified: 2026-09-19T04:53:51.481Z
 published: 2026-09-16
 category:
   - "[[English learning notes]]"
@@ -21,7 +21,8 @@ date: 2026-09-16
 
 - profoundly(adv)深刻地、深深地
 - profundity(n)深刻、深遠、深意
-  - 字根 profundus(源自拉丁 pro(向前) + fundus(底部) = 延伸到底部→深)
+- 字根 fundus（底部，源自拉丁 profundus「深的、無底的、廣大的」）（Etymonline）— profound 約 1300 年出現，意思是「有智識深度的、學識淵博的」，源自古法語 profont/profund（12 世紀）與直接源自拉丁 profundus「深的、無底的、廣大的」，也指「晦澀的；深奧的；過度的」，= pro「向前、向外」（PIE 字根 \*per-「向前」）+ fundus「底部」（見 fund n.）；拉丁文的字面義與比喻義並存，但英文已有 deep，因此主要用比喻義；「深切感受的、強烈的」義約 1400 年出現
+  - 🤖 **claudian:** _字根 fundus 是「底部」，pro + fundus 是「向底部延伸」，一直往底部探去就是「深」，所以 profound 是「深刻的、深奧的」。_
 
 ---
 

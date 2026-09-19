@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T11:33:04.424Z
+modified: 2026-09-19T05:36:23.645Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -31,9 +31,10 @@ date: 2026-08-31
 
 - device(n)裝置、器具
 - deviser(n)發明者、設計者、籌畫者
-- 字根 dividere（分開、分配；注意跟「看」的 vid/vis 字根\[videre，如 supervise/revise]拼字相近但完全不同源）— devise 原意是「分配、安排」，引申為「想出、設計」
-  - divide(v)分割 — 同源
-  - device(n)裝置 — devise 的同源雙胞詞(doublet)，名詞形式
+- 字根 dividere（分開、分配，源自拉丁 dividere「分開」）（Etymonline）— devise 13 世紀初出現「塑造、製作」，約 1300 年起指「計劃、設計、在腦中構思」，源自古法語 deviser「分成部分、安排、計劃、設計」（現代法語意為「聊天」），來自俗拉丁 \*divisare，為拉丁 dividere「分開」的頻繁體；「（以遺囑）給予、指定」義 14 世紀晚期出現，來自「安排分配」的概念；可對照 device
+  - 🤖 **claudian:** \*字根 dividere 是「分開」，_divisare 是「一再分開、分配安排」，把事情分配安排好就是計畫，所以 devise 是「想出、設計」。注意跟「看」的 vid/vis 字根\[videre，如 supervise/revise]拼字相近但完全不同源。_
+  - divide(v)分割 — 拉丁 dividere「強行分開、劈開、分配」= dis(分開) + -videre「分開」（據 de Vaan，源自 PIE \*(d)uid-「分開」，與「看」的 videre 不同）
+  - device(n)裝置 — 古法語 devis「分割、意願、計畫」，源自 deviser「安排、計畫」，字面「分成部分安排」；與 devise 同出古法語 deviser
 
 ---
 

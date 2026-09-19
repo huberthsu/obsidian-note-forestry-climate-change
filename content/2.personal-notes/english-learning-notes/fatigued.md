@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-10T11:11:20.368Z
+modified: 2026-09-19T05:36:23.650Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
@@ -22,8 +22,9 @@ date: 2026-09-08
 - fatigue(n) 疲勞、疲倦
 - fatiguing(adj) 令人疲倦的、累人的
 - fatiguingly(adv) 令人疲倦地
-- 字根 fatig（使疲累，源自拉丁 fatigare，可能由 fatis「足夠」+ agere「驅使、做」組成，原意是「驅使到極限、精疲力盡」）— fatigued = fatigue + ed = 疲勞的
-  - indefatigable(adj)不知疲倦的、不屈不撓的 — in(不) + de + fatig + able = 無法被累垮的
+- 字根 fatig（使疲累，源自拉丁 fatigare「使疲倦、使精疲力盡」，原意「使崩潰」）（Etymonline，僅摘要）— fatigue 名詞 1660 年代出現，意思是「造成疲倦的事物」，源自法語 fatigue，來自 fatiguer「使疲倦」（15 世紀），源自拉丁 fatigare，原意「使崩潰」，來自前拉丁形容詞 \*fati-agos「驅使到崩潰邊緣的」，前半來自古拉丁 \*fatis（來源不明，似與 affatim「足夠地」及 fatisci「裂開、開裂」有關），後半是 agere「使動、驅使；做」的字根（PIE 字根 \*ag-「驅趕、抽出」）；「因用力而感到疲倦」義 1719 年出現；動詞 1690 年代出現
+  - 🤖 **claudian:** \*字根 fatigare 是「使崩潰、使疲倦」，_fati-agos 是「驅使到極限」，被驅使到極限就是精疲力盡，所以 fatigued 是「疲憊的」。_
+  - indefatigable(adj)不知疲倦的、不屈不撓的 — 拉丁 indefatigabilis「不會疲倦的」= in(不) + defatigare「使疲憊」（de「完全」+ fatigare「使疲倦」）
 
 ---
 
@@ -35,7 +36,7 @@ date: 2026-09-08
 - [[drained]] — 筋疲力盡的
 
 > [!note] 群組比較
-> 詳見 [[1.English words and phrases associations#疲憊群組|同主題群組：疲憊]]（與 [[drained]]、[[burned out]] 比較）
+> 詳見 [[1.English words and phrases associations#「疲憊」群組|同主題群組：疲憊]]（與 [[drained]]、[[burned out]] 比較）
 
 ---
 

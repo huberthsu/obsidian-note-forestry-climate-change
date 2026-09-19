@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-09
-modified: 2026-09-10T11:11:20.364Z
+modified: 2026-09-19T05:36:23.643Z
 published: 2026-09-09
 category:
   - "[[English learning notes]]"
@@ -31,9 +31,10 @@ date: 2026-09-09
 
 - depiction(n)描繪、描述、肖像
 - depicted(adj)被描繪的
-- 字根 pict（畫、描繪，源自拉丁 pingere，過去分詞 pictus）— depict = de(徹底) + pict = 徹底畫出→描繪
-  - picture(n)圖畫 — 同源
-  - pigment(n)顏料 — 同源
+- 字根 pict（畫，源自拉丁 pingere「畫」）（Etymonline）— depict 15 世紀初出現，意思是「描繪、用顏色畫出肖像」，源自拉丁 depictus，為 depingere「描繪、畫、素描；描述、想像」的過去分詞；depingere = de「向下」+ pingere「畫」；「用文字描寫」義 15 世紀中出現
+  - 🤖 **claudian:** _字根 pingere 是「畫」，de + pingere 是「畫下來」，所以 depict 是「描繪」，也延伸為用文字描寫。_
+  - picture(n)圖畫 — 拉丁 pictura「繪畫」，源自 pictus，pingere「畫、繪製、刺繡」的過去分詞
+  - pigment(n)顏料 — 拉丁 pigmentum「著色物、顏料」，源自 pingere「著色、畫」
 
 ---
 

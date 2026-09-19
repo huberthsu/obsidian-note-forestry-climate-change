@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-10T08:59:15.744Z
+modified: 2026-09-19T06:20:12.177Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
@@ -40,7 +40,7 @@ date: 2026-09-10
 - the main / major drawback: 主要的缺點
 
 * the only drawback: 唯一的缺點
-* suffer from a drawback: 飽受缺點之苦
+* have its drawbacks: 有其缺點
 
 ---
 

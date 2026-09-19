@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-28
-modified: 2026-09-10T11:11:20.372Z
+modified: 2026-09-19T04:53:51.482Z
 published: 2026-08-28
 category:
   - "[[English learning notes]]"
@@ -32,6 +32,8 @@ date: 2026-08-28
 - inquiry(n)調查
 - inquiring(adj)有求知慾的
 - inquisitive(adj)好管閒事的(貶義)
+- 字根 quire（尋求、詢問，源自拉丁 quaerere「詢問、尋求」）（Etymonline）— inquire 約 1300 年出現（enqueren/anqueren），意思是「提問、詢問（具體資訊）；透過詢問得知、尋求資訊或知識；進行法律或官方調查（對被指控的罪行）」，源自古法語 enquerre「詢問、探問」與直接源自中世紀拉丁 inquerere，= in-「進入」+ 拉丁 quaerere「詢問、尋求」，取代古典拉丁 inquirere「尋找、搜尋、檢查、細究」；14 世紀按拉丁形式重新拼寫，但半拉丁化的 enquire 仍存在
+  - 🤖 **claudian:** _字根 quaerere 是「詢問、尋求」，in + quaerere 是「向裡面探問」，所以 inquire 是「詢問、調查」。_
 - 其他-quire字根
   - Require(v)需要、要求
   * Acquire(v)取得、獲得

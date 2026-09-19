@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-11
-modified: 2026-09-11T09:58:22.812Z
+modified: 2026-09-19T06:16:34.445Z
 published: 2026-09-11
 category:
   - "[[English learning notes]]"
@@ -47,12 +47,13 @@ date: 2026-09-11
 | **語域**  | 學術、理論、心理學                       | 商業、HR、評估                     |
 | **例句**  | _linguistic competence_ (語言學概念) | _core competencies_ (核心能力指標) |
 
-- 字根 petere（尋求、力求，源自拉丁 petere）— competence = com(一起) + petere = 相互競爭/力求 → 能力、勝任度
-  - compete(v) 競爭 — com- + pete
-  - competition(n) 競爭
-  - competitor(n) 競爭對手
-  - petition(n) 請願書 — 源自「要求」
-  - appetite(n) 食慾 — ap(向) + petite
+- 字根 petere（尋求、力求，源自拉丁 petere「力求、尋求、撲向、攻擊」，PIE 字根 \*pet-「衝、飛」）（Etymonline）— competence 1590 年代最早指「競爭」（已廢用），1630 年代指「足以舒適生活的資力」，源自法語 compétence，來自拉丁 competentia「會合、一致、匀稱」，源自 competens，為 competere（尤指較早的意思「一起落下、湊在一起、合宜」）的現在分詞；competere = com「一起」+ petere；「足以應付手邊事務的能力」義 1790 年出現
+  - 🤖 **claudian:** _字根 petere 是「尋求、力求」，com + petere 是「一起追求、湊在一起」，早期意思是「合宜、足夠」，所以 competence 由「合適、足以應付」引申為「能力、勝任」。_
+  - compete(v) 競爭 — 晚期拉丁 competere「共同努力」，古典拉丁「湊在一起、相符、勝任」= com(一起) + petere「力求、尋求、撲向」
+  - competition(n) 競爭 — 晚期拉丁 competitionem「對抗」，古典拉丁「一致」，源自 competere（見 compete）
+  - competitor(n) 競爭對手 — 拉丁 competitor「對手」，源自 competere（見 compete）
+  - petition(n) 請願書 — 拉丁 petitio「攻擊；尋求；訴請」，源自 petere「力求、尋求、請求」
+  - appetite(n) 食慾 — 拉丁 appetitus「渴望」，源自 appetere「渴望、力求」= ad(向) + petere「去尋求」
 
 ---
 

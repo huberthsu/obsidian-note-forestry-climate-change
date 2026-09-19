@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-14
-modified: 2026-09-14T08:37:07.935Z
+modified: 2026-09-19T06:20:12.179Z
 published: 2026-09-14
 category:
   - "[[English learning notes]]"
@@ -41,9 +41,9 @@ date: 2026-09-14
 
 - strenuous exercise / workout/activity: 劇烈運動/健身/活動
 
-- strenuous effort: 付出很多力氣的努力的努力
+- strenuous effort: 付出很多力氣的努力
 
-- make/voice/raise/meet/face+a+strenuous objection: 提出/表達/提出/遭到/面臨 強烈反對
+- make/raise+strenuous objections: 提出強烈反對
 
 - strenuously object+to+n
 

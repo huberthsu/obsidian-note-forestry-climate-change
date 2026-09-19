@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-10T11:11:20.373Z
+modified: 2026-09-19T05:36:23.654Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -32,10 +32,11 @@ date: 2026-08-19
 - modified(adj)被修改的、改變的
 - modification(n)修改、改變
 - modifier(n)修飾符、修改者
-- 字根 mod（方式、限度，源自拉丁 modus）— modify = mod(限度) + fy(使...) = 使限定在某個範圍內→調整
-  - mode(n)模式 — 同源
-  - moderate(adj)適度的 — 同源
-  - module(n)模組 — 同源
+- 字根 mod（度量、方式，源自拉丁 modus「度量、方式」，PIE 字根 \*med-「採取適當措施」）（Etymonline）— modify 14 世紀晚期出現，意思是「改變、修正、調整」，也指「設限、控制在合理範圍內；選擇中庸之道」，源自古法語 modifier（14 世紀），來自拉丁 modificare「限制、量出、約束」= modus + facere「做」的組合形（PIE 字根 \*dhe-「放置、設置」）
+  - 🤖 **claudian:** _字根 modus 是「度量、限度」，modus + facere 是「使在限度內」，把東西量過、限定範圍後調整，所以 modify 是「修改、調整」。_
+  - mode(n)模式 — 拉丁 modus「度量、範圍、適當的量；方式、風格」
+  - moderate(adj)適度的 — 拉丁 moderatus「在限度內的」，moderari「調節、緩和、節制」的過去分詞，源自 modus
+  - module(n)模組 — 拉丁 modulus「小的度量」，是 modus 的指小詞
 
 ---
 

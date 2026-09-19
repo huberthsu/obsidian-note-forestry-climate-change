@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-10T11:11:20.384Z
+modified: 2026-09-19T05:36:23.664Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -32,9 +32,10 @@ date: 2026-08-19
 - verification(n)驗證、核實
 - verifiable(adj)可驗證的、可証實的
 - verified(adj)已驗證的、已核實的
-- 字根 ver（真實，源自拉丁 verus）— verify = ver(真實) + fy(使...) = 使成為真實→核實
-  - verdict(n)判決 — ver + dict(說) = 說出真相
-  - aver(v)斷言、確認 — ad(向) + ver
+- 字根 ver（真實，源自拉丁 verus「真實的」，PIE 字根 \*were-o-「真實、可信」）（Etymonline）— verify 14 世紀初出現，意思是「證明為真、以事實確認」，源自古法語 verifier「證實、查明真相」（14 世紀），來自中世紀拉丁 verificare「使成為真」= 拉丁 verus + facere「做」的組合形（PIE 字根 \*dhe-「放置、設置」）
+  - 🤖 **claudian:** _字根 verus 是「真實」，verus + facere 是「使成為真的」，所以 verify 是「核實、證實」。_
+  - verdict(n)判決 — 盎格魯法語 verdit，字面「真實的說法」= ver「真實」+ dit（dire「說」的過去分詞）
+  - aver(v)斷言、確認 — 古法語 averer「證實」，俗拉丁 \*adverare「證明為真」= ad(向) + verus「真實的」
 
 ---
 

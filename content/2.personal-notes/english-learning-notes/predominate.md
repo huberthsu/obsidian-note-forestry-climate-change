@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-09-10T11:11:20.375Z
+modified: 2026-09-19T05:36:23.656Z
 published: 2026-08-14
 category:
   - "[[English learning notes]]"
@@ -46,9 +46,10 @@ date: 2026-08-14
 11:45
 ```
 
-- 字根 domin（主宰、支配，源自拉丁 dominus「主人」）— predominate = prae(在先) + domin(主宰) + ate = 佔主導地位
-  - dominate(v)支配、主宰 — 同源，無 prae- 前綴
-  - dominion(n)統治權、領土
+- 字根 domin（主宰、支配，源自拉丁 dominus「主人」，dominus 源自 domus「房屋」，PIE 字根 \*dem-「房屋、家」）（Etymonline）— predominate 1590 年代出現，意思是「有或施展控制力」，源自中世紀拉丁 praedominatus，為 \*praedominare 的過去分詞，來自拉丁 prae「在前」+ dominari「統治、支配、掌管」，源自 dominus「主人、老爺」
+  - 🤖 **claudian:** _字根 dominus 是「主人」（家的主宰），prae + dominari 是「先一步當主人、居於支配地位」，所以 predominate 是「佔主導地位、占優勢」。_
+  - dominate(v)支配、主宰 — 拉丁 dominari「統治、支配」，源自 dominus「主人」（無 prae- 前綴）
+  - dominion(n)統治權、領土 — 中世紀拉丁 dominionem，拉丁 dominium「所有權」，源自 dominus
 
 ---
 

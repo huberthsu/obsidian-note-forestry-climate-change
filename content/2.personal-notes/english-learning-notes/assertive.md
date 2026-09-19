@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-10T11:11:20.357Z
+modified: 2026-09-19T04:41:04.175Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -25,7 +25,8 @@ date: 2026-09-07
 - assertively(adv) 自信果斷地、敢言地
 - assertiveness(n) 自信果斷、敢言、果斷性
 - assert(v) 主張、堅持、聲稱
-- 字根 sert（連接、排列，源自拉丁 serere）— assert = as(向) + sert = 把自己的主張擺出來
+- 字根 sert（連接、排列，源自拉丁 serere「連在一起、排成一列」）（Etymonline）— assertive 1560 年代出現，意思是「宣示性的、肯定的、充滿主張的」，源自 assert(v.) + -ive；「堅持自己的權利或權威」義是 self-assertive 的簡稱；assert 約 1600 年出現，源自拉丁 assertus，為 asserere/adserere「主張、聲稱、據為己有」的過去分詞；asserere = ad(向) + serere（源自 PIE 字根 \*ser-「排成一列」）
+  - 🤖 **claudian:** _字根 serere 是「連在一起、排成一列」，ad + serere 是「向…主張、據為己有」，像是把自己的主張排出來擺在面前，所以 assertive 是「有主見、敢表達的」。_
   - insert(v)插入 — in(向內) + sert
   - exert(v)施展、發揮 — ex(向外) + sert
 
@@ -40,7 +41,7 @@ date: 2026-09-07
 - self-assured — 自我肯定的
 
 > [!note] 群組比較
-> 詳見 [[1.English words and phrases associations#confident--assertive--arrogant|同主題群組：自信態度]]（與 confident、[[arrogant]] 比較）
+> 詳見 [[1.English words and phrases associations#confident assertive arrogant|同主題群組：自信態度]]（與 confident、[[arrogant]] 比較）
 
 ---
 

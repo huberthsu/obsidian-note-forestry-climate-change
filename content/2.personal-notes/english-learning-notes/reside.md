@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-10T11:16:31.062Z
+modified: 2026-09-19T05:36:23.660Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -34,9 +34,10 @@ date: 2026-08-19
   - (n)居民
   - (adj)居住的、常駐的
 - residential (adj.)住宅區的、適合居住的
-- 字根 sid/sed（坐，源自拉丁 sedere）— reside = re(持續) + sid(坐) = 長時間坐落於某處→居住
-  - preside(v)主持 — prae(在前) + sid = 坐在前面主持
-  - subside(v)平息、下沉 — sub(向下) + sid = 坐下去
+- 字根 sid/sed（坐，源自拉丁 sedere「坐」，PIE 字根 \*sed-「坐」）（Etymonline）— reside 15 世紀晚期出現，意思是「留在某處」，源自古法語 resider（15 世紀）與直接源自拉丁 residere「坐下、安頓；留在後面、休息、逗留；被留下」= re-「回、再」+ sedere「坐」；「長時間或永久居住」義 1570 年代出現
+  - 🤖 **claudian:** _字根 sedere 是「坐」，re + sedere 是「坐下來不走」，坐定在一個地方，所以 reside 是「居住」。_
+  - preside(v)主持 — 拉丁 praesidere「守衛、督導」，字面「坐在前面」= prae(在前) + sedere「坐」
+  - subside(v)平息、下沉 — 拉丁 subsidere「坐下、沉下、安頓」= sub(在下) + sidere「安頓」，與 sedere「坐」相關
 
 ---
 

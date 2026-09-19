@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-13
-modified: 2026-09-13T11:06:22.562Z
+modified: 2026-09-19T06:56:27.114Z
 published: 2026-09-13
 category:
   - "[[English learning notes]]"
@@ -24,11 +24,12 @@ date: 2026-09-13
 - cosmetics(n)化妝品（複數、集合名詞）
 - cosmetologist(n)美容師、化妝師
 - cosmetology(n)美容學、化妝術
-- 字根 cosm-(秩序、宇宙、裝飾，源自希臘 kosmos)— 原意「秩序」→「裝飾」→「美化外表」
-  - cosmos(n)宇宙
-  - cosmic(adj)宇宙的
-  - cosmopolitan(adj/n)世界主義的；世界公民
-  - kosmetikos(希臘) = 關於裝飾、排列的藝術
+- 字根 cosm-（秩序、裝飾，源自希臘文 kosmos「秩序；裝飾」）（Etymonline，僅摘要）— cosmetic 名詞約 1600 年出現，意思是「美化的技藝、裝飾人體的技藝」，源自希臘文 kosmetike (tekhnē)「服飾與裝飾的技藝」，來自 kosmetikos「擅長裝飾的」、kosmein「安排、裝飾」，源自 kosmos；形容詞 1640 年代出現，「有關美化的」；1955 年起有「表面的、只影響外觀的」比喻義
+  - 🤖 **claudian:** _字根 kosmos 是「秩序、裝飾」，kosmein 是「安排、裝飾」，把東西安排得有秩序、好看就是裝飾，所以 cosmetic 是「化妝的、美化外觀的」，也可指「表面的」。_
+  - cosmos(n)宇宙 — 希臘文 kosmos「秩序、良好的秩序、有條理的排列」，也指「裝飾」和「宇宙、世界」
+  - cosmic(adj)宇宙的 — 希臘文 kosmikos「世間的」，源自 kosmos
+  - cosmopolitan(adj/n)世界主義的；世界公民 — 1815 年出現，源自 cosmopolite「世界公民」，仿 metropolitan
+  - kosmetikos(希臘)「擅長裝飾的」
 
 ---
 
@@ -38,7 +39,6 @@ date: 2026-09-13
 - beauty product: 美容產品（更通用、中立）
 - superficial: 表面的、膚淺的（形容詞用法）
 - surface-level: 表面層級的、膚淺的（形容詞）
-- cosmetic change: 表面改變、無實質改善的改變
 
 ---
 

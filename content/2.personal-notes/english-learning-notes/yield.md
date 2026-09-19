@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T08:59:11.430Z
+modified: 2026-09-19T06:20:12.179Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -44,7 +44,7 @@ date: 2026-08-31
 
 - yield to+對象/壓力: 向...妥協
 - yield on+立場/議題: 在...上讓步
-- yield+人+物: 把某物讓給某人
+- yield+something+to+someone: 把某物讓給某人（例：yield power to someone）
 
 ---
 

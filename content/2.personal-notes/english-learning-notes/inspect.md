@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T11:11:20.370Z
+modified: 2026-09-19T05:36:23.652Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -32,10 +32,11 @@ date: 2026-08-31
 - inspection(n)檢查、檢驗
 - inspector(n)檢查員
 - inspected(adj)經檢查合格的
-- 字根 spec/spect（看，源自拉丁 specere）— inspect = in(向內) + spect = 向內看→檢查
-  - respect(v)尊重 — re(一再) + spect = 一再回頭看→重視
-  - prospect(n)前景 — pro(向前) + spect
-  - suspect(v)懷疑 — sub(在下) + spect
+- 字根 spec/spect（看，源自拉丁 specere「看」，PIE 字根 \*spek-「觀察」）（Etymonline）— inspect 1620 年代出現，源自拉丁 inspectus，為 inspicere「看著、觀察、查看；檢視、檢查」的過去分詞；inspicere = in-「進入」+ specere「看」
+  - 🤖 **claudian:** _字根 specere 是「看」，in + specere 是「向裡面看」，所以 inspect 是「檢查、檢視」。_
+  - respect(v)尊重 — 拉丁 respicere「回頭看、考慮」= re(回) + specere「看」（僅摘要）
+  - prospect(n)前景 — 拉丁 prospicere「向外看、向前看」= pro(向前) + specere「看」
+  - suspect(v)懷疑 — 拉丁 suspicere「抬頭看；引申為不信任」= sub(自下而上) + specere「看」（僅摘要）
 
 ---
 

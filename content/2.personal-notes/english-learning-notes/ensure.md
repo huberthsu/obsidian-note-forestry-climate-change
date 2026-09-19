@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-10T11:25:35.888Z
+modified: 2026-09-18T09:44:09.503Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
@@ -42,7 +42,7 @@ date: 2026-09-01
 - make sure
 
 > [!note] 易混淆詞
-> 與 [[assure]] / [[insure]] 的區別見[[1.English words and phrases associations#ensure--assure--insure|詞彙關聯整理]]
+> 與 [[assure]] / [[insure]] 的區別見[[1.English words and phrases associations#ensure assure insure|詞彙關聯整理]]
 
 ---
 

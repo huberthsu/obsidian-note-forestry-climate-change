@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-10T11:11:20.369Z
+modified: 2026-09-19T05:36:23.651Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
@@ -31,9 +31,10 @@ date: 2026-09-10
 
 - fluctuation(s)(n)波動(通常是複數)
 - fluctuating(adj)波動的、起伏的
-- 字根 fluct/flu（流動，源自拉丁 fluere「流」，fluctus 為其衍生的「波浪」）— fluctuate = fluctus(波浪) + ate = 像波浪般起伏→波動
-  - fluent(adj)流暢的 — 同源
-  - influence(n)影響 — in(流入) + flu = 流入而產生的作用
+- 字根 fluct/flu（流動，源自拉丁 fluere「流」，fluctus「波浪」為其衍生）（Etymonline）— fluctuate 1630 年代出現，源自拉丁 fluctuatus，為 fluctuare「起伏、像波浪般移動」的過去分詞；fluctuare 源自 fluctus「波浪、大浪、湧動、流動」，fluctus 來自 fluere「流」的過去分詞（見 fluent）
+  - 🤖 **claudian:** _字根 fluere 是「流」，fluctus 是「波浪」（流動的東西），像波浪一樣一起一伏，所以 fluctuate 是「波動、起伏」。_
+  - fluent(adj)流暢的 — 拉丁 fluentem「流動的」，fluere「流」的現在分詞，PIE 字根 \*bhleu-「湧出、溢出」
+  - influence(n)影響 — 拉丁 influere「流入」= in(進入) + fluere「流」；原為占星術用語，指星辰流出的力量（僅摘要）
 
 ---
 

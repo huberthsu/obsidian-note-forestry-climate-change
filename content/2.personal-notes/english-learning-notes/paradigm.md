@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-10T11:11:20.373Z
+modified: 2026-09-19T04:51:50.778Z
 published: 2026-09-02
 category:
   - "[[English learning notes]]"
@@ -30,7 +30,8 @@ date: 2026-09-02
 ## Word Family
 
 - paradigmatic(adj)典範的
-- 字根 deigma（展示，源自希臘文 deiknynai「指出、展示」）— paradigm = para(在旁邊) + deigma(展示) = 並列展示出來的範例→典範
+- 字根 deigma（展示，源自希臘文 deiknynai「展示」，PIE 字根 \*deik-「展示」，也有「鄭重宣告」義）（Etymonline）— paradigm 15 世紀晚期出現，意思是「範例、模型」，源自晚期拉丁 paradigma「模式、範例」（尤用於文法），來自希臘文 paradeigma「模式、模型；前例、範例」，源自 paradeiknynai「陳列、呈現」，字面是「並排展示」= para-「在旁邊」+ deiknynai「展示」（與拉丁 dicere「展示」同源）；20 世紀起有「特定經驗領域內作為思考形式的邏輯或概念結構」的哲學義，尤見於孔恩 1962 年的《科學革命的結構》
+  - 🤖 **claudian:** _字根 deiknynai 是「展示」，para + deiknynai 是「並排展示」，把樣本並列擺出來供人比照，所以 paradigm 是「範例、典範」。_
   - 這個字根在現代英文中較少見，主要保留在 paradigm 這個字裡
 
 ---

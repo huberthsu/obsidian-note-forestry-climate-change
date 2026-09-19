@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-13
-modified: 2026-09-13T10:39:59.625Z
+modified: 2026-09-19T04:51:50.763Z
 published: 2026-09-13
 category:
   - "[[English learning notes]]"
@@ -25,7 +25,8 @@ date: 2026-09-13
 - gatherer(n)採集者、收集者
 - gatherings(n)複數形式
 - gathering(n/adj)聚集、聚會；逐漸增強的、醞釀中的（如 a gathering storm）
-- 字根 gath-（聚集、團結，源自日耳曼語 gadrian/gaduron）— 在 1500s 前後，-d- 音變為 -th- 音，拼字隨之改變
+- 字根 gath-（聚集、團結，源自日耳曼語 gadrian/gaduron）（Etymonline）— gather 源自古英語 gadrian、gædrian「聯合、同意、集合；收集、儲存」，來自原始日耳曼語 \*gaduron「聚在一起、結合」（古英語 gæd「夥伴關係」、gædeling「同伴」等同源），可能源自 PIE \*ghedh-「結合、連接」（見 good）；拼字由 -d- 改為 -th- 出現在 1500 年代，反映更早的發音變化（如 father）
+  - 🤖 **claudian:** _字根 gaduron 是「聚在一起、結合」，古英語 gadrian 是「集合、收集」，所以 gather 是「聚集」，gathering 就是「聚會、集會」。_
   - 同源詞族：其他日耳曼語言中的對應詞（Dutch gaderen、German Gatte「配偶、伴侶」，原意皆涉及集合、結合意涵）
 
 ---

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-09-10T08:59:20.250Z
+modified: 2026-09-19T06:56:27.110Z
 published: 2026-08-15
 category:
   - "[[English learning notes]]"
@@ -29,7 +29,6 @@ date: 2026-08-15
 
 ## Word Family
 
-- couch potato lifestyle: 沙發馬鈴薯的生活方式
 - potato(n)馬鈴薯
 - couch(n)沙發
 - 相關詞彙: mouse potato(電腦馬鈴薯)、armchair(扶手椅)
@@ -46,6 +45,7 @@ date: 2026-08-15
 
 - Turn into / Become a couch potato
 - Sit around like a couch potato
+- couch potato lifestyle: 沙發馬鈴薯的生活方式
 
 ---
 

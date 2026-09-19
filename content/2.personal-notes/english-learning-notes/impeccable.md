@@ -1,13 +1,13 @@
 ---
 publish: true
 created: 2026-09-16
-modified: 2026-09-16T12:16:09.483Z
+modified: 2026-09-19T04:51:50.763Z
 published: 2026-09-16
 category:
   - "[[English learning notes]]"
   - 單字
 Chinese translation: 無缺點的、完美無瑕的、無懈可擊的
-字根: peccatum(罪惡、過失)
+字根: pecc(犯罪、過失)
 date: 2026-09-16
 ---
 
@@ -22,9 +22,8 @@ date: 2026-09-16
 - impeccably(adv)完美無瑕地
 - impeccability(n)完美性、無瑕
 - peccable(adj)易出錯的、有缺陷的(相反詞)
-- 字根 peccatum(源自拉丁 peccare — 犯錯、犯罪)
-  - im-(否定) + peccable = 不會犯錯→完美無瑕
-  - impeccable 常用於形容「品行無可指責」或「品質無缺陷」
+- 字根 pecc（犯罪、過失，源自拉丁 peccare「犯罪」）（Etymonline）— impeccable 1530 年代出現，意思是「不會犯罪的」，源自法語 impeccable（15 世紀）或直接源自晚期拉丁 impeccabilis「不易犯罪的」，= in-「不、相反」（同化）+ peccare「犯罪」（見 peccadillo）；「無瑕疵的」義 1610 年代出現
+  - 🤖 **claudian:** _字根 peccare 是「犯罪、犯錯」，in + peccare 是「不會犯錯」，所以 impeccable 是「無可挑剔的、完美無瑕的」，常用於形容品行無可指責或品質無缺陷。_
 
 ---
 

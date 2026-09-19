@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-10T11:11:20.356Z
+modified: 2026-09-19T05:36:23.634Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -34,9 +34,10 @@ date: 2026-08-19
 - cessation(n)中止、中斷
 - ceaseless(adj)無休止的(中性的、正面的)
 - incessant(adj)沒完沒了的(負面的)
-- 字根 cedere/cess（行進、退出、讓步）— cease 源自 cessare（cedere 的延伸）= 停止進行
-  - [[proceed]]\(v)進行、著手 — pro(向前) + cedere
-  - precede(v)在...之前發生 — pre(先) + cedere
+- 字根 cedere/cess（行進、退出、讓步，源自拉丁 cedere「走開、退出、讓步」，PIE 字根 \*ked-「走、讓」）（Etymonline）— cease 約 1300 年出現，意思是「停止動作、言語；結束」，源自古法語 cesser「結束、停止、放棄」，來自拉丁 cessare「停止、慢下來、放棄、閒置」，是 cedere（過去分詞 cessus）的頻繁體
+  - 🤖 **claudian:** _字根 cedere 是「走開、退出」，cessare 是它的頻繁體「一再走開、慢下來」，所以 cease 是「停止進行」。_
+  - [[proceed]]\(v)進行、著手 — 拉丁 procedere「向前走」= pro(向前) + cedere「走」
+  - precede(v)在...之前發生 — 拉丁 praecedere「走在前面」= prae(在前) + cedere「走」
 
 ---
 

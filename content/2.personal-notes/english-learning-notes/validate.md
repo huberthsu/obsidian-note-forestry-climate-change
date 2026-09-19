@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-10T11:11:20.384Z
+modified: 2026-09-19T05:36:23.663Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
@@ -24,10 +24,11 @@ date: 2026-09-08
 - validity(n) 有效性、合理性
 - valid(adj) 有效的、合理的
 - validating(adj) 驗證的、確認的
-- 字根 val（強壯、有價值，源自拉丁 valere）— validate = valid(有效的) + ate = 使有效、使成立
-  - value(n)價值 — 同源
-  - prevail(v)盛行、獲勝 — prae(在先) + val
-  - equivalent(adj)相等的 — equi(相等) + val
+- 字根 val（強壯、有價值，源自拉丁 valere「強壯」）（Etymonline）— validate 1640 年代出現，意思是「確認、使有效、賦予法律效力」，源自中世紀拉丁 validatus，為 validare「使有效」的過去分詞，來自 validus（見 valid）；valid 1570 年代出現，意思是「有法律效力的、具法律約束力的」，源自法語 valide（16 世紀），來自拉丁 validus「強壯的、有效的、有力的、有活力的」，源自 valere「強壯」（PIE 字根 \*wal-「強壯」）；「有事實或權威充分支持的」義 1640 年代出現
+  - 🤖 **claudian:** _字根 valere 是「強壯」，validus 是「強壯有力的」，validare 是「使有力、使生效」，所以 validate 是「使有效、驗證」。_
+  - value(n)價值 — 古法語 value「價值、價格」，valoir「值得」的過去分詞名詞用法，源自拉丁 valere「強壯；有價值」
+  - prevail(v)盛行、獲勝 — 拉丁 praevalere「更強、更有力」= prae(在先) + valere「有力量、強壯」
+  - equivalent(adj)相等的 — 晚期拉丁 aequivalens，aequivalere「等值」的現在分詞 = aequus「相等的」+ valere「值得、強健」
 
 ---
 
@@ -39,7 +40,7 @@ date: 2026-09-08
 - substantiate: 用事實證實
 
 > [!note] 群組比較
-> 詳見 [[1.English words and phrases associations#verify-confirm-validate|同主題群組：verify / confirm / validate]]
+> 詳見 [[1.English words and phrases associations#verify confirm validate|同主題群組：verify / confirm / validate]]
 
 ---
 

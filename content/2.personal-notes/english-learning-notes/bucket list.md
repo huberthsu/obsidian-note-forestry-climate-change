@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-10T08:59:40.518Z
+modified: 2026-09-19T06:16:34.446Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
@@ -35,9 +35,9 @@ date: 2026-09-06
 ## Collocations
 
 - make a bucket list: 列出人生清單
-- add sth to one's bucket list: 把某事加入人生清單
-- check sth off one's bucket list: 完成清單上的某項
-- have sth on one's bucket list: 某項在人生清單上
+- add something to one's bucket list: 把某事加入人生清單
+- check something off one's bucket list: 完成清單上的某項
+- have something on one's bucket list: 某項在人生清單上
 - bucket list item: 清單上的項目
 - A bucket-list experience: 一生必體驗一次的經歷
 

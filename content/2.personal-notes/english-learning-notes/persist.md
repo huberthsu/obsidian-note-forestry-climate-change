@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-10T11:11:20.374Z
+modified: 2026-09-19T04:53:51.483Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -32,6 +32,8 @@ date: 2026-08-31
 
 - persistence(n)毅力、堅持不懈
 - persistent(adj)執著的、持續不斷的
+- 字根 sist（站立，源自拉丁 sistere「使站立、站定」，PIE 字根 \*sta-「站立、使穩固」）（Etymonline）— persist 1530 年代出現，意思是「穩定而堅定地繼續某種狀態或行動」，尤指「不顧反對或抗議」、「頑固地堅持」，源自法語 persister（14 世紀），來自拉丁 persistere「堅持、堅定地繼續」，= per「徹底地」（PIE 字根 \*per-「向前」，故「貫穿」）+ sistere「站定、使站立不動」（源自 PIE \*si-st-，\*sta- 的重複形式）
+  - 🤖 **claudian:** _字根 sistere 是「站立、站定」，per + sistere 是「一直站到底」，站著不動、不肯退，所以 persist 是「堅持、持續」。_
 
 ---
 

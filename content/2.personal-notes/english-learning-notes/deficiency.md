@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-15
-modified: 2026-09-15T09:06:26.039Z
+modified: 2026-09-19T04:47:39.694Z
 published: 2026-09-15
 category:
   - "[[English learning notes]]"
@@ -31,8 +31,9 @@ date: 2026-09-15
 
 - deficient(adj)缺乏的、有缺陷的
 - deficiently(adv)不足地、缺陷地、欠缺地
-- 字根 de-(away, down) + -fac-/-fic-(to make/do，源自拉丁 facere)
-  — deficiency = 缺乏做到(make up)的能力 → 不足、缺陷、短缺
+- 字根 de-（離開、向下）+ fac/fic（做，源自拉丁 facere「做、製造」，PIE 字根 \*dhe-「放置、設置」）（Etymonline）— deficiency 1630 年代的意思是「不足、缺乏、失敗」，1660 年代起指「（人或物）不足之處、不夠」，源自晚期拉丁 deficientia，來自 deficient-（deficere「離棄、反叛、失敗」的現在分詞詞幹）；deficere = de「向下、離開」+ facere 的組合形
+  - 🤖 **claudian:** _de（離開、向下）+ facere（做）是「做著做著就掉下去、離開」，引申為「不足、失敗」，所以 deficiency 是「缺乏、不足」。_
+    — deficiency = 缺乏做到(make up)的能力 → 不足、缺陷、短缺
   - sufficient(adj)足夠的、充分的 — suf(under) + fic(足夠達到)
   - sufficiency(n)充足、充分
   - efficiency(n)效率、效能 — e(out) + fic(做出效果)

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-13
-modified: 2026-09-19T04:51:50.763Z
+modified: 2026-09-20T12:25:46.371Z
 published: 2026-09-13
 category:
   - "[[English learning notes]]"
@@ -42,7 +42,7 @@ date: 2026-09-13
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - at the gathering: 在聚會上
 - a large/small gathering: 大型/小型聚會

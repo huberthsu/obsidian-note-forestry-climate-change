@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-19T05:36:23.662Z
+modified: 2026-09-20T12:25:48.523Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
@@ -45,7 +45,7 @@ date: 2026-09-10
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - A+be+solely responsible for+B：A對B是唯一該負全責的人
 - solely+because of/due to: 完全是因為

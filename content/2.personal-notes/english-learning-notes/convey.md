@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-16
-modified: 2026-09-19T06:20:12.176Z
+modified: 2026-09-20T12:25:44.854Z
 published: 2026-09-16
 category:
   - "[[English learning notes]]"
@@ -37,7 +37,7 @@ date: 2026-09-16
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - convey+something+to+someone: 向某人傳達某事（例：convey a message to someone）
 

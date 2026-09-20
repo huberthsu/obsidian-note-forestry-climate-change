@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-19T05:36:23.652Z
+modified: 2026-09-20T12:25:46.961Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -49,7 +49,7 @@ date: 2026-08-31
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - inspect + 對象(machinery/goods/premises): 檢查機器/貨物/場所
 - inspect closely/carefully/thoroughly: 仔細/徹底檢查

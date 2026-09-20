@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-18T09:44:09.503Z
+modified: 2026-09-19T04:47:39.712Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
@@ -32,7 +32,8 @@ date: 2026-09-01
 - ensured(adj)已確保的、有保障的
 - ensuring(adj)確保的、保障的
 - assurance(n)保証、確保
-- 字根 sure（確定、安全）— ensure = en(使...) + sure = 使...確定
+- 字根 sure（確定、安全，源自古法語 seur「確定的」）（Etymonline）— ensure 14 世紀晚期出現，源自盎格魯法語 enseurer，= en-「使」+ 古法語 seur「確定的」（見 sure）；可能受古法語 asseurer 影響，可對照 insure
+  - 🤖 **claudian:** _字根 sure 是「確定」，en + sure 是「使…確定」，所以 ensure 是「確保」。_
   - 與 [[assure]]（as+sure）、[[insure]]（in+sure）同字根，差別只在前綴
 
 ---

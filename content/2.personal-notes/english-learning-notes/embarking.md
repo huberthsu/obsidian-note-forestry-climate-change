@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-13
-modified: 2026-09-13T11:05:59.589Z
+modified: 2026-09-20T12:25:45.893Z
 published: 2026-09-13
 category:
   - "[[English learning notes]]"
@@ -24,7 +24,8 @@ date: 2026-09-13
 - embark(v)登船、著手、開始
 - embarked(adj/v)已登船的；著手的
 - embarkation(n)登船；起航；出發
-- 字根 em-(在...之中，源自拉丁 in) + bark/barque(小船、船隻，源自拉丁 barca)
+- 字根 em-（在…之中）+ bark/barque（小船，源自晚期拉丁 barca）（Etymonline）— embark 及物義 1540 年代指「把…裝上船或其他載具」，不及物義 1570 年代指「登船，如出海航行」，源自法語 embarquer，= en-「在…之中」（同化為 em-）+ barque「小船」；barque（bark n.2）15 世紀初指「任何小型船隻」，源自法語 barque「船」（15 世紀），來自晚期拉丁 barca，可能與俗拉丁 \*barica 同源
+  - 🤖 **claudian:** _en + barque 是「進到船裡」，登上船就是要出發，所以 embark 是「登船」，引申為「著手、開始（做某事）」。_
   - embark = 上船→引申為開始冒險、著手某事
   - Related: barge(n)駁船；disembark(v)下船
 
@@ -40,7 +41,7 @@ date: 2026-09-13
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - embark on: 著手...、開始...
   - embark on a journey: 開始旅程

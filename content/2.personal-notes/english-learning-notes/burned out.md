@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-18T09:44:28.464Z
+modified: 2026-09-20T12:25:44.116Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -36,7 +36,7 @@ date: 2026-09-07
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - burned out from+something/V-ing: 因(某原因)而身心俱疲
 - burned out by+ something: 因(某壓力來源)而身心俱疲

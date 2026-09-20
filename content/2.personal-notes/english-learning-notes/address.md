@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-11T04:54:13.784Z
+modified: 2026-09-20T12:25:43.279Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
@@ -44,7 +44,7 @@ date: 2026-09-10
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - address the n(issue / problem / concern)+of+n/V-ing: 處理...的議題/問題/擔憂
 - address the problem that+句子

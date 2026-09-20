@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-19T04:41:04.176Z
+modified: 2026-09-20T12:25:43.794Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
@@ -39,7 +39,7 @@ date: 2026-09-01
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - assure (someone) that + 某個事實、承諾
 - assure someone of something: 使某人確信某個具體的品質/特性/感受

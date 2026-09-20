@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-16
-modified: 2026-09-19T04:51:50.763Z
+modified: 2026-09-20T12:25:46.769Z
 published: 2026-09-16
 category:
   - "[[English learning notes]]"
@@ -38,7 +38,7 @@ date: 2026-09-16
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - impeccable credentials/reputation/record: 無可挑剔的資歷/名譽/紀錄
 - impeccable manners/behavior: 完美的禮貌/舉止

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-18
-modified: 2026-09-18T14:31:20.650Z
+modified: 2026-09-20T12:25:43.915Z
 published: 2026-09-18
 category:
   - "[[English learning notes]]"
@@ -33,7 +33,7 @@ date: 2026-09-18
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - begrudge someone something: 對某人有某東西而嫉妒
   - begrudge him his success/happiness

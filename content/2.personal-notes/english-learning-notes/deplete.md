@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-19T05:36:23.644Z
+modified: 2026-09-20T12:25:45.238Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -44,7 +44,7 @@ date: 2026-08-19
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - deplete+n
 - depletion of+名詞

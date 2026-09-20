@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-19T05:36:23.664Z
+modified: 2026-09-20T12:25:49.055Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -45,7 +45,7 @@ date: 2026-08-19
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - verify information/details/facts: 驗證訊息/細節/事實
 - verify one's identity/account: 驗證某人的身份/帳戶

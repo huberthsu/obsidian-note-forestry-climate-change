@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-19T06:20:12.181Z
+modified: 2026-09-20T12:25:44.360Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
@@ -41,7 +41,7 @@ date: 2026-09-01
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - commend someone for something: 因為某事讚美某人
 - highly commend: 高度讚揚。

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-09-10T08:59:21.862Z
+modified: 2026-09-20T12:25:42.963Z
 published: 2026-08-15
 category:
   - "[[English learning notes]]"
@@ -40,7 +40,7 @@ date: 2026-08-15
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - a go-getter attitude/mentality: 積極進取的態度/心態
 - a go-getter employee/sales person: 積極能幹的員工/銷售員

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-16
-modified: 2026-09-19T04:41:04.174Z
+modified: 2026-09-20T12:25:43.697Z
 published: 2026-09-16
 category:
   - "[[English learning notes]]"
@@ -35,7 +35,7 @@ date: 2026-09-16
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - articulate one's thoughts / ideas: 清晰地表達某人的想法／觀點
 

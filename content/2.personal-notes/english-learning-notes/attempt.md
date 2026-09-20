@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-19T05:36:23.633Z
+modified: 2026-09-20T12:25:43.844Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -45,7 +45,7 @@ date: 2026-08-19
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - attempt to do something: 試圖做某事
 - attempt on someone's life: 企圖謀殺某人

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-19T06:56:27.111Z
+modified: 2026-09-20T12:25:47.794Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -47,7 +47,7 @@ date: 2026-08-19
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - prominent position/place/role: 突出的位置/地位/角色
 - prominent figure/member/leader: 著名人物/成員/領導人

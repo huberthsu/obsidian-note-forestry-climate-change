@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-11
-modified: 2026-09-19T06:16:34.445Z
+modified: 2026-09-20T12:25:44.458Z
 published: 2026-09-11
 category:
   - "[[English learning notes]]"
@@ -69,7 +69,7 @@ date: 2026-09-11
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - competence+in+領域: 在某特定領域/學科上的能力
 

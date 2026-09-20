@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-10T08:59:45.214Z
+modified: 2026-09-20T12:25:48.914Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
@@ -31,7 +31,7 @@ date: 2026-09-08
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - give someone the cold shoulder: 故意冷落某人
 - get the cold shoulder from someone: 受到某人的冷落

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-09-10T08:59:30.505Z
+modified: 2026-09-20T12:25:43.016Z
 published: 2026-08-15
 category:
   - "[[English learning notes]]"
@@ -35,7 +35,7 @@ date: 2026-08-15
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - Jack of all trades, master of none 樣樣通，樣樣鬆，或博而不精
 - A jack-of-all-trades employee 全能型員工 / 雜牌軍員工

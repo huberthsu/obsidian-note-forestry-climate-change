@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-11
-modified: 2026-09-19T05:36:23.640Z
+modified: 2026-09-20T12:25:44.900Z
 published: 2026-09-11
 category:
   - "[[English learning notes]]"
@@ -45,7 +45,7 @@ date: 2026-09-11
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - corruption in+領域/地方/組織/產業
 - corruption within+機構/體制內部

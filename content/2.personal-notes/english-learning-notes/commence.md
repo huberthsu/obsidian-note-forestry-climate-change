@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-28
-modified: 2026-09-19T05:36:23.635Z
+modified: 2026-09-20T12:25:44.312Z
 published: 2026-08-28
 category:
   - "[[English learning notes]]"
@@ -49,7 +49,7 @@ date: 2026-08-28
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - commence hostilities: 開戰（軍事/政治用語）
 - commence construction / work: 動工 / 開始工作

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-16
-modified: 2026-09-16T12:20:25.784Z
+modified: 2026-09-19T04:51:50.779Z
 published: 2026-09-16
 category:
   - "[[English learning notes]]"
@@ -23,8 +23,8 @@ date: 2026-09-16
 - plausibly(adv)似乎合理地、可信地
 - implausible(adj)似乎不合理的、難以置信的
 - applaud(v)鼓掌(同源詞)
-- 字根 plaudere(源自拉丁 — 意為「鼓掌」、「贊同」、「認可」)
-  - plausible 原意為「值得鼓掌認可」→「似乎合理」
+- 字根 plaud/plaus（鼓掌，源自拉丁 plaudere「鼓掌」）（Etymonline）— plausible 1540 年代出現，意思是「可接受的、令人喜歡的；值得喝采或認可的」（已廢用），源自拉丁 plausibilis「值得稱讚的、令人愉快的、可接受的」，來自 plaus-（plaudere「鼓掌」的過去分詞詞幹）；「有真實的外表、看起來對、似乎值得接受或認可」義 1560 年代出現，尤指「表面上、膚淺地看起來可信」
+  - 🤖 **claudian:** _字根 plaudere 是「鼓掌」，plausibilis 是「值得鼓掌認可的」，聽起來讓人想點頭，所以 plausible 是「似乎合理的、貌似可信的」。_
 
 ---
 

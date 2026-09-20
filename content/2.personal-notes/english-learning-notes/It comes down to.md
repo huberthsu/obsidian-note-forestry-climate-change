@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-09-10T08:59:27.753Z
+modified: 2026-09-20T12:25:42.795Z
 published: 2026-08-14
 category:
   - "[[English learning notes]]"
@@ -41,7 +41,7 @@ date: 2026-08-14
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - **Ultimately/In the end**, it comes down to+**noun phrase/verb-ing**
 - It **all** comes down to

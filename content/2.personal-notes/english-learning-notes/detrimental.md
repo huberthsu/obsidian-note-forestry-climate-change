@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-19T05:36:23.644Z
+modified: 2026-09-20T12:25:45.339Z
 published: 2026-09-02
 category:
   - "[[English learning notes]]"
@@ -46,7 +46,7 @@ date: 2026-09-02
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - be detrimental to: 對...有害
 - have a detrimental impact/effect on: 對...產生有害的影響

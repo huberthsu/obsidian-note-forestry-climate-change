@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-19T05:36:23.646Z
+modified: 2026-09-20T12:25:45.602Z
 published: 2026-09-02
 category:
   - "[[English learning notes]]"
@@ -44,7 +44,7 @@ date: 2026-09-02
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - discrepancy between a and b: a與b之間不一致
 - financial / budget discrepancy: 財務/預算上的出入

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-18
-modified: 2026-09-18T14:07:21.213Z
+modified: 2026-09-20T12:25:44.018Z
 published: 2026-09-18
 category:
   - "[[English learning notes]]"
@@ -36,7 +36,7 @@ date: 2026-09-18
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - be bitter about+n/V-ing: 對...感到失望且怨恨
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-09-10T08:59:29.186Z
+modified: 2026-09-20T12:25:46.471Z
 published: 2026-08-14
 category:
   - "[[English learning notes]]"
@@ -40,7 +40,7 @@ date: 2026-08-14
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - A and B go hand in hand: A 和 B 密切相關/相輔相成
 - (某物) goes hand in hand with (另一物): 與...密切相關

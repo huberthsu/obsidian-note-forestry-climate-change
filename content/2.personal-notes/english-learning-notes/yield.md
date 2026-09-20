@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-19T06:20:12.179Z
+modified: 2026-09-20T12:25:49.152Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -40,7 +40,7 @@ date: 2026-08-31
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - yield to+對象/壓力: 向...妥協
 - yield on+立場/議題: 在...上讓步

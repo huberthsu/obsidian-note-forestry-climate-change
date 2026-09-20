@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-15
-modified: 2026-09-19T04:47:39.694Z
+modified: 2026-09-20T12:25:45.135Z
 published: 2026-09-15
 category:
   - "[[English learning notes]]"
@@ -54,7 +54,7 @@ date: 2026-09-15
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - deficiency + in+something: 某事物的不足或缺陷
 

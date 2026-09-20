@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-09-10T08:59:26.302Z
+modified: 2026-09-20T12:25:43.068Z
 published: 2026-08-15
 category:
   - "[[English learning notes]]"
@@ -40,7 +40,7 @@ date: 2026-08-15
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - Don't act like/Stop being + a know it all
 - Sound like a know-it-all（聽起來很自以為是 / 像在說教）

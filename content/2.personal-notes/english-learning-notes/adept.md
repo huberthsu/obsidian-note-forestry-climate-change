@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-19T05:36:23.631Z
+modified: 2026-09-20T12:25:43.330Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -37,7 +37,7 @@ date: 2026-09-07
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - be adept at + V-ing: 擅長做某事
 - adept in + 學科/領域: 精通...領域

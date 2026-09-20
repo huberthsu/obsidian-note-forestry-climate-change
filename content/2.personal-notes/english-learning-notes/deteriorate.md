@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-19T04:53:51.479Z
+modified: 2026-09-20T12:25:45.290Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -40,7 +40,7 @@ date: 2026-08-19
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - deteriorated+rapidly / sharply / dramatically: 迅速/急速/戲劇性的惡化
 - deteriorate further進一步惡化

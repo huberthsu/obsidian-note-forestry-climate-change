@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-28
-modified: 2026-09-19T06:52:31.017Z
+modified: 2026-09-20T12:25:48.321Z
 published: 2026-08-28
 category:
   - "[[English learning notes]]"
@@ -50,7 +50,7 @@ date: 2026-08-28
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - retain information/knowledge/memory: 保留資訊/知識/記憶
 - retain staff/employees/customers: 留住員工/客戶

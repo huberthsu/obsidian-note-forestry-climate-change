@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-19T05:36:23.645Z
+modified: 2026-09-20T12:25:45.392Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -44,7 +44,7 @@ date: 2026-08-31
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - devise a plan/strategy/solution: 想出計畫/策略/解決方案
 - devise a system/method/approach: 設計系統/方法/方法

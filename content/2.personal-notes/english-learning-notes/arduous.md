@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-14
-modified: 2026-09-14T08:23:15.014Z
+modified: 2026-09-20T12:25:43.600Z
 published: 2026-09-14
 category:
   - "[[English learning notes]]"
@@ -34,7 +34,7 @@ date: 2026-09-14
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - arduous for+someone: 對某人來說很艱難
 

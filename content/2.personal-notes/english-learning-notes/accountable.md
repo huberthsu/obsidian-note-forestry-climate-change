@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-19T05:36:23.631Z
+modified: 2026-09-20T12:25:43.230Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
@@ -47,7 +47,7 @@ date: 2026-09-10
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - A+hold B accountable+for+something: A要求B為某事負責
 - A+be accountable to+B+for+something: A在某件事上，必須向B負責/交代

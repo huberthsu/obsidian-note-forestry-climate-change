@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-15
-modified: 2026-09-15T08:29:42.010Z
+modified: 2026-09-20T12:25:46.721Z
 published: 2026-09-15
 category:
   - "[[English learning notes]]"
@@ -33,7 +33,7 @@ date: 2026-09-15
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - harsh+n
   - harsh reality: 殘酷的現實

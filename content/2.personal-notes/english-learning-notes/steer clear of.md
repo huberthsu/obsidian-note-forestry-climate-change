@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-09
-modified: 2026-09-10T08:59:52.824Z
+modified: 2026-09-20T12:25:48.574Z
 published: 2026-09-09
 category:
   - "[[English learning notes]]"
@@ -39,7 +39,7 @@ date: 2026-09-09
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - steer clear of+n(要避開的人事物)
 

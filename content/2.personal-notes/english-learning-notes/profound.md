@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-16
-modified: 2026-09-19T04:53:51.481Z
+modified: 2026-09-20T12:25:47.745Z
 published: 2026-09-16
 category:
   - "[[English learning notes]]"
@@ -43,7 +43,7 @@ date: 2026-09-16
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - profound impact/effect/influence on+someone: 對...產生重大深遠的影響
 

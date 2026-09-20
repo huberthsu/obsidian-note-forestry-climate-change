@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-19
-modified: 2026-09-19T08:01:04.115Z
+modified: 2026-09-20T12:25:48.418Z
 published: 2026-09-19
 category:
   - "[[English learning notes]]"
@@ -40,7 +40,7 @@ date: 2026-09-19
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - send/dispatch a shipment: 發送貨物
 - receive a shipment: 收貨

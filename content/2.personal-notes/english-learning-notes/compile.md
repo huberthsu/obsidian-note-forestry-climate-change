@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-19T05:36:23.637Z
+modified: 2026-09-20T12:25:44.509Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
@@ -42,7 +42,7 @@ date: 2026-09-06
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - compile something from+來源: 從...彙整
 

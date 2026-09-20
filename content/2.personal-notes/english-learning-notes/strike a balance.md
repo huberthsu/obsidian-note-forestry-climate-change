@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-09-10T08:59:24.711Z
+modified: 2026-09-20T12:25:48.669Z
 published: 2026-08-14
 category:
   - "[[English learning notes]]"
@@ -43,7 +43,7 @@ To find a middle ground between two things.
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 **People need to/It is important to/We should**+strike a balance+**between A and B**
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-14
-modified: 2026-09-14T08:31:07.582Z
+modified: 2026-09-20T12:25:46.629Z
 published: 2026-09-14
 category:
   - "[[English learning notes]]"
@@ -34,7 +34,7 @@ date: 2026-09-14
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - grueling for + 人: 對…來說很累人
 

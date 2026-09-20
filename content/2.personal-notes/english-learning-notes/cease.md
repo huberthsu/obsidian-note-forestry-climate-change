@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-19T05:36:23.634Z
+modified: 2026-09-20T12:25:44.212Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -47,7 +47,7 @@ date: 2026-08-19
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - cease+ving/to v: 停止某動作
 - Never cease to: 從未停止/總是讓人(通常後面加正面情緒用詞)

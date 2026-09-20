@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-19T06:20:12.183Z
+modified: 2026-09-20T12:25:48.370Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -49,7 +49,7 @@ date: 2026-08-31
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - scrutinize closely/carefully: 仔細審查
 - scrutinize documents/records/details: 審查文件/記錄/細節

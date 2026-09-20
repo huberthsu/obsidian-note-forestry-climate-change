@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-19T05:36:23.663Z
+modified: 2026-09-20T12:25:48.958Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
@@ -44,7 +44,7 @@ date: 2026-09-08
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - validate+n(result/hypothesis/finding/claim): 驗證某個結果/假設/發現/宣稱
 - validate one's approach/method: 驗證某人的方法

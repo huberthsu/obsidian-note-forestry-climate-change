@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-19T05:36:23.632Z
+modified: 2026-09-20T12:25:43.494Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -43,7 +43,7 @@ date: 2026-08-31
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - An extension to+the deadline / the contract：對截止日期 / 合約的延長
 

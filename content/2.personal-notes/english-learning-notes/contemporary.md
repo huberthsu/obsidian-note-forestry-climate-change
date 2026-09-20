@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-19T05:36:23.639Z
+modified: 2026-09-20T12:25:44.758Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -46,7 +46,7 @@ date: 2026-08-31
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - contemporary art/music/literature/dance: 當代藝術/音樂/文學/舞蹈
 - contemporary society/world: 當代社會/世界

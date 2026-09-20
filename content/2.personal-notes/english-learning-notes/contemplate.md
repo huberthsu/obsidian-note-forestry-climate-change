@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-19T06:16:34.446Z
+modified: 2026-09-20T12:25:44.710Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -43,7 +43,7 @@ date: 2026-09-07
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - contemplate + n(future/life/meaning/possibility): 深思...
 - contemplate V-ing something: 考慮做某事

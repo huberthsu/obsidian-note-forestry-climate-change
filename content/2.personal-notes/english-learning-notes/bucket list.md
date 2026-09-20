@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-06
-modified: 2026-09-19T06:16:34.446Z
+modified: 2026-09-20T12:25:44.067Z
 published: 2026-09-06
 category:
   - "[[English learning notes]]"
@@ -32,7 +32,7 @@ date: 2026-09-06
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - make a bucket list: 列出人生清單
 - add something to one's bucket list: 把某事加入人生清單

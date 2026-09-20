@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-18
-modified: 2026-09-19T04:53:51.484Z
+modified: 2026-09-20T12:25:48.863Z
 published: 2026-09-18
 category:
   - "[[English learning notes]]"
@@ -35,7 +35,7 @@ date: 2026-09-18
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - take offense at+something : 因某事而感到被冒犯
 

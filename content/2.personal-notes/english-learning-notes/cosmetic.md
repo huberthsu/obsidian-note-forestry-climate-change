@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-13
-modified: 2026-09-19T06:56:27.114Z
+modified: 2026-09-20T12:25:44.948Z
 published: 2026-09-13
 category:
   - "[[English learning notes]]"
@@ -42,7 +42,7 @@ date: 2026-09-13
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - cosmetic surgery: 整容手術、美容手術
 - cosmetic products/items: 化妝品、美容產品

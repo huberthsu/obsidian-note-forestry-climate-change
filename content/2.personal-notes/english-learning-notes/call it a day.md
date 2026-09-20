@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-10T08:59:43.533Z
+modified: 2026-09-20T12:25:44.165Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -34,7 +34,7 @@ date: 2026-09-07
 
 ---
 
-## Usage & Collocations
+## Usage/Collocations
 
 - call it a day +時間(for now/after this task): 現在/做完這個任務後先到此為止
 - plan/expect/+to+call it a day+at(準時)/by(之前)/around(左右)+特定時間點

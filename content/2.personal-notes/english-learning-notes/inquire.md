@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-28
-modified: 2026-09-19T04:53:51.482Z
+modified: 2026-09-20T12:25:46.915Z
 published: 2026-08-28
 category:
   - "[[English learning notes]]"
@@ -46,7 +46,7 @@ date: 2026-08-28
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - inquire about something: 詢問某事
 - inquire into something: 調查某事

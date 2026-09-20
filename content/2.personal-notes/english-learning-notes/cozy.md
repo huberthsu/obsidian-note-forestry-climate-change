@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-14
-modified: 2026-09-14T07:39:32.795Z
+modified: 2026-09-20T12:25:44.994Z
 published: 2026-09-14
 category:
   - "[[English learning notes]]"
@@ -34,7 +34,7 @@ date: 2026-09-14
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - cozy up/get cozy +on/by/in+地方: 窩在某個溫暖舒適的地方
 - cozy up to/get cozy with+someone: 討好、巴結某人

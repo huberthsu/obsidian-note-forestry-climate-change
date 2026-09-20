@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-19T05:36:23.642Z
+modified: 2026-09-20T12:25:45.040Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -37,7 +37,7 @@ date: 2026-09-07
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - cynical about+something: 對...感到懷疑/憤世嫉俗
 

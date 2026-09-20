@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-19T06:20:12.180Z
+modified: 2026-09-20T12:25:45.491Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -45,7 +45,7 @@ Used wgen removing something officially and permanently.
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - discard old/unnecessary/outdated items: 丟棄舊的/不必要的/過時的東西
 - discard ideas/notion/theory: 放棄想法/概念/理論

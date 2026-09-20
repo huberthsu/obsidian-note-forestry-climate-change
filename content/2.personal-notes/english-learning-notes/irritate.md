@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-19T05:36:23.653Z
+modified: 2026-09-20T12:25:47.149Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
@@ -37,7 +37,7 @@ date: 2026-09-08
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - be irritated by+某件事: 因為某事而感到惱火
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-10T08:59:51.254Z
+modified: 2026-09-20T12:25:47.945Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
@@ -34,7 +34,7 @@ date: 2026-09-08
 
 ---
 
-## Usage & Collocations
+## Usage/Collocations
 
 - pull one's weight in + n(團隊/部門/公司/群體/專案): 在...中盡本分
 - fail to pull one's weight: 未能盡本分

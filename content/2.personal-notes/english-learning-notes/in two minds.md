@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-09-10T08:59:38.800Z
+modified: 2026-09-20T12:25:46.816Z
 published: 2026-08-14
 category:
   - "[[English learning notes]]"
@@ -38,7 +38,7 @@ date: 2026-08-14
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - **be**+in two minds+**about**+noun
 

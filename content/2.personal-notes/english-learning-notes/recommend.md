@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-19T05:36:23.658Z
+modified: 2026-09-20T12:25:47.992Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
@@ -41,7 +41,7 @@ date: 2026-09-01
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - recommend someone/something to someone: 向某人推薦某人/某事
 - recommend + that 子句

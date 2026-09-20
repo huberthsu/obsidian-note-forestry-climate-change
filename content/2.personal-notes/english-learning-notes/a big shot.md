@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-09-10T08:59:17.193Z
+modified: 2026-09-20T12:25:42.849Z
 published: 2026-08-15
 category:
   - "[[English learning notes]]"
@@ -39,7 +39,7 @@ date: 2026-08-15
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - acts like a big shot 裝得很了不起、擺架子
 - Become / Turn into a big shot 成為大人物

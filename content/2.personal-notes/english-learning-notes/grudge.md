@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-18
-modified: 2026-09-18T14:42:02.785Z
+modified: 2026-09-20T12:25:46.578Z
 published: 2026-09-18
 category:
   - "[[English learning notes]]"
@@ -37,7 +37,7 @@ date: 2026-09-18
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - have/hold a grudge against someone: 對某人心懷怨恨
 

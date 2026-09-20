@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-15
-modified: 2026-09-19T06:56:27.110Z
+modified: 2026-09-20T12:25:42.743Z
 published: 2026-08-15
 category:
   - "[[English learning notes]]"
@@ -41,7 +41,7 @@ date: 2026-08-15
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - Turn into / Become a couch potato
 - Sit around like a couch potato

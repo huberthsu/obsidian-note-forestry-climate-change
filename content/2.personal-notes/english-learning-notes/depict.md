@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-09
-modified: 2026-09-19T05:36:23.643Z
+modified: 2026-09-20T12:25:45.186Z
 published: 2026-09-09
 category:
   - "[[English learning notes]]"
@@ -47,7 +47,7 @@ date: 2026-09-09
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - depict+內容
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-19T06:20:12.177Z
+modified: 2026-09-20T12:25:45.752Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
@@ -33,7 +33,7 @@ date: 2026-09-10
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - The benefits of+n+outweigh the drawbacks：某事務的優點多於缺點
 

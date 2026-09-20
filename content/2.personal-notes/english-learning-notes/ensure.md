@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-01
-modified: 2026-09-19T04:47:39.712Z
+modified: 2026-09-20T12:25:45.942Z
 published: 2026-09-01
 category:
   - "[[English learning notes]]"
@@ -47,7 +47,7 @@ date: 2026-09-01
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - ensure+(that)+主詞+v
 

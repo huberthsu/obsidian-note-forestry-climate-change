@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-19T04:53:51.483Z
+modified: 2026-09-20T12:25:47.347Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -47,7 +47,7 @@ date: 2026-08-31
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - persist in + V-ing / N: 執意做某事、堅持（某種行為/看法)
 - persist with + N: 堅持繼續（某個計畫、方法或努力）

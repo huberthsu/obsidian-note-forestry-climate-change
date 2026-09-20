@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-19T05:36:23.654Z
+modified: 2026-09-20T12:25:47.461Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
@@ -43,7 +43,7 @@ date: 2026-09-08
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - ponder+over+something: 反覆琢磨
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-19T06:20:12.182Z
+modified: 2026-09-20T12:25:46.323Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -45,7 +45,7 @@ date: 2026-08-31
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - come to fruition實現；開花結果
 - someone+bring+something+to+frution: 某人使某事實現

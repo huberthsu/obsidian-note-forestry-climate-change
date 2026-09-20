@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-19T05:36:23.654Z
+modified: 2026-09-20T12:25:47.557Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -46,7 +46,7 @@ date: 2026-08-31
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - postpone+until+時間: 延期到某個時間
 - postpone+to+時間: 延後安排某個時間點

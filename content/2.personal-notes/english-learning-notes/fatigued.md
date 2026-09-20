@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-19T05:36:23.650Z
+modified: 2026-09-20T12:25:46.102Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
@@ -40,7 +40,7 @@ date: 2026-09-08
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - be fatigued by+something(疲憊來源): 被...弄得疲倦
 

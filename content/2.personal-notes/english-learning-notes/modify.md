@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-19
-modified: 2026-09-19T05:36:23.654Z
+modified: 2026-09-20T12:25:47.242Z
 published: 2026-08-19
 category:
   - "[[English learning notes]]"
@@ -49,7 +49,7 @@ date: 2026-08-19
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - modify + 名詞(計畫、設計、方法): 修改
 - slightly/significantly/substantially modify: 輕微/顯著/大幅修改

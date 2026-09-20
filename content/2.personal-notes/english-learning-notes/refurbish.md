@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-13
-modified: 2026-09-19T06:52:31.018Z
+modified: 2026-09-20T12:25:48.181Z
 published: 2026-09-13
 category:
   - "[[English learning notes]]"
@@ -41,7 +41,7 @@ date: 2026-09-13
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - refurbish a building: 翻新建築物
 - refurbish electronics/equipment: 整修電子產品/設備

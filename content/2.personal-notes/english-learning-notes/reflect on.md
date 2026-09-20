@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-31
-modified: 2026-09-19T05:36:23.660Z
+modified: 2026-09-20T12:25:48.133Z
 published: 2026-08-31
 category:
   - "[[English learning notes]]"
@@ -45,7 +45,7 @@ date: 2026-08-31
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - reflect on + 名詞(past/meaning/experience/life): 思考關於...
 - deeply/carefully/seriously reflect on: 深入/仔細/認真地反思

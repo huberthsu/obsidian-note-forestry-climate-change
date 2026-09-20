@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-02
-modified: 2026-09-19T04:51:50.778Z
+modified: 2026-09-20T12:25:47.289Z
 published: 2026-09-02
 category:
   - "[[English learning notes]]"
@@ -40,7 +40,7 @@ date: 2026-09-02
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - a paradigm shift in+領域/行為: 在某個領域/行為上發生了範式轉移
 - a paradigm of: ...的典範

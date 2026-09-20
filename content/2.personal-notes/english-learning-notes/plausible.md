@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-16
-modified: 2026-09-19T04:51:50.779Z
+modified: 2026-09-20T12:25:47.411Z
 published: 2026-09-16
 category:
   - "[[English learning notes]]"
@@ -41,7 +41,7 @@ date: 2026-09-16
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - plausible explanation/excuse/reason/scenario/alternative: 似乎合理的解釋/藉口/原因/情景/替代方案
 - entirely plausible: 完全合理的

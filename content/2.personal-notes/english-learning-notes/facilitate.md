@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-08
-modified: 2026-09-19T06:52:31.021Z
+modified: 2026-09-20T12:25:46.040Z
 published: 2026-09-08
 category:
   - "[[English learning notes]]"
@@ -42,7 +42,7 @@ date: 2026-09-08
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - facilitate + n(learning/communication/process/collaboration): 促進...
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-19
-modified: 2026-09-19T07:24:51.273Z
+modified: 2026-09-20T12:25:47.509Z
 published: 2026-09-19
 category:
   - "[[English learning notes]]"
@@ -43,7 +43,7 @@ date: 2026-09-19
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - investment/stock portfolio: 投資/股票組合
 - product portfolio: 產品組合

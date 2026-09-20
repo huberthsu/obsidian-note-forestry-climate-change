@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-09
-modified: 2026-09-10T08:59:14.436Z
+modified: 2026-09-20T12:25:46.270Z
 published: 2026-09-09
 category:
   - "[[English learning notes]]"
@@ -41,7 +41,7 @@ date: 2026-09-09
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - foster an environment / culture+of+n(特質:trust/respect/innovation): 營造某特質環境/文化
   - of+名詞(特質)=用來形容環境、文化本身充滿該特質

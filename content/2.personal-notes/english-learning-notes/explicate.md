@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-07
-modified: 2026-09-19T05:36:23.649Z
+modified: 2026-09-20T12:25:45.992Z
 published: 2026-09-07
 category:
   - "[[English learning notes]]"
@@ -45,7 +45,7 @@ date: 2026-09-07
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - explicate + text/theory/concept/meaning:  闡述 文本/理論/概念/含意
 - explicate the meaning of:  闡述...的意義

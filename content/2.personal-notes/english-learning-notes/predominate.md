@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-08-14
-modified: 2026-09-19T05:36:23.656Z
+modified: 2026-09-20T12:25:47.604Z
 published: 2026-08-14
 category:
   - "[[English learning notes]]"
@@ -81,7 +81,7 @@ dominant+genes/traits/characteristics/behavior
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - "predominate in"+ object.
 - A predominates over B = A is more common than B

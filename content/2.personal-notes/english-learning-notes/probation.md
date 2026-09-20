@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-19
-modified: 2026-09-19T07:55:57.432Z
+modified: 2026-09-20T12:25:47.650Z
 published: 2026-09-19
 category:
   - "[[English learning notes]]"
@@ -46,7 +46,7 @@ date: 2026-09-19
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - be on probation: 在試用期/緩刑期
 - probationary period: 試用期

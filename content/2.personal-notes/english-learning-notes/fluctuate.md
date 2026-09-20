@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-10
-modified: 2026-09-19T05:36:23.651Z
+modified: 2026-09-20T12:25:46.217Z
 published: 2026-09-10
 category:
   - "[[English learning notes]]"
@@ -42,7 +42,7 @@ date: 2026-09-10
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - fluctuate between A and B: 在 A 與 B 之間起伏／浮動
 

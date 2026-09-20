@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-18
-modified: 2026-09-19T04:53:51.484Z
+modified: 2026-09-20T12:25:48.227Z
 published: 2026-09-18
 category:
   - "[[English learning notes]]"
@@ -43,7 +43,7 @@ date: 2026-09-18
 
 ---
 
-## Collocations
+## Usage/Collocations
 
 - resent+n/V-ing: 不滿某事或做某事
 

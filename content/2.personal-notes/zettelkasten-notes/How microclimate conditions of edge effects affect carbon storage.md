@@ -9,7 +9,6 @@ tags:
   - 微氣候
   - 氣候變遷
   - 碳核算
-date: 2026-08-17
 摘要:
 in:
   - 2.personal-notes

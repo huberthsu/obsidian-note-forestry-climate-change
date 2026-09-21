@@ -8,14 +8,13 @@ aliases:
   - 森林空間結構
   - "#森林結構"
 title: 什麼是林分空間結構
-created: 2026-08-25
-modified: 2026-09-08T15:37:42.530Z
-published: 2026-08-25
+created: 2026-08-25T08:23:18.218Z
+modified: 2026-09-21T14:33:19.647Z
+published: 2026-09-21T14:33:19.647Z
 tags:
   - 森林結構
 category:
   - "[[Zettelkasten notes]]"
-date: 2026-08-25
 摘要:
 in:
   - 2.personal-notes

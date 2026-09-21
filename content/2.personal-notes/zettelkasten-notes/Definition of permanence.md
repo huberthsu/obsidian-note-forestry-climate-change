@@ -7,7 +7,6 @@ aliases:
   - "#永久性"
 tags:
   - 永久性
-date: 2026-08-02
 摘要:
 in:
   - 2.personal-notes

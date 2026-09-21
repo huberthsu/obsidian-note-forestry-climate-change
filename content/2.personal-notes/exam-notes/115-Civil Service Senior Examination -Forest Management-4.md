@@ -2,8 +2,8 @@
 publish: true
 title: OECMs與Biodiversity Credit對於推動私有林與淺山里山地景的自然治理有何助益
 created: 2026-08-12T06:38:31.518Z
-modified: 2026-09-21T13:56:55.501Z
-published: 2026-09-21T13:56:55.501Z
+modified: 2026-09-21T14:38:21.189Z
+published: 2026-09-21T14:38:21.189Z
 tags:
   - OECMs
   - 生物信用額度
@@ -44,7 +44,8 @@ date:
 
 # 關聯筆記
 
-- [[What is OECMs]]
-- [[Principles of Biodiversity Credit Mechanisms]]
+- [[What is OECMs|什麼是OECMs]]
+- [[Principles of Biodiversity Credit Mechanisms|生物信用額度]]
+- [[Key Points and Comparisons of Biocredit, Carbon Offset, and Ecosystem Services Value|生物信用額度機制、碳抵換機制與生態系統服務價值的重點與比較]]
 
 # 參考資料

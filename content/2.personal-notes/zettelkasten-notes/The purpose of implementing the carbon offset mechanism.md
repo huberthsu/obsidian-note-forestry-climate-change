@@ -6,7 +6,6 @@ aliases:
   - 碳抵換目的
 tags:
   - 碳抵換
-date: 2026-08-06
 摘要:
 in:
   - 2.personal-notes

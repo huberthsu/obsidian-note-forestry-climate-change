@@ -7,7 +7,6 @@ tags:
   - 邊緣效應
   - 碳儲存
   - 碳核算
-date: 2026-08-17
 摘要:
 in:
   - 2.personal-notes

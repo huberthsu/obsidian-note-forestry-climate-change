@@ -6,7 +6,6 @@ aliases:
 tags:
   - 碳抵換
   - 碳抵換品質標準
-date: 2026-08-06
 摘要:
 in:
   - 2.personal-notes

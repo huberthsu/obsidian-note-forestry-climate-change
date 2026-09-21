@@ -8,7 +8,6 @@ tags:
   - 碳儲存
   - 碳吸存
   - 碳循環
-date: 2026-08-25
 摘要:
 in:
   - 2.personal-notes

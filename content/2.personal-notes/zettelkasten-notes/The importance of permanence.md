@@ -6,7 +6,6 @@ aliases:
   - 永久性的重要性
 tags:
   - 永久性
-date: 2026-08-06
 摘要:
 in:
   - 2.personal-notes

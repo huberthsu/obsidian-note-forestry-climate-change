@@ -5,9 +5,8 @@ filters:
     - or:
         - category.contains(link("English learning notes"))
         - category.contains(link("Exam notes"))
-        - category.contains(link("Zettelkasten notes"))
 formulas:
-  type_label: if(category.contains(link("English learning notes")), "英文學習筆記", if(category.contains(link("Exam notes")), "考古題筆記", if(category.contains(link("Zettelkasten notes")), "卡片盒筆記", "其他")))
+  type_label: if(category.contains(link("English learning notes")), "英文學習筆記", if(category.contains(link("Exam notes")), "考古題筆記", "其他"))
   month_label: if(date, date(date).format("YYYY-MM"), "")
 properties:
   formula.type_label:

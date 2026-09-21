@@ -5,7 +5,6 @@ aliases:
   - 意外
 tags:
   - 工作流
-date: 2026-07-21
 in:
   - 2.personal-notes
 parent:

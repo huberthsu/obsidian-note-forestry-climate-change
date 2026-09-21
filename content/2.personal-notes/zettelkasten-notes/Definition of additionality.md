@@ -7,7 +7,6 @@ Aliases:
   - "#外加性"
 tags:
   - 外加性
-date: 2026-08-28
 摘要:
 in:
   - 2.personal-notes

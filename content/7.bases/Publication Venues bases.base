@@ -1,0 +1,12 @@
+filters:
+  and:
+    - category.contains(link("Publication Venues"))
+    - '!file.inFolder("5.templates")'
+    - '!file.inFolder("5.templates-for-web")'
+views:
+  - type: table
+    name: 表格
+    order:
+      - file.name
+      - tags
+      - type

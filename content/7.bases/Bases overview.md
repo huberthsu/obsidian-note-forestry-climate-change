@@ -4,8 +4,8 @@ aliases:
   - Bases 總覽
 title: Bases 總覽
 created: 2026-09-03T15:11:42.641Z
-modified: 2026-09-09T07:29:48.124Z
-published: 2026-09-09T07:29:48.124Z
+modified: 2026-09-21T06:27:39.700Z
+published: 2026-09-21T06:27:39.700Z
 in:
   - 2.personal-notes
 ---
@@ -21,3 +21,4 @@ Obsidian Bases（`.base`）檔案，用查詢條件篩選、呈現筆記的資�
 - [[英文學習筆記bases.base]] — 嵌入在[[English learning notes|英文學習筆記]]
 - [[卡片盒筆記bases.base]] — 嵌入在[[Zettelkasten notes|卡片盒筆記]]
 - [[monthly tasks calendar bases.base]] — 嵌入在 [[Task Management|任務管理]]，月曆呈現本月英文/考古題/卡片盒筆記的完成日期
+- [[Publication Venues bases.base]] — 嵌入在 [[Publication Venues|出版管道]]

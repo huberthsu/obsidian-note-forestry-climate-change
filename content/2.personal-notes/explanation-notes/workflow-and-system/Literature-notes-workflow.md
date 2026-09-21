@@ -4,8 +4,8 @@ aliases:
   - 文獻筆記工作流
 title: 文獻筆記工作流
 created: 2026-08-11T03:01:45.388Z
-modified: 2026-09-21T06:41:32.606Z
-published: 2026-09-21T06:41:32.606Z
+modified: 2026-09-21T06:46:55.948Z
+published: 2026-09-21T06:46:55.948Z
 tags:
   - 工作流
   - 康乃爾筆記法
@@ -18,7 +18,6 @@ in:
 parent:
   - "[[Workflow-system-overview|工作流系統說明]]"
 sibling:
-  - "[朱騏obsidian使用流程圖](https://whimsical.com/ipo-obsidian-LPyw6fia5hvjto5bWrQc4Y)"
 child:
   - "[[Instructions for using Cornell and the Card Box Note-Taking Method|康乃爾與卡片盒筆記法的應用說明]]"
   - "[[Information filtering criteria|資訊篩選標準]]"

@@ -2,8 +2,8 @@
 publish: true
 title: OECMs與Biodiversity Credit對於推動私有林與淺山里山地景的自然治理有何助益
 created: 2026-08-12T06:38:31.518Z
-modified: 2026-09-05T08:13:33.471Z
-published: 2026-09-05T08:13:33.471Z
+modified: 2026-09-21T13:56:55.501Z
+published: 2026-09-21T13:56:55.501Z
 tags:
   - OECMs
   - 生物信用額度
@@ -41,10 +41,6 @@ date:
     - [ ] <60不熟，+1天
 
 # 參考答案
-
-- 什麼是oecm
-- 什麼是生物信用額度
-- 兩種工具對於自然治理的注意
 
 # 關聯筆記
 

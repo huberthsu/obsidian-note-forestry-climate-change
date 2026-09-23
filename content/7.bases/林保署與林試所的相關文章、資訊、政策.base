@@ -1,0 +1,12 @@
+filters:
+  or:
+    - type.contains("林保署")
+    - type.contains("林試所")
+views:
+  - type: table
+    name: 表格
+    order:
+      - file.name
+      - tags
+    columnSize:
+      file.name: 328

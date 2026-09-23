@@ -2,8 +2,8 @@
 publish: true
 title: 什麼是OECMs
 created: 2026-08-12T06:40:49.123Z
-modified: 2026-09-21T14:38:13.260Z
-published: 2026-09-21T14:38:13.260Z
+modified: 2026-09-23T07:47:00.513Z
+published: 2026-09-23T07:47:00.513Z
 tags:
   - OECMs
 category:
@@ -23,7 +23,11 @@ password:
 
 ---
 
-# 核心內容
+# 什麼是OECMs
+
+- 定義
+- 目的
+- 與保護區的差異
 
 # 與其他筆記的關聯與理由
 
@@ -32,6 +36,9 @@ password:
 - child理由
 
 # 來源
+
+[[保育共生地認證方案]]
+[[呼應生物多樣性公約30x30目標 OECMs保育共生地認證方案出爐]]
 
 # 我的其他思考
 

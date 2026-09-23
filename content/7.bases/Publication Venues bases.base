@@ -6,7 +6,9 @@ filters:
 views:
   - type: table
     name: 表格
+    groupBy:
+      property: type
+      direction: ASC
     order:
       - file.name
       - tags
-      - type

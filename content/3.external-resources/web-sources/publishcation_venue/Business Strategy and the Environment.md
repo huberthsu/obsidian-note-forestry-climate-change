@@ -1,11 +1,10 @@
 ---
 publish: true
-created: 2026-09-20T16:34:19.600Z
-modified: 2026-09-23T15:33:14.567Z
-published: 2026-09-23T15:33:14.567Z
+created: 2026-09-23T15:21:31.176Z
+modified: 2026-09-23T15:46:53.313Z
+published: 2026-09-23T15:46:53.313Z
 tags:
-  - 生態學
-  - 環境科學
+  - 永續發展目標
 category:
   - "[[Publication Venues]]"
 type:

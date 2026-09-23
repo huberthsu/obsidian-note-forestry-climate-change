@@ -4,8 +4,8 @@ aliases:
   - Quartz 建站－Timestamp Notes 影片跳轉連結
 title: Quartz 建站－Timestamp Notes 影片跳轉連結
 created: 2026-09-04T10:21:54.491Z
-modified: 2026-09-04T10:21:54.513Z
-published: 2026-09-04T10:21:54.513Z
+modified: 2026-09-23T09:32:50.097Z
+published: 2026-09-23T09:32:50.097Z
 tags:
   - 數位花園
   - 網站
@@ -21,11 +21,11 @@ child:
 
 # 讓 Timestamp Notes 的時間戳記在網站上也能點擊跳轉
 
-搭配母筆記 [[How to create a Quartz website]] 一起看。用法說明見 [[Timestamp note外掛說明]]。
+搭配母筆記 [[How to create a Quartz website]] 一起看。用法說明見 [[Timestamp note plugins|Timestamp note外掛說明]]。
 
 ## 背景：外掛本身在網站上完全沒作用
 
-[[Timestamp note外掛說明|Timestamp Notes]] 是 desktop-only 的 Obsidian 外掛，筆記裡留下的 ` ```timestamp``` `／` ```timestamp-url``` ` code block，發布到網站後只會被當成普通程式碼區塊顯示成文字，沒有任何互動能力。網站上真正能播放的影片，是另外用 `![說明文字](YouTube網址)` 這種連結語法插入的，Quartz 本身就有把它轉成 `<iframe>` 的功能（`obsidian-flavored-markdown` 插件的 `enableYouTubeEmbed`），跟 Timestamp Notes 外掛完全是兩回事。
+[[Timestamp note plugins]] 是 desktop-only 的 Obsidian 外掛，筆記裡留下的 ` ```timestamp``` `／` ```timestamp-url``` ` code block，發布到網站後只會被當成普通程式碼區塊顯示成文字，沒有任何互動能力。網站上真正能播放的影片，是另外用 `![說明文字](YouTube網址)` 這種連結語法插入的，Quartz 本身就有把它轉成 `<iframe>` 的功能（`obsidian-flavored-markdown` 插件的 `enableYouTubeEmbed`），跟 Timestamp Notes 外掛完全是兩回事。
 
 ## 做法：新增一個 build-time 的 vendor plugin
 

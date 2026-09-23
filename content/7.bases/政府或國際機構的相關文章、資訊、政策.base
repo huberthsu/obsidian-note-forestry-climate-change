@@ -1,0 +1,14 @@
+filters:
+  and:
+    - category.contains("Government_or_Organizations")
+views:
+  - type: table
+    name: 表格
+    groupBy:
+      property: type
+      direction: ASC
+    order:
+      - file.name
+      - tags
+    columnSize:
+      file.name: 328

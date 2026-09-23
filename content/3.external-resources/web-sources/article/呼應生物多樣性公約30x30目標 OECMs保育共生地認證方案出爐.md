@@ -1,14 +1,16 @@
 ---
 publish: true
 created: 2026-09-23
-modified: 2026-09-23T08:20:44.171Z
-published: 2026-09-23T08:20:44.171Z
+modified: 2026-09-23T08:27:48.188Z
+published: 2026-09-23T08:27:48.188Z
 tags:
   - OECMs
-author:
-source: https://www.forest.gov.tw/news/0076245
+category:
+  - Government_or_Organizations
 type:
   - 林保署
+author:
+source: https://www.forest.gov.tw/news/0076245
 in:
   - 3.external-resources
 ---

@@ -1,11 +1,11 @@
 ---
 publish: true
 aliases:
-  - 林保署與林試所相關
-title: 林保署與林試所相關
+  - 政府或組織相關
+title: 政府或組織相關
 created: 2026-09-23T07:38:59.778Z
-modified: 2026-09-23T08:28:29.931Z
-published: 2026-09-23T08:28:29.931Z
+modified: 2026-09-23T08:33:52.765Z
+published: 2026-09-23T08:33:52.765Z
 tags:
   - 類別
 ---

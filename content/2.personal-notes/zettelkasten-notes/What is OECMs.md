@@ -2,8 +2,8 @@
 publish: true
 title: 什麼是OECMs
 created: 2026-08-12T06:40:49.123Z
-modified: 2026-09-23T08:21:33.913Z
-published: 2026-09-23T08:21:33.913Z
+modified: 2026-09-23T08:31:43.168Z
+published: 2026-09-23T08:31:43.168Z
 tags:
   - OECMs
 category:
@@ -39,6 +39,7 @@ password:
 
 - [[保育共生地認證方案]]
 - [[呼應生物多樣性公約30x30目標 OECMs保育共生地認證方案出爐]]
+- [[保育共生地認證方案+常見問答集_115年8月24日更新.pdf]]
 
 # 我的其他思考
 

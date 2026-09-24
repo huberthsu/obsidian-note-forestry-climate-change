@@ -3,9 +3,9 @@ publish: true
 aliases:
   - 文獻筆記模板
 title: 文獻筆記模板
-created: 2026-08-10T23:40:14.234Z
-modified: 2026-08-15T12:54:01.816Z
-published: 2026-08-15T12:54:01.816Z
+created: 2026-09-24T17:25:12.493Z
+modified: 2026-09-24T17:25:12.494Z
+published: 2026-09-24T17:25:12.494Z
 category:
   - "[[Literature notes]]"
 tags:
@@ -16,6 +16,7 @@ tags:
   - "[[Related|關聯]]"
   - "[[Use|用途]]"
 發表年分:
+publication_venue:
 閱讀狀態: false
 in:
   - 2.personal-notes

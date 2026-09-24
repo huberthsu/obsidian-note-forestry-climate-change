@@ -3,9 +3,9 @@ publish: true
 aliases:
   - 工作流系統說明
 title: 工作流系統說明
-created: 2026-09-16T07:21:44.787Z
-modified: 2026-09-17T18:24:18.787Z
-published: 2026-09-17T18:24:18.787Z
+created: 2026-09-24T17:31:37.281Z
+modified: 2026-09-24T17:33:45.822Z
+published: 2026-09-24T17:33:45.822Z
 tags:
   - 工作流
 category:
@@ -63,7 +63,7 @@ child:
      - 流程
        - to do放優先待辦事項、next放其他待辦事項
        - 做完的任務直接delete卡片
-       - 若to do任務皆已完成，或next的任務要提前處裡->將next卡片直接拖到to do
+       - 若to do任務皆已完成，或next的任務要提前處理->將next卡片直接拖到to do
      - 應用可參考[[其他雜事kanban]]
 
 ---
@@ -72,7 +72,7 @@ child:
 
 ### 1. 文獻筆記
 
-- **使用時機**：
+- 使用時機：
   - 摘要與整理各領域文獻的知識、概念、理論框架
   - 內容來源為「一份文件」，架構依據原文章節
   - 著重「原文說了什麼」
@@ -81,8 +81,8 @@ child:
 
 * 核心概念：康乃爾+[[Information filtering criteria|資訊篩選標準]] 架構
 
-- 流程: claudian依據文獻筆記skills流程建立內容區-我撰寫meatdata、摘要區與整理區-詳細閱讀並思考其中有無概念適合另外建立[[Zettelkasten notes|卡片盒筆記]]
-  - claudian參考claude-skills-副本/skills資料夾底下的skills，按找我的原則與規範協作
+- 流程: claudian依據文獻筆記skills流程建立內容區-我撰寫metadata、摘要區與整理區-詳細閱讀並思考其中有無概念適合另外建立[[Zettelkasten notes|卡片盒筆記]]
+  - claudian參考claude-skills-副本/skills資料夾底下的skills，按照我的原則與規範協作
     - 建立文獻筆記相關skills
       - [[1-foundation]]
       - [[2-setup]]
@@ -91,6 +91,7 @@ child:
       - [[5-organize]]
       - [[6-content]]
       - [[7-verify]]
+      - [[8-workflow]]
 - 使用模板: [[Literature notes template|文獻筆記模板]]
 
 ---
@@ -135,24 +136,39 @@ child:
 
 ---
 
-### 5.英文學習筆記
+### 5. 英文學習筆記
 
 - 使用時機:  學習英文單字、片語
 - 管理工具: [[English learning notes|英文學習筆記]]
 - 流程: 從各種來源中發現有趣或不熟悉的單字與片語-建立英文學習筆記-claudian設計測驗練習-紀錄測驗結果
   - 來源
-    - Obsidian Web Clipper擷取網路英文文章或影片到3.外部資料/網路來源 資料夾中
+    - Obsidian Web Clipper擷取網路英文文章或影片到3.external-resources/web-sources/english-vocabulary and phrase 資料夾中
     - [[3.English words and phrases candidate pool|英文單字片語候選詞庫]] 挑選
     - [[Books]]中的原文課外書
   - 學習
     - 建立[[English study notes template|英文學習筆記模板]]紀錄想學的單字或片語
     - 使用[[english-vocab-link-compare]] skill-比較單字/片語之間的關聯，紀錄在[[1.English words and phrases associations|英文單字片語關聯整理]]
     - 若有影片
-      - 使用[[Timestamp note plugins]]使影片於右側邊欄撥放
+      - 使用[[Timestamp note plugins]]使影片於右側邊欄播放
       - 建立timestamp配合紀錄影片重點
   - 測驗與測驗紀錄
     - 使用[[english-vocab-quiz]] skill-練習英翻中、中翻英、應用、選擇題、句子翻譯，將練習結果紀錄在[[Vocab Quiz Record|英文測驗紀錄]]
 - 使用模板: [[English study notes template|英文學習筆記模板]]
+
+---
+
+### 6. 出版管道
+
+- 管理工具: [[Publication Venues|出版管道]]
+- 使用時機
+  - 建立文獻筆記，需要記錄其出版物
+- 流程
+  - 建立[[Literature notes template|文獻筆記]]時，將文獻的出版管道以wikilink填入metadata中的publication\_venue欄位
+  - [[5.templates-for-web/publication venue模板|出版管道筆記]]中，可簡介該出版管道，並建立該出版管道所收錄的相關研究
+  - [[5.templates-for-web/publication venue模板|publication venue模板]]中的type欄位紀錄該出版管道類型(期刊、專書、論文集、編輯書...)，tags欄位紀錄該出版管道所涵蓋的主要領域
+- 用途
+  - 除了用於了解並熟悉各出版物的領域，也能在缺乏靈感時，可先由tags中尋找或篩選出符合目的領域的出版管道，再從中找到相關研究
+- 使用模板: [[5.templates-for-web/publication venue模板|publication venue模板]]
 
 ---
 

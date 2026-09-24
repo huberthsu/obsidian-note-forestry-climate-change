@@ -3,9 +3,9 @@ publish: true
 aliases:
   - 文獻筆記工作流
 title: 文獻筆記工作流
-created: 2026-08-11T03:01:45.388Z
-modified: 2026-09-21T06:46:55.948Z
-published: 2026-09-21T06:46:55.948Z
+created: 2026-09-24T17:25:11.608Z
+modified: 2026-09-24T17:25:11.610Z
+published: 2026-09-24T17:25:11.610Z
 tags:
   - 工作流
   - 康乃爾筆記法
@@ -72,7 +72,7 @@ child:
   - tags欄位: 管理、組織與搜尋卡片
     - 可以定期更新與回顧標籤，思考是否需要[[Organizing tags helps with deeper understanding, searching and extraction, and discovering connections between notes.|細化或合併標籤]]
   - 摘要欄位: 紀錄文獻摘要
-  - publishcation\_venue欄位: 紀錄該研究出自哪個期刊、書籍、論文集等
+  - publication\_venue欄位: 紀錄該研究出自哪個期刊、書籍、論文集等
   - parent、dibling、child欄位: 建立卡片之間連結
 
 ## 正文

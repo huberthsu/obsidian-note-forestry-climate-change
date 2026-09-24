@@ -2,8 +2,8 @@
 publish: true
 title: 森林與氣候變遷的數位花園😊
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-09-16T17:48:34.090Z
-published: 2026-09-16T17:48:34.090Z
+modified: 2026-09-24T16:51:31.366Z
+published: 2026-09-24T16:51:31.366Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -36,8 +36,10 @@ published: 2026-09-16T17:48:34.090Z
 
 - 各類型筆記的入口，裡面有相關類型筆記資料庫
   - [[Literature notes|文獻筆記]]
+  - [[Publication Venues|出版管道]]
   - [[Zettelkasten notes|卡片盒筆記]]
   - [[Exam notes|考古題筆記]]
+  - [[Government or Organizations|政府或組織相關]]
   - [[English learning notes|英文學習筆記]]
     - [[1.English words and phrases associations|英文單字片語關聯整理]]
     - [[2.Collocation rules for verbs,adjectives followed by prepositions|動詞/形容詞接介係詞的搭配規律]]

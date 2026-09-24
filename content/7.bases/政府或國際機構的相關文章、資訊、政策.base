@@ -1,6 +1,6 @@
 filters:
   and:
-    - category.contains("Government_or_Organizations")
+    - category.contains(link("Government or Organizations"))
 views:
   - type: table
     name: 表格

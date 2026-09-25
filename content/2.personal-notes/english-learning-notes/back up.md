@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-24
-modified: 2026-09-24T13:59:45.463Z
+modified: 2026-09-25T07:28:03.298Z
 published: 2026-09-24
 category:
   - "[[English learning notes]]"
@@ -44,3 +44,9 @@ date: 2026-09-24
 ---
 
 ## Examples
+
+- Do you have any data to back up your claim?
+- The marketing team backed up their proposal **with** last year's sales data.
+- When I expressed my concerns, my colleagues backed me up.
+- I always keep a backup of my files.
+- Can you back up a little bit? There's not enough space.

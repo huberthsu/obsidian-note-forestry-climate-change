@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-09-24
-modified: 2026-09-24T13:59:34.535Z
+modified: 2026-09-25T07:25:09.866Z
 published: 2026-09-24
 category:
   - "[[English learning notes]]"
@@ -36,3 +36,5 @@ date: 2026-09-24
 ---
 
 ## Examples
+
+- We have to bite the bullet and finish this difficult project.

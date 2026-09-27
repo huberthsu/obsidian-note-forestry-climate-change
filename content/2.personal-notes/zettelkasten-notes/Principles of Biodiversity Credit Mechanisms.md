@@ -2,8 +2,8 @@
 publish: true
 title: 生物信用額度機制原理
 created: 2026-08-31T17:53:39.129Z
-modified: 2026-09-27T08:45:55.615Z
-published: 2026-09-27T08:45:55.615Z
+modified: 2026-09-27T09:53:14.624Z
+published: 2026-09-27T09:53:14.624Z
 tags:
   - 生物信用額度
 category:
@@ -43,6 +43,7 @@ password:
 
 - [生物多樣性信用市場概念與市場驅動力](https://ws.tfri.gov.tw/Download.ashx?u=LzAwMS9VcGxvYWQvNDM1L3JlbGZpbGUvMTIzNDUvMzQ5ODkvMzU5ZTE3NzEtOWFhMy00NGQwLTk2ODQtODJjZGRkOGZmMWFmLnBkZg%3d%3d\&n=5p6X5qWt56CU56m25bCI6KiKLTE5Meacny3lsIjpoYwxLTHnlJ%2fnianlpJrmqKPmgKfkv6HnlKjluILloLTmpoLlv7XoiIfluILloLTpqYXli5XlipsucGRm)
 - [生物多樣性信用額度-市場的誠信原則與制度設計](https://ws.tfri.gov.tw/Download.ashx?u=LzAwMS9VcGxvYWQvNDM1L3JlbGZpbGUvMTIzNDUvMzUxNjkvZGUwZDcxMjItYzZiMy00Y2NmLWI5YTMtYzNlNGYzN2QyNjcxLnBkZg%3d%3d\&n=5p6X5qWt56CU56m25bCI6KiKLTE5Muacny0yLTEt55Sf54mp5aSa5qij5oCn5L%2bh55So6aGN5bqm5biC5aC055qE6Kqg5L%2bh5Y6f5YmH6IiH5Yi25bqm6Kit6KiILnBkZg%3d%3d)
+- [[衡量生物信用額度生物多樣性成果的途徑-1.緒論]]
 
 # 我的其他思考
 

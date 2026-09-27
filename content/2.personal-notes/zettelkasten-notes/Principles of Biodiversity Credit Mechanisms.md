@@ -2,8 +2,8 @@
 publish: true
 title: 生物信用額度機制原理
 created: 2026-08-31T17:53:39.129Z
-modified: 2026-09-27T09:53:14.624Z
-published: 2026-09-27T09:53:14.624Z
+modified: 2026-09-27T14:04:57.867Z
+published: 2026-09-27T14:04:57.867Z
 tags:
   - 生物信用額度
 category:
@@ -27,11 +27,12 @@ password:
 # 什麼是生物信用額度機制
 
 - 介紹
-  - 生物信用額度，是與基線情境相比，將透過保護或恢復而增加的生物多樣性，商品化為可被量化、驗證與交易的單位
-- 目的
-  - 為了促使企業能對生物多樣性與生態系做出正面貢獻
-- 2022年生物多樣性公約第15屆締約方大會-昆明-蒙特婁全球生物多樣性框架(Kunming-Montreal Global Biodiversity Framework)
-  - [[Kunming-Montreal Global Biodiversity Framework-Target 19]] 的(d)有提到鼓勵進行生物信用額度機制措施
+  - 生物信用額度旨在獎勵對生物多樣性有正向影響的保護或恢復行動，並將行動額外產生的正向成果，轉變為可被量化、驗證與交易的單位
+    - [[衡量生物信用額度生物多樣性成果的途徑-2.生物信用額度的定義與類別#2.1 Definition|WEF、BCA、Pollination對生物信用額度有不同定義]]，目前以生物多樣性信用聯盟 (Biodiversity Credit Alliance, BCA)的定義最被廣泛認同。主要差別在於是否把品質標準的要求納入，以及關於生物信用額度是否能用於抵換於補償
+      - 可參考[[Key Points and Comparisons of Biocredit, Biodiversity offset, amd Carbon Offset|生物信用額度、生物多樣性抵換、碳抵換的重點與比較]]
+- 納入國際公約
+  - 2022年生物多樣性公約第15屆締約方大會-昆明-蒙特婁全球生物多樣性框架(Kunming-Montreal Global Biodiversity Framework)
+    - [[Kunming-Montreal Global Biodiversity Framework-Target 19]] 的(d)有提到鼓勵進行生物信用額度機制措施
 
 # 與其他筆記的關聯與理由
 

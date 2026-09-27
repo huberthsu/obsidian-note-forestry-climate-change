@@ -1,12 +1,17 @@
 ---
+publish: true
+title: 外加性的定義
+created: 2026-08-28T07:04:38.453Z
+modified: 2026-09-25T08:26:57.600Z
+published: 2026-09-25T08:26:57.600Z
+tags:
+  - 外加性
 category:
   - "[[Zettelkasten notes]]"
 Aliases:
   - 外加性
   - 外加性的定義
   - "#外加性"
-tags:
-  - 外加性
 摘要:
 in:
   - 2.personal-notes
@@ -16,8 +21,6 @@ sibling:
   - "[[Definition of permanence|永久性的定義]]"
   - "[[The importance of additionality|具備外加性的重要性]]"
 child:
-publish: true
-title: 外加性的定義
 password:
 ---
 
@@ -25,7 +28,10 @@ password:
 
 # 外加性的定義
 
-- 外加性的定義為: 與原本沒有減量額度的未來假想情境相比，專案所產生的額外減緩成效
+- 外加性的定義為: 與原本沒有減量額度的未來假想情境相比，專案所產生的額外成效
+
+## 碳抵換的外加性
+
 - 需要滿足以下兩個要求才算符合外加性
   1. 專案減緩成效在缺乏減量額度的情況下不會自然發生-我將其解讀為\*\*減緩成效外加性
   2. 專案活動在缺乏減量額度支持下不會自然發生-我將其解讀為\*\*開發動機外加性

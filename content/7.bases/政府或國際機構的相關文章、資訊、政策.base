@@ -10,5 +10,6 @@ views:
     order:
       - file.name
       - tags
+      - source
     columnSize:
       file.name: 328

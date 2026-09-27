@@ -2,8 +2,8 @@
 publish: true
 title: 碳抵換機制原理
 created: 2026-07-31T02:53:04.340Z
-modified: 2026-09-21T14:26:12.550Z
-published: 2026-09-21T14:26:12.550Z
+modified: 2026-09-25T09:51:59.917Z
+published: 2026-09-25T09:51:59.917Z
 tags:
   - 碳抵換
 category:
@@ -24,7 +24,7 @@ password:
 
 ---
 
-# 碳抵換機制原理
+# 碳抵換機制原理與目的
 
 # 與其他筆記的關聯
 

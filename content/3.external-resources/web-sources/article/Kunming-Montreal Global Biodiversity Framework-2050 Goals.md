@@ -1,8 +1,8 @@
 ---
 publish: true
 created: 2026-09-28
-modified: 2026-09-28T15:30:07.702Z
-published: 2026-09-28T15:30:07.702Z
+modified: 2026-09-28T15:32:02.285Z
+published: 2026-09-28T15:32:02.285Z
 tags:
   - 昆明-蒙特婁全球生物多樣性框架
 category:
@@ -13,6 +13,8 @@ source: https://www.cbd.int/gbf/goals
 in:
   - 3.external-resources
 ---
+
+以下取自林保署所譯
 
 **Section G. Global goals for 2050**
 

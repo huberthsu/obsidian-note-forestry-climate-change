@@ -4,6 +4,9 @@ views:
     filters:
       and:
         - file.tags.contains("永久性")
+    groupBy:
+      property: category
+      direction: ASC
     order:
       - file.name
       - tags

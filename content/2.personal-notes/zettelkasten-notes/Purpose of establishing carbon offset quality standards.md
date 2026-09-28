@@ -1,11 +1,16 @@
 ---
-category:
-  - "[[Zettelkasten notes]]"
+publish: true
 aliases:
   - 碳抵換品質標準的設立目的
+title: 碳抵換品質標準的設立目的
+created: 2026-08-06T09:55:37.651Z
+modified: 2026-09-28T10:34:57.346Z
+published: 2026-09-28T10:34:57.346Z
 tags:
   - 碳抵換
   - 碳抵換品質標準
+category:
+  - "[[Zettelkasten notes]]"
 摘要:
 in:
   - 2.personal-notes
@@ -15,10 +20,6 @@ sibling:
   - "[[Purpose of establishing carbon offset quality standards|碳抵換品質標準的設立目的]]"
   - "[[Contents of carbon offset quality standards|碳抵換品質標準的內容]]"
 child:
-  - "[[The importance of additionality|具備外加性的重要性]]"
-  - "[[The importance of permanence|具備永久性的重要性]]"
-publish: true
-title: 碳抵換品質標準的設立目的
 password:
 ---
 
@@ -41,7 +42,6 @@ password:
 - sibling理由
   - [[Contents of carbon offset quality standards|碳抵換品質標準的內容]]-設立目的與制定的內容息息相關
 - child理由
-  - [[The importance of additionality|具備外加性的重要性]]、[[The importance of permanence|具備永久性的重要性]]-外加性與永久性都是碳抵換品質標準中必要的項目，皆與碳抵換品質重要性相關
 
 # 來源文獻
 

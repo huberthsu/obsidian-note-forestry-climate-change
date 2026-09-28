@@ -1,10 +1,15 @@
 ---
-category:
-  - "[[Zettelkasten notes]]"
+publish: true
 aliases:
   - 關聯
+title: 關聯
+created: 2026-07-21T02:49:40.909Z
+modified: 2026-09-28T10:33:00.039Z
+published: 2026-09-28T10:33:00.039Z
 tags:
   - 工作流
+category:
+  - "[[Zettelkasten notes]]"
 in:
   - 2.personal-notes
 parent:
@@ -14,8 +19,6 @@ sibling:
   - "[[Surprise|意外]]"
   - "[[Use|用途]]"
 child:
-publish: true
-title: 關聯
 password:
 ---
 

@@ -1,10 +1,15 @@
 ---
-category:
-  - "[[Zettelkasten notes]]"
+publish: true
 aliases:
   - 用途
+title: 用途
+created: 2026-07-21T02:49:40.917Z
+modified: 2026-09-28T10:35:15.827Z
+published: 2026-09-28T10:35:15.827Z
 tags:
   - 工作流
+category:
+  - "[[Zettelkasten notes]]"
 in:
   - 2.personal-notes
 parent:
@@ -14,8 +19,6 @@ sibling:
   - "[[Surprise|意外]]"
   - "[[Related|關聯]]"
 child:
-publish: true
-title: 用途
 password:
 ---
 

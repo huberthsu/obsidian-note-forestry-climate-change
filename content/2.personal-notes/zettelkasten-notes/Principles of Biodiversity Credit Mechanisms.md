@@ -2,8 +2,8 @@
 publish: true
 title: 生物信用額度機制原理
 created: 2026-08-31T17:53:39.129Z
-modified: 2026-09-27T14:04:57.867Z
-published: 2026-09-27T14:04:57.867Z
+modified: 2026-09-28T10:29:00.681Z
+published: 2026-09-28T10:29:00.681Z
 tags:
   - 生物信用額度
 category:
@@ -51,3 +51,5 @@ password:
 ---
 
 # 相關筆記bases
+
+![[生物信用額度bases.base]]

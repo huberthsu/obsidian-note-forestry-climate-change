@@ -4,3 +4,9 @@ views:
     filters:
       and:
         - file.tags.contains("邊緣效應")
+    groupBy:
+      property: category
+      direction: ASC
+    order:
+      - file.name
+      - tags

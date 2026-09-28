@@ -1,9 +1,9 @@
+filters:
+  and:
+    - file.tags.contains("生物信用額度")
 views:
   - type: table
     name: 表格
-    filters:
-      and:
-        - file.tags.contains("碳抵換")
     groupBy:
       property: category
       direction: ASC

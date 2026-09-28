@@ -1,20 +1,23 @@
 ---
-category:
-  - "[[Zettelkasten notes]]"
+publish: true
 aliases:
   - 廊道對生物多樣性的重要性
+title: 廊道對生物多樣性的重要性
+created: 2026-08-20T14:10:25.516Z
+modified: 2026-09-28T10:33:11.768Z
+published: 2026-09-28T10:33:11.768Z
 tags:
   - 生物多樣性
   - 斑塊廊道基質理論
   - 溪、河
+category:
+  - "[[Zettelkasten notes]]"
 摘要:
 in:
   - 2.personal-notes
 parent:
 sibling:
 child:
-publish: true
-title: 廊道對生物多樣性的重要性
 password:
 ---
 

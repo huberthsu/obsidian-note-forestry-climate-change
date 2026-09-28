@@ -1,10 +1,15 @@
 ---
-category:
-  - "[[Zettelkasten notes]]"
+publish: true
 aliases:
   - 意外
+title: 意外
+created: 2026-07-21T02:49:40.928Z
+modified: 2026-09-28T10:33:01.912Z
+published: 2026-09-28T10:33:01.912Z
 tags:
   - 工作流
+category:
+  - "[[Zettelkasten notes]]"
 in:
   - 2.personal-notes
 parent:
@@ -14,8 +19,6 @@ sibling:
   - "[[Use|用途]]"
   - "[[Related|關聯]]"
 child:
-publish: true
-title: 意外
 password:
 ---
 

@@ -1,6 +1,5 @@
 ---
-category:
-  - "[[Zettelkasten notes]]"
+publish: true
 aliases:
   - 林緣
   - 森林邊緣
@@ -8,17 +7,21 @@ aliases:
   - 森林邊界
   - 林緣定義
   - "#邊緣效應"
+title: 林緣定義
+created: 2026-08-16T08:32:35.662Z
+modified: 2026-09-28T10:32:07.254Z
+published: 2026-09-28T10:32:07.254Z
 tags:
   - 邊緣效應
   - 破碎化
+category:
+  - "[[Zettelkasten notes]]"
 摘要: 目前對於林緣可能沒有明確的距離定義，泛指失去單側樹木提供側向遮蔽的森林與非森林的接觸地帶
 in:
   - 2.personal-notes
 parent:
 sibling:
 child:
-publish: true
-title: 林緣定義
 password:
 ---
 

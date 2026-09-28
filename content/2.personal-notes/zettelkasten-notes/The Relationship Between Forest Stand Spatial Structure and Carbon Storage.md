@@ -1,13 +1,18 @@
 ---
-category:
-  - "[[Zettelkasten notes]]"
+publish: true
 aliases:
   - 林分空間結構與碳貯存量的關聯
+title: 林分空間結構與碳貯存量的關聯
+created: 2026-08-25T08:44:43.898Z
+modified: 2026-09-28T10:35:13.786Z
+published: 2026-09-28T10:35:13.786Z
 tags:
   - 森林結構
   - 碳儲存
   - 碳吸存
   - 碳循環
+category:
+  - "[[Zettelkasten notes]]"
 摘要:
 in:
   - 2.personal-notes
@@ -16,8 +21,6 @@ parent:
 sibling:
   - "[[The impact of forest stand spatial structure complexity on biodiversity|林分空間結構複雜度對生物多樣性的影響]]"
 child:
-publish: true
-title: 林分空間結構與碳貯存量的關聯
 password:
 ---
 

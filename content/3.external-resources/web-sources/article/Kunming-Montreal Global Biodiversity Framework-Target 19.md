@@ -1,19 +1,21 @@
 ---
 publish: true
 created: 2026-09-27
-modified: 2026-09-27T09:47:47.089Z
-published: 2026-09-27T09:47:47.089Z
+modified: 2026-09-28T14:48:09.379Z
+published: 2026-09-28T14:48:09.379Z
 tags:
   - 昆明-蒙特婁全球生物多樣性框架
   - 生物信用額度
   - 生物多樣性抵換
   - 生態服務給付
   - 綠色債券
-author:
+category:
+  - "[[Government or Organizations]]"
+type:
+  - 國際公約
 source: https://www.cbd.int/gbf/targets/19
 in:
   - 3.external-resources
-description:
 ---
 
 ![Mobilize 200 Billion per Year for Biodiversity From all Sources, Including 30 Billion Through International Finance](https://www.cbd.int/gbf/images/targets/target-19.png "Target 19: Mobilize \$200 Billion per Year for Biodiversity From all Sources, Including \$30 Billion Through International Finance")

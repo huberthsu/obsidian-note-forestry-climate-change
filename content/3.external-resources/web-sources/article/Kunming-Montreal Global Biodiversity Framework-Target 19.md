@@ -1,8 +1,8 @@
 ---
 publish: true
 created: 2026-09-27
-modified: 2026-09-28T14:48:09.379Z
-published: 2026-09-28T14:48:09.379Z
+modified: 2026-09-29T07:06:53.369Z
+published: 2026-09-29T07:06:53.369Z
 tags:
   - 昆明-蒙特婁全球生物多樣性框架
   - 生物信用額度
@@ -16,6 +16,8 @@ type:
 source: https://www.cbd.int/gbf/targets/19
 in:
   - 3.external-resources
+parent:
+  - "[[Kunming-Montreal Global Biodiversity Framework-2030 Targets (with Guidance Notes)]]"
 ---
 
 ![Mobilize 200 Billion per Year for Biodiversity From all Sources, Including 30 Billion Through International Finance](https://www.cbd.int/gbf/images/targets/target-19.png "Target 19: Mobilize \$200 Billion per Year for Biodiversity From all Sources, Including \$30 Billion Through International Finance")

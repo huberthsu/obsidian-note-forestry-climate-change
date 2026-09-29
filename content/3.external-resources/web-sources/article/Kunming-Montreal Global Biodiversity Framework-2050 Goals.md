@@ -1,8 +1,8 @@
 ---
 publish: true
 created: 2026-09-28
-modified: 2026-09-28T15:32:02.285Z
-published: 2026-09-28T15:32:02.285Z
+modified: 2026-09-29T07:06:44.564Z
+published: 2026-09-29T07:06:44.564Z
 tags:
   - 昆明-蒙特婁全球生物多樣性框架
 category:
@@ -12,6 +12,8 @@ type:
 source: https://www.cbd.int/gbf/goals
 in:
   - 3.external-resources
+child:
+  - "[[Kunming-Montreal Global Biodiversity Framework-2030 Targets (with Guidance Notes)]]"
 ---
 
 以下取自林保署所譯

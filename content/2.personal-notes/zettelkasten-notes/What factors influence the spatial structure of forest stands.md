@@ -4,8 +4,8 @@ aliases:
   - 影響林分空間結構複雜度的因素有那些
 title: 影響林分空間結構複雜度的因素有那些
 created: 2026-08-23T08:04:37.130Z
-modified: 2026-09-21T14:24:15.057Z
-published: 2026-09-21T14:24:15.057Z
+modified: 2026-09-29T12:24:42.826Z
+published: 2026-09-29T12:24:42.826Z
 tags:
   - 森林結構
 category:
@@ -37,6 +37,9 @@ password:
   - [[The Relationship Between Forest Stand Spatial Structure and Carbon Storage|林分空間結構與碳貯存量的關聯]]、[[The impact of forest stand spatial structure complexity on biodiversity|林分空間結構複雜度對生物多樣性的影響]]-林分空間結構複雜度會影響碳貯存量與生物多樣性
 
 # 來源
+
+- [[熱帶森林林分結構與初級生產力強相關性]]
+  - Zhang, W., Xi, Y., Brandt, M., et al. (2024). Stand structure of tropical forests is strongly associated with primary productivity. _Communications Earth & Environment_, 5, 796.
 
 # 我的其他思考
 

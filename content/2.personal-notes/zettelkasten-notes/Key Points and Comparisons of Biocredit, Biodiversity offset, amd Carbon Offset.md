@@ -4,7 +4,7 @@ aliases:
   - 生物信用額度、生物多樣性抵換、碳抵換的重點與比較
 title: 生物信用額度、生物多樣性抵換、碳抵換的重點與比較
 created: 2026-09-28
-modified: 2026-09-28T10:25:05.283Z
+modified: 2026-09-29T12:20:44.090Z
 published: 2026-09-28
 tags:
   - 生物信用額度
@@ -41,8 +41,10 @@ password:
 
 # 來源
 
-[[生物信用額度：現狀、未來機會與潛在風險概述]]
-[[生物信用額度-比較分析]]
+- [[生物信用額度：現狀、未來機會與潛在風險概述]]
+  - Wunder, S., Fraccaroli, C., Bull, J. W., Dutta, T., Eyres, A., Evans, M. C., ... & zu Ermgassen, S. O. (2025). Biodiversity credits: An overview of the current state, future opportunities, and potential pitfalls. Business Strategy and the Environment, _34_(7), 8470-8499.
+- [[生物信用額度-比較分析]]
+  - Croci, E., Lucchitta, B., & Cusa, M. (2025). Biodiversity credits schemes: a comparative analysis. _Journal of Cleaner Production_, _523_, 146382.
 
 # 我的其他思考
 

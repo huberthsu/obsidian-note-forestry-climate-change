@@ -6,8 +6,8 @@ aliases:
   - "#永久性"
 title: 永久性的定義
 created: 2026-08-02T14:08:10.480Z
-modified: 2026-09-28T10:33:48.904Z
-published: 2026-09-28T10:33:48.904Z
+modified: 2026-09-29T12:19:42.401Z
+published: 2026-09-29T12:19:42.401Z
 tags:
   - 永久性
   - 碳抵換品質標準
@@ -46,7 +46,8 @@ password:
 
 # 來源
 
-[[衡量生物信用額度生物多樣性成果的途徑-3.衡量生物信用額度的挑戰]]
+- [[衡量生物信用額度生物多樣性成果的途徑-3.衡量生物信用額度的挑戰]]
+  - Lammerant J. and Verhelst J. (2025) Pathways for measuring biodiversity outcomes of biodiversity credits, Thematic Reports series of the EU Business & Biodiversity Platform.
 
 # 我的其他思考
 

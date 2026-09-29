@@ -2,8 +2,8 @@
 publish: true
 title: 外加性的定義
 created: 2026-08-28T07:04:38.453Z
-modified: 2026-09-28T09:37:27.226Z
-published: 2026-09-28T09:37:27.226Z
+modified: 2026-09-29T12:17:22.525Z
+published: 2026-09-29T12:17:22.525Z
 tags:
   - 外加性
   - 碳抵換品質標準
@@ -74,7 +74,9 @@ password:
 - [[林業碳抵換專案面臨的主要挑戰及應對障礙的方法]]
   - Pan, C., A. Shrestha, J. L. Innes, G. Zhou, N. Li, J. Li, Y. He, C. Shen, J. -O. Nile and G. Wang (2022) Key challenges and approaches to addressing barriers in forest carbon offset projects. Journal of Forestry Research 33(4):1109-1122.
 - [[衡量生物信用額度生物多樣性成果的途徑-2.生物信用額度的定義與類別]]中BCA的定義
+  - Lammerant J. and Verhelst J. (2025) Pathways for measuring biodiversity outcomes of biodiversity credits, Thematic Reports series of the EU Business & Biodiversity Platform.
 - [[衡量生物信用額度生物多樣性成果的途徑-3.衡量生物信用額度的挑戰]]中有提到外加性相關挑戰與解決方案，以及動機外加性
+  - Lammerant J. and Verhelst J. (2025) Pathways for measuring biodiversity outcomes of biodiversity credits, Thematic Reports series of the EU Business & Biodiversity Platform.
 
 # 我的其他思考
 

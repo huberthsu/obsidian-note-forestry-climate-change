@@ -2306,6 +2306,13 @@ function renderCellValue(value, ctx, columnId) {
   }
   return String(value);
 }
+function renderGroupLabel(groupEntries3, groupProperty, fallbackLabel, ctx) {
+  const first = groupEntries3[0];
+  if (!groupProperty || !first) return fallbackLabel;
+  const rawValue = resolveEntryPropertyValue(groupProperty, first);
+  if (isEmptyValue(rawValue)) return fallbackLabel;
+  return renderCellValue(rawValue, ctx, groupProperty);
+}
 function isEmptyValue(value) {
   if (value === void 0 || value === null || value === "") return true;
   if (Array.isArray(value)) return value.length === 0;
@@ -2747,7 +2754,7 @@ var CardsView = ({
           groupPropertyLabel,
           " "
         ] }),
-        /* @__PURE__ */ jsx7("span", { class: "bases-cards-group-label", children: label }),
+        /* @__PURE__ */ jsx7("span", { class: "bases-cards-group-label", children: renderGroupLabel(groupEntries3, groupProperty, label, { slug: slug2, allSlugs, linkResolution }) }),
         /* @__PURE__ */ jsx7("span", { class: "bases-cards-group-count", children: groupEntries3.length })
       ] }),
       /* @__PURE__ */ jsx7("div", { class: "bases-cards", style: gridStyle, children: groupEntries3.map((entry) => renderCard(entry)) })
@@ -3229,7 +3236,7 @@ var TableView = ({
             groupPropertyLabel,
             " "
           ] }),
-          /* @__PURE__ */ jsx12("span", { class: "bases-table-group-label", children: label }),
+          /* @__PURE__ */ jsx12("span", { class: "bases-table-group-label", children: renderGroupLabel(groupEntries3, groupProperty, label, { slug: slug2, allSlugs, linkResolution }) }),
           /* @__PURE__ */ jsx12("span", { class: "bases-table-group-count", children: groupEntries3.length })
         ] }) }),
         groupEntries3.map(

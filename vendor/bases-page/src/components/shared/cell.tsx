@@ -109,6 +109,25 @@ export function renderCellValue(value: unknown, ctx: RenderCtx, columnId?: strin
   return String(value);
 }
 
+/**
+ * Render a groupBy header label. Grouping itself still keys on the plain-text
+ * `formatValue()` label; this only swaps the displayed text for the same
+ * rendering a table cell gets, so wikilink values (e.g. `category: "[[X]]"`)
+ * become clickable links instead of literal `[[X]]` text.
+ */
+export function renderGroupLabel(
+  groupEntries: BasesEntry[],
+  groupProperty: string | undefined,
+  fallbackLabel: string,
+  ctx: RenderCtx,
+): ComponentChild {
+  const first = groupEntries[0];
+  if (!groupProperty || !first) return fallbackLabel;
+  const rawValue = resolveEntryPropertyValue(groupProperty, first);
+  if (isEmptyValue(rawValue)) return fallbackLabel;
+  return renderCellValue(rawValue, ctx, groupProperty);
+}
+
 export function isEmptyValue(value: unknown): boolean {
   if (value === undefined || value === null || value === "") return true;
   if (Array.isArray(value)) return value.length === 0;

@@ -7,6 +7,7 @@ import {
   getColumns,
   isEmptyValue,
   renderCellValue,
+  renderGroupLabel,
   resolveEntryPropertyValue,
 } from "../shared/cell";
 import { computeSummary } from "../shared/summary";
@@ -132,7 +133,9 @@ const TableView: ViewRenderer = ({
                       {groupPropertyLabel && (
                         <span class="bases-table-group-property">{groupPropertyLabel} </span>
                       )}
-                      <span class="bases-table-group-label">{label}</span>
+                      <span class="bases-table-group-label">
+                {renderGroupLabel(groupEntries, groupProperty, label, { slug, allSlugs, linkResolution })}
+              </span>
                       <span class="bases-table-group-count">{groupEntries.length}</span>
                     </td>
                   </tr>

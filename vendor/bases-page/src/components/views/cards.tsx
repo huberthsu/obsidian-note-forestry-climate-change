@@ -6,6 +6,7 @@ import {
   getColumnLabel,
   isEmptyValue,
   renderCellValue,
+  renderGroupLabel,
   resolveEntryPropertyValue,
 } from "../shared/cell";
 import { transformLink } from "@quartz-community/utils";
@@ -156,7 +157,9 @@ const CardsView: ViewRenderer = ({
               {groupPropertyLabel && (
                 <span class="bases-cards-group-property">{groupPropertyLabel} </span>
               )}
-              <span class="bases-cards-group-label">{label}</span>
+              <span class="bases-cards-group-label">
+                {renderGroupLabel(groupEntries, groupProperty, label, { slug, allSlugs, linkResolution })}
+              </span>
               <span class="bases-cards-group-count">{groupEntries.length}</span>
             </div>
             <div class="bases-cards" style={gridStyle}>

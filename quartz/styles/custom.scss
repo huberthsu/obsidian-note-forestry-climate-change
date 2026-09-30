@@ -125,3 +125,21 @@ html[saved-theme] body :not(li) > input[type="checkbox"] {
 .toc:not(:has(.toc-header.collapsed)) {
   flex-shrink: 0;
 }
+
+// Bases groupBy headers render wikilink values (e.g. `category: "[[X]]"`)
+// as real links (vendor/bases-page renderGroupLabel), but with the site-wide
+// `a.internal` look (secondary colour + highlight box) they read like just
+// another note row. Show them as plain header text instead, underline on
+// hover. Must live here, not in vendor/bases-page's bases.scss: component
+// CSS gets wrapped in `@layer quartz-base`, and base.scss's un-layered
+// `a.internal` rule beats any layered rule regardless of specificity.
+.bases-table-group-label a.internal,
+.bases-cards-group-label a.internal {
+  color: var(--dark);
+  background-color: transparent;
+  padding: 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

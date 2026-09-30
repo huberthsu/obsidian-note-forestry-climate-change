@@ -251,6 +251,7 @@ plugins:
       links:
         GitHub: https://github.com/jackyzha0/quartz
         Discord Community: https://discord.gg/cRFFHYye7t
+        CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant
     layout:
       position: footer
       priority: 50

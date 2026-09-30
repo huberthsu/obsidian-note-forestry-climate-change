@@ -2,8 +2,8 @@
 publish: true
 title: 森林與氣候變遷的數位花園😊
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-09-29T23:59:15.670Z
-published: 2026-09-29T23:59:15.670Z
+modified: 2026-09-30T00:04:27.053Z
+published: 2026-09-30T00:04:27.053Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -76,6 +76,7 @@ published: 2026-09-29T23:59:15.670Z
 ![[Pasted image 20260930071816.png]]
 
 - 留言區。用GitHub登入後可以留言
+- 歡迎所有反饋: 指證錯誤、提出建議與看法、索求相關資料等
 
 ## 其他
 

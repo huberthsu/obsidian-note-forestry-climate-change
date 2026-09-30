@@ -2,8 +2,8 @@
 publish: true
 title: 森林與氣候變遷的數位花園😊
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-09-30T07:23:46.946Z
-published: 2026-09-30T07:23:46.946Z
+modified: 2026-09-30T08:39:27.254Z
+published: 2026-09-30T08:39:27.254Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -35,48 +35,67 @@ published: 2026-09-30T07:23:46.946Z
 
 ## 左側⬅️
 
+### 基本功能
+
 ![[3.external-resources/external-images/Pasted image 20260930064406.png]]
 
 - Quartz 5: 點擊後會回到首頁
 - search: 輸入後，可找到所有標題、tags或內文中，有出現輸入內容的筆記
 
+---
+
 ## 右側➡️
+
+### 當前筆記關聯圖(local graph)
 
 ![[3.external-resources/external-images/Pasted image 20260930064945.png]]
 
-- 當前筆記關聯圖(local graph)。每個節點代表一篇筆記，連接線呈現筆記之間的關聯。鼠標移到任意節點時，會凸顯出與該節點相關的連接線
+- 每個節點代表一篇筆記，連接線呈現筆記之間的關聯。鼠標移到任意節點時，會凸顯出與該節點相關的連接線
 - 點擊右上方圖案後會進入所有筆記關聯圖(global graph)。可使用左邊的篩選面板，選擇呈現出特定資料夾內的筆記，或是否要顯示標籤
 - 點擊節點後，會跳轉至該筆記
 - 節點可以拖曳
 - 按住ctrl後加滑鼠滾輪，可以調整關聯圖大小；按住shift後加滑鼠滾輪，可以微調關聯圖大小
 
+### 當前筆記的table of contents
+
 ![[3.external-resources/external-images/Pasted image 20260930070437.png]]
 
-- 當前筆記的table of contents。預設為收合狀態，點擊後可以開啟
+- 預設為收合狀態，點擊後可以開啟
 - 點擊底下的標題可直接跳轉
+
+### 反向連結-所有提到當前筆記的其他筆記
 
 ![[3.external-resources/external-images/Pasted image 20260930071138.png]]
 
-- 反向連結。所有提到當前筆記的其他筆記
 - 點擊後可直接跳轉
+
+---
 
 ## 上方⬆️
 
+### properties/metadata(以[[Workflow-system-overview|工作流系統說明]]筆記為例)
+
 ![[3.external-resources/external-images/Pasted image 20260930072440.png]]
 
-- properties/metadata。我自己為該篇筆記所設定的欄位，黃底紫色字體者皆為超連結，點擊可跳轉
+- 我自己為該篇筆記所設定的欄位，黃底紫色字體者皆為超連結，點擊可跳轉
   - tags: 該篇筆記相關關鍵字。點擊後可跳轉至整理所有具有該tag的筆記的頁面
   - category: 該篇筆記的類別，對應該篇筆記所在的資料夾
   - parent: 該篇筆記的上層筆記
   - sibling: 該篇筆記的同層筆記
   - child: 該篇筆記的下層筆記
 
+---
+
 ## 下方⬇️
+
+### 留言區
 
 ![[3.external-resources/external-images/Pasted image 20260930071816.png]]
 
-- 留言區。用GitHub登入後可以留言
-- 歡迎所有反饋: 指證錯誤、提出建議與看法、索求相關資料等
+- 用GitHub登入後可以留言
+- 歡迎所有反饋: 指正錯誤、提出建議與看法、索求相關資料等
+
+---
 
 ## 其他💡
 

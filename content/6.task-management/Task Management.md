@@ -4,8 +4,8 @@ aliases:
   - 任務管理
 title: 任務管理
 created: 2026-09-05T04:26:53.597Z
-modified: 2026-09-30T08:04:12.688Z
-published: 2026-09-30T08:04:12.688Z
+modified: 2026-09-30T09:14:24.120Z
+published: 2026-09-30T09:14:24.120Z
 parent:
 sibling:
   - "[[Task-management-workflow]]"
@@ -101,7 +101,5 @@ card_fields: item
 
 ## 詳細統計與內容
 
-- 本月統計(table)
-- 歷史統計(table)
-- 本月/各月份任務紀錄(calendar)
+- 3種檢視: 本月統計(table)、歷史統計(table)、本月/各月份任務紀錄(calendar)
   ![[monthly tasks calendar bases.base]]

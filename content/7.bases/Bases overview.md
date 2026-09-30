@@ -4,8 +4,8 @@ aliases:
   - Bases 總覽
 title: Bases 總覽
 created: 2026-09-03T15:11:42.641Z
-modified: 2026-09-30T09:06:24.433Z
-published: 2026-09-30T09:06:24.433Z
+modified: 2026-09-30T09:13:24.178Z
+published: 2026-09-30T09:13:24.178Z
 in:
   - 2.personal-notes
 ---

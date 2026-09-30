@@ -4,8 +4,8 @@ aliases:
   - Quartz 問題排查－屬性面板與資料展示
 title: Quartz 問題排查－屬性面板與資料展示
 created: 2026-09-10T12:16:42.699Z
-modified: 2026-09-10T12:16:42.699Z
-published: 2026-09-10T12:16:42.699Z
+modified: 2026-09-30T12:49:14.661Z
+published: 2026-09-30T12:49:14.661Z
 tags:
   - 數位花園
   - 網站
@@ -511,3 +511,40 @@ views:
 > cards 檢視本身一直都能正常顯示、`.base` 設定裡的 `groupBy` 也不是語法錯誤，只是這個欄位存在但完全沒被讀取使用——跟 [[Quartz troubleshooting - properties and data display#✅ 7.17|7.17]]（虛擬頁面 `links` 漏套用 `view` 篩選條件）性質類似，都是「功能有一部分沒接上」，不是整個功能沒註冊。之後如果還有其他 view type 顯示「正常但某個設定沒作用」，可以先比對同套件裡功能相近的其他 view（例如這次拿 table／board 對照 cards）有沒有做而它沒做。
 
 **已驗證結果**：本機完整 `node ./quartz/bootstrap-cli.mjs build` 一次，`grep` 輸出的 `public/7.bases/英文學習筆記bases.base.html` 確認多個「字根」分組標頭正確出現（例如「字根 sure(確定、安全) 3」）；啟動本機靜態伺服器，用真的滑鼠點擊切到「字根」分頁、截圖確認單卡分組（如 fluct/flu(流動)）與多卡分組（sure 底下 assure／ensure／insure 三張卡並排）都正確分組顯示；commit 並 push 到 `v5` 分支（`4fbd346b`）。
+
+---
+
+## ✅ 7.21 Bases 分組標題的 wikilink 顯示成純文字 `[[...]]`，改成連結後又跟筆記列分不清
+
+**現象**：`7.bases/OECMs bases.base` 用 `groupBy: property: category` 分組，筆記的 `category` 值都是 wikilink（例如 `"[[Exam notes]]"`）。網站上的分組標題直接顯示 `[[Exam notes]]`、`[[Government or Organizations]]`、`[[Zettelkasten notes]]` 這串字，點不下去；但表格裡一般欄位的 wikilink 都能正常變成連結。
+
+**根本原因**：`vendor/bases-page` 裡表格格子跟分組標題走的是兩條不同的渲染路線：
+
+- 表格格子：`shared/cell.tsx` 的 `renderCellValue()`，會辨識 `[[...]]` 轉成站內連結
+- 分組標題：`table.tsx` 的 `groupEntries()` 用 `formatValue()` 算出 label，本質上只是 `String(value)`，直接當純文字印出
+
+分組標題從頭到尾沒經過 `renderCellValue()`，所以不會有連結。`cards.tsx` 的分組邏輯是 [[Quartz troubleshooting - properties and data display#✅ 7.20|7.20]] 從 `table.tsx` 原封不動搬過去的，同樣有這個問題。
+
+**解決方法（第一段：讓標題變連結）**：
+
+1. `shared/cell.tsx` 新增 `renderGroupLabel()`：取該組第一筆的原始屬性值，交給 `renderCellValue()` 渲染；值為空時退回原本的「Uncategorized」文字
+2. `table.tsx`／`cards.tsx` 的分組標題改呼叫 `renderGroupLabel()`
+3. **分組依據不變**：分桶跟排序仍然用 `formatValue()` 產生的純文字 label，只換「顯示」這一步，所以分組結果跟排序都跟改之前一樣
+4. `node vendor/bases-page/build.mjs` 重新編譯 `dist/`（見 [[Quartz troubleshooting - properties and data display#✅ 7.10|7.10]]）
+
+board／kanban 的欄位標題沒動：網站上目前沒有用 wikilink 分欄的看板，而且 kanban 的欄位順序是靠標題文字去比對 `columnOrders`（見 [[Quartz troubleshooting - properties and data display#✅ 7.18|7.18]]），貿然改動有風險。
+
+**第二段問題：變成連結後，標題看起來跟底下的筆記列差不多**：分組標題的連結套用了全站 `a.internal` 樣式（紫色字＋黃色底框），跟每一列筆記名稱的連結一模一樣，只剩淡灰底色能分辨是標題。改成標題連結用一般文字色、去掉底框，hover 才出現底線。
+
+**第二段踩到的坑——寫在 `bases.scss` 完全沒作用**：一開始把 `.bases-table-group-label a.internal { ... }` 寫在 `vendor/bases-page` 的 `bases.scss`，編譯後 CSS 檔裡也確實有這條規則，但瀏覽器上還是黃底紫字。用瀏覽器實際讀 computed style 才查到：Quartz 會把各元件的 CSS 整份包進 `@layer quartz-base`（`quartz/plugins/emitters/componentResources.ts`），而 `a.internal` 的預設樣式在 `index.css` 裡、**沒有**包在 layer 內。CSS cascade 規則是「沒有 layer 的樣式永遠贏過 layer 裡的樣式，跟選擇器權重無關」，所以選擇器寫得再具體都會被蓋掉。
+
+解法是把這條規則移到 `quartz/styles/custom.scss`——這個檔案的規則不會被包進 layer，repo 裡原本的右側欄 padding、TOC 標題 margin 等覆寫也都是用同一招。`bases.scss` 的改動則還原。
+
+> [!tip] 要覆蓋 Quartz 全站樣式（`base.scss` 產生的 `index.css`）時，寫在 vendor 套件的 scss 裡不會贏
+> 元件 CSS 都在 `@layer quartz-base` 裡，只能跟同一層的規則比權重；要蓋過 `a`、`a.internal`、`h3` 這類全站基礎樣式，一律寫進 `quartz/styles/custom.scss`。另外，驗證 CSS 改動不能只 `grep` 產出的 CSS 檔「規則有沒有在」——規則在檔案裡不代表會生效，要在瀏覽器讀 `getComputedStyle()` 或直接看畫面。
+
+**已驗證結果**：
+
+1. 本機完整 build 後，檢查所有用 `groupBy` 的 bases：`category` 為 wikilink 的（OECMs、森林結構、生物信用額度、邊緣效應、永久性、碳抵換、碳抵換品質標準、外加性）分組標題都變成連結；分組值本來就是純文字的（Exam Practice Analysis、Publication Venues、政府或國際機構的相關文章、monthly tasks calendar、英文學習筆記的字根 cards）顯示不變
+2. 瀏覽器讀 OECMs bases 的 computed style：分組標題連結為深灰字 `rgb(34, 34, 34)`、背景透明；筆記列連結維持紫字＋黃底
+3. commit 並 push 到 `v5` 分支（`a6b34662`）

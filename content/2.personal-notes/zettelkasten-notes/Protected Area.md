@@ -4,9 +4,9 @@ aliases:
   - 自然保護區域
   - "#自然保護區域"
 title: 自然保護區域
-created: 2026-09-24T10:20:29.142Z
-modified: 2026-09-24T10:31:17.208Z
-published: 2026-09-24T10:31:17.208Z
+created: 2026-09-30T16:21:57.778Z
+modified: 2026-09-30T16:21:57.778Z
+published: 2026-09-30T16:21:57.778Z
 tags:
   - 自然保護區域
 category:
@@ -154,6 +154,7 @@ password:
 
 # 來源
 
+- 條文查閱日期: 2026-09-24
 - [自然保護區域類別與面積](https://www.forest.gov.tw/total)
 - [野生動物棲息環境與野生動物保護區的範圍有許多重疊，兩者間差異為何?](https://www.forest.gov.tw/0010113)
 

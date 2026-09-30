@@ -4,8 +4,8 @@ aliases:
   - 如何建立quartz網站
 title: 如何建立quartz網站
 created: 2026-09-04T10:21:54.205Z
-modified: 2026-09-04T10:21:54.226Z
-published: 2026-09-04T10:21:54.226Z
+modified: 2026-09-30T10:46:22.339Z
+published: 2026-09-30T10:46:22.339Z
 tags:
   - 數位花園
   - 網站
@@ -24,6 +24,7 @@ child:
   - "[[How to create a Quartz website - patch-package]]"
   - "[[How to create a Quartz website - timestamp links]]"
   - "[[How to create a Quartz website - GitHub PAT management]]"
+  - "[[How to create a Quartz website - URL change and access control]]"
   - "[[Quartz glossary]]"
 ---
 

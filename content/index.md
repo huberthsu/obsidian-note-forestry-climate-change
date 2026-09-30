@@ -2,14 +2,14 @@
 publish: true
 title: 森林與氣候變遷的數位花園😊
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-09-30T07:09:30.447Z
-published: 2026-09-30T07:09:30.447Z
+modified: 2026-09-30T07:12:15.556Z
+published: 2026-09-30T07:12:15.556Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
 # 什麼是數位花園
 
-- 數位花園的特色可參考[[What is a digital garden]]測試
+- 數位花園的特色可參考[[What is a digital garden]]
 
 # 網站成立目的
 
@@ -86,11 +86,11 @@ published: 2026-09-30T07:09:30.447Z
 
 - 點擊Go Backc可回到上一頁
 
-### 預覽
+### 預覽(以在工作流系統說明筆記中，預覽任務管理筆記為例)
 
 ![[3.external-resources/external-images/Pasted image 20260930075357.png]]
 
-- 將鼠標移到黃底紫色字體的超連結上，可預覽該筆記(圖片以在工作流系統說明筆記中，預覽任務管理筆記為例)
+- 將鼠標移到黃底紫色字體的超連結上，可預覽該筆記
 
 ---
 

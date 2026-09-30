@@ -2,8 +2,8 @@
 publish: true
 title: 森林與氣候變遷的數位花園😊
 created: 2026-08-10T23:40:23.415Z
-modified: 2026-09-30T07:12:15.556Z
-published: 2026-09-30T07:12:15.556Z
+modified: 2026-09-30T07:23:46.946Z
+published: 2026-09-30T07:23:46.946Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -33,14 +33,14 @@ published: 2026-09-30T07:12:15.556Z
 
 # 網站功能說明
 
-## 左側
+## 左側⬅️
 
 ![[3.external-resources/external-images/Pasted image 20260930064406.png]]
 
 - Quartz 5: 點擊後會回到首頁
 - search: 輸入後，可找到所有標題、tags或內文中，有出現輸入內容的筆記
 
-## 右側
+## 右側➡️
 
 ![[3.external-resources/external-images/Pasted image 20260930064945.png]]
 
@@ -60,7 +60,7 @@ published: 2026-09-30T07:12:15.556Z
 - 反向連結。所有提到當前筆記的其他筆記
 - 點擊後可直接跳轉
 
-## 上方
+## 上方⬆️
 
 ![[3.external-resources/external-images/Pasted image 20260930072440.png]]
 
@@ -71,14 +71,14 @@ published: 2026-09-30T07:12:15.556Z
   - sibling: 該篇筆記的同層筆記
   - child: 該篇筆記的下層筆記
 
-## 下方
+## 下方⬇️
 
 ![[3.external-resources/external-images/Pasted image 20260930071816.png]]
 
 - 留言區。用GitHub登入後可以留言
 - 歡迎所有反饋: 指證錯誤、提出建議與看法、索求相關資料等
 
-## 其他
+## 其他💡
 
 ### 非公開或尚未建立的筆記
 
@@ -86,7 +86,7 @@ published: 2026-09-30T07:12:15.556Z
 
 - 點擊Go Backc可回到上一頁
 
-### 預覽(以在工作流系統說明筆記中，預覽任務管理筆記為例)
+### 預覽(以在[[Workflow-system-overview|工作流系統說明]]筆記中，預覽[[Task Management|任務管理]]筆記為例)
 
 ![[3.external-resources/external-images/Pasted image 20260930075357.png]]
 

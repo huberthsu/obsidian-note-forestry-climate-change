@@ -2889,6 +2889,12 @@ function entryTags(entry) {
   return [...tags];
 }
 var byZhHant = (a, b) => a.localeCompare(b, "zh-Hant");
+function takeTopWithTies(sorted, top, countOf) {
+  if (sorted.length <= top) return sorted;
+  const cutoff = countOf(sorted[top - 1]);
+  if (cutoff < 2) return sorted.slice(0, top);
+  return sorted.filter((item, i) => i < top || countOf(item) >= cutoff);
+}
 function HorizontalBars({ bars, ariaLabel }) {
   if (bars.length === 0) return null;
   const labelWidth = 150;
@@ -2968,7 +2974,13 @@ var TagFrequencyChart = ({ entries, view, locale, total }) => {
   const sortedGroups = [...groups.entries()].sort((a, b) => rank(a[0]) - rank(b[0]) || byZhHant(a[0], b[0]));
   const untaggedOf = (list) => list.filter((e) => entryTags(e).length === 0).length;
   const groupList = (set) => [...set].sort((a, b) => rank(a) - rank(b) || byZhHant(a, b)).join("\u3001");
-  const overallBars = [...overall.entries()].sort((a, b) => b[1].count - a[1].count || b[1].groups.size - a[1].groups.size || byZhHant(a[0], b[0])).slice(0, top).map(([tag, stat]) => ({
+  const overallBars = takeTopWithTies(
+    [...overall.entries()].sort(
+      (a, b) => b[1].count - a[1].count || b[1].groups.size - a[1].groups.size || byZhHant(a[0], b[0])
+    ),
+    top,
+    ([, stat]) => stat.count
+  ).map(([tag, stat]) => ({
     label: tag,
     value: stat.count,
     valueText: groupProperty ? `${stat.count}\uFF08${stat.groups.size} \u79D1\uFF09` : String(stat.count),
@@ -2992,7 +3004,11 @@ var TagFrequencyChart = ({ entries, view, locale, total }) => {
       for (const entry of list) {
         for (const tag of entryTags(entry)) counts.set(tag, (counts.get(tag) ?? 0) + 1);
       }
-      const bars = [...counts.entries()].sort((a, b) => b[1] - a[1] || byZhHant(a[0], b[0])).slice(0, top).map(([tag, n]) => ({ label: tag, value: n, valueText: String(n), tooltip: `${tag}\uFF1A${n}` }));
+      const bars = takeTopWithTies(
+        [...counts.entries()].sort((a, b) => b[1] - a[1] || byZhHant(a[0], b[0])),
+        top,
+        ([, n]) => n
+      ).map(([tag, n]) => ({ label: tag, value: n, valueText: String(n), tooltip: `${tag}\uFF1A${n}` }));
       return /* @__PURE__ */ jsxs6("section", { class: "bases-chart-group", children: [
         groupProperty && /* @__PURE__ */ jsx8("h3", { class: "bases-chart-group-title", children: name }),
         /* @__PURE__ */ jsxs6("div", { class: "bases-chart-group-meta", children: [

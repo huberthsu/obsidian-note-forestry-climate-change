@@ -145,8 +145,9 @@ function asStringMap(value: unknown): Record<string, string> {
 // chart per value of `groupProperty` (a list or single-value frontmatter field). `groupMap`
 // renames/merges group values (e.g. old exam subject names -> the current subject list),
 // `groupOrder` fixes the order groups are drawn in (unlisted groups go last), and `top`
-// caps the bars per chart. `showOverall` adds an all-groups ranking (each bar also notes
-// how many groups the tag appears in) above the per-group charts.
+// caps the bars per chart (ties at the cutoff are kept when the count is 2+). `showOverall`
+// adds an all-groups ranking (each bar also notes how many groups the tag appears in) above
+// the per-group charts.
 // Same zero-script SSR approach as the Task Management chart.
 const UNGROUPED = "（未填）";
 
@@ -167,6 +168,16 @@ function entryTags(entry: BasesEntry): string[] {
 }
 
 const byZhHant = (a: string, b: string) => a.localeCompare(b, "zh-Hant");
+
+/** First `top` items of an already-sorted list, plus anything tied with the last one —
+ *  unless that tie is at a count of 1, where listing every single-use tag would just
+ *  make the chart long without telling you anything. */
+function takeTopWithTies<T>(sorted: T[], top: number, countOf: (item: T) => number): T[] {
+  if (sorted.length <= top) return sorted;
+  const cutoff = countOf(sorted[top - 1]);
+  if (cutoff < 2) return sorted.slice(0, top);
+  return sorted.filter((item, i) => i < top || countOf(item) >= cutoff);
+}
 
 function HorizontalBars({ bars, ariaLabel }: { bars: HBar[]; ariaLabel: string }) {
   if (bars.length === 0) return null;
@@ -251,10 +262,13 @@ const TagFrequencyChart: ViewRenderer = ({ entries, view, locale, total }) => {
   const untaggedOf = (list: BasesEntry[]) => list.filter((e) => entryTags(e).length === 0).length;
   const groupList = (set: Set<string>) => [...set].sort((a, b) => rank(a) - rank(b) || byZhHant(a, b)).join("、");
 
-  const overallBars: HBar[] = [...overall.entries()]
-    .sort((a, b) => b[1].count - a[1].count || b[1].groups.size - a[1].groups.size || byZhHant(a[0], b[0]))
-    .slice(0, top)
-    .map(([tag, stat]) => ({
+  const overallBars: HBar[] = takeTopWithTies(
+    [...overall.entries()].sort(
+      (a, b) => b[1].count - a[1].count || b[1].groups.size - a[1].groups.size || byZhHant(a[0], b[0]),
+    ),
+    top,
+    ([, stat]) => stat.count,
+  ).map(([tag, stat]) => ({
       label: tag,
       value: stat.count,
       valueText: groupProperty ? `${stat.count}（${stat.groups.size} 科）` : String(stat.count),
@@ -280,10 +294,11 @@ const TagFrequencyChart: ViewRenderer = ({ entries, view, locale, total }) => {
         for (const entry of list) {
           for (const tag of entryTags(entry)) counts.set(tag, (counts.get(tag) ?? 0) + 1);
         }
-        const bars: HBar[] = [...counts.entries()]
-          .sort((a, b) => b[1] - a[1] || byZhHant(a[0], b[0]))
-          .slice(0, top)
-          .map(([tag, n]) => ({ label: tag, value: n, valueText: String(n), tooltip: `${tag}：${n}` }));
+        const bars: HBar[] = takeTopWithTies(
+          [...counts.entries()].sort((a, b) => b[1] - a[1] || byZhHant(a[0], b[0])),
+          top,
+          ([, n]) => n,
+        ).map(([tag, n]) => ({ label: tag, value: n, valueText: String(n), tooltip: `${tag}：${n}` }));
 
         return (
           <section class="bases-chart-group">

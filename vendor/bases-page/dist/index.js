@@ -13616,6 +13616,12 @@ function entryTags(entry) {
   return [...tags];
 }
 var byZhHant = (a2, b2) => a2.localeCompare(b2, "zh-Hant");
+function takeTopWithTies(sorted, top, countOf) {
+  if (sorted.length <= top) return sorted;
+  const cutoff = countOf(sorted[top - 1]);
+  if (cutoff < 2) return sorted.slice(0, top);
+  return sorted.filter((item, i2) => i2 < top || countOf(item) >= cutoff);
+}
 function HorizontalBars({ bars, ariaLabel }) {
   if (bars.length === 0) return null;
   const labelWidth = 150;
@@ -13695,7 +13701,13 @@ var TagFrequencyChart = ({ entries, view, locale, total }) => {
   const sortedGroups = [...groups.entries()].sort((a2, b2) => rank(a2[0]) - rank(b2[0]) || byZhHant(a2[0], b2[0]));
   const untaggedOf = (list) => list.filter((e2) => entryTags(e2).length === 0).length;
   const groupList = (set) => [...set].sort((a2, b2) => rank(a2) - rank(b2) || byZhHant(a2, b2)).join("\u3001");
-  const overallBars = [...overall.entries()].sort((a2, b2) => b2[1].count - a2[1].count || b2[1].groups.size - a2[1].groups.size || byZhHant(a2[0], b2[0])).slice(0, top).map(([tag, stat]) => ({
+  const overallBars = takeTopWithTies(
+    [...overall.entries()].sort(
+      (a2, b2) => b2[1].count - a2[1].count || b2[1].groups.size - a2[1].groups.size || byZhHant(a2[0], b2[0])
+    ),
+    top,
+    ([, stat]) => stat.count
+  ).map(([tag, stat]) => ({
     label: tag,
     value: stat.count,
     valueText: groupProperty ? `${stat.count}\uFF08${stat.groups.size} \u79D1\uFF09` : String(stat.count),
@@ -13719,7 +13731,11 @@ var TagFrequencyChart = ({ entries, view, locale, total }) => {
       for (const entry of list) {
         for (const tag of entryTags(entry)) counts.set(tag, (counts.get(tag) ?? 0) + 1);
       }
-      const bars = [...counts.entries()].sort((a2, b2) => b2[1] - a2[1] || byZhHant(a2[0], b2[0])).slice(0, top).map(([tag, n2]) => ({ label: tag, value: n2, valueText: String(n2), tooltip: `${tag}\uFF1A${n2}` }));
+      const bars = takeTopWithTies(
+        [...counts.entries()].sort((a2, b2) => b2[1] - a2[1] || byZhHant(a2[0], b2[0])),
+        top,
+        ([, n2]) => n2
+      ).map(([tag, n2]) => ({ label: tag, value: n2, valueText: String(n2), tooltip: `${tag}\uFF1A${n2}` }));
       return /* @__PURE__ */ jsxs6("section", { class: "bases-chart-group", children: [
         groupProperty && /* @__PURE__ */ jsx8("h3", { class: "bases-chart-group-title", children: name }),
         /* @__PURE__ */ jsxs6("div", { class: "bases-chart-group-meta", children: [

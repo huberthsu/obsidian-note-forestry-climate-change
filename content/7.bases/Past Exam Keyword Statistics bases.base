@@ -1,0 +1,25 @@
+filters:
+  and:
+    - file.inFolder("2.personal-notes/exam-notes")
+    - file.ext == "md"
+    - file.name != "index"
+views:
+  - type: chart
+    name: 考古題關鍵字統計
+    chartMode: tagFrequency
+    groupProperty: 科目
+    top: 10
+    showOverall: true
+    groupMap:
+      森林生態學（包括保育）: 森林生態學
+      森林生態學概要: 森林生態學與森林經營學概要
+      森林生態學概要（包括保育）: 森林生態學與森林經營學概要
+      森林經營學概要: 森林生態學與森林經營學概要
+    groupOrder:
+      - 育林學
+      - 森林生態學
+      - 森林經營學
+      - 林產學
+      - 育林學概要
+      - 森林生態學與森林經營學概要
+      - 林產學概要

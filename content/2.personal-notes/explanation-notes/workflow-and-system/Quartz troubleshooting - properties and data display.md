@@ -4,8 +4,8 @@ aliases:
   - Quartz 問題排查－屬性面板與資料展示
 title: Quartz 問題排查－屬性面板與資料展示
 created: 2026-09-10T12:16:42.699Z
-modified: 2026-09-30T12:49:14.661Z
-published: 2026-09-30T12:49:14.661Z
+modified: 2026-10-01T14:08:14.038Z
+published: 2026-10-01T14:08:14.038Z
 tags:
   - 數位花園
   - 網站
@@ -548,3 +548,71 @@ board／kanban 的欄位標題沒動：網站上目前沒有用 wikilink 分欄�
 1. 本機完整 build 後，檢查所有用 `groupBy` 的 bases：`category` 為 wikilink 的（OECMs、森林結構、生物信用額度、邊緣效應、永久性、碳抵換、碳抵換品質標準、外加性）分組標題都變成連結；分組值本來就是純文字的（Exam Practice Analysis、Publication Venues、政府或國際機構的相關文章、monthly tasks calendar、英文學習筆記的字根 cards）顯示不變
 2. 瀏覽器讀 OECMs bases 的 computed style：分組標題連結為深灰字 `rgb(34, 34, 34)`、背景透明；筆記列連結維持紫字＋黃底
 3. commit 並 push 到 `v5` 分支（`a6b34662`）
+
+---
+
+## ✅ 7.22 Bases「chart」檢視新增 `tagFrequency` 模式——考古題關鍵字統計圖上網站
+
+**動機**：[[Past Exam Keyword Statistics|考古題關鍵字統計]] 在 Obsidian 端用 `dataviewjs` 搭配 Charts 外掛（`window.renderChart`）畫了 tag 出現題數的橫向長條圖：最上方一張「全部科目合計」，下面依 2026 年高普考科目表分成 7 張。想讓這些圖也出現在網站上。
+
+**排查結果**：
+
+1. 一開始以為 `dataviewjs` 發布後會原封不動印成程式碼，但 Quartz Syncer 的 `useDataview` 是開著的（見 [[Quartz troubleshooting - frontmatter publishing|5.1]]），發布時會先在 Obsidian 裡執行一次 Dataview／DataviewJS，再把結果轉成靜態內容。對照 [[Task Management]] 發布後的版本確認：`dv.paragraph()` 的文字有留下來，**`renderChart` 畫在 `<canvas>` 上的圖完全消失**，按鈕也只剩文字。所以 DataviewJS 這條路只能送出文字，送不出圖
+2. 想改用 Obsidian 原生 Bases 做「各 tag 出現次數」也不行：Bases 的 `groupBy: tags` 是拿**整組 tag 清單**當分組依據（`[森林火燒, 竹林]` 自成一組），不會把多值欄位拆開逐一計數
+3. 網站上現成可用的是 [[Quartz troubleshooting - properties and data display#✅ 7.19|7.19]] 自己加的 `type: chart` 檢視，但它從頭到尾寫死給 Task Management 用（固定找那一篇、固定畫 5 根長條），沒辦法拿來統計 tag
+4. 讀 `vendor/bases-page/src/types.ts`／`parser.ts` 確認：`BasesView` 介面最後有 `[key: string]: unknown`，`normalizeViews()` 也只處理 `sort`，其餘欄位原封不動保留——**`.base` 檔案裡自訂的 view 設定值會一路傳到 view 的 `render` 函式**，不用改 parser 就能在 `.base` 裡指定圖表要畫什麼
+
+**決策：擴充既有的 chart view，用 `chartMode` 分流，而不是另外註冊一個新的 view type**。沿用 7.19 零 client-side script、build 當下直接輸出 SVG 的做法；沒寫 `chartMode` 時走原本 Task Management 的邏輯，既有那張圖行為完全不變。
+
+**架構做法**：
+
+1. `vendor/bases-page/src/components/views/chart.tsx`：
+   - 原本的 `ChartView` 改名為 `TaskManagementChart`，新增 `TagFrequencyChart`，最外層的 `ChartView` 只依 `view.chartMode === "tagFrequency"` 二選一
+   - 抽出共用的 `HorizontalBars` 元件畫橫向長條（中文 tag 名稱較長，橫向比直向好讀）；tag 名稱超過 11 字會截斷加「…」，完整名稱和數字放在 `<title>` 裡，滑鼠停留時看得到
+   - tag 來源用 `entry.fileProperties.tags`（已整理過的清單），去掉開頭 `#`，同一篇裡重複的 tag 只算一次——所以畫出來的是「有幾題標了這個 tag」，不是 tag 被提到幾次
+
+2. `.base` 檔裡可設定的欄位：
+
+   | 欄位 | 作用 |
+   | --- | --- |
+   | `chartMode: tagFrequency` | 啟用 tag 統計模式 |
+   | `groupProperty` | 依哪個 frontmatter 欄位分組（清單或單一值都可以），不寫就不分組 |
+   | `groupMap` | 把舊名稱合併成新名稱，例如 `森林經營學概要: 森林生態學與森林經營學概要` |
+   | `groupOrder` | 分組的顯示順序，沒列到的排在最後 |
+   | `top` | 每張圖最多幾根長條（同分規則見下） |
+   | `showOverall: true` | 在各組之前多畫一張「全部科目合計」，每根長條標出該 tag 橫跨幾科，例如「5（4 科）」 |
+
+3. **同分保留規則（`takeTopWithTies()`）**：只取前 `top` 名的話，同分的 tag 會被任意截掉。例如合計圖有 12 個 tag 都是 3 題，只排得下 7 個，私有林、碳儲存、疏伐等 5 個也是 3 題卻沒出現。改成：第 `top` 名若有 2 題以上，和它同分的 tag 全部列出；第 `top` 名只有 1 題時照樣截斷，避免各科圖表被一長串只出現 1 題的 tag 拉長。Obsidian 端的 `dataviewjs` 也寫了同一套規則（`takeTop()`），同分時兩邊都改用名稱排序，讓網站和 Obsidian 顯示的順序一致
+
+4. `bases.scss` 補 `.bases-chart-group*`／`.bases-chart-horizontal`／`.bases-chart-hlabel`／`.bases-chart-hbar` 樣式。長條顏色用 Quartz 的 `--secondary` token（不像 7.19 寫死 hex），深淺色模式自動切換
+
+5. 新增 `7.bases/Past Exam Keyword Statistics bases.base`：篩選條件跟 Exam Practice Analysis bases 一樣（`exam-notes` 資料夾、排除 `index`），科目合併對照和順序都寫在這個檔案裡
+
+6. 筆記最後加一段「網站專用-關鍵字統計圖表」，嵌入 `![[Past Exam Keyword Statistics bases.base#考古題關鍵字統計]]`，排法比照 Task Management
+
+7. `node vendor/bases-page/build.mjs` 重新編譯 `dist/`（見 [[Quartz troubleshooting - properties and data display#✅ 7.10|7.10]]）
+
+**踩到的坑**：
+
+- **本機測試直接複製 vault 的 `.md` 進 `content/`，DataviewJS 會整段印成程式碼**：這不代表正式發布後也會這樣——正式發布經過 Syncer 會先執行再轉文字（見排查結果 1）。本機測試只能拿來驗證 `.base` 那段，上面 DataviewJS 的樣子要等真的發布才看得到
+- **本機靜態伺服器開著時重新 build 會失敗**：`python -m http.server` 開在 `public/` 底下時，`quartz build` 要先刪掉 `public/` 會報 `EBUSY: resource busy or locked, rmdir`，要先關伺服器再 build
+- **英文檔名會被轉成小寫加連字號的網址**：`Past Exam Keyword Statistics bases.base` 輸出成 `public/7.bases/past-exam-keyword-statistics-bases.base.html`，用原檔名去找輸出檔會找不到
+- **上線順序**：要先 push 程式碼、等 Cloudflare 部署完，再用 Syncer 發布 `.base`。反過來的話，舊版 chart view 不認得 `chartMode`，會暫時把這個 `.base` 錯畫成 Task Management 那 5 根長條
+
+**限制（設計上接受，不是 bug）**：
+
+- Obsidian 原生看不懂 `type: chart`，筆記裡「網站專用」那段在 Obsidian 會顯示不支援的檢視類型，跟 Task Management 一樣
+- 網站上會有一段重複內容：Syncer 把上面的 DataviewJS 執行成文字後，會留下 7 個科目標題和「共 N 篇，其中 N 篇尚未加 tag」，但沒有圖，接著才是網站專用的圖表
+- 數字是 build 當下的靜態快照，考古題筆記的 tag 改了，要等那幾篇重新發布＋重新部署才會更新（不需要重新發布統計筆記本身）
+
+> [!tip] 先確認自訂 view 能不能從 `.base` 讀設定，再決定要不要寫死
+> 7.19 的 chart view 把資料來源、長條數、顏色全寫死在程式碼裡，換一個用途就得整個重寫。這次先確認 `BasesView` 會保留未知欄位，就能把「統計哪個欄位、怎麼分組、怎麼合併、取幾名」都移到 `.base` 檔裡設定，之後其他筆記要做類似的 tag 統計（例如英文學習筆記），只要新增一個 `.base`，不用再動網站程式碼。
+
+**已驗證結果**：
+
+1. `node vendor/bases-page/build.mjs` 重新編譯，確認 `dist/index.js`／`dist/components/index.js` 都有 `tagFrequency`
+2. 把 vault 的筆記和 `.base` 暫時複製進部署 repo 本機 `content/`，完整跑 `node ./quartz/bootstrap-cli.mjs build`，輸出 HTML 沒有「Unknown view type」、沒有 build 錯誤
+3. 數字核對：7 個科目合計 157 篇、尚未加 tag 合計 53 篇，跟 Obsidian 端一致；另外用 shell 指令直接讀考古題筆記的 frontmatter，重算「育林學」各 tag 題數（母樹、疏伐、病蟲害、種子休眠、選拔各 2 題），和網站輸出相同；合計圖長條數從 10 變成 15，確認同分保留規則有作用，各科第 10 名都是 1 題所以維持 10 根
+4. 啟動本機靜態伺服器，用瀏覽器實際打開截圖確認淺色、深色模式下長條、標籤、數字都清楚；也確認 Task Management 原本那張圖 5 根長條照常顯示
+5. 測試用的暫存檔從 `content/` 刪除，沒有留在部署 repo 的 git 狀態裡
+6. commit 並 push 到 `v5` 分支（`81cb10e9`、`5967be87`、`06077e84`）

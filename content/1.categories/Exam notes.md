@@ -4,8 +4,8 @@ aliases:
   - 考古題筆記
 title: 考古題筆記
 created: 2026-08-10T23:40:39.475Z
-modified: 2026-09-10T13:28:27.595Z
-published: 2026-09-10T13:28:27.595Z
+modified: 2026-10-01T13:38:11.638Z
+published: 2026-10-01T13:38:11.638Z
 tags:
   - 類別
 ---
@@ -16,6 +16,6 @@ tags:
 - 4種檢視: 年分、熟悉度、科目、複習月曆
   ![[Exam Practice Analysis bases.base]]
 
-# 考古題複習月曆🗓️
+# 考古題關鍵字統計
 
-![[Exam Practice Analysis bases.base#複習月曆]]
+![[Past Exam Keyword Statistics]]

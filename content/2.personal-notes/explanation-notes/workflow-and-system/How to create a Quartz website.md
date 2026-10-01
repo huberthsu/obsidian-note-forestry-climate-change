@@ -3,9 +3,9 @@ publish: true
 aliases:
   - 如何建立quartz網站
 title: 如何建立quartz網站
-created: 2026-09-04T10:21:54.205Z
-modified: 2026-09-30T10:46:22.339Z
-published: 2026-09-30T10:46:22.339Z
+created: 2026-09-30T16:48:36.133Z
+modified: 2026-09-30T16:48:36.134Z
+published: 2026-09-30T16:48:36.134Z
 tags:
   - 數位花園
   - 網站
@@ -25,6 +25,7 @@ child:
   - "[[How to create a Quartz website - timestamp links]]"
   - "[[How to create a Quartz website - GitHub PAT management]]"
   - "[[How to create a Quartz website - URL change and access control]]"
+  - "[[How to create a Quartz website - license]]"
   - "[[Quartz glossary]]"
 ---
 
@@ -183,6 +184,10 @@ Quartz 內建 `@quartz-community/comments` 插件，用 **Giscus** 這個第三�
 ## 九、讓 Timestamp Notes 外掛的時間戳記在網站上可以點擊跳轉
 
 [[Timestamp note plugins|Timestamp Notes]] 外掛本身是 desktop-only，發布到網站後留下的 code block 原本完全沒作用。新增了一個 vendor plugin，在 build 時把這些 code block 轉成可點擊按鈕，點擊後用 `postMessage` 控制頁面上既有的 YouTube iframe 跳到對應秒數並播放。完整原理、遇到的坑（iframe autoplay 權限、Windows 本機 symlink 權限）另見 [[How to create a Quartz website - timestamp links]]。
+
+## 十、授權聲明（CC BY-NC 4.0）
+
+網站原創內容採用 CC BY-NC 4.0（標示出處、不得商業使用），首頁 `index.md` 寫完整聲明與排除範圍（YouTube 影片、`3.external-resources/` 轉載資料、引用的研究），footer 再加一個授權連結讓每頁都看得到。首頁聲明改 vault 靠 Syncer 發布，footer 改部署 repo 的 `quartz.config.yaml`。選這個授權的理由、哪些內容能授權的判斷原則另見 [[How to create a Quartz website - license]]。
 
 # 參考資料
 

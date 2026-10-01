@@ -2,8 +2,8 @@
 publish: true
 title: 森林與氣候變遷的數位花園😊
 created: 2026-09-30T16:41:00.535Z
-modified: 2026-09-30T16:43:06.932Z
-published: 2026-09-30T16:43:06.932Z
+modified: 2026-10-01T06:26:49.123Z
+published: 2026-10-01T06:26:49.123Z
 網址: https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev/
 ---
 
@@ -62,7 +62,7 @@ published: 2026-09-30T16:43:06.932Z
 - 點擊右上方圖案後會進入所有筆記關聯圖(global graph)。可使用左邊的篩選面板，選擇呈現出特定資料夾內的筆記，或是否要顯示標籤
 - 點擊節點後，會跳轉至該筆記
 - 節點可以拖曳
-- 按住ctrl後加滑鼠滾輪，可以調整關聯圖大小；按住shift後加滑鼠滾輪，可以微調關聯圖大小
+- 使用滑鼠滾輪，可以微調關聯圖大小；按住ctrl後加滑鼠滾輪，可以大幅度調整關聯圖大小
 
 ### 當前筆記的table of contents
 

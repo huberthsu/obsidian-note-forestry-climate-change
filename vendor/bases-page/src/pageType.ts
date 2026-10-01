@@ -125,9 +125,8 @@ function createBasesCodeblockTransform(opts: BasesPageOptions | undefined): Tree
   let builtinViewsRegistered = false;
 
   return (root: HtmlRoot, _slug: FullSlug, componentData: QuartzComponentProps) => {
-    const fileData = componentData.fileData as Record<string, unknown>;
-    const basesBlocks = fileData.basesBlocks as BasesData[] | undefined;
-    if (!basesBlocks || basesBlocks.length === 0) return;
+    // No early return when this page has no basesBlocks of its own: a transcluded
+    // note can still bring placeholders that resolve against its own blocks.
 
     // Ensure built-in views are registered
     if (!builtinViewsRegistered) {
@@ -150,13 +149,24 @@ function createBasesCodeblockTransform(opts: BasesPageOptions | undefined): Tree
       const blockIndexStr = node.properties?.["dataQzBasesCodeblock"] as string | undefined;
       if (blockIndexStr === undefined) return;
 
+      // A placeholder's index points into the basesBlocks of the file it was created
+      // in. After transclusion that may be a different file than the page being
+      // rendered, so look up the source file instead of assuming this page.
+      const sourceSlug = node.properties?.["dataQzBasesSource"] as string | undefined;
+      const sourceFile =
+        sourceSlug && sourceSlug !== componentData.fileData.slug
+          ? componentData.allFiles.find((f) => f.slug === sourceSlug)
+          : componentData.fileData;
+      if (!sourceFile) return;
+      const fd = sourceFile as Record<string, unknown>;
+      const basesBlocks = fd.basesBlocks as BasesData[] | undefined;
+
       const blockIndex = Number(blockIndexStr);
-      const basesData = basesBlocks[blockIndex];
+      const basesData = basesBlocks?.[blockIndex];
       if (!basesData) return;
 
       const viewName = node.properties?.["dataQzBasesView"] as string | undefined;
 
-      const fd = componentData.fileData as Record<string, unknown>;
       const selfPath = (fd.relativePath ?? fd.filePath ?? slug) as string;
       const selfName =
         selfPath

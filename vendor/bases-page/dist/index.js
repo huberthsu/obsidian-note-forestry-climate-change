@@ -14323,9 +14323,6 @@ var BasesPage = (opts) => ({
 function createBasesCodeblockTransform(opts) {
   let builtinViewsRegistered2 = false;
   return (root, _slug, componentData) => {
-    const fileData = componentData.fileData;
-    const basesBlocks = fileData.basesBlocks;
-    if (!basesBlocks || basesBlocks.length === 0) return;
     if (!builtinViewsRegistered2) {
       registerBuiltinViews();
       builtinViewsRegistered2 = true;
@@ -14343,11 +14340,15 @@ function createBasesCodeblockTransform(opts) {
       if (!parent || index2 === void 0) return;
       const blockIndexStr = node.properties?.["dataQzBasesCodeblock"];
       if (blockIndexStr === void 0) return;
+      const sourceSlug = node.properties?.["dataQzBasesSource"];
+      const sourceFile = sourceSlug && sourceSlug !== componentData.fileData.slug ? componentData.allFiles.find((f2) => f2.slug === sourceSlug) : componentData.fileData;
+      if (!sourceFile) return;
+      const fd = sourceFile;
+      const basesBlocks = fd.basesBlocks;
       const blockIndex = Number(blockIndexStr);
-      const basesData = basesBlocks[blockIndex];
+      const basesData = basesBlocks?.[blockIndex];
       if (!basesData) return;
       const viewName = node.properties?.["dataQzBasesView"];
-      const fd = componentData.fileData;
       const selfPath = fd.relativePath ?? fd.filePath ?? slug2;
       const selfName = selfPath.split("/").pop()?.replace(/\.[^.]+$/, "") ?? "";
       const selfLastSlash = selfPath.lastIndexOf("/");
@@ -14496,6 +14497,10 @@ var BasesTransformer = (_opts) => {
                 tagName: "div",
                 properties: {
                   dataQzBasesCodeblock: String(blockIndex),
+                  // The index is only meaningful within this file's basesBlocks; record
+                  // which file that is so the render step can still find the right
+                  // block after this placeholder is transcluded into another page.
+                  dataQzBasesSource: file.data.slug,
                   ...viewName ? { dataQzBasesView: viewName } : {}
                 },
                 children: []
@@ -14529,7 +14534,8 @@ var BasesTransformer = (_opts) => {
                 type: "element",
                 tagName: "div",
                 properties: {
-                  dataQzBasesCodeblock: String(blockIndex)
+                  dataQzBasesCodeblock: String(blockIndex),
+                  dataQzBasesSource: file.data.slug
                 },
                 children: []
               };

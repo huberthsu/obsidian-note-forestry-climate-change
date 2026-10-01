@@ -74,6 +74,10 @@ export const BasesTransformer: QuartzTransformerPlugin<Partial<BasesPageOptions>
                 tagName: "div",
                 properties: {
                   dataQzBasesCodeblock: String(blockIndex),
+                  // The index is only meaningful within this file's basesBlocks; record
+                  // which file that is so the render step can still find the right
+                  // block after this placeholder is transcluded into another page.
+                  dataQzBasesSource: file.data.slug,
                   ...(viewName ? { dataQzBasesView: viewName } : {}),
                 },
                 children: [],
@@ -123,6 +127,7 @@ export const BasesTransformer: QuartzTransformerPlugin<Partial<BasesPageOptions>
                 tagName: "div",
                 properties: {
                   dataQzBasesCodeblock: String(blockIndex),
+                  dataQzBasesSource: file.data.slug,
                 },
                 children: [],
               };

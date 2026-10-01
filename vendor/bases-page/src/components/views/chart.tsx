@@ -47,7 +47,7 @@ interface Bar {
 // whatever was true as of the last Quartz Syncer publish + deploy, not the visitor's real
 // time. Unlike the calendar view, this has no "today" concept to go stale, so no client
 // script is needed to correct it after load.
-const ChartView: ViewRenderer = ({ entries, locale, total }) => {
+const TaskManagementChart: ViewRenderer = ({ entries, locale, total }) => {
   const localeStrings = i18n(locale).components.bases;
   const now = new Date();
   const thisMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
@@ -126,6 +126,139 @@ const ChartView: ViewRenderer = ({ entries, locale, total }) => {
     </div>
   );
 };
+
+function asStringList(value: unknown): string[] {
+  if (Array.isArray(value)) return value.filter((v): v is string => typeof v === "string" && v !== "");
+  return typeof value === "string" && value !== "" ? [value] : [];
+}
+
+function asStringMap(value: unknown): Record<string, string> {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return {};
+  const result: Record<string, string> = {};
+  for (const [key, mapped] of Object.entries(value as Record<string, unknown>)) {
+    if (typeof mapped === "string") result[key] = mapped;
+  }
+  return result;
+}
+
+// `chartMode: tagFrequency` — counts how often each tag appears, optionally split into one
+// chart per value of `groupProperty` (a list or single-value frontmatter field). `groupMap`
+// renames/merges group values (e.g. old exam subject names -> the current subject list),
+// `groupOrder` fixes the order groups are drawn in (unlisted groups go last), and `top`
+// caps the bars per group. Same zero-script SSR approach as the Task Management chart.
+const UNGROUPED = "（未填）";
+
+const TagFrequencyChart: ViewRenderer = ({ entries, view, locale, total }) => {
+  const localeStrings = i18n(locale).components.bases;
+  const groupProperty = typeof view.groupProperty === "string" ? view.groupProperty : undefined;
+  const groupMap = asStringMap(view.groupMap);
+  const groupOrder = asStringList(view.groupOrder);
+  const top = Math.max(1, toNumber(view.top) || 10);
+
+  const groups = new Map<string, BasesEntry[]>();
+  for (const entry of entries) {
+    const raw = groupProperty ? asStringList(entry.properties?.[groupProperty]) : [""];
+    const names = new Set((raw.length ? raw : [UNGROUPED]).map((name) => groupMap[name] ?? name));
+    for (const name of names) {
+      if (!groups.has(name)) groups.set(name, []);
+      groups.get(name)!.push(entry);
+    }
+  }
+
+  const rank = (name: string) => {
+    const i = groupOrder.indexOf(name);
+    return i === -1 ? groupOrder.length : i;
+  };
+  const sortedGroups = [...groups.entries()].sort(
+    (a, b) => rank(a[0]) - rank(b[0]) || a[0].localeCompare(b[0], "zh-Hant"),
+  );
+
+  const labelWidth = 150;
+  const barArea = 280;
+  const valueWidth = 30;
+  const rowHeight = 24;
+  const barHeight = 16;
+  const chartWidth = labelWidth + barArea + valueWidth;
+
+  return (
+    <div class="bases-chart-wrapper">
+      <div class="bases-view-meta">
+        {formatMessage(localeStrings.showingCount, { count: entries.length, total })}
+      </div>
+      {sortedGroups.map(([name, list]) => {
+        const counts = new Map<string, number>();
+        for (const entry of list) {
+          for (const tag of new Set(entry.fileProperties.tags ?? [])) {
+            const clean = tag.replace(/^#/, "");
+            if (clean) counts.set(clean, (counts.get(clean) ?? 0) + 1);
+          }
+        }
+        const bars = [...counts.entries()]
+          .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "zh-Hant"))
+          .slice(0, top);
+        const untagged = list.filter((e) => (e.fileProperties.tags ?? []).length === 0).length;
+        const maxValue = Math.max(1, ...bars.map(([, n]) => n));
+        const chartHeight = bars.length * rowHeight + 4;
+
+        return (
+          <section class="bases-chart-group">
+            {groupProperty && <h3 class="bases-chart-group-title">{name}</h3>}
+            <div class="bases-chart-group-meta">
+              共 {list.length} 篇，其中 {untagged} 篇尚未加 tag
+            </div>
+            {bars.length > 0 && (
+              <svg
+                class="bases-chart bases-chart-horizontal"
+                viewBox={`0 0 ${chartWidth} ${chartHeight}`}
+                role="img"
+                aria-label={`${name} 關鍵字出現次數長條圖`}
+              >
+                {bars.map(([tag, n], i) => {
+                  const y = 2 + i * rowHeight;
+                  const width = Math.max(2, (n / maxValue) * barArea);
+                  const label = tag.length > 11 ? `${tag.slice(0, 10)}…` : tag;
+                  return (
+                    <g>
+                      <title>{`${tag}：${n}`}</title>
+                      <text
+                        x={labelWidth - 8}
+                        y={y + barHeight / 2}
+                        text-anchor="end"
+                        dominant-baseline="central"
+                        class="bases-chart-hlabel"
+                      >
+                        {label}
+                      </text>
+                      <rect
+                        x={labelWidth}
+                        y={y}
+                        width={width}
+                        height={barHeight}
+                        rx="3"
+                        class="bases-chart-hbar"
+                      />
+                      <text
+                        x={labelWidth + width + 6}
+                        y={y + barHeight / 2}
+                        dominant-baseline="central"
+                        class="bases-chart-value"
+                      >
+                        {n}
+                      </text>
+                    </g>
+                  );
+                })}
+              </svg>
+            )}
+          </section>
+        );
+      })}
+    </div>
+  );
+};
+
+const ChartView: ViewRenderer = (props) =>
+  props.view.chartMode === "tagFrequency" ? TagFrequencyChart(props) : TaskManagementChart(props);
 
 export const chartViewRegistration: ViewTypeRegistration = {
   id: "chart",

@@ -623,3 +623,30 @@ th.is-sorted-desc .bases-table-header-sort {
   font-size: 9px;
   fill: var(--darkgray);
 }
+
+.bases-chart-group {
+  margin-bottom: 1rem;
+}
+
+.bases-chart-group-title {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.bases-chart-group-meta {
+  font-size: 0.85em;
+  color: var(--darkgray);
+  margin-bottom: 4px;
+}
+
+.bases-chart-horizontal {
+  max-width: 560px;
+}
+
+.bases-chart-hlabel {
+  font-size: 12px;
+  fill: var(--darkgray);
+}
+
+.bases-chart-hbar {
+  fill: var(--secondary);
+}

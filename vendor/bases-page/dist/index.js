@@ -13524,7 +13524,7 @@ function monthKey(value) {
   const match = /^(\d{4})-(\d{2})/.exec(String(value).trim());
   return match ? `${match[1]}-${match[2]}` : void 0;
 }
-var ChartView = ({ entries, locale, total }) => {
+var TaskManagementChart = ({ entries, locale, total }) => {
   const localeStrings = i18n(locale).components.bases;
   const now = /* @__PURE__ */ new Date();
   const thisMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
@@ -13594,6 +13594,124 @@ var ChartView = ({ entries, locale, total }) => {
     )
   ] });
 };
+function asStringList(value) {
+  if (Array.isArray(value)) return value.filter((v2) => typeof v2 === "string" && v2 !== "");
+  return typeof value === "string" && value !== "" ? [value] : [];
+}
+function asStringMap(value) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return {};
+  const result = {};
+  for (const [key, mapped] of Object.entries(value)) {
+    if (typeof mapped === "string") result[key] = mapped;
+  }
+  return result;
+}
+var UNGROUPED = "\uFF08\u672A\u586B\uFF09";
+var TagFrequencyChart = ({ entries, view, locale, total }) => {
+  const localeStrings = i18n(locale).components.bases;
+  const groupProperty = typeof view.groupProperty === "string" ? view.groupProperty : void 0;
+  const groupMap = asStringMap(view.groupMap);
+  const groupOrder = asStringList(view.groupOrder);
+  const top = Math.max(1, toNumber3(view.top) || 10);
+  const groups = /* @__PURE__ */ new Map();
+  for (const entry of entries) {
+    const raw = groupProperty ? asStringList(entry.properties?.[groupProperty]) : [""];
+    const names = new Set((raw.length ? raw : [UNGROUPED]).map((name) => groupMap[name] ?? name));
+    for (const name of names) {
+      if (!groups.has(name)) groups.set(name, []);
+      groups.get(name).push(entry);
+    }
+  }
+  const rank = (name) => {
+    const i2 = groupOrder.indexOf(name);
+    return i2 === -1 ? groupOrder.length : i2;
+  };
+  const sortedGroups = [...groups.entries()].sort(
+    (a2, b2) => rank(a2[0]) - rank(b2[0]) || a2[0].localeCompare(b2[0], "zh-Hant")
+  );
+  const labelWidth = 150;
+  const barArea = 280;
+  const valueWidth = 30;
+  const rowHeight = 24;
+  const barHeight = 16;
+  const chartWidth = labelWidth + barArea + valueWidth;
+  return /* @__PURE__ */ jsxs6("div", { class: "bases-chart-wrapper", children: [
+    /* @__PURE__ */ jsx8("div", { class: "bases-view-meta", children: formatMessage4(localeStrings.showingCount, { count: entries.length, total }) }),
+    sortedGroups.map(([name, list]) => {
+      const counts = /* @__PURE__ */ new Map();
+      for (const entry of list) {
+        for (const tag of new Set(entry.fileProperties.tags ?? [])) {
+          const clean = tag.replace(/^#/, "");
+          if (clean) counts.set(clean, (counts.get(clean) ?? 0) + 1);
+        }
+      }
+      const bars = [...counts.entries()].sort((a2, b2) => b2[1] - a2[1] || a2[0].localeCompare(b2[0], "zh-Hant")).slice(0, top);
+      const untagged = list.filter((e2) => (e2.fileProperties.tags ?? []).length === 0).length;
+      const maxValue = Math.max(1, ...bars.map(([, n2]) => n2));
+      const chartHeight = bars.length * rowHeight + 4;
+      return /* @__PURE__ */ jsxs6("section", { class: "bases-chart-group", children: [
+        groupProperty && /* @__PURE__ */ jsx8("h3", { class: "bases-chart-group-title", children: name }),
+        /* @__PURE__ */ jsxs6("div", { class: "bases-chart-group-meta", children: [
+          "\u5171 ",
+          list.length,
+          " \u7BC7\uFF0C\u5176\u4E2D ",
+          untagged,
+          " \u7BC7\u5C1A\u672A\u52A0 tag"
+        ] }),
+        bars.length > 0 && /* @__PURE__ */ jsx8(
+          "svg",
+          {
+            class: "bases-chart bases-chart-horizontal",
+            viewBox: `0 0 ${chartWidth} ${chartHeight}`,
+            role: "img",
+            "aria-label": `${name} \u95DC\u9375\u5B57\u51FA\u73FE\u6B21\u6578\u9577\u689D\u5716`,
+            children: bars.map(([tag, n2], i2) => {
+              const y2 = 2 + i2 * rowHeight;
+              const width = Math.max(2, n2 / maxValue * barArea);
+              const label = tag.length > 11 ? `${tag.slice(0, 10)}\u2026` : tag;
+              return /* @__PURE__ */ jsxs6("g", { children: [
+                /* @__PURE__ */ jsx8("title", { children: `${tag}\uFF1A${n2}` }),
+                /* @__PURE__ */ jsx8(
+                  "text",
+                  {
+                    x: labelWidth - 8,
+                    y: y2 + barHeight / 2,
+                    "text-anchor": "end",
+                    "dominant-baseline": "central",
+                    class: "bases-chart-hlabel",
+                    children: label
+                  }
+                ),
+                /* @__PURE__ */ jsx8(
+                  "rect",
+                  {
+                    x: labelWidth,
+                    y: y2,
+                    width,
+                    height: barHeight,
+                    rx: "3",
+                    class: "bases-chart-hbar"
+                  }
+                ),
+                /* @__PURE__ */ jsx8(
+                  "text",
+                  {
+                    x: labelWidth + width + 6,
+                    y: y2 + barHeight / 2,
+                    "dominant-baseline": "central",
+                    class: "bases-chart-value",
+                    children: n2
+                  }
+                )
+              ] });
+            })
+          }
+        )
+      ] });
+    })
+  ] });
+};
+var ChartView = (props) => props.view.chartMode === "tagFrequency" ? TagFrequencyChart(props) : TaskManagementChart(props);
 var chartViewRegistration = {
   id: "chart",
   name: "Chart",
@@ -14001,7 +14119,7 @@ function registerBuiltinViews() {
 }
 
 // src/components/styles/bases.scss
-var bases_default = ".bases-page {\n  width: 100%;\n  max-width: 100%;\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n  overflow: hidden;\n}\n\n.bases-view-tabs {\n  display: flex;\n  gap: 8px;\n  flex-wrap: wrap;\n}\n.bases-view-tabs button {\n  border: 1px solid var(--lightgray);\n  background: var(--light);\n  color: var(--darkgray);\n  padding: 6px 12px;\n  border-radius: 999px;\n  cursor: pointer;\n  font-size: 0.9rem;\n}\n.bases-view-tabs button.is-active {\n  background: var(--secondary);\n  color: var(--light);\n  border-color: var(--secondary);\n}\n\n.bases-view-container {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n}\n\n.bases-view {\n  display: none;\n}\n.bases-view.is-active {\n  display: block;\n}\n\n.bases-view-meta {\n  font-size: 0.85rem;\n  color: var(--gray);\n  margin-bottom: 8px;\n}\n\n.bases-table-wrapper {\n  width: 100%;\n  overflow-x: auto;\n}\n\n.bases-table {\n  width: 100%;\n  border-collapse: collapse;\n  border: 1px solid var(--lightgray);\n  border-radius: 8px;\n  overflow: hidden;\n}\n.bases-table th,\n.bases-table td {\n  padding: 10px 12px;\n  text-align: left;\n  border-bottom: 1px solid var(--lightgray);\n  font-size: 0.9rem;\n}\n.bases-table thead th {\n  position: sticky;\n  top: 0;\n  background: var(--light);\n  color: var(--dark);\n  font-weight: 600;\n  cursor: pointer;\n}\n.bases-table td .bases-empty {\n  padding: 0;\n  border: 0;\n  background: none;\n  color: var(--gray);\n  display: inline;\n}\n.bases-table td code {\n  font-size: 0.85em;\n  padding: 0.1rem 0.3rem;\n  border-radius: 3px;\n  background: var(--highlight);\n  word-break: break-all;\n}\n.bases-table td .bases-list {\n  flex-direction: row;\n  flex-wrap: wrap;\n  gap: 4px;\n}\n.bases-table td input[type=checkbox] {\n  margin-inline: 0;\n}\n\n.bases-table-header-sort {\n  position: absolute;\n  right: 8px;\n  top: calc(50% - 4px);\n  display: inline-block;\n  width: 8px;\n  height: 8px;\n  margin-left: 6px;\n  border-right: 2px solid transparent;\n  border-bottom: 2px solid transparent;\n}\n\nth.is-sorted-asc .bases-table-header-sort {\n  border-right-color: var(--darkgray);\n  border-bottom-color: var(--darkgray);\n  transform: rotate(-45deg);\n}\n\nth.is-sorted-desc .bases-table-header-sort {\n  border-right-color: var(--darkgray);\n  border-bottom-color: var(--darkgray);\n  transform: rotate(135deg);\n}\n\n.bases-summary-row td {\n  background: var(--light);\n  font-weight: 600;\n  color: var(--darkgray);\n}\n\n.bases-table-group-header td {\n  background: var(--lightgray);\n  font-weight: 600;\n  padding: 8px 12px;\n  border-bottom: 2px solid var(--gray);\n}\n\n.bases-table-group-property {\n  color: var(--gray);\n  font-weight: 400;\n}\n\n.bases-table-group-label {\n  margin-right: 8px;\n}\n\n.bases-table-group-count {\n  background: var(--light);\n  color: var(--darkgray);\n  border-radius: 999px;\n  padding: 2px 8px;\n  font-size: 0.75rem;\n  font-weight: 400;\n}\n\n.bases-separator {\n  color: var(--gray);\n}\n\n.bases-number {\n  font-variant-numeric: tabular-nums;\n}\n\n.bases-list {\n  display: inline-flex;\n  flex-wrap: wrap;\n  gap: 4px;\n}\n\n.bases-list-group {\n  width: 100%;\n}\n\n.bases-list-group-list {\n  display: flex;\n  flex-direction: column;\n}\n\n.bases-list-item {\n  padding: 2px 0;\n}\n\n.bases-list-item-properties {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: baseline;\n  gap: 0;\n}\n\n.bases-list-property {\n  display: inline-flex;\n  align-items: baseline;\n  gap: 4px;\n}\n\n.list-bullet {\n  color: var(--darkgray);\n  user-select: none;\n}\n\n.bases-list-separator {\n  color: var(--gray);\n  margin-right: 4px;\n}\n\n.bases-rendered-value {\n  display: inline;\n}\n\n.bases-cards {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));\n  gap: 16px;\n}\n\n.bases-cards-group + .bases-cards-group {\n  margin-top: 24px;\n}\n\n.bases-cards-group-header {\n  background: var(--lightgray);\n  font-weight: 600;\n  padding: 8px 12px;\n  border-radius: 6px;\n  margin-bottom: 12px;\n}\n\n.bases-cards-group-property {\n  color: var(--gray);\n  font-weight: 400;\n}\n\n.bases-cards-group-label {\n  margin-right: 8px;\n}\n\n.bases-cards-group-count {\n  background: var(--light);\n  color: var(--darkgray);\n  border-radius: 999px;\n  padding: 2px 8px;\n  font-size: 0.75rem;\n  font-weight: 400;\n}\n\n.bases-card {\n  border: 1px solid var(--lightgray);\n  border-radius: 12px;\n  overflow: hidden;\n  background: var(--light);\n  display: flex;\n  flex-direction: column;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);\n  color: inherit;\n  text-decoration: none;\n  transition: box-shadow 0.15s ease;\n}\n.bases-card:hover {\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);\n}\n\n.bases-card-image {\n  overflow: hidden;\n  background: var(--lightgray);\n}\n.bases-card-image img {\n  width: 100%;\n  height: 100%;\n  display: block;\n  object-fit: cover;\n}\n\n.bases-card-color {\n  min-height: 60px;\n}\n\n.bases-card-title {\n  font-weight: 600;\n  color: var(--dark);\n}\n\n.bases-card-body {\n  padding: 12px;\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n}\n\n.bases-card-meta {\n  display: grid;\n  gap: 4px;\n}\n\n.bases-card-row {\n  display: flex;\n  justify-content: space-between;\n  font-size: 0.8rem;\n  color: var(--darkgray);\n}\n\n.bases-card-label {\n  color: var(--gray);\n}\n\n.bases-map-placeholder {\n  padding: 24px;\n  border: 1px dashed var(--lightgray);\n  border-radius: 12px;\n  background: var(--light);\n}\n\n.bases-map-message {\n  color: var(--darkgray);\n  margin-top: 12px;\n}\n\n.bases-empty {\n  padding: 24px;\n  text-align: center;\n  color: var(--darkgray);\n  border: 1px dashed var(--lightgray);\n  border-radius: 12px;\n  background: var(--light);\n}\n\n.bases-gallery {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));\n  gap: 16px;\n}\n\n.bases-gallery-item {\n  position: relative;\n  border-radius: 12px;\n  overflow: hidden;\n  border: 1px solid var(--lightgray);\n  background: var(--light);\n}\n\n.bases-gallery-image {\n  aspect-ratio: 4/3;\n  overflow: hidden;\n  background: var(--lightgray);\n}\n\n.bases-gallery-image img,\n.bases-gallery-placeholder {\n  width: 100%;\n  height: 100%;\n  display: block;\n  object-fit: cover;\n}\n\n.bases-gallery-placeholder {\n  background: linear-gradient(135deg, var(--lightgray), var(--highlight));\n}\n\n.bases-gallery-title {\n  position: absolute;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  padding: 10px 12px;\n  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);\n  color: var(--light);\n  font-weight: 600;\n}\n\n.bases-gallery-title a {\n  color: inherit;\n}\n\n.bases-board {\n  display: flex;\n  gap: 16px;\n  overflow-x: auto;\n  padding-bottom: 4px;\n}\n\n.bases-board-column {\n  min-width: min(250px, 80vw);\n  flex-shrink: 0;\n  border: 1px solid var(--lightgray);\n  border-radius: 12px;\n  background: var(--light);\n  display: flex;\n  flex-direction: column;\n}\n\n.bases-board-column-header {\n  position: sticky;\n  top: 0;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 8px;\n  padding: 10px 12px;\n  font-weight: 600;\n  background: var(--light);\n  border-bottom: 1px solid var(--lightgray);\n  border-radius: 12px 12px 0 0;\n  z-index: 1;\n}\n\n.bases-board-count {\n  background: var(--lightgray);\n  color: var(--darkgray);\n  border-radius: 999px;\n  padding: 2px 8px;\n  font-size: 0.75rem;\n}\n\n.bases-board-column-body {\n  padding: 8px;\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n}\n\n.bases-board-card {\n  border: 1px solid var(--lightgray);\n  border-radius: 10px;\n  background: var(--light);\n  padding: 10px 12px;\n  display: flex;\n  flex-direction: column;\n  gap: 6px;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);\n}\n\n.bases-board-card-meta {\n  display: grid;\n  gap: 4px;\n  font-size: 0.8rem;\n  color: var(--darkgray);\n}\n\n.bases-board-card-row {\n  display: flex;\n  justify-content: space-between;\n  gap: 8px;\n}\n\n.bases-board-card-label {\n  color: var(--gray);\n}\n\n.bases-calendar-wrapper {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n}\n\n.bases-calendar-nav {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 12px;\n  margin-bottom: 12px;\n}\n\n.bases-calendar-label {\n  font-weight: 600;\n  color: var(--dark);\n  min-width: 10ch;\n  text-align: center;\n}\n\n.bases-calendar-nav-btn {\n  border: 1px solid var(--lightgray);\n  background: var(--light);\n  color: var(--darkgray);\n  padding: 4px 10px;\n  border-radius: 999px;\n  cursor: pointer;\n  font-size: 0.85rem;\n}\n.bases-calendar-nav-btn:disabled {\n  opacity: 0.4;\n  cursor: default;\n}\n.bases-calendar-nav-btn:not(:disabled):hover {\n  background: var(--lightgray);\n}\n\n.bases-calendar-today-btn {\n  font-weight: 600;\n}\n\n.bases-calendar-weekdays {\n  display: grid;\n  grid-template-columns: repeat(7, 1fr);\n  gap: 4px;\n  margin-bottom: 4px;\n}\n.bases-calendar-weekdays span {\n  text-align: center;\n  font-size: 0.75rem;\n  font-weight: 600;\n  color: var(--gray);\n  text-transform: uppercase;\n}\n\n.bases-calendar-days {\n  display: grid;\n  grid-template-columns: repeat(7, 1fr);\n  grid-auto-rows: minmax(72px, auto);\n  gap: 4px;\n}\n\n.bases-calendar-day {\n  border: 1px solid var(--lightgray);\n  border-radius: 8px;\n  padding: 4px;\n  display: flex;\n  flex-direction: column;\n  gap: 2px;\n  overflow: hidden;\n}\n.bases-calendar-day.is-outside {\n  border-color: transparent;\n  background: none;\n}\n.bases-calendar-day.is-today {\n  border-color: var(--secondary);\n  background: var(--highlight);\n}\n\n.bases-calendar-daynum {\n  font-size: 0.75rem;\n  color: var(--gray);\n  align-self: flex-end;\n}\n\n.bases-calendar-day.is-today .bases-calendar-daynum {\n  color: var(--secondary);\n  font-weight: 700;\n}\n\n.bases-calendar-entries {\n  display: flex;\n  flex-direction: column;\n  gap: 2px;\n  overflow-y: auto;\n}\n\n.bases-calendar-chip {\n  display: block;\n  font-size: 0.75rem;\n  padding: 2px 6px;\n  border-radius: 6px;\n  background: var(--lightgray);\n  color: var(--dark);\n  text-decoration: none;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.bases-calendar-chip:hover {\n  background: var(--secondary);\n  color: var(--light);\n}\n\n.bases-calendar-unscheduled {\n  border-top: 1px solid var(--lightgray);\n  padding-top: 12px;\n}\n\n.bases-calendar-unscheduled-title {\n  font-size: 0.85rem;\n  font-weight: 600;\n  color: var(--darkgray);\n  margin-bottom: 8px;\n}\n\n@media (max-width: 600px) {\n  .bases-calendar-days {\n    grid-auto-rows: minmax(44px, auto);\n  }\n  .bases-calendar-chip {\n    font-size: 0.65rem;\n  }\n}\n.bases-chart-wrapper {\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n}\n\n.bases-chart {\n  width: 100%;\n  max-width: 480px;\n  height: auto;\n}\n\n.bases-chart-value {\n  font-size: 11px;\n  fill: var(--dark);\n}\n\n.bases-chart-label {\n  font-size: 9px;\n  fill: var(--darkgray);\n}";
+var bases_default = ".bases-page {\n  width: 100%;\n  max-width: 100%;\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n  overflow: hidden;\n}\n\n.bases-view-tabs {\n  display: flex;\n  gap: 8px;\n  flex-wrap: wrap;\n}\n.bases-view-tabs button {\n  border: 1px solid var(--lightgray);\n  background: var(--light);\n  color: var(--darkgray);\n  padding: 6px 12px;\n  border-radius: 999px;\n  cursor: pointer;\n  font-size: 0.9rem;\n}\n.bases-view-tabs button.is-active {\n  background: var(--secondary);\n  color: var(--light);\n  border-color: var(--secondary);\n}\n\n.bases-view-container {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n}\n\n.bases-view {\n  display: none;\n}\n.bases-view.is-active {\n  display: block;\n}\n\n.bases-view-meta {\n  font-size: 0.85rem;\n  color: var(--gray);\n  margin-bottom: 8px;\n}\n\n.bases-table-wrapper {\n  width: 100%;\n  overflow-x: auto;\n}\n\n.bases-table {\n  width: 100%;\n  border-collapse: collapse;\n  border: 1px solid var(--lightgray);\n  border-radius: 8px;\n  overflow: hidden;\n}\n.bases-table th,\n.bases-table td {\n  padding: 10px 12px;\n  text-align: left;\n  border-bottom: 1px solid var(--lightgray);\n  font-size: 0.9rem;\n}\n.bases-table thead th {\n  position: sticky;\n  top: 0;\n  background: var(--light);\n  color: var(--dark);\n  font-weight: 600;\n  cursor: pointer;\n}\n.bases-table td .bases-empty {\n  padding: 0;\n  border: 0;\n  background: none;\n  color: var(--gray);\n  display: inline;\n}\n.bases-table td code {\n  font-size: 0.85em;\n  padding: 0.1rem 0.3rem;\n  border-radius: 3px;\n  background: var(--highlight);\n  word-break: break-all;\n}\n.bases-table td .bases-list {\n  flex-direction: row;\n  flex-wrap: wrap;\n  gap: 4px;\n}\n.bases-table td input[type=checkbox] {\n  margin-inline: 0;\n}\n\n.bases-table-header-sort {\n  position: absolute;\n  right: 8px;\n  top: calc(50% - 4px);\n  display: inline-block;\n  width: 8px;\n  height: 8px;\n  margin-left: 6px;\n  border-right: 2px solid transparent;\n  border-bottom: 2px solid transparent;\n}\n\nth.is-sorted-asc .bases-table-header-sort {\n  border-right-color: var(--darkgray);\n  border-bottom-color: var(--darkgray);\n  transform: rotate(-45deg);\n}\n\nth.is-sorted-desc .bases-table-header-sort {\n  border-right-color: var(--darkgray);\n  border-bottom-color: var(--darkgray);\n  transform: rotate(135deg);\n}\n\n.bases-summary-row td {\n  background: var(--light);\n  font-weight: 600;\n  color: var(--darkgray);\n}\n\n.bases-table-group-header td {\n  background: var(--lightgray);\n  font-weight: 600;\n  padding: 8px 12px;\n  border-bottom: 2px solid var(--gray);\n}\n\n.bases-table-group-property {\n  color: var(--gray);\n  font-weight: 400;\n}\n\n.bases-table-group-label {\n  margin-right: 8px;\n}\n\n.bases-table-group-count {\n  background: var(--light);\n  color: var(--darkgray);\n  border-radius: 999px;\n  padding: 2px 8px;\n  font-size: 0.75rem;\n  font-weight: 400;\n}\n\n.bases-separator {\n  color: var(--gray);\n}\n\n.bases-number {\n  font-variant-numeric: tabular-nums;\n}\n\n.bases-list {\n  display: inline-flex;\n  flex-wrap: wrap;\n  gap: 4px;\n}\n\n.bases-list-group {\n  width: 100%;\n}\n\n.bases-list-group-list {\n  display: flex;\n  flex-direction: column;\n}\n\n.bases-list-item {\n  padding: 2px 0;\n}\n\n.bases-list-item-properties {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: baseline;\n  gap: 0;\n}\n\n.bases-list-property {\n  display: inline-flex;\n  align-items: baseline;\n  gap: 4px;\n}\n\n.list-bullet {\n  color: var(--darkgray);\n  user-select: none;\n}\n\n.bases-list-separator {\n  color: var(--gray);\n  margin-right: 4px;\n}\n\n.bases-rendered-value {\n  display: inline;\n}\n\n.bases-cards {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));\n  gap: 16px;\n}\n\n.bases-cards-group + .bases-cards-group {\n  margin-top: 24px;\n}\n\n.bases-cards-group-header {\n  background: var(--lightgray);\n  font-weight: 600;\n  padding: 8px 12px;\n  border-radius: 6px;\n  margin-bottom: 12px;\n}\n\n.bases-cards-group-property {\n  color: var(--gray);\n  font-weight: 400;\n}\n\n.bases-cards-group-label {\n  margin-right: 8px;\n}\n\n.bases-cards-group-count {\n  background: var(--light);\n  color: var(--darkgray);\n  border-radius: 999px;\n  padding: 2px 8px;\n  font-size: 0.75rem;\n  font-weight: 400;\n}\n\n.bases-card {\n  border: 1px solid var(--lightgray);\n  border-radius: 12px;\n  overflow: hidden;\n  background: var(--light);\n  display: flex;\n  flex-direction: column;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);\n  color: inherit;\n  text-decoration: none;\n  transition: box-shadow 0.15s ease;\n}\n.bases-card:hover {\n  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);\n}\n\n.bases-card-image {\n  overflow: hidden;\n  background: var(--lightgray);\n}\n.bases-card-image img {\n  width: 100%;\n  height: 100%;\n  display: block;\n  object-fit: cover;\n}\n\n.bases-card-color {\n  min-height: 60px;\n}\n\n.bases-card-title {\n  font-weight: 600;\n  color: var(--dark);\n}\n\n.bases-card-body {\n  padding: 12px;\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n}\n\n.bases-card-meta {\n  display: grid;\n  gap: 4px;\n}\n\n.bases-card-row {\n  display: flex;\n  justify-content: space-between;\n  font-size: 0.8rem;\n  color: var(--darkgray);\n}\n\n.bases-card-label {\n  color: var(--gray);\n}\n\n.bases-map-placeholder {\n  padding: 24px;\n  border: 1px dashed var(--lightgray);\n  border-radius: 12px;\n  background: var(--light);\n}\n\n.bases-map-message {\n  color: var(--darkgray);\n  margin-top: 12px;\n}\n\n.bases-empty {\n  padding: 24px;\n  text-align: center;\n  color: var(--darkgray);\n  border: 1px dashed var(--lightgray);\n  border-radius: 12px;\n  background: var(--light);\n}\n\n.bases-gallery {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));\n  gap: 16px;\n}\n\n.bases-gallery-item {\n  position: relative;\n  border-radius: 12px;\n  overflow: hidden;\n  border: 1px solid var(--lightgray);\n  background: var(--light);\n}\n\n.bases-gallery-image {\n  aspect-ratio: 4/3;\n  overflow: hidden;\n  background: var(--lightgray);\n}\n\n.bases-gallery-image img,\n.bases-gallery-placeholder {\n  width: 100%;\n  height: 100%;\n  display: block;\n  object-fit: cover;\n}\n\n.bases-gallery-placeholder {\n  background: linear-gradient(135deg, var(--lightgray), var(--highlight));\n}\n\n.bases-gallery-title {\n  position: absolute;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  padding: 10px 12px;\n  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);\n  color: var(--light);\n  font-weight: 600;\n}\n\n.bases-gallery-title a {\n  color: inherit;\n}\n\n.bases-board {\n  display: flex;\n  gap: 16px;\n  overflow-x: auto;\n  padding-bottom: 4px;\n}\n\n.bases-board-column {\n  min-width: min(250px, 80vw);\n  flex-shrink: 0;\n  border: 1px solid var(--lightgray);\n  border-radius: 12px;\n  background: var(--light);\n  display: flex;\n  flex-direction: column;\n}\n\n.bases-board-column-header {\n  position: sticky;\n  top: 0;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 8px;\n  padding: 10px 12px;\n  font-weight: 600;\n  background: var(--light);\n  border-bottom: 1px solid var(--lightgray);\n  border-radius: 12px 12px 0 0;\n  z-index: 1;\n}\n\n.bases-board-count {\n  background: var(--lightgray);\n  color: var(--darkgray);\n  border-radius: 999px;\n  padding: 2px 8px;\n  font-size: 0.75rem;\n}\n\n.bases-board-column-body {\n  padding: 8px;\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n}\n\n.bases-board-card {\n  border: 1px solid var(--lightgray);\n  border-radius: 10px;\n  background: var(--light);\n  padding: 10px 12px;\n  display: flex;\n  flex-direction: column;\n  gap: 6px;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);\n}\n\n.bases-board-card-meta {\n  display: grid;\n  gap: 4px;\n  font-size: 0.8rem;\n  color: var(--darkgray);\n}\n\n.bases-board-card-row {\n  display: flex;\n  justify-content: space-between;\n  gap: 8px;\n}\n\n.bases-board-card-label {\n  color: var(--gray);\n}\n\n.bases-calendar-wrapper {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n}\n\n.bases-calendar-nav {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 12px;\n  margin-bottom: 12px;\n}\n\n.bases-calendar-label {\n  font-weight: 600;\n  color: var(--dark);\n  min-width: 10ch;\n  text-align: center;\n}\n\n.bases-calendar-nav-btn {\n  border: 1px solid var(--lightgray);\n  background: var(--light);\n  color: var(--darkgray);\n  padding: 4px 10px;\n  border-radius: 999px;\n  cursor: pointer;\n  font-size: 0.85rem;\n}\n.bases-calendar-nav-btn:disabled {\n  opacity: 0.4;\n  cursor: default;\n}\n.bases-calendar-nav-btn:not(:disabled):hover {\n  background: var(--lightgray);\n}\n\n.bases-calendar-today-btn {\n  font-weight: 600;\n}\n\n.bases-calendar-weekdays {\n  display: grid;\n  grid-template-columns: repeat(7, 1fr);\n  gap: 4px;\n  margin-bottom: 4px;\n}\n.bases-calendar-weekdays span {\n  text-align: center;\n  font-size: 0.75rem;\n  font-weight: 600;\n  color: var(--gray);\n  text-transform: uppercase;\n}\n\n.bases-calendar-days {\n  display: grid;\n  grid-template-columns: repeat(7, 1fr);\n  grid-auto-rows: minmax(72px, auto);\n  gap: 4px;\n}\n\n.bases-calendar-day {\n  border: 1px solid var(--lightgray);\n  border-radius: 8px;\n  padding: 4px;\n  display: flex;\n  flex-direction: column;\n  gap: 2px;\n  overflow: hidden;\n}\n.bases-calendar-day.is-outside {\n  border-color: transparent;\n  background: none;\n}\n.bases-calendar-day.is-today {\n  border-color: var(--secondary);\n  background: var(--highlight);\n}\n\n.bases-calendar-daynum {\n  font-size: 0.75rem;\n  color: var(--gray);\n  align-self: flex-end;\n}\n\n.bases-calendar-day.is-today .bases-calendar-daynum {\n  color: var(--secondary);\n  font-weight: 700;\n}\n\n.bases-calendar-entries {\n  display: flex;\n  flex-direction: column;\n  gap: 2px;\n  overflow-y: auto;\n}\n\n.bases-calendar-chip {\n  display: block;\n  font-size: 0.75rem;\n  padding: 2px 6px;\n  border-radius: 6px;\n  background: var(--lightgray);\n  color: var(--dark);\n  text-decoration: none;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.bases-calendar-chip:hover {\n  background: var(--secondary);\n  color: var(--light);\n}\n\n.bases-calendar-unscheduled {\n  border-top: 1px solid var(--lightgray);\n  padding-top: 12px;\n}\n\n.bases-calendar-unscheduled-title {\n  font-size: 0.85rem;\n  font-weight: 600;\n  color: var(--darkgray);\n  margin-bottom: 8px;\n}\n\n@media (max-width: 600px) {\n  .bases-calendar-days {\n    grid-auto-rows: minmax(44px, auto);\n  }\n  .bases-calendar-chip {\n    font-size: 0.65rem;\n  }\n}\n.bases-chart-wrapper {\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n}\n\n.bases-chart {\n  width: 100%;\n  max-width: 480px;\n  height: auto;\n}\n\n.bases-chart-value {\n  font-size: 11px;\n  fill: var(--dark);\n}\n\n.bases-chart-label {\n  font-size: 9px;\n  fill: var(--darkgray);\n}\n\n.bases-chart-group {\n  margin-bottom: 1rem;\n}\n\n.bases-chart-group-title {\n  margin: 0.5rem 0 0.25rem;\n}\n\n.bases-chart-group-meta {\n  font-size: 0.85em;\n  color: var(--darkgray);\n  margin-bottom: 4px;\n}\n\n.bases-chart-horizontal {\n  max-width: 560px;\n}\n\n.bases-chart-hlabel {\n  font-size: 12px;\n  fill: var(--darkgray);\n}\n\n.bases-chart-hbar {\n  fill: var(--secondary);\n}";
 
 // src/components/BasesBody.tsx
 import { jsx as jsx13, jsxs as jsxs11 } from "preact/jsx-runtime";

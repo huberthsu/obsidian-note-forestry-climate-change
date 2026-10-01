@@ -2880,6 +2880,65 @@ function asStringMap(value) {
   return result;
 }
 var UNGROUPED = "\uFF08\u672A\u586B\uFF09";
+function entryTags(entry) {
+  const tags = /* @__PURE__ */ new Set();
+  for (const tag of entry.fileProperties.tags ?? []) {
+    const clean = tag.replace(/^#/, "");
+    if (clean) tags.add(clean);
+  }
+  return [...tags];
+}
+var byZhHant = (a, b) => a.localeCompare(b, "zh-Hant");
+function HorizontalBars({ bars, ariaLabel }) {
+  if (bars.length === 0) return null;
+  const labelWidth = 150;
+  const barArea = 260;
+  const valueWidth = 80;
+  const rowHeight = 24;
+  const barHeight = 16;
+  const chartWidth = labelWidth + barArea + valueWidth;
+  const chartHeight = bars.length * rowHeight + 4;
+  const maxValue = Math.max(1, ...bars.map((b) => b.value));
+  return /* @__PURE__ */ jsx8(
+    "svg",
+    {
+      class: "bases-chart bases-chart-horizontal",
+      viewBox: `0 0 ${chartWidth} ${chartHeight}`,
+      role: "img",
+      "aria-label": ariaLabel,
+      children: bars.map((bar, i) => {
+        const y = 2 + i * rowHeight;
+        const width = Math.max(2, bar.value / maxValue * barArea);
+        const label = bar.label.length > 11 ? `${bar.label.slice(0, 10)}\u2026` : bar.label;
+        return /* @__PURE__ */ jsxs6("g", { children: [
+          /* @__PURE__ */ jsx8("title", { children: bar.tooltip }),
+          /* @__PURE__ */ jsx8(
+            "text",
+            {
+              x: labelWidth - 8,
+              y: y + barHeight / 2,
+              "text-anchor": "end",
+              "dominant-baseline": "central",
+              class: "bases-chart-hlabel",
+              children: label
+            }
+          ),
+          /* @__PURE__ */ jsx8("rect", { x: labelWidth, y, width, height: barHeight, rx: "3", class: "bases-chart-hbar" }),
+          /* @__PURE__ */ jsx8(
+            "text",
+            {
+              x: labelWidth + width + 6,
+              y: y + barHeight / 2,
+              "dominant-baseline": "central",
+              class: "bases-chart-value",
+              children: bar.valueText
+            }
+          )
+        ] });
+      })
+    }
+  );
+}
 var TagFrequencyChart = ({ entries, view, locale, total }) => {
   const localeStrings = i18n(locale).components.bases;
   const groupProperty = typeof view.groupProperty === "string" ? view.groupProperty : void 0;
@@ -2887,6 +2946,7 @@ var TagFrequencyChart = ({ entries, view, locale, total }) => {
   const groupOrder = asStringList(view.groupOrder);
   const top = Math.max(1, toNumber3(view.top) || 10);
   const groups = /* @__PURE__ */ new Map();
+  const overall = /* @__PURE__ */ new Map();
   for (const entry of entries) {
     const raw = groupProperty ? asStringList(entry.properties?.[groupProperty]) : [""];
     const names = new Set((raw.length ? raw : [UNGROUPED]).map((name) => groupMap[name] ?? name));
@@ -2894,92 +2954,55 @@ var TagFrequencyChart = ({ entries, view, locale, total }) => {
       if (!groups.has(name)) groups.set(name, []);
       groups.get(name).push(entry);
     }
+    for (const tag of entryTags(entry)) {
+      if (!overall.has(tag)) overall.set(tag, { count: 0, groups: /* @__PURE__ */ new Set() });
+      const stat = overall.get(tag);
+      stat.count += 1;
+      for (const name of names) stat.groups.add(name);
+    }
   }
   const rank = (name) => {
     const i = groupOrder.indexOf(name);
     return i === -1 ? groupOrder.length : i;
   };
-  const sortedGroups = [...groups.entries()].sort(
-    (a, b) => rank(a[0]) - rank(b[0]) || a[0].localeCompare(b[0], "zh-Hant")
-  );
-  const labelWidth = 150;
-  const barArea = 280;
-  const valueWidth = 30;
-  const rowHeight = 24;
-  const barHeight = 16;
-  const chartWidth = labelWidth + barArea + valueWidth;
+  const sortedGroups = [...groups.entries()].sort((a, b) => rank(a[0]) - rank(b[0]) || byZhHant(a[0], b[0]));
+  const untaggedOf = (list) => list.filter((e) => entryTags(e).length === 0).length;
+  const groupList = (set) => [...set].sort((a, b) => rank(a) - rank(b) || byZhHant(a, b)).join("\u3001");
+  const overallBars = [...overall.entries()].sort((a, b) => b[1].count - a[1].count || b[1].groups.size - a[1].groups.size || byZhHant(a[0], b[0])).slice(0, top).map(([tag, stat]) => ({
+    label: tag,
+    value: stat.count,
+    valueText: groupProperty ? `${stat.count}\uFF08${stat.groups.size} \u79D1\uFF09` : String(stat.count),
+    tooltip: groupProperty ? `${tag}\uFF1A${stat.count} \u6B21\uFF0C${groupList(stat.groups)}` : `${tag}\uFF1A${stat.count}`
+  }));
   return /* @__PURE__ */ jsxs6("div", { class: "bases-chart-wrapper", children: [
     /* @__PURE__ */ jsx8("div", { class: "bases-view-meta", children: formatMessage4(localeStrings.showingCount, { count: entries.length, total }) }),
+    view.showOverall === true && /* @__PURE__ */ jsxs6("section", { class: "bases-chart-group", children: [
+      /* @__PURE__ */ jsx8("h3", { class: "bases-chart-group-title", children: "\u5168\u90E8\u79D1\u76EE\u5408\u8A08" }),
+      /* @__PURE__ */ jsxs6("div", { class: "bases-chart-group-meta", children: [
+        "\u5171 ",
+        entries.length,
+        " \u7BC7\uFF0C\u5176\u4E2D ",
+        untaggedOf(entries),
+        " \u7BC7\u5C1A\u672A\u52A0 tag"
+      ] }),
+      /* @__PURE__ */ jsx8(HorizontalBars, { bars: overallBars, ariaLabel: "\u5168\u90E8\u79D1\u76EE\u95DC\u9375\u5B57\u51FA\u73FE\u6B21\u6578\u9577\u689D\u5716" })
+    ] }),
     sortedGroups.map(([name, list]) => {
       const counts = /* @__PURE__ */ new Map();
       for (const entry of list) {
-        for (const tag of new Set(entry.fileProperties.tags ?? [])) {
-          const clean = tag.replace(/^#/, "");
-          if (clean) counts.set(clean, (counts.get(clean) ?? 0) + 1);
-        }
+        for (const tag of entryTags(entry)) counts.set(tag, (counts.get(tag) ?? 0) + 1);
       }
-      const bars = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "zh-Hant")).slice(0, top);
-      const untagged = list.filter((e) => (e.fileProperties.tags ?? []).length === 0).length;
-      const maxValue = Math.max(1, ...bars.map(([, n]) => n));
-      const chartHeight = bars.length * rowHeight + 4;
+      const bars = [...counts.entries()].sort((a, b) => b[1] - a[1] || byZhHant(a[0], b[0])).slice(0, top).map(([tag, n]) => ({ label: tag, value: n, valueText: String(n), tooltip: `${tag}\uFF1A${n}` }));
       return /* @__PURE__ */ jsxs6("section", { class: "bases-chart-group", children: [
         groupProperty && /* @__PURE__ */ jsx8("h3", { class: "bases-chart-group-title", children: name }),
         /* @__PURE__ */ jsxs6("div", { class: "bases-chart-group-meta", children: [
           "\u5171 ",
           list.length,
           " \u7BC7\uFF0C\u5176\u4E2D ",
-          untagged,
+          untaggedOf(list),
           " \u7BC7\u5C1A\u672A\u52A0 tag"
         ] }),
-        bars.length > 0 && /* @__PURE__ */ jsx8(
-          "svg",
-          {
-            class: "bases-chart bases-chart-horizontal",
-            viewBox: `0 0 ${chartWidth} ${chartHeight}`,
-            role: "img",
-            "aria-label": `${name} \u95DC\u9375\u5B57\u51FA\u73FE\u6B21\u6578\u9577\u689D\u5716`,
-            children: bars.map(([tag, n], i) => {
-              const y = 2 + i * rowHeight;
-              const width = Math.max(2, n / maxValue * barArea);
-              const label = tag.length > 11 ? `${tag.slice(0, 10)}\u2026` : tag;
-              return /* @__PURE__ */ jsxs6("g", { children: [
-                /* @__PURE__ */ jsx8("title", { children: `${tag}\uFF1A${n}` }),
-                /* @__PURE__ */ jsx8(
-                  "text",
-                  {
-                    x: labelWidth - 8,
-                    y: y + barHeight / 2,
-                    "text-anchor": "end",
-                    "dominant-baseline": "central",
-                    class: "bases-chart-hlabel",
-                    children: label
-                  }
-                ),
-                /* @__PURE__ */ jsx8(
-                  "rect",
-                  {
-                    x: labelWidth,
-                    y,
-                    width,
-                    height: barHeight,
-                    rx: "3",
-                    class: "bases-chart-hbar"
-                  }
-                ),
-                /* @__PURE__ */ jsx8(
-                  "text",
-                  {
-                    x: labelWidth + width + 6,
-                    y: y + barHeight / 2,
-                    "dominant-baseline": "central",
-                    class: "bases-chart-value",
-                    children: n
-                  }
-                )
-              ] });
-            })
-          }
-        )
+        /* @__PURE__ */ jsx8(HorizontalBars, { bars, ariaLabel: `${name} \u95DC\u9375\u5B57\u51FA\u73FE\u6B21\u6578\u9577\u689D\u5716` })
       ] });
     })
   ] });

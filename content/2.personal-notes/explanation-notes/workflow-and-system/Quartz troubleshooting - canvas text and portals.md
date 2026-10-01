@@ -1,22 +1,19 @@
 ---
-publish: true
-aliases:
-  - Quartz 問題排查－Canvas 文字方塊與 Portal
-title: Quartz 問題排查－Canvas 文字方塊與 Portal
-created: 2026-09-04T14:52:49.355Z
-modified: 2026-09-04T14:52:49.356Z
-published: 2026-09-04T14:52:49.356Z
+category:
+  - "[[Explanation notes]]"
+  - Workflow and system
 tags:
   - 數位花園
   - 網站
   - ai-agent
-category:
-  - "[[Explanation notes]]"
-  - Workflow and system
+title: Quartz 問題排查－Canvas 文字方塊與 Portal
+aliases:
+  - Quartz 問題排查－Canvas 文字方塊與 Portal
 parent:
   - "[[Quartz website troubleshooting report]]"
 sibling:
 child:
+publish: true
 ---
 
 # Canvas 文字方塊與 Portal
@@ -321,6 +318,9 @@ if (color) {
 4. 追進 `vendor/canvas-page` 的 `CanvasBody.tsx`，確認內嵌整篇筆記用的是 `dangerouslySetInnerHTML={{ __html: embedded }}`，`embedded` 是純字串——樹狀轉換程式碰不到純字串裡的內容，兩邊機制對不上
 
 **目前狀態（尚未修）**：真正要修，需要讓 canvas 外掛在把內嵌內容轉成字串**之前**，先套用一次跟 `bases-page` 一樣的佔位符解析邏輯——這代表兩個原本互相獨立的 vendor 套件要互相依賴，影響範圍不只這一個節點（會碰到全站共用的 bases 渲染路徑），也要另外處理內嵌內容裡連結路徑校正的問題，風險比單純的 CSS／JSON 修改高不少。跟使用者討論後，決定先不修這個，改用「另外新建一個只有單一 view 的 `.base` 檔案，直接當成獨立的 canvas 節點內嵌（跟考古題複習月曆節點做法一樣，不透過巢狀筆記、不用 `#view` 指定）」這個更安全的替代方案繞過問題，等有需要時再動手。
+
+> [!note] 相關：一般筆記之間的巢狀嵌入已修好
+> 「筆記嵌進另一篇**筆記**」時 base 對錯清單（顯示 View not found）的問題，見 [[Quartz troubleshooting - properties and data display#✅ 7.23 筆記嵌進另一篇筆記後，裡面的 base 顯示「View not found」|7.23]]。那次修法讓佔位符記下來源筆記，但 canvas 是把內容轉成 HTML 字串再塞進去，替換程式看不到佔位符，所以這裡的空白問題仍然存在。
 
 ---
 

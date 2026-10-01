@@ -1,22 +1,19 @@
 ---
-publish: true
-aliases:
-  - Quartz 問題排查－屬性面板與資料展示
-title: Quartz 問題排查－屬性面板與資料展示
-created: 2026-09-10T12:16:42.699Z
-modified: 2026-10-01T14:08:14.038Z
-published: 2026-10-01T14:08:14.038Z
+category:
+  - "[[Explanation notes]]"
+  - Workflow and system
 tags:
   - 數位花園
   - 網站
   - ai-agent
-category:
-  - "[[Explanation notes]]"
-  - Workflow and system
+title: Quartz 問題排查－屬性面板與資料展示
+aliases:
+  - Quartz 問題排查－屬性面板與資料展示
 parent:
   - "[[Quartz website troubleshooting report]]"
 sibling:
 child:
+publish: true
 ---
 
 # 屬性面板與資料展示
@@ -616,3 +613,49 @@ board／kanban 的欄位標題沒動：網站上目前沒有用 wikilink 分欄�
 4. 啟動本機靜態伺服器，用瀏覽器實際打開截圖確認淺色、深色模式下長條、標籤、數字都清楚；也確認 Task Management 原本那張圖 5 根長條照常顯示
 5. 測試用的暫存檔從 `content/` 刪除，沒有留在部署 repo 的 git 狀態裡
 6. commit 並 push 到 `v5` 分支（`81cb10e9`、`5967be87`、`06077e84`）
+
+---
+
+## ✅ 7.23 筆記嵌進另一篇筆記後，裡面的 base 顯示「View not found」
+
+**現象**：[[Past Exam Keyword Statistics|考古題關鍵字統計]] 獨立開啟時，「網站專用-關鍵字統計圖表」那段 `![[Past Exam Keyword Statistics bases.base#考古題關鍵字統計]]` 正常顯示（見 [[Quartz troubleshooting - properties and data display#✅ 7.22|7.22]]）；但這篇筆記被 [[Exam notes|考古題筆記]] 用 `![[Past Exam Keyword Statistics]]` 整篇嵌入後，同一個位置變成一行 `View "考古題關鍵字統計" not found`，看不到圖。
+
+**根本原因**：網站處理 `![[xxx.base]]`（以及 ` ```base ` 程式碼區塊）分兩個階段：
+
+1. **轉換每篇筆記時**（`vendor/bases-page/src/transformer.ts`）：把 base 嵌入換成佔位符 `<div data-qz-bases-codeblock="0">`，base 內容另外存進**這篇筆記自己**的 `file.data.basesBlocks` 陣列，佔位符只記「第幾個」
+2. **輸出頁面時**（`pageType.ts` 的 `createBasesCodeblockTransform`）：找到佔位符，用編號去**目前正在輸出的這一頁**的 `basesBlocks` 取 base 出來渲染
+
+第 2 步的註解寫明它在 `renderPage()` 的 transclusion（嵌入筆記）**之後**才執行。嵌入時 Quartz 會把被嵌筆記的 HTML 樹整段複製進外層頁面，佔位符也跟著搬過去，但它記的編號仍然是「被嵌筆記的第 0 個 base」。到了第 2 步，卻拿外層頁面的清單去查——考古題筆記自己的第 0 個 base 是 `Exam Practice Analysis bases.base`，裡面沒有叫「考古題關鍵字統計」的 view，所以顯示 not found。
+
+另外還有一個同源的問題：第 2 步一開頭寫著 `if (!basesBlocks || basesBlocks.length === 0) return;`，外層頁面自己沒有任何 base 時整頁直接跳過，這種頁面就算嵌入了含 base 的筆記，佔位符也永遠不會被處理。
+
+**排查過程**：
+
+1. 本機完整 build 後讀 `public/1.categories/exam-notes.html`，確認嵌入段落裡的佔位符**有被處理**（不是 [[Quartz troubleshooting - canvas text and portals#⏳ 9.9 筆記裡巢狀內嵌指定 view 的 bases（`#viewname`），該筆記又被嵌進 canvas 時整塊空白|9.9]] 那種佔位符原封不動留著），只是渲染結果是 not found——代表找到了某個 base，但不是對的那個
+2. 讀 `transformer.ts` 確認佔位符只有 `dataQzBasesCodeblock`（編號）和 `dataQzBasesView`（view 名稱）兩個欄位，沒有任何「來自哪個檔案」的資訊
+3. 讀 `pageType.ts` 確認編號一律拿 `componentData.fileData.basesBlocks`（目前頁面）去查；再讀 `quartz/components/renderPage.tsx` 的 transclusion 邏輯，確認它用 `normalizeHastElement()` 把被嵌筆記的 `htmlAst` 複製進來，佔位符的屬性會原樣保留，而且會遞迴處理多層嵌入
+4. 對照考古題筆記的 `basesBlocks[0]` 正好是 Exam Practice Analysis，跟 not found 的現象完全吻合
+
+**解決方法**：
+
+1. `transformer.ts`：兩種佔位符（`![[xxx.base]]` 嵌入、` ```base ` 程式碼區塊）都多記一個 `dataQzBasesSource: file.data.slug`，寫明這個編號屬於哪一篇筆記。`file.data.slug` 在 `quartz/processors/parse.ts` 跑 transformer 之前就已經設好，這時候拿得到
+2. `pageType.ts`：替換佔位符時，如果 `dataQzBasesSource` 跟目前頁面不同，就從 `componentData.allFiles` 找出來源筆記，改用它的 `basesBlocks`；篩選條件裡的 `this.file`（`selfContext`）也改成指向來源筆記。連結路徑的解析仍然用外層頁面的 slug，因為圖表最後是顯示在外層頁面上
+3. 拿掉「目前頁面沒有 `basesBlocks` 就整頁跳過」的提早結束，改成逐一檢查佔位符
+4. 沒有 `dataQzBasesSource` 的佔位符照舊用目前頁面的清單，行為不變
+5. `node vendor/bases-page/build.mjs` 重新編譯 `dist/`（見 [[Quartz troubleshooting - properties and data display#✅ 7.10|7.10]]）
+
+**踩到的坑**：
+
+- **本機用 `python -m http.server` 測試時，Graph 只剩自己一個點**：一開始以為是這次改壞了 Graph。實際原因是 Python 簡易伺服器不會把 `/1.categories/exam-notes` 對應到 `exam-notes.html`，只好用帶 `.html` 的網址開頁面，Graph 依網址判斷「目前是哪一頁」就對不上 `contentIndex.json` 裡的 `1.categories/exam-notes`（跟 [[Quartz troubleshooting - naming and paths#✅ 2.1 筆記路徑必須改成英文，中文網址會導致 Graph 無法識別自己|2.1]]、[[Quartz troubleshooting - character encoding and identifiers#✅ 3.3 從別的筆記的關聯圖點進特定筆記，該筆記的關聯圖只顯示自己一個點——逗號在網址中被 percent-encode|3.3]] 的「網址對不上、只剩自己一個點」同一類）；加上頁面剛載入就截圖，Graph 還沒畫完。改用會自動補 `.html` 的小伺服器、用無副檔名網址開、等幾秒再截圖，Graph 就正常了；也比對過本機和正式網站的 `contentIndex.json`，連到考古題筆記的都是 163 篇，資料一致。**之後本機驗證 Graph，要用無副檔名網址，並等 Graph 畫完再截圖**
+- **順帶發現、這次沒修的潛在 bug**：`transformer.ts` 的 ` ```base ` 程式碼區塊那一段，最後是 `file.data.basesBlocks = basesBlocks` **直接覆蓋**，不是接在後面。同一篇筆記如果同時有 `![[xxx.base]]` 嵌入和 ` ```base ` 程式碼區塊，前者的 base 清單會被蓋掉、編號錯位。目前全站沒有筆記同時用這兩種寫法，所以沒有動
+
+> [!tip] 「延後到輸出頁面時才處理」的佔位符，要自己帶著來源資訊
+> 佔位符的編號只在「產生它的那篇筆記」裡有意義，但 transclusion 會把它搬到別的頁面，而替換佔位符的時間點又在 transclusion 之後。只要是「先放佔位符、輸出時才替換」的設計，佔位符都應該記下自己來自哪個檔案，不能假設替換時的「目前頁面」就是產生它的頁面。canvas 嵌入（[[Quartz troubleshooting - canvas text and portals#⏳ 9.9 筆記裡巢狀內嵌指定 view 的 bases（`#viewname`），該筆記又被嵌進 canvas 時整塊空白|9.9]]）是另一條路：內容被轉成 HTML 字串後，替換程式根本看不到佔位符，這次的修法沒有涵蓋它。
+
+**已驗證結果**：
+
+1. 掃描部署 repo `content/` 全部筆記，列出「筆記嵌在另一篇筆記裡、而且被嵌的筆記含 base」的所有情況：實際只有 考古題筆記 → 考古題關鍵字統計 一處；另外 3 處符合條件的寫法都在排查筆記的反引號裡，是範例文字，不會真的嵌入
+2. 修改前先備份整份 `public/`，修改後完整 build，逐一比對全站 HTML：只有 4 個頁面不同——考古題筆記（嵌入段落的 not found 變成 76 根長條，和獨立頁面完全一致；嵌入段落以外的內容逐字相同，自己的 Exam Practice Analysis 嵌入正常）；3 個 canvas 頁面（vault架構與系統、實際工作系統、高普考準備工作流）只多了新的 `data-qz-bases-source` 屬性，其他內容相同，仍是 9.9 的空白狀態，沒有變好也沒有變壞
+3. 網站上沒有實例的寫法，用一篇暫時的測試筆記驗證：外層頁面自己沒有 base、只嵌入某個標題段落（`![[Past Exam Keyword Statistics#網站專用-關鍵字統計圖表]]`）→ 76 根長條正常；嵌入有兩個 base 的 [[Task Management]] → 本月統計圖（5 根長條）和月曆各自對到正確的 base，沒有錯置。測完刪除測試筆記
+4. 瀏覽器實際打開考古題筆記截圖，確認嵌入的圖表和上方的 Exam Practice Analysis 表格都正常；Graph 用無副檔名網址確認正常（見上面踩到的坑）
+5. commit 並 push 到 `v5` 分支（`46889759`）

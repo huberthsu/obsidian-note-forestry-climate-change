@@ -659,3 +659,40 @@ board／kanban 的欄位標題沒動：網站上目前沒有用 wikilink 分欄�
 3. 網站上沒有實例的寫法，用一篇暫時的測試筆記驗證：外層頁面自己沒有 base、只嵌入某個標題段落（`![[Past Exam Keyword Statistics#網站專用-關鍵字統計圖表]]`）→ 76 根長條正常；嵌入有兩個 base 的 [[Task Management]] → 本月統計圖（5 根長條）和月曆各自對到正確的 base，沒有錯置。測完刪除測試筆記
 4. 瀏覽器實際打開考古題筆記截圖，確認嵌入的圖表和上方的 Exam Practice Analysis 表格都正常；Graph 用無副檔名網址確認正常（見上面踩到的坑）
 5. commit 並 push 到 `v5` 分支（`46889759`）
+
+---
+
+## ✅ 7.24 Bases「chart」檢視的「完成考古題參考答案」改成自動計算——Obsidian 端改了算法，網站端寫死的屬性名稱跟著失效
+
+**問題**：每份考古題筆記新增了 `參考答案已完成` checkbox 欄位（寫完參考答案就勾），[[Task Management]] 的「完成考古題參考答案」也從手動 +1 的 `本月完成考古題參考答案` 屬性，改成跟「考古題練習」一樣的月初基準算法：本月完成數 = 勾選 `參考答案已完成` 的考古題筆記篇數 − `本月考古題參考答案_月初基準`。Obsidian 端的 `dataviewjs` 圖表改完就能用，但網站上的長條圖不會跟著變。
+
+**原因**：網站上那張圖不是讀 Obsidian 的設定，而是 [[Quartz troubleshooting - properties and data display#✅ 7.19|7.19]] 寫在 `vendor/bases-page/src/components/views/chart.tsx` 的 `TaskManagementChart`，屬性名稱寫死在程式碼裡：`toNumber(props["本月完成考古題參考答案"])`。vault 拿掉這個屬性後，Syncer 發布的 Task Management 也不會再有它，`toNumber(undefined)` 回傳 0，那根長條會永遠顯示 0，不會報錯，很容易沒發現。
+
+**排查過程**：
+
+1. 一開始以為網站版是通用的 Bases chart 檢視，會把 Task Management 所有數值屬性都畫出來，擔心拿掉手動屬性後會多出一根「月初基準 = 2」的長條
+2. 讀 `chart.tsx` 才確認是寫死的 5 根長條，只讀固定幾個屬性名稱——不會多畫，但那根長條會變 0
+
+**解決方法**：
+
+1. `chart.tsx` 刪掉 `manualAnswerKeys`，改成和 Obsidian 端同一套算法：
+   - `answerBaseline` 讀 Task Management 的 `本月考古題參考答案_月初基準`
+   - `answerTotal` 算 `hasCategory(e, "Exam notes")` 且 `e.properties?.["參考答案已完成"] === true` 的筆記數量（checkbox 在 frontmatter 是 YAML 布林值，解析後就是 `true`）
+   - 長條值為 `Math.max(0, answerTotal - answerBaseline)`
+2. `node vendor/bases-page/build.mjs` 重新編譯 `dist/`（見 [[Quartz troubleshooting - properties and data display#✅ 7.10|7.10]]）；確認 `dist/` 的 diff 只有這段邏輯
+
+**踩到的坑**：
+
+- **改 `chart.tsx` 時用 Python 字串比對替換一直失敗**：一是 Git Bash 的 heredoc 把中文傳給 Python 時被 Windows 主控台編碼弄成亂碼；改用 UTF-8 腳本檔後還是失敗，原因是 `chart.tsx` 是 CRLF 換行，比對字串用 `\n` 對不上。之後改這個 repo 的原始碼，直接用編輯工具改，或先用 `file` 指令確認換行格式
+- **`dist/` 裡 grep 不到中文屬性名稱**：esbuild 會把中文轉成 `\uXXXX` 跳脫字元，所以 `grep "本月考古題參考答案_月初基準" dist/index.js` 會是 0 筆，不代表沒編譯進去；要看 `git diff` 確認
+
+**已驗證結果**：
+
+1. 比照 7.19 的做法，暫時修改部署 repo 本機 `content/`：Task Management 換成新的基準屬性（值為 2），157 篇考古題筆記依 vault 目前的值補上 `參考答案已完成`（4 篇 true，其中 2 篇是測試用）
+2. 完整跑 `node ./quartz/bootstrap-cli.mjs build`，輸出 HTML 沒有 build 錯誤，「完成考古題參考答案」長條數字是 2（4 − 2），其他 4 根照常
+3. 啟動會自動補 `.html` 的本機伺服器，用瀏覽器打開無副檔名網址截圖，確認長條圖顯示正常
+4. 測完 `git checkout -- content/` 還原，只留下 `chart.tsx` 和 `dist/` 的修改
+5. commit 並 push 到 `v5` 分支（`9b5a4f4e`）；正式網站要等 Syncer 發布 157 篇考古題筆記、Task Management 之後才看得到新數字
+
+> [!tip] Obsidian 端的統計算法一改，就要回頭檢查網站端
+> 網站版圖表是另外寫的程式碼，不會讀 Obsidian 的 `dataviewjs`。以後 [[Task Management]] 的統計屬性改名、刪除或改算法，都要同步改 `chart.tsx`，而且要用本機 build 確認數字，因為屬性對不上時只會顯示 0，不會報錯。

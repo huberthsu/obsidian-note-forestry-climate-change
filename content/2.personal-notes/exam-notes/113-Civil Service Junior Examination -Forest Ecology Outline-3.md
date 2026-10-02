@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 森林生態系碳循環過程
-created: 2026-09-05T08:15:22.325Z
-modified: 2026-09-05T09:26:07.095Z
-published: 2026-09-05T09:26:07.095Z
+created: 2026-10-02T06:06:19.014Z
+modified: 2026-10-02T06:06:47.214Z
+published: 2026-10-02T06:06:47.214Z
 tags:
   - 碳循環
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 請說明森林生態系碳循環（carbon cycling）的過程。（20 分）

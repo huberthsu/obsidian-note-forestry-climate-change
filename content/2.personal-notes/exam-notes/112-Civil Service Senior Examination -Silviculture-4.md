@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 植樹造林與聯合國永續發展目標（SDGs）之關聯
-created: 2026-09-05T08:14:02.855Z
-modified: 2026-09-05T09:25:28.507Z
-published: 2026-09-05T09:25:28.507Z
+created: 2026-10-02T06:06:18.782Z
+modified: 2026-10-02T06:06:18.802Z
+published: 2026-10-02T06:06:18.802Z
 tags:
   - 永續發展目標
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 試說明植樹造林可協助達成那些聯合國永續發展目標（SDGs）。（25分）

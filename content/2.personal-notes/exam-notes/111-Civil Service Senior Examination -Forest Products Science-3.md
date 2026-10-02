@@ -1,9 +1,9 @@
 ---
 publish: true
 title: CLT製造工序與LVL之異同比較
-created: 2026-09-05T08:14:25.245Z
-modified: 2026-09-05T08:14:25.247Z
-published: 2026-09-05T08:14:25.247Z
+created: 2026-10-02T06:06:16.049Z
+modified: 2026-10-02T06:06:46.951Z
+published: 2026-10-02T06:06:46.951Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 木材具有異向性（Anisotropic properties），請說明近年來新興工程材料之一，直交式集成板材（Cross-laminated timber, CLT）之製造工序，並請比較與單板層積材（Laminated veneer lumber, LVL）之異同。（25 分）

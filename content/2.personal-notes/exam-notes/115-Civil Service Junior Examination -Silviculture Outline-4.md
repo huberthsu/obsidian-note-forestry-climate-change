@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 崩塌地植生材料選取本地植物之優缺點
-created: 2026-09-05T14:07:56.318Z
-modified: 2026-09-05T14:07:56.319Z
-published: 2026-09-05T14:07:56.319Z
+created: 2026-10-02T06:06:24.361Z
+modified: 2026-10-02T06:06:24.380Z
+published: 2026-10-02T06:06:24.380Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 試說明崩塌地植生材料選取本地植物的優缺點。（25 分）

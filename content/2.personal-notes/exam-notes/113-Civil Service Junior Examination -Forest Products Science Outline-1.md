@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 淨零碳排趨勢下林產業之因應策略
-created: 2026-09-05T08:16:08.155Z
-modified: 2026-09-05T08:16:08.155Z
-published: 2026-09-05T08:16:08.155Z
+created: 2026-10-02T06:06:19.525Z
+modified: 2026-10-02T06:06:47.455Z
+published: 2026-10-02T06:06:47.455Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 在全球朝向淨零碳排放的趨勢下，林產業如何因應？（25 分）

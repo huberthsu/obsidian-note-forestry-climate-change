@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 同齡林與異齡林之定義與優缺點比較
-created: 2026-09-05T08:14:11.221Z
-modified: 2026-09-05T08:14:11.222Z
-published: 2026-09-05T08:14:11.222Z
+created: 2026-10-02T06:06:21.223Z
+modified: 2026-10-02T06:06:48.232Z
+published: 2026-10-02T06:06:48.232Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 請定義同齡林及異齡林，並比較其特性的優缺點。（25 分）

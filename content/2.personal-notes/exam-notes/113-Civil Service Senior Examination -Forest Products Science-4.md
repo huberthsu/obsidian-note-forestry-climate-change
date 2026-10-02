@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 人工林永續經營與木材資源循環
-created: 2026-09-05T08:14:49.296Z
-modified: 2026-09-05T08:14:49.296Z
-published: 2026-09-05T08:14:49.296Z
+created: 2026-10-02T06:06:20.941Z
+modified: 2026-10-02T06:06:48.101Z
+published: 2026-10-02T06:06:48.101Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 試申論人工林永續經營與木材資源循環。（25 分）

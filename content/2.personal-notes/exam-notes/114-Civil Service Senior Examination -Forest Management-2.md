@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 森林療癒之定義臺灣現況與未來契機挑戰
-created: 2026-09-05T08:14:21.768Z
-modified: 2026-09-06T17:59:35.844Z
-published: 2026-09-06T17:59:35.844Z
+created: 2026-10-02T06:06:22.774Z
+modified: 2026-10-02T06:06:22.801Z
+published: 2026-10-02T06:06:22.801Z
 tags:
   - 森林療癒
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 試述何謂「森林療癒（forest therapy）」？說明臺灣發展之現況以及論述未來的契機與挑戰？（25 分）

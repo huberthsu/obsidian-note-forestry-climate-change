@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 森林經營名詞解釋（收穫表等五則）
-created: 2026-09-05T08:15:35.233Z
-modified: 2026-09-05T08:15:35.233Z
-published: 2026-09-05T08:15:35.233Z
+created: 2026-10-02T06:06:17.022Z
+modified: 2026-10-02T06:06:17.046Z
+published: 2026-10-02T06:06:17.046Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 請試述下列名詞之意涵：（每小題5分，共25分）

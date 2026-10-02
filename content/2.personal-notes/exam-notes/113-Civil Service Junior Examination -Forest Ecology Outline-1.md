@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 森林演替相關名詞解釋
-created: 2026-09-05T08:15:16.932Z
-modified: 2026-09-05T09:25:43.802Z
-published: 2026-09-05T09:25:43.802Z
+created: 2026-10-02T06:06:18.861Z
+modified: 2026-10-02T06:06:47.148Z
+published: 2026-10-02T06:06:47.148Z
 tags:
   - 森林演替
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 請試述下列名詞之意涵：（每小題 4 分，共 20 分）

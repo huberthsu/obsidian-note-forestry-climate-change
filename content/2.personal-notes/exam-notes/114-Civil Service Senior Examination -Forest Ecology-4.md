@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 森林界線樹木界線林木界線與邊緣效應之關係
-created: 2026-09-05T08:13:53.244Z
-modified: 2026-09-06T17:54:32.117Z
-published: 2026-09-06T17:54:32.117Z
+created: 2026-10-02T06:06:22.619Z
+modified: 2026-10-02T06:06:22.641Z
+published: 2026-10-02T06:06:22.641Z
 tags:
   - 樹木界線
   - 林木界線
@@ -26,6 +26,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 請解釋森林界線（Forest line）、樹木界線（Tree line）、林木界線（Timber line）及邊緣效應（Edge effect）。並說明邊緣效應與前三者之關係。（25 分）

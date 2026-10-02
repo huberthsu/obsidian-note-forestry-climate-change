@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 初生產力總初生產力淨初生產力與淨社會生產力之關係
-created: 2026-09-05T08:13:49.908Z
-modified: 2026-09-05T10:00:28.470Z
-published: 2026-09-05T10:00:28.470Z
+created: 2026-10-02T06:06:22.548Z
+modified: 2026-10-02T06:06:22.570Z
+published: 2026-10-02T06:06:22.570Z
 tags:
   - 森林生產力
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 請解釋初生產力（Primary productivity）、總初生產力（Gross primary productivity）、淨初生產力（Net primary productivity）及淨社會生產力（Net community productivity）。並說明後三者間有何關係？（25 分）

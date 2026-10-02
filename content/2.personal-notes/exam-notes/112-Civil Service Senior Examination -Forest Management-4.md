@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 森林經營相關名詞解釋（Reference age等五則）
-created: 2026-09-05T08:14:17.072Z
-modified: 2026-09-05T08:14:17.073Z
-published: 2026-09-05T08:14:17.073Z
+created: 2026-10-02T06:06:18.218Z
+modified: 2026-10-02T06:06:18.239Z
+published: 2026-10-02T06:06:18.239Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 請試述下列名詞之意涵：（每小題5分，共25分）

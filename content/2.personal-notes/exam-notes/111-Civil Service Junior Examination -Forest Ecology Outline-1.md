@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 耐受限度三定律：Liebig、Shelford、Odum
-created: 2026-09-05T08:14:53.883Z
-modified: 2026-09-05T12:52:24.163Z
-published: 2026-09-05T12:52:24.163Z
+created: 2026-10-02T06:06:13.991Z
+modified: 2026-10-02T06:06:46.098Z
+published: 2026-10-02T06:06:46.098Z
 tags:
   - 耐受限度
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 生物對非生物因子有其一定的耐受限度，環境特性會決定生物出現的種類與數量。請說明：

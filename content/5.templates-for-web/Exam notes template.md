@@ -3,9 +3,9 @@ publish: true
 aliases:
   - 考古題筆記模板
 title: 考古題筆記模板
-created: 2026-08-10T23:40:51.953Z
-modified: 2026-09-05T03:37:46.573Z
-published: 2026-09-05T03:37:46.573Z
+created: 2026-10-02T06:06:25.637Z
+modified: 2026-10-02T06:06:48.753Z
+published: 2026-10-02T06:06:48.753Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -35,6 +35,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 題目

@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 低溫健化定義三階段與達成方式
-created: 2026-09-05T14:07:53.406Z
-modified: 2026-09-05T14:27:43.493Z
-published: 2026-09-05T14:27:43.493Z
+created: 2026-10-02T06:06:24.296Z
+modified: 2026-10-02T06:06:24.314Z
+published: 2026-10-02T06:06:24.314Z
 tags:
   - 健化
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 何謂低溫健化（cold hardiness）﹖（5 分）可分為那三個階段？（10 分）如何達到健化效果？（10 分）

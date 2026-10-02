@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 胸高形數之獲得與區分求積法步驟
-created: 2026-09-05T08:15:55.787Z
-modified: 2026-09-05T09:29:59.280Z
-published: 2026-09-05T09:29:59.280Z
+created: 2026-10-02T06:06:19.381Z
+modified: 2026-10-02T06:06:47.383Z
+published: 2026-10-02T06:06:47.383Z
 tags:
   - 區分求積法
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 單一樹種之 Form factor at breast height 如何獲得？請說明林木自從伐倒後，採用區分求積法獲得 Form factor at breast height 的步驟。（25 分）

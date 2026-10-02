@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 樹高幹長測計類型與正切法測高
-created: 2026-09-05T08:15:24.586Z
-modified: 2026-09-05T08:15:24.586Z
-published: 2026-09-05T08:15:24.586Z
+created: 2026-10-02T06:06:16.782Z
+modified: 2026-10-02T06:06:16.804Z
+published: 2026-10-02T06:06:16.804Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 立木測計時，樹高及幹長的類型有那些？以測量儀器採用三角學原理間接測定樹高時，試述正切法（Tangent method）與標桿正切法（Pole tangent method）測定樹高的內容。（25分）

@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 集成材之定義製造與性能特徵
-created: 2026-09-05T08:14:46.470Z
-modified: 2026-09-05T08:14:46.470Z
-published: 2026-09-05T08:14:46.470Z
+created: 2026-10-02T06:06:20.872Z
+modified: 2026-10-02T06:06:48.069Z
+published: 2026-10-02T06:06:48.069Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 何謂集成材（Glulam）？並說明集成材之製造及其性能與特徵。（25 分）

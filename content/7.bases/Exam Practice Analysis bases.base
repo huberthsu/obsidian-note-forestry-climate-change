@@ -104,3 +104,14 @@ views:
       - file.name
       - tags
     startDate: note.下次複習時間
+  - type: table
+    name: 參考答案是否完成
+    groupBy:
+      property: 參考答案已完成
+      direction: DESC
+    order:
+      - file.name
+      - title
+      - 科目
+      - tags
+    sort: []

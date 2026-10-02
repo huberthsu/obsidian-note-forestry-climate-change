@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 林分密度指數與相對密度之計算應用
-created: 2026-09-05T08:15:27.774Z
-modified: 2026-09-05T09:15:49.205Z
-published: 2026-09-05T09:15:49.205Z
+created: 2026-10-02T06:06:16.856Z
+modified: 2026-10-02T06:06:16.878Z
+published: 2026-10-02T06:06:16.878Z
 tags:
   - 林分密度
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 何謂林分密度指數（Stand density index）？如何計算林分相對密度？應用在林分密度管理時，其意義為何？（25分）

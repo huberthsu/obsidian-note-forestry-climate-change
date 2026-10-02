@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 森林發育演替趨勢之變化面向
-created: 2026-09-05T08:15:25.649Z
-modified: 2026-09-05T08:15:25.649Z
-published: 2026-09-05T08:15:25.649Z
+created: 2026-10-02T06:06:19.086Z
+modified: 2026-10-02T06:06:47.247Z
+published: 2026-10-02T06:06:47.247Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 試說明森林發育上的演替趨勢包括那些面向的變化。（20 分）

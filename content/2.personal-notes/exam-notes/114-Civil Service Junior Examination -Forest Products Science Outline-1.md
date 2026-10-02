@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 環境調和型材料之定義與木材再資源化延長使用年限
-created: 2026-09-05T08:16:06.713Z
-modified: 2026-09-05T08:16:06.714Z
-published: 2026-09-05T08:16:06.714Z
+created: 2026-10-02T06:06:21.846Z
+modified: 2026-10-02T06:06:21.868Z
+published: 2026-10-02T06:06:21.868Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 木材在材料領域稱之為生態材料，其被理解為環境調和型材料（Environmental conscious materials）。請說明環境調和型材料之定義，並詳述木材可如何透過再資源化延長使用年限。（25 分）

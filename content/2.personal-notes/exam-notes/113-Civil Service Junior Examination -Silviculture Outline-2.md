@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 種子儲藏之理由
-created: 2026-09-05T08:15:38.630Z
-modified: 2026-09-05T10:03:06.631Z
-published: 2026-09-05T10:03:06.631Z
+created: 2026-10-02T06:06:19.891Z
+modified: 2026-10-02T06:06:47.641Z
+published: 2026-10-02T06:06:47.641Z
 tags:
   - 種子儲藏
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 請說明進行種子儲藏的理由。（25 分）

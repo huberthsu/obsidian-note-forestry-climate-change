@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 指標植物選擇之要件
-created: 2026-09-05T08:13:49.273Z
-modified: 2026-09-06T17:54:41.282Z
-published: 2026-09-06T17:54:41.282Z
+created: 2026-10-02T06:06:20.122Z
+modified: 2026-10-02T06:06:47.740Z
+published: 2026-10-02T06:06:47.740Z
 tags:
   - 指標植物
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 請詳細說明選擇指標植物應考慮的要件。（25 分）

@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 木材生物質來源與生質能源轉換技術
-created: 2026-09-05T08:14:28.898Z
-modified: 2026-09-05T08:14:28.899Z
-published: 2026-09-05T08:14:28.899Z
+created: 2026-10-02T06:06:16.121Z
+modified: 2026-10-02T06:06:46.983Z
+published: 2026-10-02T06:06:46.983Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 木材為自然界最豐富的可再生性資源之一，請詳述現今以木材作為生物質（Biomass）來源與種類，並說明現今可行性之生質能源（Biomass Energy）轉換技術。（25 分）

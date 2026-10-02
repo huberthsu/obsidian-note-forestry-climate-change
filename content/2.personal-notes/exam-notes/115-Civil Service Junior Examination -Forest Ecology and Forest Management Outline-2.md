@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 承載量意義影響因素與森林資源管理意義
-created: 2026-09-05T14:07:33.949Z
-modified: 2026-09-05T14:21:43.291Z
-published: 2026-09-05T14:21:43.291Z
+created: 2026-10-02T06:06:23.667Z
+modified: 2026-10-02T06:06:23.687Z
+published: 2026-10-02T06:06:23.687Z
 tags:
   - 承載量
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 請說明承載量（Carrying capacity）的意義，（5 分）影響承載量的主要因素，（10 分）以及對森林生態系資源管理上的意義。（10 分）

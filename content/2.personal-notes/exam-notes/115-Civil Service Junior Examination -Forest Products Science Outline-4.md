@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 木材三大化學成分與其功能
-created: 2026-09-05T14:07:27.402Z
-modified: 2026-09-05T14:07:27.403Z
-published: 2026-09-05T14:07:27.403Z
+created: 2026-10-02T06:06:24.089Z
+modified: 2026-10-02T06:06:24.110Z
+published: 2026-10-02T06:06:24.110Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 請說明木材的三大主要化學成分，及其各自的基本功能。（25 分）

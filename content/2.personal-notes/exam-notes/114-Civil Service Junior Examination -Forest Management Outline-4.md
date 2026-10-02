@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 人工林碳吸存之估算方法
-created: 2026-09-05T08:16:02.511Z
-modified: 2026-09-05T09:56:29.589Z
-published: 2026-09-05T09:56:29.589Z
+created: 2026-10-02T06:06:21.774Z
+modified: 2026-10-02T06:06:21.796Z
+published: 2026-10-02T06:06:21.796Z
 tags:
   - 碳吸存
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 試述人工林碳吸存的估算方法？（25 分）

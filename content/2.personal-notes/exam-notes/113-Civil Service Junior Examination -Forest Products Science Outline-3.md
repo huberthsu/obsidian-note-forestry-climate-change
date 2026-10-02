@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 單板層積材與纖維石膏板之特色
-created: 2026-09-05T08:16:16.431Z
-modified: 2026-09-05T08:16:16.431Z
-published: 2026-09-05T08:16:16.431Z
+created: 2026-10-02T06:06:19.676Z
+modified: 2026-10-02T06:06:47.523Z
+published: 2026-10-02T06:06:47.523Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 試述單板層積材與纖維石膏板之特色。（25 分）

@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 人工林劣化原因與育林改良策略
-created: 2026-09-05T08:15:35.845Z
-modified: 2026-09-05T08:15:35.846Z
-published: 2026-09-05T08:15:35.846Z
+created: 2026-10-02T06:06:19.815Z
+modified: 2026-10-02T06:06:47.609Z
+published: 2026-10-02T06:06:47.609Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 請說明人工林劣化的原因與育林改良策略。（25 分）

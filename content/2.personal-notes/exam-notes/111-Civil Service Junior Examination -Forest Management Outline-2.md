@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 林分立木度意義與立木度圖應用
-created: 2026-09-05T08:15:26.943Z
-modified: 2026-09-05T12:53:02.507Z
-published: 2026-09-05T12:53:02.507Z
+created: 2026-10-02T06:06:14.453Z
+modified: 2026-10-02T06:06:46.264Z
+published: 2026-10-02T06:06:46.264Z
 tags:
   - 立木度
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 請說明林分立木度（stand stocking）的意義、林分立木度圖（stocking chart）的構成要素以及林分立木度圖在森林資源管理上的應用。（25 分）

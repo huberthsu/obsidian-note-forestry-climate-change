@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 名目利率與實質利率於林業經濟折現分析之應用
-created: 2026-09-05T08:15:31.777Z
-modified: 2026-09-06T18:14:15.997Z
-published: 2026-09-06T18:14:15.997Z
+created: 2026-10-02T06:06:16.938Z
+modified: 2026-10-02T06:06:16.960Z
+published: 2026-10-02T06:06:16.960Z
 tags:
   - 林業經濟學
 category:
@@ -23,6 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 試說明名目利率（Nominal rate）與實質利率（Real rate）兩者的關係。在計算淨現值與林地期望價之林業經濟分析時，上述何者較適於作為折現率（Discount rate）使用？（25分）

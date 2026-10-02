@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 臺灣欅之撫育作業與修枝步驟
-created: 2026-09-05T08:15:17.312Z
-modified: 2026-09-05T08:15:17.312Z
-published: 2026-09-05T08:15:17.312Z
+created: 2026-10-02T06:06:17.568Z
+modified: 2026-10-02T06:06:17.592Z
+published: 2026-10-02T06:06:17.592Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -22,6 +22,7 @@ tags:
 date:
 下次複習時間:
 已練習次數:
+參考答案已完成: false
 ---
 
 # 試說明臺灣櫸之撫育作業與修枝步驟。（25分）

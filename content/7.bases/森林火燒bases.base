@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.tags.contains("森林火燒")
+views:
+  - type: table
+    name: 表格
+    groupBy:
+      property: category
+      direction: ASC
+    order:
+      - file.name
+      - tags

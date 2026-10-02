@@ -2,10 +2,11 @@
 publish: true
 title: 森林火災災害預防階段應重視之工作項目與作為
 created: 2026-10-02T06:06:22.854Z
-modified: 2026-10-02T06:51:33.006Z
-published: 2026-10-02T06:51:33.006Z
+modified: 2026-10-02T09:22:54.795Z
+published: 2026-10-02T09:22:54.795Z
 tags:
   - 森林火燒
+  - 森林火燒防救
 category:
   - "[[Exam notes]]"
 考題年分: 2025

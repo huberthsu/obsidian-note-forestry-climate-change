@@ -2,8 +2,8 @@
 publish: true
 title: 林火燃燒關鍵因素、類型與管理方法
 created: 2026-10-02T06:06:15.673Z
-modified: 2026-10-02T06:51:30.395Z
-published: 2026-10-02T06:51:30.395Z
+modified: 2026-10-04T07:56:13.156Z
+published: 2026-10-04T07:56:13.156Z
 tags:
   - 森林火燒
 category:
@@ -42,5 +42,9 @@ date:
 # 參考答案
 
 # 關聯筆記
+
+- [[Forest fire|森林火燒]]
+- [[Types and characteristics of forest fires|森林火燒類型與特性]]
+- [[Forest Fire Prevention and Rescue|台灣森林火災災害防救方法]]
 
 # 參考資料

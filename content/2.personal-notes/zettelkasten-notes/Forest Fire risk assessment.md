@@ -5,16 +5,18 @@ aliases:
   - "#森林火燒風險評估"
 title: 森林火燒風險評估
 created: 2026-10-02T10:31:45.922Z
-modified: 2026-10-02T15:42:20.796Z
-published: 2026-10-02T15:42:20.796Z
+modified: 2026-10-03T10:30:08.572Z
+published: 2026-10-03T10:30:08.572Z
 tags:
   - 火燒風險評估
+  - 森林火燒防救
 category:
   - "[[Zettelkasten notes]]"
 摘要:
 in:
   - 2.personal-notes
 parent:
+  - "[[Forest Fire Prevention and Rescue|台灣森林火災災害防救方法]]"
 sibling:
 child:
 password:

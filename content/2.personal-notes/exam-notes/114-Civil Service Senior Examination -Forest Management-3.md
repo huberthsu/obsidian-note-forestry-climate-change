@@ -2,8 +2,8 @@
 publish: true
 title: 森林火災災害預防階段應重視之工作項目與作為
 created: 2026-10-02T06:06:22.854Z
-modified: 2026-10-02T09:22:54.795Z
-published: 2026-10-02T09:22:54.795Z
+modified: 2026-10-03T10:19:20.193Z
+published: 2026-10-03T10:19:20.193Z
 tags:
   - 森林火燒
   - 森林火燒防救
@@ -43,5 +43,7 @@ date:
 # 參考答案
 
 # 關聯筆記
+
+- [[Forest Fire Prevention and Rescue|台灣森林火災災害防救方法]]
 
 # 參考資料

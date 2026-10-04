@@ -4,10 +4,11 @@ aliases:
   - "#森林火燒"
   - 森林火燒
   - 森林火災
+  - 林火
 title: 森林火燒
 created: 2026-10-02T08:11:21.123Z
-modified: 2026-10-04T08:43:11.576Z
-published: 2026-10-04T08:43:11.576Z
+modified: 2026-10-04T15:02:54.381Z
+published: 2026-10-04T15:02:54.381Z
 tags:
   - 森林火燒
 category:

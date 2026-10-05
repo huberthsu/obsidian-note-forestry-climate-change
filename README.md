@@ -1,9 +1,10 @@
 # 這是以森林與氣候變遷為主題的 Obsidian 知識庫數位花園(digital garden)
- * 筆記、資料夾之間的連接: 筆記以category 紀錄筆記類型；以tags 標示筆記涉及的概念；以 wikilink 與 parent／sibling／child 屬性串聯筆記。
- * 資料彙整與呈現:各類筆記透過 Obsidian Bases 彙整成資料庫視圖，再搭配 Canvas 呈現整體工作流
- * ai agent協作: 部分筆記是我和ai-agent依自訂規則協作整理而成
+ * 筆記之間的連結: 以屬性欄位串聯筆記。'category'定義筆記種類；'tags'為筆記涉及的概念；以wikilink與 'parent'／'sibling'／'child'呈現筆記之間的層級關聯。
+ * 資料彙整與呈現:各類筆記透過Obsidian Bases彙整成資料庫視圖，再搭配Canvas呈現整體工作流
+ * AI agent協作: 部分筆記是我和AI agent依自訂規則協作整理而成
  * 目前仍持續增修，內容僅供參考
 🌱 網站：https://obsidian-note-forestry-climate-change.hubertxx1211.workers.dev
+*網站以 Quartz v5 (https://quartz.jzhao.xyz/) 建置
 
 # Quartz v5
 

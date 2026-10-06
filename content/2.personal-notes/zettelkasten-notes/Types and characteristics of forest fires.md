@@ -4,8 +4,8 @@ aliases:
   - 森林火燒類型與特性
 title: 森林火燒類型與特性
 created: 2026-10-02T15:39:52.981Z
-modified: 2026-10-04T15:05:23.286Z
-published: 2026-10-04T15:05:23.286Z
+modified: 2026-10-06T09:26:53.546Z
+published: 2026-10-06T09:26:53.546Z
 tags:
   - 地表火
   - 地下火
@@ -18,13 +18,14 @@ in:
   - 2.personal-notes
 parent:
 sibling:
+  - "[[Forest fire type transition mechanism|林火類型轉變機制與閾值]]"
 child:
 password:
 ---
 
 # 森林火燒類型與特性
 
-## 樹冠火
+## 樹冠火(crown fires)
 
 - 多數由地表火引起，少數由雷電引燃
 - 樹種影響
@@ -35,13 +36,13 @@ password:
 - 蔓延速度快
 - 不易撲滅
 
-## 地表火
+## 地表火(surface fires)
 
 - 發生頻率高
 - 蔓延速度快
 - 撲滅容易
 
-## 地下火
+## 地下火(ground fires )
 
 - 隱蔽
   - 於腐植質或地下泥炭層悶燒
@@ -63,13 +64,14 @@ password:
 
 - parent理由
 - sibling理由
+  - [[Forest fire type transition mechanism|林火類型轉變機制]]-不同林火類型之間可能會互相轉換
 - child理由
 
 # 來源
 
 # 我的其他思考
 
-之後可能可以建立的相關筆記: [[林火類型轉變機制與閾值]]、[[不同類型林火對立木與森林的影響比較]]
+之後可能可以建立的相關筆記: [[不同類型林火對立木與森林的影響比較]]
 
 ---
 

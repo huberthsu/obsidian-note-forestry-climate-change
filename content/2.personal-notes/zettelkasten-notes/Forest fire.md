@@ -7,8 +7,8 @@ aliases:
   - 林火
 title: 森林火燒
 created: 2026-10-02T08:11:21.123Z
-modified: 2026-10-04T15:02:54.381Z
-published: 2026-10-04T15:02:54.381Z
+modified: 2026-10-06T03:27:02.289Z
+published: 2026-10-06T03:27:02.289Z
 tags:
   - 森林火燒
 category:

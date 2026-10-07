@@ -58,7 +58,6 @@ const TaskManagementChart: ViewRenderer = ({ entries, locale, total }) => {
   const manualReview = toNumber(props["本月卡片盒筆記回顧"]);
   const manualQuiz = toNumber(props["本月英文測驗練習"]);
   const examBaseline = toNumber(props["本月考古題練習_月初基準"]);
-  const answerBaseline = toNumber(props["本月考古題參考答案_月初基準"]);
 
   const englishCount = entries.filter(
     (e) => hasCategory(e, "English learning notes") && monthKey(e.properties?.["date"]) === thisMonth,
@@ -69,10 +68,9 @@ const TaskManagementChart: ViewRenderer = ({ entries, locale, total }) => {
     .reduce((sum, e) => sum + toNumber(e.properties?.["已練習次數"]), 0);
   const examMonthCount = Math.max(0, examTotal - examBaseline);
 
-  const answerTotal = entries.filter(
-    (e) => hasCategory(e, "Exam notes") && e.properties?.["參考答案已完成"] === true,
+  const answerMonthCount = entries.filter(
+    (e) => hasCategory(e, "Exam notes") && monthKey(e.properties?.["參考答案完成日期"]) === thisMonth,
   ).length;
-  const answerMonthCount = Math.max(0, answerTotal - answerBaseline);
 
   const bars: Bar[] = [
     { label: "完成考古題參考答案", value: answerMonthCount, color: GREEN },

@@ -13533,16 +13533,14 @@ var TaskManagementChart = ({ entries, locale, total }) => {
   const manualReview = toNumber3(props["\u672C\u6708\u5361\u7247\u76D2\u7B46\u8A18\u56DE\u9867"]);
   const manualQuiz = toNumber3(props["\u672C\u6708\u82F1\u6587\u6E2C\u9A57\u7DF4\u7FD2"]);
   const examBaseline = toNumber3(props["\u672C\u6708\u8003\u53E4\u984C\u7DF4\u7FD2_\u6708\u521D\u57FA\u6E96"]);
-  const answerBaseline = toNumber3(props["\u672C\u6708\u8003\u53E4\u984C\u53C3\u8003\u7B54\u6848_\u6708\u521D\u57FA\u6E96"]);
   const englishCount = entries.filter(
     (e2) => hasCategory(e2, "English learning notes") && monthKey(e2.properties?.["date"]) === thisMonth
   ).length;
   const examTotal = entries.filter((e2) => hasCategory(e2, "Exam notes")).reduce((sum, e2) => sum + toNumber3(e2.properties?.["\u5DF2\u7DF4\u7FD2\u6B21\u6578"]), 0);
   const examMonthCount = Math.max(0, examTotal - examBaseline);
-  const answerTotal = entries.filter(
-    (e2) => hasCategory(e2, "Exam notes") && e2.properties?.["\u53C3\u8003\u7B54\u6848\u5DF2\u5B8C\u6210"] === true
+  const answerMonthCount = entries.filter(
+    (e2) => hasCategory(e2, "Exam notes") && monthKey(e2.properties?.["\u53C3\u8003\u7B54\u6848\u5B8C\u6210\u65E5\u671F"]) === thisMonth
   ).length;
-  const answerMonthCount = Math.max(0, answerTotal - answerBaseline);
   const bars = [
     { label: "\u5B8C\u6210\u8003\u53E4\u984C\u53C3\u8003\u7B54\u6848", value: answerMonthCount, color: GREEN },
     { label: "\u82F1\u6587\u5B78\u7FD2\u7B46\u8A18", value: englishCount, color: BLUE },

@@ -81,19 +81,30 @@ const KanbanView: ViewRenderer = ({
     ? rawColumnOrder.filter((v): v is string => typeof v === "string")
     : [];
 
+  // Obsidian 1.14's native `type: kanban` instead stores `groupOrder`: when
+  // it is a list, only the listed groups are shown, in that order. YAML
+  // parses entries like `true`/`2024` to non-strings, so compare by the same
+  // label the groups are keyed on; `null` stands for the empty-value group.
+  // A non-list `groupOrder` is ignored (Obsidian 1.14.4 tolerates it too).
+  const groupOrder = Array.isArray(view.groupOrder)
+    ? (view.groupOrder as unknown[]).map((v) => (isEmptyValue(v) ? emptyLabel : formatGroupLabel(v)))
+    : undefined;
+
   const orderedGroups: { label: string; entries: BasesEntry[] }[] = [];
   const seenGroups = new Set<string>();
-  for (const key of orderedKeys) {
+  for (const key of groupOrder ?? orderedKeys) {
     const group = groups.get(key);
     if (group && !seenGroups.has(key)) {
       orderedGroups.push(group);
       seenGroups.add(key);
     }
   }
-  for (const [key, group] of groups) {
-    if (!seenGroups.has(key)) {
-      orderedGroups.push(group);
-      seenGroups.add(key);
+  if (!groupOrder) {
+    for (const [key, group] of groups) {
+      if (!seenGroups.has(key)) {
+        orderedGroups.push(group);
+        seenGroups.add(key);
+      }
     }
   }
 
@@ -185,6 +196,13 @@ export const kanbanViewRegistration: ViewTypeRegistration = {
   name: "Kanban",
   icon: "square-kanban",
   render: KanbanView,
+};
+
+// Obsidian 1.14 added a native kanban layout saved as `type: kanban`, with
+// column order/visibility in `groupOrder`; same renderer as `kanban-view`.
+export const nativeKanbanViewRegistration: ViewTypeRegistration = {
+  ...kanbanViewRegistration,
+  id: "kanban",
 };
 
 export { KanbanView };

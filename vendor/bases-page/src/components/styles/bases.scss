@@ -389,7 +389,10 @@ th.is-sorted-desc .bases-table-header-sort {
 }
 
 .bases-board-column {
-  min-width: min(250px, 80vw);
+  // A fixed width (like Obsidian's kanban "Column width") — with only a
+  // min-width the flex basis is the max-content width, so one long title
+  // stretched the column and pushed the other columns out of view.
+  width: min(280px, 80vw);
   flex-shrink: 0;
   border: 1px solid var(--lightgray);
   border-radius: 12px;
@@ -437,6 +440,7 @@ th.is-sorted-desc .bases-table-header-sort {
   flex-direction: column;
   gap: 6px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  overflow-wrap: anywhere;
 }
 
 .bases-board-card-meta {
@@ -454,6 +458,12 @@ th.is-sorted-desc .bases-table-header-sort {
 
 .bases-board-card-label {
   color: var(--gray);
+  flex-shrink: 0;
+}
+
+.bases-board-card-value {
+  min-width: 0;
+  text-align: right;
 }
 
 // Calendar view

@@ -5,7 +5,7 @@ import { calendarViewRegistration } from "./calendar";
 import { cardsViewRegistration } from "./cards";
 import { chartViewRegistration } from "./chart";
 import { galleryViewRegistration } from "./gallery";
-import { kanbanViewRegistration } from "./kanban";
+import { kanbanViewRegistration, nativeKanbanViewRegistration } from "./kanban";
 import { listViewRegistration } from "./list";
 import { tableViewRegistration } from "./table";
 
@@ -22,4 +22,6 @@ export function registerBuiltinViews(): void {
   // column/card ordering under groupByProperty/columnOrders/cardOrders — see
   // kanban.tsx for why that needs its own renderer instead of aliasing board.
   viewRegistry.register(kanbanViewRegistration);
+  // Obsidian 1.14's native kanban layout (`type: kanban`, ordered by `groupOrder`).
+  viewRegistry.register(nativeKanbanViewRegistration);
 }

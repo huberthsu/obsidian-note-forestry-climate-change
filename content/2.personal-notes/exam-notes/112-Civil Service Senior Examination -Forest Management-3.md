@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 森林健康管理意義與監測計畫類型比較
-created: 2026-10-02T06:06:18.148Z
-modified: 2026-10-02T06:06:18.169Z
-published: 2026-10-02T06:06:18.169Z
+created: 2026-10-07T16:54:20.706Z
+modified: 2026-10-07T17:45:32.124Z
+published: 2026-10-07T17:45:32.124Z
 tags:
   - 森林健康
 category:
@@ -16,14 +16,11 @@ category:
 科目:
   - 森林經營學
 最新測驗得分:
-熟悉度評級:
-  - 熟練
-  - 不太熟
-  - 不熟
+熟悉度評級: 待評估
 date:
 下次複習時間:
 已練習次數:
-參考答案已完成: false
+參考答案完成日期:
 ---
 
 # 試述森林健康管理之意義。試區別下列森林健康監測計畫之內容：檢核監測（Detection monitoring）、評估監測（Evaluation monitoring）、密集立地監測（Intensive site monitoring）以及監測技術研究（Research on monitoring techniques）。（25分）

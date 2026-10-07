@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 物種忠誠度與分級、決定方法
-created: 2026-10-02T06:06:24.428Z
-modified: 2026-10-02T06:06:48.267Z
-published: 2026-10-02T06:06:48.267Z
+created: 2026-10-07T16:54:22.035Z
+modified: 2026-10-07T17:45:32.174Z
+published: 2026-10-07T17:45:32.174Z
 tags:
   - 物種忠誠度
 category:
@@ -23,7 +23,7 @@ category:
 date:
 下次複習時間:
 已練習次數:
-參考答案已完成: false
+參考答案完成日期:
 ---
 
 # 何謂物種忠誠度（Species fidelity）？（5 分）請比較 Braun-Blanquet 忠誠度分級法、Phi correlation、Indicator value（IndVal）決定物種忠誠度的方法。（20 分）

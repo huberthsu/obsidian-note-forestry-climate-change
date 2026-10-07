@@ -8,11 +8,16 @@ filters:
 formulas:
   type_label: if(category.contains(link("English learning notes")), "英文學習筆記", if(category.contains(link("Exam notes")), "考古題筆記", "其他"))
   month_label: if(date, date(date).format("YYYY-MM"), "")
+  answer_month_label: 'if(note["參考答案完成日期"], date(note["參考答案完成日期"]).format("YYYY-MM"), "")'
 properties:
   formula.type_label:
     displayName: 類型
   formula.month_label:
     displayName: 月份
+  formula.answer_month_label:
+    displayName: 參考答案完成月份
+  參考答案完成日期:
+    displayName: 參考答案完成日期
 views:
   - type: table
     name: 本月統計
@@ -46,3 +51,30 @@ views:
       - category
       - tags
     startDate: note.date
+  - type: table
+    name: 本月參考答案完成
+    filters:
+      and:
+        - 'if(note["參考答案完成日期"], date(note["參考答案完成日期"]) >= date(today().format("YYYY-MM") + "-01"), false)'
+    order:
+      - file.name
+      - 參考答案完成日期
+      - tags
+    sort:
+      - property: 參考答案完成日期
+        direction: ASC
+    summaries:
+      file.name: Filled
+  - type: table
+    name: 參考答案歷史統計（依月份）
+    filters:
+      and:
+        - 'note["參考答案完成日期"]'
+    groupBy:
+      property: formula.answer_month_label
+      direction: DESC
+    order:
+      - file.name
+      - 參考答案完成日期
+    summaries:
+      file.name: Filled

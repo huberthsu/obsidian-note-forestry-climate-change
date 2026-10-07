@@ -1,9 +1,9 @@
 ---
 publish: true
 title: 生態學名詞解釋（Interference competition等五則）
-created: 2026-10-02T06:06:16.497Z
-modified: 2026-10-02T06:06:16.518Z
-published: 2026-10-02T06:06:16.518Z
+created: 2026-10-07T16:54:20.377Z
+modified: 2026-10-07T17:45:32.112Z
+published: 2026-10-07T17:45:32.112Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -15,14 +15,11 @@ tags:
 科目:
   - 森林生態學概要
 最新測驗得分:
-熟悉度評級:
-  - 熟練
-  - 不太熟
-  - 不熟
+熟悉度評級: 待評估
 date:
 下次複習時間:
 已練習次數:
-參考答案已完成: false
+參考答案完成日期:
 ---
 
 # 請試述下列名詞之意涵：（每小題5分，共25分）

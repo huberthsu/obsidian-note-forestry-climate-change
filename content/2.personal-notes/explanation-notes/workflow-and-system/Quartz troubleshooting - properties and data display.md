@@ -763,13 +763,21 @@ board／kanban 的欄位標題沒動：網站上目前沒有用 wikilink 分欄�
 
 1. `vendor/bases-page/src/components/views/chart.tsx`：拿掉 `answerBaseline`，本月完成數改成 `hasCategory(e, "Exam notes") && monthKey(e.properties?.["參考答案完成日期"]) === thisMonth` 的篇數（沿用檔案裡現成的 `monthKey()`，字串日期和 `Date` 物件都能處理）；`node vendor/bases-page/build.mjs` 重新編譯 `dist/`
 2. vault 的 `.base` 公式與篩選條件裡的中文屬性名稱，一律改寫成 `note["屬性名稱"]`（含 `answer_status`、`answer_month_label`、「本月參考答案完成」的篩選）
-3. 熟悉度：`熟悉度評級` 從多選清單改成單一值（熟練／不太熟／不熟／待評估），刪掉 `actual_familiarity`、`familiarity_status`、`priority_score`，只留一行對照的 `priority_label`（同樣用 `note["熟悉度評級"]`），網站上也能正確分組
+3. 熟悉度：刪掉 `actual_familiarity`、`familiarity_status`、`priority_score`，只留一個 `priority_label` 負責分組（顯示名稱「熟悉度」）
+   - 選項改成熟練／不太熟／不熟／待評估四個；模板保留四個選項的清單（`types.json` 為 multitext），評完刪到只剩一個
+   - 既有 157 篇統一改成 `熟悉度評級: 待評估`（單一文字）
+   - 公式先用 `list(note["熟悉度評級"])` 統一轉成清單：剛好一個選項才用 `[0]` 取值比對「不熟／不太熟／熟練」，其他情況（四個都在＝還沒評、沒刪乾淨、空白）一律歸「4 🔵 待評估」
+   ```
+   if(list(note["熟悉度評級"]).length != 1, "4 🔵 待評估", if(list(note["熟悉度評級"])[0] == "不熟", "1 🔴 不熟", if(list(note["熟悉度評級"])[0] == "不太熟", "2 🟡 不太熟", if(list(note["熟悉度評級"])[0] == "熟練", "3 🟢 熟練", "4 🔵 待評估"))))
+   ```
+   - 組內依 `最新測驗得分`、`已練習次數` 升冪排序，相對熟練的沉到該組最下面
 
 **踩到的坑**：
 
 - **不必改成英文屬性名稱**：3.1 的解法是另開英文欄位（`category`）。這次發現 `note["中文名稱"]` 就能繞過 lexer，`.base` 裡寫法稍微囉嗦，但筆記欄位維持繁體中文
 - **YAML 引號**：公式含雙引號和方括號，整條要用單引號包起來；Obsidian 存檔後可能把外層引號拿掉，YAML 仍然合法
 - **測試要模擬 Syncer 還沒發布的內容**：比照 7.24，暫時把部署 repo 的 `content/` 改成跟 vault 一致（考古題欄位逐行改、`.base` 整份複製、Task Management 刪基準那一行），測完 `git checkout -- content/` 還原
+- **清單型別刪到只剩一個，存成的還是清單**：`熟悉度評級` 是 multitext，在 Obsidian 刪到只剩「不熟」會存成 `["不熟"]`，跟既有筆記的單一文字「待評估」寫法不同；直接寫 `note["熟悉度評級"] == "不熟"` 對清單會比對失敗，所以先用 `list()` 統一成清單再取 `[0]`。網站的公式引擎也支援 `list()` 與 `[0]`，單一文字、單一選項清單、四選項清單、空值六種情況都測過
 - **vault 外部批次改完 frontmatter，Obsidian 可能還顯示舊值**：157 篇筆記用腳本改完後，Bases 仍看到舊的清單值，重新開啟 Obsidian 才正常；檔案本身沒問題
 
 **已驗證結果**：
@@ -777,6 +785,8 @@ board／kanban 的欄位標題沒動：網站上目前沒有用 wikilink 分欄�
 1. 本機完整跑 `node ./quartz/bootstrap-cli.mjs build`：長條圖「完成考古題參考答案」為 1；看板已完成 3／未完成 154；「本月參考答案完成」1 筆、「參考答案歷史統計（依月份）」3 筆
 2. 本機靜態伺服器 + 瀏覽器截圖確認長條圖；使用者在本機確認看板正常
 3. `chart.tsx` 與 `dist/` commit 並 push 到 `v5`（`af050982`），Syncer 發布筆記與 `.base`（`d9614c70`）後，使用者確認正式網站正常
+4. 熟悉度公式：在 Obsidian 實測把一篇刪到只剩「不熟」，正確移到「1 🔴 不熟」群組，改回後回到「4 🔵 待評估」
+5. Syncer 發布新版公式與模板（`f026d6fc`）後，正式網站「🎯 按熟悉度」只有「4 🔵 待評估」一組、「按年分」「📊按科目」熟悉度欄顯示「待評估」、看板維持已完成 3／未完成 154
 
 > [!tip] 網站 `.base` 公式裡的中文屬性名稱一律用 `note["名稱"]`
 > 網站用的 `@quartz-community/bases-page` 公式解析器只認 ASCII 識別字，`note.中文名稱` 不會報錯、只會靜默算出空值。寫 `filters` 或 `formulas` 時，中文屬性名稱一律寫成 `note["名稱"]`；`order`、`sort`、`groupBy` 這類直接填屬性名稱的地方不受影響（見 3.1）。

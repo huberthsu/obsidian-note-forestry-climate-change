@@ -736,3 +736,47 @@ board／kanban 的欄位標題沒動：網站上目前沒有用 wikilink 分欄�
 
 > [!tip] Obsidian 更新後，先查發行紀錄
 > Bases 的 view type 名稱和設定欄位會跟著 Obsidian 改版變動（這次 `kanban-view` → `kanban`、`columnOrders` → `groupOrder`）。網站出現 Unknown view type 或欄位順序不對時，先查 Obsidian changelog 和 Bases 語法文件，確認新規格，再改 `vendor/bases-page`。
+
+---
+
+## ✅ 7.26 「完成考古題參考答案」改成依完成日期統計，順便發現網站公式讀不到中文屬性名稱——熟悉度公式在網站上一直沒算出值
+
+**問題**：
+
+1. vault 端把考古題筆記的 `參考答案已完成` 勾選框改成 `參考答案完成日期` 日期欄位（空白代表尚未完成），[[Task Management]] 的本月完成數改成「完成日期落在本月的篇數」，拿掉 `本月考古題參考答案_月初基準`。網站上的長條圖是 [[Quartz troubleshooting - properties and data display#✅ 7.24|7.24]] 寫死屬性名稱的 `chart.tsx`，不跟著改的話那根長條會變 0
+2. 同時 [[monthly tasks calendar bases.base]] 新增「本月參考答案完成」「參考答案歷史統計（依月份）」兩個檢視，Exam Practice Analysis 的「參考答案是否完成」看板改成用公式 `answer_status` 分組。本機 build 後看板整個是空的
+
+**原因**：
+
+1. 長條圖：`chart.tsx` 讀的是舊的 `參考答案已完成` 與月初基準屬性，vault 拿掉後兩者都是 `undefined`
+2. 看板空白：跟 [[Quartz troubleshooting - character encoding and identifiers#✅ 3.1 Bases 篩選不出任何結果——中文屬性名稱被當成「不合法識別字」|3.1]] 是同一個 lexer bug——識別字只認 ASCII 字母。3.1 當時只確認「篩選條件」會壞，這次確認**公式（`formulas`）也一樣**：`if(note.參考答案完成日期, "已完成", "未完成")` 在網站上整條算出 `undefined`，分組值對不上 `groupOrder` 的「已完成／未完成」，所以兩欄都沒顯示
+3. 連帶發現：Exam Practice Analysis 原本的熟悉度公式（`note.熟悉度評級`、`note.已練習次數`）在網站上也一直是 `undefined`，「熟悉度」「複習優先度」欄位從來沒有正常算出值，只是之前沒注意到
+
+**排查過程**：
+
+1. 第一次完整 build 後，用 `grep` 看輸出 HTML：長條圖數字正確，但看板的 `bases-board` 裡沒有任何欄位
+2. 讀 `resolver.ts` 確認公式確實有逐筆計算、`resolveEntryPropertyValue()` 也支援 `formula.` 分組，排除「看板不支援公式分組」
+3. 直接 import 套件編譯後的 `dist/compiler/index.js`，拿 `evaluate()` 單獨測公式：`if(true, "a", "b")`、`note.date` 正常；只要屬性名稱是中文（`note.參考答案完成日期`、`note.熟悉度評級`）就回傳 `undefined`
+4. 改測方括號寫法 `note["參考答案完成日期"]`：屬性名稱變成字串，不經過識別字判斷，空值／字串日期／`Date` 物件三種情況都算對；`date(note["..."]).format("YYYY-MM")`、日期比較也正常。Obsidian 原生 Bases 也支援這種寫法
+
+**解決方法**：
+
+1. `vendor/bases-page/src/components/views/chart.tsx`：拿掉 `answerBaseline`，本月完成數改成 `hasCategory(e, "Exam notes") && monthKey(e.properties?.["參考答案完成日期"]) === thisMonth` 的篇數（沿用檔案裡現成的 `monthKey()`，字串日期和 `Date` 物件都能處理）；`node vendor/bases-page/build.mjs` 重新編譯 `dist/`
+2. vault 的 `.base` 公式與篩選條件裡的中文屬性名稱，一律改寫成 `note["屬性名稱"]`（含 `answer_status`、`answer_month_label`、「本月參考答案完成」的篩選）
+3. 熟悉度：`熟悉度評級` 從多選清單改成單一值（熟練／不太熟／不熟／待評估），刪掉 `actual_familiarity`、`familiarity_status`、`priority_score`，只留一行對照的 `priority_label`（同樣用 `note["熟悉度評級"]`），網站上也能正確分組
+
+**踩到的坑**：
+
+- **不必改成英文屬性名稱**：3.1 的解法是另開英文欄位（`category`）。這次發現 `note["中文名稱"]` 就能繞過 lexer，`.base` 裡寫法稍微囉嗦，但筆記欄位維持繁體中文
+- **YAML 引號**：公式含雙引號和方括號，整條要用單引號包起來；Obsidian 存檔後可能把外層引號拿掉，YAML 仍然合法
+- **測試要模擬 Syncer 還沒發布的內容**：比照 7.24，暫時把部署 repo 的 `content/` 改成跟 vault 一致（考古題欄位逐行改、`.base` 整份複製、Task Management 刪基準那一行），測完 `git checkout -- content/` 還原
+- **vault 外部批次改完 frontmatter，Obsidian 可能還顯示舊值**：157 篇筆記用腳本改完後，Bases 仍看到舊的清單值，重新開啟 Obsidian 才正常；檔案本身沒問題
+
+**已驗證結果**：
+
+1. 本機完整跑 `node ./quartz/bootstrap-cli.mjs build`：長條圖「完成考古題參考答案」為 1；看板已完成 3／未完成 154；「本月參考答案完成」1 筆、「參考答案歷史統計（依月份）」3 筆
+2. 本機靜態伺服器 + 瀏覽器截圖確認長條圖；使用者在本機確認看板正常
+3. `chart.tsx` 與 `dist/` commit 並 push 到 `v5`（`af050982`），Syncer 發布筆記與 `.base`（`d9614c70`）後，使用者確認正式網站正常
+
+> [!tip] 網站 `.base` 公式裡的中文屬性名稱一律用 `note["名稱"]`
+> 網站用的 `@quartz-community/bases-page` 公式解析器只認 ASCII 識別字，`note.中文名稱` 不會報錯、只會靜默算出空值。寫 `filters` 或 `formulas` 時，中文屬性名稱一律寫成 `note["名稱"]`；`order`、`sort`、`groupBy` 這類直接填屬性名稱的地方不受影響（見 3.1）。

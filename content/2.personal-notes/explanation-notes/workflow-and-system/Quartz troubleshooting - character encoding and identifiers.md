@@ -3,9 +3,9 @@ publish: true
 aliases:
   - Quartz 問題排查－字符編碼與識別問題
 title: Quartz 問題排查－字符編碼與識別問題
-created: 2026-09-04T10:21:53.547Z
-modified: 2026-09-04T10:21:53.569Z
-published: 2026-09-04T10:21:53.569Z
+created: 2026-10-07T18:13:17.169Z
+modified: 2026-10-07T18:13:17.170Z
+published: 2026-10-07T18:13:17.170Z
 tags:
   - 數位花園
   - 網站
@@ -59,6 +59,9 @@ function isAlpha(ch) {
 > 另外也踩到一次 Cloudflare **部署延遲**：push 完立刻檢查線上網站顯示還是空的，等一下子重新整理才確認成功，不代表修法本身沒生效。
 
 **目前狀態**：`workflow-and-system` 這個小範圍已經驗證成功（後續在 3.2 進一步優化，`類別` 已經可以整個刪掉了，不用再並存）。其他還在用 `類別` 做篩選條件的 `.base` 檔案，之後要用網站 Bases 呈現的話，比照這個模式逐步處理即可。
+
+> [!note] 後續：不用改英文名稱的寫法（見 [[Quartz troubleshooting - properties and data display#✅ 7.26 「完成考古題參考答案」改成依完成日期統計，順便發現網站公式讀不到中文屬性名稱——熟悉度公式在網站上一直沒算出值|7.26]]）
+> 同一個 lexer bug 也會讓 `formulas` 裡的中文屬性名稱算出空值。把屬性名稱寫成字串 `note["中文名稱"]` 就不會經過識別字判斷，篩選和公式都能正常運作，Obsidian 原生 Bases 也支援，不必另開英文欄位。
 
 ---
 

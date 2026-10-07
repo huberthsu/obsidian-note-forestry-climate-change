@@ -4,7 +4,7 @@ filters:
     - file.ext == "md"
     - file.name != "index"
 formulas:
-  priority_label: if(note["熟悉度評級"] == "不熟", "1 🔴 不熟", if(note["熟悉度評級"] == "不太熟", "2 🟡 不太熟", if(note["熟悉度評級"] == "熟練", "3 🟢 熟練", "4 🔵 待評估")))
+  priority_label: if(list(note["熟悉度評級"]).length != 1, "4 🔵 待評估", if(list(note["熟悉度評級"])[0] == "不熟", "1 🔴 不熟", if(list(note["熟悉度評級"])[0] == "不太熟", "2 🟡 不太熟", if(list(note["熟悉度評級"])[0] == "熟練", "3 🟢 熟練", "4 🔵 待評估"))))
   subject_count: if(file.size > 0, 1, 0)
   answer_status: if(note["參考答案完成日期"], "已完成", "未完成")
 properties:
@@ -67,6 +67,8 @@ views:
         direction: ASC
       - property: 已練習次數
         direction: ASC
+      - property: 考題年分
+        direction: DESC
     limit: 200
   - type: table
     name: 📊按科目

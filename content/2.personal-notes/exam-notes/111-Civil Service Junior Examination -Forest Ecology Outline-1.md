@@ -2,8 +2,8 @@
 publish: true
 title: 耐受限度三定律：Liebig、Shelford、Odum
 created: 2026-10-02T06:06:13.991Z
-modified: 2026-10-02T06:06:46.098Z
-published: 2026-10-02T06:06:46.098Z
+modified: 2026-10-07T04:50:31.528Z
+published: 2026-10-07T04:50:31.528Z
 tags:
   - 耐受限度
 category:

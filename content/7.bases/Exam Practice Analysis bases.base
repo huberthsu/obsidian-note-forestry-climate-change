@@ -104,14 +104,19 @@ views:
       - file.name
       - tags
     startDate: note.下次複習時間
-  - type: table
+  - type: kanban
     name: 參考答案是否完成
     groupBy:
       property: 參考答案已完成
       direction: DESC
+    groupOrder:
+      - true
+      - false
     order:
-      - file.name
       - title
+      - file.name
       - 科目
       - tags
-    sort: []
+    sort:
+      - property: 考題年分
+        direction: DESC

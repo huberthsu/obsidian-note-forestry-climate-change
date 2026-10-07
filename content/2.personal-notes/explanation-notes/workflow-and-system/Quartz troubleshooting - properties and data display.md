@@ -696,3 +696,43 @@ board／kanban 的欄位標題沒動：網站上目前沒有用 wikilink 分欄�
 
 > [!tip] Obsidian 端的統計算法一改，就要回頭檢查網站端
 > 網站版圖表是另外寫的程式碼，不會讀 Obsidian 的 `dataviewjs`。以後 [[Task Management]] 的統計屬性改名、刪除或改算法，都要同步改 `chart.tsx`，而且要用本機 build 確認數字，因為屬性對不上時只會顯示 0，不會報錯。
+
+---
+
+## ✅ 7.25 Obsidian 1.14 原生看板（`type: kanban`）網站不支援——「參考答案是否完成」看板顯示 Unknown view type
+
+**問題**：Exam Practice Analysis bases 新增了一個「參考答案是否完成」看板檢視，依 `參考答案已完成` 分成 true／false 兩欄，在 Obsidian 裡正常，網站上卻不支援。
+
+**原因**：
+
+1. **Obsidian 1.14.0（2026-09-02）新增了原生的 Kanban 檢視**，存成 `type: kanban`；[[Quartz troubleshooting - properties and data display#✅ 7.18|7.18]] 做的看板渲染器只登記了 `kanban-view`（當時 Obsidian 看板存檔用的名稱），網站遇到 `kanban` 就是沒登記過的 view type。跟 [[Quartz troubleshooting - properties and data display#✅ 7.8|7.8]] 月曆、7.18 看板是同一類問題
+2. **新版看板用 `groupOrder` 決定欄位順序**，不是 7.18 認得的 `columnOrders`／`cardOrders`。官方文件：寫了 `groupOrder` 時，只顯示清單裡列出的欄位，依清單順序排；`null` 代表「沒有這個屬性」的那一欄。這篇寫的是 `[true, false]`，YAML 讀進來是布林值，不是字串
+
+**排查過程**：
+
+1. 比對 vault 與部署 repo 的 `.base`：Syncer 已經把看板檢視發布上去，內容沒問題；已發布的考古題筆記 `參考答案已完成` 有 155 篇 false、2 篇 true，資料也沒問題
+2. 查 `vendor/bases-page` 的 view 登記清單，只有 `kanban-view`，沒有 `kanban`
+3. 一開始誤以為是社群外掛提供的看板，去查 vault 裝的外掛；使用者提醒是 Obsidian 本身更新，改查 Obsidian 的發行紀錄（1.14.0 新增看板，1.14.3／1.14.4 持續修正）與 Bases 語法文件，確認 `type: kanban` 與 `groupOrder` 的規格
+
+**解決方法**（`vendor/bases-page`）：
+
+1. `views/kanban.tsx` 新增 `nativeKanbanViewRegistration`（`id: "kanban"`，沿用同一個渲染器），`views/index.ts` 登記；舊的 `kanban-view` 保留，兩種都能用
+2. 支援 `groupOrder`：是陣列時，只照清單順序顯示列出的欄位；布林值、數字用跟分欄同一個 `formatGroupLabel()` 轉成文字再比對，`null` 對應到「未分類」欄；不是陣列時直接忽略（Obsidian 1.14.4 也剛修掉「`groupOrder` 不是 list 時 base 載入失敗」）；沒寫 `groupOrder` 時維持 7.18 的 `columnOrders`／先遇到先排邏輯
+3. 欄位內卡片順序照 `sort`（`考題年分` DESC），跟 Obsidian 一致
+4. 純 SSR、沒有加任何 script，避開 [[Quartz troubleshooting - properties and data display#✅ 7.14|7.14]] 那一串坑；網站上不能拖曳卡片，跟 7.18 一樣
+5. `node vendor/bases-page/build.mjs` 重新編譯 `dist/`（見 [[Quartz troubleshooting - properties and data display#✅ 7.10|7.10]]）
+
+**踩到的坑**：
+
+- **看板欄位被長標題撐爆**：第一次 build 後截圖，true 欄寬到佔滿整個內容區，false 欄被擠到畫面外，卡片裡的屬性值也被推到最右邊看不到。原因是 `.bases-board-column` 只設 `min-width`、又 `flex-shrink: 0`，flex 項目的寬度預設等於內容的最大寬度（max-content），考古題標題很長、所以整欄被撐開。7.18 測試時的任務看板標題都很短，才沒發現。修法：`bases.scss` 欄位改成固定寬度 `width: min(280px, 80vw)`（類似 Obsidian 看板的 Column width），卡片加 `overflow-wrap: anywhere`，屬性值 `min-width: 0` 靠右對齊、標籤不縮。這個改動也會套到 `kanban-view`／`board`
+- **`grep` 輸出 HTML 看起來正確不代表畫面正確**：欄位標題與數量（true 2／false 155）在 HTML 裡完全對，版面壞掉只有實際截圖才看得出來
+- **本機 `npx serve` 起不來**：改用 scratchpad 裡自己寫的小型 Node 靜態伺服器（自動補 `.html`、資料夾找 `index.html`）
+
+**已驗證結果**：
+
+1. 完整跑 `node ./quartz/bootstrap-cli.mjs build`，`7.bases/exam-practice-analysis-bases.base` 和 `1.categories/exam-notes` 都正確輸出 true（2）→ false（155）兩欄，沒有 Unknown view type
+2. 本機伺服器從首頁點「考古題筆記入口」（走 SPA 換頁，不是貼網址）進去，滑鼠點「參考答案是否完成」分頁，截圖確認兩欄並排、順序正確、長標題換行、Title／Name／科目／Tags 都看得到
+3. commit 並 push 到 `v5` 分支（`c18f51f6`）
+
+> [!tip] Obsidian 更新後，先查發行紀錄
+> Bases 的 view type 名稱和設定欄位會跟著 Obsidian 改版變動（這次 `kanban-view` → `kanban`、`columnOrders` → `groupOrder`）。網站出現 Unknown view type 或欄位順序不對時，先查 Obsidian changelog 和 Bases 語法文件，確認新規格，再改 `vendor/bases-page`。

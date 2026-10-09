@@ -4,8 +4,8 @@ aliases:
   - 工作流系統說明
 title: 工作流系統說明
 created: 2026-09-24T17:31:37.281Z
-modified: 2026-09-24T17:33:45.822Z
-published: 2026-09-24T17:33:45.822Z
+modified: 2026-10-09T16:17:51.461Z
+published: 2026-10-09T16:17:51.461Z
 tags:
   - 工作流
 category:
@@ -157,7 +157,22 @@ child:
 
 ---
 
-### 6. 出版管道
+### 6. 英文聽寫練習
+
+- 管理工具: [[Dictation Practice Record]]
+- 使用時機: 練習英文聽力
+- 流程
+  - 點擊[Daily Dictation](https://dailydictation.com/)  網站，依據能力與興趣挑選想要練習的題目
+  - 將練習日期、題目網址、題目類別、題目難度等填入[[Dictation Practice Record]]對應欄位
+  - 練習進度欄位
+    - 該網站會將題目分成n個片段，聽完每個片段後把聽到的全部打下來，並用show answer immediately或show full answer對答案
+    - 聽清楚第 k 個片段後，在[[Dictation Practice Record]]練習進度欄位填上k/n
+    - n/n後練習次數才可+1
+  - 同一題再練時，練習次數 +1、練習日期改成最新
+
+---
+
+### 7. 出版管道
 
 - 管理工具: [[Publication Venues|出版管道]]
 - 使用時機

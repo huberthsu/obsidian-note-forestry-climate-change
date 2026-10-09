@@ -2,10 +2,11 @@
 publish: true
 title: 林火燃燒關鍵因素、類型與管理方法
 created: 2026-10-07T16:54:22.407Z
-modified: 2026-10-07T17:45:32.107Z
-published: 2026-10-07T17:45:32.107Z
+modified: 2026-10-08T12:43:38.394Z
+published: 2026-10-08T12:43:38.394Z
 tags:
   - 森林火燒
+  - 森林火燒防救
 category:
   - "[[Exam notes]]"
 考題年分: 2022

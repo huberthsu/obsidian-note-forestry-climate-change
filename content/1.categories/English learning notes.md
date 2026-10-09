@@ -4,8 +4,8 @@ aliases:
   - 英文學習筆記
 title: 英文學習筆記
 created: 2026-08-10T23:40:35.343Z
-modified: 2026-09-10T12:33:16.547Z
-published: 2026-09-10T12:33:16.547Z
+modified: 2026-10-09T15:51:20.172Z
+published: 2026-10-09T15:51:20.172Z
 tags:
   - 類別
 ---
@@ -26,3 +26,8 @@ tags:
 # 用視覺意象理解介係詞的方法與資源
 
 [[4.Visual imagery method for understanding prepositions]]
+
+# 英文聽寫練習
+
+- [dictation exercise](https://dailydictation.com/)
+  - 練習紀錄：[[Dictation Practice Record]]

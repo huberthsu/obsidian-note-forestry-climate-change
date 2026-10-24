@@ -2,8 +2,8 @@
 publish: true
 title: Shannon's diversity 指數計算與森林病害傳播控制能力評估
 created: 2026-10-07T16:54:20.611Z
-modified: 2026-10-07T17:45:32.121Z
-published: 2026-10-07T17:45:32.121Z
+modified: 2026-10-24T06:44:11.189Z
+published: 2026-10-24T06:44:11.189Z
 tags:
   - 生物多樣性
   - 病蟲害
@@ -22,6 +22,7 @@ date:
 下次複習時間:
 已練習次數:
 參考答案完成日期:
+參考答案狀態: 未完成
 ---
 
 # 假設有A、B兩個林分調查的樹種及相對豐度（relative abundance）的調查紀錄如下表，請分別求算該兩個林分的Shannon's diversity（H'），並評估何者具有較佳能力降低或控制森林病害傳播機率。（25分）

@@ -2,8 +2,8 @@
 publish: true
 title: 生態系食物鏈之Y形能量流動
 created: 2026-10-07T16:54:20.854Z
-modified: 2026-10-07T17:45:32.130Z
-published: 2026-10-07T17:45:32.130Z
+modified: 2026-10-24T06:44:11.200Z
+published: 2026-10-24T06:44:11.200Z
 tags:
   - 食物鏈
 category:
@@ -21,6 +21,7 @@ date:
 下次複習時間:
 已練習次數:
 參考答案完成日期:
+參考答案狀態: 未完成
 ---
 
 # 請試述生態系食物鏈的 Y 形能量流動（Y-shaped energy flow）。（20 分）

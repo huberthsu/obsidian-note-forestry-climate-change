@@ -2,8 +2,8 @@
 publish: true
 title: IPCC國家溫室氣體盤查指南之五大碳庫
 created: 2026-10-07T16:54:21.120Z
-modified: 2026-10-07T17:45:32.141Z
-published: 2026-10-07T17:45:32.141Z
+modified: 2026-10-24T06:44:11.210Z
+published: 2026-10-24T06:44:11.210Z
 tags:
   - 碳庫
 category:
@@ -21,6 +21,7 @@ date:
 下次複習時間:
 已練習次數:
 參考答案完成日期:
+參考答案狀態: 未完成
 ---
 
 # 國際政府間氣候變化委員會（Intergovernmental Panel on Climate Change, IPCC）在 2006 年公布的「2006 年 IPCC 國家溫室氣體盤查指南（2006 IPCC Guideline for National Greenhouse Gas Inventory）」中提到，在每個土地利用類別中，碳庫變化和排放／清除估算可能有 5 個碳庫，請詳細說明這 5 個碳庫的內容。（25 分）

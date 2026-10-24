@@ -2,8 +2,8 @@
 publish: true
 title: 物種忠誠度與分級、決定方法
 created: 2026-10-07T16:54:22.035Z
-modified: 2026-10-07T17:45:32.174Z
-published: 2026-10-07T17:45:32.174Z
+modified: 2026-10-24T06:44:11.246Z
+published: 2026-10-24T06:44:11.246Z
 tags:
   - 物種忠誠度
 category:
@@ -16,14 +16,12 @@ category:
 科目:
   - 森林生態學
 最新測驗得分:
-熟悉度評級:
-  - 熟練
-  - 不太熟
-  - 不熟
+熟悉度評級: 待評估
 date:
 下次複習時間:
 已練習次數:
 參考答案完成日期:
+參考答案狀態: 未完成
 ---
 
 # 何謂物種忠誠度（Species fidelity）？（5 分）請比較 Braun-Blanquet 忠誠度分級法、Phi correlation、Indicator value（IndVal）決定物種忠誠度的方法。（20 分）

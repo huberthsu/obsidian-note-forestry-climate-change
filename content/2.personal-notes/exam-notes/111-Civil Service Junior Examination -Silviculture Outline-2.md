@@ -2,8 +2,8 @@
 publish: true
 title: 近親繁殖衰退之現象與試驗設計改善
 created: 2026-10-07T16:54:20.066Z
-modified: 2026-10-07T17:45:32.102Z
-published: 2026-10-07T17:45:32.102Z
+modified: 2026-10-24T06:44:11.167Z
+published: 2026-10-24T06:44:11.167Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -20,6 +20,7 @@ date:
 下次複習時間:
 已練習次數:
 參考答案完成日期:
+參考答案狀態: 未完成
 ---
 
 # 何謂inbreeding depression？可以從那些現象發現有inbreeding depression的狀況？以及如何進行試驗設計達到改善。（25 分）

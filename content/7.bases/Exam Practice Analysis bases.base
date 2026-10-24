@@ -6,7 +6,6 @@ filters:
 formulas:
   priority_label: if(list(note["熟悉度評級"]).length != 1, "4 🔵 待評估", if(list(note["熟悉度評級"])[0] == "不熟", "1 🔴 不熟", if(list(note["熟悉度評級"])[0] == "不太熟", "2 🟡 不太熟", if(list(note["熟悉度評級"])[0] == "熟練", "3 🟢 熟練", "4 🔵 待評估"))))
   subject_count: if(file.size > 0, 1, 0)
-  answer_status: if(note["參考答案完成日期"], "已完成", "未完成")
 properties:
   考題年分:
     displayName: 年份
@@ -22,10 +21,10 @@ properties:
     displayName: 熟悉度
   formula.priority_label:
     displayName: 熟悉度
-  formula.answer_status:
-    displayName: 參考答案
   參考答案完成日期:
     displayName: 參考答案完成日期
+  參考答案狀態:
+    displayName: 參考答案狀態
 views:
   - type: table
     name: 按年分
@@ -99,10 +98,11 @@ views:
   - type: kanban
     name: 參考答案是否完成
     groupBy:
-      property: formula.answer_status
-      direction: DESC
+      property: 參考答案狀態
+      direction: ASC
     groupOrder:
       - 已完成
+      - 撰寫中
       - 未完成
     order:
       - title

@@ -2,8 +2,8 @@
 publish: true
 title: 生態學名詞解釋（Interference competition等五則）
 created: 2026-10-07T16:54:20.377Z
-modified: 2026-10-07T17:45:32.112Z
-published: 2026-10-07T17:45:32.112Z
+modified: 2026-10-24T06:44:11.180Z
+published: 2026-10-24T06:44:11.180Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -20,6 +20,7 @@ date:
 下次複習時間:
 已練習次數:
 參考答案完成日期:
+參考答案狀態: 未完成
 ---
 
 # 請試述下列名詞之意涵：（每小題5分，共25分）

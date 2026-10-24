@@ -2,8 +2,8 @@
 publish: true
 title: 木材比熱、熱傳導率與熱擴散率
 created: 2026-10-07T16:54:20.266Z
-modified: 2026-10-07T17:45:32.109Z
-published: 2026-10-07T17:45:32.109Z
+modified: 2026-10-24T06:44:11.174Z
+published: 2026-10-24T06:44:11.174Z
 category:
   - "[[Exam notes]]"
 tags:
@@ -20,6 +20,7 @@ date:
 下次複習時間:
 已練習次數:
 參考答案完成日期:
+參考答案狀態: 未完成
 ---
 
 # 木質材料是一種良好的建材及裝潢材料，且具溫濕度調節效應，請就木材之比熱（Specific heat）、熱傳導率（Thermal conductivity）與熱擴散率（Thermal diffusivity）等三種特性說明其定義，並列出公式（含其使用單位），以及說明其對密度之影響。（25 分）
